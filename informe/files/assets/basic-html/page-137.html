@@ -1,0 +1,548 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "137";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-136.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;137 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-138.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-136.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">137 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-138.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0137.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:30.875576%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:37.327189%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:38.402458%;width:26.574501%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>I n f r a e s t r u c t u r a y O b r a s P &#250; b l i c a s</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:65.745008%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:66.820276%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>1 3 5</b>
+						</p>
+						<p class="textItem " style="top:17.458280%;left:13.517665%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem testString" style="top:17.458280%;left:12.903226%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:17.458280%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el municipio de Jes&#250;s Carranza, se rehabilit&#243; el
+						</p>
+						<p class="textItem " style="top:19.255456%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							revestimiento del camino Iturbide-Las Perlas en una longitud
+						</p>
+						<p class="textItem " style="top:21.052632%;left:14.439324%;width:34.869432%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 20.5 km y una inversi&#243;n total de 2.9 millones de pesos.
+						</p>
+						<p class="textItem " style="top:24.646983%;left:13.517665%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:24.646983%;left:12.903226%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:24.646983%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el municipio de Las Choapas, se encuentran en proceso
+						</p>
+						<p class="textItem " style="top:26.444159%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de construcci&#243;n (estudio, proyecto y restauraci&#243;n) siete
+						</p>
+						<p class="textItem " style="top:28.241335%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							puentes, con una inversi&#243;n total de 24.5 millones de pesos y
+						</p>
+						<p class="textItem " style="top:30.038511%;left:14.439324%;width:30.414747%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							una longitud conjunta de 92 metros. Siendo estos:
+						</p>
+						<p class="textItem " style="top:33.632863%;left:13.517665%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:33.632863%;left:12.903226%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:33.632863%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Dos puentes en el camino E.C. (Las Choapas-Cerro de
+						</p>
+						<p class="textItem " style="top:35.430039%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Nanchital)-R&#237;o Playas, en el km 11+500 con una inversi&#243;n
+						</p>
+						<p class="textItem " style="top:37.227214%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 3.7 millones de pesos y una longitud de 12 metros; y en
+						</p>
+						<p class="textItem " style="top:39.024390%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el km 17+800 con una inversi&#243;n de 3.7 millones de pesos y
+						</p>
+						<p class="textItem " style="top:40.821566%;left:14.439324%;width:16.436252%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							una longitud de 15 metros.
+						</p>
+						<p class="textItem " style="top:44.415918%;left:13.517665%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:44.415918%;left:12.903226%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:44.415918%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Dos puentes en el camino El Chich&#243;n-Guadalupe km 4+100
+						</p>
+						<p class="textItem " style="top:46.213094%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con una longitud de 10 metros y una inversi&#243;n de 3 millones
+						</p>
+						<p class="textItem " style="top:48.010270%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de pesos; y en el km 9+400 con una inversi&#243;n de 3 millones
+						</p>
+						<p class="textItem " style="top:49.807445%;left:14.439324%;width:24.577573%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de pesos y una longitud de ocho metros.
+						</p>
+						<p class="textItem " style="top:53.401797%;left:13.517665%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:53.401797%;left:12.903226%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:53.401797%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Un puente en el km 2+200 del camino El Remolino-El
+						</p>
+						<p class="textItem " style="top:55.198973%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Casta&#241;o, con una inversi&#243;n de 3 millones de pesos y una
+						</p>
+						<p class="textItem " style="top:56.996149%;left:14.439324%;width:13.824885%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							longitud de 12 metros.
+						</p>
+						<p class="textItem " style="top:60.590501%;left:13.517665%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:60.590501%;left:12.903226%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:60.590501%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Dos puentes en el camino R&#237;o Playas-El Remolino, en el km
+						</p>
+						<p class="textItem " style="top:62.387677%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							16+880 con una inversi&#243;n de 3 millones de pesos y una
+						</p>
+						<p class="textItem " style="top:64.184852%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							longitud de 15 metros; y en el km 22+530, con una inversi&#243;n
+						</p>
+						<p class="textItem " style="top:65.982028%;left:14.439324%;width:31.490015%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 5 millones de pesos y una longitud de 20 metros.
+						</p>
+						<p class="textItem " style="top:69.576380%;left:13.517665%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:69.576380%;left:12.903226%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:69.576380%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se restaura el revestimiento en el km 2+600 del camino
+						</p>
+						<p class="textItem " style="top:71.373556%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Otapa-La Victoria en el municipio de Minatitl&#225;n, con una
+						</p>
+						<p class="textItem " style="top:73.170732%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							inversi&#243;n de 5 millones de pesos. Y se reconstruyeron
+						</p>
+						<p class="textItem " style="top:74.967908%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							2.5 km de la base hidr&#225;ulica, carpeta asf&#225;ltica y obras
+						</p>
+						<p class="textItem " style="top:76.765083%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							complementarias del camino Capoacan-La Bre&#241;a, con una
+						</p>
+						<p class="textItem " style="top:78.562259%;left:14.439324%;width:20.890937%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							inversi&#243;n de 6.2 millones de pesos.
+						</p>
+						<p class="textItem " style="top:82.156611%;left:13.517665%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:82.156611%;left:12.903226%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:82.156611%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el municipio de San Juan Evangelista, se construye un
+						</p>
+						<p class="textItem " style="top:83.953787%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							puente de 10 metros en el km 6+900 del camino E.C.
+						</p>
+						<p class="textItem " style="top:85.750963%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(Villa Juanita-Nueva Raya)-El Porvenir-El Apompal, con una
+						</p>
+						<p class="textItem " style="top:87.548139%;left:14.439324%;width:20.890937%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							inversi&#243;n de 2.7 millones de pesos.
+						</p>
+						<p class="textItem " style="top:17.458280%;left:54.685100%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:17.458280%;left:54.070661%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:17.458280%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el municipio de Soteapan, se restauraron 15.8 km de
+						</p>
+						<p class="textItem " style="top:19.255456%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los caminos E.C. (Buena Vista-La Magdalena)-San Mart&#237;n y
+						</p>
+						<p class="textItem " style="top:21.052632%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ocozotepec-San Antonio, con una inversi&#243;n conjunta de 4.8
+						</p>
+						<p class="textItem " style="top:22.849807%;left:55.606759%;width:11.059908%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							millones de pesos.
+						</p>
+						<p class="textItem " style="top:26.444159%;left:54.685100%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:26.444159%;left:54.070661%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:26.444159%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el municipio de Tatahuicapan, se rehabilita el puente
+						</p>
+						<p class="textItem " style="top:28.241335%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ubicado en el km 30+690 del camino Tatahuicapan-
+						</p>
+						<p class="textItem " style="top:30.038511%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tecuanapa-Arrecifes, con una inversi&#243;n de 2 millones
+						</p>
+						<p class="textItem " style="top:31.835687%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de pesos; y actualmente se reconstruye el puente del km
+						</p>
+						<p class="textItem " style="top:33.632863%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							38+690 en el camino Mecayapan-Tecuanapa-Sochapa-
+						</p>
+						<p class="textItem " style="top:35.430039%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Arrecifes-Perla del Golfo-Iztajal, con una inversi&#243;n de 1.6
+						</p>
+						<p class="textItem " style="top:37.227214%;left:55.606759%;width:11.059908%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							millones de pesos.
+						</p>
+						<p class="textItem " style="top:40.821566%;left:54.685100%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:40.821566%;left:54.070661%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:40.821566%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el municipio de Texistepec, destacan las obras de
+						</p>
+						<p class="textItem " style="top:42.618742%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							revestimiento y obras de alivio del km 0+000 al km 6+400
+						</p>
+						<p class="textItem " style="top:44.415918%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en el E.C. (Tenochtitl&#225;n-Las Camelias)-Potrero Nuevo-Boca
+						</p>
+						<p class="textItem " style="top:46.213094%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del R&#237;o con una inversi&#243;n de 1.9 millones de pesos; y con
+						</p>
+						<p class="textItem " style="top:48.010270%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							una inversi&#243;n de 1.8 millones de pesos, la reconstrucci&#243;n del
+						</p>
+						<p class="textItem " style="top:49.807445%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							camino y alcantarilla en el km 6+270 camino Casas Viejas-
+						</p>
+						<p class="textItem " style="top:51.604621%;left:55.606759%;width:15.514593%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							San Lorenzo Tenochtitl&#225;n.
+						</p>
+						<p class="textItem " style="top:55.198973%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Asimismo, en el camino el Azuzul-L&#225;zaro C&#225;rdenas km 0+000
+						</p>
+						<p class="textItem " style="top:56.996149%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							al 6+400 y en el km 5+460 destaca el revestimiento y obras de
+						</p>
+						<p class="textItem " style="top:58.793325%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							alivio realizados con una inversi&#243;n de 1.6 millones de pesos; y por
+						</p>
+						<p class="textItem " style="top:60.590501%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#250;ltimo, la restauraci&#243;n del revestimiento y obras de alivio en el
+						</p>
+						<p class="textItem " style="top:62.387677%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							camino Xochitl&#225;n-Palmillas-desviaci&#243;n Montenegro-Pino Su&#225;rez
+						</p>
+						<p class="textItem " style="top:64.184852%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del km 0+000 al km 6+000 con una inversi&#243;n de 1.5 millones de
+						</p>
+						<p class="textItem " style="top:65.982028%;left:51.920123%;width:3.840246%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pesos.
+						</p>
+						<p class="textItem testString" style="top:69.062901%;left:51.920123%;width:35.023041%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							6. Telecomunicaciones
+						</p>
+						<p class="textItem " style="top:74.967908%;left:51.920123%;width:28.110599%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para beneficiar a las 10 cabeceras municipales
+						</p>
+						<p class="textItem " style="top:75.096277%;left:79.877112%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							2
+						</p>
+						<p class="textItem " style="top:74.967908%;left:80.798771%;width:10.599078%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							clasificadas como
+						</p>
+						<p class="textItem " style="top:76.765083%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de alto y muy alto grado de rezago social, se encuentra en proceso
+						</p>
+						<p class="textItem " style="top:78.562259%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de ejecuci&#243;n el Programa para la Instalaci&#243;n de Infraestructura y
+						</p>
+						<p class="textItem " style="top:80.359435%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Equipamiento de la Red Estatal de Conectividad de Banda Ancha
+						</p>
+						<p class="textItem " style="top:82.156611%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Zonas Rurales y de Rezago Social en la Regi&#243;n De las Monta&#241;as,
+						</p>
+						<p class="textItem " style="top:83.953787%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con estas acciones se beneficia a 15,789 habitantes, los cuales
+						</p>
+						<p class="textItem " style="top:85.750963%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							contar&#225;n con mejores opciones para acceder a la inclusi&#243;n digital
+						</p>
+						<p class="textItem " style="top:89.216945%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							2.  Astacinga, Atlahuilco, Los Reyes, Mixtla de Altamirano, Soledad Atzompa, Tehuipango, Tequila,
+						</p>
+						<p class="textItem " style="top:90.243902%;left:51.920123%;width:13.978495%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Texhuacan, Tlaquilpa y Xoxocotla.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-132.html">132</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-133.html">133</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-134.html">134</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-135.html">135</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-136.html">136</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-137.html">137</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-138.html">138</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-139.html">139</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-140.html">140</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-141.html">141</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-142.html">142</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-143.html">143</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

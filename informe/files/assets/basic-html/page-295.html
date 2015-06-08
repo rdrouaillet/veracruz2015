@@ -1,0 +1,494 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "295";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-294.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;295 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-296.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-294.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">295 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-296.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0295.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:38.248848%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:44.700461%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:45.775730%;width:11.827957%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>M e d i o A m b i e n t e</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:58.371736%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:59.447005%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>2 9 3</b>
+						</p>
+						<p class="textItem " style="top:18.356868%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estas actividades y donde se encuentran la mayor&#237;a de los parques
+						</p>
+						<p class="textItem " style="top:20.154044%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							industriales son Coatzacoalcos, la regi&#243;n de C&#243;rdoba-Orizaba y el
+						</p>
+						<p class="textItem " style="top:21.951220%;left:10.752688%;width:11.674347%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Puerto de Veracruz.
+						</p>
+						<p class="textItem " style="top:25.545571%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							De acuerdo con el inventario de emisi&#243;n de contaminantes del aire
+						</p>
+						<p class="textItem " style="top:27.342747%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							elaborado en el 2010, en el Estado se generan aproximadamente
+						</p>
+						<p class="textItem " style="top:29.139923%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							1.3 millones de toneladas de contaminantes por a&#241;o, de las cuales
+						</p>
+						<p class="textItem " style="top:30.937099%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el 36 por ciento corresponden a fuentes m&#243;viles, el 28 por ciento a
+						</p>
+						<p class="textItem " style="top:32.734275%;left:10.752688%;width:27.956989%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fuentes fijas, el 22 por ciento a fuentes de &#225;rea
+						</p>
+						<p class="textItem " style="top:32.862644%;left:38.709677%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							4
+						</p>
+						<p class="textItem " style="top:32.734275%;left:39.631336%;width:10.752688%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y el 14 por ciento
+						</p>
+						<p class="textItem " style="top:34.531451%;left:10.752688%;width:13.517665%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a las fuentes naturales.
+						</p>
+						<p class="textItem " style="top:38.125802%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Adicionalmente, en Veracruz el 61 por ciento de la poblaci&#243;n vive
+						</p>
+						<p class="textItem " style="top:39.922978%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en zonas urbanas, mientras que el 39 por ciento en zonas rurales.
+						</p>
+						<p class="textItem " style="top:41.720154%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A mayor densidad de poblaci&#243;n, mayor emisi&#243;n de contaminantes
+						</p>
+						<p class="textItem " style="top:43.517330%;left:10.752688%;width:33.947773%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por el consecuente desarrollo de la actividad econ&#243;mica.
+						</p>
+						<p class="textItem " style="top:47.111682%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Todo lo anterior ha ocasionado un deterioro en la calidad del aire
+						</p>
+						<p class="textItem " style="top:48.908858%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con mayor &#233;nfasis en las ciudades m&#225;s industrializadas, sin rebasar
+						</p>
+						<p class="textItem " style="top:50.706033%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a&#250;n los niveles cr&#237;ticos, pero con una situaci&#243;n que debe atenderse
+						</p>
+						<p class="textItem " style="top:52.503209%;left:10.752688%;width:38.709677%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de manera inmediata para frenar y revertir dicha contaminaci&#243;n.
+						</p>
+						<p class="textItem " style="top:56.097561%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En este sentido, con el Programa Estatal para Gesti&#243;n de la
+						</p>
+						<p class="textItem " style="top:57.894737%;left:10.752688%;width:9.984639%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Calidad del Aire
+						</p>
+						<p class="textItem " style="top:58.023107%;left:20.737327%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							5
+						</p>
+						<p class="textItem " style="top:57.894737%;left:21.198157%;width:29.185868%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							, a la fecha se han instalado cuatro estaciones
+						</p>
+						<p class="textItem " style="top:59.691913%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fijas de monitoreo atmosf&#233;rico en las ciudades de Ixtaczoquitl&#225;n,
+						</p>
+						<p class="textItem " style="top:61.489089%;left:10.752688%;width:18.433180%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Minatitl&#225;n, Poza Rica y Xalapa.
+						</p>
+						<p class="textItem " style="top:65.083440%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A partir de entonces se genera informaci&#243;n relacionada con los
+						</p>
+						<p class="textItem " style="top:66.880616%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							niveles de contaminaci&#243;n, la cual se encuentra en etapa de revisi&#243;n,
+						</p>
+						<p class="textItem " style="top:68.677792%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							validaci&#243;n y an&#225;lisis para presentar un informe de la calidad del aire
+						</p>
+						<p class="textItem " style="top:70.474968%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en estas ciudades, que servir&#225; de base para tomar decisiones y
+						</p>
+						<p class="textItem " style="top:72.272144%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							realizar pol&#237;ticas p&#250;blicas ambientales en favor de la salud de los
+						</p>
+						<p class="textItem " style="top:74.069320%;left:10.752688%;width:20.276498%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ciudadanos y su medio ambiente.
+						</p>
+						<p class="textItem " style="top:77.663671%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Adicionalmente, se gestion&#243; ante la Secretar&#237;a de Medio Ambiente
+						</p>
+						<p class="textItem " style="top:79.460847%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y Recursos Naturales la instalaci&#243;n de una estaci&#243;n m&#225;s en la
+						</p>
+						<p class="textItem " style="top:81.258023%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ciudad de Veracruz, con recursos del Presupuesto de Egresos de
+						</p>
+						<p class="textItem " style="top:83.055199%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Federaci&#243;n 2014. Este proyecto es evaluado por personal del
+						</p>
+						<p class="textItem " style="top:86.521181%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							4. El t&#233;rmino fuentes de &#225;rea se refiere a toda la industria de regulaci&#243;n municipal como
+						</p>
+						<p class="textItem " style="top:87.419769%;left:10.752688%;width:15.514593%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							panader&#237;as, tortiller&#237;as, tintorer&#237;as, etc.
+						</p>
+						<p class="textItem " style="top:88.318357%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							5. Denominado Programa Estrat&#233;gico de Calidad del Aire del Estado de Veracruz, a partir de la
+						</p>
+						<p class="textItem " style="top:89.216945%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							publicaci&#243;n de la Gaceta Oficial del Estado N&#250;mero Extraordinario 366 del 12 de septiembre de
+						</p>
+						<p class="textItem " style="top:90.243902%;left:10.752688%;width:2.457757%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							2014.
+						</p>
+						<p class="textItem " style="top:18.356868%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Instituto Nacional de Ecolog&#237;a y Cambio Clim&#225;tico (INECC) para
+						</p>
+						<p class="textItem " style="top:20.154044%;left:51.920123%;width:32.411674%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ubicar el sitio adecuado donde se instalar&#225; la estaci&#243;n.
+						</p>
+						<p class="textItem " style="top:23.748395%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Los par&#225;metros que miden las estaciones de monitoreo de calidad
+						</p>
+						<p class="textItem " style="top:25.545571%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del aire son: Mon&#243;xido de Carbono (CO), Ozono (O3), Bi&#243;xido
+						</p>
+						<p class="textItem " style="top:27.342747%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Azufre (SO2), &#211;xidos de Nitr&#243;geno (NOx), part&#237;culas menores
+						</p>
+						<p class="textItem " style="top:29.139923%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a 10 micr&#243;metros (PM10), part&#237;culas menores a 2.5 micr&#243;metros
+						</p>
+						<p class="textItem " style="top:30.937099%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(PM2.5); y cuentan con una estaci&#243;n meteorol&#243;gica que mide:
+						</p>
+						<p class="textItem " style="top:32.734275%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							direcci&#243;n y velocidad de viento, presi&#243;n barom&#233;trica, precipitaci&#243;n
+						</p>
+						<p class="textItem " style="top:34.531451%;left:51.920123%;width:24.423963%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pluvial, temperatura y humedad relativa.
+						</p>
+						<p class="textItem " style="top:38.125802%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La relevancia del cuidado y protecci&#243;n del medio ambiente, ha
+						</p>
+						<p class="textItem " style="top:39.922978%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							generado que los ordenamientos jur&#237;dicos en la materia, tanto a
+						</p>
+						<p class="textItem " style="top:41.720154%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							nivel federal como estatal, tengan que adecuarse y ajustarse a las
+						</p>
+						<p class="textItem " style="top:43.517330%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							nuevas tecnolog&#237;as, lo que conlleva la necesidad de modificaciones
+						</p>
+						<p class="textItem " style="top:45.314506%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							continuas, a efecto de que los medios y tecnolog&#237;as de verificaci&#243;n
+						</p>
+						<p class="textItem " style="top:47.111682%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de fuentes de contaminaci&#243;n fijas y m&#243;viles sean eficientes y
+						</p>
+						<p class="textItem " style="top:48.908858%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							eficaces de acuerdo al propio avance tecnol&#243;gico de dichas fuentes.
+						</p>
+						<p class="textItem " style="top:52.503209%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Como consecuencia, se public&#243; en la Gaceta Oficial N&#250;mero
+						</p>
+						<p class="textItem " style="top:54.300385%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Extraordinario 282 del Estado de Veracruz el 16 de julio, el decreto
+						</p>
+						<p class="textItem " style="top:56.097561%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mediante el cual se reforman diversas disposiciones en materia de
+						</p>
+						<p class="textItem " style="top:57.894737%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							verificaci&#243;n vehicular de la Ley 62 Estatal de Protecci&#243;n Ambiental,
+						</p>
+						<p class="textItem " style="top:59.691913%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con lo que se reforz&#243; la pol&#237;tica en materia de calidad del aire del
+						</p>
+						<p class="textItem " style="top:61.489089%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estado. El 12 de septiembre se public&#243; en la Gaceta Oficial del
+						</p>
+						<p class="textItem " style="top:63.286264%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estado de Veracruz N&#250;mero Extraordinario 366, la actualizaci&#243;n
+						</p>
+						<p class="textItem " style="top:65.083440%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Programa de Verificaci&#243;n Vehicular Obligatoria para el Estado
+						</p>
+						<p class="textItem " style="top:66.880616%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Veracruz de Ignacio de la Llave y el Programa Estrat&#233;gico de
+						</p>
+						<p class="textItem " style="top:68.677792%;left:51.920123%;width:23.655914%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Calidad del Aire del Estado de Veracruz.
+						</p>
+						<p class="textItem " style="top:72.143774%;left:51.920123%;width:32.718894%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							4.1. Programa de Normalizaci&#243;n y
+						</p>
+						<p class="textItem " style="top:74.326059%;left:51.920123%;width:23.195084%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							Regularizaci&#243;n Industrial
+						</p>
+						<p class="textItem " style="top:78.562259%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La importancia de la industria veracruzana se refleja en sus
+						</p>
+						<p class="textItem " style="top:80.359435%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							porcentajes de participaci&#243;n en la producci&#243;n nacional en ciertos
+						</p>
+						<p class="textItem " style="top:82.156611%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sectores, y destaca por su liderazgo en la producci&#243;n nacional
+						</p>
+						<p class="textItem " style="top:83.953787%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							azucarera, petroqu&#237;mica, agroqu&#237;mica, aluminio y tubos de acero.
+						</p>
+						<p class="textItem " style="top:87.548139%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El sector industrial manufacturero de Veracruz ocupa la quinta
+						</p>
+						<p class="textItem " style="top:89.345315%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							posici&#243;n del pa&#237;s. El 80 por ciento de los activos fijos industriales
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-290.html">290</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-291.html">291</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-292.html">292</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-293.html">293</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-294.html">294</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-295.html">295</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-296.html">296</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-297.html">297</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-298.html">298</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-299.html">299</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-300.html">300</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-301.html">301</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

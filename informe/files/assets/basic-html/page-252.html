@@ -1,0 +1,458 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "252";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-251.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;252 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-253.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-251.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">252 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-253.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0252.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:18.356868%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							egresados, en total 89 municipios atendidos con la participaci&#243;n
+						</p>
+						<p class="textItem " style="top:20.154044%;left:8.602151%;width:17.050691%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 1,393 j&#243;venes egresados.
+						</p>
+						<p class="textItem " style="top:23.620026%;left:8.602151%;width:28.417819%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.3.3. Formaci&#243;n de docentes
+						</p>
+						<p class="textItem " style="top:27.856226%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En Veracruz, la Direcci&#243;n de Educaci&#243;n Normal (DEN) tiene
+						</p>
+						<p class="textItem " style="top:29.653402%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							como misi&#243;n ofrecer un servicio educativo para la formaci&#243;n
+						</p>
+						<p class="textItem " style="top:31.450578%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de profesionales de la educaci&#243;n b&#225;sica con la calidad y las
+						</p>
+						<p class="textItem " style="top:33.247754%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							competencias requeridas. Tiene bajo su control a 18 instituciones
+						</p>
+						<p class="textItem " style="top:35.044929%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							formadoras y dos actualizadoras de docentes, en las cuales se
+						</p>
+						<p class="textItem " style="top:36.842105%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							imparten cinco licenciaturas en educaci&#243;n y tres maestr&#237;as, lo
+						</p>
+						<p class="textItem " style="top:38.639281%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que contribuye al desarrollo de competencias profesionales de los
+						</p>
+						<p class="textItem " style="top:40.436457%;left:8.602151%;width:29.339478%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							profesores de educaci&#243;n b&#225;sica y media superior.
+						</p>
+						<p class="textItem " style="top:44.030809%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estas instituciones atendieron una matr&#237;cula de 4,733 alumnos,
+						</p>
+						<p class="textItem " style="top:45.827985%;left:8.602151%;width:22.580645%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con la participaci&#243;n de 872 docentes.
+						</p>
+						<p class="textItem " style="top:49.422336%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Las escuelas p&#250;blicas cuentan con una plantilla docente integrada
+						</p>
+						<p class="textItem " style="top:51.219512%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por 561 profesores que atienden 2,647 estudiantes, se cuenta
+						</p>
+						<p class="textItem " style="top:53.016688%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con 311 docentes en escuelas particulares que atienden a 2,086
+						</p>
+						<p class="textItem " style="top:54.813864%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estudiantes; asimismo se cuenta con 36 docentes en los Centros
+						</p>
+						<p class="textItem " style="top:56.611040%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Actualizaci&#243;n del Magisterio (CAM) y la Escuela Normal
+						</p>
+						<p class="textItem " style="top:58.408216%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Superior Federal de Veracruz para cursos intensivos, que atienden
+						</p>
+						<p class="textItem " style="top:60.205392%;left:8.602151%;width:32.411674%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la actualizaci&#243;n de 250 docentes de educaci&#243;n b&#225;sica.
+						</p>
+						<p class="textItem " style="top:63.799743%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Un avance significativo, es la ampliaci&#243;n en la oferta de programas
+						</p>
+						<p class="textItem " style="top:65.596919%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de posgrado que ofrece la Benem&#233;rita Escuela Normal Veracruzana
+						</p>
+						<p class="textItem " style="top:67.394095%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con la Maestr&#237;a en Innovaci&#243;n de la Educaci&#243;n B&#225;sica, que se suma
+						</p>
+						<p class="textItem " style="top:69.191271%;left:8.602151%;width:38.709677%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a la Maestr&#237;a en Competencias Profesionales en Educaci&#243;n F&#237;sica.
+						</p>
+						<p class="textItem " style="top:72.785623%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Por otra parte, se desarrolla el Programa Integral para la Titulaci&#243;n
+						</p>
+						<p class="textItem " style="top:74.582798%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Docentes de las Escuelas Normales, instituido para apoyar
+						</p>
+						<p class="textItem " style="top:76.379974%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							preferentemente a las Normales que requieren incrementar su
+						</p>
+						<p class="textItem " style="top:78.177150%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							capacidad acad&#233;mica y el impulso a la segunda generaci&#243;n del
+						</p>
+						<p class="textItem " style="top:79.974326%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Centro Regional de Educaci&#243;n Normal Dr. Gonzalo Aguirre Beltr&#225;n
+						</p>
+						<p class="textItem " style="top:81.771502%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(CREN) en la Maestr&#237;a en Desarrollo Infantil, en convenio con la
+						</p>
+						<p class="textItem " style="top:83.568678%;left:8.602151%;width:26.267281%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Universidad Pedag&#243;gica Veracruzana (UPV).
+						</p>
+						<p class="textItem " style="top:87.163030%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tambi&#233;n, se integraron cuatro cuerpos acad&#233;micos de ocho
+						</p>
+						<p class="textItem " style="top:88.960205%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							docentes con perfil deseable de acuerdo a los criterios del Programa
+						</p>
+						<p class="textItem " style="top:18.356868%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Desarrollo Profesional Docente de Tipo Superior (PRODEP), lo
+						</p>
+						<p class="textItem " style="top:20.154044%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que sin duda promover&#225; el desarrollo de la investigaci&#243;n educativa
+						</p>
+						<p class="textItem " style="top:21.951220%;left:49.769585%;width:14.900154%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en las escuelas normales.
+						</p>
+						<p class="textItem " style="top:25.545571%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Universidad Pedag&#243;gica Veracruzana, es un organismo
+						</p>
+						<p class="textItem " style="top:27.342747%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							desconcentrado de la SEV, con la funci&#243;n de impartir educaci&#243;n
+						</p>
+						<p class="textItem " style="top:29.139923%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							superior para la actualizaci&#243;n y superaci&#243;n profesional del personal
+						</p>
+						<p class="textItem " style="top:30.937099%;left:49.769585%;width:24.423963%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							docente de educaci&#243;n b&#225;sica en servicio.
+						</p>
+						<p class="textItem " style="top:34.531451%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La oferta acad&#233;mica de la UPV abarca dos carreras para la
+						</p>
+						<p class="textItem " style="top:36.328626%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							formaci&#243;n inicial de docentes de educaci&#243;n b&#225;sica, seis maestr&#237;as
+						</p>
+						<p class="textItem " style="top:38.125802%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							como programas de desarrollo profesional y cinco diplomados de
+						</p>
+						<p class="textItem " style="top:39.922978%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							formaci&#243;n continua. De esta manera se ofrece el servicio a 1,808
+						</p>
+						<p class="textItem " style="top:41.720154%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estudiantes, atendidos por 303 docentes, en 37 sedes de estudio y
+						</p>
+						<p class="textItem " style="top:43.517330%;left:49.769585%;width:13.210445%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							14 centros regionales.
+						</p>
+						<p class="textItem " style="top:47.111682%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La coordinaci&#243;n de protecci&#243;n civil de la UPV, instal&#243; 14 unidades
+						</p>
+						<p class="textItem " style="top:48.908858%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							internas de protecci&#243;n civil, una por cada centro de estudios
+						</p>
+						<p class="textItem " style="top:50.706033%;left:49.769585%;width:34.254992%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							regional, lo que beneficia directamente a 1,300 alumnos.
+						</p>
+						<p class="textItem " style="top:54.300385%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se organiz&#243; la 3&#170; Carrera Atl&#233;tica de Convivencia UPV 2014, La
+						</p>
+						<p class="textItem " style="top:56.097561%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							meta es Xometla, con la participaci&#243;n de los 14 centros regionales
+						</p>
+						<p class="textItem " style="top:57.894737%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de estudio de las licenciaturas en Educaci&#243;n F&#237;sica y de la Maestr&#237;a
+						</p>
+						<p class="textItem " style="top:59.691913%;left:49.769585%;width:10.291859%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en Cultura F&#237;sica.
+						</p>
+						<p class="textItem " style="top:63.286264%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La UPV contin&#250;a ofreciendo a los pasantes de las licenciaturas de
+						</p>
+						<p class="textItem " style="top:65.083440%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#233;sta Universidad el Programa Cero Rezago en Titulaci&#243;n, para lo
+						</p>
+						<p class="textItem " style="top:66.880616%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cual se establecieron sedes de atenci&#243;n en los 14 centros regionales:
+						</p>
+						<p class="textItem " style="top:68.677792%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ciudad Mendoza, C&#243;rdoba, Cosamaloapan, Mart&#237;nez de la Torre,
+						</p>
+						<p class="textItem " style="top:70.474968%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Minatitl&#225;n, Naranjos-Amatl&#225;n, Orizaba, P&#225;nuco, Papantla, San
+						</p>
+						<p class="textItem " style="top:72.272144%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Andr&#233;s Tuxtla, Tantoyuca, Tuxpan, Veracruz, y Xalapa. El alcance
+						</p>
+						<p class="textItem " style="top:74.069320%;left:49.769585%;width:26.113671%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del programa fue de 781 alumnos inscritos.
+						</p>
+						<p class="textItem " style="top:77.663671%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Universidad Pedag&#243;gica Nacional (UPN) tiene como finalidad
+						</p>
+						<p class="textItem " style="top:79.460847%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fundamental presentar, desarrollar y orientar servicios educativos
+						</p>
+						<p class="textItem " style="top:81.258023%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de tipo superior encaminados a la formaci&#243;n de profesionales de la
+						</p>
+						<p class="textItem " style="top:83.055199%;left:49.769585%;width:29.185868%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							educaci&#243;n de acuerdo a las necesidades del pa&#237;s.
+						</p>
+						<p class="textItem " style="top:86.649551%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Su oferta acad&#233;mica se conforma de la Licenciatura en Educaci&#243;n
+						</p>
+						<p class="textItem " style="top:88.446727%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Preescolar y en Educaci&#243;n Primaria para el Medio Ind&#237;gena, en
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-247.html">247</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-248.html">248</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-249.html">249</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-250.html">250</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-251.html">251</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-252.html">252</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-253.html">253</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-254.html">254</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-255.html">255</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-256.html">256</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-257.html">257</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-258.html">258</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

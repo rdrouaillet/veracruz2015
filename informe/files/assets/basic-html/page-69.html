@@ -1,0 +1,476 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "69";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-68.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;69 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-70.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-68.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">69 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-70.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0069.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:34.562212%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:41.013825%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:42.089094%;width:19.969278%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>D e s a r r o l l o A g r o p e c u a r i o</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:62.826421%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:63.901690%;width:1.536098%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>6 7</b>
+						</p>
+						<p class="textItem " style="top:19.768935%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Es uno de los cultivos m&#225;s importantes en la cultura mexicana
+						</p>
+						<p class="textItem " style="top:21.566110%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por ello es que nos estamos posicionando entre los primeros
+						</p>
+						<p class="textItem " style="top:23.363286%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							lugares a nivel nacional en producci&#243;n, Veracruz est&#225; alcanzado
+						</p>
+						<p class="textItem " style="top:25.160462%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la autosuficiencia de este producto, ya que creci&#243; sustancialmente
+						</p>
+						<p class="textItem " style="top:26.957638%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el rendimiento de la producci&#243;n para alcanzar 1.3 millones de
+						</p>
+						<p class="textItem " style="top:28.754814%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							toneladas. Veracruz contin&#250;a el camino a ser el granero del sureste
+						</p>
+						<p class="textItem " style="top:30.551990%;left:10.752688%;width:4.915515%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del pa&#237;s.
+						</p>
+						<p class="textItem " style="top:33.761232%;left:10.752688%;width:19.508449%;height:1.925546%;font-size:0.600000em;color:#25171C;font-family:Stone Sans Std;">
+							Cultivos agroindustriales
+						</p>
+						<p class="textItem " style="top:36.842105%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Los cultivos industriales son muy importantes para el Estado de
+						</p>
+						<p class="textItem " style="top:38.639281%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz, destacando a nivel nacional entre los primeros lugares de
+						</p>
+						<p class="textItem " style="top:40.436457%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							producci&#243;n de ca&#241;a de az&#250;car, caf&#233;, hule, sorgo grano, tabaco y
+						</p>
+						<p class="textItem " style="top:42.233633%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							vainilla entre otros; la explotaci&#243;n de este grupo de cultivos genera
+						</p>
+						<p class="textItem " style="top:44.030809%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							una gran cantidad de mano de obra en las diferentes regiones
+						</p>
+						<p class="textItem " style="top:45.827985%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							donde en ocasiones son la actividad m&#225;s importante en t&#233;rminos
+						</p>
+						<p class="textItem " style="top:47.625160%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de derrama econ&#243;mica, como es el caso de la ca&#241;a de az&#250;car que
+						</p>
+						<p class="textItem " style="top:49.422336%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							contribuyen en gran medida a mantener el clima de estabilidad y
+						</p>
+						<p class="textItem " style="top:51.219512%;left:10.752688%;width:21.198157%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							paz social en gran parte del Estado.
+						</p>
+						<p class="textItem " style="top:54.813864%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En los cultivos agroindustriales, en caf&#233; destacamos como segundo
+						</p>
+						<p class="textItem " style="top:56.611040%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							productor nacional, con una participaci&#243;n del 25 por ciento del
+						</p>
+						<p class="textItem " style="top:58.408216%;left:10.752688%;width:19.047619%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							volumen cosechado en M&#233;xico.
+						</p>
+						<p class="textItem " style="top:62.002567%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El padr&#243;n nacional cafetalero registra para el Estado de Veracruz un
+						</p>
+						<p class="textItem " style="top:63.799743%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							total de 91,343 productores, que aprovechan 139,981 hect&#225;reas,
+						</p>
+						<p class="textItem " style="top:65.596919%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en 138,990 predios, distribuidas en 1,388 comunidades de 94
+						</p>
+						<p class="textItem " style="top:67.394095%;left:10.752688%;width:23.502304%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipios de 10 regiones geogr&#225;ficas.
+						</p>
+						<p class="textItem " style="top:70.988447%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el periodo que se informa, se cultiv&#243; una superficie de 460.6 mil
+						</p>
+						<p class="textItem " style="top:72.785623%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							hect&#225;reas de estos cultivos, lo que gener&#243; una producci&#243;n de 21.7
+						</p>
+						<p class="textItem " style="top:74.582798%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							millones de toneladas, con un valor estimado de 13,700 millones
+						</p>
+						<p class="textItem " style="top:76.379974%;left:10.752688%;width:5.683564%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de pesos.
+						</p>
+						<p class="textItem " style="top:79.589217%;left:10.752688%;width:14.132104%;height:1.925546%;font-size:0.600000em;color:#25171C;font-family:Stone Sans Std;">
+							Cultivos frut&#237;colas
+						</p>
+						<p class="textItem " style="top:82.670090%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La fruticultura es y seguir&#225; siendo una de las principales actividades
+						</p>
+						<p class="textItem " style="top:84.467266%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							agr&#237;colas del Estado de Veracruz, debido a su alta productividad
+						</p>
+						<p class="textItem " style="top:86.264442%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y ventajas competitivas. La Entidad destaca entre los primeros
+						</p>
+						<p class="textItem " style="top:88.061617%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							lugares de producci&#243;n a nivel nacional en productos como
+						</p>
+						<p class="textItem " style="top:19.768935%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							naranja, papaya, pi&#241;a y lim&#243;n persa; tambi&#233;n es un importante
+						</p>
+						<p class="textItem " style="top:21.566110%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							productor de toronja, tangerina, mandarina, pl&#225;tano, mango,
+						</p>
+						<p class="textItem " style="top:23.363286%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sand&#237;a y aguacate hass. En el periodo que se informa, la superficie
+						</p>
+						<p class="textItem " style="top:25.160462%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							establecida de estos cultivos fue de 312 mil hect&#225;reas, de la cual se
+						</p>
+						<p class="textItem " style="top:26.957638%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							obtuvo un volumen de producci&#243;n de 4.3 millones de toneladas y
+						</p>
+						<p class="textItem " style="top:28.754814%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el valor estimado de la producci&#243;n fue de 7,600 millones de pesos.
+						</p>
+						<p class="textItem " style="top:32.349166%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz gracias al trabajo de sus productores, continua siendo
+						</p>
+						<p class="textItem " style="top:34.146341%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el principal productor de pi&#241;a en M&#233;xico, las variedades Cayena
+						</p>
+						<p class="textItem " style="top:35.943517%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Lisa, MD2 y Champaca son las m&#225;s importantes, ya que re&#250;nen
+						</p>
+						<p class="textItem " style="top:37.740693%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							caracter&#237;sticas de excelente sabor, tama&#241;o y f&#225;cil manejo
+						</p>
+						<p class="textItem " style="top:39.537869%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							poscosecha, por lo que son altamente demandadas en los
+						</p>
+						<p class="textItem " style="top:41.335045%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							diferentes mercados tanto nacionales como extranjeros. En el
+						</p>
+						<p class="textItem " style="top:43.132221%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							periodo que se informa, se estableci&#243; una superficie de 32,000
+						</p>
+						<p class="textItem " style="top:44.929397%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							hect&#225;reas de las diferentes variedades de pi&#241;a, de las cuales se
+						</p>
+						<p class="textItem " style="top:46.726573%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							obtuvo una producci&#243;n de 548.1 mil toneladas, con un valor
+						</p>
+						<p class="textItem " style="top:48.523748%;left:51.920123%;width:22.580645%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estimado de 1,700 millones de pesos.
+						</p>
+						<p class="textItem " style="top:52.118100%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A pesar de que la citricultura del pa&#237;s est&#225; seriamente afectada por
+						</p>
+						<p class="textItem " style="top:53.915276%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la presencia de enfermedades de importancia cuarentenaria como
+						</p>
+						<p class="textItem " style="top:55.712452%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el Huanglongbing, Veracruz es por mucho el principal productor
+						</p>
+						<p class="textItem " style="top:57.509628%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de c&#237;tricos en M&#233;xico, con una participaci&#243;n del 49.7 por ciento de
+						</p>
+						<p class="textItem " style="top:59.306804%;left:51.920123%;width:31.336406%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la superficie y producci&#243;n nacional respectivamente.
+						</p>
+						<p class="textItem " style="top:62.901155%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Esta actividades de suma importanciapara el Estadodebidoaque en
+						</p>
+						<p class="textItem " style="top:64.698331%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los procesos de producci&#243;n, cosecha, empaque y comercializaci&#243;n,
+						</p>
+						<p class="textItem " style="top:66.495507%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se genera una gran cantidad de mano de obra y por ende una
+						</p>
+						<p class="textItem " style="top:68.292683%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							considerable derrama econ&#243;mica en las diferentes regiones donde
+						</p>
+						<p class="textItem " style="top:70.089859%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se desarrolla; destacan por su importancia la naranja, lim&#243;n persa,
+						</p>
+						<p class="textItem " style="top:71.887035%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mandarina, tangerina, toronja y lim&#243;n agrio. En 2014, la superficie
+						</p>
+						<p class="textItem " style="top:73.684211%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							establecida de los cultivos citr&#237;colas en Veracruz fue de 237.7 mil
+						</p>
+						<p class="textItem " style="top:75.481386%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							hect&#225;reas, la producci&#243;n fue de 3.2 millones de toneladas, con un
+						</p>
+						<p class="textItem " style="top:77.278562%;left:51.920123%;width:25.960061%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							valor estimado de 4,600 millones de pesos.
+						</p>
+						<p class="textItem " style="top:80.872914%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el Estado se producen casi 4 de cada 10 toneladas de lim&#243;n
+						</p>
+						<p class="textItem " style="top:82.670090%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en M&#233;xico y debido a que la empacadora de lim&#243;n persa m&#225;s
+						</p>
+						<p class="textItem " style="top:84.467266%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							importante de M&#233;xico se ubica en el municipio Mart&#237;nez de la
+						</p>
+						<p class="textItem " style="top:86.264442%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Torre hace posible que Veracruz exporte a Europa, Asia y Estados
+						</p>
+						<p class="textItem " style="top:88.061617%;left:51.920123%;width:14.285714%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Unidos dicho producto.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-64.html">64</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-65.html">65</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-66.html">66</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-67.html">67</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-68.html">68</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-69.html">69</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-70.html">70</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-71.html">71</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-72.html">72</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-73.html">73</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-74.html">74</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-75.html">75</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

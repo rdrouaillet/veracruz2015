@@ -1,0 +1,494 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "120";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-119.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;120 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-121.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-119.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">120 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-121.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0120.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:18.356868%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se inscribieron un total de 192 artistas participantes y 348 obras,
+						</p>
+						<p class="textItem " style="top:20.154044%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							129 artistas participaron con formato bidimensional y 63 con
+						</p>
+						<p class="textItem " style="top:21.951220%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							formato tridimensional, el 34 por ciento fueron mujeres y el 66
+						</p>
+						<p class="textItem " style="top:23.748395%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por ciento hombres, del total, 76 por ciento se inscribi&#243; por v&#237;a
+						</p>
+						<p class="textItem " style="top:25.545571%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							electr&#243;nica y 24 por ciento personalmente en alguno de los centros
+						</p>
+						<p class="textItem " style="top:27.342747%;left:8.602151%;width:23.502304%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de acopio definidos en la convocatoria.
+						</p>
+						<p class="textItem " style="top:30.937099%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El jurado compuesto por Taiyana Pimentel Paradoa, Edgar Orlaineta
+						</p>
+						<p class="textItem " style="top:32.734275%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Zu&#241;iga y Jos&#233; Luis Falconi Urrutia, curadores y cr&#237;ticos de arte de
+						</p>
+						<p class="textItem " style="top:34.531451%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							reconocida trayectoria a nivel nacional e internacional dieron a
+						</p>
+						<p class="textItem " style="top:36.328626%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							conocer el 20 de junio la lista de los 28 artistas seleccionados y las
+						</p>
+						<p class="textItem " style="top:38.125802%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							40 obras seleccionadas que integran la exposici&#243;n que se inaugur&#243;
+						</p>
+						<p class="textItem " style="top:39.922978%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en la Galer&#237;a de Arte Contempor&#225;neo en Xalapa y del cat&#225;logo
+						</p>
+						<p class="textItem " style="top:41.720154%;left:8.602151%;width:9.984639%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							conmemorativo.
+						</p>
+						<p class="textItem " style="top:45.314506%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La ganadora del Premio de Adquisici&#243;n de 150 mil pesos
+						</p>
+						<p class="textItem " style="top:47.111682%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							correspondiente al Formato Bidimensional por decisi&#243;n un&#225;nime
+						</p>
+						<p class="textItem " style="top:48.908858%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del jurado fue la obra: Identidades en construcci&#243;n, 2012-2013,
+						</p>
+						<p class="textItem " style="top:50.706033%;left:8.602151%;width:33.333333%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							impresi&#243;n inyecci&#243;n de tinta en papel, de la artista
+						</p>
+						<p class="textItem testString" style="top:50.706033%;left:42.549923%;width:5.529954%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<i>Alejandra</i>
+						</p>
+						<p class="textItem " style="top:52.503209%;left:8.602151%;width:9.062980%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<i>Zamudio Ferrao</i>
+						</p>
+						<p class="textItem " style="top:52.503209%;left:17.665131%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							.
+						</p>
+						<p class="textItem " style="top:56.097561%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							De igual manera, por decisi&#243;n un&#225;nime el jurado otorg&#243; el Premio
+						</p>
+						<p class="textItem " style="top:57.894737%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Adquisici&#243;n de 150 mil pesos en el Formato Tridimensional al
+						</p>
+						<p class="textItem " style="top:59.691913%;left:8.602151%;width:3.993856%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							artista:
+						</p>
+						<p class="textItem " style="top:59.691913%;left:13.210445%;width:16.436252%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<i>Miguel Rodr&#237;guez Sep&#250;lveda</i>
+						</p>
+						<p class="textItem " style="top:59.691913%;left:29.800307%;width:7.834101%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por su obra:
+						</p>
+						<p class="textItem " style="top:59.691913%;left:38.095238%;width:9.984639%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<i>1 kg de balas de</i>
+						</p>
+						<p class="textItem " style="top:61.489089%;left:8.602151%;width:12.135177%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<i>plata Libertad. 2014</i>
+						</p>
+						<p class="textItem " style="top:61.489089%;left:20.737327%;width:27.342550%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							, adem&#225;s, tambi&#233;n con car&#225;cter un&#225;nime, se
+						</p>
+						<p class="textItem " style="top:63.286264%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							hicieron tres menciones honor&#237;ficas a los artistas: Tamara Ibarra
+						</p>
+						<p class="textItem " style="top:65.083440%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por su obra, Curtain / El viento par&#243;, 2014; a Luis Alberto S&#225;nchez
+						</p>
+						<p class="textItem " style="top:66.880616%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ort&#237;z por la obra, No se murieron, 2014, y a Iv&#225;n Pi&#241;&#243;n Santiago
+						</p>
+						<p class="textItem " style="top:68.677792%;left:8.602151%;width:18.125960%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por su obra, El Salmoral 2011.
+						</p>
+						<p class="textItem " style="top:72.143774%;left:8.602151%;width:35.176651%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							4.1.3. Creaci&#243;n Art&#237;stica y Animaci&#243;n
+						</p>
+						<p class="textItem " style="top:74.326059%;left:8.602151%;width:7.526882%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							Cultural
+						</p>
+						<p class="textItem " style="top:78.562259%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con el objetivo de crear y fortalecer espacios de educaci&#243;n musical
+						</p>
+						<p class="textItem " style="top:80.359435%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que contribuyan al aprendizaje y formaci&#243;n de ni&#241;os y j&#243;venes
+						</p>
+						<p class="textItem " style="top:82.156611%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							veracruzanos, se han incrementado los espacios de recreaci&#243;n y
+						</p>
+						<p class="textItem " style="top:83.953787%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							tiempo libre, a trav&#233;s de la promoci&#243;n de la actividad musical en
+						</p>
+						<p class="textItem " style="top:85.750963%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el Estado. En esta materia, se realiz&#243; el Encuentro Estatal de Coros,
+						</p>
+						<p class="textItem " style="top:87.548139%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en los municipios de Alvarado y Veracruz, en el que participaron
+						</p>
+						<p class="textItem " style="top:89.345315%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							un total de 17 agrupaciones y ensambles corales provenientes de
+						</p>
+						<p class="textItem " style="top:18.356868%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Coatzacoalcos, C&#243;rdoba, Orizaba, Papantla, Veracruz, y Xalapa, y
+						</p>
+						<p class="textItem " style="top:20.154044%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se impartieron seis talleres de Direcci&#243;n orquestal y seguimiento en
+						</p>
+						<p class="textItem " style="top:21.951220%;left:49.769585%;width:29.339478%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los municipios de Minatitl&#225;n, Orizaba y Papantla.
+						</p>
+						<p class="textItem " style="top:25.545571%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se efectu&#243; un circuito de 12 conciertos did&#225;cticos en igual n&#250;mero
+						</p>
+						<p class="textItem " style="top:27.342747%;left:49.769585%;width:8.294931%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							demunicipios
+						</p>
+						<p class="textItem " style="top:27.471117%;left:58.064516%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							16
+						</p>
+						<p class="textItem " style="top:27.342747%;left:59.293395%;width:29.953917%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Estado, con la presentaci&#243;n de seis agrupaciones
+						</p>
+						<p class="textItem " style="top:29.139923%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							musicales; se entregaron 100 mil pesos de est&#237;mulo econ&#243;mico a
+						</p>
+						<p class="textItem " style="top:30.937099%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							m&#250;sicos veracruzanos que participaron en la elaboraci&#243;n de 20
+						</p>
+						<p class="textItem " style="top:32.734275%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							arreglos, de los cuales cuatro fueron corales y 16 instrumentales,
+						</p>
+						<p class="textItem " style="top:34.531451%;left:49.769585%;width:22.580645%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del repertorio tradicional de Veracruz.
+						</p>
+						<p class="textItem " style="top:38.125802%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Programa de Est&#237;mulo a la Creaci&#243;n y al Desarrollo Art&#237;stico
+						</p>
+						<p class="textItem " style="top:39.922978%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(PECDA) de Veracruz, es un Programa que otorga Est&#237;mulos
+						</p>
+						<p class="textItem " style="top:41.720154%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Econ&#243;micos a creadores, artistas e intelectuales, a trav&#233;s de una
+						</p>
+						<p class="textItem " style="top:43.517330%;left:49.769585%;width:12.903226%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							convocatoria p&#250;blica.
+						</p>
+						<p class="textItem " style="top:47.111682%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el 2013 se lanz&#243; la emisi&#243;n 19 de la convocatoria del PECDA, en
+						</p>
+						<p class="textItem " style="top:48.908858%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la que se eligieron a 61 personas de todas las &#225;reas del quehacer
+						</p>
+						<p class="textItem " style="top:50.706033%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							art&#237;stico, de las cuales; 40 eran j&#243;venes creadores, ocho con
+						</p>
+						<p class="textItem " style="top:52.503209%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							trayectoria, tres en desarrollo art&#237;stico individual, siete en difusi&#243;n
+						</p>
+						<p class="textItem " style="top:54.300385%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la cultura y las artes y tres en la categor&#237;a de grupos art&#237;sticos,
+						</p>
+						<p class="textItem " style="top:56.097561%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el programa tiene asignado un total de 3.6 millones de pesos y la
+						</p>
+						<p class="textItem " style="top:57.894737%;left:49.769585%;width:39.016897%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							primera de cinco ministraciones se realiz&#243; el pasado 5 de febrero.
+						</p>
+						<p class="textItem " style="top:61.489089%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Una de las estrategias para fortalecer la actividad cultural contenida
+						</p>
+						<p class="textItem " style="top:63.286264%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en el Plan Veracruzano de Desarrollo 2011-2016, es la que se refiere
+						</p>
+						<p class="textItem " style="top:65.083440%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a promover, en forma coordinada con la Secretar&#237;a de Educaci&#243;n
+						</p>
+						<p class="textItem " style="top:66.880616%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Veracruz, esquemas para fomentar la educaci&#243;n art&#237;stica en la
+						</p>
+						<p class="textItem " style="top:68.677792%;left:49.769585%;width:17.972350%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							juventud y ni&#241;ez veracruzana.
+						</p>
+						<p class="textItem " style="top:72.272144%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A trav&#233;s del IVEC con el apoyo del CONACULTA, se cre&#243; el
+						</p>
+						<p class="textItem " style="top:74.069320%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Programa Estatal de Desarrollo Cultural Infantil y Juvenil, que en
+						</p>
+						<p class="textItem " style="top:75.866496%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							coordinaci&#243;n con la SEV, atendi&#243; a una poblaci&#243;n de m&#225;s de 2,300
+						</p>
+						<p class="textItem " style="top:77.663671%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							escolares y maestros en 42 visitas guiadas de febrero a abril del
+						</p>
+						<p class="textItem " style="top:79.460847%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							2014, en los municipios de Banderilla, C&#243;rdoba, Teocelo, Veracruz,
+						</p>
+						<p class="textItem " style="top:81.258023%;left:49.769585%;width:8.602151%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Xalapa y Xico.
+						</p>
+						<p class="textItem " style="top:84.852375%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Como parte del programa se realiz&#243; el 4to. Festival ni&#241;as y ni&#241;os
+						</p>
+						<p class="textItem " style="top:86.649551%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por la Naturaleza y el Arte, con 145 actividades en 20 municipios
+						</p>
+						<p class="textItem " style="top:89.216945%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							16. Alvarado, Boca del R&#237;o, Coatepec, Coatzacoalcos, C&#243;rdoba, Chacaltianguis, Huatusco,
+						</p>
+						<p class="textItem " style="top:90.243902%;left:49.769585%;width:27.956989%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Ixmatlahuacan, Orizaba, Papantla, Poza Rica, Tlacotalpan y Veracruz.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-115.html">115</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-116.html">116</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-117.html">117</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-118.html">118</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-119.html">119</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-120.html">120</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-121.html">121</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-122.html">122</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-123.html">123</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-124.html">124</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-125.html">125</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-126.html">126</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,491 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "230";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-229.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;230 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-231.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-229.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">230 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-231.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0230.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:18.356868%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se gestionaron recursos por 963.3 millones de pesos, en
+						</p>
+						<p class="textItem " style="top:20.154044%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							participaci&#243;n conjunta de nivel federal y estatal, para la construcci&#243;n
+						</p>
+						<p class="textItem " style="top:21.951220%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y equipamiento del Hospital Regional de Alta Especialidad en el
+						</p>
+						<p class="textItem " style="top:23.748395%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Sur de Veracruz, el cual beneficiar&#225; a una poblaci&#243;n de 1,619,601
+						</p>
+						<p class="textItem " style="top:25.545571%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							habitantes de 32 municipios de la regi&#243;n de Los Tuxtlas y Olmeca.
+						</p>
+						<p class="textItem " style="top:29.139923%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Derivado del convenio de colaboraci&#243;n en materia de seguridad
+						</p>
+						<p class="textItem " style="top:30.937099%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							celebrado con la Secretar&#237;a de Marina, el Gobierno del Estado
+						</p>
+						<p class="textItem " style="top:32.734275%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							gestiona la construcci&#243;n del Hospital Naval en Coatzacoalcos, con
+						</p>
+						<p class="textItem " style="top:34.531451%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							una capacidad instalada de 24 camas censables y una inversi&#243;n
+						</p>
+						<p class="textItem " style="top:36.328626%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 174 millones de pesos provenientes de recursos de obra estatal
+						</p>
+						<p class="textItem " style="top:38.125802%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							directa, en beneficio de la poblaci&#243;n de responsabilidad de la
+						</p>
+						<p class="textItem " style="top:39.922978%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Secretar&#237;a de Marina y en casos de contingencia podr&#225; atender
+						</p>
+						<p class="textItem " style="top:41.720154%;left:8.602151%;width:13.978495%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							hasta seis mil personas.
+						</p>
+						<p class="textItem " style="top:45.314506%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Como resultado del convenio DGPLADES-CETR-CALIDAD-
+						</p>
+						<p class="textItem " style="top:47.111682%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							VER-01/2013 celebrado entre la Federaci&#243;n y el Estado, se
+						</p>
+						<p class="textItem " style="top:48.908858%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							rehabilitan 26 plantas de tratamiento de aguas residuales y se
+						</p>
+						<p class="textItem " style="top:50.706033%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							construyen 25; adem&#225;s se construyen 57 plantas potabilizadoras
+						</p>
+						<p class="textItem " style="top:52.503209%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de agua, con lo que se beneficia a igual n&#250;mero de hospitales
+						</p>
+						<p class="textItem " style="top:54.300385%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la Entidad. Adicionalmente en este convenio se incluye la
+						</p>
+						<p class="textItem " style="top:56.097561%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							construcci&#243;n, rehabilitaci&#243;n, mantenimiento y equipamiento de
+						</p>
+						<p class="textItem " style="top:57.894737%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							21 centros de salud y la construcci&#243;n del Centro de Atenci&#243;n
+						</p>
+						<p class="textItem " style="top:59.691913%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Integral al Paciente con Diabetes en la ciudad de Veracruz, con
+						</p>
+						<p class="textItem " style="top:61.489089%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							una inversi&#243;n total conjunta de 169.8 millones de pesos. Con
+						</p>
+						<p class="textItem " style="top:63.286264%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							aportaciones federales por 14.8 millones de pesos se construye
+						</p>
+						<p class="textItem " style="top:65.083440%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Cl&#237;nica Geri&#225;trica en la ciudad de Xalapa, con una poblaci&#243;n
+						</p>
+						<p class="textItem " style="top:66.880616%;left:8.602151%;width:23.655914%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							beneficiada de 17,852 adultos mayores
+						</p>
+						<p class="textItem " style="top:67.008986%;left:32.104455%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							24
+						</p>
+						<p class="textItem " style="top:66.880616%;left:33.026114%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							.
+						</p>
+						<p class="textItem " style="top:70.474968%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con recursos provenientes del Fondo de Desastres Naturales
+						</p>
+						<p class="textItem " style="top:72.272144%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(FONDEN), se concluyen las acciones de rehabilitaci&#243;n de 13
+						</p>
+						<p class="textItem " style="top:74.069320%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							unidades de salud por un monto autorizado de 6.3 millones de
+						</p>
+						<p class="textItem " style="top:75.866496%;left:8.602151%;width:3.379416%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pesos
+						</p>
+						<p class="textItem " style="top:75.994865%;left:11.981567%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							25
+						</p>
+						<p class="textItem " style="top:75.866496%;left:12.903226%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							.
+						</p>
+						<p class="textItem " style="top:86.521181%;left:8.602151%;width:18.586790%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							24. DGPLADES-CETR-GV-FOROSS-VER-01/13.
+						</p>
+						<p class="textItem " style="top:87.419769%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							25. Chacaltianguis; El Naranjo y Ni&#241;os H&#233;roes, municipio de las Choapas; G. Ramos Mill&#225;n,
+						</p>
+						<p class="textItem " style="top:88.318357%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							municipio de Hidalgotitl&#225;n; Ignacio de la Lave; Otatitl&#225;n; Salinas, municipio de Alvarado;
+						</p>
+						<p class="textItem " style="top:89.216945%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Saltabarranca, y del municipio de Tlalixcoyan las unidades de: Palo Gacho, Paso de la Boca,
+						</p>
+						<p class="textItem " style="top:90.243902%;left:8.602151%;width:16.897081%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Piedras Negras, San Antonio y Tenacalco.
+						</p>
+						<p class="textItem testString" style="top:9.756098%;left:49.769585%;width:26.113671%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							4. Formaci&#243;n del
+						</p>
+						<p class="textItem " style="top:12.451861%;left:49.769585%;width:27.342550%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							personal de salud
+						</p>
+						<p class="textItem " style="top:18.356868%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La formaci&#243;n y la capacitaci&#243;n del personal constituye un eje para
+						</p>
+						<p class="textItem " style="top:20.154044%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la mejora del servicio y atenci&#243;n que se presta en cada una de las
+						</p>
+						<p class="textItem " style="top:21.951220%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							unidades de SESVER; el Instituto Veracruzano para la Formaci&#243;n y la
+						</p>
+						<p class="textItem " style="top:23.748395%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Investigaci&#243;n en Salud, comprometido con la profesionalizaci&#243;n del
+						</p>
+						<p class="textItem " style="top:25.545571%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							personal y las necesidades de formaci&#243;n de cada zona del Estado,
+						</p>
+						<p class="textItem " style="top:27.342747%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							trabaja en especialidades m&#233;dicas relacionadas con las principales
+						</p>
+						<p class="textItem " style="top:29.139923%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							enfermedades que impactan la salud de los veracruzanos como
+						</p>
+						<p class="textItem " style="top:30.937099%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							son ginecolog&#237;a y obstetricia, pediatr&#237;a, anestesiolog&#237;a, cirug&#237;a
+						</p>
+						<p class="textItem " style="top:32.734275%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							general, medicina interna y urgencias medicoquir&#250;rgicas; &#233;stas
+						</p>
+						<p class="textItem " style="top:34.531451%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							son consideradas las de mayor demanda y por ello se fortalece la
+						</p>
+						<p class="textItem " style="top:36.328626%;left:49.769585%;width:22.580645%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							profesionalizaci&#243;n del factor humano.
+						</p>
+						<p class="textItem " style="top:39.922978%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En colaboraci&#243;n con la Escuela Nacional de Enfermer&#237;a y Obstetricia
+						</p>
+						<p class="textItem " style="top:41.720154%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la Universidad Nacional Aut&#243;noma de M&#233;xico se incorporan 22
+						</p>
+						<p class="textItem " style="top:43.517330%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							enfermeras generales a la Especialidad en Enfermer&#237;a de Cuidados
+						</p>
+						<p class="textItem " style="top:45.314506%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Paciente en Estado Cr&#237;tico y en Cuidados del Paciente
+						</p>
+						<p class="textItem " style="top:47.111682%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Pedi&#225;trico, cuya sede de campo cl&#237;nico corresponde al Hospital de
+						</p>
+						<p class="textItem " style="top:48.908858%;left:49.769585%;width:17.665131%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Alta Especialidad de Veracruz.
+						</p>
+						<p class="textItem " style="top:52.503209%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Egresaron 40 m&#233;dicos generales en la primera generaci&#243;n de
+						</p>
+						<p class="textItem " style="top:54.300385%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							especialistas en Geriatr&#237;a y Gerontolog&#237;a avalados por el Colegio
+						</p>
+						<p class="textItem " style="top:56.097561%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Mexicano de Geriatr&#237;a y Gerontolog&#237;a A.C. en la ciudad de Xalapa.
+						</p>
+						<p class="textItem " style="top:59.691913%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para contribuir a mejorar las condiciones de vida de los usuarios
+						</p>
+						<p class="textItem " style="top:61.489089%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y del personal y la creaci&#243;n de un entorno en el que se respeten
+						</p>
+						<p class="textItem " style="top:63.286264%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los derechos humanos, SESVER ha desarrollado diplomados de
+						</p>
+						<p class="textItem " style="top:65.083440%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							capacitaci&#243;n en desarrollo humano, habilidades gerenciales,
+						</p>
+						<p class="textItem " style="top:66.880616%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							formaci&#243;n de instructores y metodolog&#237;a educativa; este &#250;ltimo
+						</p>
+						<p class="textItem " style="top:68.677792%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se realiz&#243; en l&#237;nea, &#250;nico en su tipo para SESVER, con ello se
+						</p>
+						<p class="textItem " style="top:70.474968%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							promueve la modernizaci&#243;n tecnol&#243;gica y se facilita el acceso para
+						</p>
+						<p class="textItem " style="top:72.272144%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el desarrollo de competencias acad&#233;micas; a la fecha suman un
+						</p>
+						<p class="textItem " style="top:74.069320%;left:49.769585%;width:15.821813%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							total de 144 participantes.
+						</p>
+						<p class="textItem " style="top:77.663671%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Es prioridad para SESVER el fortalecimiento de los programas de
+						</p>
+						<p class="textItem " style="top:79.460847%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							atenci&#243;n enfocados a la contenci&#243;n de la muerte materna, c&#225;ncer
+						</p>
+						<p class="textItem " style="top:81.258023%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de mama y c&#233;rvico uterino, a trav&#233;s de programas de educaci&#243;n
+						</p>
+						<p class="textItem " style="top:83.055199%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							continua dirigidos al personal m&#233;dico y de enfermer&#237;a en contacto
+						</p>
+						<p class="textItem " style="top:84.852375%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con el paciente, con la finalidad de garantizar la identificaci&#243;n y
+						</p>
+						<p class="textItem " style="top:86.649551%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							tratamiento oportuno para este grupo de atenci&#243;n. Por ello, se
+						</p>
+						<p class="textItem " style="top:88.446727%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							desarrollaron los cursos de salud materna, manejo integral de
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-225.html">225</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-226.html">226</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-227.html">227</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-228.html">228</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-229.html">229</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-230.html">230</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-231.html">231</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-232.html">232</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-233.html">233</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-234.html">234</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-235.html">235</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-236.html">236</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

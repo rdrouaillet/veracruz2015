@@ -1,0 +1,473 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "404";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-403.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;404 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-405.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-403.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">404 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-405.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0404.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:18.356868%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem testString" style="top:18.356868%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:18.356868%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Del 3 al 26 de noviembre est&#225; programado el curso de
+						</p>
+						<p class="textItem " style="top:20.154044%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							capacitaci&#243;n autorizado por la SETEC denominado La
+						</p>
+						<p class="textItem " style="top:21.951220%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Funci&#243;n del Defensor P&#250;blico en el Nuevo Sistema de Justicia
+						</p>
+						<p class="textItem " style="top:23.748395%;left:12.288786%;width:24.270353%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Penal, dirigido a los Defensores P&#250;blicos.
+						</p>
+						<p class="textItem " style="top:27.214377%;left:8.602151%;width:28.417819%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							19.4. Compromiso de calidad
+						</p>
+						<p class="textItem " style="top:31.450578%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El mejoramiento continuo del servicio de defensa es el objetivo
+						</p>
+						<p class="textItem " style="top:33.247754%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fundamental que ha motivado la adopci&#243;n de un sistema de
+						</p>
+						<p class="textItem " style="top:35.044929%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							gesti&#243;n de la calidad, el cual ha sido considerado una decisi&#243;n
+						</p>
+						<p class="textItem " style="top:36.842105%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estrat&#233;gica del Instituto Veracruzano de la Defensor&#237;a P&#250;blica. La
+						</p>
+						<p class="textItem " style="top:38.639281%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							implementaci&#243;n y certificaci&#243;n del Sistema atiende las pol&#237;ticas de
+						</p>
+						<p class="textItem " style="top:40.436457%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							calidad establecidas, que habr&#225;n de apoyar para el cumplimiento
+						</p>
+						<p class="textItem " style="top:42.233633%;left:8.602151%;width:18.433180%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de los objetivos institucionales.
+						</p>
+						<p class="textItem " style="top:45.827985%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En mayo de este a&#241;o, por decisi&#243;n estrat&#233;gica de la Direcci&#243;n
+						</p>
+						<p class="textItem " style="top:47.625160%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							General, se iniciaron los trabajos para la adopci&#243;n de un sistema
+						</p>
+						<p class="textItem " style="top:49.422336%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de gesti&#243;n de la calidad, con lo cual se espera la mejora continua
+						</p>
+						<p class="textItem " style="top:51.219512%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y eficaz en los procesos de Servicio de Asistencia Jur&#237;dica y
+						</p>
+						<p class="textItem " style="top:53.016688%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Capacitaci&#243;n, actualizaci&#243;n y especializaci&#243;n de los Defensores
+						</p>
+						<p class="textItem " style="top:54.813864%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							P&#250;blicos, bajo los principios legales y reglamentarios de la norma
+						</p>
+						<p class="textItem " style="top:56.611040%;left:8.602151%;width:17.665131%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							internacional ISO 9001:2008.
+						</p>
+						<p class="textItem " style="top:60.205392%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Del 4 al 6 de junio se imparti&#243; el curso de enfoque a las Normas
+						</p>
+						<p class="textItem " style="top:62.002567%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ISO 9001:2008 con la asistencia de 26 servidores p&#250;blicos del
+						</p>
+						<p class="textItem " style="top:63.799743%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Instituto Veracruzano de la Defensor&#237;a P&#250;blica, asimismo, del 7 al 9
+						</p>
+						<p class="textItem " style="top:65.596919%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de julio se imparti&#243; el curso de Documentaci&#243;n y Estrategias para
+						</p>
+						<p class="textItem " style="top:67.394095%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Implementaci&#243;n de un Sistema de Gesti&#243;n de la Calidad, con
+						</p>
+						<p class="textItem " style="top:69.191271%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la participaci&#243;n de L&#237;deres de Proceso, Coadyuvantes y Auditor
+						</p>
+						<p class="textItem " style="top:70.988447%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Interno, con la finalidad de obtener los elementos necesarios para
+						</p>
+						<p class="textItem " style="top:72.785623%;left:8.602151%;width:31.336406%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							identificar los niveles de documentaci&#243;n del sistema.
+						</p>
+						<p class="textItem testString" style="top:75.738126%;left:8.602151%;width:32.718894%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							20. Fortalecimiento y
+						</p>
+						<p class="textItem " style="top:78.433890%;left:8.602151%;width:31.797235%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							desarrollo municipal
+						</p>
+						<p class="textItem " style="top:84.467266%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para el logro y fortalecimiento al desarrollo municipal, el Gobierno
+						</p>
+						<p class="textItem " style="top:86.264442%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estatal ha mantenido una constante actividad para la atenci&#243;n
+						</p>
+						<p class="textItem " style="top:88.061617%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de los 212 ayuntamientos a trav&#233;s del Instituto Veracruzano de
+						</p>
+						<p class="textItem " style="top:18.356868%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Desarrollo Municipal (INVEDEM), se puso en marcha el Programa
+						</p>
+						<p class="textItem " style="top:20.154044%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Asesor&#237;a y Capacitaci&#243;n de las Autoridades y Servidores P&#250;blicos
+						</p>
+						<p class="textItem " style="top:21.951220%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Municipales, con el debido respeto de su autonom&#237;a constitucional.
+						</p>
+						<p class="textItem " style="top:23.748395%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el periodo que se informa, se capacitaron 5,889 funcionarios
+						</p>
+						<p class="textItem " style="top:25.545571%;left:49.769585%;width:9.216590%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipales en
+						</p>
+						<p class="textItem " style="top:25.545571%;left:59.447005%;width:29.800307%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							40 jornadas, para contribuir con los avances del
+						</p>
+						<p class="textItem " style="top:27.342747%;left:49.769585%;width:28.417819%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							desarrollo institucional de los gobiernos locales.
+						</p>
+						<p class="textItem " style="top:30.937099%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con el objetode dar a conocer las reglas de operaci&#243;nde los recursos
+						</p>
+						<p class="textItem " style="top:32.734275%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Fondo de Aportaciones para la Infraestructura Social (FAIS), a
+						</p>
+						<p class="textItem " style="top:34.531451%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							las administraciones p&#250;blicas municipales, en coordinaci&#243;n con
+						</p>
+						<p class="textItem " style="top:36.328626%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Delegaci&#243;n de la Secretar&#237;a de Desarrollo Social (SEDESOL), se
+						</p>
+						<p class="textItem " style="top:38.125802%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							realiz&#243; el taller de Capacitaci&#243;n a Presidentes Municipales, S&#237;ndicos,
+						</p>
+						<p class="textItem " style="top:39.922978%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tesoreros y Contralores, en el que se cont&#243; con la participaci&#243;n de
+						</p>
+						<p class="textItem " style="top:41.720154%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							977 servidores p&#250;blicos de 194 municipios durante tres jornadas:
+						</p>
+						<p class="textItem " style="top:43.517330%;left:49.769585%;width:27.649770%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con sedes en Coatzacoalcos, Tuxpan y Xalapa.
+						</p>
+						<p class="textItem " style="top:47.111682%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Encoordinaci&#243;ncon laDirecci&#243;nGeneral de Innovaci&#243;nTecnol&#243;gica
+						</p>
+						<p class="textItem " style="top:48.908858%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la Secretar&#237;a de Finanzas y Planeaci&#243;n se imparti&#243; el Curso-Taller
+						</p>
+						<p class="textItem " style="top:50.706033%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Dise&#241;o de Portales Web para Gobiernos Municipales, orientado a
+						</p>
+						<p class="textItem " style="top:52.503209%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los responsables de inform&#225;tica de cada municipio desarrollado en
+						</p>
+						<p class="textItem " style="top:54.300385%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cuatro jornadas, en el que participaron 197 servidoras y servidores
+						</p>
+						<p class="textItem " style="top:56.097561%;left:49.769585%;width:16.897081%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							p&#250;blicos de 147 municipios.
+						</p>
+						<p class="textItem " style="top:59.691913%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con el Instituto Nacional para el Federalismo y el Desarrollo
+						</p>
+						<p class="textItem " style="top:61.489089%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Municipal-INAFED, se realiz&#243; el Curso Taller Facultades y
+						</p>
+						<p class="textItem " style="top:63.286264%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Obligaciones del Secretario del Ayuntamiento, en el que se
+						</p>
+						<p class="textItem " style="top:65.083440%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							desarrollaron tres jornadas al que asistieron 198 servidoras y
+						</p>
+						<p class="textItem " style="top:66.880616%;left:49.769585%;width:23.195084%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							servidores p&#250;blicos de 153 municipios.
+						</p>
+						<p class="textItem " style="top:70.474968%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se dio especial atenci&#243;n a la instalaci&#243;n de los 212 ayuntamientos,
+						</p>
+						<p class="textItem " style="top:72.272144%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por lo que se realizaron tres jornadas para impartir el Curso Criterios
+						</p>
+						<p class="textItem " style="top:74.069320%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para la Elaboraci&#243;n del Plan Municipal de Desarrollo 2014-2017,
+						</p>
+						<p class="textItem " style="top:75.866496%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con el prop&#243;sito de apoyar a todos los gobiernos municipales
+						</p>
+						<p class="textItem " style="top:77.663671%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en la elaboraci&#243;n, aprobaci&#243;n y publicaci&#243;n. Adem&#225;s se tuvo
+						</p>
+						<p class="textItem " style="top:79.460847%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la participaci&#243;n de ponentes del Instituto Veracruzano de las
+						</p>
+						<p class="textItem " style="top:81.258023%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Mujeres, la Comisi&#243;n Estatal de los Derechos Humanos Veracruz,
+						</p>
+						<p class="textItem " style="top:83.055199%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Procuradur&#237;a General de Justicia en el Estado, Subsecretar&#237;a de
+						</p>
+						<p class="textItem " style="top:84.852375%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Planeaci&#243;n, Secretar&#237;a de Salud, Oficina de Programa de Gobierno,
+						</p>
+						<p class="textItem " style="top:86.649551%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Direcci&#243;n General de Innovaci&#243;n Tecnol&#243;gica, Direcci&#243;n General
+						</p>
+						<p class="textItem " style="top:88.446727%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Telecomunicaciones de la SIOP, Instituto Veracruzano de
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-399.html">399</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-400.html">400</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-401.html">401</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-402.html">402</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-403.html">403</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-404.html">404</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-405.html">405</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-406.html">406</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-407.html">407</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-408.html">408</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-409.html">409</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-410.html">410</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

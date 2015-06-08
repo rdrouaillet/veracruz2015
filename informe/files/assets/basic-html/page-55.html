@@ -1,0 +1,488 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "55";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-54.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;55 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-56.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-54.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">55 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-56.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0055.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:30.875576%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:37.327189%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:38.402458%;width:27.496160%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>D e s a r r o l l o E c o n &#243; m i c o y P o r t u a r i o</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:66.666667%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:67.741935%;width:1.536098%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>5 3</b>
+						</p>
+						<p class="textItem " style="top:16.174583%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Las inversiones privadas de las empresas cesionarias en las tres
+						</p>
+						<p class="textItem " style="top:17.971759%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Administraciones Portuarias Integrales en el primer semestre de
+						</p>
+						<p class="textItem " style="top:19.768935%;left:10.752688%;width:27.342550%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							2014, ascendieron a 166.4 millones de pesos.
+						</p>
+						<p class="textItem " style="top:23.363286%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el periodo enero-juliode 2014, los puertos de altura veracruzanos
+						</p>
+						<p class="textItem " style="top:25.160462%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							registraron un movimiento de 35.8 millones de toneladas de carga,
+						</p>
+						<p class="textItem " style="top:26.957638%;left:10.752688%;width:12.442396%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dividida como sigue:
+						</p>
+						<p class="textItem testString" style="top:30.551990%;left:13.978495%;width:25.806452%;height:1.797176%;font-size:0.600000em;color:#25171C;font-family:Delima MTStd;">
+							Movimiento de Carga General
+						</p>
+						<p class="textItem " style="top:32.220796%;left:13.978495%;width:15.360983%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>(millones de toneladas)</b>
+						</p>
+						<p class="textItem " style="top:34.659820%;left:19.969278%;width:4.454685%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Puerto</b>
+						</p>
+						<p class="textItem " style="top:34.659820%;left:33.947773%;width:10.599078%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Enero-Julio 2014</b>
+						</p>
+						<p class="textItem " style="top:36.585366%;left:13.978495%;width:8.755760%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Coatzacoalcos
+						</p>
+						<p class="textItem " style="top:36.585366%;left:38.709677%;width:2.918587%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							16.3
+						</p>
+						<p class="textItem " style="top:38.510911%;left:13.978495%;width:4.608295%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tuxpan
+						</p>
+						<p class="textItem " style="top:38.510911%;left:39.477727%;width:1.996928%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							7.2
+						</p>
+						<p class="textItem " style="top:40.308087%;left:13.978495%;width:5.222734%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz
+						</p>
+						<p class="textItem " style="top:40.308087%;left:38.709677%;width:2.918587%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							12.3
+						</p>
+						<p class="textItem " style="top:42.233633%;left:13.978495%;width:2.918587%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Total</b>
+						</p>
+						<p class="textItem " style="top:42.233633%;left:38.709677%;width:2.918587%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>35.8</b>
+						</p>
+						<p class="textItem " style="top:44.672657%;left:13.978495%;width:30.721966%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Fuente: Secretar&#237;a de Comunicaciones y Transportes, Coordinaci&#243;n General
+						</p>
+						<p class="textItem " style="top:45.699615%;left:17.357911%;width:12.596006%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							de Puertos y Marina Mercante.
+						</p>
+						<p class="textItem " style="top:48.908858%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En este periodo, la APITUX report&#243; un movimiento de 7.2 millones
+						</p>
+						<p class="textItem " style="top:50.706033%;left:10.752688%;width:23.502304%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de toneladas, mientras que la APIVER
+						</p>
+						<p class="textItem " style="top:50.834403%;left:34.254992%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							6
+						</p>
+						<p class="textItem " style="top:50.706033%;left:35.023041%;width:15.207373%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							movi&#243; 12.3 millones de
+						</p>
+						<p class="textItem " style="top:52.503209%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							toneladas y la APICOATZA registr&#243; unmovimiento de 16.3millones
+						</p>
+						<p class="textItem " style="top:54.300385%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de toneladas, los cuales representan en conjunto un incremento
+						</p>
+						<p class="textItem " style="top:56.097561%;left:10.752688%;width:37.634409%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 0.16 por ciento respecto al mismo periodo del a&#241;o anterior.
+						</p>
+						<p class="textItem " style="top:59.691913%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A trav&#233;s de la empresa estatal API Sistema Portuario Veracruzano
+						</p>
+						<p class="textItem " style="top:61.489089%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(SPV), la presente Administraci&#243;n contin&#250;a con los trabajos t&#233;cnicos
+						</p>
+						<p class="textItem " style="top:63.286264%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para la construcci&#243;n de la Marina Veramar, en el municipio de
+						</p>
+						<p class="textItem " style="top:65.083440%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz. A la fecha, se encuentran construidos al 100 por ciento
+						</p>
+						<p class="textItem " style="top:66.880616%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							tres muelles flotantes para 69 posiciones de atraque, as&#237; como la
+						</p>
+						<p class="textItem " style="top:68.677792%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							escollera para protecci&#243;n de embarcaciones con una longitud de
+						</p>
+						<p class="textItem " style="top:70.474968%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							460 metros; aunado al dragado para la construcci&#243;n del canal
+						</p>
+						<p class="textItem " style="top:72.272144%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de pescadores, canal de navegaci&#243;n de acceso a la marina y sus
+						</p>
+						<p class="textItem " style="top:74.069320%;left:10.752688%;width:18.894009%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							d&#225;rsenas en la zona de muelles.
+						</p>
+						<p class="textItem " style="top:77.535302%;left:10.752688%;width:22.427035%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							4.2. Puerto de Alvarado
+						</p>
+						<p class="textItem " style="top:81.771502%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Puerto de Alvarado se ha constituido como un polo estrat&#233;gico
+						</p>
+						<p class="textItem " style="top:83.568678%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para el sector energ&#233;tico, esto, debido a las acciones que realiza
+						</p>
+						<p class="textItem " style="top:85.365854%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							PEMEX para atender las necesidades del Activo Integral Holok
+						</p>
+						<p class="textItem " style="top:90.243902%;left:10.752688%;width:19.815668%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							6. Administraci&#243;n Portuaria Integral de Veracruz.
+						</p>
+						<p class="textItem " style="top:16.174583%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Temoa, por lo que el Gobierno del Estado ha enfocado su trabajo
+						</p>
+						<p class="textItem " style="top:17.971759%;left:51.920123%;width:27.342550%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en la modernizaci&#243;n y promoci&#243;n del recinto.
+						</p>
+						<p class="textItem " style="top:21.566110%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En coordinaci&#243;n con el Gobierno Federal, se realizan los estudios
+						</p>
+						<p class="textItem " style="top:23.363286%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de factibilidad y el anteproyecto general para el Plan Maestro y
+						</p>
+						<p class="textItem " style="top:25.160462%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Proyecto Ejecutivo de la Terminal de Abastecimiento a Plataformas
+						</p>
+						<p class="textItem " style="top:26.957638%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Explotaci&#243;n y Producci&#243;n de PEMEX, a fin de dar servicio y
+						</p>
+						<p class="textItem " style="top:28.754814%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							abastecer a las plataformas que operan en la zona. La inversi&#243;n
+						</p>
+						<p class="textItem " style="top:30.551990%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							prevista para este proyecto se estima en 2,000 millones de pesos
+						</p>
+						<p class="textItem " style="top:32.349166%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y se contempla su factibilidad bajo un esquema de Alianza P&#250;blico
+						</p>
+						<p class="textItem " style="top:34.146341%;left:51.920123%;width:8.448541%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Privada (APP).
+						</p>
+						<p class="textItem " style="top:37.740693%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La empresa Chet Morrison Contractor, actual cesionario de este
+						</p>
+						<p class="textItem " style="top:39.537869%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							puerto, contin&#250;a con el estudio del proyecto para la construcci&#243;n
+						</p>
+						<p class="textItem " style="top:41.335045%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de un astillero ecol&#243;gico. Otras empresas como British Petroleum
+						</p>
+						<p class="textItem " style="top:43.132221%;left:51.920123%;width:22.580645%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							analizan realizar proyectos en la zona.
+						</p>
+						<p class="textItem " style="top:46.084724%;left:51.920123%;width:28.264209%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							5. Productividad e
+						</p>
+						<p class="textItem " style="top:48.780488%;left:51.920123%;width:17.204301%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							innovaci&#243;n
+						</p>
+						<p class="textItem " style="top:54.557125%;left:51.920123%;width:33.179724%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							5.1. Programa de Est&#237;mulos para la
+						</p>
+						<p class="textItem " style="top:56.867779%;left:51.920123%;width:15.514593%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							Innovaci&#243;n (PEI)
+						</p>
+						<p class="textItem " style="top:61.103979%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con el objetivo de estimular la inversi&#243;n en investigaci&#243;n y
+						</p>
+						<p class="textItem " style="top:62.901155%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							desarrollo tecnol&#243;gico, por medio de este Programa se otorgan
+						</p>
+						<p class="textItem " style="top:64.698331%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							apoyos econ&#243;micos a las empresas que realizan proyectos de
+						</p>
+						<p class="textItem " style="top:66.495507%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Investigaci&#243;n, Desarrollo de Tecnolog&#237;a e Innovaci&#243;n (IDTI), para
+						</p>
+						<p class="textItem " style="top:68.292683%;left:51.920123%;width:28.110599%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							favorecer la generaci&#243;n de empleos de calidad.
+						</p>
+						<p class="textItem " style="top:71.887035%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En este periodo de Informe, se otorgaron apoyos econ&#243;micos a
+						</p>
+						<p class="textItem " style="top:73.684211%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							18 proyectos veracruzanos de innovaci&#243;n y desarrollo tecnol&#243;gico
+						</p>
+						<p class="textItem " style="top:75.481386%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en las &#225;reas de agroindustria, construcci&#243;n, energ&#237;a, farmac&#233;utica,
+						</p>
+						<p class="textItem " style="top:77.278562%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							maquinaria, qu&#237;mica, salud y tecnolog&#237;as de la informaci&#243;n por
+						</p>
+						<p class="textItem " style="top:79.075738%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							un monto de 85 millones de pesos. Estos apoyos se realizaron en
+						</p>
+						<p class="textItem " style="top:80.872914%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							coordinaci&#243;n con el Consejo Nacional de Ciencia y Tecnolog&#237;a
+						</p>
+						<p class="textItem " style="top:82.670090%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(CONACYT) en losmunicipios de Atoyac, Coatepec, Coatzacoalcos,
+						</p>
+						<p class="textItem " style="top:84.467266%;left:51.920123%;width:16.436252%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Orizaba, Xalapa y Veracruz.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-50.html">50</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-51.html">51</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-52.html">52</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-53.html">53</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-54.html">54</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-55.html">55</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-56.html">56</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-57.html">57</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-58.html">58</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-59.html">59</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-60.html">60</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-61.html">61</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

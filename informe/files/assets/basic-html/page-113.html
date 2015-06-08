@@ -1,0 +1,509 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "113";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-112.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;113 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-114.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-112.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">113 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-114.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0113.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:41.167435%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:47.619048%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:48.694316%;width:5.990783%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>T u r i s m o</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:55.453149%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:56.528418%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>1 1 1</b>
+						</p>
+						<p class="textItem " style="top:18.356868%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y Xalapa; al modernizar la infraestructura y el equipamiento
+						</p>
+						<p class="textItem " style="top:20.154044%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de localidades tur&#237;sticas del Estado que permitan atender las
+						</p>
+						<p class="textItem " style="top:21.951220%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							necesidades del sector; contribuir en el cuidado y preservaci&#243;n del
+						</p>
+						<p class="textItem " style="top:23.748395%;left:10.752688%;width:34.869432%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							patrimonio cultural, hist&#243;rico con los siguientes proyectos:
+						</p>
+						<p class="textItem " style="top:27.342747%;left:13.517665%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem testString" style="top:27.342747%;left:12.903226%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:27.342747%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estudios preliminares y conceptualizaci&#243;n, an&#225;lisis y
+						</p>
+						<p class="textItem " style="top:29.139923%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fundamentaci&#243;n de dise&#241;o de proyecto para la edificaci&#243;n
+						</p>
+						<p class="textItem " style="top:30.937099%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Centro de Convenciones de C&#243;rdoba, en el municipio de
+						</p>
+						<p class="textItem " style="top:32.734275%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							C&#243;rdoba con una inversi&#243;n de 10 millones de pesos, lo que
+						</p>
+						<p class="textItem " style="top:34.531451%;left:14.439324%;width:21.044547%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							permitir&#225; su construcci&#243;n en 2015.
+						</p>
+						<p class="textItem " style="top:38.125802%;left:13.517665%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:38.125802%;left:12.903226%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:38.125802%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Primera etapa del Cl&#250;ster Tur&#237;stico de Xalapa y la regi&#243;n, con
+						</p>
+						<p class="textItem " style="top:39.922978%;left:14.439324%;width:19.815668%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							6 millones de pesos de inversi&#243;n.
+						</p>
+						<p class="textItem " style="top:43.517330%;left:13.517665%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:43.517330%;left:12.903226%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:43.517330%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Primera etapa de la modernizaci&#243;n del Centro de
+						</p>
+						<p class="textItem " style="top:45.314506%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Exposiciones y Convenciones de Veracruz, en el municipio
+						</p>
+						<p class="textItem " style="top:47.111682%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Boca del R&#237;o, con una inversi&#243;n de 20 millones de pesos.
+						</p>
+						<p class="textItem " style="top:50.706033%;left:13.517665%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:50.706033%;left:12.903226%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:50.706033%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Proyecto Ejecutivo para el Centro Regional para la
+						</p>
+						<p class="textItem " style="top:52.503209%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							observaci&#243;n de Aves en la Localidad de Chichicaxtle,
+						</p>
+						<p class="textItem " style="top:54.300385%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipio de Puente Nacional, con inversi&#243;n de un mill&#243;n
+						</p>
+						<p class="textItem " style="top:56.097561%;left:14.439324%;width:5.683564%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de pesos.
+						</p>
+						<p class="textItem " style="top:59.691913%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Como resultado del impulso a este importante sector econ&#243;mico
+						</p>
+						<p class="textItem " style="top:61.489089%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en el Estado, y derivado del cumplimiento del Compromiso
+						</p>
+						<p class="textItem " style="top:63.286264%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Gubernamental 218 del Presidente de la Rep&#250;blica, se continu&#243;
+						</p>
+						<p class="textItem " style="top:65.083440%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con los trabajos de Rescate del Centro Hist&#243;rico de Veracruz,
+						</p>
+						<p class="textItem " style="top:66.880616%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con una inversi&#243;n de 20 millones de pesos de recursos federales,
+						</p>
+						<p class="textItem " style="top:68.677792%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							espec&#237;ficamente en la Plaza de la Rep&#250;blica para su equipamiento
+						</p>
+						<p class="textItem " style="top:70.474968%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y el mejoramiento de la imagen urbana y fachadas ubicadas en
+						</p>
+						<p class="textItem " style="top:72.272144%;left:10.752688%;width:10.445469%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Avenida Morelos.
+						</p>
+						<p class="textItem " style="top:75.866496%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Los trabajos se realizaron en coordinaci&#243;n con el Instituto
+						</p>
+						<p class="textItem " style="top:77.663671%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Nacional de Antropolog&#237;a e Historia (INAH), el Sistema de Agua
+						</p>
+						<p class="textItem " style="top:79.460847%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y Saneamiento, la Administraci&#243;n Portuaria Integral, la Comisi&#243;n
+						</p>
+						<p class="textItem " style="top:81.258023%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Federal de Electricidad, y la Direcci&#243;n del Centro Hist&#243;rico del
+						</p>
+						<p class="textItem " style="top:83.055199%;left:10.752688%;width:15.821813%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ayuntamiento de Veracruz
+						</p>
+						<p class="textItem " style="top:86.649551%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Adem&#225;s de la inversi&#243;n entre Gobierno del Estado y la Federaci&#243;n se
+						</p>
+						<p class="textItem " style="top:88.446727%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							gestion&#243; ante la Administraci&#243;n Portuaria Integral la construcci&#243;n
+						</p>
+						<p class="textItem " style="top:18.356868%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del colector pluvial Empar&#225;n con una inversi&#243;n aproximada de 16
+						</p>
+						<p class="textItem " style="top:20.154044%;left:51.920123%;width:33.640553%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							millones de pesos en la zona de la Plaza de la Rep&#250;blica.
+						</p>
+						<p class="textItem " style="top:23.748395%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se particip&#243; y dio seguimiento a los objetivos del Fideicomiso
+						</p>
+						<p class="textItem " style="top:25.545571%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							P&#250;blico de Administraci&#243;n, Inversi&#243;n y fuente de pago para el
+						</p>
+						<p class="textItem " style="top:27.342747%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Rescate del Centro Hist&#243;rico de Veracruz, creado el 15 de octubre
+						</p>
+						<p class="textItem " style="top:29.139923%;left:51.920123%;width:26.267281%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 2013, a trav&#233;s de las siguientes acciones:
+						</p>
+						<p class="textItem " style="top:32.734275%;left:54.685100%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:32.734275%;left:54.070661%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:32.734275%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Rescatar sus inmuebles, tradiciones, espacios p&#250;blicos,
+						</p>
+						<p class="textItem " style="top:34.531451%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							trayectos tur&#237;sticos y en general en todos aquellos elementos
+						</p>
+						<p class="textItem " style="top:36.328626%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que permitan al Estado la preservaci&#243;n de su historia, as&#237;
+						</p>
+						<p class="textItem " style="top:38.125802%;left:55.606759%;width:3.840246%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							como;
+						</p>
+						<p class="textItem " style="top:41.720154%;left:54.685100%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:41.720154%;left:54.070661%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:41.720154%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Promover, organizar y coordinar entre las distintas
+						</p>
+						<p class="textItem " style="top:43.517330%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dependencias de los gobiernos Federal y Estatal, el sector
+						</p>
+						<p class="textItem " style="top:45.314506%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							privado y la sociedad civil, las acciones, obras y servicios
+						</p>
+						<p class="textItem " style="top:47.111682%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que propicien la recuperaci&#243;n, rehabilitaci&#243;n, conservaci&#243;n,
+						</p>
+						<p class="textItem " style="top:48.908858%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							protecci&#243;n y mantenimiento integral del Centro Hist&#243;rico de
+						</p>
+						<p class="textItem " style="top:50.706033%;left:55.606759%;width:5.529954%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz.
+						</p>
+						<p class="textItem " style="top:54.300385%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El fideicomiso es presidido por el Gobernador del Estado y est&#225;
+						</p>
+						<p class="textItem " style="top:56.097561%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							conformado por los titulares de las Secretar&#237;as de Turismo y Cultura;
+						</p>
+						<p class="textItem " style="top:57.894737%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Finanzas y Planeaci&#243;n; Desarrollo Social; Desarrollo Econ&#243;mico y
+						</p>
+						<p class="textItem " style="top:59.691913%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Portuario; y de Educaci&#243;n, adem&#225;s el Ayuntamiento de Veracruz, la
+						</p>
+						<p class="textItem " style="top:61.489089%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Administraci&#243;n Portuaria Integral de Veracruz, el Instituto Nacional
+						</p>
+						<p class="textItem " style="top:63.286264%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Antropolog&#237;a e Historia (INAH), el Instituto Veracruzano de la
+						</p>
+						<p class="textItem " style="top:65.083440%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Cultura (IVEC), el Sistema de Agua y Saneamiento Metropolitano;
+						</p>
+						<p class="textItem " style="top:66.880616%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la C&#225;mara Nacional de Comercio de Veracruz; la C&#225;mara Mexicana
+						</p>
+						<p class="textItem " style="top:68.677792%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la Industria de la Construcci&#243;n de Veracruz; la Asociaci&#243;n de
+						</p>
+						<p class="textItem " style="top:70.474968%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Hoteles y Moteles de Veracruz-Boca del R&#237;o; la C&#225;mara Nacional
+						</p>
+						<p class="textItem " style="top:72.272144%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la Industria de Restaurantes y Alimentos Condimentados de
+						</p>
+						<p class="textItem " style="top:74.069320%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz; el Colegio de Ingenieros de Veracruz y el Colegio de
+						</p>
+						<p class="textItem " style="top:75.866496%;left:51.920123%;width:14.592934%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Arquitectos de Veracruz.
+						</p>
+						<p class="textItem " style="top:79.332478%;left:51.920123%;width:26.420891%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							3.2. Infraestructura Tur&#237;stica
+						</p>
+						<p class="textItem " style="top:83.568678%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Las inversiones en infraestructura tur&#237;stica en el Estado, juegan un
+						</p>
+						<p class="textItem " style="top:85.365854%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							papel importante en la econom&#237;a local y regional de Veracruz, ya
+						</p>
+						<p class="textItem " style="top:87.163030%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que genera, adem&#225;s de empleos, una mayor y mejor oferta para
+						</p>
+						<p class="textItem " style="top:88.960205%;left:51.920123%;width:6.605223%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los turistas.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-108.html">108</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-109.html">109</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-110.html">110</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-111.html">111</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-112.html">112</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-113.html">113</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-114.html">114</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-115.html">115</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-116.html">116</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-117.html">117</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-118.html">118</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-119.html">119</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

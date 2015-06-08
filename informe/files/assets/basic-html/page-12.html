@@ -1,0 +1,422 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "12";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-11.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;12 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-13.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-11.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">12 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-13.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0012.png" style="width: 100%; height: 100%;">
+
+
+						<a class="linkTextItem testString internalLink" href="./page-90.html" target="_self"  style="top:16.174583%;left:19.201229%;width:41.013825%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							9.1. PROYECTO ESTRAT&#201;GICO DE SEGURIDAD ALIMENTARIA (PESA)
+						</a>
+						<a class="linkTextItem testString internalLink" href="./page-90.html" target="_self"  style="top:16.174583%;left:75.576037%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>88</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-90.html" target="_self"  style="top:18.356868%;left:19.201229%;width:24.731183%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							9.2. APOYO A LOS PUEBLOS IND&#205;GENAS
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-90.html" target="_self"  style="top:18.356868%;left:75.576037%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>88</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-91.html" target="_self"  style="top:21.566110%;left:17.357911%;width:16.589862%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>10. DESARROLLO RURAL</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-91.html" target="_self"  style="top:21.566110%;left:75.576037%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>89</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-92.html" target="_self"  style="top:24.646983%;left:17.357911%;width:35.483871%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>11. ACCIONES EN MATERIA DE EQUIDAD DE G&#201;NERO</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-92.html" target="_self"  style="top:24.646983%;left:75.576037%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>90</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-92.html" target="_self"  style="top:27.856226%;left:17.357911%;width:19.047619%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>12. TENENCIA DE LA TIERRA</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-92.html" target="_self"  style="top:27.856226%;left:75.576037%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>90</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-93.html" target="_self"  style="top:30.937099%;left:17.357911%;width:52.227343%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>13. ACCIONES DE LA AGENDA SECTORIAL DE CAMBIO CLIM&#193;TICO 2012-2016</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-93.html" target="_self"  style="top:30.937099%;left:75.576037%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>91</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-93.html" target="_self"  style="top:34.146341%;left:17.357911%;width:42.242704%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>14. CONTRALOR&#205;A CIUDADANA ADELANTE Y TRANSPARENCIA</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-93.html" target="_self"  style="top:34.146341%;left:75.576037%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>91</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-94.html" target="_self"  style="top:37.227214%;left:17.357911%;width:23.348694%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>15. OTRAS ACCIONES RELEVANTES</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-94.html" target="_self"  style="top:37.227214%;left:75.576037%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>92</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-95.html" target="_self"  style="top:40.436457%;left:17.357911%;width:17.665131%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>CONCLUSI&#211;N DEL SECTOR</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-95.html" target="_self"  style="top:40.436457%;left:75.576037%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>93</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-96.html" target="_self"  style="top:43.517330%;left:17.357911%;width:6.451613%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							<b>TURISMO</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-96.html" target="_self"  style="top:43.517330%;left:75.576037%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>94</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-97.html" target="_self"  style="top:46.726573%;left:17.357911%;width:25.499232%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>SECRETAR&#205;A DE TURISMO Y CULTURA</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-97.html" target="_self"  style="top:46.726573%;left:75.576037%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>95</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-98.html" target="_self"  style="top:49.807445%;left:17.357911%;width:17.972350%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>1. PROMOCI&#211;N TUR&#205;STICA</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-98.html" target="_self"  style="top:49.807445%;left:75.576037%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>96</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-98.html" target="_self"  style="top:52.118100%;left:19.201229%;width:20.737327%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							1.1. CAMPA&#209;AS DE PROMOCI&#211;N
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-98.html" target="_self"  style="top:52.118100%;left:75.576037%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>96</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-99.html" target="_self"  style="top:54.300385%;left:19.201229%;width:48.540707%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							1.2. FIDEICOMISO DEL IMPUESTO P&#218;BLICO POR LA PRESTACI&#211;N DE SERVICIOS
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-99.html" target="_self"  style="top:56.611040%;left:21.966206%;width:9.216590%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							DE HOSPEDAJE
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-99.html" target="_self"  style="top:56.611040%;left:75.576037%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>97</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-100.html" target="_self"  style="top:58.793325%;left:19.201229%;width:12.596006%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							1.3. CONECTIVIDAD
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-100.html" target="_self"  style="top:58.793325%;left:75.576037%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>98</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-100.html" target="_self"  style="top:61.103979%;left:19.201229%;width:31.643625%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							1.4. FORTALECIMIENTO DE FIESTAS Y TRADICIONES
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-100.html" target="_self"  style="top:61.103979%;left:75.576037%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>98</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-101.html" target="_self"  style="top:63.286264%;left:19.201229%;width:15.360983%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							1.5. EVENTOS ESTATALES
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-101.html" target="_self"  style="top:63.286264%;left:75.576037%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>99</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-105.html" target="_self"  style="top:65.596919%;left:19.201229%;width:42.703533%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							1.6. PRESENCIA DE VERACRUZ A NIVEL INTERNACIONAL Y NACIONAL
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-105.html" target="_self"  style="top:65.596919%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>103</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-109.html" target="_self"  style="top:67.779204%;left:19.201229%;width:22.119816%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							1.7. INDUSTRIA CINEMATOGR&#193;FICA
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-109.html" target="_self"  style="top:67.779204%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>107</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-110.html" target="_self"  style="top:70.988447%;left:17.357911%;width:21.505376%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>2. COMPETITIVIDAD TUR&#205;STICA</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-110.html" target="_self"  style="top:70.988447%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>108</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-110.html" target="_self"  style="top:73.170732%;left:19.201229%;width:22.734255%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							2.1. PROGRAMAS DE CAPACITACI&#211;N
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-110.html" target="_self"  style="top:73.170732%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>108</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-111.html" target="_self"  style="top:75.481386%;left:19.201229%;width:32.718894%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							2.2. PRESENTACI&#211;N DE ESTUDIO DE PERFIL Y GRADO
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-111.html" target="_self"  style="top:75.481386%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>109</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-111.html" target="_self"  style="top:77.663671%;left:19.201229%;width:52.534562%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							2.3. PROGRAMA DE PR&#193;CTICAS PROFESIONALES, SERVICIO SOCIAL Y PRIMER EMPLEO
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-111.html" target="_self"  style="top:77.663671%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>109</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-112.html" target="_self"  style="top:79.974326%;left:19.201229%;width:31.797235%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							2.4. DIVERSIFICACI&#211;N DE PRODUCTOS TUR&#205;STICOS
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-112.html" target="_self"  style="top:79.974326%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>110</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-112.html" target="_self"  style="top:82.156611%;left:19.201229%;width:48.847926%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							3.1. CONVENIOS DE COORDINACI&#211;N PARA EL OTORGAMIENTO DE SUBSIDIOS
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-112.html" target="_self"  style="top:82.156611%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>110</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-113.html" target="_self"  style="top:84.467266%;left:19.201229%;width:21.198157%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							3.2. INFRAESTRUCTURA TUR&#205;STICA
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-113.html" target="_self"  style="top:84.467266%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>111</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-114.html" target="_self"  style="top:86.649551%;left:19.201229%;width:17.818740%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							3.3. DESARROLLO REGIONAL
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-114.html" target="_self"  style="top:86.649551%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>112</b>
+						</a>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-7.html">7</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-8.html">8</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-9.html">9</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-10.html">10</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-11.html">11</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-12.html">12</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-13.html">13</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-14.html">14</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-15.html">15</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-16.html">16</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-17.html">17</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-18.html">18</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

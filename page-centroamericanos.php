@@ -1,0 +1,1 @@
+<?php wp_redirect( 'http://veracruz2014.mx', 301 ); exit; ?>

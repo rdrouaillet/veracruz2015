@@ -1,0 +1,479 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "442";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-441.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;442 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-443.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-441.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">442 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-443.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0442.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:18.356868%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							P&#250;blica, Cruz Roja Mexicana, Cruz &#193;mbar, H. Cuerpo de
+						</p>
+						<p class="textItem " style="top:20.154044%;left:12.288786%;width:32.872504%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Bomberos de Xalapa y la Secretar&#237;a de Protecci&#243;n Civil.
+						</p>
+						<p class="textItem " style="top:23.748395%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem testString" style="top:23.748395%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:23.748395%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Festival Internacional de la Salsa Coatzacoalcos 2014 (del 22
+						</p>
+						<p class="textItem " style="top:25.545571%;left:12.288786%;width:9.062980%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							al 25 de mayo)
+						</p>
+						<p class="textItem " style="top:29.139923%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Por primer a&#241;o el Festival Internacional de la Salsa 2014 se
+						</p>
+						<p class="textItem " style="top:30.937099%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							celebra en Coatzacoalcos, con una afluencia de 354,600
+						</p>
+						<p class="textItem " style="top:32.734275%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							visitantes durante los cuatro d&#237;as del evento. Para la
+						</p>
+						<p class="textItem " style="top:34.531451%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							seguridad y salvaguarda de la poblaci&#243;n se conform&#243;
+						</p>
+						<p class="textItem " style="top:36.328626%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							una fuerza de tarea de 766 elementos por noche de
+						</p>
+						<p class="textItem " style="top:38.125802%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							13 instituciones p&#250;blicas: Secretar&#237;a de Marina; Mando
+						</p>
+						<p class="textItem " style="top:39.922978%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Unificado (Polic&#237;a Naval); Secretar&#237;a de Seguridad P&#250;blica,
+						</p>
+						<p class="textItem " style="top:41.720154%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							C4 y Direcci&#243;n General de Tr&#225;nsito y Transporte; Secretar&#237;a
+						</p>
+						<p class="textItem " style="top:43.517330%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Salud, Secretar&#237;a de Turismo y Cultura; Procuradur&#237;a
+						</p>
+						<p class="textItem " style="top:45.314506%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							General de Justicia; Ayuntamiento de Coatzacoalcos, Cruz
+						</p>
+						<p class="textItem " style="top:47.111682%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Roja Mexicana, Seguridad Privada (SISE), Aces Producciones
+						</p>
+						<p class="textItem " style="top:48.908858%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y la Secretar&#237;a de Protecci&#243;n Civil. Se cont&#243; con 55 veh&#237;culos,
+						</p>
+						<p class="textItem " style="top:50.706033%;left:12.288786%;width:14.746544%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							12 motos y seis equinos.
+						</p>
+						<p class="textItem " style="top:54.172015%;left:8.602151%;width:36.405530%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							5.3. Herramientas en la prevenci&#243;n de
+						</p>
+						<p class="textItem " style="top:56.354300%;left:8.602151%;width:11.981567%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							emergencias
+						</p>
+						<p class="textItem " style="top:60.590501%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La creciente incidencia de los fen&#243;menos meteorol&#243;gicos, sistemas
+						</p>
+						<p class="textItem " style="top:62.387677%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							frontales, ondas y ciclones tropicales y su interacci&#243;n, hacen de
+						</p>
+						<p class="textItem " style="top:64.184852%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz la Entidad con mayores impactos hidrometeorol&#243;gicos
+						</p>
+						<p class="textItem " style="top:65.982028%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de todo el pa&#237;s. Ante esta situaci&#243;n, el Centro de Estudios y
+						</p>
+						<p class="textItem " style="top:67.779204%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Pron&#243;sticos Meteorol&#243;gicos de la Secretar&#237;a de Protecci&#243;n Civil
+						</p>
+						<p class="textItem " style="top:69.576380%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ha fortalecido sus acciones de vigilancia y monitoreo de las
+						</p>
+						<p class="textItem " style="top:71.373556%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							condiciones meteorol&#243;gicas y clim&#225;ticas con atenci&#243;n a posibles
+						</p>
+						<p class="textItem " style="top:73.170732%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							riesgos para el territorio veracruzano, con el objeto de alertar con
+						</p>
+						<p class="textItem " style="top:74.967908%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							oportunidad sobre las condiciones meteorol&#243;gicas a las distintas
+						</p>
+						<p class="textItem " style="top:76.765083%;left:8.602151%;width:33.486943%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							instancias gubernamentales y a la poblaci&#243;n en general.
+						</p>
+						<p class="textItem " style="top:80.359435%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Dicho Centro elabor&#243; y difundi&#243; en este ejercicio 1,864 informes:
+						</p>
+						<p class="textItem " style="top:82.156611%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							608 boletines meteorol&#243;gicos; 264 boletines sobre actualizaciones
+						</p>
+						<p class="textItem " style="top:83.953787%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							meteorol&#243;gicas; 648 especiales, que incluyen 73 emisiones de
+						</p>
+						<p class="textItem " style="top:85.750963%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Alerta Gris por la presencia de sistemas frontales y disturbios
+						</p>
+						<p class="textItem " style="top:87.548139%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							tropicales; 222 boletines semanales; 122 boletines de informaci&#243;n
+						</p>
+						<p class="textItem " style="top:89.345315%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							tropical; adem&#225;s de 3,105 intervenciones en los medios de
+						</p>
+						<p class="textItem " style="top:18.356868%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							comunicaci&#243;n para la difusi&#243;n de la informaci&#243;n meteorol&#243;gica,
+						</p>
+						<p class="textItem " style="top:20.154044%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con enlaces diarios en vivo con Radio Televisi&#243;n de Veracruz (RTV),
+						</p>
+						<p class="textItem " style="top:21.951220%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Grupo Oliva Radio de Xalapa, Grupo Avanradio y MVS del puerto
+						</p>
+						<p class="textItem " style="top:23.748395%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Veracruz; as&#237; como entrevistas frecuentes con XEU de Veracruz,
+						</p>
+						<p class="textItem " style="top:25.545571%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							TV Azteca, Televisa Veracruz, Meganoticias Xalapa, M&#225;xima de
+						</p>
+						<p class="textItem " style="top:27.342747%;left:49.769585%;width:16.282642%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Coatzacoalcos, entre otros.
+						</p>
+						<p class="textItem " style="top:30.937099%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Este a&#241;o se ampli&#243; la cobertura de difusi&#243;n meteorol&#243;gica
+						</p>
+						<p class="textItem " style="top:32.734275%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con la incorporaci&#243;n de los medios Uninoticias, Avannoticias y
+						</p>
+						<p class="textItem " style="top:34.531451%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Radio F&#243;rmula, adem&#225;s de participar en programas de radio y
+						</p>
+						<p class="textItem " style="top:36.328626%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							televisi&#243;n con temas de las temporadas de frentes fr&#237;os, estiaje,
+						</p>
+						<p class="textItem " style="top:38.125802%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ciclones tropicales y la reducci&#243;n de riesgos por fen&#243;menos
+						</p>
+						<p class="textItem " style="top:39.922978%;left:49.769585%;width:12.903226%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							hidrometeorol&#243;gicos.
+						</p>
+						<p class="textItem " style="top:43.517330%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A su vez, con la aparici&#243;n de las redes sociales, el Centro tiene
+						</p>
+						<p class="textItem " style="top:45.314506%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							posicionadas dos en el contexto estatal, Facebook en Fanpage:
+						</p>
+						<p class="textItem " style="top:47.111682%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ceec Protecci&#243;n Civil y Twitter: @spcver, con 23,854 y 45,760
+						</p>
+						<p class="textItem " style="top:48.908858%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							seguidores, respectivamente; adem&#225;s de contar con un blogger:
+						</p>
+						<p class="textItem " style="top:50.706033%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							meteorolog&#237;aspcver.blogspot, que al 30 de septiembre registraba
+						</p>
+						<p class="textItem " style="top:52.503209%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ya 186,936 visitas. En las redes sociales se publican todos los
+						</p>
+						<p class="textItem " style="top:54.300385%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							productos y se da respuesta a solicitudes o dudas en la materia,
+						</p>
+						<p class="textItem " style="top:56.097561%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con lo que se logra mayor eficacia, oportunidad y cobertura
+						</p>
+						<p class="textItem " style="top:57.894737%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en la difusi&#243;n del desarrollo y pron&#243;stico de los fen&#243;menos
+						</p>
+						<p class="textItem " style="top:59.691913%;left:49.769585%;width:9.677419%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							meteorol&#243;gicos.
+						</p>
+						<p class="textItem " style="top:63.286264%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Enmateria clim&#225;tica, el Centro ha realizado 211 informes clim&#225;ticos
+						</p>
+						<p class="textItem " style="top:65.083440%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de car&#225;cter diario, 10 informes mensuales y 211 reportes de medio
+						</p>
+						<p class="textItem " style="top:66.880616%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ambiente y cambio clim&#225;tico, adem&#225;s de tener una l&#237;nea de
+						</p>
+						<p class="textItem " style="top:68.677792%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							investigaci&#243;n costera por el incremento del nivel del mar, uno de
+						</p>
+						<p class="textItem " style="top:70.474968%;left:49.769585%;width:25.806452%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los efectos esperados del cambio clim&#225;tico.
+						</p>
+						<p class="textItem " style="top:74.069320%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Al respecto, el oleaje, la marea de tormenta y las corrientes costeras
+						</p>
+						<p class="textItem " style="top:75.866496%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							est&#225;n penetrando cada vezm&#225;s playa adentro debido al incremento
+						</p>
+						<p class="textItem " style="top:77.663671%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del nivel del mar, con la consecuente intrusi&#243;n de agua salina en
+						</p>
+						<p class="textItem " style="top:79.460847%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los mantos acu&#237;feros que tender&#225; a reducir la disponibilidad de
+						</p>
+						<p class="textItem " style="top:81.258023%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							agua dulce y el aumento de la vulnerabilidad para la poblaci&#243;n
+						</p>
+						<p class="textItem " style="top:83.055199%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							asentada en zonas cercanas al litoral. Por ello, el Centro inici&#243; un
+						</p>
+						<p class="textItem " style="top:84.852375%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estudio multianual para calcular la p&#233;rdida de las playas en la Costa
+						</p>
+						<p class="textItem " style="top:86.649551%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Esmeralda, municipio de Tecolutla, elegida por ser una zona de
+						</p>
+						<p class="textItem " style="top:88.446727%;left:49.769585%;width:24.270353%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							alta densidad de infraestructura tur&#237;stica.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-437.html">437</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-438.html">438</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-439.html">439</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-440.html">440</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-441.html">441</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-442.html">442</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-443.html">443</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-444.html">444</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-445.html">445</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-446.html">446</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-447.html">447</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-448.html">448</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

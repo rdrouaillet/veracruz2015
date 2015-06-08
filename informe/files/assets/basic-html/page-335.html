@@ -1,0 +1,473 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "335";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-334.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;335 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-336.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-334.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">335 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-336.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0335.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:37.173579%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:43.471582%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:44.546851%;width:14.132104%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>S e g u r i d a d P &#250; b l i c a</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:59.600614%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:60.522273%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>3 3 3</b>
+						</p>
+						<p class="textItem " style="top:16.559692%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estos 53 elementos participan en los 216 operativos m&#243;viles
+						</p>
+						<p class="textItem " style="top:18.356868%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Veracruz Seguro realizados en los municipios de Veracruz,
+						</p>
+						<p class="textItem " style="top:20.154044%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							C&#243;rdoba, Coatzacoalcos, Mart&#237;nez de la Torre, Misantla y Xalapa,
+						</p>
+						<p class="textItem " style="top:21.951220%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para que los operadores de transporte cumplan con: las tarifas
+						</p>
+						<p class="textItem " style="top:23.748395%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							aprobadas, cuenten con licencia de manejo tipo A, presten el
+						</p>
+						<p class="textItem " style="top:25.545571%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							servicio en la localidad que les corresponde, cuenten con p&#243;liza
+						</p>
+						<p class="textItem " style="top:27.342747%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de seguro vehicular vigente, transiten a velocidad moderada y con
+						</p>
+						<p class="textItem " style="top:29.139923%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el n&#250;mero de pasajeros que indica la tarjeta de circulaci&#243;n, entre
+						</p>
+						<p class="textItem " style="top:30.937099%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							otros; obteniendo como resultado 22,781 unidades vehiculares
+						</p>
+						<p class="textItem " style="top:32.734275%;left:10.752688%;width:5.837174%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							revisadas.
+						</p>
+						<p class="textItem testString" style="top:35.815148%;left:10.752688%;width:38.248848%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							11. Instituto de la Polic&#237;a
+						</p>
+						<p class="textItem " style="top:38.510911%;left:10.752688%;width:31.950845%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							Auxiliar y Protecci&#243;n
+						</p>
+						<p class="textItem " style="top:41.206675%;left:10.752688%;width:18.125960%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							Patrimonial
+						</p>
+						<p class="textItem " style="top:46.983312%;left:10.752688%;width:29.800307%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							11.1. Prestaci&#243;n de servicios de
+						</p>
+						<p class="textItem " style="top:49.165597%;left:10.752688%;width:31.490015%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							seguridad, vigilancia y operativos
+						</p>
+						<p class="textItem " style="top:53.401797%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Instituto de la Polic&#237;a Auxiliar y Protecci&#243;n Patrimonial basado
+						</p>
+						<p class="textItem " style="top:55.198973%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en la Ley 272, es un Organismo P&#250;blico Descentralizado, con
+						</p>
+						<p class="textItem " style="top:56.996149%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							personalidad jur&#237;dica y patrimonio propio, generado en base a la
+						</p>
+						<p class="textItem " style="top:58.793325%;left:10.752688%;width:37.634409%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							prestaci&#243;n de servicios de seguridad a la sociedad veracruzana.
+						</p>
+						<p class="textItem " style="top:62.387677%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En este a&#241;o, el Instituto cuenta con una cartera de 755 clientes, y
+						</p>
+						<p class="textItem " style="top:64.184852%;left:10.752688%;width:31.029186%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se brindan 2,100 servicios de seguridad y vigilancia.
+						</p>
+						<p class="textItem " style="top:67.650834%;left:10.752688%;width:23.195084%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							11.2. Recursos humanos
+						</p>
+						<p class="textItem " style="top:71.887035%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Instituto cuenta con una plantilla de 7,066 personas, de las
+						</p>
+						<p class="textItem " style="top:73.684211%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cuales 6,496 son operativos en activo, 479 administrativos y 91
+						</p>
+						<p class="textItem " style="top:75.481386%;left:10.752688%;width:15.514593%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							personas con incapacidad
+						</p>
+						<p class="textItem " style="top:75.481386%;left:26.267281%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							8
+						</p>
+						<p class="textItem " style="top:75.481386%;left:27.035330%;width:7.680492%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							permanente.
+						</p>
+						<p class="textItem " style="top:79.075738%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con el objetivo de lograr un alto desempe&#241;o del personal, se
+						</p>
+						<p class="textItem " style="top:80.872914%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ha desarrollado un sistema de profesionalizaci&#243;n a nuestros
+						</p>
+						<p class="textItem " style="top:82.670090%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							elementos, con la finalidad de proporcionar servicios de calidad
+						</p>
+						<p class="textItem " style="top:84.467266%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y seguridad a los usuarios. Se realizaron los siguientes cursos
+						</p>
+						<p class="textItem " style="top:86.264442%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en donde participaron 4,942 elementos: Capacitaci&#243;n Policial,
+						</p>
+						<p class="textItem " style="top:88.318357%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							8. Situaci&#243;n de enfermedad o de padecimiento f&#237;sico o ps&#237;quico que impide a una persona, de
+						</p>
+						<p class="textItem " style="top:89.216945%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							manera transitoria o definitiva, realizar una actividad profesional y que normalmente da derecho
+						</p>
+						<p class="textItem " style="top:90.243902%;left:10.752688%;width:15.975422%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							a una prestaci&#243;n de la seguridad social.
+						</p>
+						<p class="textItem " style="top:16.559692%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Excelencia Secretarial, Campus Virtual Primeros Pasos, Word Fase I
+						</p>
+						<p class="textItem " style="top:18.356868%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							modalidad virtual, Introducci&#243;n a la Programaci&#243;n Neuroling&#252;&#237;stica
+						</p>
+						<p class="textItem " style="top:20.154044%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							modalidad virtual, Excel Fase I y Fase II, Trabajo en Equipo y Cultura
+						</p>
+						<p class="textItem " style="top:21.951220%;left:51.920123%;width:9.523810%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la Legalidad.
+						</p>
+						<p class="textItem " style="top:25.417202%;left:51.920123%;width:38.248848%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							11.3. Fortalecimiento de los Sistemas de
+						</p>
+						<p class="textItem " style="top:27.599487%;left:51.920123%;width:19.969278%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							Informaci&#243;n del IPAX
+						</p>
+						<p class="textItem " style="top:31.835687%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El enfoque implantado por la Alta Direcci&#243;n orientado a la calidad
+						</p>
+						<p class="textItem " style="top:33.632863%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en el servicio a nuestros clientes y a la actualizaci&#243;n tecnol&#243;gica
+						</p>
+						<p class="textItem " style="top:35.430039%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							constante, nos obliga a la b&#250;squeda y aplicaci&#243;n de soluciones que
+						</p>
+						<p class="textItem " style="top:37.227214%;left:51.920123%;width:30.721966%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							nos permitan mantenernos a la vanguardia t&#233;cnica.
+						</p>
+						<p class="textItem " style="top:40.821566%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Es importante mencionar que los sistemas de informaci&#243;n
+						</p>
+						<p class="textItem " style="top:42.618742%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							implementados, permiten la generaci&#243;n de Comprobantes Fiscales
+						</p>
+						<p class="textItem " style="top:44.415918%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Digitales por Internet (CFDI), con la finalidad de dar cumplimiento
+						</p>
+						<p class="textItem " style="top:46.213094%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a las disposiciones con car&#225;cter de obligatoriedad impuestas por el
+						</p>
+						<p class="textItem " style="top:48.010270%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Sistema de Administraci&#243;n Tributaria (SAT). En el periodo que se
+						</p>
+						<p class="textItem " style="top:49.807445%;left:51.920123%;width:33.794163%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							informa, el Instituto ha facturado 18,270 comprobantes.
+						</p>
+						<p class="textItem " style="top:53.273427%;left:51.920123%;width:34.869432%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							11.4. Infraestructura y equipamiento
+						</p>
+						<p class="textItem " style="top:57.509628%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El IPAX cuenta con 972 chalecos antibalas, 934 esposas met&#225;licas,
+						</p>
+						<p class="textItem " style="top:59.306804%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							2,295 bastones de control PR-24, 162 bastones retractiles, 488
+						</p>
+						<p class="textItem " style="top:61.103979%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cascos protectores y 93 equipos antimot&#237;n. En lo referente al
+						</p>
+						<p class="textItem " style="top:62.901155%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							parque vehicular, se cuenta con 234 unidades entre camionetas
+						</p>
+						<p class="textItem " style="top:64.698331%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pick up, motocicletas, autom&#243;viles, adem&#225;s de dos microbuses y
+						</p>
+						<p class="textItem " style="top:66.495507%;left:51.920123%;width:8.909370%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dos autobuses.
+						</p>
+						<p class="textItem " style="top:70.089859%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con referencia al equipo de radiocomunicaci&#243;n, se cuenta con
+						</p>
+						<p class="textItem " style="top:71.887035%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							75 radios base, 375 radios m&#243;viles, 2,846 radios port&#225;tiles; en
+						</p>
+						<p class="textItem " style="top:73.684211%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							comodato se cuenta con 35 radios otorgados por el Centro Estatal
+						</p>
+						<p class="textItem " style="top:75.481386%;left:51.920123%;width:31.490015%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Control, Comando, Comunicaciones y C&#243;mputo.
+						</p>
+						<p class="textItem " style="top:78.818999%;left:51.920123%;width:34.869432%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							11.5. Comercializaci&#243;n de servicios y
+						</p>
+						<p class="textItem " style="top:81.129653%;left:51.920123%;width:20.276498%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							seguridad electr&#243;nica
+						</p>
+						<p class="textItem " style="top:85.365854%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con la finalidad de brindar seguridad, protecci&#243;n y vigilancia
+						</p>
+						<p class="textItem " style="top:87.163030%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							patrimonial a los veracruzanos, el Instituto defini&#243; y consolid&#243;
+						</p>
+						<p class="textItem " style="top:88.960205%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							su oferta en tres servicios: Servicio de Protecci&#243;n y Vigilancia a
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-330.html">330</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-331.html">331</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-332.html">332</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-333.html">333</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-334.html">334</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-335.html">335</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-336.html">336</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-337.html">337</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-338.html">338</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-339.html">339</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-340.html">340</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-341.html">341</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

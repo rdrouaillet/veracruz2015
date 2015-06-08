@@ -1,0 +1,494 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "281";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-280.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;281 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-282.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-280.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">281 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-282.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0281.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:40.245776%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:46.697389%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:47.772657%;width:7.834101%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>E d u c a c i &#243; n</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:56.374808%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:57.450077%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>2 7 9</b>
+						</p>
+						<p class="textItem " style="top:11.938383%;left:10.752688%;width:37.788018%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							9.9. Acciones en materia de equidad de
+						</p>
+						<p class="textItem " style="top:14.120668%;left:10.752688%;width:6.758833%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							g&#233;nero
+						</p>
+						<p class="textItem " style="top:18.356868%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se promovi&#243; la instrumentaci&#243;n de las pol&#237;ticas estatales en materia
+						</p>
+						<p class="textItem " style="top:20.154044%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de igualdad y no discriminaci&#243;n tanto al interior de la Dependencia
+						</p>
+						<p class="textItem " style="top:21.951220%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							como en la comunidad educativa para la Institucionalizaci&#243;n de la
+						</p>
+						<p class="textItem " style="top:23.748395%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							perspectiva de g&#233;nero; a trav&#233;s de la capacitaci&#243;n sobre el uso
+						</p>
+						<p class="textItem " style="top:25.545571%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la herramienta did&#225;ctica Los Colores de la No Violencia para
+						</p>
+						<p class="textItem " style="top:27.342747%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ni&#241;as y Ni&#241;os. Durante el a&#241;o se realizaron tres capacitaciones
+						</p>
+						<p class="textItem " style="top:29.139923%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a 32 enlaces de g&#233;nero de las oficinas centrales de la Secretar&#237;a,
+						</p>
+						<p class="textItem " style="top:30.937099%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							quienes servir&#225;n de multiplicadores dentro de todas las &#225;reas, para
+						</p>
+						<p class="textItem " style="top:32.734275%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							establecer acciones de formaci&#243;n y profesionalizaci&#243;n del personal,
+						</p>
+						<p class="textItem " style="top:34.531451%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							considerando las condiciones personales de mujeres y hombres en
+						</p>
+						<p class="textItem " style="top:36.328626%;left:10.752688%;width:23.348694%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							temas de g&#233;nero y derechos humanos.
+						</p>
+						<p class="textItem " style="top:39.922978%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Adem&#225;s, se conmemoraron tres fechas importantes que promulga
+						</p>
+						<p class="textItem " style="top:41.720154%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la ONU: 8 de marzo, D&#237;a Internacional de la Mujer; 19 de octubre,
+						</p>
+						<p class="textItem " style="top:43.517330%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							D&#237;a Mundial de la Lucha contra el C&#225;ncer de Mama; y 25 de
+						</p>
+						<p class="textItem " style="top:45.314506%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							noviembre, D&#237;a Internacional de la Eliminaci&#243;n de la Violencia
+						</p>
+						<p class="textItem " style="top:47.111682%;left:10.752688%;width:16.282642%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							contra la Mujer y las Ni&#241;as.
+						</p>
+						<p class="textItem " style="top:50.706033%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Las acciones realizadas promueven el compromiso de cimentar
+						</p>
+						<p class="textItem " style="top:52.503209%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							hacia el interior de la Secretar&#237;a de Educaci&#243;n de Veracruz, pol&#237;ticas
+						</p>
+						<p class="textItem " style="top:54.300385%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							p&#250;blicas con perspectiva de g&#233;nero que brinden como resultado la
+						</p>
+						<p class="textItem " style="top:56.097561%;left:10.752688%;width:33.333333%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							eliminaci&#243;n de la Violencia y Discriminaci&#243;n de G&#233;nero.
+						</p>
+						<p class="textItem " style="top:59.563543%;left:10.752688%;width:35.791091%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							9.10. Acciones en materia de Cambio
+						</p>
+						<p class="textItem " style="top:61.745828%;left:10.752688%;width:20.276498%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							Clim&#225;tico 2012-2016
+						</p>
+						<p class="textItem " style="top:65.982028%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Direcci&#243;n de Actividades Art&#237;sticas particip&#243; en el programa Fair
+						</p>
+						<p class="textItem " style="top:67.779204%;left:10.752688%;width:9.831029%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Child Challenge
+						</p>
+						<p class="textItem " style="top:67.907574%;left:20.583717%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							29
+						</p>
+						<p class="textItem " style="top:67.779204%;left:21.505376%;width:28.878648%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							, que coordinan el Programa de Aplicaci&#243;n de
+						</p>
+						<p class="textItem " style="top:69.576380%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los Sistemas de Ense&#241;anza Vivencial e Indagatoria de las Ciencias
+						</p>
+						<p class="textItem " style="top:71.373556%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Estado de Veracruz (PASEVIC) y el Instituto de Ecolog&#237;a A.C.
+						</p>
+						<p class="textItem " style="top:73.170732%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(INECOL), con el taller Creaci&#243;n de instrumentos musicales con
+						</p>
+						<p class="textItem " style="top:74.967908%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							materiales reciclados, en este primer a&#241;o se capacitaron a 48
+						</p>
+						<p class="textItem " style="top:76.765083%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							docentes. Asimismo, se ofrecieron 10 conciertos con m&#250;sicos
+						</p>
+						<p class="textItem " style="top:78.562259%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que ejecutaron melod&#237;as utilizando instrumentos hechos con
+						</p>
+						<p class="textItem " style="top:80.359435%;left:10.752688%;width:12.749616%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							materiales reciclados.
+						</p>
+						<p class="textItem " style="top:83.953787%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Programa Vasconcelos capacit&#243; a 528 estudiantes y poblaci&#243;n
+						</p>
+						<p class="textItem " style="top:85.750963%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							general sobre educaci&#243;n ambiental, en talleres orientados a la
+						</p>
+						<p class="textItem " style="top:89.216945%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							29. Programa de divulgaci&#243;n de educaci&#243;n ambiental del Jard&#237;n Bot&#225;nico Tropical Fairchild en
+						</p>
+						<p class="textItem " style="top:90.243902%;left:10.752688%;width:10.906298%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Coral Gables, Florida, EUA.
+						</p>
+						<p class="textItem " style="top:18.356868%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							reutilizaci&#243;n de residuos s&#243;lidos y el cuidado de los recursos
+						</p>
+						<p class="textItem " style="top:20.154044%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							naturales existentes en las comunidades visitadas. Esto como parte
+						</p>
+						<p class="textItem " style="top:21.951220%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la estrategia permanente de atenci&#243;n para la mitigaci&#243;n y
+						</p>
+						<p class="textItem " style="top:23.748395%;left:51.920123%;width:29.493088%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							adaptaci&#243;n ante los efectos del cambio clim&#225;tico.
+						</p>
+						<p class="textItem " style="top:27.342747%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se contin&#250;a con un ahorro de m&#225;s de seis millones de hojas anuales,
+						</p>
+						<p class="textItem " style="top:29.139923%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							gracias al uso de la plataforma electr&#243;nica, para la validaci&#243;n de
+						</p>
+						<p class="textItem " style="top:30.937099%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							asociaciones de padres de familia, durante el proceso de registro y
+						</p>
+						<p class="textItem " style="top:32.734275%;left:51.920123%;width:26.113671%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							legalizaci&#243;n de las actas de las asociaciones.
+						</p>
+						<p class="textItem " style="top:36.328626%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Instituto Superior de M&#250;sica del Estado de Veracruz (ISMEV),
+						</p>
+						<p class="textItem " style="top:38.125802%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							instrument&#243; las acciones de reciclado de hojas, el empleo de
+						</p>
+						<p class="textItem " style="top:39.922978%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							un domo en la parte superior del Instituto, as&#237; como de amplios
+						</p>
+						<p class="textItem " style="top:41.720154%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ventanales para evitar el mayor tiempo posible la utilizaci&#243;n
+						</p>
+						<p class="textItem " style="top:43.517330%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de luz el&#233;ctrica, la campa&#241;a de recolecci&#243;n de pilas usadas,
+						</p>
+						<p class="textItem " style="top:45.314506%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la canalizaci&#243;n de un hogar seguro a los animales que se han
+						</p>
+						<p class="textItem " style="top:47.111682%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							encontrado extraviados y sin hogar alrededor de esta Instituci&#243;n,
+						</p>
+						<p class="textItem " style="top:48.908858%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y finalmente la elaboraci&#243;n de composta, para fertilizar hortalizas
+						</p>
+						<p class="textItem " style="top:50.706033%;left:51.920123%;width:28.571429%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sembradas por los propios maestros del plantel.
+						</p>
+						<p class="textItem " style="top:54.300385%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el marco de la Agenda Sectorial de Cambio Clim&#225;tico, para la
+						</p>
+						<p class="textItem " style="top:56.097561%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mitigaci&#243;n de emisiones de gases de efecto invernadero, en 2014
+						</p>
+						<p class="textItem " style="top:57.894737%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se reemplazaron 80 l&#225;mparas de 39 watts por otras de 32 watts. En
+						</p>
+						<p class="textItem " style="top:59.691913%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							lo que va de esta Administraci&#243;n se han remplazado 338 l&#225;mparas
+						</p>
+						<p class="textItem " style="top:61.489089%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							slim line D12 de 39 watts por igual n&#250;mero del modelo slim line
+						</p>
+						<p class="textItem " style="top:63.286264%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							T8 de 32 watts en las oficinas centrales de la SEV. Con esta medida
+						</p>
+						<p class="textItem " style="top:65.083440%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y como parte del proyecto estrat&#233;gico de Ahorro de Energ&#237;a y
+						</p>
+						<p class="textItem " style="top:66.880616%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Fortalecimiento de la Infraestructura El&#233;ctrica, el Gobierno del
+						</p>
+						<p class="textItem " style="top:68.677792%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estado se beneficiar&#225; con una econom&#237;a de energ&#237;a equivalente a
+						</p>
+						<p class="textItem " style="top:70.474968%;left:51.920123%;width:20.122888%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							23,408 watts por jornada laboral.
+						</p>
+						<p class="textItem " style="top:74.069320%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A trav&#233;s del proyecto de Fomento de la Cultura del Agua e Impulso
+						</p>
+						<p class="textItem " style="top:75.866496%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la Infraestructura Hidr&#225;ulica, se realiz&#243; mantenimiento a 23
+						</p>
+						<p class="textItem " style="top:77.663671%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							instalaciones de agua para lamejora de las unidades administrativas;
+						</p>
+						<p class="textItem " style="top:79.460847%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en lo que va de la Administraci&#243;n se ha dado mantenimiento a 45
+						</p>
+						<p class="textItem " style="top:81.258023%;left:51.920123%;width:14.746544%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							instalaciones hidr&#225;ulicas.
+						</p>
+						<p class="textItem " style="top:84.852375%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Las acciones para minimizar los efectos del cambio clim&#225;tico son
+						</p>
+						<p class="textItem " style="top:86.649551%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							parte del quehacer diario de los planteles de educaci&#243;n tecnol&#243;gica,
+						</p>
+						<p class="textItem " style="top:88.446727%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mismas que se encuentran enmarcadas en la Norma ISO 14000,
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-276.html">276</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-277.html">277</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-278.html">278</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-279.html">279</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-280.html">280</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-281.html">281</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-282.html">282</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-283.html">283</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-284.html">284</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-285.html">285</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-286.html">286</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-287.html">287</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

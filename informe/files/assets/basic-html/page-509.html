@@ -1,0 +1,491 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "509";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-508.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;509 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-510.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-508.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">509 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-510.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0509.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:36.098310%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:42.549923%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:43.625192%;width:16.129032%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>C o m u n i c a c i &#243; n S o c i a l</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:60.522273%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:61.597542%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>5 0 7</b>
+						</p>
+						<p class="textItem " style="top:17.458280%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la cual consiste en intercambio de programas de radio de tipo
+						</p>
+						<p class="textItem " style="top:19.255456%;left:10.752688%;width:19.969278%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cultural y de ciencia y tecnolog&#237;a.
+						</p>
+						<p class="textItem " style="top:22.849807%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En octubre, RTV fue subsede de la D&#233;cima Bienal Internacional de
+						</p>
+						<p class="textItem " style="top:24.646983%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Radio, el evento m&#225;s importante en lengua espa&#241;ola en materia
+						</p>
+						<p class="textItem " style="top:26.444159%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							radiof&#243;nica, que re&#250;ne a estudiosos y creadores de la radio a
+						</p>
+						<p class="textItem " style="top:28.241335%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							nivel nacional e internacional. En este evento se recibieron a
+						</p>
+						<p class="textItem " style="top:30.038511%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							profesionales de la comunicaci&#243;n de 19 pa&#237;ses. RTV organiz&#243;
+						</p>
+						<p class="textItem " style="top:31.835687%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							talleres, conferencias y un ciclo de cine para reflexionar sobre el
+						</p>
+						<p class="textItem " style="top:33.632863%;left:10.752688%;width:31.029186%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							papel de la radio p&#250;blica en la sociedad y la cultura.
+						</p>
+						<p class="textItem " style="top:37.227214%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tambi&#233;n, se transmitieron campa&#241;as preventivas de orientaci&#243;n
+						</p>
+						<p class="textItem " style="top:39.024390%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							social, seguridad p&#250;blica, protecci&#243;n civil y de salud. Y se impuls&#243;
+						</p>
+						<p class="textItem " style="top:40.821566%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la vinculaci&#243;n de la sociedad veracruzana con la cultura, la
+						</p>
+						<p class="textItem " style="top:42.618742%;left:10.752688%;width:28.725038%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							educaci&#243;n, el deporte, la ciencia y la tecnolog&#237;a.
+						</p>
+						<p class="textItem " style="top:46.213094%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							TVM&#193;S complement&#243; sus barras tem&#225;ticas con producciones
+						</p>
+						<p class="textItem " style="top:48.010270%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							obtenidas de alianzas con fundaciones y sistemas p&#250;blicos
+						</p>
+						<p class="textItem " style="top:49.807445%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							nacionales e internacionales como la TAL, que ha enriquecido
+						</p>
+						<p class="textItem " style="top:51.604621%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							su programaci&#243;n con programas provenientes de Argentina,
+						</p>
+						<p class="textItem " style="top:53.401797%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Colombia, Uruguay, Panam&#225;, entre otros pa&#237;ses; con estas acciones
+						</p>
+						<p class="textItem " style="top:55.198973%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se cumple con el objetivo de traer la mejor programaci&#243;n del
+						</p>
+						<p class="textItem " style="top:56.996149%;left:10.752688%;width:11.367127%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mundo a Veracruz.
+						</p>
+						<p class="textItem " style="top:60.590501%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							TVM&#193;S mantiene su presencia en 16 estados del territorio nacional,
+						</p>
+						<p class="textItem " style="top:62.387677%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dentro de los cuales se encuentran 10 ciudades capitales como son:
+						</p>
+						<p class="textItem " style="top:64.184852%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Campeche, Chetumal, Chihuahua, Chilpancingo, Cuernavaca,
+						</p>
+						<p class="textItem " style="top:65.982028%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							M&#233;rida, Mexicali, Monterrey, Oaxaca y Xalapa. En este a&#241;o, 19
+						</p>
+						<p class="textItem " style="top:67.779204%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							producciones y eventos especiales fueron compartidos a 18
+						</p>
+						<p class="textItem " style="top:69.576380%;left:10.752688%;width:20.276498%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estados de la Rep&#250;blica Mexicana
+						</p>
+						<p class="textItem " style="top:69.704750%;left:31.029186%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							2
+						</p>
+						<p class="textItem " style="top:69.576380%;left:31.490015%;width:18.740399%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							, adem&#225;s de Estados Unidos de
+						</p>
+						<p class="textItem " style="top:71.373556%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Am&#233;rica, Canad&#225; y Colombia, por lo que se consolida como una
+						</p>
+						<p class="textItem " style="top:73.170732%;left:10.752688%;width:23.963134%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ventana a nivel nacional e internacional.
+						</p>
+						<p class="textItem " style="top:76.765083%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Asimismo, se transmiti&#243; la Cumbre Taj&#237;n desde el municipio de
+						</p>
+						<p class="textItem " style="top:78.562259%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Papantla; las fiestas de Tlacotalpan; los Carnavales de Veracruz y
+						</p>
+						<p class="textItem " style="top:80.359435%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Coatzacoalcos; el Festival Internacional de Salsa de Coatzacoalcos
+						</p>
+						<p class="textItem " style="top:82.156611%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y por primera vez, la 56 entrega de los Premios Ariel desde el
+						</p>
+						<p class="textItem " style="top:83.953787%;left:10.752688%;width:13.517665%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Palacio de Bellas Artes.
+						</p>
+						<p class="textItem " style="top:88.318357%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							2. Aguascalientes, Campeche, Chiapas, Colima, Distrito Federal, Guanajuato, Jalisco, Michoac&#225;n,
+						</p>
+						<p class="textItem " style="top:89.216945%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Morelos, Nuevo Le&#243;n, Oaxaca, Puebla, Quer&#233;taro, Quintana Roo, Sonora, Tabasco, Tlaxcala y
+						</p>
+						<p class="textItem " style="top:90.243902%;left:10.752688%;width:3.533026%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Yucat&#225;n.
+						</p>
+						<p class="textItem " style="top:17.458280%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En alianza con el Instituto Veracruzano de Cultura (IVEC) se
+						</p>
+						<p class="textItem " style="top:19.255456%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							realiz&#243; el programa &#205;taca, dedicado a las letras. Se estren&#243; Playlist,
+						</p>
+						<p class="textItem " style="top:21.052632%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							programa de videos musicales, producido por la delegaci&#243;n de
+						</p>
+						<p class="textItem " style="top:22.849807%;left:51.920123%;width:11.674347%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							RTV Coatzacoalcos.
+						</p>
+						<p class="textItem " style="top:26.444159%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se transmitieron conciertos relevantes como el de los Delfines
+						</p>
+						<p class="textItem " style="top:28.241335%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Marching Band, el concierto de Cuatro pianos en escena, de la
+						</p>
+						<p class="textItem " style="top:30.038511%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Orquesta Sinf&#243;nica de Xalapa y se realiz&#243; la primera transmisi&#243;n
+						</p>
+						<p class="textItem " style="top:31.835687%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de televisi&#243;n desde la sala de conciertos Tlaqn&#225;, en alta definici&#243;n
+						</p>
+						<p class="textItem " style="top:33.632863%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la obra Carmina Burana; adem&#225;s de la Gala de &#211;pera: Javier
+						</p>
+						<p class="textItem " style="top:35.430039%;left:51.920123%;width:23.348694%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Camarena, 10 a&#241;os de carrera art&#237;stica.
+						</p>
+						<p class="textItem " style="top:39.024390%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							RTVM&#250;sica, produjo la segunda temporada de EstudioG, programa
+						</p>
+						<p class="textItem " style="top:40.821566%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de radio y televisi&#243;n que se consolida como la plataforma de los
+						</p>
+						<p class="textItem " style="top:42.618742%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							m&#250;sicos contempor&#225;neos veracruzanos, adem&#225;s de organizar
+						</p>
+						<p class="textItem " style="top:44.415918%;left:51.920123%;width:22.734255%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							conciertos en Coatzacoalcos y Xalapa.
+						</p>
+						<p class="textItem " style="top:48.010270%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En materia deportiva, se dio cobertura a los equipos de baloncesto
+						</p>
+						<p class="textItem " style="top:49.807445%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Halcones Rojos de Veracruz y Halcones Xalapa durante su
+						</p>
+						<p class="textItem " style="top:51.604621%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							participaci&#243;n en la Liga Nacional de Baloncesto Profesional,
+						</p>
+						<p class="textItem " style="top:53.401797%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en donde los Halcones Rojos de Veracruz lograron su segundo
+						</p>
+						<p class="textItem " style="top:55.198973%;left:51.920123%;width:7.987711%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							campeonato.
+						</p>
+						<p class="textItem " style="top:58.793325%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tambi&#233;n se continu&#243; con las transmisiones de los partidos del
+						</p>
+						<p class="textItem " style="top:60.590501%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Club Tiburones Rojos de Veracruz; los encuentros finales de la
+						</p>
+						<p class="textItem " style="top:62.387677%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							segunda divisi&#243;n profesional y ascenso del equipo Delfines de
+						</p>
+						<p class="textItem " style="top:64.184852%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Coatzacoalcos; as&#237; como de la Liga Mexicana de Beisbol de los
+						</p>
+						<p class="textItem " style="top:65.982028%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Rojos del &#193;guila de Veracruz y la d&#233;cima temporada de la Liga
+						</p>
+						<p class="textItem " style="top:67.779204%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Invernal Veracruzana. Adem&#225;s, los partidos de las Ligas Escolares
+						</p>
+						<p class="textItem " style="top:69.576380%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Permanentes de la Secretar&#237;a de Educaci&#243;n de Veracruz, en Xalapa
+						</p>
+						<p class="textItem " style="top:71.373556%;left:51.920123%;width:7.219662%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y Coatepec.
+						</p>
+						<p class="textItem " style="top:74.967908%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Durante el Mundial de Futbol Brasil 2014, TVM&#193;S y
+						</p>
+						<p class="textItem " style="top:76.765083%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							RADIOM&#193;S transmitieron el programa De Zurda conducido por
+						</p>
+						<p class="textItem " style="top:78.562259%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Diego Armando Maradona, y a trav&#233;s del cual se dio puntual
+						</p>
+						<p class="textItem " style="top:80.359435%;left:51.920123%;width:29.953917%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cobertura al desarrollo de dicho torneo deportivo.
+						</p>
+						<p class="textItem " style="top:83.953787%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En junio, se transmitieron por primera vez, desde el Palacio de
+						</p>
+						<p class="textItem " style="top:85.750963%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los Deportes, los juegos de la Liga Mundial de Voleibol donde la
+						</p>
+						<p class="textItem " style="top:87.548139%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							selecci&#243;n mexicana de voleibol se enfrent&#243; contra las selecciones
+						</p>
+						<p class="textItem " style="top:89.345315%;left:51.920123%;width:15.668203%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Cuba, T&#250;nez y Turqu&#237;a.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-504.html">504</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-505.html">505</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-506.html">506</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-507.html">507</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-508.html">508</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-509.html">509</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-510.html">510</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-511.html">511</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-512.html">512</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-513.html">513</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-514.html">514</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-515.html">515</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

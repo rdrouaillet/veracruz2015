@@ -1,0 +1,476 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "125";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-124.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;125 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-126.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-124.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">125 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-126.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0125.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:41.167435%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:47.619048%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:48.694316%;width:5.990783%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>T u r i s m o</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:55.453149%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:56.528418%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>1 2 3</b>
+						</p>
+						<p class="textItem " style="top:18.356868%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Derivado del impulso otorgado a los artesanos veracruzanos, en el
+						</p>
+						<p class="textItem " style="top:20.154044%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Concurso Nacional de Alfarer&#237;a: &#193;rbol de la Vida 2014 efectuado
+						</p>
+						<p class="textItem " style="top:21.951220%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en Metepec, Estado de M&#233;xico, la ganadora del primer lugar en la
+						</p>
+						<p class="textItem " style="top:23.748395%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							categor&#237;a de barro natural, fue Carmen Guti&#233;rrez Flores, artesana
+						</p>
+						<p class="textItem " style="top:25.545571%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la localidad de San Miguel Aguasuelos, municipio de Naolinco.
+						</p>
+						<p class="textItem " style="top:29.139923%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el 38 Premio Nacional de Cer&#225;mica 2014, resultaron ganadores,
+						</p>
+						<p class="textItem " style="top:30.937099%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Norma V&#225;squez y Erick V&#225;squez de Naolinco; Arturo Jim&#233;nez
+						</p>
+						<p class="textItem " style="top:32.734275%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Illescas de Xalapa y Mariana Vel&#225;zquez Hern&#225;ndez, de Coatepec;
+						</p>
+						<p class="textItem " style="top:34.531451%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en el V Concurso Nacional de Fibras Vegetales, el primer lugar
+						</p>
+						<p class="textItem " style="top:36.328626%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							correspondi&#243; a Leonardo Hern&#225;ndez Hern&#225;ndez, de Benito Ju&#225;rez,
+						</p>
+						<p class="textItem " style="top:38.125802%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y tambi&#233;n fueron premiados Miguel Antonio Luis, de Mecatl&#225;n y
+						</p>
+						<p class="textItem " style="top:39.922978%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Cira del &#193;ngel Bautista de Tantoyuca; en el 1er Concurso Nacional
+						</p>
+						<p class="textItem " style="top:41.720154%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Reboso, gan&#243; la artesana de Soledad Atzompa, Santa Francisca
+						</p>
+						<p class="textItem " style="top:43.517330%;left:10.752688%;width:3.686636%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Rosas.
+						</p>
+						<p class="textItem " style="top:47.111682%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							De igual manera se particip&#243; en el 4&#176; Concurso Nacional del
+						</p>
+						<p class="textItem " style="top:48.908858%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Juguete Popular Mexicano, el Segundo Concurso Nacional de
+						</p>
+						<p class="textItem " style="top:50.706033%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Textiles, el Concurso Nacional El Arte Mexicano que perdura
+						</p>
+						<p class="textItem " style="top:52.503209%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							2014, el segundo Concurso Nacional de J&#243;venes Creadores del
+						</p>
+						<p class="textItem " style="top:54.300385%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Arte Popular Mexicano, la XXI Edici&#243;n del Concurso Nacional de
+						</p>
+						<p class="textItem " style="top:56.097561%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Nacimiento Mexicano, y el Primer Concurso Nacional de Grandes
+						</p>
+						<p class="textItem " style="top:57.894737%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Maestros del Patrimonio Artesanal de M&#233;xico 2014, con un registro
+						</p>
+						<p class="textItem " style="top:59.691913%;left:10.752688%;width:33.640553%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 571 piezas y 16 artesanos premiados nacionalmente.
+						</p>
+						<p class="textItem " style="top:63.157895%;left:10.752688%;width:25.499232%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							4.2.4. Exposiciones y ferias
+						</p>
+						<p class="textItem " style="top:67.394095%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Una de las estrategias utilizadas para fomentar la comercializaci&#243;n
+						</p>
+						<p class="textItem " style="top:69.191271%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de artesan&#237;a veracruzana, fue a trav&#233;s de la participaci&#243;n en las
+						</p>
+						<p class="textItem " style="top:70.988447%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ferias comerciales nacionales realizadas en Chiapas, Distrito Federal,
+						</p>
+						<p class="textItem " style="top:72.785623%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estado de M&#233;xico, Puebla, Quintana Roo, Tabasco, Campeche,
+						</p>
+						<p class="textItem " style="top:74.582798%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Cozumel y Aguascalientes con lo que se benefici&#243; a 700 artesanos
+						</p>
+						<p class="textItem " style="top:76.379974%;left:10.752688%;width:10.752688%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 22 municipios.
+						</p>
+						<p class="textItem " style="top:76.379974%;left:21.505376%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							21
+						</p>
+						<p class="textItem " style="top:79.974326%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Asimismo, se foment&#243; la participaci&#243;n de artesanos en las Expo
+						</p>
+						<p class="textItem " style="top:81.771502%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ventas realizadas en el Centro de Exposiciones y Convenciones
+						</p>
+						<p class="textItem " style="top:83.568678%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Veracruz y en Misantla. En el marco del Festival Cumbre Taj&#237;n,
+						</p>
+						<p class="textItem " style="top:85.365854%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se exhibi&#243; en el Parque Tem&#225;tico Takilhsukut, la colecci&#243;n de
+						</p>
+						<p class="textItem " style="top:88.318357%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							21. Chicontepec, Coahuitl&#225;n, Coatepec, C&#243;rdoba, Coscomatepec, Cosoleacaque, Las Choapas,
+						</p>
+						<p class="textItem " style="top:89.216945%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Hidalgotitl&#225;n, Fort&#237;n, Minatitl&#225;n, Naolinco, Pajapan, Papantla, Soledad Atzompa, Tantoyuca,
+						</p>
+						<p class="textItem " style="top:90.243902%;left:10.752688%;width:16.589862%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz, Xalapa, Xico y Zontecomatl&#225;n.
+						</p>
+						<p class="textItem " style="top:18.356868%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Indumentaria Ind&#237;gena Veracruzana, que tambi&#233;n fue presentada
+						</p>
+						<p class="textItem " style="top:20.154044%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en el mezzanine del Museo de Antropolog&#237;a de Xalapa (MAX) del
+						</p>
+						<p class="textItem " style="top:21.951220%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							2 mayo al 22 de junio, en la exposici&#243;n temporal: Ra&#237;ces textiles de
+						</p>
+						<p class="textItem " style="top:23.748395%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz; as&#237; como en el Centro de Exposiciones y Convenciones
+						</p>
+						<p class="textItem " style="top:25.545571%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Veracruz en Boca del R&#237;o, durante el XIII Encuentro de la Red
+						</p>
+						<p class="textItem " style="top:27.342747%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Nacional Turismo para Todos, del 3 al 5 de septiembre, en el XII
+						</p>
+						<p class="textItem " style="top:29.139923%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Congreso Nacional de la Asociaci&#243;n Mexicana Transfuncional,
+						</p>
+						<p class="textItem " style="top:30.937099%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del 10 al 13 de septiembre, y en la Feria Solidaria Nacional de
+						</p>
+						<p class="textItem " style="top:32.734275%;left:51.920123%;width:27.649770%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							C&#243;rdoba, celebrada en octubre en esa ciudad.
+						</p>
+						<p class="textItem testString" style="top:35.815148%;left:51.920123%;width:32.411674%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							5. Otros programas y
+						</p>
+						<p class="textItem " style="top:38.510911%;left:51.920123%;width:30.107527%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							acciones relevantes
+						</p>
+						<p class="textItem " style="top:44.287548%;left:51.920123%;width:17.357911%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							5.1. Transparencia
+						</p>
+						<p class="textItem " style="top:48.523748%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Secretar&#237;a de Turismo y Cultura cumpli&#243; con la obligaci&#243;n de
+						</p>
+						<p class="textItem " style="top:50.320924%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							garantizar el acceso a la informaci&#243;n p&#250;blica y la rendici&#243;n de
+						</p>
+						<p class="textItem " style="top:52.118100%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cuentas de los servidores p&#250;blicos, mediante los mecanismos y
+						</p>
+						<p class="textItem " style="top:53.915276%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							procedimientos simplificados, expeditos y gratuitos establecidos
+						</p>
+						<p class="textItem " style="top:55.712452%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por el Instituto Veracruzano de Acceso a la Informaci&#243;n, para que
+						</p>
+						<p class="textItem " style="top:57.509628%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los ciudadanos ejerzan sus derechos en materia de trasparencia y
+						</p>
+						<p class="textItem " style="top:59.306804%;left:51.920123%;width:19.047619%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							protecci&#243;n de datos personales.
+						</p>
+						<p class="textItem " style="top:62.901155%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							De enero a septiembre de 2014, el total de visitas al Portal de la
+						</p>
+						<p class="textItem " style="top:64.698331%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Secretar&#237;a de Turismo y Cultura fue de 43,096, m&#225;s del doble de las
+						</p>
+						<p class="textItem " style="top:66.495507%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							recibidas en 2013, lo que refleja un mayor inter&#233;s de la ciudadan&#237;a
+						</p>
+						<p class="textItem " style="top:68.292683%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por conocer las actividades realizadas en el cumplimiento de sus
+						</p>
+						<p class="textItem " style="top:70.089859%;left:51.920123%;width:5.837174%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							objetivos.
+						</p>
+						<p class="textItem " style="top:73.684211%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A trav&#233;s del sistema INFOMEX se recibieron 30 solicitudes
+						</p>
+						<p class="textItem " style="top:75.481386%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de informaci&#243;n respecto a las acciones emprendidas por la
+						</p>
+						<p class="textItem " style="top:77.278562%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dependencia, las cuales fueron solventadas en tiempo y forma.
+						</p>
+						<p class="textItem " style="top:79.075738%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En materia de la tutela de datos personales, no se present&#243;
+						</p>
+						<p class="textItem " style="top:80.872914%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							solicitud alguna de derechos de acceso, rectificaci&#243;n, cancelaci&#243;n
+						</p>
+						<p class="textItem " style="top:82.670090%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							u oposici&#243;n de alg&#250;n titular de los datos personales que se
+						</p>
+						<p class="textItem " style="top:84.467266%;left:51.920123%;width:25.806452%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							encuentran en los sistemas de la Secretar&#237;a.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-120.html">120</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-121.html">121</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-122.html">122</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-123.html">123</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-124.html">124</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-125.html">125</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-126.html">126</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-127.html">127</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-128.html">128</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-129.html">129</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-130.html">130</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-131.html">131</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

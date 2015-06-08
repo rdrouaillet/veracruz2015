@@ -1,0 +1,503 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "165";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-164.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;165 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-166.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-164.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">165 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-166.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0165.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:37.019969%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:43.471582%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:44.546851%;width:14.285714%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>D e s a r r o l l o S o c i a l</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:59.600614%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:60.675883%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>1 6 3</b>
+						</p>
+						<p class="textItem " style="top:18.356868%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con lo cual se recuper&#243; un volumen de 100.28 litros por segundo
+						</p>
+						<p class="textItem " style="top:20.154044%;left:10.752688%;width:14.439324%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de agua que se perd&#237;an.
+						</p>
+						<p class="textItem " style="top:23.748395%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Esto permiti&#243; la realizaci&#243;n de diagn&#243;sticos para la regulaci&#243;n
+						</p>
+						<p class="textItem " style="top:25.545571%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y balanceo de redes de distribuci&#243;n, mejorando la eficiencia
+						</p>
+						<p class="textItem " style="top:27.342747%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del servicio del vital l&#237;quido, principalmente en los sistemas de
+						</p>
+						<p class="textItem " style="top:29.139923%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Altotonga, Atzal&#225;n, Catemaco, Jalacingo, Las Choapas, Las Vigas,
+						</p>
+						<p class="textItem " style="top:30.937099%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Misantla, Nogales, Paso del Macho, R&#237;o Blanco, Tezonapa y
+						</p>
+						<p class="textItem " style="top:32.734275%;left:10.752688%;width:7.373272%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tlacotalpan.
+						</p>
+						<p class="textItem " style="top:36.328626%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con las acciones para el ahorro de energ&#237;a en los equipos de
+						</p>
+						<p class="textItem " style="top:38.125802%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							bombeo de 66 organismos operadores, mensualmente se analiza la
+						</p>
+						<p class="textItem " style="top:39.922978%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							facturaci&#243;n electr&#243;nica de 577 equipos, con la finalidad de detectar
+						</p>
+						<p class="textItem " style="top:41.720154%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							irregularidades en el cobro y evitar la aplicaci&#243;n de sanciones por
+						</p>
+						<p class="textItem " style="top:43.517330%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							bajo factor de potencia, mala medici&#243;n y detecci&#243;n oportuna de
+						</p>
+						<p class="textItem " style="top:45.314506%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cambios de tarifa convenientes al organismo operador, esto con la
+						</p>
+						<p class="textItem " style="top:47.111682%;left:10.752688%;width:27.188940%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							finalidad de reducir costos y obtener ahorros.
+						</p>
+						<p class="textItem " style="top:50.706033%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para fortalecer lo anterior y lograr ahorros de hasta 25 por ciento en
+						</p>
+						<p class="textItem " style="top:52.503209%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la facturaci&#243;n electr&#243;nica, se adquirieron 48 equipos de bombeo
+						</p>
+						<p class="textItem " style="top:54.300385%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de alta eficiencia para 25 oficinas operadoras con una inversi&#243;n de
+						</p>
+						<p class="textItem " style="top:56.097561%;left:10.752688%;width:27.035330%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							21.5 millones de pesos del programa APAZU.
+						</p>
+						<p class="textItem " style="top:59.691913%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Asimismo, se encuentra en proceso, la adquisici&#243;n de 178
+						</p>
+						<p class="textItem " style="top:61.489089%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							capacitores para corregir el bajo factor de potencia y evitar
+						</p>
+						<p class="textItem " style="top:63.286264%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cargos por este rubro que realiza CFE, con esta acci&#243;n se dejar&#225;
+						</p>
+						<p class="textItem " style="top:65.083440%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de utilizar una potencia de 1009 KVA para ser ocupados en otras
+						</p>
+						<p class="textItem " style="top:66.880616%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							instalaciones y as&#237; reducir las emisiones de Di&#243;xido de Carbono
+						</p>
+						<p class="textItem " style="top:68.677792%;left:10.752688%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(CO
+						</p>
+						<p class="textItem " style="top:69.576380%;left:13.364055%;width:0.768049%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							2)
+						</p>
+						<p class="textItem " style="top:68.677792%;left:14.439324%;width:8.755760%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a la atmosfera.
+						</p>
+						<p class="textItem " style="top:72.272144%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Por otra parte, para mejorar su operaci&#243;n, se tiene programada la
+						</p>
+						<p class="textItem " style="top:74.069320%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							automatizaci&#243;n de 30 equipos de bombeo en los municipios de
+						</p>
+						<p class="textItem " style="top:75.866496%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Camerino Z. Mendoza, Juan Rodr&#237;guez Clara, Naranjos-Amatl&#225;n,
+						</p>
+						<p class="textItem " style="top:77.663671%;left:10.752688%;width:31.950845%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tlalixcoyan, Tihuatl&#225;n y Vega de Alatorre, entre otros.
+						</p>
+						<p class="textItem " style="top:81.258023%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Mediante el Programa de Calidad del Agua, se realizaron 979
+						</p>
+						<p class="textItem " style="top:83.055199%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							visitas a diversas localidades del Estado, integrando tres localidades
+						</p>
+						<p class="textItem " style="top:84.852375%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a la cloraci&#243;n del agua; se revisaron los niveles de cloro residual
+						</p>
+						<p class="textItem " style="top:86.649551%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							libre en 524 localidades y se realizaron los ajustes necesarios para
+						</p>
+						<p class="textItem " style="top:18.356868%;left:51.920123%;width:33.026114%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cumplir con las normas oficiales NOM-127-SSA1-1994
+						</p>
+						<p class="textItem " style="top:18.485237%;left:84.946237%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							16
+						</p>
+						<p class="textItem " style="top:18.356868%;left:86.328725%;width:5.222734%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y NOM-
+						</p>
+						<p class="textItem " style="top:20.154044%;left:51.920123%;width:9.523810%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							230-SSA1-2002
+						</p>
+						<p class="textItem " style="top:20.282413%;left:61.290323%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							17
+						</p>
+						<p class="textItem " style="top:20.154044%;left:62.211982%;width:29.185868%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							; se tomaron 3,393 muestras de cloro residual
+						</p>
+						<p class="textItem " style="top:21.951220%;left:51.920123%;width:3.072197%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							libre.
+						</p>
+						<p class="textItem " style="top:25.545571%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En mantenimiento correctivo y preventivo, este se realiz&#243; a 141
+						</p>
+						<p class="textItem " style="top:27.342747%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dosificadores de cloro, se instalaron 53 equipos dosificadores y se
+						</p>
+						<p class="textItem " style="top:29.139923%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dieron 491 asesor&#237;as t&#233;cnicas al personal operativo. Estas acciones
+						</p>
+						<p class="textItem " style="top:30.937099%;left:51.920123%;width:25.960061%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fueron en beneficio de 717,508 habitantes.
+						</p>
+						<p class="textItem " style="top:34.531451%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se realizaron cinco operativos de saneamiento b&#225;sico, para revisar
+						</p>
+						<p class="textItem " style="top:36.328626%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la calidad del agua entubada y de pozos artesianos o caseros
+						</p>
+						<p class="textItem " style="top:38.125802%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con mayor riesgo de contaminaci&#243;n o susceptibles a brotes de
+						</p>
+						<p class="textItem " style="top:39.922978%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							enfermedades infecciosas. Estas acciones se realizaron en los
+						</p>
+						<p class="textItem " style="top:41.720154%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipios de Acayucan, Alvarado, Amatitl&#225;n, Atlahuilco, Boca
+						</p>
+						<p class="textItem " style="top:43.517330%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del R&#237;o, Calcahualco, Carlos A. Carrillo, Catemaco, Chacaltianguis,
+						</p>
+						<p class="textItem " style="top:45.314506%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Coatzintla, Cosamaloapan, Guti&#233;rrez Zamora, Ixhuatl&#225;n del
+						</p>
+						<p class="textItem " style="top:47.111682%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Sureste, Jos&#233; Azueta, La Antigua, La Perla, Medell&#237;n, Otatitl&#225;n,
+						</p>
+						<p class="textItem " style="top:48.908858%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Papantla, Playa Vicente, Poza Rica, San Andr&#233;s Tuxtla, Soledad
+						</p>
+						<p class="textItem " style="top:50.706033%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Atzompa, Tecolutla, Tlacojalpan, Tlacotalpan, Tres Valles, Veracruz,
+						</p>
+						<p class="textItem " style="top:52.503209%;left:51.920123%;width:21.351767%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Yanga, Zongolica y Zontecomatl&#225;n.
+						</p>
+						<p class="textItem " style="top:56.097561%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A trav&#233;s del Programa de Mejoramiento de la Eficiencia F&#237;sica
+						</p>
+						<p class="textItem " style="top:57.894737%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y Comercial de Oficinas Operadoras (PROME), se fortaleci&#243; el
+						</p>
+						<p class="textItem " style="top:59.691913%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							desarrollo t&#233;cnico y de autosuficiencia financiera en las oficinas
+						</p>
+						<p class="textItem " style="top:61.489089%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							operadoras de agua. Las acciones realizadas por el PROME
+						</p>
+						<p class="textItem " style="top:63.286264%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							beneficiaron a 961,887 habitantes, al realizar con una inversi&#243;n de
+						</p>
+						<p class="textItem " style="top:65.083440%;left:51.920123%;width:29.800307%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							3.4 millones de pesos las siguientes adquisiciones:
+						</p>
+						<p class="textItem " style="top:68.677792%;left:54.685100%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem testString" style="top:68.677792%;left:54.070661%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:68.677792%;left:56.067588%;width:35.330261%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Adquisici&#243;n de macromedidores para oficinas operadoras en
+						</p>
+						<p class="textItem " style="top:70.474968%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							localidades de los municipios de Agua Dulce, Cosamaloapan,
+						</p>
+						<p class="textItem " style="top:72.272144%;left:55.606759%;width:27.803379%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Las Choapas, Mart&#237;nez de la Torre y Nanchital.
+						</p>
+						<p class="textItem " style="top:75.866496%;left:54.685100%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:75.866496%;left:54.070661%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:75.866496%;left:56.067588%;width:35.330261%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Adquisici&#243;n de medidores ultras&#243;nicos para las oficinas
+						</p>
+						<p class="textItem " style="top:77.663671%;left:55.606759%;width:32.872504%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							operadoras de los municipios de Minatitl&#225;n y Papantla.
+						</p>
+						<p class="textItem " style="top:86.521181%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							16. Salud ambiental, agua para uso y consumo humano, l&#237;mites permisibles de calidad y
+						</p>
+						<p class="textItem " style="top:87.419769%;left:51.920123%;width:26.728111%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							tratamiento a que debe someterse el agua para su potabilizaci&#243;n.
+						</p>
+						<p class="textItem " style="top:88.318357%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							17. Salud ambiental, agua para uso y consumo humano, requisitos sanitarios que se deben
+						</p>
+						<p class="textItem " style="top:89.216945%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							cumplir en los sistemas de abastecimiento p&#250;blicos y privados durante el manejo del agua,
+						</p>
+						<p class="textItem " style="top:90.243902%;left:51.920123%;width:17.818740%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							procedimientos sanitarios para el muestreo.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-160.html">160</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-161.html">161</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-162.html">162</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-163.html">163</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-164.html">164</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-165.html">165</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-166.html">166</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-167.html">167</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-168.html">168</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-169.html">169</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-170.html">170</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-171.html">171</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

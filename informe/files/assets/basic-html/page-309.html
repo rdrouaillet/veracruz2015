@@ -1,0 +1,482 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "309";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-308.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;309 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-310.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-308.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">309 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-310.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0309.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:38.248848%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:44.700461%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:45.775730%;width:11.827957%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>M e d i o A m b i e n t e</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:58.371736%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:59.447005%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>3 0 7</b>
+						</p>
+						<p class="textItem testString" style="top:7.958922%;left:10.752688%;width:37.327189%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							11. Procuradur&#237;a Estatal
+						</p>
+						<p class="textItem " style="top:10.654685%;left:10.752688%;width:35.483871%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							de Protecci&#243;n al Medio
+						</p>
+						<p class="textItem " style="top:13.350449%;left:10.752688%;width:14.900154%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							Ambiente
+						</p>
+						<p class="textItem " style="top:19.255456%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Durante este cuarto a&#241;o de ejercicio la Procuradur&#237;a Estatal de
+						</p>
+						<p class="textItem " style="top:21.052632%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Protecci&#243;n al Medio Ambiente, ha establecido las bases jur&#237;dicas
+						</p>
+						<p class="textItem " style="top:22.849807%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para la defensa del ambiente y los recursos naturales del Estado.
+						</p>
+						<p class="textItem " style="top:24.646983%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Este Organismo es un constante fiscalizador de la legislaci&#243;n
+						</p>
+						<p class="textItem " style="top:26.444159%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ambiental vigente, verifica los diversos sectores de la econom&#237;a,
+						</p>
+						<p class="textItem " style="top:28.241335%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							regulando de manera sustancial la contaminaci&#243;n que de sus
+						</p>
+						<p class="textItem " style="top:30.038511%;left:10.752688%;width:13.517665%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							actividades se derivan.
+						</p>
+						<p class="textItem " style="top:33.632863%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se promueve la cultura y la educaci&#243;n ambiental, con ello se
+						</p>
+						<p class="textItem " style="top:35.430039%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							asegura la prevenci&#243;n, sembrando en la sociedad el h&#225;bito del
+						</p>
+						<p class="textItem " style="top:37.227214%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cuidado del medio ambiente y principalmente la responsabilidad
+						</p>
+						<p class="textItem " style="top:39.024390%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que conlleva la explotaci&#243;n concientizada de los recursos naturales.
+						</p>
+						<p class="textItem " style="top:42.618742%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Desde su creaci&#243;n, la Procuradur&#237;a ha fomentado la cultura de la
+						</p>
+						<p class="textItem " style="top:44.415918%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							denuncia ciudadana, haciendo uso de las facilidades tecnol&#243;gicas
+						</p>
+						<p class="textItem " style="top:46.213094%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							actuales, estableci&#243; diversos canales para la captaci&#243;n y atenci&#243;n
+						</p>
+						<p class="textItem " style="top:48.010270%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de las mismas. Esto con el objetivo de atender de manera eficaz y
+						</p>
+						<p class="textItem " style="top:49.807445%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							oportuna los da&#241;os ambientales en todo el Estado, o en su caso,
+						</p>
+						<p class="textItem " style="top:51.604621%;left:10.752688%;width:31.182796%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							remitir dichas denuncias a la autoridad competente.
+						</p>
+						<p class="textItem " style="top:55.198973%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Por lo anterior, se instalaron cuatro oficinas regionales de la
+						</p>
+						<p class="textItem " style="top:56.996149%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Procuradur&#237;a, ubicadas en los municipios de: Coatzacoalcos,
+						</p>
+						<p class="textItem " style="top:58.793325%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Orizaba, Tuxpan y Xalapa. Estas ser&#225;n puntos permanentes
+						</p>
+						<p class="textItem " style="top:60.590501%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de captaci&#243;n de denuncias en materia ambiental, debido a la
+						</p>
+						<p class="textItem " style="top:62.387677%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							reincidencia de da&#241;os al ambiente en estas regiones. Con estas
+						</p>
+						<p class="textItem " style="top:64.184852%;left:10.752688%;width:36.251920%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							oficinas se sustituye la colocaci&#243;n de los m&#243;dulos itinerantes.
+						</p>
+						<p class="textItem " style="top:67.650834%;left:10.752688%;width:38.863287%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							11.1. Programa de Captaci&#243;n y Atenci&#243;n
+						</p>
+						<p class="textItem " style="top:69.833119%;left:10.752688%;width:12.903226%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							de Denuncias
+						</p>
+						<p class="textItem " style="top:74.069320%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Dise&#241;ado para ser el enlace entre la poblaci&#243;n y la autoridad
+						</p>
+						<p class="textItem " style="top:75.866496%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ambiental, a trav&#233;s de este Programa se recaba, analiza y
+						</p>
+						<p class="textItem " style="top:77.663671%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							atienden las denuncias que son recibidas de manera directa
+						</p>
+						<p class="textItem " style="top:79.460847%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en las instalaciones de la Procuradur&#237;a, v&#237;a telef&#243;nica gratuita
+						</p>
+						<p class="textItem " style="top:81.258023%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							01-800-000-PMAV(7628), por correo electr&#243;nico: denuncia@
+						</p>
+						<p class="textItem " style="top:83.055199%;left:10.752688%;width:24.270353%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pmaver.gob.mx; en el sitio en Internet 
+						</p>
+						<a class="linkTextItem  " href="http://www.pmaver.gob.mx/" target="_blank"  style="top:83.055199%;left:35.023041%;width:13.671275%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;" title="">
+							www.pmaver.gob.mx 
+						</a>
+						<p class="textItem " style="top:83.055199%;left:48.540707%;width:1.689708%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de
+						</p>
+						<p class="textItem " style="top:84.852375%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Procuradur&#237;a, mediante la liga Ay&#250;danos con tu denuncia y por
+						</p>
+						<p class="textItem " style="top:86.649551%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							servicio de mensajer&#237;a o correo certificado. Adem&#225;s, se atienden
+						</p>
+						<p class="textItem " style="top:88.446727%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							denuncias enviadas por dependencias de la Administraci&#243;n P&#250;blica
+						</p>
+						<p class="textItem " style="top:19.255456%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estatal, siempre y cuando sean competencia la Procuradur&#237;a Estatal
+						</p>
+						<p class="textItem " style="top:21.052632%;left:51.920123%;width:20.430108%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Protecci&#243;n al Medio Ambiente.
+						</p>
+						<p class="textItem " style="top:24.646983%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En este sentido, se recibieron y atendieron 2,108 denuncias
+						</p>
+						<p class="textItem " style="top:26.444159%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							provenientes de 148 municipios. Tomando en cuenta la extensi&#243;n
+						</p>
+						<p class="textItem " style="top:28.241335%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							territorial, la actividad econ&#243;mica-industrial o la diversidad de
+						</p>
+						<p class="textItem " style="top:30.038511%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							recursos con los que cuenta, se detectaron los siguientes municipios
+						</p>
+						<p class="textItem " style="top:31.835687%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con mayor n&#250;mero de incidencias ambientales: &#193;lamo Temapache,
+						</p>
+						<p class="textItem " style="top:33.632863%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Boca del R&#237;o, Coatzacoalcos, Coatzintla, Lerdo de Tejada, Medell&#237;n,
+						</p>
+						<p class="textItem " style="top:35.430039%;left:51.920123%;width:29.800307%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Minatitl&#225;n, Nanchital, Orizaba, Xalapa y Veracruz.
+						</p>
+						<p class="textItem " style="top:39.024390%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Del total de denuncias recibidas, 350 fueron remitidas a autoridades
+						</p>
+						<p class="textItem " style="top:40.821566%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ambientales de los tres &#243;rdenes de gobierno, de acuerdo a la
+						</p>
+						<p class="textItem " style="top:42.618742%;left:51.920123%;width:33.640553%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							naturaleza o ubicaci&#243;n de las irregularidades detectadas.
+						</p>
+						<p class="textItem " style="top:46.084724%;left:51.920123%;width:31.029186%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							11.2. Supervisi&#243;n y respeto de la
+						</p>
+						<p class="textItem " style="top:48.267009%;left:51.920123%;width:22.887865%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							normatividad ambiental
+						</p>
+						<p class="textItem " style="top:52.503209%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Procuradur&#237;a instrument&#243; dos programas que resguardan
+						</p>
+						<p class="textItem " style="top:54.300385%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y hacen valer la legislaci&#243;n en materia ambiental. Se trabaja de
+						</p>
+						<p class="textItem " style="top:56.097561%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							manera coordinada con las dem&#225;s autoridades ambientales ya
+						</p>
+						<p class="textItem " style="top:57.894737%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sean federales, estatales y municipales, teniendo siempre como
+						</p>
+						<p class="textItem " style="top:59.691913%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							prerrogativa el cumplimiento de la normatividad ambiental
+						</p>
+						<p class="textItem " style="top:61.489089%;left:51.920123%;width:39.016897%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							vigente, as&#237; como sus distintos &#225;mbitos de aplicaci&#243;n y ejecuci&#243;n.
+						</p>
+						<p class="textItem " style="top:64.955071%;left:51.920123%;width:29.339478%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							11.2.1. Programa de Vigilancia
+						</p>
+						<p class="textItem " style="top:67.137356%;left:51.920123%;width:9.831029%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							Ambiental
+						</p>
+						<p class="textItem " style="top:71.373556%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Este programa atiende de primera mano las denuncias recibidas,
+						</p>
+						<p class="textItem " style="top:73.170732%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							integra los expedientes correspondientes a cada problem&#225;tica
+						</p>
+						<p class="textItem " style="top:74.967908%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ambiental expuesta y ejerce las facultades otorgadas por la ley
+						</p>
+						<p class="textItem " style="top:76.765083%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para vigilar aquellas actividades que puedan ocasionar alguna
+						</p>
+						<p class="textItem " style="top:78.562259%;left:51.920123%;width:13.056836%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							afectaci&#243;n al entorno.
+						</p>
+						<p class="textItem " style="top:82.156611%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Durante los recorridos de vigilancia que personal de la Procuradur&#237;a
+						</p>
+						<p class="textItem " style="top:83.953787%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							realiz&#243; en 92 municipios, se ejecutaron inspecciones y en algunos
+						</p>
+						<p class="textItem " style="top:85.750963%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							casos se aplicaron clausuras temporales. Derivado de lo anterior
+						</p>
+						<p class="textItem " style="top:87.548139%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se integraron 770 expedientes, de los cuales 350 se tramitaron
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-304.html">304</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-305.html">305</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-306.html">306</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-307.html">307</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-308.html">308</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-309.html">309</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-310.html">310</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-311.html">311</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-312.html">312</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-313.html">313</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-314.html">314</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-315.html">315</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

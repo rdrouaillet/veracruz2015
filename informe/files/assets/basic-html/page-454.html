@@ -1,0 +1,545 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "454";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-453.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;454 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-455.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-453.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">454 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-455.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0454.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:15.661104%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de aguas residuales, utilizando recursos provenientes del
+						</p>
+						<p class="textItem " style="top:17.458280%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							FORTAMUNDF para cubrirlos. En este procedimiento se facult&#243; a
+						</p>
+						<p class="textItem " style="top:19.255456%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la SEFIPLAN para efectuar las retenciones y pagos, en los t&#233;rminos
+						</p>
+						<p class="textItem " style="top:21.052632%;left:8.602151%;width:18.740399%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la normatividad establecida.
+						</p>
+						<p class="textItem " style="top:21.181001%;left:27.188940%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							12
+						</p>
+						<p class="textItem " style="top:24.646983%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A partir de 2014, las y los contribuyentes, incluyendo los tres
+						</p>
+						<p class="textItem " style="top:26.444159%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#243;rdenes de gobierno, est&#225;n obligados a expedir Comprobantes
+						</p>
+						<p class="textItem " style="top:28.241335%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Fiscales Digitales por Internet (CFDI), a trav&#233;s de la p&#225;gina del SAT o
+						</p>
+						<p class="textItem " style="top:30.038511%;left:8.602151%;width:28.725038%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Proveedor Autorizado de Certificaci&#243;n (PAC).
+						</p>
+						<p class="textItem " style="top:30.166881%;left:37.327189%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							13
+						</p>
+						<p class="textItem " style="top:30.038511%;left:38.556068%;width:9.523810%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para asegurar el
+						</p>
+						<p class="textItem " style="top:31.835687%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cumplimientodeestasdisposicionessereform&#243;elC&#243;digoFinanciero
+						</p>
+						<p class="textItem " style="top:33.632863%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Estado, a efecto de incluir las definiciones relacionadas con la
+						</p>
+						<p class="textItem " style="top:35.430039%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							modernizaci&#243;n de los sistemas recaudatorios basados en medios
+						</p>
+						<p class="textItem " style="top:37.227214%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							electr&#243;nicos. Se brind&#243; orientaci&#243;n y asistencia a las dependencias
+						</p>
+						<p class="textItem " style="top:39.024390%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y entidades, incluyendo los OPD, para implementar la plataforma
+						</p>
+						<p class="textItem " style="top:40.821566%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de emisi&#243;n de los CFDI. Se aprovecharon las facilidades otorgadas
+						</p>
+						<p class="textItem " style="top:42.618742%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por el SAT para diferir el cumplimiento de la obligaci&#243;n durante el
+						</p>
+						<p class="textItem " style="top:44.415918%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							primer semestre de 2014, habiendo concluido la conversi&#243;n total
+						</p>
+						<p class="textItem " style="top:46.213094%;left:8.602151%;width:21.198157%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a los CFDI por sus ingresos propios.
+						</p>
+						<p class="textItem " style="top:46.341463%;left:29.800307%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							14
+						</p>
+						<p class="textItem " style="top:49.807445%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se coadyuv&#243; en las tareas de implementaci&#243;n del proceso de sellado
+						</p>
+						<p class="textItem " style="top:51.604621%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							digital de los pagos por servicios personales. Las dependencias
+						</p>
+						<p class="textItem " style="top:53.401797%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y entidades tienen la obligaci&#243;n de entregar a la SEFIPLAN la
+						</p>
+						<p class="textItem " style="top:55.198973%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							informaci&#243;n y los archivos electr&#243;nicos para que sean timbrados
+						</p>
+						<p class="textItem " style="top:56.996149%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por el SAT o el PAC que &#233;sta determine. La Secretar&#237;a est&#225; facultada
+						</p>
+						<p class="textItem " style="top:58.793325%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para efectuar el proceso de sellado digital de los pagos por servicios
+						</p>
+						<p class="textItem " style="top:60.590501%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							personales de las dependencias y entidades, y realiza el env&#237;o de
+						</p>
+						<p class="textItem " style="top:62.387677%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los archivos electr&#243;nicos para que sean timbrados por el SAT o el
+						</p>
+						<p class="textItem " style="top:64.184852%;left:8.602151%;width:2.918587%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							PAC.
+						</p>
+						<p class="textItem " style="top:64.313222%;left:11.367127%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							15
+						</p>
+						<p class="textItem " style="top:67.650834%;left:8.602151%;width:24.731183%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.1.1.3. Beneficios fiscales
+						</p>
+						<p class="textItem " style="top:71.887035%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se estableci&#243; un esquema de beneficios fiscales que cumplen
+						</p>
+						<p class="textItem " style="top:73.684211%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con los objetivos de reducci&#243;n de carga tributaria y regulatoria,
+						</p>
+						<p class="textItem " style="top:75.481386%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							simplificaci&#243;n de pago y disminuci&#243;n del costo administrativo. Se
+						</p>
+						<p class="textItem " style="top:77.278562%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							enfoca a sectores espec&#237;ficos de contribuyentes que tienen menor
+						</p>
+						<p class="textItem " style="top:79.974326%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							12. Decreto N&#250;mero 4 publicado en la Gaceta Oficial del Estado, N&#250;mero Extraordinario 492, el
+						</p>
+						<p class="textItem " style="top:81.001284%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							16 de diciembre de 2013. La reforma es acorde con lo estipulado en el art&#237;culo 51 de la Ley de
+						</p>
+						<p class="textItem " style="top:81.899872%;left:8.602151%;width:11.367127%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Coordinaci&#243;n Fiscal Federal.
+						</p>
+						<p class="textItem " style="top:82.798460%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							13. De conformidad con lo dispuesto por los art&#237;culos 29 y 29-A del C&#243;digo Fiscal de la Federaci&#243;n,
+						</p>
+						<p class="textItem " style="top:83.697047%;left:8.602151%;width:35.023041%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							publicado en el Diario Oficial de la Federaci&#243;n, N&#250;mero 6, el 9 de diciembre de 2013.
+						</p>
+						<p class="textItem " style="top:84.595635%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							14. Art&#237;culo sexto de la Primera Resoluci&#243;n de Modificaciones a la Resoluci&#243;n Miscel&#225;nea Fiscal
+						</p>
+						<p class="textItem " style="top:85.622593%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							para 2014, publicada en el Diario Oficial de la Federaci&#243;n, N&#250;mero 9, el jueves 13 de marzo de
+						</p>
+						<p class="textItem " style="top:86.521181%;left:8.602151%;width:2.457757%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							2014.
+						</p>
+						<p class="textItem " style="top:87.419769%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							15. Decreto por el que se faculta a la SEFIPLAN, para realizar el proceso de sellado digital y
+						</p>
+						<p class="textItem " style="top:88.318357%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							timbrado de todos los pagos de servicios personales de las dependencias y entidades de la
+						</p>
+						<p class="textItem " style="top:89.216945%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Administraci&#243;n P&#250;blica Estatal publicado en la Gaceta Oficial del Estado, N&#250;mero 037, el 27 de
+						</p>
+						<p class="textItem " style="top:90.243902%;left:8.602151%;width:6.298003%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							enero de 2014.
+						</p>
+						<p class="textItem " style="top:15.661104%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							capacidad econ&#243;mica, para ayudarlas y ayudarlos a ordenar su
+						</p>
+						<p class="textItem " style="top:17.458280%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estado tributario y contribuir a disminuir el rezago en el pago de
+						</p>
+						<p class="textItem " style="top:19.255456%;left:49.769585%;width:5.529954%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							adeudos.
+						</p>
+						<p class="textItem " style="top:22.849807%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Contribuyentes que se pusieron al corriente en sus adeudos fueron
+						</p>
+						<p class="textItem " style="top:24.646983%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							favorecidos con incentivos fiscales, del 15 de abril al 15 de julio
+						</p>
+						<p class="textItem " style="top:26.444159%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 2014, consistentes en la condonaci&#243;n del 100 por ciento de
+						</p>
+						<p class="textItem " style="top:28.241335%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							las multas y recargos, auto determinadas o determinadas por la
+						</p>
+						<p class="textItem " style="top:30.038511%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							autoridad fiscal, ocasionadas por la falta de pago de contribuciones
+						</p>
+						<p class="textItem " style="top:31.835687%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estatales hasta el 31 de diciembre de 2012. Incluye los accesorios
+						</p>
+						<p class="textItem " style="top:33.632863%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del ISERTP, Impuesto sobre Tenencia o Uso de Veh&#237;culos (ISTUV),
+						</p>
+						<p class="textItem " style="top:35.430039%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ISHO, ISAVAU y Derechos de Control Vehicular. El est&#237;mulo
+						</p>
+						<p class="textItem " style="top:37.227214%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							benefici&#243; tambi&#233;n a contribuyentes con convenios de pago
+						</p>
+						<p class="textItem " style="top:39.024390%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a plazos, por los accesorios del saldo pendiente de liquidar. Las
+						</p>
+						<p class="textItem " style="top:40.821566%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							bondades del est&#237;mulo fiscal se promovieron mediante reuniones
+						</p>
+						<p class="textItem " style="top:42.618742%;left:49.769585%;width:37.019969%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con c&#225;maras empresariales y organizaciones de productores.
+						</p>
+						<p class="textItem " style="top:42.747112%;left:86.789555%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							16
+						</p>
+						<p class="textItem " style="top:42.618742%;left:88.018433%;width:1.228879%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El
+						</p>
+						<p class="textItem " style="top:44.415918%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							programa gener&#243; una recaudaci&#243;n de 39.1 millones de pesos lo
+						</p>
+						<p class="textItem " style="top:46.213094%;left:49.769585%;width:39.016897%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que permiti&#243; regularizar el estatus fiscal de 6,907 contribuyentes.
+						</p>
+						<p class="textItem " style="top:49.807445%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con el programa de condonaci&#243;n a municipios -aplicable a los
+						</p>
+						<p class="textItem " style="top:51.604621%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							adeudos municipales del Impuesto sobre N&#243;minas y el ISERTP
+						</p>
+						<p class="textItem " style="top:53.401797%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 2013 y anteriores- se patrocin&#243; a los municipios y organismos
+						</p>
+						<p class="textItem " style="top:55.198973%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							descentralizados, desconcentrados, aut&#243;nomos e intermunicipales,
+						</p>
+						<p class="textItem " style="top:56.996149%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para que regularicen su situaci&#243;n fiscal. Con el Programa de
+						</p>
+						<p class="textItem " style="top:58.793325%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Reducci&#243;n en el Pago de los Impuestos -aplicable a los adeudos
+						</p>
+						<p class="textItem " style="top:60.590501%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 2014 hasta 2016- se crearon est&#237;mulos para fomentar el pago
+						</p>
+						<p class="textItem " style="top:62.387677%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de dichas contribuciones. El est&#237;mulo considera descuentos en
+						</p>
+						<p class="textItem " style="top:64.184852%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							porcentajes variables del adeudo, hasta de 45 por ciento en 2014,
+						</p>
+						<p class="textItem " style="top:65.982028%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el cual ser&#225; de 30 y 25 por ciento en 2015 y 2016, respectivamente,
+						</p>
+						<p class="textItem " style="top:67.779204%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para premiar el esfuerzo de los municipios cumplidos que ordenen
+						</p>
+						<p class="textItem " style="top:69.576380%;left:49.769585%;width:9.370200%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							su estado fiscal.
+						</p>
+						<p class="textItem " style="top:69.704750%;left:58.986175%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							17
+						</p>
+						<p class="textItem " style="top:73.170732%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Los municipios que paguen correcta y oportunamente el ISERTP
+						</p>
+						<p class="textItem " style="top:74.967908%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							durante 2014 obtienen el perd&#243;n fiscal por los adeudos de los
+						</p>
+						<p class="textItem " style="top:76.765083%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ejercicios de 2008 a 2010. Los que sean constantes y hagan lo
+						</p>
+						<p class="textItem " style="top:79.974326%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							16. Decreto de condonaci&#243;n de recargos y multas de cr&#233;ditos fiscales derivados de contribuciones
+						</p>
+						<p class="textItem " style="top:81.001284%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							estatales, publicado en la Gaceta Oficial del Estado, N&#250;mero Extraordinario 058, el 10 de
+						</p>
+						<p class="textItem " style="top:81.899872%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							febrero de 2014. Y Reglas de car&#225;cter general publicadas en el mismo &#243;rgano oficial, N&#250;mero
+						</p>
+						<p class="textItem " style="top:82.798460%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Extraordinario 128, el 31 de marzo de 2014. Con base en las facultades establecidas en el art&#237;culo
+						</p>
+						<p class="textItem " style="top:83.697047%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							10 de la Ley de Ingresos para el Estado de Veracruz, publicada en la Gaceta Oficial, N&#250;mero
+						</p>
+						<p class="textItem " style="top:84.595635%;left:49.769585%;width:19.662058%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Extraordinario 492, el 16 de diciembre de 2013.
+						</p>
+						<p class="textItem " style="top:85.622593%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							17. Decreto por el que se otorga a los municipios veracruzanos diversos beneficios fiscales en
+						</p>
+						<p class="textItem " style="top:86.521181%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							materia del impuesto sobre n&#243;minas y del impuesto sobre erogaciones por remuneraciones al
+						</p>
+						<p class="textItem " style="top:87.419769%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							trabajo personal, publicado en la Gaceta Oficial del Estado, N&#250;mero Extraordinario 058, el 10 de
+						</p>
+						<p class="textItem " style="top:88.318357%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							febrero de 2014. Con base en las facultades establecidas en el art&#237;culo 11 de la Ley de Ingresos
+						</p>
+						<p class="textItem " style="top:89.216945%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							para el Estado de Veracruz, publicada en la Gaceta Oficial, N&#250;mero Extraordinario 492, el 16 de
+						</p>
+						<p class="textItem " style="top:90.243902%;left:49.769585%;width:7.987711%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							diciembre de 2013.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-449.html">449</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-450.html">450</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-451.html">451</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-452.html">452</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-453.html">453</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-454.html">454</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-455.html">455</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-456.html">456</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-457.html">457</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-458.html">458</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-459.html">459</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-460.html">460</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

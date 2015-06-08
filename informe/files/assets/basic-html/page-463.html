@@ -1,0 +1,596 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "463";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-462.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;463 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-464.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-462.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">463 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-464.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0463.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:35.483871%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:41.935484%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:43.010753%;width:17.511521%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>F i n a n z a s y P l a n e a c i &#243; n</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:61.136713%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:62.211982%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>4 6 1</b>
+						</p>
+						<p class="textItem " style="top:13.478819%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se implement&#243; el programa de inscripci&#243;n de veh&#237;culos usados
+						</p>
+						<p class="textItem " style="top:15.275995%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de procedencia extranjera en el registro estatal de contribuyentes,
+						</p>
+						<p class="textItem " style="top:17.073171%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cuyo objetivo es legalizar la permanencia en el pa&#237;s de los veh&#237;culos
+						</p>
+						<p class="textItem " style="top:18.870347%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							usados que se importan definitivamente de Canad&#225; y Estados
+						</p>
+						<p class="textItem " style="top:20.667522%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Unidos de Norteam&#233;rica. Los tr&#225;mites de regularizaci&#243;n de las
+						</p>
+						<p class="textItem " style="top:22.464698%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							unidades por medio de la OVH se efect&#250;an con tiempos m&#237;nimos
+						</p>
+						<p class="textItem " style="top:24.261874%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de respuesta a las solicitudes de inscripci&#243;n. En el periodo de
+						</p>
+						<p class="textItem " style="top:26.059050%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Informe, se autoriz&#243; el alta de 16,869 veh&#237;culos extranjeros y se
+						</p>
+						<p class="textItem " style="top:27.856226%;left:10.752688%;width:14.900154%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dot&#243; de placas a 18,249.
+						</p>
+						<p class="textItem " style="top:31.193838%;left:10.752688%;width:39.477727%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.1.5. Pol&#237;tica y programa de fiscalizaci&#243;n
+						</p>
+						<p class="textItem " style="top:35.430039%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En congruencia con las estrategias y l&#237;neas de acci&#243;n dispuestas en
+						</p>
+						<p class="textItem " style="top:37.227214%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el PVD, en el Programa de Fiscalizaci&#243;n, tanto en el &#225;mbito federal
+						</p>
+						<p class="textItem " style="top:39.024390%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							como estatal, los esfuerzos y recursos de la Administraci&#243;n se
+						</p>
+						<p class="textItem " style="top:40.821566%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dirigieron a la verificaci&#243;n fiscal de contribuyentes que presentaban
+						</p>
+						<p class="textItem " style="top:42.618742%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							indicios de incumplimiento de obligaciones. La fiscalizaci&#243;n se
+						</p>
+						<p class="textItem " style="top:44.415918%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							vigoriz&#243; con a) una mejor selecci&#243;n y programaci&#243;n de las y los
+						</p>
+						<p class="textItem " style="top:46.213094%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							contribuyentes sujetos a verificaci&#243;n; b) cruce de informaci&#243;n con
+						</p>
+						<p class="textItem " style="top:48.010270%;left:10.752688%;width:38.556068%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el SAT, y c) aumento en la eficiencia y presencia fiscal del Estado.
+						</p>
+						<p class="textItem " style="top:51.604621%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se mejor&#243; la muestra de personas y unidades econ&#243;micas sujetas
+						</p>
+						<p class="textItem " style="top:53.401797%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a procesos de auditor&#237;a, en particular de las que est&#225;n relacionadas
+						</p>
+						<p class="textItem " style="top:55.198973%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con actividades de comercio exterior. Se reforz&#243; el intercambio y
+						</p>
+						<p class="textItem " style="top:56.996149%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cruce de informaci&#243;n con el SAT para elevar la efectividad de las
+						</p>
+						<p class="textItem " style="top:58.793325%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							auditor&#237;as mediante la reducci&#243;n de costos y con &#233;l se hicieron
+						</p>
+						<p class="textItem " style="top:60.590501%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							verificaciones conjuntas del cumplimiento de expedici&#243;n de los
+						</p>
+						<p class="textItem " style="top:62.387677%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							CFDI. La presencia fiscal se fortaleci&#243; con m&#225;s actos sustantivos
+						</p>
+						<p class="textItem " style="top:64.184852%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de revisi&#243;n fiscal, bajo la premisa de que un incremento en la
+						</p>
+						<p class="textItem " style="top:65.982028%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							percepci&#243;n del riesgo asociado con el incumplimiento y conocer las
+						</p>
+						<p class="textItem " style="top:67.779204%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							consecuencias jur&#237;dico-administrativas incentivan el cumplimiento
+						</p>
+						<p class="textItem " style="top:69.576380%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fiscal. Con ello mejoraron los indicadores de fiscalizaci&#243;n, como
+						</p>
+						<p class="textItem " style="top:71.373556%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la relaci&#243;n costo-beneficio y el rendimiento per c&#225;pita de las
+						</p>
+						<p class="textItem " style="top:73.170732%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							revisiones; el primero eval&#250;a la rentabilidad de los actos fiscales y el
+						</p>
+						<p class="textItem " style="top:74.967908%;left:10.752688%;width:30.721966%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							segundo el n&#250;mero de actos realizados por auditor.
+						</p>
+						<p class="textItem " style="top:78.562259%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Programa de Fiscalizaci&#243;n Federal que tiene su fundamento en
+						</p>
+						<p class="textItem " style="top:80.359435%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el CCAMFF, sus anexos y el acta de concertaci&#243;n, suscritos con
+						</p>
+						<p class="textItem " style="top:82.156611%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la SHCP, practic&#243; 1,111 actos de revisi&#243;n fiscal, distribuidos en
+						</p>
+						<p class="textItem " style="top:83.953787%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los distintos m&#233;todos, seg&#250;n se aprecia en el cuadro. La meta
+						</p>
+						<p class="textItem " style="top:85.750963%;left:10.752688%;width:33.794163%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							comprometida con la SHCP se super&#243; en 0.9 por ciento.
+						</p>
+						<p class="textItem testString" style="top:13.863928%;left:52.534562%;width:22.580645%;height:1.797176%;font-size:0.600000em;color:#25171C;font-family:Delima MTStd;">
+							Programa de Fiscalizaci&#243;n
+						</p>
+						<p class="textItem " style="top:15.404365%;left:52.534562%;width:25.652842%;height:1.797176%;font-size:0.600000em;color:#25171C;font-family:Delima MTStd;">
+							de Impuestos Federales, 2014
+						</p>
+						<p class="textItem " style="top:16.944801%;left:52.534562%;width:15.821813%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(N&#250;mero de actos fiscales)
+						</p>
+						<p class="textItem " style="top:21.181001%;left:60.368664%;width:3.993856%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>M&#233;todo</b>
+						</p>
+						<p class="textItem " style="top:21.181001%;left:73.886329%;width:9.216590%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Meta Realizado</b>
+						</p>
+						<p class="textItem " style="top:20.025674%;left:85.253456%;width:4.608295%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Variaci&#243;n</b>
+						</p>
+						<p class="textItem " style="top:22.336329%;left:84.485407%;width:5.683564%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Actos %</b>
+						</p>
+						<p class="textItem " style="top:24.261874%;left:52.534562%;width:6.912442%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Actos Fiscales</b>
+						</p>
+						<p class="textItem " style="top:24.261874%;left:73.732719%;width:8.448541%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>1,101 1,111</b>
+						</p>
+						<p class="textItem " style="top:24.261874%;left:85.560676%;width:5.069124%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>10 0.9</b>
+						</p>
+						<p class="textItem " style="top:25.930680%;left:53.456221%;width:9.370200%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							Visitas Domiciliarias
+						</p>
+						<p class="textItem " style="top:25.930680%;left:74.654378%;width:1.996928%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							288
+						</p>
+						<p class="textItem " style="top:25.930680%;left:80.184332%;width:1.996928%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							288
+						</p>
+						<p class="textItem " style="top:25.930680%;left:86.175115%;width:4.454685%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							0 0.0
+						</p>
+						<p class="textItem " style="top:27.599487%;left:53.456221%;width:11.059908%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							Revisiones de Gabinete
+						</p>
+						<p class="textItem " style="top:27.599487%;left:74.654378%;width:1.996928%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							251
+						</p>
+						<p class="textItem " style="top:27.599487%;left:80.184332%;width:1.996928%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							251
+						</p>
+						<p class="textItem " style="top:27.599487%;left:86.175115%;width:4.454685%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							0 0.0
+						</p>
+						<p class="textItem " style="top:29.396662%;left:53.456221%;width:15.514593%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							Revisiones de Papeles de Trabajo
+						</p>
+						<p class="textItem " style="top:29.396662%;left:74.654378%;width:1.996928%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							102
+						</p>
+						<p class="textItem " style="top:29.396662%;left:80.184332%;width:1.996928%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							102
+						</p>
+						<p class="textItem " style="top:29.396662%;left:86.175115%;width:4.454685%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							0 0.0
+						</p>
+						<p class="textItem " style="top:31.065469%;left:53.456221%;width:12.288786%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							Revisiones de Dict&#225;menes
+						</p>
+						<p class="textItem " style="top:31.065469%;left:74.654378%;width:1.996928%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							250
+						</p>
+						<p class="textItem " style="top:31.065469%;left:80.184332%;width:1.996928%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							250
+						</p>
+						<p class="textItem " style="top:31.065469%;left:86.175115%;width:4.454685%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							0 0.0
+						</p>
+						<p class="textItem " style="top:32.734275%;left:53.456221%;width:12.903226%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							Verificaci&#243;n de Expedientes
+						</p>
+						<p class="textItem " style="top:33.761232%;left:53.456221%;width:10.906298%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							Comprobantes Fiscales
+						</p>
+						<p class="textItem " style="top:32.734275%;left:75.268817%;width:1.228879%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							60
+						</p>
+						<p class="textItem " style="top:32.734275%;left:80.798771%;width:1.228879%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							60
+						</p>
+						<p class="textItem " style="top:32.734275%;left:86.175115%;width:4.454685%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							0 0.0
+						</p>
+						<p class="textItem " style="top:35.430039%;left:53.456221%;width:8.909370%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							Revisiones Masivas
+						</p>
+						<p class="textItem " style="top:35.430039%;left:74.654378%;width:1.996928%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							150
+						</p>
+						<p class="textItem " style="top:35.430039%;left:80.184332%;width:1.996928%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							160
+						</p>
+						<p class="textItem " style="top:35.430039%;left:85.560676%;width:5.069124%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							10 6.7
+						</p>
+						<p class="textItem " style="top:37.612323%;left:52.534562%;width:28.110599%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Fuente: Secretar&#237;a de Finanzas y Planeaci&#243;n, Subsecretar&#237;a de Ingresos.
+						</p>
+						<p class="textItem " style="top:40.436457%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Si se considera el n&#250;mero total de contribuyentes revisados
+						</p>
+						<p class="textItem " style="top:42.233633%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y auditados, el Estado mantuvo una presencia fiscal de 0.1 por
+						</p>
+						<p class="textItem " style="top:44.030809%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ciento con relaci&#243;n a un padr&#243;n que abarca m&#225;s de un mill&#243;n de
+						</p>
+						<p class="textItem " style="top:45.827985%;left:51.920123%;width:13.824885%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							contribuyentes activos.
+						</p>
+						<p class="textItem " style="top:45.827985%;left:65.591398%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							34
+						</p>
+						<p class="textItem " style="top:45.827985%;left:66.973886%;width:24.423963%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							M&#225;s de 80 por ciento de los actos fiscales
+						</p>
+						<p class="textItem " style="top:47.625160%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se ejecutaron bajo m&#233;todos sustantivos, como visitas domiciliarias;
+						</p>
+						<p class="textItem " style="top:49.422336%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							revisiones de gabinete, de papeles de trabajo y de dict&#225;menes,
+						</p>
+						<p class="textItem " style="top:51.219512%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							lo cual permiti&#243; elevar la certeza, efectividad y eficiencia de las
+						</p>
+						<p class="textItem " style="top:53.016688%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							revisiones. El resto de los actos fue de presencia fiscal -verificaci&#243;n
+						</p>
+						<p class="textItem " style="top:54.813864%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de comprobantes y revisiones masivas-, lo que dio seguimiento
+						</p>
+						<p class="textItem " style="top:56.611040%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							puntual a cada asunto con miras a generar una verificaci&#243;n amplia,
+						</p>
+						<p class="textItem " style="top:58.408216%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en los casos que no son atendidos por las y los contribuyentes
+						</p>
+						<p class="textItem " style="top:60.205392%;left:51.920123%;width:19.969278%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							requeridos por la autoridad fiscal.
+						</p>
+						<p class="textItem " style="top:63.799743%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se obtuvo una recaudaci&#243;n secundaria de 749.8 millones de
+						</p>
+						<p class="textItem " style="top:65.596919%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pesos, proveniente de cr&#233;ditos fiscales federales. Los rubros que
+						</p>
+						<p class="textItem " style="top:67.394095%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la originan son: cifras cobradas, 152.7 millones de pesos; cifras
+						</p>
+						<p class="textItem " style="top:69.191271%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							liquidadas, 583.2 millones de pesos, y cifras virtuales, 13.9
+						</p>
+						<p class="textItem " style="top:70.988447%;left:51.920123%;width:11.367127%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							millones de pesos.
+						</p>
+						<p class="textItem " style="top:70.988447%;left:63.287250%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							35
+						</p>
+						<p class="textItem " style="top:70.988447%;left:64.516129%;width:26.881720%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El indicador de costo beneficio fue de 15.3
+						</p>
+						<p class="textItem " style="top:72.785623%;left:51.920123%;width:34.562212%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pesos obtenidos por cada peso invertido en las auditor&#237;as.
+						</p>
+						<p class="textItem " style="top:76.379974%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con el Programa de Fiscalizaci&#243;n Estatal se realizaron 1,432 actos,
+						</p>
+						<p class="textItem " style="top:78.177150%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							un incremento de 150 actos, 11.7 por ciento m&#225;s en comparaci&#243;n
+						</p>
+						<p class="textItem " style="top:79.974326%;left:51.920123%;width:11.674347%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con el a&#241;o anterior.
+						</p>
+						<p class="textItem " style="top:81.899872%;left:51.920123%;width:18.125960%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							34. Informaci&#243;n proporcionada por la SHCP.
+						</p>
+						<p class="textItem " style="top:82.798460%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							35. Cifras cobradas: Los pagos en efectivo efectuados por el contribuyente de los cr&#233;ditos
+						</p>
+						<p class="textItem " style="top:83.697047%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							fiscales determinados por la autoridad fiscalizadora con motivo del ejercicio de sus facultades de
+						</p>
+						<p class="textItem " style="top:84.595635%;left:51.920123%;width:24.577573%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							comprobaci&#243;n y/o habiendo mediado gesti&#243;n de autoridad.
+						</p>
+						<p class="textItem " style="top:85.622593%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Cifras liquidadas: Monto de las diferencias detectadas en una revisi&#243;n fiscal, que el contribuyente
+						</p>
+						<p class="textItem " style="top:86.521181%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							no acepta pagar, el cual puede ser impugnado mediante un recurso legal ante la instancia
+						</p>
+						<p class="textItem " style="top:87.419769%;left:51.920123%;width:6.912442%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							correspondiente.
+						</p>
+						<p class="textItem " style="top:88.318357%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Cifras virtuales: Cantidades que sin generar un flujo de efectivo hacia la hacienda federal o
+						</p>
+						<p class="textItem " style="top:89.216945%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							estatal son susceptibles de extinguir cr&#233;ditos fiscales a cargo del contribuyente, como pueden ser
+						</p>
+						<p class="textItem " style="top:90.243902%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							amortizaci&#243;n de p&#233;rdidas fiscales, saldos a favor de IVA, ISR, Subsidio para el Empleo, entre otros.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-458.html">458</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-459.html">459</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-460.html">460</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-461.html">461</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-462.html">462</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-463.html">463</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-464.html">464</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-465.html">465</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-466.html">466</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-467.html">467</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-468.html">468</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-469.html">469</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,419 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "16";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-15.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;16 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-17.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-15.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">16 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-17.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0016.png" style="width: 100%; height: 100%;">
+
+
+						<a class="linkTextItem testString internalLink" href="./page-180.html" target="_self"  style="top:16.174583%;left:17.357911%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>2. COBERTURA DE LAS ACCIONES DE PROTECCI&#211;N E INCLUSI&#211;N PARA LOS</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-180.html" target="_self"  style="top:17.971759%;left:19.047619%;width:16.897081%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>SECTORES VULNERABLES</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-180.html" target="_self"  style="top:17.971759%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>178</b>
+						</a>
+						<a class="linkTextItem testString internalLink" href="./page-180.html" target="_self"  style="top:20.154044%;left:19.201229%;width:38.248848%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							2.1. SERVICIOS ASISTENCIALES A POBLACI&#211;N EN DESAMPARO
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-180.html" target="_self"  style="top:20.154044%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>178</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-180.html" target="_self"  style="top:22.464698%;left:19.201229%;width:24.731183%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							2.2. ATENCI&#211;N M&#201;DICA ESPECIALIZADA
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-180.html" target="_self"  style="top:22.464698%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>178</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-181.html" target="_self"  style="top:24.646983%;left:19.201229%;width:45.007680%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							2.3. PROGRAMA DE DONACI&#211;N ALTRUISTA DE SANGRE POR REPETICI&#211;N
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-181.html" target="_self"  style="top:24.646983%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>179</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-181.html" target="_self"  style="top:26.957638%;left:19.201229%;width:39.784946%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							2.4. ALBERGUE CENTRO ASISTENCIAL PROGRESO MACUILT&#201;PETL
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-181.html" target="_self"  style="top:26.957638%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>179</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-181.html" target="_self"  style="top:30.038511%;left:17.357911%;width:50.537634%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>3. LA MUJER COMO ELEMENTO DE ESTABILIDAD E INTEGRACI&#211;N FAMILIAR</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-181.html" target="_self"  style="top:30.038511%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>179</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-181.html" target="_self"  style="top:32.349166%;left:19.201229%;width:24.884793%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							3.1. PROGRAMA INTEGRAL DE LA MUJER
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-181.html" target="_self"  style="top:32.349166%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>179</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-185.html" target="_self"  style="top:34.531451%;left:19.201229%;width:47.004608%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							3.2. L&#205;NEA DE APOYO PSICOL&#211;GICO A MUJERES V&#205;CTIMAS DE VIOLENCIA 01
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-185.html" target="_self"  style="top:36.842105%;left:21.966206%;width:8.602151%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							800 1343 837
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-185.html" target="_self"  style="top:36.842105%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>183</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-185.html" target="_self"  style="top:39.922978%;left:17.357911%;width:48.540707%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>4. PRIORIZAR LA ATENCI&#211;N HACIA LOS NI&#209;OS Y ASUMIRLA COMO UNA</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-185.html" target="_self"  style="top:41.720154%;left:19.047619%;width:22.119816%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>INVERSI&#211;N DE CARA AL FUTURO</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-185.html" target="_self"  style="top:41.720154%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>183</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-185.html" target="_self"  style="top:44.030809%;left:19.201229%;width:48.694316%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							4.1. ASISTENCIA SOCIAL Y PROTECCI&#211;N A LOS DERECHOS DE NI&#209;AS, NI&#209;OS Y
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-185.html" target="_self"  style="top:46.213094%;left:21.966206%;width:9.831029%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							ADOLESCENTES
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-185.html" target="_self"  style="top:46.213094%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>183</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-188.html" target="_self"  style="top:49.422336%;left:17.357911%;width:45.007680%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>5. COMBATIR LA VIOLENCIA FAMILIAR Y DESARROLLAR ACCIONES</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-188.html" target="_self"  style="top:51.219512%;left:19.047619%;width:46.082949%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>PARA PROMOVER LA IGUALDAD, LA TOLERANCIA, EL RESPETO Y LA</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-188.html" target="_self"  style="top:53.016688%;left:19.047619%;width:16.282642%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>CONVIVENCIA PAC&#205;FICA</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-188.html" target="_self"  style="top:53.016688%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>186</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-188.html" target="_self"  style="top:55.198973%;left:19.201229%;width:47.619048%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							5.1. PROCURADUR&#205;A DE LA DEFENSA DEL MENOR, LA FAMILIA Y EL IND&#205;GENA
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-188.html" target="_self"  style="top:55.198973%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>186</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-192.html" target="_self"  style="top:58.408216%;left:17.357911%;width:47.311828%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>6. FORTALECER LOS SISTEMAS DE COMPENSACI&#211;N PARA LOS GRUPOS</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-192.html" target="_self"  style="top:60.205392%;left:19.047619%;width:21.505376%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>VULNERABLES DE LA SOCIEDAD</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-192.html" target="_self"  style="top:60.205392%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>190</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-193.html" target="_self"  style="top:62.387677%;left:19.201229%;width:34.101382%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							6.1. REHABILITACI&#211;N Y ATENCI&#211;N A LA DISCAPACIDAD
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-193.html" target="_self"  style="top:62.387677%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>191</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-195.html" target="_self"  style="top:64.698331%;left:19.201229%;width:28.417819%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							6.2. ATENCI&#211;N INTEGRAL AL ADULTO MAYOR
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-195.html" target="_self"  style="top:64.698331%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>193</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-196.html" target="_self"  style="top:66.880616%;left:19.201229%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							6.3. CENTRO ESTATAL CONTRA LAS ADICCIONES C&#218;SPIDE
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-196.html" target="_self"  style="top:66.880616%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>194</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-197.html" target="_self"  style="top:69.191271%;left:19.201229%;width:15.975422%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							6.4. ASISTENCIA JUR&#205;DICA
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-197.html" target="_self"  style="top:69.191271%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>195</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-197.html" target="_self"  style="top:71.373556%;left:19.201229%;width:17.050691%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							6.5. IGUALDAD DE G&#201;NERO
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-197.html" target="_self"  style="top:71.373556%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>195</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-198.html" target="_self"  style="top:73.684211%;left:19.201229%;width:41.013825%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							6.6. ATENCI&#211;N A POBLACI&#211;N EN CONDICIONES DE EMERGENCIA
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-198.html" target="_self"  style="top:73.684211%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>196</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-198.html" target="_self"  style="top:76.765083%;left:17.357911%;width:50.537634%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>7. APOYO A LAS FAMILIAS EN SITUACI&#211;N DE POBREZA, PARA CONTRIBUIR</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-198.html" target="_self"  style="top:78.562259%;left:19.047619%;width:23.655914%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>A LA INDEPENDENCIA ECON&#211;MICA</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-198.html" target="_self"  style="top:78.562259%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>196</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-198.html" target="_self"  style="top:80.872914%;left:19.201229%;width:15.975422%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							7.1. ADI&#211;S A LA POBREZA
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-198.html" target="_self"  style="top:80.872914%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>196</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-199.html" target="_self"  style="top:83.953787%;left:17.357911%;width:33.486943%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>8. COORDINACI&#211;N INTRA E INTERINSTITUCIONAL</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-199.html" target="_self"  style="top:83.953787%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>197</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-199.html" target="_self"  style="top:86.264442%;left:19.201229%;width:33.640553%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							8.1. CONTROL DE GESTI&#211;N Y ATENCI&#211;N CIUDADANA
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-199.html" target="_self"  style="top:86.264442%;left:74.654378%;width:2.611367%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>197</b>
+						</a>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-11.html">11</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-12.html">12</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-13.html">13</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-14.html">14</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-15.html">15</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-16.html">16</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-17.html">17</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-18.html">18</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-19.html">19</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-20.html">20</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-21.html">21</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-22.html">22</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

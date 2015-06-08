@@ -1,0 +1,332 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "237";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-236.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;237 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-238.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-236.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">237 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-238.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0237.jpg" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:40.245776%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:46.697389%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:47.772657%;width:7.834101%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>E d u c a c i &#243; n</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:56.374808%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:57.450077%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>2 3 5</b>
+						</p>
+						<p class="textItem testString" style="top:46.084724%;left:10.752688%;width:16.129032%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							Educaci&#243;n
+						</p>
+						<p class="textItem " style="top:52.118100%;left:10.752688%;width:53.149002%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Gobierno del Estado impulsa una pol&#237;tica que propicia la equidad, el incremento en la
+						</p>
+						<p class="textItem " style="top:53.915276%;left:10.752688%;width:53.149002%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							calidad, la mejora de la infraestructura y del equipamiento de los planteles, la disminuci&#243;n
+						</p>
+						<p class="textItem " style="top:55.712452%;left:10.752688%;width:53.149002%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del analfabetismo y el rezago educativo. Asimismo, la profesionalizaci&#243;n de los maestros
+						</p>
+						<p class="textItem " style="top:57.509628%;left:10.752688%;width:53.149002%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y sus directivos, la ampliaci&#243;n de la cobertura, el aumento de la eficiencia terminal, el
+						</p>
+						<p class="textItem " style="top:59.306804%;left:10.752688%;width:37.941628%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cumplimiento de la obligatoriedad del bachillerato, entre otros.
+						</p>
+						<p class="textItem " style="top:62.901155%;left:10.752688%;width:53.149002%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz armoniz&#243; su Ley de Educaci&#243;n con las leyes secundarias emanadas de la reforma
+						</p>
+						<p class="textItem " style="top:64.698331%;left:10.752688%;width:53.149002%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							constitucional, por ello est&#225; en marcha el proceso para consolidar la reforma educativa en
+						</p>
+						<p class="textItem " style="top:66.495507%;left:10.752688%;width:53.149002%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Entidad. Una de las aportaciones de esta Ley es la creaci&#243;n del Instituto de Capacitaci&#243;n
+						</p>
+						<p class="textItem " style="top:68.292683%;left:10.752688%;width:53.149002%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y Profesionalizaci&#243;n Docente el cual promover&#225; la formaci&#243;n, capacitaci&#243;n, superaci&#243;n
+						</p>
+						<p class="textItem " style="top:70.089859%;left:10.752688%;width:53.149002%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y desarrollo profesional de los docentes, directivos, supervisores y dem&#225;s autoridades
+						</p>
+						<p class="textItem " style="top:71.887035%;left:10.752688%;width:30.261137%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							educativas, para ofrecer una educaci&#243;n de calidad.
+						</p>
+						<p class="textItem " style="top:75.481386%;left:10.752688%;width:53.149002%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con el prop&#243;sito de mejorar significativamente y contribuir con las metas y objetivos de
+						</p>
+						<p class="textItem " style="top:77.278562%;left:10.752688%;width:53.149002%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la pol&#237;tica de desarrollo social para el combate a la pobreza, esta Secretar&#237;a impulsa las
+						</p>
+						<p class="textItem " style="top:79.075738%;left:10.752688%;width:53.149002%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acciones con perspectiva de g&#233;nero y a trav&#233;s de la estrategia transversal Adelante con la
+						</p>
+						<p class="textItem " style="top:80.872914%;left:10.752688%;width:53.149002%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ejecuci&#243;n de programas y estrategias educativas, que permiten elevar el grado promedio
+						</p>
+						<p class="textItem " style="top:82.670090%;left:10.752688%;width:49.001536%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de instrucci&#243;n, contribuir en la reducci&#243;n del analfabetismo y el rezago educativo.
+						</p>
+						<p class="textItem " style="top:86.264442%;left:10.752688%;width:53.149002%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Los cuatro a&#241;os de Gobierno permiten valorar el avance realizado por esta Administraci&#243;n,
+						</p>
+						<p class="textItem " style="top:88.061617%;left:10.752688%;width:53.149002%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con respecto a las metas establecidas en el Plan Veracruzano de Desarrollo (PVD) 2011-
+						</p>
+						<p class="textItem " style="top:89.858793%;left:10.752688%;width:41.628264%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							2016 y las del Programa Veracruzano de Educaci&#243;n (PVE) 2011-2016.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-232.html">232</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-233.html">233</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-234.html">234</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-235.html">235</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-236.html">236</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-237.html">237</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-238.html">238</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-239.html">239</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-240.html">240</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-241.html">241</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-242.html">242</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-243.html">243</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

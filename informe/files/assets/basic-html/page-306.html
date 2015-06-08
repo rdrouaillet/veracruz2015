@@ -1,0 +1,482 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "306";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-305.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;306 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-307.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-305.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">306 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-307.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0306.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:17.458280%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para el fortalecimiento de las acciones en regiones rurales se
+						</p>
+						<p class="textItem " style="top:19.255456%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							invirtieron 9 millones de pesos del Programa de Empleo Temporal
+						</p>
+						<p class="textItem " style="top:21.052632%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en 141 acciones para la generaci&#243;n de 47,317 jornales en 36
+						</p>
+						<p class="textItem " style="top:22.849807%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipios y la adquisici&#243;n de herramientas por un monto de un
+						</p>
+						<p class="textItem " style="top:24.646983%;left:8.602151%;width:9.831029%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mill&#243;n de pesos.
+						</p>
+						<p class="textItem " style="top:28.241335%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Mediante el Programa Especial para la Restauraci&#243;n de las
+						</p>
+						<p class="textItem " style="top:30.038511%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Microcuencas en Zonas Prioritarias, en la del Pico de Orizaba se
+						</p>
+						<p class="textItem " style="top:31.835687%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							destinaron recursos por 1.02 millones de pesos, para una superficie
+						</p>
+						<p class="textItem " style="top:33.632863%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 69.2 hect&#225;reas, localizadas en el municipio de La Perla; para la
+						</p>
+						<p class="textItem " style="top:35.430039%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Cofre de Perote se tiene como meta restaurar 399.3 hect&#225;reas,
+						</p>
+						<p class="textItem " style="top:37.227214%;left:8.602151%;width:36.405530%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con una inversi&#243;n de 5.8 millones de pesos en 11 municipios
+						</p>
+						<p class="textItem " style="top:37.355584%;left:45.007680%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							18
+						</p>
+						<p class="textItem " style="top:37.227214%;left:45.929339%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							.
+						</p>
+						<p class="textItem " style="top:40.821566%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Este a&#241;o, se convinieron recursos federales del Fondo de Desastres
+						</p>
+						<p class="textItem " style="top:42.618742%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Naturales (FONDEN) con la CONAFOR, por 17.4 millones de
+						</p>
+						<p class="textItem " style="top:44.415918%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pesos para remediar las afectaciones ocasionadas por la presencia
+						</p>
+						<p class="textItem " style="top:46.213094%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de eventos clim&#225;ticos en agosto de 2012, en los municipios de
+						</p>
+						<p class="textItem " style="top:48.010270%;left:8.602151%;width:37.327189%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Benito Ju&#225;rez, Calcahualco, Cosoleacaque, J&#225;ltipan y Omealca.
+						</p>
+						<p class="textItem " style="top:51.604621%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Adem&#225;s, se solicitaron recursos del FONDEN por 234.8 millones de
+						</p>
+						<p class="textItem " style="top:53.401797%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pesos, para remediar las afectaciones ocasionadas por la presencia
+						</p>
+						<p class="textItem " style="top:55.198973%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de eventos clim&#225;ticos en junio, septiembre, octubre y noviembre
+						</p>
+						<p class="textItem " style="top:56.996149%;left:8.602151%;width:16.129032%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 2013, en 23 municipios
+						</p>
+						<p class="textItem " style="top:57.124519%;left:24.731183%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							19
+						</p>
+						<p class="textItem " style="top:56.996149%;left:25.652842%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							.
+						</p>
+						<p class="textItem " style="top:60.462131%;left:8.602151%;width:34.254992%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							8.3. Asistencia t&#233;cnica y tecnol&#243;gica
+						</p>
+						<p class="textItem " style="top:64.698331%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se atendieron 16 autorizaciones con 447 &#225;rboles y un volumen
+						</p>
+						<p class="textItem " style="top:66.495507%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 1,102.47 m3 r.t.a. (metros c&#250;bicos rollo total &#225;rbol), esto
+						</p>
+						<p class="textItem " style="top:68.292683%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mediante una carta compromiso de reforestaci&#243;n que firmaron
+						</p>
+						<p class="textItem " style="top:70.089859%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los beneficiarios, en donde se comprometen a plantar cinco
+						</p>
+						<p class="textItem " style="top:71.887035%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#225;rboles por cada &#225;rbol derribado y estar sujetos a verificaciones
+						</p>
+						<p class="textItem " style="top:73.684211%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cada seis meses durante tres a&#241;os para observar el prendimiento y
+						</p>
+						<p class="textItem " style="top:75.481386%;left:8.602151%;width:15.821813%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sobrevivencia de la planta.
+						</p>
+						<p class="textItem " style="top:79.075738%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se mejor&#243; la expedici&#243;n de las remisiones forestales, parte
+						</p>
+						<p class="textItem " style="top:80.872914%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							importante del procedimiento de un aprovechamiento, las cuales
+						</p>
+						<p class="textItem " style="top:82.670090%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cuentan con mecanismos de seguridad as&#237;, como un troquel de
+						</p>
+						<p class="textItem " style="top:84.467266%;left:8.602151%;width:32.718894%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							repujado con logo de la Secretar&#237;a para mayor control.
+						</p>
+						<p class="textItem " style="top:86.521181%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							18. Acajete, Altotonga, Ayahualulco, Coacoatzintla, Coatepec, Ixhuac&#225;n de los Reyes, Las Vigas,
+						</p>
+						<p class="textItem " style="top:87.419769%;left:8.602151%;width:15.821813%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Perote, Tlacolulan, Villa Aldama y Xico.
+						</p>
+						<p class="textItem " style="top:88.318357%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							19. Atzalan, Alto Lucero, Catemaco, Cerro Azul, Chiconquiaco, Chicontepec, Coacoatzintla,
+						</p>
+						<p class="textItem " style="top:89.216945%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Ilamatl&#225;n, Jalacingo, Misantla, Moloac&#225;n, Nanchital, Nautla, P&#225;nuco, Paso de Ovejas, Pueblo Viejo,
+						</p>
+						<p class="textItem " style="top:90.243902%;left:8.602151%;width:38.248848%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							San Rafael, Tatatila, Tepetzintla, Texistepec, &#218;rsulo Galv&#225;n, Vega de Alatorre y Zontecomatl&#225;n.
+						</p>
+						<p class="textItem " style="top:17.458280%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con la finalidad de capacitar a personal de los ayuntamientos para
+						</p>
+						<p class="textItem " style="top:19.255456%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que funjan como ventanilla &#250;nica de atenci&#243;n a los solicitantes; este
+						</p>
+						<p class="textItem " style="top:21.052632%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a&#241;o se programaron 21 talleres con los 212 municipios del Estado,
+						</p>
+						<p class="textItem " style="top:22.849807%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							distribuidos en las 13 Unidades de Manejo Forestal (UMAFOR). A
+						</p>
+						<p class="textItem " style="top:24.646983%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la fecha se han realizado 16 talleres en los que se capacit&#243; para
+						</p>
+						<p class="textItem " style="top:26.444159%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							apoyar a los usuarios en la elaboraci&#243;n y tr&#225;mite de solicitudes de
+						</p>
+						<p class="textItem " style="top:28.241335%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							aprovechamiento de sus recursos forestales en terrenos que no
+						</p>
+						<p class="textItem " style="top:30.038511%;left:49.769585%;width:21.658986%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pertenecen a ecosistemas forestales.
+						</p>
+						<p class="textItem " style="top:33.504493%;left:49.769585%;width:34.715822%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							8.4. Premio al M&#233;rito Estatal Forestal
+						</p>
+						<p class="textItem " style="top:37.740693%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Secretar&#237;a de Medio Ambiente, la Secretar&#237;a de Medio
+						</p>
+						<p class="textItem " style="top:39.537869%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ambiente y Recursos Naturales y la Comisi&#243;n Nacional Forestal
+						</p>
+						<p class="textItem " style="top:41.335045%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							convocaron a la sociedad, organizaciones no gubernamentales,
+						</p>
+						<p class="textItem " style="top:43.132221%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sector empresarial, sector gubernamental, sector educativo y
+						</p>
+						<p class="textItem " style="top:44.929397%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							medios de comunicaci&#243;n electr&#243;nicos e impresos para concursar
+						</p>
+						<p class="textItem " style="top:46.726573%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por el Premio Estatal al M&#233;rito Forestal 2014, Gobernador Rafael
+						</p>
+						<p class="textItem " style="top:48.523748%;left:49.769585%;width:11.367127%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Hern&#225;ndez Ochoa.
+						</p>
+						<p class="textItem " style="top:52.118100%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El premio tiene como finalidad reconocer a quienes hayan realizado
+						</p>
+						<p class="textItem " style="top:53.915276%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acciones relevantes en materia de restauraci&#243;n, protecci&#243;n,
+						</p>
+						<p class="textItem " style="top:55.712452%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							conservaci&#243;n de recursos naturales y uso sustentable de los
+						</p>
+						<p class="textItem " style="top:57.509628%;left:49.769585%;width:26.113671%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							recursos forestales en el Estado de Veracruz.
+						</p>
+						<p class="textItem " style="top:61.103979%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El premio se entreg&#243; el 19 de julio en el marco de la Celebraci&#243;n del
+						</p>
+						<p class="textItem " style="top:62.901155%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							D&#237;a del &#193;rbol y D&#237;a del Combatiente Forestal, en las instalaciones
+						</p>
+						<p class="textItem " style="top:64.698331%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la Comisi&#243;n Nacional Forestal. Con estas acciones se reconoci&#243;
+						</p>
+						<p class="textItem " style="top:66.495507%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el trabajo de siete proyectos en las categor&#237;as de: Reforestaci&#243;n;
+						</p>
+						<p class="textItem " style="top:68.292683%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Protecci&#243;n Forestal; Restauraci&#243;n Forestal; Silvicultura Comunitaria;
+						</p>
+						<p class="textItem " style="top:70.089859%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Peque&#241;as Empresas y/o Microempresas; Organizaciones Civiles y
+						</p>
+						<p class="textItem " style="top:71.887035%;left:49.769585%;width:31.643625%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Categor&#237;a Mujeres Forestales y/o sus Organizaciones.
+						</p>
+						<p class="textItem testString" style="top:74.839538%;left:49.769585%;width:30.568356%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							9. Fondo Ambiental
+						</p>
+						<p class="textItem " style="top:77.535302%;left:49.769585%;width:19.354839%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							Veracruzano
+						</p>
+						<p class="textItem " style="top:83.568678%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A trav&#233;s del Fondo Ambiental Veracruzano (FAV) se gestionan
+						</p>
+						<p class="textItem " style="top:85.365854%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							recursos nacionales e internacionales para financiar proyectos
+						</p>
+						<p class="textItem " style="top:87.163030%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							orientados a la preservaci&#243;n y restauraci&#243;n del equilibrio ecol&#243;gico,
+						</p>
+						<p class="textItem " style="top:88.960205%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la mitigaci&#243;n del cambio clim&#225;tico, la protecci&#243;n al ambiente,
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-301.html">301</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-302.html">302</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-303.html">303</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-304.html">304</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-305.html">305</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-306.html">306</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-307.html">307</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-308.html">308</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-309.html">309</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-310.html">310</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-311.html">311</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-312.html">312</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

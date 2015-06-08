@@ -1,0 +1,515 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "392";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-391.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;392 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-393.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-391.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">392 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-393.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0392.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:18.356868%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acercando la acci&#243;n de Gobierno a las y los j&#243;venes veracruzanos,
+						</p>
+						<p class="textItem " style="top:20.154044%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							generando alianzas con autoridades municipales para integrar las
+						</p>
+						<p class="textItem " style="top:21.951220%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							agendas en materia de desarrollo juvenil y a trav&#233;s de ellos crear
+						</p>
+						<p class="textItem " style="top:23.748395%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							una pol&#237;tica p&#250;blica expansiva en beneficio de la juventud, dando
+						</p>
+						<p class="textItem " style="top:25.545571%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							como resultado j&#243;venes que transforman el presente y constituyen
+						</p>
+						<p class="textItem " style="top:27.342747%;left:8.602151%;width:5.529954%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el futuro.
+						</p>
+						<p class="textItem " style="top:30.937099%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Consciente de la importancia que tienen las y los j&#243;venes en el
+						</p>
+						<p class="textItem " style="top:32.734275%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							desarrollo econ&#243;mico, pol&#237;tico y social esta Administraci&#243;n ha
+						</p>
+						<p class="textItem " style="top:34.531451%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							impulsado espacios de participaci&#243;n plural y democr&#225;tica, donde
+						</p>
+						<p class="textItem " style="top:36.328626%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los j&#243;venes aporten sus ideas y as&#237; formar mecanismos para dar
+						</p>
+						<p class="textItem " style="top:38.125802%;left:8.602151%;width:34.562212%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							atenci&#243;n al desarrollo integral de la juventud veracruzana.
+						</p>
+						<p class="textItem " style="top:41.720154%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En 2014, la Subsecretar&#237;a de la Juventud trabaj&#243; de manera
+						</p>
+						<p class="textItem " style="top:43.517330%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							transversal en la consecuci&#243;n de sus objetivos, para poder tener
+						</p>
+						<p class="textItem " style="top:45.314506%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							una visi&#243;n integral de este grupo poblacional, atendiendo a m&#225;s
+						</p>
+						<p class="textItem " style="top:47.111682%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							j&#243;venes en el Estado y ampliando los programas y acciones con el
+						</p>
+						<p class="textItem " style="top:48.908858%;left:8.602151%;width:23.963134%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fin de generar espacios de oportunidad.
+						</p>
+						<p class="textItem " style="top:52.374840%;left:8.602151%;width:37.480799%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							15.1 Programas de apoyo a la juventud
+						</p>
+						<p class="textItem " style="top:56.611040%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La participaci&#243;n e inclusi&#243;n de los j&#243;venes, su energ&#237;a, impulso
+						</p>
+						<p class="textItem " style="top:58.408216%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y talento, son fundamentales en la construcci&#243;n del Veracruz de
+						</p>
+						<p class="textItem " style="top:60.205392%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							hoy y del futuro, para asegurar una mayor calidad de vida de
+						</p>
+						<p class="textItem " style="top:62.002567%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la juventud veracruzana, el Gobierno del Estado a trav&#233;s de la
+						</p>
+						<p class="textItem " style="top:63.799743%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Subsecretar&#237;a de la Juventud (Subsejuver) acerca los instrumentos
+						</p>
+						<p class="textItem " style="top:65.596919%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							necesarios para su desarrollo, bienestar y progreso. Este a&#241;o, para
+						</p>
+						<p class="textItem " style="top:67.394095%;left:8.602151%;width:31.336406%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							lograr este fin se apoyaron los siguientes programas:
+						</p>
+						<p class="textItem " style="top:70.988447%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem testString" style="top:70.860077%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:70.988447%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Espacios Poder Joven, apertura de espacios destinados
+						</p>
+						<p class="textItem " style="top:72.785623%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a la expresi&#243;n, la sana convivencia y el desarrollo juvenil,
+						</p>
+						<p class="textItem " style="top:74.582798%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mediante tecnolog&#237;as y servicios de informaci&#243;n, orientaci&#243;n
+						</p>
+						<p class="textItem " style="top:76.379974%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y prevenci&#243;n de conductas de riesgo. A la fecha se
+						</p>
+						<p class="textItem " style="top:78.177150%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fortalecieron 19 Espacios Poder Joven: Altotonga, Atoyac,
+						</p>
+						<p class="textItem " style="top:79.974326%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Coatepec, Coatzacoalcos 1, Coatzacoalcos 2, C&#243;rdoba,
+						</p>
+						<p class="textItem " style="top:81.771502%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Juchique de Ferrer, Lerdo de Tejada, Mart&#237;nez de la Torre,
+						</p>
+						<p class="textItem " style="top:83.568678%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Paso de Ovejas, Poza Rica, Sayula de Alem&#225;n, Tlacojalpan,
+						</p>
+						<p class="textItem " style="top:85.365854%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tuxpan, &#218;rsulo Galv&#225;n, Villa Aldama, Xalapa 1, Xalapa 2 y
+						</p>
+						<p class="textItem " style="top:87.163030%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Zongolica; estas acciones impactaron de manera directa a
+						</p>
+						<p class="textItem " style="top:88.960205%;left:12.288786%;width:21.044547%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							m&#225;s de 8,000 j&#243;venes en el Estado.
+						</p>
+						<p class="textItem " style="top:18.356868%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:18.356868%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:18.356868%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tarjeta Poder Joven, herramienta mediante la cual se
+						</p>
+						<p class="textItem " style="top:20.154044%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							otorgan descuentos, promociones y ofertas a los j&#243;venes, en
+						</p>
+						<p class="textItem " style="top:21.951220%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							empresas e instituciones afiliadas, tanto a nivel estatal, como
+						</p>
+						<p class="textItem " style="top:23.748395%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							nacional, contribuyendo al fortalecimiento de la econom&#237;a
+						</p>
+						<p class="textItem " style="top:25.545571%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de los j&#243;venes veracruzanos. Para tal efecto, se firmaron
+						</p>
+						<p class="textItem " style="top:27.342747%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							106 convenios con establecimientos en los municipios de
+						</p>
+						<p class="textItem " style="top:29.139923%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Xalapa, Boca del R&#237;o, Coatepec, Coatzacoalcos, C&#243;rdoba,
+						</p>
+						<p class="textItem " style="top:30.937099%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Guti&#233;rrez Zamora, Minatitl&#225;n, Misantla, Orizaba, Poza Rica,
+						</p>
+						<p class="textItem " style="top:32.734275%;left:53.456221%;width:20.737327%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tecolutla, Tuxpan y &#218;rsulo Galv&#225;n.
+						</p>
+						<p class="textItem " style="top:36.328626%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:36.328626%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:36.328626%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Becas Campus Party, en colaboraci&#243;n con el Instituto
+						</p>
+						<p class="textItem " style="top:38.125802%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Mexicano de la Juventud (IMJUVE) se tuvo participaci&#243;n en el
+						</p>
+						<p class="textItem " style="top:39.922978%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							festival tecnol&#243;gico que, 24 horas al d&#237;a durante una semana,
+						</p>
+						<p class="textItem " style="top:41.720154%;left:53.456221%;width:23.655914%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							reuni&#243; en junio a miles de campuseros
+						</p>
+						<p class="textItem " style="top:41.848524%;left:76.958525%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							1
+						</p>
+						<p class="textItem " style="top:41.720154%;left:77.880184%;width:11.367127%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							equipados con sus
+						</p>
+						<p class="textItem " style="top:43.517330%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							computadoras y dispositivos tecnol&#243;gicos en un entorno
+						</p>
+						<p class="textItem " style="top:45.314506%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							favorable para que la juventud mexicana desarrollaran sus
+						</p>
+						<p class="textItem " style="top:47.111682%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ideas y proyectos tecnol&#243;gicos, en un ambiente &#250;nico de
+						</p>
+						<p class="textItem " style="top:48.908858%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							intercambio de conocimientos, habilidades y recursos, bajo
+						</p>
+						<p class="textItem " style="top:50.706033%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la idea de que Internet no es una red de ordenadores, es una
+						</p>
+						<p class="textItem " style="top:52.503209%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							red de personas. Se entregaron 20 becas en los municipios
+						</p>
+						<p class="textItem " style="top:54.300385%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Boca del R&#237;o, Coatzacoalcos, C&#243;rdoba, Huatusco, Orizaba,
+						</p>
+						<p class="textItem " style="top:56.097561%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							P&#225;nuco, Poza Rica, Tierra Blanca, Tuxpan, Veracruz y Xalapa.
+						</p>
+						<p class="textItem " style="top:59.691913%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:59.691913%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:59.691913%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Joven Es Servicio, se presentan proyectos con la finalidad
+						</p>
+						<p class="textItem " style="top:61.489089%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de fomentar la participaci&#243;n de j&#243;venes estudiantes en
+						</p>
+						<p class="textItem " style="top:63.286264%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							condiciones de realizar el servicio social, con la aplicaci&#243;n
+						</p>
+						<p class="textItem " style="top:65.083440%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de sus conocimientos profesionales a trav&#233;s de proyectos
+						</p>
+						<p class="textItem " style="top:66.880616%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de beneficio comunitario o de desarrollo social y humano.
+						</p>
+						<p class="textItem " style="top:68.677792%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A este programa se incorporaron 10 universidades de los
+						</p>
+						<p class="textItem " style="top:70.474968%;left:53.456221%;width:19.815668%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipios de Xalapa y Veracruz.
+						</p>
+						<p class="textItem " style="top:74.069320%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:74.069320%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:74.069320%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Apoyo de Fortalecimiento de Instancias Municipales, se
+						</p>
+						<p class="textItem " style="top:75.866496%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							convoca a las Instancias Municipales de Juventud, creadas
+						</p>
+						<p class="textItem " style="top:77.663671%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por acuerdo de cabildo, interesadas en presentar a concurso
+						</p>
+						<p class="textItem " style="top:79.460847%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							proyectos incluidos en sus planes de trabajo para transferir
+						</p>
+						<p class="textItem " style="top:81.258023%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							recursos econ&#243;micos y fortalecer la operaci&#243;n de estos, en
+						</p>
+						<p class="textItem " style="top:83.055199%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							un esquema de coinversi&#243;n. Durante el ejercicio fiscal 2014,
+						</p>
+						<p class="textItem " style="top:84.852375%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se presentaron 51 proyectos para participar en el Programa
+						</p>
+						<p class="textItem " style="top:86.649551%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de los municipios de Agua Dulce, &#193;lamo Temapache,
+						</p>
+						<p class="textItem " style="top:89.216945%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							1. Miembros de la comunidad mundial de Campus Party quienes asisten y participan en vivo o en
+						</p>
+						<p class="textItem " style="top:90.243902%;left:49.769585%;width:23.963134%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							remoto al evento en todos los pa&#237;ses en los que se celebra.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-387.html">387</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-388.html">388</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-389.html">389</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-390.html">390</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-391.html">391</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-392.html">392</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-393.html">393</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-394.html">394</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-395.html">395</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-396.html">396</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-397.html">397</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-398.html">398</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

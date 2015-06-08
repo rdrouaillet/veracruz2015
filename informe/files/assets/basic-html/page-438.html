@@ -1,0 +1,488 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "438";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-437.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;438 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-439.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-437.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">438 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-439.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0438.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:17.073171%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con sustancias qu&#237;micas peligrosas. Para la continuidad de este
+						</p>
+						<p class="textItem " style="top:18.870347%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							proceso de formaci&#243;n, la Secretar&#237;a de Protecci&#243;n Civil est&#225;
+						</p>
+						<p class="textItem " style="top:20.667522%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							convocada al curso de capacitaci&#243;n intermedio que se desarrollar&#225;
+						</p>
+						<p class="textItem " style="top:22.464698%;left:8.602151%;width:5.376344%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en 2015.
+						</p>
+						<p class="textItem " style="top:26.059050%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con motivo de las disposiciones de la nueva Ley de la materia y
+						</p>
+						<p class="textItem " style="top:27.856226%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							su Reglamento, se sostuvieron reuniones de trabajo con la C&#225;mara
+						</p>
+						<p class="textItem " style="top:29.653402%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Nacional de la Industria de Desarrollo y Promoci&#243;n de Vivienda,
+						</p>
+						<p class="textItem " style="top:31.450578%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							C&#225;mara Nacional de la Industria de Transformaci&#243;n, Instituto del
+						</p>
+						<p class="textItem " style="top:33.247754%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Fondo Nacional de la Vivienda para los Trabajadores, Instituto
+						</p>
+						<p class="textItem " style="top:35.044929%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Seguridad y Servicios Sociales de los Trabajadores del Estado,
+						</p>
+						<p class="textItem " style="top:36.842105%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Fondo de la Vivienda del Instituto de Seguridad y Servicios Sociales
+						</p>
+						<p class="textItem " style="top:38.639281%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de los Trabajadores del Estado, Instituto Mexicano del Seguro
+						</p>
+						<p class="textItem " style="top:40.436457%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Social, Secretar&#237;a de Desarrollo Agrario, Territorial y Urbano,
+						</p>
+						<p class="textItem " style="top:42.233633%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Secretar&#237;a de Medio Ambiente y Recursos Naturales, Secretar&#237;a de
+						</p>
+						<p class="textItem " style="top:44.030809%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Medio Ambiente, Instituto Veracruzano de la Vivienda, Universidad
+						</p>
+						<p class="textItem " style="top:45.827985%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruzana; ayuntamientos de Alvarado, Banderilla, Boca del R&#237;o,
+						</p>
+						<p class="textItem " style="top:47.625160%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Coatepec, Emiliano Zapata, Medell&#237;n, Xalapa y Veracruz; as&#237; como
+						</p>
+						<p class="textItem " style="top:49.422336%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con colegios de Ingenieros Civiles de Veracruz, Arquitectos de
+						</p>
+						<p class="textItem " style="top:51.219512%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz A.C., Mec&#225;nicos El&#233;ctricos A.C., Top&#243;grafos; y Asociaci&#243;n
+						</p>
+						<p class="textItem " style="top:53.016688%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de gasolineras del Centro del Estado, en las que se promovi&#243; la
+						</p>
+						<p class="textItem " style="top:54.813864%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							obligaci&#243;n que tienen particulares y autoridades para solicitar
+						</p>
+						<p class="textItem " style="top:56.611040%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dictamen t&#233;cnico de riesgos antes del otorgamiento de una
+						</p>
+						<p class="textItem " style="top:58.408216%;left:8.602151%;width:14.746544%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							licencia de construcci&#243;n.
+						</p>
+						<p class="textItem " style="top:61.745828%;left:8.602151%;width:33.794163%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							4.5. Mapas comunitarios de riesgos
+						</p>
+						<p class="textItem " style="top:65.982028%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Secretar&#237;a de Protecci&#243;n Civil instrument&#243;, en coordinaci&#243;n
+						</p>
+						<p class="textItem " style="top:67.779204%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y colaboraci&#243;n con el Consejo Nacional de Fomento Educativo,
+						</p>
+						<p class="textItem " style="top:69.576380%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el Programa Plan Comunitario para la Reducci&#243;n de Riesgos con
+						</p>
+						<p class="textItem " style="top:71.373556%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el prop&#243;sito de orientar, en el nivel comunitario, a la poblaci&#243;n
+						</p>
+						<p class="textItem " style="top:73.170732%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a reconocer los riesgos de su entorno, el grado de exposici&#243;n
+						</p>
+						<p class="textItem " style="top:74.967908%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							frente a cada uno de ellos y los recursos con los que cuentan para
+						</p>
+						<p class="textItem " style="top:76.765083%;left:8.602151%;width:7.526882%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							enfrentarlos.
+						</p>
+						<p class="textItem " style="top:80.359435%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A trav&#233;s del Programa se desarrollaron procesos de
+						</p>
+						<p class="textItem " style="top:82.156611%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acompa&#241;amiento y capacitaci&#243;n para el fortalecimiento de las
+						</p>
+						<p class="textItem " style="top:83.953787%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							comunidades en su organizaci&#243;n, con el objeto de que en forma
+						</p>
+						<p class="textItem " style="top:85.750963%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							participativa elaboren su Plan Comunitario para la Reducci&#243;n
+						</p>
+						<p class="textItem " style="top:87.548139%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Riesgos, con dos vertientes: conformaci&#243;n de brigadas
+						</p>
+						<p class="textItem " style="top:89.345315%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							comunitarias y elaboraci&#243;n de sus propios mapas comunitarios
+						</p>
+						<p class="textItem " style="top:17.073171%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para reducir y mitigar los riesgos existentes, prevenir la formaci&#243;n
+						</p>
+						<p class="textItem " style="top:18.870347%;left:49.769585%;width:25.038402%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de riesgos futuros y enfrentar un desastre.
+						</p>
+						<p class="textItem " style="top:22.464698%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Programa se aplic&#243; como proyecto piloto en comunidades de
+						</p>
+						<p class="textItem " style="top:24.261874%;left:49.769585%;width:24.423963%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							alta marginalidad social de 32 municipios
+						</p>
+						<p class="textItem " style="top:24.261874%;left:74.039939%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							7
+						</p>
+						<p class="textItem " style="top:24.261874%;left:74.961598%;width:14.285714%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de mayor vulnerabilidad
+						</p>
+						<p class="textItem " style="top:26.059050%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ante el efecto combinado de lluvias e inestabilidad de laderas de
+						</p>
+						<p class="textItem " style="top:27.856226%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la zona central del Estado. A la fecha se tiene un avance de 303
+						</p>
+						<p class="textItem " style="top:29.653402%;left:49.769585%;width:37.019969%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mapas comunitarios elaborados por las propias comunidades.
+						</p>
+						<p class="textItem " style="top:33.247754%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A partir de esta experiencia el proceso se multiplicar&#225; en el resto del
+						</p>
+						<p class="textItem " style="top:35.044929%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estado. De principio, el pasado 23 de septiembre, la Secretar&#237;a de
+						</p>
+						<p class="textItem " style="top:36.842105%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Protecci&#243;n Civil firm&#243; un convenio con la Comisi&#243;n Nacional para
+						</p>
+						<p class="textItem " style="top:38.639281%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el Desarrollo de los Pueblos Ind&#237;genas, para aplicar el Programa en
+						</p>
+						<p class="textItem " style="top:40.436457%;left:49.769585%;width:32.565284%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los municipios donde opera esta dependencia Federal.
+						</p>
+						<p class="textItem " style="top:43.774069%;left:49.769585%;width:35.023041%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							4.6. Unidades Internas de Protecci&#243;n
+						</p>
+						<p class="textItem " style="top:46.084724%;left:49.769585%;width:4.147465%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							Civil
+						</p>
+						<p class="textItem " style="top:50.320924%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Las unidades internas de protecci&#243;n civil son fundamentales para la
+						</p>
+						<p class="textItem " style="top:52.118100%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							prevenci&#243;n y autoprotecci&#243;n de la poblaci&#243;n; constituyen &#243;rganos
+						</p>
+						<p class="textItem " style="top:53.915276%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							normativos y operativos que tienen el deber de desarrollar y operar
+						</p>
+						<p class="textItem " style="top:55.712452%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							las acciones de protecci&#243;n civil y de ser el primer respondiente
+						</p>
+						<p class="textItem " style="top:57.509628%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							especializado ante una emergencia en las instalaciones y entorno
+						</p>
+						<p class="textItem " style="top:59.306804%;left:49.769585%;width:9.216590%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en que operan.
+						</p>
+						<p class="textItem " style="top:62.901155%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Las unidades internas tienen la responsabilidad de elaborar,
+						</p>
+						<p class="textItem " style="top:64.698331%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							difundir, operar y actualizar el Programa Interno de Protecci&#243;n
+						</p>
+						<p class="textItem " style="top:66.495507%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Civil en los inmuebles e instalaciones fijas y m&#243;viles de una
+						</p>
+						<p class="textItem " style="top:68.292683%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dependencia, instituci&#243;n o entidad perteneciente a los sectores
+						</p>
+						<p class="textItem " style="top:70.089859%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							p&#250;blico, privado o social, con el objetivo de prevenir y mitigar
+						</p>
+						<p class="textItem " style="top:71.887035%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los riesgos previamente identificados. A ellas toca orientar a las
+						</p>
+						<p class="textItem " style="top:73.684211%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							personas sobre las medidas que deben adoptarse (p.e. aislar el &#225;rea
+						</p>
+						<p class="textItem " style="top:75.481386%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							afectada, evacuar el inmueble) y tomar las primeras medidas de
+						</p>
+						<p class="textItem " style="top:77.278562%;left:49.769585%;width:26.267281%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							protecci&#243;n que en cada caso correspondan.
+						</p>
+						<p class="textItem " style="top:80.872914%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para su operaci&#243;n, la unidad interna de protecci&#243;n civil debe
+						</p>
+						<p class="textItem " style="top:82.670090%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							organizarse en cuatro brigadas b&#225;sicas: evacuaci&#243;n; b&#250;squeda y
+						</p>
+						<p class="textItem " style="top:84.467266%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							rescate; prevenci&#243;n y combate de conatos de incendios; y primeros
+						</p>
+						<p class="textItem " style="top:86.521181%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							7 Actopan, Alpatl&#225;huac, Alto Lucero, Apazapan, Ayahualulco, Calcahualco, Coatepec, Colipa,
+						</p>
+						<p class="textItem " style="top:87.419769%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C&#243;rdoba, Cosautl&#225;n, Coscomatepec, Chiconquiaco, Chocam&#225;n, Emiliano Zapata, Fort&#237;n,
+						</p>
+						<p class="textItem " style="top:88.318357%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Huatusco, Ixhuac&#225;n de los Reyes, Ixhuatl&#225;n del Caf&#233;, Juchique de Ferrer, La Antigua, Misantla,
+						</p>
+						<p class="textItem " style="top:89.216945%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Nautla, Paso de Ovejas, Puente Nacional, Sochiapa, Tenochtitl&#225;n, Teocelo, Tomatl&#225;n, &#218;rsulo
+						</p>
+						<p class="textItem " style="top:90.243902%;left:49.769585%;width:13.824885%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Galv&#225;n, Veracruz, Xico y Yecuatla.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-433.html">433</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-434.html">434</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-435.html">435</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-436.html">436</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-437.html">437</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-438.html">438</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-439.html">439</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-440.html">440</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-441.html">441</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-442.html">442</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-443.html">443</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-444.html">444</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

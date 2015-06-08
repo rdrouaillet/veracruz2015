@@ -1,0 +1,470 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "390";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-389.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;390 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-391.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-389.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">390 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-391.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0390.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:18.356868%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Cuitl&#225;huac, Guti&#233;rrez Zamora, Isla, Jamapa, Jilotepec, Las Vigas,
+						</p>
+						<p class="textItem " style="top:20.154044%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Miahuatl&#225;n, Omealca, Papantla, Paso de Ovejas, Puente Nacional,
+						</p>
+						<p class="textItem " style="top:21.951220%;left:8.602151%;width:12.288786%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							R&#237;o Blanco y Tuxtilla.
+						</p>
+						<p class="textItem " style="top:25.545571%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Direcci&#243;n General del Registro Civil particip&#243; en la XXXIV
+						</p>
+						<p class="textItem " style="top:27.342747%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							reuni&#243;n del Consejo Nacional de Funcionarios del Registro Civil
+						</p>
+						<p class="textItem " style="top:29.139923%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(CONAFREC), en el estado de Oaxaca, para determinar la base
+						</p>
+						<p class="textItem " style="top:30.937099%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para la modernizaci&#243;n integral del registro civil en la presente
+						</p>
+						<p class="textItem " style="top:32.734275%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Administraci&#243;n Federal conforme lo dispone el Plan Nacional de
+						</p>
+						<p class="textItem " style="top:34.531451%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Desarrollo 2013-2018. Para tal efecto se suscribi&#243; un documento
+						</p>
+						<p class="textItem " style="top:36.328626%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que refleja el compromiso actual del Gobierno de la Rep&#250;blica
+						</p>
+						<p class="textItem " style="top:38.125802%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y de los gobiernos estatales por mejorar sustancialmente los
+						</p>
+						<p class="textItem " style="top:39.922978%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							servicios que ofrece el registro civil a trav&#233;s del trabajo coordinador
+						</p>
+						<p class="textItem " style="top:41.720154%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							entre la Direcci&#243;n General del Registro Nacional de Poblaci&#243;n e
+						</p>
+						<p class="textItem " style="top:43.517330%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Identificaci&#243;n Personal y los titulares de los Registros Civiles. Con el
+						</p>
+						<p class="textItem " style="top:45.314506%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fin de dar seguimiento a estos trabajos del 27 al 30 de julio se realiz&#243;
+						</p>
+						<p class="textItem " style="top:47.111682%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en el Puerto de Veracruz la Reuni&#243;n Nacional de Funcionarios del
+						</p>
+						<p class="textItem " style="top:48.908858%;left:8.602151%;width:33.486943%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Registro Civil, con la asistencia de 31 entidades del pa&#237;s.
+						</p>
+						<p class="textItem " style="top:52.503209%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Dentro del quehacer diario de las oficial&#237;as del Estado y con el fin
+						</p>
+						<p class="textItem " style="top:54.300385%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de prestar servicios con calidad fueron emitidas 9,220 resoluciones
+						</p>
+						<p class="textItem " style="top:56.097561%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							administrativas que rectificaron inconsistencias en las actas de a&#241;os
+						</p>
+						<p class="textItem " style="top:57.894737%;left:8.602151%;width:30.568356%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							anteriores recibidas de las 212 Oficial&#237;as del Estado.
+						</p>
+						<p class="textItem " style="top:61.489089%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Como componente del proceso de desarrollo de los recursos
+						</p>
+						<p class="textItem " style="top:63.286264%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							humanos, la capacitaci&#243;n implica por un lado, una sucesi&#243;n
+						</p>
+						<p class="textItem " style="top:65.083440%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							definida de condiciones y etapas orientadas a lograr la integraci&#243;n
+						</p>
+						<p class="textItem " style="top:66.880616%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del colaborador a su puesto y a la organizaci&#243;n, el incremento y
+						</p>
+						<p class="textItem " style="top:68.677792%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mantenimiento de su eficiencia, as&#237; como su progreso personal y
+						</p>
+						<p class="textItem " style="top:70.474968%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							laboral en la Instituci&#243;n, es por ello que se ejecutaron 267 cursos
+						</p>
+						<p class="textItem " style="top:72.272144%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de capacitaci&#243;n del 1 de diciembre de 2013 a noviembre de 2014,
+						</p>
+						<p class="textItem " style="top:74.069320%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							impartidos a personal de esta Direcci&#243;n, Oficial&#237;as y aspirantes a
+						</p>
+						<p class="textItem " style="top:75.866496%;left:8.602151%;width:16.129032%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Oficiales de nuevo ingreso.
+						</p>
+						<p class="textItem " style="top:79.460847%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Administraci&#243;n P&#250;blica, requiere con apremio de servidores de
+						</p>
+						<p class="textItem " style="top:81.258023%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							alta calificaci&#243;n profesional que permitan elevar cada vez m&#225;s la
+						</p>
+						<p class="textItem " style="top:83.055199%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							calidad en la prestaci&#243;n de servicios. Es por ello que esta Direcci&#243;n
+						</p>
+						<p class="textItem " style="top:84.852375%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							tiene la tarea de satisfacer oportuna y diligentemente las demandas
+						</p>
+						<p class="textItem " style="top:86.649551%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en sus servicios, en cumplimiento del objetivo de atender con
+						</p>
+						<p class="textItem " style="top:18.356868%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							eficacia a los ciudadanos, tal y como qued&#243; puntualizado en el
+						</p>
+						<p class="textItem " style="top:20.154044%;left:49.769585%;width:25.960061%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Plan Veracruzano de Desarrollo 2011-2016.
+						</p>
+						<p class="textItem " style="top:23.748395%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La expedici&#243;n de copias certificadas es uno de los servicios que se
+						</p>
+						<p class="textItem " style="top:25.545571%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							prestan en esta Direcci&#243;n General, esto es, a trav&#233;s de programas
+						</p>
+						<p class="textItem " style="top:27.342747%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							como el Sistema Nacional para la Solicitud, Tramite y obtenci&#243;n
+						</p>
+						<p class="textItem " style="top:29.139923%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de actas certificadas, a trav&#233;s de la cual la poblaci&#243;n residente en
+						</p>
+						<p class="textItem " style="top:30.937099%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							otras entidades pueden solicitar copias certificadas de sus actos
+						</p>
+						<p class="textItem " style="top:32.734275%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y/o hechos inscritos en la Entidad, as&#237; como copias certificadas que
+						</p>
+						<p class="textItem " style="top:34.531451%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se expiden en la Direcci&#243;n General, en este rubro se obtuvieron
+						</p>
+						<p class="textItem " style="top:36.328626%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							durante el periodo de diciembre de 2013 a noviembre de 2014,
+						</p>
+						<p class="textItem " style="top:38.125802%;left:49.769585%;width:15.975422%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							36,236 copias certificadas.
+						</p>
+						<p class="textItem " style="top:41.720154%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con la finalidad de complementar tanto el Archivo Estatal
+						</p>
+						<p class="textItem " style="top:43.517330%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							como el archivo de las Oficial&#237;as, se ejecuta el Programa de
+						</p>
+						<p class="textItem " style="top:45.314506%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Complementaci&#243;n de Archivos, el cual consiste en solicitar a la
+						</p>
+						<p class="textItem " style="top:47.111682%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							oficial&#237;a correspondiente una copia fotost&#225;tica certificada del
+						</p>
+						<p class="textItem " style="top:48.908858%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							documento, para integrar el archivo o viceversa. En el periodo antes
+						</p>
+						<p class="textItem " style="top:50.706033%;left:49.769585%;width:39.324117%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mencionado se expidieron 13,831 copias fotost&#225;ticas certificadas.
+						</p>
+						<p class="textItem " style="top:54.300385%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Las b&#250;squedas de registro de actas del estado civil de las personas,
+						</p>
+						<p class="textItem " style="top:56.097561%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							es parte importante del proceso para la expedici&#243;n de copias
+						</p>
+						<p class="textItem " style="top:57.894737%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							certificadas. La localizaci&#243;n en libros duplicados que obran en el
+						</p>
+						<p class="textItem " style="top:59.691913%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Archivo Estatal, se incrementa de acuerdo a la demanda de los
+						</p>
+						<p class="textItem " style="top:61.489089%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							usuarios que las solicitan para poder tener derecho a los programas
+						</p>
+						<p class="textItem " style="top:63.286264%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							asistenciales que son ejecutados por el Gobierno Municipal, Estatal
+						</p>
+						<p class="textItem " style="top:65.083440%;left:49.769585%;width:36.405530%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y Federal; en este periodo fueron atendidos 12,218 servicios.
+						</p>
+						<p class="textItem " style="top:68.677792%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En cumplimiento a lo establecido por el C&#243;digo Civil del Estado
+						</p>
+						<p class="textItem " style="top:70.474968%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Veracruz, que se&#241;ala que todo acto del estado civil relativo a
+						</p>
+						<p class="textItem " style="top:72.272144%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							otro ya registrado deber&#225; anotarse en el acta correspondiente
+						</p>
+						<p class="textItem " style="top:74.069320%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y el documento que genere la anotaci&#243;n se insertar&#225; en el
+						</p>
+						<p class="textItem " style="top:75.866496%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ap&#233;ndice respectivo, en el caso de no existir se crear&#225;. Este
+						</p>
+						<p class="textItem " style="top:77.663671%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							procedimiento se realizar&#225; tambi&#233;n cuando lo mande la autoridad
+						</p>
+						<p class="textItem " style="top:79.460847%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							judicial o lo disponga expresamente la ley. Como se observa, los
+						</p>
+						<p class="textItem " style="top:81.258023%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							procedimientos de inscripci&#243;n y aviso de toda anotaci&#243;n realizada,
+						</p>
+						<p class="textItem " style="top:83.055199%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							es una actividad importante y trascendente, ya que modifica el
+						</p>
+						<p class="textItem " style="top:84.852375%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estado civil de la persona o alg&#250;n dato esencial del acta, es por ello
+						</p>
+						<p class="textItem " style="top:86.649551%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que establece la obligaci&#243;n que tienen los oficiales de comunicar a
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-385.html">385</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-386.html">386</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-387.html">387</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-388.html">388</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-389.html">389</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-390.html">390</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-391.html">391</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-392.html">392</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-393.html">393</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-394.html">394</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-395.html">395</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-396.html">396</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

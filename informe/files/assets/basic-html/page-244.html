@@ -1,0 +1,488 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "244";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-243.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;244 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-245.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-243.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">244 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-245.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0244.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:17.458280%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En junio, se firm&#243; el Convenio de Espacio Com&#250;n de la Educaci&#243;n
+						</p>
+						<p class="textItem " style="top:19.255456%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Media Superior (ECEMS), con el fin de establecer v&#237;nculos de
+						</p>
+						<p class="textItem " style="top:21.052632%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							colaboraci&#243;n entre todos los subsistemas de educaci&#243;n media
+						</p>
+						<p class="textItem " style="top:22.849807%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							superior, para que todos los educandos cuenten con las mismas
+						</p>
+						<p class="textItem " style="top:24.646983%;left:8.602151%;width:20.430108%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							oportunidades para su educaci&#243;n.
+						</p>
+						<p class="textItem " style="top:28.241335%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Respecto a la creaci&#243;n de nuevos servicios educativos en 2014, se
+						</p>
+						<p class="textItem " style="top:30.038511%;left:8.602151%;width:35.023041%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							contin&#250;a con el esfuerzo al establecer 28 nuevos planteles:
+						</p>
+						<p class="textItem " style="top:33.632863%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem testString" style="top:33.632863%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:33.632863%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Seis del COBAEV ubicados en los municipios de
+						</p>
+						<p class="textItem " style="top:35.430039%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Coatzacoalcos, Juan Rodr&#237;guez Clara, Plat&#243;n S&#225;nchez, San
+						</p>
+						<p class="textItem " style="top:37.227214%;left:12.288786%;width:25.345622%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Andr&#233;s Tuxtla, Soledad Atzompa y Xalapa;
+						</p>
+						<p class="textItem " style="top:40.821566%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:40.821566%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:40.821566%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ocho del CECyTEV en Alto Lucero, Camerino Z. Mendoza,
+						</p>
+						<p class="textItem " style="top:42.618742%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Catemaco, Juchique de Ferrer, Mecayapan, Otatitl&#225;n,
+						</p>
+						<p class="textItem " style="top:44.415918%;left:12.288786%;width:10.599078%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz y Yanga;
+						</p>
+						<p class="textItem " style="top:48.010270%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:48.010270%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:48.010270%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Diez de Telebachillerato Comunitario en Alvarado,
+						</p>
+						<p class="textItem " style="top:49.807445%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Catemaco, Comapa, Juan Rodr&#237;guez Clara, Naolinco,
+						</p>
+						<p class="textItem " style="top:51.604621%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Naranjal, Omealca, San Andr&#233;s Tuxtla, Soteapan y Tepetl&#225;n;
+						</p>
+						<p class="textItem " style="top:55.198973%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:55.198973%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:55.198973%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Y cuatro Telebachilleratos en Emiliano Zapata, Mecatl&#225;n,
+						</p>
+						<p class="textItem " style="top:56.996149%;left:12.288786%;width:13.978495%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tatahuicapan y Xalapa.
+						</p>
+						<p class="textItem " style="top:60.590501%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con la finalidad de ampliar las oportunidades de acceso,
+						</p>
+						<p class="textItem " style="top:62.387677%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							permanencia y conclusi&#243;n de este nivel educativo, en particular
+						</p>
+						<p class="textItem " style="top:64.184852%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para los j&#243;venes en situaci&#243;n de desventaja o vulnerabilidad, se
+						</p>
+						<p class="textItem " style="top:65.982028%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							otorgaron 132,116 becas, de las cuales 23,576 son del Programa
+						</p>
+						<p class="textItem " style="top:67.779204%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Becas de Educaci&#243;n Media Superior (PROBEMS); 91,500
+						</p>
+						<p class="textItem " style="top:69.576380%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Oportunidades; 17,024 institucionales y 16 de B&#233;calos de la
+						</p>
+						<p class="textItem " style="top:71.373556%;left:8.602151%;width:11.674347%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Fundaci&#243;n Televisa.
+						</p>
+						<p class="textItem " style="top:74.839538%;left:8.602151%;width:26.728111%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.2.1. Bachillerato general o
+						</p>
+						<p class="textItem " style="top:77.021823%;left:8.602151%;width:12.749616%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							proped&#233;utico
+						</p>
+						<p class="textItem " style="top:81.258023%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Este tipo educativo se oferta a trav&#233;s del Colegio de Bachilleres,
+						</p>
+						<p class="textItem " style="top:83.055199%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Telebachillerato, Bachillerato General, Pedag&#243;gico y por
+						</p>
+						<p class="textItem " style="top:84.852375%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Cooperaci&#243;n de Subsidio Federal, Bachillerato en L&#237;nea,
+						</p>
+						<p class="textItem " style="top:86.649551%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Telebachillerato Comunitario y Preparatoria Abierta, cada uno
+						</p>
+						<p class="textItem " style="top:88.446727%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cumple con la atenci&#243;n a necesidades espec&#237;ficas de los j&#243;venes. En
+						</p>
+						<p class="textItem " style="top:17.458280%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el ciclo escolar 2013-2014, se atendi&#243; una matr&#237;cula de 233,062
+						</p>
+						<p class="textItem " style="top:19.255456%;left:49.769585%;width:37.173579%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							alumnos, con 16,167 docentes en 1,549 planteles educativos.
+						</p>
+						<p class="textItem " style="top:22.849807%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Direcci&#243;n General de Bachillerato (DGB) tiene como objetivo
+						</p>
+						<p class="textItem " style="top:24.646983%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							brindar educaci&#243;n del nivel medio superior, en modalidad
+						</p>
+						<p class="textItem " style="top:26.444159%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							escolarizada, mixta y mixta flexible, as&#237; como no profesional.
+						</p>
+						<p class="textItem " style="top:28.241335%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ofreciendo al educando una formaci&#243;n basada en competencias
+						</p>
+						<p class="textItem " style="top:30.038511%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							las cuales promueven la adquisici&#243;n de conocimientos cient&#237;ficos,
+						</p>
+						<p class="textItem " style="top:31.835687%;left:49.769585%;width:26.113671%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							habilidades t&#233;cnicas y valores human&#237;sticos.
+						</p>
+						<p class="textItem " style="top:35.430039%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La DGB atendi&#243; una matr&#237;cula de 67,080 alumnos (34,595 en
+						</p>
+						<p class="textItem " style="top:37.227214%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							escuelas p&#250;blicas y 32,485 en escuelas particulares incorporadas),
+						</p>
+						<p class="textItem " style="top:39.024390%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en 508 planteles (90 oficiales y 418 particulares), atendidos por
+						</p>
+						<p class="textItem " style="top:40.821566%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							una plantilla de 7,658 docentes, 727 directivos y 3,596 de apoyo
+						</p>
+						<p class="textItem " style="top:42.618742%;left:49.769585%;width:22.273425%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							administrativo, t&#233;cnico y de servicios.
+						</p>
+						<p class="textItem " style="top:46.213094%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el marco del Proyecto Estrat&#233;gico se consolidan acciones
+						</p>
+						<p class="textItem " style="top:48.010270%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							encaminadas a lograr la integraci&#243;n e identidad institucional de
+						</p>
+						<p class="textItem " style="top:49.807445%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							alumnos, docentes y directivos, se ofrecieron cursos de inducci&#243;n
+						</p>
+						<p class="textItem " style="top:51.604621%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a 8,095 alumnos, 976 docentes, y 266 directores; y para la
+						</p>
+						<p class="textItem " style="top:53.401797%;left:49.769585%;width:32.258065%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							prevenci&#243;n de la violencia escolar a 1,100 educandos.
+						</p>
+						<p class="textItem " style="top:56.996149%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En este a&#241;o, el proceso de ingreso al bachillerato se extendi&#243;
+						</p>
+						<p class="textItem " style="top:58.793325%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a trav&#233;s de la modalidad de registro en l&#237;nea para 70 de los 76
+						</p>
+						<p class="textItem " style="top:60.590501%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							planteles oficiales del sistema escolarizado con la participaci&#243;n de
+						</p>
+						<p class="textItem " style="top:62.387677%;left:49.769585%;width:10.291859%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							13,855 alumnos.
+						</p>
+						<p class="textItem " style="top:65.982028%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se editaron 11 libros de texto para quinto y sexto semestre, fueron
+						</p>
+						<p class="textItem " style="top:67.779204%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							reimpresos 61 libros de texto que incluyeron la elaboraci&#243;n de
+						</p>
+						<p class="textItem " style="top:69.576380%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cuatro discos compactos como material de apoyo. Los tirajes
+						</p>
+						<p class="textItem " style="top:71.373556%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fueron de 332 mil ejemplares para el semestre 2013-2014 y de
+						</p>
+						<p class="textItem " style="top:73.170732%;left:49.769585%;width:27.496160%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							269.6 miles de ejemplares para el 2014-2015.
+						</p>
+						<p class="textItem " style="top:76.765083%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Este subsistema ha destacado con la participaci&#243;n de sus alumnos
+						</p>
+						<p class="textItem " style="top:78.562259%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en concursos nacionales e internacionales, en los que se han tenido
+						</p>
+						<p class="textItem " style="top:80.359435%;left:49.769585%;width:12.442396%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los siguientes logros:
+						</p>
+						<p class="textItem " style="top:83.953787%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:83.953787%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:83.953787%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Medallas de oro y bronce en la Olimpiada Nacional
+						</p>
+						<p class="textItem " style="top:85.750963%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Qu&#237;mica, quedando preseleccionados para la XLVI
+						</p>
+						<p class="textItem " style="top:87.548139%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Olimpiada Internacional de Qu&#237;mica celebrada en Han&#243;i,
+						</p>
+						<p class="textItem " style="top:89.345315%;left:53.456221%;width:27.496160%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Vietnam donde se obtuvo medalla de bronce;
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-239.html">239</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-240.html">240</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-241.html">241</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-242.html">242</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-243.html">243</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-244.html">244</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-245.html">245</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-246.html">246</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-247.html">247</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-248.html">248</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-249.html">249</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-250.html">250</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

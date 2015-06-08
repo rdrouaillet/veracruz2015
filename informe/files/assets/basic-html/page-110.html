@@ -1,0 +1,503 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "110";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-109.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;110 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-111.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-109.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">110 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-111.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0110.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem testString" style="top:9.756098%;left:8.602151%;width:27.188940%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							2. Competitividad
+						</p>
+						<p class="textItem " style="top:12.451861%;left:8.602151%;width:12.288786%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							tur&#237;stica
+						</p>
+						<p class="textItem " style="top:18.356868%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La competitividad en el turismo implica diferentes variables,
+						</p>
+						<p class="textItem " style="top:20.154044%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							entre las que destacan las pol&#237;ticas p&#250;blicas y regulaciones,
+						</p>
+						<p class="textItem " style="top:21.951220%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sustentabilidad ambiental, seguridad, salud e higiene, prioridad
+						</p>
+						<p class="textItem " style="top:23.748395%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la actividad tur&#237;stica, calidad de la infraestructura tur&#237;stica,
+						</p>
+						<p class="textItem " style="top:25.545571%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de accesibilidad y comunicaci&#243;n, capacidad de precios, recursos
+						</p>
+						<p class="textItem " style="top:27.342747%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							culturales y naturales, as&#237; como humanos, todos ellos, orientados
+						</p>
+						<p class="textItem " style="top:29.139923%;left:8.602151%;width:12.749616%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							al desarrollo tur&#237;stico.
+						</p>
+						<p class="textItem " style="top:32.734275%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En cumplimiento al PVD y al Programa Sectorial de Turismo, se
+						</p>
+						<p class="textItem " style="top:34.531451%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							conjuntaron esfuerzos con la Secretar&#237;a de Turismo Federal, para
+						</p>
+						<p class="textItem " style="top:36.328626%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fortalecer la competitividad de sus destinos tur&#237;sticos de manera
+						</p>
+						<p class="textItem " style="top:38.125802%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							integral en sus diferentes niveles sist&#233;micos con acciones de
+						</p>
+						<p class="textItem " style="top:39.922978%;left:8.602151%;width:7.987711%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							capacitaci&#243;n.
+						</p>
+						<p class="textItem " style="top:43.517330%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para el logro de estos objetivos, se brind&#243; capacitaci&#243;n tur&#237;stica
+						</p>
+						<p class="textItem " style="top:45.314506%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con cursos de Consultor&#237;a a MiPyMe&#8217;s sobre temas administrativos,
+						</p>
+						<p class="textItem " style="top:47.111682%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fiscales, procesos, ventas y calidad en el servicio, entre otros, a
+						</p>
+						<p class="textItem " style="top:48.908858%;left:8.602151%;width:5.990783%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							trav&#233;s del
+						</p>
+						<p class="textItem " style="top:48.908858%;left:15.207373%;width:32.872504%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Programa Integral de Capacitaci&#243;n y Competitividad
+						</p>
+						<p class="textItem " style="top:50.706033%;left:8.602151%;width:13.824885%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tur&#237;stica (PICCT 2014).
+						</p>
+						<p class="textItem " style="top:54.300385%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El 29 de abril en el Centro de Exposiciones y Convenciones de
+						</p>
+						<p class="textItem " style="top:56.097561%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz, se efectu&#243; el Foro de Difusi&#243;n sobre Financiamiento a
+						</p>
+						<p class="textItem " style="top:57.894737%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							MiPyMe&#8217;s Tur&#237;sticas, con el objetivo de informar a los prestadores
+						</p>
+						<p class="textItem " style="top:59.691913%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de servicios la gama de posibilidades financieras que tienen a su
+						</p>
+						<p class="textItem " style="top:61.489089%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							alcance para dar competitividad a sus negocios y establecimientos,
+						</p>
+						<p class="textItem " style="top:63.286264%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a trav&#233;s de los apoyos que ofrece el Instituto Nacional del
+						</p>
+						<p class="textItem " style="top:65.083440%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Emprendedor (INADEM), en el que se cont&#243; con la asistencia de
+						</p>
+						<p class="textItem " style="top:66.880616%;left:8.602151%;width:20.276498%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							68 empresarios de 14 municipios.
+						</p>
+						<p class="textItem " style="top:67.008986%;left:28.878648%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							7
+						</p>
+						<p class="textItem " style="top:70.346598%;left:8.602151%;width:30.414747%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							2.1. Programas de Capacitaci&#243;n
+						</p>
+						<p class="textItem " style="top:74.582798%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se dio seguimiento a las estrategias del Plan Veracruzano de
+						</p>
+						<p class="textItem " style="top:76.379974%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Desarrollo 2011-2016 con el Programa de Capacitaci&#243;n Estatal
+						</p>
+						<p class="textItem " style="top:78.177150%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							2014, para obtenermayores alcances en cuesti&#243;nde competitividad
+						</p>
+						<p class="textItem " style="top:79.974326%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							laboral, al contemplar cinco temas de gran impacto en la industria
+						</p>
+						<p class="textItem " style="top:81.771502%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							hotelera y restaurantera: Atenci&#243;n al Turista, Despertando la
+						</p>
+						<p class="textItem " style="top:83.568678%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Curiosidad de Nuestros Turistas, Preparaci&#243;n de Habitaciones de
+						</p>
+						<p class="textItem " style="top:85.365854%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Alojamiento Temporal, Recepcionista, Atenci&#243;n a Comensales y
+						</p>
+						<p class="textItem " style="top:87.163030%;left:8.602151%;width:19.201229%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Manejo Higi&#233;nico de Alimentos.
+						</p>
+						<p class="textItem " style="top:89.216945%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							7. Alvarado, Boca del R&#237;o, Coatepec, C&#243;rdoba, Coscomatepec, Jalcomulco, Orizaba, San Andr&#233;s
+						</p>
+						<p class="textItem " style="top:90.243902%;left:8.602151%;width:27.342550%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Tuxtla, Tecolutla, Tlacotalpan, Tlapacoyan, Veracruz, Xalapa y Xico.
+						</p>
+						<p class="textItem " style="top:18.356868%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se aplicaron 13 cursos referentes al Programa Estatal 2014, con
+						</p>
+						<p class="textItem " style="top:20.154044%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							lo que benefici&#243; a 353 prestadores de servicios tur&#237;sticos de los
+						</p>
+						<p class="textItem " style="top:21.951220%;left:49.769585%;width:36.251920%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipios de Alvarado, Coatzacoalcos, Tecolutla y Veracruz.
+						</p>
+						<p class="textItem " style="top:25.545571%;left:49.769585%;width:14.900154%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En la Regi&#243;n Totonaca
+						</p>
+						<p class="textItem " style="top:25.673941%;left:64.669739%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							8
+						</p>
+						<p class="textItem " style="top:25.545571%;left:65.130568%;width:24.116743%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							, durante el periodo de Informe, se
+						</p>
+						<p class="textItem " style="top:27.342747%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							impartieron 27 cursos, con tem&#225;ticas como: Calidad en el Servicio,
+						</p>
+						<p class="textItem " style="top:29.139923%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Desarrollo de Productos Tur&#237;sticos Empresariales, Preparaci&#243;n de
+						</p>
+						<p class="textItem " style="top:30.937099%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Habitaciones para el Alojamiento Temporal, Trabajo en Equipo,
+						</p>
+						<p class="textItem " style="top:32.734275%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Manejo Higi&#233;nico de los alimentos, Preparaci&#243;n de Bebidas con
+						</p>
+						<p class="textItem " style="top:34.531451%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Base de Caf&#233;, Sensibilizaci&#243;n y Motivaci&#243;n de los Colaboradores,
+						</p>
+						<p class="textItem " style="top:36.328626%;left:49.769585%;width:34.254992%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Atenci&#243;n a Comensales y Sistemas de Gesti&#243;n Ambiental.
+						</p>
+						<p class="textItem " style="top:39.922978%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En la Regi&#243;n de la Huasteca, en el municipio de Tuxpan, del 6
+						</p>
+						<p class="textItem " style="top:41.720154%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de febrero al 8 de mayo, se impartieron siete cursos de capaci&#243;n:
+						</p>
+						<p class="textItem " style="top:43.517330%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Marketing Experiencial para Destinos, Taller de Marketing Tur&#237;stico
+						</p>
+						<p class="textItem " style="top:45.314506%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por Redes Sociales, Hospitalidad Tur&#237;stica, Apertura de Negocios,
+						</p>
+						<p class="textItem " style="top:47.111682%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Taller de Habilidades Comunicacionales, Posicionamiento y
+						</p>
+						<p class="textItem " style="top:48.908858%;left:49.769585%;width:5.529954%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Branding
+						</p>
+						<p class="textItem " style="top:49.037227%;left:55.299539%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							9
+						</p>
+						<p class="textItem " style="top:48.908858%;left:56.067588%;width:33.179724%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Destino, Prestaci&#243;n del Servicio de Recepci&#243;n y
+						</p>
+						<p class="textItem " style="top:50.706033%;left:49.769585%;width:31.029186%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Atenci&#243;n al Hu&#233;sped para su Alojamiento Temporal.
+						</p>
+						<p class="textItem " style="top:54.300385%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El 18 de marzo del 2014 se present&#243; el Programa de Calidad
+						</p>
+						<p class="textItem " style="top:56.097561%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruzana, dirigido a empresas tur&#237;sticas del Estado legalmente
+						</p>
+						<p class="textItem " style="top:57.894737%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							constituidas que cumplieron con lineamientos, procesos,
+						</p>
+						<p class="textItem " style="top:59.691913%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							capacitaci&#243;n y evaluaci&#243;n, con el objetivo de otorgarles el Sello de
+						</p>
+						<p class="textItem " style="top:61.489089%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Calidad Tur&#237;stica Veracruzana, distintivo que otorga el Gobierno del
+						</p>
+						<p class="textItem " style="top:63.286264%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estado para las empresas del sector tur&#237;stico que acreditan dar un
+						</p>
+						<p class="textItem " style="top:65.083440%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							servicio de &#243;ptima calidad y que est&#225;n orientadas a la satisfacci&#243;n
+						</p>
+						<p class="textItem " style="top:66.880616%;left:49.769585%;width:18.586790%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de clientes, visitantes y turistas.
+						</p>
+						<p class="textItem " style="top:70.474968%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Del 3 al 5 de abril se imparti&#243; el Curso-Taller Factores estrat&#233;gicos
+						</p>
+						<p class="textItem " style="top:72.272144%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que potencializan el desarrollo organizacional en las empresas
+						</p>
+						<p class="textItem " style="top:74.069320%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							tur&#237;sticas del Estado de Veracruz, con una duraci&#243;n de 20
+						</p>
+						<p class="textItem " style="top:75.866496%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							horas y participaci&#243;n de 34 prestadores de servicios tur&#237;sticos
+						</p>
+						<p class="textItem " style="top:77.663671%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pertenecientes a los municipios de Coatepec, Xalapa y Xico, en
+						</p>
+						<p class="textItem " style="top:79.460847%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							representaci&#243;n de 22 empresas del ramo. El mismo curso se otorg&#243;
+						</p>
+						<p class="textItem " style="top:81.258023%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en el puerto de Veracruz, con la asistencia de 11 prestadores de
+						</p>
+						<p class="textItem " style="top:83.055199%;left:49.769585%;width:30.875576%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							servicios tur&#237;sticos de ocho empresas de esa ciudad.
+						</p>
+						<p class="textItem " style="top:87.419769%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							8. Municipios y localidades de Cazones de Herrera, Guti&#233;rrez Zamora, Nautla, Papantla, Poza Rica,
+						</p>
+						<p class="textItem " style="top:88.318357%;left:49.769585%;width:9.523810%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Tecolutla y Tlapacoyan.
+						</p>
+						<p class="textItem " style="top:89.216945%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							9. Branding se refiere al proceso de construcci&#243;n de una marca, utilizada en el campo de la
+						</p>
+						<p class="textItem " style="top:90.243902%;left:49.769585%;width:6.298003%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							mercadotecnia.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-105.html">105</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-106.html">106</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-107.html">107</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-108.html">108</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-109.html">109</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-110.html">110</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-111.html">111</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-112.html">112</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-113.html">113</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-114.html">114</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-115.html">115</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-116.html">116</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

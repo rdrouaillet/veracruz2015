@@ -1,0 +1,503 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "192";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-191.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;192 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-193.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-191.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">192 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-193.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0192.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:21.052632%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sirvi&#243; para conmemorar el D&#237;a Mundial contra la Trata de Personas,
+						</p>
+						<p class="textItem " style="top:22.849807%;left:8.602151%;width:8.141321%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el 30 de julio.
+						</p>
+						<p class="textItem " style="top:26.444159%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tambi&#233;n, se organiz&#243;, el Segundo Foro de Protecci&#243;n de Derechos
+						</p>
+						<p class="textItem " style="top:28.241335%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Juveniles en la ciudad de Veracruz, con la participaci&#243;n de 1,056
+						</p>
+						<p class="textItem " style="top:30.038511%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estudiantes de nivel secundaria y preparatoria de 16 planteles
+						</p>
+						<p class="textItem " style="top:31.835687%;left:8.602151%;width:6.758833%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							educativos.
+						</p>
+						<p class="textItem " style="top:35.430039%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para disminuir los diferentes factores de riesgo como el embarazo
+						</p>
+						<p class="textItem " style="top:37.227214%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en edades tempranas y el consumo de sustancias adictivas en
+						</p>
+						<p class="textItem " style="top:39.024390%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							j&#243;venes, se efectuaron seis capacitaciones en las ciudades de
+						</p>
+						<p class="textItem " style="top:40.821566%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							C&#243;rdoba, Tuxpan, Veracruz y Xalapa, a las que asisti&#243; personal
+						</p>
+						<p class="textItem " style="top:42.618742%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							administrativo de 67 municipios. Con el mismo objetivo, se
+						</p>
+						<p class="textItem " style="top:44.415918%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							brindaron 20 talleres de prevenci&#243;n del embarazo en adolescente
+						</p>
+						<p class="textItem " style="top:46.213094%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y ocho talleres de cuidados pre y postnatales; nueve talleres
+						</p>
+						<p class="textItem " style="top:48.010270%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con el tema de Mitos y Realidades de las drogas; 35 talleres que
+						</p>
+						<p class="textItem " style="top:49.807445%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							abordaron el tema de Habilidades para la Vida y dos talleres de
+						</p>
+						<p class="textItem " style="top:51.604621%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Familia, la Mejor Fortaleza contra las adicciones; con lo que se
+						</p>
+						<p class="textItem " style="top:53.401797%;left:8.602151%;width:27.342550%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							benefici&#243; a 1,897 ni&#241;as, ni&#241;os y adolescentes.
+						</p>
+						<p class="textItem " style="top:56.996149%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para desarrollar habilidades y sensibilizar a ni&#241;as, ni&#241;os y
+						</p>
+						<p class="textItem " style="top:58.793325%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							adolescentes en el consumo de sustancias adictivas, se realiz&#243; el
+						</p>
+						<p class="textItem " style="top:60.590501%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							concurso de carteles con el tema del Uso Indebido y Tr&#225;fico Il&#237;cito
+						</p>
+						<p class="textItem " style="top:62.387677%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Drogas, con la participaci&#243;n de 406 concursantes de nueve
+						</p>
+						<p class="textItem " style="top:64.184852%;left:8.602151%;width:6.912442%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipios.
+						</p>
+						<p class="textItem " style="top:67.779204%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con la finalidad de crear mecanismos que reduzcan la mortandad
+						</p>
+						<p class="textItem " style="top:69.576380%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							infantil, en coordinaci&#243;n con los sistemas municipales DIF, se
+						</p>
+						<p class="textItem " style="top:71.373556%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							brindaron 251 pl&#225;ticas alusivas a los 12 componentes del modelo
+						</p>
+						<p class="textItem " style="top:73.170732%;left:8.602151%;width:29.493088%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Salud, con una asistencia de 15,702 personas.
+						</p>
+						<p class="textItem " style="top:76.765083%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En conjunto con la Secretar&#237;a de Salud, en las Semanas Nacionales
+						</p>
+						<p class="textItem " style="top:78.562259%;left:8.602151%;width:39.016897%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Salud (primera y segunda), se realizaron 1,706 somatometr&#237;as
+						</p>
+						<p class="textItem " style="top:78.690629%;left:47.619048%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							9
+						</p>
+						<p class="textItem " style="top:80.359435%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a ni&#241;os pertenecientes a los municipios de Naranjal, Orizaba,
+						</p>
+						<p class="textItem " style="top:82.156611%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Otatitl&#225;n, Poza Rica, R&#237;o Blanco, Santiago Tuxtla, Tantoyuca y
+						</p>
+						<p class="textItem " style="top:83.953787%;left:8.602151%;width:7.526882%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tehuipango.
+						</p>
+						<p class="textItem " style="top:90.243902%;left:8.602151%;width:30.568356%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							9. Somatometr&#237;a.- Medici&#243;n de las dimensiones f&#237;sicas del cuerpo humano.
+						</p>
+						<p class="textItem testString" style="top:7.060334%;left:49.769585%;width:38.863287%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							6. Fortalecer los sistemas
+						</p>
+						<p class="textItem " style="top:9.756098%;left:49.769585%;width:35.023041%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							de compensaci&#243;n para
+						</p>
+						<p class="textItem " style="top:12.451861%;left:49.769585%;width:34.869432%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							los grupos vulnerables
+						</p>
+						<p class="textItem " style="top:15.147625%;left:49.769585%;width:22.119816%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							de la sociedad
+						</p>
+						<p class="textItem " style="top:21.052632%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Una de las fortalezas que tiene Veracruz en materia de atenci&#243;n
+						</p>
+						<p class="textItem " style="top:22.849807%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a personas con discapacidad lo constituye la Red Estatal de
+						</p>
+						<p class="textItem " style="top:24.646983%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Centros de Rehabilitaci&#243;n y las Unidades B&#225;sicas de Rehabilitaci&#243;n,
+						</p>
+						<p class="textItem " style="top:26.444159%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							establecida en 81 municipios, misma que propicia que de norte a
+						</p>
+						<p class="textItem " style="top:28.241335%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sur del territorio veracruzano se tenga la infraestructura adecuada
+						</p>
+						<p class="textItem " style="top:30.038511%;left:49.769585%;width:31.029186%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para atender a grupos vulnerables que lo requieren.
+						</p>
+						<p class="textItem " style="top:33.632863%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Esta Red fue fortalecida con la asignaci&#243;n de unidades de transporte
+						</p>
+						<p class="textItem " style="top:35.430039%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							adaptado para personas con discapacidad, que facilita el traslado
+						</p>
+						<p class="textItem " style="top:37.227214%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de los pacientes que viven en comunidades o colonias retiradas
+						</p>
+						<p class="textItem " style="top:39.024390%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							al centro de atenci&#243;n. Este servicio brinda oportunidad a los
+						</p>
+						<p class="textItem " style="top:40.821566%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pacientes trasladados de continuar con las terapias y valoraciones
+						</p>
+						<p class="textItem " style="top:42.618742%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							m&#233;dicas que hacen viable en el mediano plazo, la oportunidad
+						</p>
+						<p class="textItem " style="top:44.415918%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de mejorar su calidad de vida. Con una inversi&#243;n federal de
+						</p>
+						<p class="textItem " style="top:46.213094%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							29.4 millones este a&#241;o, se asignaron 40 unidades de transporte
+						</p>
+						<p class="textItem " style="top:48.010270%;left:49.769585%;width:16.436252%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							adaptado en 35 municipios
+						</p>
+						<p class="textItem " style="top:48.138639%;left:66.205837%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							10
+						</p>
+						<p class="textItem " style="top:48.010270%;left:67.127496%;width:22.119816%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							. De 2011 a la fecha se han asignado
+						</p>
+						<p class="textItem " style="top:49.807445%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							96 unidades de transporte adaptado en beneficio de la poblaci&#243;n
+						</p>
+						<p class="textItem " style="top:51.604621%;left:49.769585%;width:10.752688%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 61 municipios.
+						</p>
+						<p class="textItem " style="top:55.198973%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En materia de equipamiento, continuaron los esfuerzos para
+						</p>
+						<p class="textItem " style="top:56.996149%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fortalecer la capacidad del Centro de Rehabilitaci&#243;n Integral de
+						</p>
+						<p class="textItem " style="top:58.793325%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Coatzacoalcos (CRIC). Con el apoyo de recursos donados por
+						</p>
+						<p class="textItem " style="top:60.590501%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Petr&#243;leos Mexicanos (PEMEX), se entregaron instrumentos para
+						</p>
+						<p class="textItem " style="top:62.387677%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							terapias de estimulaci&#243;n temprana, equipo de c&#243;mputo para
+						</p>
+						<p class="textItem " style="top:64.184852%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							personas invidentes y con baja visi&#243;n, as&#237; como equipo m&#233;dico
+						</p>
+						<p class="textItem " style="top:65.982028%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y de rehabilitaci&#243;n con una inversi&#243;n global de 6.9 millones de
+						</p>
+						<p class="textItem " style="top:67.779204%;left:49.769585%;width:3.840246%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pesos.
+						</p>
+						<p class="textItem " style="top:71.373556%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El CRIC brinda servicios de rehabilitaci&#243;n a ni&#241;os y adultos
+						</p>
+						<p class="textItem " style="top:73.170732%;left:49.769585%;width:10.906298%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 24 municipios
+						</p>
+						<p class="textItem " style="top:73.299101%;left:60.675883%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							11
+						</p>
+						<p class="textItem " style="top:73.170732%;left:62.058372%;width:27.342550%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la regi&#243;n Olmeca, as&#237; como a personas
+						</p>
+						<p class="textItem " style="top:74.967908%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							provenientes de los estados de Chiapas y Tabasco. Esto motiv&#243;
+						</p>
+						<p class="textItem " style="top:76.765083%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la asignaci&#243;n de siete unidades de transporte adaptado para
+						</p>
+						<p class="textItem " style="top:78.562259%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							personas con discapacidad, con una inversi&#243;n de 4.9 millones de
+						</p>
+						<p class="textItem " style="top:80.359435%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pesos, las cuales son operadas por los sistemas DIF municipales de
+						</p>
+						<p class="textItem " style="top:82.798460%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							10. Alto Lucero, Altotonga, Alvarado, Atzacan, Camerino Z. Mendoza, Carlos A. Carrillo,
+						</p>
+						<p class="textItem " style="top:83.697047%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Catemaco, Coacoatzintla, Chacaltianguis, Chocam&#225;n, Cosamaloapan, Coscomatepec, Fort&#237;n,
+						</p>
+						<p class="textItem " style="top:84.595635%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Huayacocotla, Jamapa, Juan Rodr&#237;guez Clara, La Antigua, Lerdo de Tejada, Mart&#237;nez de la Torre,
+						</p>
+						<p class="textItem " style="top:85.622593%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Misantla, Nautla, Nogales, Tatahuicapan, Tierra Blanca, Tlacotalpan, Tres Valles, Uxpanapa, Vega
+						</p>
+						<p class="textItem " style="top:86.521181%;left:49.769585%;width:31.490015%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							de Alatorre, Veracruz, Xico, Yanga, Tecolutla, Tuxpan, Zongolica y Zozocolco.
+						</p>
+						<p class="textItem " style="top:87.419769%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							11. Acayucan, Agua Dulce, Chinameca, Cosoleacaque, Hidalgotitl&#225;n, Ixhuatl&#225;n del Sureste,
+						</p>
+						<p class="textItem " style="top:88.318357%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							J&#225;ltipan, Jes&#250;s Carranza, Las Choapas, Mecayapan, Minatitl&#225;n, Moloac&#225;n, Nanchital, Oluta,
+						</p>
+						<p class="textItem " style="top:89.216945%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Oteapan, Pajapan, Sayula de Alem&#225;n, San Juan Evangelista, Soconusco, Soteapan, Tatahuicapan,
+						</p>
+						<p class="textItem " style="top:90.243902%;left:49.769585%;width:13.978495%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Texistepec, Uxpanapa y Zaragoza.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-187.html">187</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-188.html">188</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-189.html">189</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-190.html">190</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-191.html">191</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-192.html">192</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-193.html">193</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-194.html">194</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-195.html">195</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-196.html">196</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-197.html">197</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-198.html">198</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

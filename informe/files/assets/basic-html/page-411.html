@@ -1,0 +1,530 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "411";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-410.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;411 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-412.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-410.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">411 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-412.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0411.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:40.706605%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:47.158218%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:48.233487%;width:6.912442%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>G o b i e r n o</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:55.913978%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:56.989247%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>4 0 9</b>
+						</p>
+						<p class="textItem " style="top:18.356868%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Sistema Estatal para Prevenir, Atender, Sancionar y Erradicar
+						</p>
+						<p class="textItem " style="top:20.154044%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Violencia contra las Mujeres, realiz&#243; 16 reuniones de trabajo y
+						</p>
+						<p class="textItem " style="top:21.951220%;left:10.752688%;width:15.668203%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cuatro sesiones ordinarias.
+						</p>
+						<p class="textItem " style="top:25.417202%;left:10.752688%;width:32.104455%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							21.5 Salud integral de las mujeres
+						</p>
+						<p class="textItem " style="top:29.653402%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En los municipios de Chicontepec, Coatzacoalcos, Ilamatl&#225;n,
+						</p>
+						<p class="textItem " style="top:31.450578%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Papantla, San Andr&#233;s Tuxtla, Tantoyuca, Tatahuicapan, Veracruz
+						</p>
+						<p class="textItem " style="top:33.247754%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y Zongolica, se desarroll&#243; un Programa de capacitaci&#243;n mediante
+						</p>
+						<p class="textItem " style="top:35.044929%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							nueve talleres con promotoras ciudadanas comunitarias para
+						</p>
+						<p class="textItem " style="top:36.842105%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la prevenci&#243;n de la violencia, en la vinculaci&#243;n multisectorial
+						</p>
+						<p class="textItem " style="top:38.639281%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para la prevenci&#243;n del VIH-SIDA, as&#237; como dos encuentros
+						</p>
+						<p class="textItem " style="top:40.436457%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							regionales en los municipios de San Andr&#233;s Tuxtla, y Tantoyuca
+						</p>
+						<p class="textItem " style="top:42.233633%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de los cuales se obtuvo un manual de prevenci&#243;n para mujeres
+						</p>
+						<p class="textItem " style="top:44.030809%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							promotoras comunitarias, a fin de que manejen el mismo tipo de
+						</p>
+						<p class="textItem " style="top:45.827985%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							informaci&#243;n que les permita vincular estrategias de prevenci&#243;n, en
+						</p>
+						<p class="textItem " style="top:47.625160%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							colaboraci&#243;n con servidoras/es p&#250;blicas/os. Asimismo se realizaron
+						</p>
+						<p class="textItem " style="top:49.422336%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dos Jornadas de pruebas r&#225;pidas para detectar esta enfermedad en
+						</p>
+						<p class="textItem " style="top:51.219512%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Coatzacoalcos y Veracruz, en esta acci&#243;n participaron 200 mujeres
+						</p>
+						<p class="textItem " style="top:53.016688%;left:10.752688%;width:7.373272%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							promotoras.
+						</p>
+						<p class="textItem " style="top:56.611040%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se impuls&#243; la formaci&#243;n y el fortalecimiento de capacidades de
+						</p>
+						<p class="textItem " style="top:58.408216%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							servidoras y servidores p&#250;blicas/os de los servicios de salud de
+						</p>
+						<p class="textItem " style="top:60.205392%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz, con quienes se desarroll&#243; la estrategia para mejorar la
+						</p>
+						<p class="textItem " style="top:62.002567%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							salud materna y prevenir la muerte materna, adem&#225;s de la difusi&#243;n
+						</p>
+						<p class="textItem " style="top:63.799743%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de derechos sexuales y reproductivos entre mujeres promotoras, a
+						</p>
+						<p class="textItem " style="top:65.596919%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							trav&#233;s de procesos formativos y de sensibilizaci&#243;n con perspectiva
+						</p>
+						<p class="textItem " style="top:67.394095%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de g&#233;nero; en ella se realizaron talleres regionales en cuatro
+						</p>
+						<p class="textItem " style="top:69.191271%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							jurisdicciones sanitarias (C&#243;rdoba, Cosamaloapan, San Andr&#233;s
+						</p>
+						<p class="textItem " style="top:70.988447%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tuxtla y Tuxpan), dicha estrategia consisti&#243; en cuatro talleres
+						</p>
+						<p class="textItem " style="top:72.785623%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sobre salud materna y derechos sexuales y reproductivos, en los
+						</p>
+						<p class="textItem " style="top:74.582798%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que se cont&#243; con la participaci&#243;n de 120 m&#233;dicas/os generales,
+						</p>
+						<p class="textItem " style="top:76.379974%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							enfermeras/os, trabajadoras sociales, responsables de programas
+						</p>
+						<p class="textItem " style="top:78.177150%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de club de embarazadas, madrinas obst&#233;tricas y salud reproductiva.
+						</p>
+						<p class="textItem " style="top:81.771502%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Asimismo se impartieron cuatro talleres regionales con mujeres
+						</p>
+						<p class="textItem " style="top:83.568678%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que desempe&#241;an un papel de promotoras, auxiliares en salud y
+						</p>
+						<p class="textItem " style="top:85.365854%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							parteras que trabajan en la atenci&#243;n directa a la salud materna de
+						</p>
+						<p class="textItem " style="top:87.163030%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							las mujeres en los municipios sede y cercanos a fin de propiciar
+						</p>
+						<p class="textItem " style="top:88.960205%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							su sensibilizaci&#243;n sobre los criterios de calidad de la atenci&#243;n con
+						</p>
+						<p class="textItem " style="top:18.356868%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							perspectiva de g&#233;nero, pertinencia cultural y su relaci&#243;n con los
+						</p>
+						<p class="textItem " style="top:20.154044%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							derechos sexuales y reproductivos. A estos talleres asistieron 180
+						</p>
+						<p class="textItem " style="top:21.951220%;left:51.920123%;width:13.824885%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mujeres y 40 hombres.
+						</p>
+						<p class="textItem " style="top:25.417202%;left:51.920123%;width:34.408602%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							21.6 Educaci&#243;n y diversidad cultural
+						</p>
+						<p class="textItem " style="top:29.653402%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Las pl&#225;ticas de prevenci&#243;n de la violencia son de gran relevancia
+						</p>
+						<p class="textItem " style="top:31.450578%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para la poblaci&#243;n al hacer conciencia principalmente en las mujeres,
+						</p>
+						<p class="textItem " style="top:33.247754%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de que tienen derechos humanos, que existen leyes encaminadas
+						</p>
+						<p class="textItem " style="top:35.044929%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para el resguardo de su integridad, que hay una ley que brinda
+						</p>
+						<p class="textItem " style="top:36.842105%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							las pautas para acceder a una vida libre de violencia, que debe
+						</p>
+						<p class="textItem " style="top:38.639281%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							haber igualdad entre hombres y mujeres. Por ello el IVM brind&#243;
+						</p>
+						<p class="textItem " style="top:40.436457%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							240 Pl&#225;ticas para la Prevenci&#243;n de la violencia contra las mujeres,
+						</p>
+						<p class="textItem " style="top:42.233633%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a trav&#233;s de las unidades de atenci&#243;n dirigidas a mujeres de 125
+						</p>
+						<p class="textItem " style="top:44.030809%;left:51.920123%;width:6.605223%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipios
+						</p>
+						<p class="textItem " style="top:44.030809%;left:58.525346%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							5
+						</p>
+						<p class="textItem " style="top:44.030809%;left:59.293395%;width:32.104455%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Estado de Veracruz, con los que se benefici&#243; a
+						</p>
+						<p class="textItem " style="top:45.827985%;left:51.920123%;width:20.430108%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							12,463 mujeres y 1,082 hombres.
+						</p>
+						<p class="textItem " style="top:49.422336%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Asimismo se realiz&#243; una campa&#241;a estatal de reforzamiento enfocada
+						</p>
+						<p class="textItem " style="top:51.219512%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a mujeres habitantes de 10 regiones de zonas urbanas, rurales e
+						</p>
+						<p class="textItem " style="top:53.016688%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ind&#237;genas (De las Monta&#241;as, Del Nautla, Huasteca Alta, Huasteca
+						</p>
+						<p class="textItem " style="top:54.813864%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Baja, La Capital, Los Tuxtlas, Totonaca, Olmeca, Papaloapan y
+						</p>
+						<p class="textItem " style="top:56.611040%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Sotavento) denominada Vida sin violencia 2014, a trav&#233;s de
+						</p>
+						<p class="textItem " style="top:58.408216%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la distribuci&#243;n de papel para envolver tortillas y colocaci&#243;n de
+						</p>
+						<p class="textItem " style="top:60.205392%;left:51.920123%;width:15.207373%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							carteles en 17 municipios
+						</p>
+						<p class="textItem " style="top:60.205392%;left:67.127496%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							6
+						</p>
+						<p class="textItem " style="top:60.205392%;left:67.588326%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							.
+						</p>
+						<p class="textItem " style="top:63.799743%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se desarroll&#243;, dise&#241;&#243; e implement&#243; el aula virtual de capacitaci&#243;n
+						</p>
+						<p class="textItem " style="top:65.596919%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en l&#237;nea, donde se capacit&#243; a docentes a efecto de dar continuidad
+						</p>
+						<p class="textItem " style="top:67.394095%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y enriquecer la herramienta did&#225;ctica Los Colores de la No Violencia
+						</p>
+						<p class="textItem " style="top:69.191271%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dise&#241;ada por el IVM, adem&#225;s se produjeron dos videos tutoriales,
+						</p>
+						<p class="textItem " style="top:71.758665%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							5. Acayucan, Actopan, Agua Dulce, &#193;lamo Temapache Alpatl&#225;huac, Alto Lucero, Altotonga,
+						</p>
+						<p class="textItem " style="top:72.657253%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Alvarado, &#193;ngel R. Cabada, Aquila, Aquila, Astancinga, Atlahuilco, Atzacan, Atzalan, Banderilla,
+						</p>
+						<p class="textItem " style="top:73.555841%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Benito Ju&#225;rez, Boca del Rio, Calcahualco, Camar&#243;n de Tejeda, Camerino Z. Mendoza, Carlos
+						</p>
+						<p class="textItem " style="top:74.454429%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							A. Carrillo, Carrillo Puerto, Castillo de Teayo, Catemaco, Cazones de Herrera, Chacaltianguis,
+						</p>
+						<p class="textItem " style="top:75.353017%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Chicontepec, Chinameca, Chumatl&#225;n, Coahuitl&#225;n, Coatzacoalcos, Coatzintla, Colipa, Comapa,
+						</p>
+						<p class="textItem " style="top:76.379974%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Cosamaloapan, Cosautl&#225;n de Carvajal, Coscomatepec, Cotaxtla, Coxquihui, Coyutla, Espinal,
+						</p>
+						<p class="textItem " style="top:77.278562%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Filomeno Mata, Guti&#233;rrez Zamora, Hidalgotitl&#225;n, Huatusco, Ilamatl&#225;n, Isla, Ixhuatl&#225;n de Madero,
+						</p>
+						<p class="textItem " style="top:78.177150%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Ixhuatl&#225;n del Sureste, Ixhuatlancillo, Ixmatlahuac&#225;n, Jalacingo, Jamapa, Jilotepec, Jos&#233; Azueta,
+						</p>
+						<p class="textItem " style="top:79.075738%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Juan Rodr&#237;guez Clara, Juchique de Ferrer, La Antigua, La Perla, Las Choapas, Lerdo de Tejada,
+						</p>
+						<p class="textItem " style="top:79.974326%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Los Reyes, Magdalena, Manlio Fabio Altamirano, Mariano Escobedo, Mart&#237;nez de la Torre,
+						</p>
+						<p class="textItem " style="top:81.001284%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Mecatl&#225;n, Mecayapan, Medell&#237;n, Minatitl&#225;n, Misantla, Mixtla de Altamirano, Moloac&#225;n, Nautla,
+						</p>
+						<p class="textItem " style="top:81.899872%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Oluta, Orizaba, Papantla, Paso de Ovejas, Paso del Macho, Poza Rica, Puente Nacional, Rafael
+						</p>
+						<p class="textItem " style="top:82.798460%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Delgado, Rafael Lucio, San Andr&#233;s Tenejapan, San Andr&#233;s Tuxtla, San Juan Evangelista, San Rafael,
+						</p>
+						<p class="textItem " style="top:83.697047%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Santiago Tuxtla, Sayula de Alem&#225;n, Sochiapa, Soconusco, Soledad Atzompa, Soledad de Doblado,
+						</p>
+						<p class="textItem " style="top:84.595635%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Tantoyuca, Tecolutla, Texhuac&#225;n, Tehuipango, Tenampa, Tenochtitl&#225;n, Tequila, Texcatepec,
+						</p>
+						<p class="textItem " style="top:85.622593%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Texistepec, Tezonapa, Tierra Blanca, Tihuatl&#225;n, Tlachichilco, Tlalixcoyan, Tlalnelhuayocan,
+						</p>
+						<p class="textItem " style="top:86.521181%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Tlaltetela,Tlapacoyan, Tlaquilpan, Tomatl&#225;n, Totutla, Tuxpan, &#218;rsulo Galv&#225;n, Vega de la Torre,
+						</p>
+						<p class="textItem " style="top:87.419769%;left:51.920123%;width:36.405530%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz, Xalapa, Xoxocotla, Yecuatla, Zaragoza, Zongolica, Zontecomatl&#225;n y Zozocolco.
+						</p>
+						<p class="textItem " style="top:88.318357%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							6. Alvarado, &#193;ngel R. Cabada, Boca del R&#237;o, Catemaco, Coatzacoalcos, Minatitl&#225;n, Nautla,
+						</p>
+						<p class="textItem " style="top:89.216945%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Orizaba, Papantla, Poza Rica, San Andr&#233;s Tuxtla, Santiago Tuxtla, Tantoyuca, Tuxpan, Veracruz,
+						</p>
+						<p class="textItem " style="top:90.243902%;left:51.920123%;width:8.141321%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Xalapa y Zongolica.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-406.html">406</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-407.html">407</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-408.html">408</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-409.html">409</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-410.html">410</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-411.html">411</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-412.html">412</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-413.html">413</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-414.html">414</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-415.html">415</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-416.html">416</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-417.html">417</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

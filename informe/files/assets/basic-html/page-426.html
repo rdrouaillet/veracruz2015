@@ -1,0 +1,524 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "426";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-425.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;426 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-427.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-425.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">426 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-427.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0426.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:15.661104%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem testString" style="top:15.661104%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:15.661104%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Participaci&#243;n en la Jornada Regional de Protecci&#243;n Civil,
+						</p>
+						<p class="textItem " style="top:17.458280%;left:12.288786%;width:8.909370%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Regi&#243;n Centro
+						</p>
+						<p class="textItem " style="top:17.586650%;left:21.044547%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							5
+						</p>
+						<p class="textItem " style="top:17.458280%;left:21.505376%;width:26.574501%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							, celebrada en Puebla, Puebla, del 24 al 28
+						</p>
+						<p class="textItem " style="top:19.255456%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de marzo, foro en el que se sostuvo una reuni&#243;n de trabajo
+						</p>
+						<p class="textItem " style="top:21.052632%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con titulares de protecci&#243;n civil de los estados de esta regi&#243;n
+						</p>
+						<p class="textItem " style="top:22.849807%;left:12.288786%;width:28.110599%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y la Coordinaci&#243;n Nacional de Protecci&#243;n Civil.
+						</p>
+						<p class="textItem " style="top:26.444159%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:26.444159%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:26.444159%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Intervenci&#243;n en el Foro de Consulta Nacional para la Revisi&#243;n
+						</p>
+						<p class="textItem " style="top:28.241335%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Modelo Educativo, nivel Educaci&#243;n B&#225;sica en Materia
+						</p>
+						<p class="textItem " style="top:30.038511%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Protecci&#243;n Civil y la Gesti&#243;n del Riesgo, el 27 de marzo
+						</p>
+						<p class="textItem " style="top:31.835687%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en Villahermosa, Tabasco, en el que Veracruz present&#243; una
+						</p>
+						<p class="textItem " style="top:33.632863%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							propuesta para el dise&#241;o del nuevo modelo educativo en
+						</p>
+						<p class="textItem " style="top:35.430039%;left:12.288786%;width:7.680492%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							esta materia.
+						</p>
+						<p class="textItem " style="top:39.024390%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:39.024390%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:39.024390%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Participaci&#243;n en la primera Convenci&#243;n Nacional de
+						</p>
+						<p class="textItem " style="top:40.821566%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Protecci&#243;n Civil, realizada del 12 al 16 de mayo en Acapulco,
+						</p>
+						<p class="textItem " style="top:42.618742%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Guerrero, en la que se desarrollaron 37 cursos, talleres
+						</p>
+						<p class="textItem " style="top:44.415918%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y conferencias magistrales en la materia, entre las que
+						</p>
+						<p class="textItem " style="top:46.213094%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							destacan: La importancia de las Normas Oficiales Mexicanas
+						</p>
+						<p class="textItem " style="top:48.010270%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para fortalecer el Marco Jur&#237;dico del Sistema Nacional de
+						</p>
+						<p class="textItem " style="top:49.807445%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Protecci&#243;n Civil; Estimaci&#243;n de la susceptibilidad a los
+						</p>
+						<p class="textItem " style="top:51.604621%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							deslizamientos de laderas; Sistemas de alerta temprana
+						</p>
+						<p class="textItem " style="top:53.401797%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							contra inundaciones para localidades y peque&#241;as ciudades;
+						</p>
+						<p class="textItem " style="top:55.198973%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y Taller para la elaboraci&#243;n de programas de protecci&#243;n civil
+						</p>
+						<p class="textItem " style="top:56.996149%;left:12.288786%;width:22.580645%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y planes de contingencia, entre otros.
+						</p>
+						<p class="textItem " style="top:60.590501%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En esta convenci&#243;n se formaliz&#243; tambi&#233;n la primera sesi&#243;n
+						</p>
+						<p class="textItem " style="top:62.387677%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ordinaria del Consejo Nacional de Protecci&#243;n Civil, presidida
+						</p>
+						<p class="textItem " style="top:64.184852%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por el Presidente de la Rep&#250;blica, en la que se resalt&#243; el
+						</p>
+						<p class="textItem " style="top:65.982028%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							compromiso de que una sociedad previsora, con autoridades
+						</p>
+						<p class="textItem " style="top:67.779204%;left:12.288786%;width:31.336406%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							coordinadas, siempre ser&#225; una sociedad m&#225;s segura.
+						</p>
+						<p class="textItem " style="top:71.373556%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:71.373556%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:71.373556%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Secretar&#237;a de Protecci&#243;n Civil llev&#243; la representaci&#243;n del
+						</p>
+						<p class="textItem " style="top:73.170732%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estado de Veracruz a Guayaquil, Ecuador, donde particip&#243; en
+						</p>
+						<p class="textItem " style="top:74.967908%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la cuarta Sesi&#243;n de la Plataforma Regional para la Reducci&#243;n
+						</p>
+						<p class="textItem " style="top:76.765083%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Riesgo de Desastres de las Am&#233;ricas, celebrada del 27 al
+						</p>
+						<p class="textItem " style="top:78.562259%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							29 de mayo, y dict&#243; la conferencia Estrategia Veracruzana
+						</p>
+						<p class="textItem " style="top:80.359435%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para la Reducci&#243;n del Riesgo de Desastres, en la que present&#243;
+						</p>
+						<p class="textItem " style="top:82.156611%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							las experiencias, avances y retos que ha debido enfrentar
+						</p>
+						<p class="textItem " style="top:83.953787%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz para aplicar las cinco prioridades del Marco de
+						</p>
+						<p class="textItem " style="top:85.750963%;left:12.288786%;width:10.752688%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Acci&#243;n de Hyogo.
+						</p>
+						<p class="textItem " style="top:90.243902%;left:8.602151%;width:29.493088%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							5 Distrito Federal, Guerrero, Hidalgo, M&#233;xico, Morelos, Puebla, Tlaxcala.
+						</p>
+						<p class="textItem " style="top:15.661104%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A esta sesi&#243;n de la Plataforma Regional asistieron m&#225;s de
+						</p>
+						<p class="textItem " style="top:17.458280%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							600 representantes de Gobierno y sociedad civil de unos 30
+						</p>
+						<p class="textItem " style="top:19.255456%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pa&#237;ses, en la que se revis&#243; el progreso de las Am&#233;ricas en
+						</p>
+						<p class="textItem " style="top:21.052632%;left:53.456221%;width:25.652842%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							reducir la exposici&#243;n al riesgo de desastres.
+						</p>
+						<p class="textItem " style="top:24.646983%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El resultado de esta sesi&#243;n de trabajo contribuir&#225; a conformar
+						</p>
+						<p class="textItem " style="top:26.444159%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el nuevo Marco Global para la reducci&#243;n del riesgo de
+						</p>
+						<p class="textItem " style="top:28.241335%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							desastres que sustituir&#225; al actual Marco de Acci&#243;n de Hyogo,
+						</p>
+						<p class="textItem " style="top:30.038511%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el cual se adoptar&#225; en la Tercera Conferencia Mundial de las
+						</p>
+						<p class="textItem " style="top:31.835687%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Naciones Unidas sobre Reducci&#243;n del Riesgo de Desastres,
+						</p>
+						<p class="textItem " style="top:33.632863%;left:53.456221%;width:34.254992%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a celebrarse en marzo del a&#241;o pr&#243;ximo en Sendai, Jap&#243;n.
+						</p>
+						<p class="textItem " style="top:37.227214%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:37.227214%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:37.227214%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Estrategia Veracruzana para la Reducci&#243;n del Riesgo de
+						</p>
+						<p class="textItem " style="top:39.024390%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Desastres fue nominada al premio Latin America Geospatial
+						</p>
+						<p class="textItem " style="top:40.821566%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Award 2014, para la categor&#237;a de Excelencia bajo el
+						</p>
+						<p class="textItem " style="top:42.618742%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							proyecto Utilizaci&#243;n de Datos Geoespaciales. El certamen
+						</p>
+						<p class="textItem " style="top:44.415918%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							lo realiza la revista Geospatial Media and Communications,
+						</p>
+						<p class="textItem " style="top:46.213094%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con la finalidad de reconocer y premiar a las innovaciones
+						</p>
+						<p class="textItem " style="top:48.010270%;left:53.456221%;width:34.408602%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y aplicaci&#243;n ejemplares en la industria geoespacial global.
+						</p>
+						<p class="textItem " style="top:51.604621%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El uso de datos geoespaciales en la Estrategia Veracruzana
+						</p>
+						<p class="textItem " style="top:53.401797%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para la Reducci&#243;n del Riesgo de Desastres se da, entre
+						</p>
+						<p class="textItem " style="top:55.198973%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							otras herramientas y acciones dise&#241;adas por la Secretar&#237;a
+						</p>
+						<p class="textItem " style="top:56.996149%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Protecci&#243;n Civil, a trav&#233;s del Sistema Integral de Atlas
+						</p>
+						<p class="textItem " style="top:58.793325%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Riesgos de Veracruz, el monitoreo meteorol&#243;gico y
+						</p>
+						<p class="textItem " style="top:60.590501%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							s&#237;smico, el sistema de alertamiento, la georeferenciaci&#243;n de
+						</p>
+						<p class="textItem " style="top:62.387677%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							afectaciones, la supervisi&#243;n y dictaminaci&#243;n de actividades
+						</p>
+						<p class="textItem " style="top:64.184852%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de riesgo, los estudios de microzonificaci&#243;n s&#237;smica y la
+						</p>
+						<p class="textItem " style="top:65.982028%;left:53.456221%;width:25.192012%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							captura de mapas comunitarios de riesgo.
+						</p>
+						<p class="textItem " style="top:69.576380%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz tambi&#233;n fue invitado a participar, con la
+						</p>
+						<p class="textItem " style="top:71.373556%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							presentaci&#243;n de la Estrategia Veracruzana para la Reducci&#243;n
+						</p>
+						<p class="textItem " style="top:73.170732%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Riesgo de Desastres y el Uso de Datos Geoespaciales,
+						</p>
+						<p class="textItem " style="top:74.967908%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en el Latin America Geospatial Forum, con los auspicios del
+						</p>
+						<p class="textItem " style="top:76.765083%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Instituto Nacional de Estad&#237;stica y Geograf&#237;a y la colaboraci&#243;n
+						</p>
+						<p class="textItem " style="top:78.562259%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la Secretar&#237;a de Agricultura, Ganader&#237;a, Desarrollo
+						</p>
+						<p class="textItem " style="top:80.359435%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Rural, Pesca y Alimentaci&#243;n (SAGARPA) y la Secretar&#237;a de
+						</p>
+						<p class="textItem " style="top:82.156611%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Desarrollo Agrario, Territorial y Urbano (SEDATU), entre
+						</p>
+						<p class="textItem " style="top:83.953787%;left:53.456221%;width:28.110599%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							otras instituciones nacionales e internacionales.
+						</p>
+						<p class="textItem " style="top:87.548139%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:87.548139%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:87.548139%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el marco de la Estrategia Veracruzana para la Reducci&#243;n
+						</p>
+						<p class="textItem " style="top:89.345315%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Riesgo de Desastres, la Secretar&#237;a de Protecci&#243;n Civil
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-421.html">421</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-422.html">422</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-423.html">423</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-424.html">424</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-425.html">425</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-426.html">426</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-427.html">427</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-428.html">428</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-429.html">429</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-430.html">430</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-431.html">431</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-432.html">432</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

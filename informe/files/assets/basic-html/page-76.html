@@ -1,0 +1,476 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "76";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-75.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;76 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-77.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-75.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">76 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-77.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0076.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:14.120668%;left:8.602151%;width:12.903226%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.5.2. Seguro
+						</p>
+						<p class="textItem " style="top:18.356868%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Dada la recurrencia de fen&#243;menos climatol&#243;gicos que impactan
+						</p>
+						<p class="textItem " style="top:20.154044%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							al Estado de Veracruz durante todo el a&#241;o, como son huracanes,
+						</p>
+						<p class="textItem " style="top:21.951220%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							trombas, granizadas, frentes fr&#237;os y sequ&#237;as entre otros, inculcar a
+						</p>
+						<p class="textItem " style="top:23.748395%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la poblaci&#243;n la cultura de la prevenci&#243;n en todos los &#225;mbitos se
+						</p>
+						<p class="textItem " style="top:25.545571%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ha convertido en una de las acciones prioritarias de la presente
+						</p>
+						<p class="textItem " style="top:27.342747%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Administraci&#243;n. Uno de los sectores que reciente de manera m&#225;s
+						</p>
+						<p class="textItem " style="top:29.139923%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							intensa el embate de este tipo de fen&#243;menos es el agropecuario,
+						</p>
+						<p class="textItem " style="top:30.937099%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							siendo la poblaci&#243;n rural una de las m&#225;s vulnerables ante este tipo
+						</p>
+						<p class="textItem " style="top:32.734275%;left:8.602151%;width:6.912442%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de eventos.
+						</p>
+						<p class="textItem " style="top:36.328626%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Por ello y con la finalidad de prevenir y minimizar los da&#241;os a la
+						</p>
+						<p class="textItem " style="top:38.125802%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							producci&#243;n, al patrimonio y la integridad f&#237;sica de la poblaci&#243;n
+						</p>
+						<p class="textItem " style="top:39.922978%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del medio rural veracruzano, dentro del marco del Programa de
+						</p>
+						<p class="textItem " style="top:41.720154%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Prevenci&#243;n y Manejo de Riesgos, en su Componente de Atenci&#243;n
+						</p>
+						<p class="textItem " style="top:43.517330%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a Desastres Naturales en el Sector Agropecuario y Pesquero
+						</p>
+						<p class="textItem " style="top:45.314506%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(CADENA), el Gobierno del Estado convino con la Federaci&#243;n
+						</p>
+						<p class="textItem " style="top:47.111682%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a trav&#233;s de la SADARPA la contrataci&#243;n de un Seguro Agr&#237;cola
+						</p>
+						<p class="textItem " style="top:48.908858%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Catastr&#243;fico que permita resarcir las p&#233;rdidas sufridas por
+						</p>
+						<p class="textItem " style="top:50.706033%;left:8.602151%;width:36.559140%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							afectaciones a productores agr&#237;colas, ganaderos y pesqueros.
+						</p>
+						<p class="textItem " style="top:54.300385%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para esta acci&#243;n se destin&#243; una inversi&#243;n de 110.2 millones de
+						</p>
+						<p class="textItem " style="top:56.097561%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pesos, de los cuales 94 millones fueron de aportaci&#243;n Federal y
+						</p>
+						<p class="textItem " style="top:57.894737%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							16.2 millones fueron aportados por el Gobierno del Estado, con
+						</p>
+						<p class="textItem " style="top:59.691913%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							lo cual se logr&#243; proteger un total de 615 mil hect&#225;reas de ma&#237;z,
+						</p>
+						<p class="textItem " style="top:61.489089%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							papa, sorgo, avena, caf&#233;, naranja, chayote, papaya y pl&#225;tano en
+						</p>
+						<p class="textItem " style="top:63.286264%;left:8.602151%;width:17.818740%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							207 municipios de la Entidad.
+						</p>
+						<p class="textItem " style="top:66.880616%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Por su parte Agroasemex, tiene el objetivo de ampliar la cobertura
+						</p>
+						<p class="textItem " style="top:68.677792%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del seguro agropecuario mediante el apoyo a los productores,
+						</p>
+						<p class="textItem " style="top:70.474968%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para reducir el costo de las primas que pagan en los seguros
+						</p>
+						<p class="textItem " style="top:72.272144%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que contraten, y el desarrollo y consolidaci&#243;n de mecanismos
+						</p>
+						<p class="textItem " style="top:74.069320%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de prevenci&#243;n y protecci&#243;n ante los riesgos que enfrenta su
+						</p>
+						<p class="textItem " style="top:75.866496%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							actividad. Con el programa del subsidio a la prima del seguro
+						</p>
+						<p class="textItem " style="top:77.663671%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							agropecuario, esta instancia Federal reporta el aseguramiento de
+						</p>
+						<p class="textItem " style="top:79.460847%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							191,367 hect&#225;reas, de las cuales 85,827 hect&#225;reas corresponden a
+						</p>
+						<p class="textItem " style="top:81.258023%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los fondos de aseguramiento y 105,540 hect&#225;reas a las compa&#241;&#237;as
+						</p>
+						<p class="textItem " style="top:83.055199%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							privadas. Del total de las hect&#225;reas aseguradas el 44.8 por ciento
+						</p>
+						<p class="textItem " style="top:84.852375%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							correspondi&#243; a los Fondos de Aseguramiento y el 55.2 por ciento
+						</p>
+						<p class="textItem " style="top:86.649551%;left:8.602151%;width:16.589862%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a las aseguradoras privadas.
+						</p>
+						<p class="textItem " style="top:18.356868%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el Estado se ha pagado un subsidio de 70.7 millones de pesos,
+						</p>
+						<p class="textItem " style="top:20.154044%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de los cuales 50.5 millones de pesos a los fondos de aseguramiento
+						</p>
+						<p class="textItem " style="top:21.951220%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y 20.2 millones de pesos a las compa&#241;&#237;as privadas. Del total del
+						</p>
+						<p class="textItem " style="top:23.748395%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							subsidio ejercido, el 71.4 por ciento correspondi&#243; a operaciones
+						</p>
+						<p class="textItem " style="top:25.545571%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Fondos de aseguramiento y el 28.6 por ciento a aseguradoras
+						</p>
+						<p class="textItem " style="top:27.342747%;left:49.769585%;width:5.376344%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							privadas.
+						</p>
+						<p class="textItem " style="top:30.937099%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Del subsidio total pagado, el ma&#237;z ocup&#243; el 60.7 por ciento; la ca&#241;a
+						</p>
+						<p class="textItem " style="top:32.734275%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							represent&#243; el 22.9 por ciento; la soya el 6.5 por ciento; el sorgo 4.3
+						</p>
+						<p class="textItem " style="top:34.531451%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por ciento y otros cultivos el 5.6 por ciento. De la superficie total
+						</p>
+						<p class="textItem " style="top:36.328626%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							subsidiada y asegurada, el ma&#237;z ocup&#243; el 25.4 por ciento; la ca&#241;a
+						</p>
+						<p class="textItem " style="top:38.125802%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							represent&#243; el 55.3 por ciento; la naranja el 4.7 por ciento; el sorgo
+						</p>
+						<p class="textItem " style="top:39.922978%;left:49.769585%;width:29.185868%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							4.5 por ciento y otros cultivos el 10.1 por ciento.
+						</p>
+						<p class="textItem " style="top:43.388960%;left:49.769585%;width:20.583717%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.6. Comercializaci&#243;n
+						</p>
+						<p class="textItem " style="top:47.625160%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con una inversi&#243;n de 4.2 millones de pesos durante el 2014,
+						</p>
+						<p class="textItem " style="top:49.422336%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la SEDARPA particip&#243; en un total de 12 eventos nacionales e
+						</p>
+						<p class="textItem " style="top:51.219512%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							internacionales: cinco ferias regionales, cinco ferias nacionales, y
+						</p>
+						<p class="textItem " style="top:53.016688%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dos internacionales, en ellas se promovieron productos del campo
+						</p>
+						<p class="textItem " style="top:54.813864%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							veracruzano. Este m&#233;todo de difusi&#243;n fue una actividad relevante
+						</p>
+						<p class="textItem " style="top:56.611040%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para la vinculaci&#243;n comercial, ya que con ello se favoreci&#243; el
+						</p>
+						<p class="textItem " style="top:58.408216%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							posicionamiento de los productos en los mercados, a trav&#233;s de
+						</p>
+						<p class="textItem " style="top:60.205392%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							encuentros de negocios, en los que se logr&#243; establecer convenios
+						</p>
+						<p class="textItem " style="top:62.002567%;left:49.769585%;width:32.104455%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							comerciales, por un monto de 165 millones de pesos.
+						</p>
+						<p class="textItem " style="top:65.211810%;left:49.769585%;width:18.740399%;height:1.925546%;font-size:0.600000em;color:#25171C;font-family:Stone Sans Std;">
+							Eventos Internacionales
+						</p>
+						<p class="textItem " style="top:68.292683%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con el objetivo de impulsar los agronegocios, en abril se realiz&#243;
+						</p>
+						<p class="textItem " style="top:70.089859%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Cumbre Agroempresarial Veracruz 2014, en el Centro de
+						</p>
+						<p class="textItem " style="top:71.887035%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Exposiciones y Convenciones de Veracruz, con la finalidad de
+						</p>
+						<p class="textItem " style="top:73.684211%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							reunir en un solo lugar al mayor n&#250;mero de productores agr&#237;colas,
+						</p>
+						<p class="textItem " style="top:75.481386%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							empresarios agroindustriales y compradores agropecuarios,
+						</p>
+						<p class="textItem " style="top:77.278562%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							nacionales e internacionales y p&#250;blico en general, para promover
+						</p>
+						<p class="textItem " style="top:79.075738%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							operaciones comerciales a trav&#233;s de la exposici&#243;n de productos
+						</p>
+						<p class="textItem " style="top:80.872914%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							agropecuarios y de pesca del Estado, al mismo tiempo que se
+						</p>
+						<p class="textItem " style="top:82.670090%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							capacit&#243; a los asistentes en diversos temas relacionados a la
+						</p>
+						<p class="textItem " style="top:84.467266%;left:49.769585%;width:22.580645%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							actividad empresarial que desarrollan.
+						</p>
+						<p class="textItem " style="top:88.061617%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El 100 por ciento de los 200 locales distribuidos en poco m&#225;s
+						</p>
+						<p class="textItem " style="top:89.858793%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 9,000 metros cuadrados, fueron ocupados por empresas del
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-71.html">71</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-72.html">72</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-73.html">73</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-74.html">74</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-75.html">75</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-76.html">76</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-77.html">77</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-78.html">78</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-79.html">79</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-80.html">80</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-81.html">81</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-82.html">82</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

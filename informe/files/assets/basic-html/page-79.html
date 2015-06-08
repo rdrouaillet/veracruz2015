@@ -1,0 +1,500 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "79";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-78.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;79 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-80.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-78.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">79 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-80.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0079.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:34.562212%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:41.013825%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:42.089094%;width:19.969278%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>D e s a r r o l l o A g r o p e c u a r i o</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:62.826421%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:63.901690%;width:1.536098%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>7 7</b>
+						</p>
+						<p class="textItem testString" style="top:8.344031%;left:10.752688%;width:24.731183%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							2. Sector ca&#241;ero
+						</p>
+						<p class="textItem " style="top:14.120668%;left:10.752688%;width:23.502304%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							2.1. Subsector azucarero
+						</p>
+						<p class="textItem " style="top:18.356868%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La agroindustria de la ca&#241;a de az&#250;car es el cultivo con mayor
+						</p>
+						<p class="textItem " style="top:20.154044%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							importancia dentro del Estado, su aportaci&#243;n a la producci&#243;n y
+						</p>
+						<p class="textItem " style="top:21.951220%;left:10.752688%;width:24.577573%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							valor agr&#237;cola, se extiende a trav&#233;s de 92
+						</p>
+						<p class="textItem " style="top:22.079589%;left:35.330261%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							1
+						</p>
+						<p class="textItem " style="top:21.951220%;left:36.098310%;width:14.132104%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipios con alcance
+						</p>
+						<p class="textItem " style="top:23.748395%;left:10.752688%;width:25.038402%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de cerca de 290 mil hect&#225;reas sembradas.
+						</p>
+						<p class="textItem " style="top:27.342747%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La entidad veracruzana se ubica como el m&#225;ximo productor de
+						</p>
+						<p class="textItem " style="top:29.139923%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							este cultivo, con un aporte a la producci&#243;n nacional de 20.4
+						</p>
+						<p class="textItem " style="top:30.937099%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							millones de toneladas de ca&#241;a de az&#250;car molida en los ingenios
+						</p>
+						<p class="textItem " style="top:32.734275%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							veracruzanos, correspondiente a 42 por ciento; de igual manera
+						</p>
+						<p class="textItem " style="top:34.531451%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la producci&#243;n de 2.2 millones de toneladas de az&#250;car con lo que
+						</p>
+						<p class="textItem " style="top:36.328626%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se logr&#243; superar en m&#225;s de 263 mil toneladas el promedio de
+						</p>
+						<p class="textItem " style="top:38.125802%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							producci&#243;n de las &#250;ltimas cinco zafras, aporta el 37.3 por ciento
+						</p>
+						<p class="textItem " style="top:39.922978%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del total nacional de este endulzante; abastece a los tres mayores
+						</p>
+						<p class="textItem " style="top:41.720154%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ingenios productores de az&#250;car a nivel nacional, que superan en
+						</p>
+						<p class="textItem " style="top:43.517330%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							su procesamiento las 200 mil toneladas y que corresponden a San
+						</p>
+						<p class="textItem " style="top:45.314506%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Crist&#243;bal, Tres Valles y El Higo. As&#237; tambi&#233;n, de los 18 ingenios en
+						</p>
+						<p class="textItem " style="top:47.111682%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							operaci&#243;n de esta Entidad y de los 57 existentes en el pa&#237;s, los de
+						</p>
+						<p class="textItem " style="top:48.908858%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mayor rendimiento en f&#225;brica son: Central Progreso, El Potrero y
+						</p>
+						<p class="textItem " style="top:50.706033%;left:10.752688%;width:34.562212%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Gloria con 12.5, 12 y 11.8 por ciento respectivamente.
+						</p>
+						<p class="textItem " style="top:54.172015%;left:10.752688%;width:24.731183%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							2.2. Subsector piloncillero
+						</p>
+						<p class="textItem " style="top:58.408216%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La industria piloncillera en el Estado de Veracruz, despliega m&#225;s
+						</p>
+						<p class="textItem " style="top:60.205392%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 400 trapiches mecanizados y alrededor de 200 en proceso de
+						</p>
+						<p class="textItem " style="top:62.002567%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mecanizaci&#243;n; por lo tanto, la modernizaci&#243;n se ha visto reflejada
+						</p>
+						<p class="textItem " style="top:63.799743%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en la sustituci&#243;n de equipos de lamina de acero al carb&#243;n que
+						</p>
+						<p class="textItem " style="top:65.596919%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							es altamente contaminante, por los equipos de producci&#243;n de
+						</p>
+						<p class="textItem " style="top:67.394095%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acero inoxidable de uso alimenticio, esta acci&#243;n ha permitido
+						</p>
+						<p class="textItem " style="top:69.191271%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							producir con mayor calidad, pero sobre todo que se puede ofertar
+						</p>
+						<p class="textItem " style="top:70.988447%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en un mercado m&#225;s amplio y a un mejor precio. La mayor&#237;a de
+						</p>
+						<p class="textItem " style="top:72.785623%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estos trapiches piloncilleros, se encuentran ubicados en la zona
+						</p>
+						<p class="textItem " style="top:79.075738%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							1. Acayucan, Actopan, Acula, Alto Lucero, Alvarado, Amatitl&#225;n, Amatl&#225;n de los Reyes, &#193;ngel
+						</p>
+						<p class="textItem " style="top:79.974326%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							R. Cabada, Atoyac, Atzalan, Banderilla, Benito Ju&#225;rez, Camar&#243;n de Tejeda, Carrillo Puerto,
+						</p>
+						<p class="textItem " style="top:81.001284%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Catemaco, Chacaltianguis, Chalma, Chiconamel, Chicontepec, Chinampa de Gorostiza,
+						</p>
+						<p class="textItem " style="top:81.899872%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Chocam&#225;n, Coatepec, Coetzala, Comapa, C&#243;rdoba, Cosamaloapan, Cosautl&#225;n de Carvajal,
+						</p>
+						<p class="textItem " style="top:82.798460%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Cotaxtla, Cuichapa, Cuitl&#225;huac, El Higo, Emiliano Zapata, Fort&#237;n, Huatusco, Hueyapan de
+						</p>
+						<p class="textItem " style="top:83.697047%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Ocampo, Ixcatepec, Ixhuatlancillo, Ixmatlahuacan, Ixtaczoquitl&#225;n, Jalcomulco, Jilotepec, Jos&#233;
+						</p>
+						<p class="textItem " style="top:84.595635%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Azueta, La Antigua, Lerdo de Tejada, Manlio Fabio Altamirano, Mariano Escobedo, Mart&#237;nez de
+						</p>
+						<p class="textItem " style="top:85.622593%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							la Torre, Misantla, Naolinco, Naranjal, Naranjos-Amatl&#225;n, Nautla, Omealca, Otatitl&#225;n, Ozuluama,
+						</p>
+						<p class="textItem " style="top:86.521181%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							P&#225;nuco, Paso de Ovejas, Paso del Macho, Plat&#243;n S&#225;nchez, Puente Nacional, Rafael Delgado,
+						</p>
+						<p class="textItem " style="top:87.419769%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							R&#237;o Blanco, Saltabarranca, San Andr&#233;s Tuxtla, Santiago Tuxtla, Sochiapa, Soledad de Doblado,
+						</p>
+						<p class="textItem " style="top:88.318357%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Tampico Alto, Tantoyuca, Tecolutla, Tempoal, Teocelo, Tepatlaxco, Tepetl&#225;n, Tezonapa, Tierra
+						</p>
+						<p class="textItem " style="top:89.216945%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Blanca, Tlacojalpan, Tlacotalpan, Tlacotepec de Mej&#237;a, Tlaltetela, Tlilapan, Tomatl&#225;n, Totutla, Tres
+						</p>
+						<p class="textItem " style="top:90.243902%;left:10.752688%;width:35.483871%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Valles, Tuxtilla, &#218;rsulo Galv&#225;n, Vega de Alatorre, Veracruz, Xalapa, Xico, Yanga y Zentla.
+						</p>
+						<p class="textItem " style="top:18.356868%;left:51.920123%;width:6.758833%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							monta&#241;osa
+						</p>
+						<p class="textItem " style="top:18.485237%;left:58.678955%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							2
+						</p>
+						<p class="textItem " style="top:18.356868%;left:59.447005%;width:31.950845%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Estado y generan alrededor de 10,000 empleos
+						</p>
+						<p class="textItem " style="top:20.154044%;left:51.920123%;width:8.294931%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							permanentes.
+						</p>
+						<p class="textItem " style="top:23.748395%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Actualmente esta rama productiva posee la competencia laboral
+						</p>
+						<p class="textItem " style="top:25.545571%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para la producci&#243;n de piloncillo de exportaci&#243;n; y cuenta con
+						</p>
+						<p class="textItem " style="top:27.342747%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							trapiche e infraestructura necesaria para iniciar el proceso de
+						</p>
+						<p class="textItem " style="top:29.139923%;left:51.920123%;width:7.526882%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							exportaci&#243;n.
+						</p>
+						<p class="textItem " style="top:32.734275%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Mediante el proyecto Apoyo para el Equipamiento para el
+						</p>
+						<p class="textItem " style="top:34.531451%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Desarrollo de la Agroindustria Piloncillera 2014, este a&#241;o se apoy&#243;
+						</p>
+						<p class="textItem " style="top:36.328626%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							al municipio de Ixhuatl&#225;n de Madero, con la finalidad de mejorar
+						</p>
+						<p class="textItem " style="top:38.125802%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la tecnificaci&#243;n y modernizaci&#243;n a trav&#233;s de la dotaci&#243;n de equipos
+						</p>
+						<p class="textItem " style="top:39.922978%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que constaron de un molino y un m&#243;dulo para la elaboraci&#243;n de
+						</p>
+						<p class="textItem " style="top:41.720154%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							piloncillo, con una aportaci&#243;n de 1 mill&#243;n de pesos de Inversi&#243;n
+						</p>
+						<p class="textItem " style="top:43.517330%;left:51.920123%;width:8.909370%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estatal Directa.
+						</p>
+						<p class="textItem " style="top:46.598203%;left:51.920123%;width:39.477727%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							3. Ganader&#237;a veracruzana
+						</p>
+						<p class="textItem " style="top:52.374840%;left:51.920123%;width:15.053763%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							3.1. Producci&#243;n
+						</p>
+						<p class="textItem " style="top:56.611040%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Estado de Veracruz se caracteriza por su vocaci&#243;n pecuaria, ya
+						</p>
+						<p class="textItem " style="top:58.408216%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que el 48 por ciento de su territorio est&#225; dedicado a las actividades
+						</p>
+						<p class="textItem " style="top:60.205392%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de dicho ramo, destaca como l&#237;der en carne de bovinos, en
+						</p>
+						<p class="textItem " style="top:62.002567%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							segundo lugar en la producci&#243;n de carne de aves y sigue entre los
+						</p>
+						<p class="textItem " style="top:63.799743%;left:51.920123%;width:28.417819%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							primeros lugares de carne de ovinos y caprinos.
+						</p>
+						<p class="textItem " style="top:67.008986%;left:51.920123%;width:5.376344%;height:1.925546%;font-size:0.600000em;color:#25171C;font-family:Stone Sans Std;">
+							Bovina
+						</p>
+						<p class="textItem " style="top:70.089859%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La carne de bovino forma parte de la dieta integral alimenticia del
+						</p>
+						<p class="textItem " style="top:71.887035%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mexicano, esto es principalmente por el alto valor nutricional que
+						</p>
+						<p class="textItem " style="top:73.684211%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							representa; en el Estado de Veracruz se producen 251 mil toneladas
+						</p>
+						<p class="textItem " style="top:75.481386%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con un valor estimado de la producci&#243;n de casi 10,000 millones de
+						</p>
+						<p class="textItem " style="top:77.278562%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pesos, y respecto a la producci&#243;n de leche de bovino, Veracruz se
+						</p>
+						<p class="textItem " style="top:79.075738%;left:51.920123%;width:38.863287%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sit&#250;a en 6&#176; lugar con una producci&#243;n de 719.3 millones de litros.
+						</p>
+						<p class="textItem " style="top:89.216945%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							2. Chicontepec, Cuichapa, Cuitl&#225;huac, Huatusco, Ixhuatl&#225;n de Madero, Tampico Alto, Tantoyuca,
+						</p>
+						<p class="textItem " style="top:90.243902%;left:51.920123%;width:16.282642%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Tlacotepec de Mej&#237;a, Tlaltetela y Zentla.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-74.html">74</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-75.html">75</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-76.html">76</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-77.html">77</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-78.html">78</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-79.html">79</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-80.html">80</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-81.html">81</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-82.html">82</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-83.html">83</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-84.html">84</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-85.html">85</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

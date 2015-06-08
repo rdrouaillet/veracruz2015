@@ -1,0 +1,485 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "355";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-354.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;355 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-356.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-354.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">355 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-356.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0355.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:34.869432%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:41.321045%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:42.242704%;width:18.740399%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>P r o c u r a c i &#243; n d e J u s t i c i a</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:61.904762%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:62.826421%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>3 5 3</b>
+						</p>
+						<p class="textItem " style="top:9.627728%;left:10.752688%;width:30.107527%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							2.2. Modernizaci&#243;n y desarrollo
+						</p>
+						<p class="textItem " style="top:11.938383%;left:10.752688%;width:13.517665%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							administrativo
+						</p>
+						<p class="textItem " style="top:16.174583%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Procuradur&#237;a cuenta con una plantilla de 3,000 trabajadores, de
+						</p>
+						<p class="textItem " style="top:17.971759%;left:10.752688%;width:30.568356%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los cuales 1,826 son hombres y 1,174 son mujeres.
+						</p>
+						<p class="textItem " style="top:21.566110%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En coordinaci&#243;n con la Contralor&#237;a General, se instaur&#243; en la
+						</p>
+						<p class="textItem " style="top:23.363286%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dependencia el Programa Veracruzano de Modernizaci&#243;n y
+						</p>
+						<p class="textItem " style="top:25.160462%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Control de la Administraci&#243;n P&#250;blica, a trav&#233;s de la constituci&#243;n de
+						</p>
+						<p class="textItem " style="top:26.957638%;left:10.752688%;width:28.878648%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los Comit&#233;s de Contralor&#237;a Ciudadana Adelante.
+						</p>
+						<p class="textItem " style="top:30.551990%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							De diciembre de 2013 a noviembre de 2014 se constituyeron
+						</p>
+						<p class="textItem " style="top:32.349166%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							27 Comit&#233;s en las sedes de Acayucan, Cerro Azul, Coatzintla,
+						</p>
+						<p class="textItem " style="top:34.146341%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Cosoleacaque, Coyutla, Guti&#233;rrez Zamora, Huatusco, Isla, Jes&#250;s
+						</p>
+						<p class="textItem " style="top:35.943517%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Carranza, Las Choapas, Minatitl&#225;n, Naolinco, Naranjos-Amatl&#225;n,
+						</p>
+						<p class="textItem " style="top:37.740693%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							P&#225;nuco, Papantla, Paso del Macho, Poza Rica, San Andr&#233;s Tuxtla,
+						</p>
+						<p class="textItem " style="top:39.537869%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tampico Alto, Tantoyuca, Tatatila, Tepetzintla, Tierra Blanca, Tres
+						</p>
+						<p class="textItem " style="top:41.335045%;left:10.752688%;width:20.276498%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Valles, Veracruz, Xico y Zongolica.
+						</p>
+						<p class="textItem " style="top:44.929397%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En coordinaci&#243;n con la Subdirecci&#243;n de Servicio P&#250;blico de Carrera
+						</p>
+						<p class="textItem " style="top:46.726573%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la Secretar&#237;a de Finanzas y Planeaci&#243;n, se desarrolla el programa
+						</p>
+						<p class="textItem " style="top:48.523748%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Excelencia Secretarial para el Sector P&#250;blico con la participaci&#243;n
+						</p>
+						<p class="textItem " style="top:50.320924%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 20 funcionarios de esta Procuradur&#237;a pertenecientes a las &#225;reas
+						</p>
+						<p class="textItem " style="top:52.118100%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de servicios periciales, subprocuradur&#237;as regionales y de atenci&#243;n
+						</p>
+						<p class="textItem " style="top:53.915276%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ciudadana, mismos que recibieron capacitaci&#243;n para fortalecer sus
+						</p>
+						<p class="textItem " style="top:55.712452%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							habilidades b&#225;sicas en comunicaci&#243;n escrita, ofim&#225;tica, calidad en
+						</p>
+						<p class="textItem " style="top:57.509628%;left:10.752688%;width:26.113671%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el servicio y crecimiento estrat&#233;gico laboral.
+						</p>
+						<p class="textItem " style="top:60.847240%;left:10.752688%;width:12.749616%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							2.3. Acciones
+						</p>
+						<p class="textItem " style="top:64.955071%;left:10.752688%;width:37.173579%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							2.3.1. Centro de Evaluaci&#243;n de Control
+						</p>
+						<p class="textItem " style="top:67.137356%;left:10.752688%;width:12.596006%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							de Confianza
+						</p>
+						<p class="textItem " style="top:71.373556%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el periodo de Informe, el Centro de Evaluaci&#243;n y Control de
+						</p>
+						<p class="textItem " style="top:73.170732%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Confianza ha aplicado 716 evaluaciones a igual n&#250;mero de
+						</p>
+						<p class="textItem " style="top:74.967908%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							servidores p&#250;blicos de la Instituci&#243;n, de acuerdo a la categor&#237;a
+						</p>
+						<p class="textItem " style="top:76.765083%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del puesto, siendo dos de directores de &#225;rea, 91 de ministerios
+						</p>
+						<p class="textItem " style="top:78.562259%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							p&#250;blicos, 92 a oficiales secretarios, 241 a personal operativo de
+						</p>
+						<p class="textItem " style="top:80.359435%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la polic&#237;a ministerial, 24 a peritos de la Direcci&#243;n de los Servicios
+						</p>
+						<p class="textItem " style="top:82.156611%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Periciales, 29 a personal administrativo y 237 a perfiles de nuevo
+						</p>
+						<p class="textItem " style="top:83.953787%;left:10.752688%;width:4.915515%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ingreso.
+						</p>
+						<p class="textItem " style="top:87.548139%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para el fortalecimiento del segundo m&#243;dulo de la Polic&#237;a Ministerial
+						</p>
+						<p class="textItem " style="top:89.345315%;left:10.752688%;width:25.652842%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Acreditable, se evaluaron a 138 elementos.
+						</p>
+						<p class="textItem testString" style="top:7.445443%;left:51.920123%;width:36.559140%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							3. Apoyar a las v&#237;ctimas
+						</p>
+						<p class="textItem " style="top:10.141207%;left:51.920123%;width:14.439324%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							del delito
+						</p>
+						<p class="textItem " style="top:16.174583%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Direcci&#243;n de Atenci&#243;n a V&#237;ctimas del Delito, ha brindado
+						</p>
+						<p class="textItem " style="top:17.971759%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							atenci&#243;n en el &#225;rea cl&#237;nica a 3,918 personas, realizado 44
+						</p>
+						<p class="textItem " style="top:19.768935%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							evaluaciones psicol&#243;gicas, 1,144 consultas o sesiones terap&#233;uticas,
+						</p>
+						<p class="textItem " style="top:21.566110%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							321 entrevistas psicol&#243;gicas, 30 visitas domiciliarias, 13 visitas
+						</p>
+						<p class="textItem " style="top:23.363286%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							hospitalarias, 12 asistencias en declaraci&#243;n ante el ministerio
+						</p>
+						<p class="textItem " style="top:25.160462%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							p&#250;blico y dos asistencia en declaraci&#243;n en audiencia del nuevo
+						</p>
+						<p class="textItem " style="top:26.957638%;left:51.920123%;width:14.285714%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Sistema de Justicia Oral.
+						</p>
+						<p class="textItem " style="top:30.551990%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							De acuerdo al Programa Veracruzano de Procuraci&#243;n de Justicia
+						</p>
+						<p class="textItem " style="top:32.349166%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							2011-2016, la meta establecida en relaci&#243;n a cobertura en la
+						</p>
+						<p class="textItem " style="top:34.146341%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							atenci&#243;n a v&#237;ctimas de delito, con una medici&#243;n semestral de
+						</p>
+						<p class="textItem " style="top:35.943517%;left:51.920123%;width:20.890937%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							1,100, a la fecha ha sido superada.
+						</p>
+						<p class="textItem " style="top:39.537869%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se impartieron pl&#225;ticas de prevenci&#243;n de diversos delitos a
+						</p>
+						<p class="textItem " style="top:41.335045%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							empresas e instituciones educativas p&#250;blicas y privadas del Estado,
+						</p>
+						<p class="textItem " style="top:43.132221%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con impacto a un total de 10,445 personas, de las cuales 8,201
+						</p>
+						<p class="textItem " style="top:44.929397%;left:51.920123%;width:19.047619%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							son ni&#241;as, ni&#241;os y adolescentes.
+						</p>
+						<p class="textItem " style="top:48.523748%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En materia de trabajo social, la Direcci&#243;n brind&#243; atenci&#243;n a 1,602
+						</p>
+						<p class="textItem " style="top:50.320924%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							personas en sus oficinas centrales, y 359 a personas captadas
+						</p>
+						<p class="textItem " style="top:52.118100%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en visitas por carta invitaci&#243;n, visita a agencias especializadas y
+						</p>
+						<p class="textItem " style="top:53.915276%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							reportes de agencias o subprocuradur&#237;as habi&#233;ndose canalizado
+						</p>
+						<p class="textItem " style="top:55.712452%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a 328 v&#237;ctimas de delito para la atenci&#243;n de trabajo social,
+						</p>
+						<p class="textItem " style="top:57.509628%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							psicol&#243;gico o jur&#237;dico en diversas instituciones p&#250;blicas o privadas,
+						</p>
+						<p class="textItem " style="top:59.306804%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							as&#237; como al Sistema para el Desarrollo Integral de la Familia (DIF)
+						</p>
+						<p class="textItem " style="top:61.103979%;left:51.920123%;width:20.430108%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Estado de Veracruz y for&#225;neos.
+						</p>
+						<p class="textItem " style="top:64.441592%;left:51.920123%;width:33.026114%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							3.1. Funci&#243;n del Ministerio P&#250;blico
+						</p>
+						<p class="textItem " style="top:68.677792%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La funci&#243;n del Ministerio P&#250;blico como representante social,
+						</p>
+						<p class="textItem " style="top:70.474968%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							requiere de una actuaci&#243;n pronta y expedita y de la aplicaci&#243;n en
+						</p>
+						<p class="textItem " style="top:72.272144%;left:51.920123%;width:27.956989%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							todo momento, de la m&#225;s alta t&#233;cnica jur&#237;dica.
+						</p>
+						<p class="textItem " style="top:75.866496%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Durante el periodo de enero a agosto de 2014, se iniciaron
+						</p>
+						<p class="textItem " style="top:77.663671%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							35,415 investigaciones ministeriales y se determinaron 32,773
+						</p>
+						<p class="textItem " style="top:79.460847%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							indagatorias, de las cuales 29,092 pertenecen a expedientes
+						</p>
+						<p class="textItem " style="top:81.258023%;left:51.920123%;width:38.556068%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							iniciados en a&#241;os anteriores y 3,681 a las iniciadas en el periodo.
+						</p>
+						<p class="textItem " style="top:84.852375%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Del total de indagatorias determinadas, 2,363 se consignaron,
+						</p>
+						<p class="textItem " style="top:86.649551%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							24,697 se reservaron, 4,693 se determinaron como no ejercicio
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-350.html">350</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-351.html">351</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-352.html">352</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-353.html">353</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-354.html">354</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-355.html">355</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-356.html">356</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-357.html">357</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-358.html">358</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-359.html">359</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-360.html">360</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-361.html">361</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

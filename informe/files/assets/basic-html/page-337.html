@@ -1,0 +1,482 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "337";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-336.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;337 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-338.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-336.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">337 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-338.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0337.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:37.173579%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:43.471582%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:44.546851%;width:14.132104%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>S e g u r i d a d P &#250; b l i c a</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:59.600614%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:60.522273%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>3 3 5</b>
+						</p>
+						<p class="textItem " style="top:16.559692%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cumplimiento a lo establecido en los art&#237;culos 16, 18, 19 y 23 de la
+						</p>
+						<p class="textItem " style="top:18.356868%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ley N&#250;mero 553 del Sistema Estatal de Seguridad P&#250;blica para el
+						</p>
+						<p class="textItem " style="top:20.154044%;left:10.752688%;width:25.038402%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estado de Veracruz de Ignacio de la Llave.
+						</p>
+						<p class="textItem " style="top:23.748395%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En dicha reuni&#243;n el Secretario Ejecutivo inform&#243; a los integrantes
+						</p>
+						<p class="textItem " style="top:25.545571%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Consejo, el avance f&#237;sico financiero de los Fondos y Subsidios
+						</p>
+						<p class="textItem " style="top:27.342747%;left:10.752688%;width:27.496160%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Federales relacionados con Seguridad P&#250;blica.
+						</p>
+						<p class="textItem " style="top:30.808729%;left:10.752688%;width:36.559140%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							12.2. Actualizaci&#243;n del Reglamento de
+						</p>
+						<p class="textItem " style="top:32.991014%;left:10.752688%;width:37.019969%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							la Secretar&#237;a Ejecutiva del Sistema y del
+						</p>
+						<p class="textItem " style="top:35.301669%;left:10.752688%;width:35.023041%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							Consejo Estatal de Seguridad P&#250;blica
+						</p>
+						<p class="textItem " style="top:39.537869%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Estructura Org&#225;nica de la Secretar&#237;a Ejecutiva, que es el objeto
+						</p>
+						<p class="textItem " style="top:41.335045%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del reglamento, fue autorizada por la Secretar&#237;a de Finanzas y
+						</p>
+						<p class="textItem " style="top:43.132221%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Planeaci&#243;n y publicada en la Gaceta Oficial del Estado No. 215
+						</p>
+						<p class="textItem " style="top:44.929397%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de fecha 30 de mayo del a&#241;o en curso, dando cumplimiento a
+						</p>
+						<p class="textItem " style="top:46.726573%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los lineamientos por los que se establecen los criterios t&#233;cnico/
+						</p>
+						<p class="textItem " style="top:48.523748%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							administrativos para la elaboraci&#243;n, modificaci&#243;n y autorizaci&#243;n
+						</p>
+						<p class="textItem " style="top:50.320924%;left:10.752688%;width:17.050691%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de las Estructuras Org&#225;nicas.
+						</p>
+						<p class="textItem " style="top:53.658537%;left:10.752688%;width:21.351767%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							12.3. Iniciativa M&#233;rida
+						</p>
+						<p class="textItem " style="top:57.894737%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Los gobiernos de M&#233;xico y Estados Unidos de Am&#233;rica concluyeron
+						</p>
+						<p class="textItem " style="top:59.691913%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de manera satisfactoria el proceso de negociaci&#243;n y autorizaci&#243;n
+						</p>
+						<p class="textItem " style="top:61.489089%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							bilateral de los programas de capacitaci&#243;n identificados en el
+						</p>
+						<p class="textItem " style="top:63.286264%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							marco de Cooperaci&#243;n de Iniciativa M&#233;rida; debido a lo anterior
+						</p>
+						<p class="textItem " style="top:65.083440%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el Consejo Estatal de Seguridad P&#250;blica coordin&#243; una reuni&#243;n de
+						</p>
+						<p class="textItem " style="top:66.880616%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							trabajo que se realiz&#243; el 5 de junio de este a&#241;o, en el Centro de
+						</p>
+						<p class="textItem " style="top:68.677792%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Exposiciones y Convenciones de Veracruz, en el que particip&#243;
+						</p>
+						<p class="textItem " style="top:70.474968%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							personal del Secretariado Nacional de Seguridad P&#250;blica, la
+						</p>
+						<p class="textItem " style="top:72.272144%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Embajada de los Estados Unidos de Am&#233;rica, la Secretar&#237;a de
+						</p>
+						<p class="textItem " style="top:74.069320%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Seguridad P&#250;blica del Estado y la Procuradur&#237;a General de Justicia
+						</p>
+						<p class="textItem " style="top:75.866496%;left:10.752688%;width:6.605223%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Estado.
+						</p>
+						<p class="textItem " style="top:79.460847%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se acord&#243; accionar los siguientes programas de capacitaci&#243;n:
+						</p>
+						<p class="textItem " style="top:81.258023%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Sistema Penitenciario; Profesionalizaci&#243;n Policiaca; Polic&#237;a
+						</p>
+						<p class="textItem " style="top:83.055199%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Comunitaria; Antisecuestros; Primer Respondiente; Acreditaci&#243;n
+						</p>
+						<p class="textItem " style="top:84.852375%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Internacional de Servicios Forenses, bajo ISO 17025 y Est&#225;ndares
+						</p>
+						<p class="textItem " style="top:86.649551%;left:10.752688%;width:27.649770%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							B&#225;sicos para el Servicio Profesional de Carrera.
+						</p>
+						<p class="textItem " style="top:7.830552%;left:51.920123%;width:37.173579%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							12.4. Reuni&#243;n de trabajo de academias
+						</p>
+						<p class="textItem " style="top:10.141207%;left:51.920123%;width:33.947773%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							de seguridad p&#250;blica e institutos de
+						</p>
+						<p class="textItem " style="top:12.323492%;left:51.920123%;width:31.029186%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							profesionalizaci&#243;n regi&#243;n sureste
+						</p>
+						<p class="textItem " style="top:16.559692%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Celebrada el 10 de septiembre, en Boca del R&#237;o, con el prop&#243;sito
+						</p>
+						<p class="textItem " style="top:18.356868%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de presentar el Programa Rector de Profesionalizaci&#243;n de las
+						</p>
+						<p class="textItem " style="top:20.154044%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Instituciones de Seguridad P&#250;blica, el cual se aprob&#243; por el
+						</p>
+						<p class="textItem " style="top:21.951220%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Consejo Nacional de Seguridad P&#250;blica, en su Trig&#233;sima Sexta
+						</p>
+						<p class="textItem " style="top:23.748395%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Sesi&#243;n, celebrada el 22 de agosto del a&#241;o en curso, mediante el
+						</p>
+						<p class="textItem " style="top:25.545571%;left:51.920123%;width:13.671275%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acuerdo 03/XXXVI/14.
+						</p>
+						<p class="textItem " style="top:29.139923%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estuvieron presentes, personal del Sistema Nacional de Seguridad
+						</p>
+						<p class="textItem " style="top:30.937099%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							P&#250;blica, representantes de las Academias de Seguridad P&#250;blica
+						</p>
+						<p class="textItem " style="top:32.734275%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							e Institutos de Profesionalizaci&#243;n de la Secretar&#237;a de Seguridad
+						</p>
+						<p class="textItem " style="top:34.531451%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							P&#250;blica y la Procuradur&#237;a General de Justicia de los estados de
+						</p>
+						<p class="textItem " style="top:36.328626%;left:51.920123%;width:35.176651%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Campeche, Chiapas, Tabasco, Oaxaca, Veracruz y Yucat&#225;n.
+						</p>
+						<p class="textItem " style="top:39.922978%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ese mismo d&#237;a, se realiz&#243; la reuni&#243;n con los enlaces SUBSEMUN
+						</p>
+						<p class="textItem " style="top:41.720154%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de los 18 municipios del Estado que reciben este subsidio;
+						</p>
+						<p class="textItem " style="top:43.517330%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							abord&#225;ndose temas sobre sus programas de Profesionalizaci&#243;n,
+						</p>
+						<p class="textItem " style="top:45.314506%;left:51.920123%;width:18.894009%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Equipamiento e Infraestructura.
+						</p>
+						<p class="textItem " style="top:48.908858%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Posteriormente se llev&#243; a cabo la reuni&#243;n con representantes de
+						</p>
+						<p class="textItem " style="top:50.706033%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Procuradur&#237;a General de Justicia del Estado y de la Secretar&#237;a
+						</p>
+						<p class="textItem " style="top:52.503209%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Seguridad P&#250;blica, en la cual trataron los mismos puntos y se
+						</p>
+						<p class="textItem " style="top:54.300385%;left:51.920123%;width:22.427035%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							revis&#243; el avance en cada uno de ellos.
+						</p>
+						<p class="textItem " style="top:57.766367%;left:51.920123%;width:34.562212%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							12.5. Fondo de Aportaciones para la
+						</p>
+						<p class="textItem " style="top:59.948652%;left:51.920123%;width:23.809524%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							Seguridad P&#250;blica (FASP)
+						</p>
+						<p class="textItem " style="top:64.184852%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							De conformidad con el Presupuesto de Egresos de la Federaci&#243;n
+						</p>
+						<p class="textItem " style="top:65.982028%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y los Criterios de Distribuci&#243;n, F&#243;rmulas y Variables para la
+						</p>
+						<p class="textItem " style="top:67.779204%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Asignaci&#243;n de los Recursos del Fondo de Aportaciones para la
+						</p>
+						<p class="textItem " style="top:69.576380%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Seguridad P&#250;blica de los Estados y del Distrito Federal (FASP) del
+						</p>
+						<p class="textItem " style="top:71.373556%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ejercicio fiscal 2014 y el resultado de su aplicaci&#243;n, se autoriz&#243; para
+						</p>
+						<p class="textItem " style="top:73.170732%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz una inversi&#243;n total de 535.2 millones de pesos, de los
+						</p>
+						<p class="textItem " style="top:74.967908%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cuales el Gobierno Federal aporta la cantidad de 374.6 millones de
+						</p>
+						<p class="textItem " style="top:76.765083%;left:51.920123%;width:33.486943%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pesos y el Gobierno del Estado 160.6 millones de pesos.
+						</p>
+						<p class="textItem " style="top:80.359435%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El 5 de febrero del a&#241;o en curso, el Gobierno del Estado firm&#243;
+						</p>
+						<p class="textItem " style="top:82.156611%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el Convenio de Coordinaci&#243;n en Materia de Seguridad P&#250;blica
+						</p>
+						<p class="textItem " style="top:83.953787%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en el que se establece la asignaci&#243;n de recursos a 14 Programas
+						</p>
+						<p class="textItem " style="top:85.750963%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con Prioridad Nacional y el Programa de Fortalecimiento de las
+						</p>
+						<p class="textItem " style="top:87.548139%;left:51.920123%;width:34.408602%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Instituciones Estatales, como se especifica a continuaci&#243;n:
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-332.html">332</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-333.html">333</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-334.html">334</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-335.html">335</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-336.html">336</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-337.html">337</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-338.html">338</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-339.html">339</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-340.html">340</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-341.html">341</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-342.html">342</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-343.html">343</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

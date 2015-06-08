@@ -1,0 +1,491 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "247";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-246.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;247 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-248.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-246.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">247 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-248.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0247.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:40.245776%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:46.697389%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:47.772657%;width:7.834101%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>E d u c a c i &#243; n</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:56.374808%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:57.450077%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>2 4 5</b>
+						</p>
+						<p class="textItem " style="top:17.073171%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se firmaron Convenios con diversas instituciones de nivel superior
+						</p>
+						<p class="textItem " style="top:18.870347%;left:10.752688%;width:28.725038%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							as&#237; como con integrantes del sector productivo
+						</p>
+						<p class="textItem " style="top:18.870347%;left:39.477727%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							4
+						</p>
+						<p class="textItem " style="top:18.870347%;left:39.938556%;width:10.291859%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							, en beneficio de
+						</p>
+						<p class="textItem " style="top:20.667522%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estudiantes y trabajadores del Colegio, entre los que se encuentran
+						</p>
+						<p class="textItem " style="top:22.464698%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							bolsa de trabajo, becas para egresados, trabajadores y familiares
+						</p>
+						<p class="textItem " style="top:24.261874%;left:10.752688%;width:5.222734%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							directos.
+						</p>
+						<p class="textItem " style="top:27.856226%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En materia de protecci&#243;n civil, se actualizaron las 22 unidades
+						</p>
+						<p class="textItem " style="top:29.653402%;left:10.752688%;width:29.339478%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							internas de protecci&#243;n civil y emergencia escolar.
+						</p>
+						<p class="textItem " style="top:33.247754%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se otorgaron 4,766 becas a alumnos de este Colegio, 2,623 del
+						</p>
+						<p class="textItem " style="top:35.044929%;left:10.752688%;width:25.038402%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Programa Prospera y 2,143 de PROBEMS.
+						</p>
+						<p class="textItem " style="top:38.639281%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El CONALEP, forma profesionales t&#233;cnicos con conocimientos,
+						</p>
+						<p class="textItem " style="top:40.436457%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							habilidades y actitudes, que permite la incorporaci&#243;n de manera
+						</p>
+						<p class="textItem " style="top:42.233633%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							exitosa al mercado laboral, o bien continuar los estudios a nivel
+						</p>
+						<p class="textItem " style="top:44.030809%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							superior. Atiende una matr&#237;cula de 9,108 alumnos, con 585
+						</p>
+						<p class="textItem " style="top:45.827985%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							docentes, en 15 carreras que se imparten en 22 escuelas de 13
+						</p>
+						<p class="textItem " style="top:47.625160%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							planteles del sistema escolarizado en modalidad presencial.
+						</p>
+						<p class="textItem " style="top:49.422336%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Egresaron 2,088 alumnos, de los cuales 1,775 se titularon en el
+						</p>
+						<p class="textItem " style="top:51.219512%;left:10.752688%;width:14.746544%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ciclo escolar 2013-2014.
+						</p>
+						<p class="textItem " style="top:54.813864%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Siete planteles del CONALEP fueron incorporados al SNB en la
+						</p>
+						<p class="textItem " style="top:56.611040%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							categor&#237;a de Plantel Nivel III; tres de estos planteles recibieron la
+						</p>
+						<p class="textItem " style="top:58.408216%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							permanencia, y cuatro planteles est&#225;n en proceso de incorporaci&#243;n
+						</p>
+						<p class="textItem " style="top:60.205392%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en este a&#241;o. El 67 por ciento de los planteles adscritos a este Colegio
+						</p>
+						<p class="textItem " style="top:62.002567%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							avanzaron en estos procesos de calidad educativa, y beneficiaron a
+						</p>
+						<p class="textItem " style="top:63.799743%;left:10.752688%;width:20.583717%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							5,263 estudiantes y 366 docentes.
+						</p>
+						<p class="textItem " style="top:67.394095%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para el desempe&#241;o de sus funciones acad&#233;micas, 503 docentes
+						</p>
+						<p class="textItem " style="top:69.191271%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							participaron en los cursos de actualizaci&#243;n y capacitaci&#243;n en
+						</p>
+						<p class="textItem " style="top:70.988447%;left:10.752688%;width:12.442396%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							distintos contenidos.
+						</p>
+						<p class="textItem " style="top:74.582798%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el marco del Programa Institucional de Capacitaci&#243;n Laboral, se
+						</p>
+						<p class="textItem " style="top:76.379974%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							atendieron a 10,002 trabajadores de 15 diferentes empresas, con
+						</p>
+						<p class="textItem " style="top:78.177150%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la impartici&#243;n de 676 cursos. Asimismo, se evaluaron en est&#225;ndares
+						</p>
+						<p class="textItem " style="top:79.974326%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de competencias a 1,469 trabajadores, personal administrativo y
+						</p>
+						<p class="textItem " style="top:81.771502%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							alumnos. En el Centro de Asistencia y Servicios Tecnol&#243;gicos de
+						</p>
+						<p class="textItem " style="top:83.568678%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Coatzacoalcos se atendieron 530 servicios, principalmente al
+						</p>
+						<p class="textItem " style="top:85.365854%;left:10.752688%;width:18.433180%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sector productivo de la regi&#243;n.
+						</p>
+						<p class="textItem " style="top:88.318357%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							4. Universidad Crist&#243;bal Col&#243;n, Colegio las Am&#233;ricas de Veracruz, Centro Universitario
+						</p>
+						<p class="textItem " style="top:89.216945%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Hispano Mexicano, Centro de Estudios Tecnol&#243;gicos Universitarios del Golfo y se firm&#243; con la
+						</p>
+						<p class="textItem " style="top:90.243902%;left:10.752688%;width:29.953917%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Confederaci&#243;n Patronal de la Rep&#250;blica Mexicana (COPARMEX) Veracruz.
+						</p>
+						<p class="textItem " style="top:17.073171%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el marco del Programa de Vinculaci&#243;n con el Sector Productivo,
+						</p>
+						<p class="textItem " style="top:18.870347%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se signaron 200 convenios para la realizaci&#243;n de pr&#225;cticas
+						</p>
+						<p class="textItem " style="top:20.667522%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							profesionales y servicio social, se logr&#243; la colocaci&#243;n en el sector
+						</p>
+						<p class="textItem " style="top:22.464698%;left:51.920123%;width:17.050691%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							productivo a 313 egresados.
+						</p>
+						<p class="textItem " style="top:26.059050%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con el objetivo de generar v&#237;nculos estrat&#233;gicos entre los
+						</p>
+						<p class="textItem " style="top:27.856226%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estudiantes de educaci&#243;n media y las empresas mexicanas, a trav&#233;s
+						</p>
+						<p class="textItem " style="top:29.653402%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la vinculaci&#243;n de la teor&#237;a y la pr&#225;ctica, mediante convenios de
+						</p>
+						<p class="textItem " style="top:31.450578%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							colaboraci&#243;n y coordinaci&#243;n educativa entre empresa y planteles,
+						</p>
+						<p class="textItem " style="top:33.247754%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se impuls&#243; el Programa del Modelo Mexicano de Formaci&#243;n Dual,
+						</p>
+						<p class="textItem " style="top:35.044929%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en coordinaci&#243;n con el Centro Empresarial de Veracruz. En su etapa
+						</p>
+						<p class="textItem " style="top:36.842105%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							piloto iniciada este a&#241;o, participan 60 alumnos de dos escuelas de
+						</p>
+						<p class="textItem " style="top:38.639281%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz de las carreras de Electromec&#225;nica Industrial, Inform&#225;tica,
+						</p>
+						<p class="textItem " style="top:40.436457%;left:51.920123%;width:24.577573%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Administraci&#243;n y M&#225;quinas-Herramienta.
+						</p>
+						<p class="textItem " style="top:44.030809%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En atenci&#243;n al Programa de Apoyo a la Comunidad, se realizaron
+						</p>
+						<p class="textItem " style="top:45.827985%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							203 servicios en beneficio de 45,250 personas, con acciones
+						</p>
+						<p class="textItem " style="top:47.625160%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							como limpieza de escuelas, jardines y calles, as&#237; como cursos de
+						</p>
+						<p class="textItem " style="top:49.422336%;left:51.920123%;width:37.788018%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							capacitaci&#243;n social y participaci&#243;n dentro de jornadas de salud.
+						</p>
+						<p class="textItem " style="top:53.016688%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El otorgamiento de becas a alumnos de esta Instituci&#243;n se extiende
+						</p>
+						<p class="textItem " style="top:54.813864%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a 4,066 beneficiarios de las cuales 2,196 son otorgadas a trav&#233;s del
+						</p>
+						<p class="textItem " style="top:56.611040%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Programa Oportunidades, 1,377 de PROBEMS, 445 propias de la
+						</p>
+						<p class="textItem " style="top:58.408216%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							instituci&#243;n, 13 del programa B&#233;calos, otorgadas por la fundaci&#243;n
+						</p>
+						<p class="textItem " style="top:60.205392%;left:51.920123%;width:24.423963%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Televisa y 35 Becas al M&#233;rito Tamsa, A.C.
+						</p>
+						<p class="textItem " style="top:63.543004%;left:51.920123%;width:22.427035%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.3. Educaci&#243;n superior
+						</p>
+						<p class="textItem " style="top:67.779204%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En educaci&#243;n superior se atendi&#243; a una matr&#237;cula de 241,192
+						</p>
+						<p class="textItem " style="top:69.576380%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							alumnos, en 205 instituciones oficiales y particulares de educaci&#243;n
+						</p>
+						<p class="textItem " style="top:71.373556%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							universitaria, formadoras de docentes y tecnol&#243;gicas, con 21,160
+						</p>
+						<p class="textItem " style="top:73.170732%;left:51.920123%;width:5.837174%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							docentes.
+						</p>
+						<p class="textItem " style="top:76.765083%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Durante el periodo escolar 2013-2014 el Fideicomiso del Programa
+						</p>
+						<p class="textItem " style="top:78.562259%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Nacional de Becas para la Educaci&#243;n Superior (PRONABES), report&#243;
+						</p>
+						<p class="textItem " style="top:80.359435%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en Veracruz un incremento hist&#243;rico de 27 por ciento en el n&#250;mero
+						</p>
+						<p class="textItem " style="top:82.156611%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de becarios, el cual asciende a 32,319 j&#243;venes beneficiados, de los
+						</p>
+						<p class="textItem " style="top:83.953787%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cuales corresponden a 14,166 becas renovadas y 18,153 de nuevo
+						</p>
+						<p class="textItem " style="top:85.750963%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ingreso al programa. De igual forma, se registr&#243; un incremento
+						</p>
+						<p class="textItem " style="top:87.548139%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en las instituciones p&#250;blicas de educaci&#243;n superior al pasar de 41
+						</p>
+						<p class="textItem " style="top:89.345315%;left:51.920123%;width:3.072197%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a 44.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-242.html">242</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-243.html">243</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-244.html">244</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-245.html">245</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-246.html">246</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-247.html">247</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-248.html">248</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-249.html">249</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-250.html">250</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-251.html">251</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-252.html">252</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-253.html">253</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

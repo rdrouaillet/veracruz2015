@@ -1,0 +1,485 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "440";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-439.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;440 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-441.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-439.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">440 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-441.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0440.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem testString" style="top:7.060334%;left:8.602151%;width:32.718894%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							5. Fortalecimiento de
+						</p>
+						<p class="textItem " style="top:9.756098%;left:8.602151%;width:28.725038%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							la preparaci&#243;n y la
+						</p>
+						<p class="textItem " style="top:12.451861%;left:8.602151%;width:36.098310%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							capacidad de respuesta
+						</p>
+						<p class="textItem " style="top:15.147625%;left:8.602151%;width:35.483871%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							en caso de emergencia
+						</p>
+						<p class="textItem " style="top:21.052632%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Sistema Estatal de Protecci&#243;n Civil cuenta con una Estrategia
+						</p>
+						<p class="textItem " style="top:22.849807%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Maestra para la Prevenci&#243;n, Alertamiento y Respuesta para todos
+						</p>
+						<p class="textItem " style="top:24.646983%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los fen&#243;menos perturbadores, as&#237; como para la elaboraci&#243;n de los
+						</p>
+						<p class="textItem " style="top:26.444159%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							distintos programas especiales y regionales que se aplican en el
+						</p>
+						<p class="textItem " style="top:28.241335%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a&#241;o: contra incendios forestales, invernal o para la atenci&#243;n de
+						</p>
+						<p class="textItem " style="top:30.038511%;left:8.602151%;width:32.258065%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							festividades y eventos con gran afluencia de personas.
+						</p>
+						<p class="textItem " style="top:33.632863%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Estrategia consta de protocolos de actuaci&#243;n para todos los
+						</p>
+						<p class="textItem " style="top:35.430039%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							integrantes del Sistema Estatal; reservas estrat&#233;gicas de insumos
+						</p>
+						<p class="textItem " style="top:37.227214%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							b&#225;sicos para la poblaci&#243;n, ubicadas en 11 puntos del territorio
+						</p>
+						<p class="textItem " style="top:39.024390%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Estado, para asegurar su distribuci&#243;n oportuna en casos de
+						</p>
+						<p class="textItem " style="top:40.821566%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							emergencia; medidas para asegurar la transparencia y distribuci&#243;n
+						</p>
+						<p class="textItem " style="top:42.618742%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ordenada de los insumos; una red de 1,745 refugios temporales,
+						</p>
+						<p class="textItem " style="top:44.415918%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de los cuales 1,610 est&#225;n georeferenciados e incorporados al
+						</p>
+						<p class="textItem " style="top:46.213094%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Atlas de Riesgos; fuerzas de tarea con m&#225;s de 34,000 elementos
+						</p>
+						<p class="textItem " style="top:48.010270%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pertenecientes a las diferentes instituciones que integran el
+						</p>
+						<p class="textItem " style="top:49.807445%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Sistema Estatal y el Comit&#233; Estatal de Emergencias, responsable
+						</p>
+						<p class="textItem " style="top:51.604621%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de articular el esfuerzo institucional y de promover y encauzar el
+						</p>
+						<p class="textItem " style="top:53.401797%;left:8.602151%;width:8.909370%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la sociedad.
+						</p>
+						<p class="textItem " style="top:56.996149%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Es importante se&#241;alar que en esta Estrategia del Sistema Estatal, los
+						</p>
+						<p class="textItem " style="top:58.793325%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sistemas municipales han resultado determinantes para lograr una
+						</p>
+						<p class="textItem " style="top:60.590501%;left:8.602151%;width:31.950845%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							respuesta oportuna en las situaciones de emergencia.
+						</p>
+						<p class="textItem " style="top:64.056483%;left:8.602151%;width:36.098310%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							5.1. Programas y medidas preventivas
+						</p>
+						<p class="textItem " style="top:66.238768%;left:8.602151%;width:34.869432%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							y de preparaci&#243;n para la atenci&#243;n de
+						</p>
+						<p class="textItem " style="top:68.549422%;left:8.602151%;width:11.981567%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							emergencias
+						</p>
+						<p class="textItem " style="top:72.785623%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ante la mayor incidencia de fen&#243;menos meteorol&#243;gicos y por las
+						</p>
+						<p class="textItem " style="top:74.582798%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							festividades populares, se han desarrollado protocolos y medidas
+						</p>
+						<p class="textItem " style="top:76.379974%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de prevenci&#243;n para proteger a la poblaci&#243;n, su integridad y salud.
+						</p>
+						<p class="textItem " style="top:79.974326%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con este prop&#243;sito se elaboraron diversas recomendaciones
+						</p>
+						<p class="textItem " style="top:81.771502%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y actualizaron programas de prevenci&#243;n y autoprotecci&#243;n de
+						</p>
+						<p class="textItem " style="top:83.568678%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la poblaci&#243;n para las diferentes temporadas meteorol&#243;gicas y
+						</p>
+						<p class="textItem " style="top:85.365854%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fiestas regionales de alcance nacional: Cumbre Taj&#237;n, en Papantla;
+						</p>
+						<p class="textItem " style="top:87.163030%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Fiestas de La Candelaria, en Tlacotalpan; Carnaval de Veracruz;
+						</p>
+						<p class="textItem " style="top:88.960205%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Plan Estatal de Prevenci&#243;n para la Temporada Invernal 2014; Plan
+						</p>
+						<p class="textItem " style="top:21.052632%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Operativo Vacacional de Semana Santa, el Programa Preventivo,
+						</p>
+						<p class="textItem " style="top:22.849807%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Alertamiento y Respuesta Inmediata ante la Temporada de
+						</p>
+						<p class="textItem " style="top:24.646983%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Lluvias y Ciclones Tropicales 2014; el Plan Operativo Vacacional
+						</p>
+						<p class="textItem " style="top:26.444159%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Verano 2014, Granizadas y Tormentas El&#233;ctricas; Prevenci&#243;n
+						</p>
+						<p class="textItem " style="top:28.241335%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Accidentes por Deslaves y Deslizamiento de Suelo; Prevenci&#243;n
+						</p>
+						<p class="textItem " style="top:30.038511%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Accidentes provocados por Fuegos Artificiales; Pr&#225;ctica de
+						</p>
+						<p class="textItem " style="top:31.835687%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Deportes Extremos; Medidas Preventivas de Protecci&#243;n Civil por el
+						</p>
+						<p class="textItem " style="top:33.632863%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Fen&#243;meno S&#237;smico; y Medidas Preventivas de Protecci&#243;n Civil por
+						</p>
+						<p class="textItem " style="top:35.430039%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Frentes Fr&#237;os, con todas las fases de la gesti&#243;n integral del riesgo
+						</p>
+						<p class="textItem " style="top:37.227214%;left:49.769585%;width:10.138249%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que marca la ley.
+						</p>
+						<p class="textItem " style="top:40.821566%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Las acciones preventivas constituyen un elemento sustantivo de la
+						</p>
+						<p class="textItem " style="top:42.618742%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estrategia para reducir el riesgo de desastres y, ante la duraci&#243;n de
+						</p>
+						<p class="textItem " style="top:44.415918%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la temporada de lluvias y ciclones, en el marco del Sistema Estatal
+						</p>
+						<p class="textItem " style="top:46.213094%;left:49.769585%;width:39.016897%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Protecci&#243;n Civil se realizaron acciones preventivas anticipadas.
+						</p>
+						<p class="textItem " style="top:49.807445%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem testString" style="top:49.807445%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:49.807445%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con la colaboraci&#243;n de los tres &#243;rdenes de gobierno y la
+						</p>
+						<p class="textItem " style="top:51.604621%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sociedad civil, se ejecutaron actividades de desazolve de
+						</p>
+						<p class="textItem " style="top:53.401797%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							corrientes y cuerpos de agua; limpieza de alcantarillas,
+						</p>
+						<p class="textItem " style="top:55.198973%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							coladeras y bocas de tormenta; poda de &#225;rboles y
+						</p>
+						<p class="textItem " style="top:56.996149%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							aseguramiento de espectaculares en abril, mayo y junio,
+						</p>
+						<p class="textItem " style="top:58.793325%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con campa&#241;as iniciadas en seis sedes regionales: Medell&#237;n,
+						</p>
+						<p class="textItem " style="top:60.590501%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Misantla, Nanchital, Orizaba, Poza Rica y Xalapa, con
+						</p>
+						<p class="textItem " style="top:62.387677%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el prop&#243;sito de que estos operativos se conviertan
+						</p>
+						<p class="textItem " style="top:64.184852%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en precursores de estas acciones preventivas en los
+						</p>
+						<p class="textItem " style="top:65.982028%;left:53.456221%;width:15.514593%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ayuntamientos contiguos.
+						</p>
+						<p class="textItem " style="top:69.576380%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:69.576380%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:69.576380%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Por el incremento de la vulnerabilidad causada por la
+						</p>
+						<p class="textItem " style="top:71.373556%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							combinaci&#243;n de fen&#243;menos hidrometeorol&#243;gicos y
+						</p>
+						<p class="textItem " style="top:73.170732%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							geol&#243;gicos, durante junio y julio se impartieron nueve
+						</p>
+						<p class="textItem " style="top:74.967908%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							talleres regionales sobre Acciones preventivas y atenci&#243;n
+						</p>
+						<p class="textItem " style="top:76.765083%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a deslizamiento de laderas dirigidos a 301 directores y
+						</p>
+						<p class="textItem " style="top:78.562259%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							personal de protecci&#243;n civil de 136 municipios, en los que se
+						</p>
+						<p class="textItem " style="top:80.359435%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							abord&#243; el tema sobre c&#243;mo, en d&#243;nde y por qu&#233; se generan
+						</p>
+						<p class="textItem " style="top:82.156611%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los procesos geol&#243;gicos de remoci&#243;n en masa, sus diferentes
+						</p>
+						<p class="textItem " style="top:83.953787%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							tipos, as&#237; como los fen&#243;menos detonantes y principales
+						</p>
+						<p class="textItem " style="top:85.750963%;left:53.456221%;width:31.950845%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							factores determinantes que dan pauta a que ocurran.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-435.html">435</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-436.html">436</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-437.html">437</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-438.html">438</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-439.html">439</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-440.html">440</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-441.html">441</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-442.html">442</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-443.html">443</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-444.html">444</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-445.html">445</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-446.html">446</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

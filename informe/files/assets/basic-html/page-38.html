@@ -1,0 +1,383 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "38";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-37.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;38 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-39.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-37.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">38 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-39.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0038.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:7.188703%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							seis nuevos establecimientos de hospedaje en los municipios de Coatzacoalcos,
+						</p>
+						<p class="textItem " style="top:8.985879%;left:39.170507%;width:35.176651%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							C&#243;rdoba, Tuxpan y Xalapa, que generaron 1,475 empleos.
+						</p>
+						<p class="textItem " style="top:12.580231%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estos nuevos establecimientos se suman a la oferta de hospedaje con los que
+						</p>
+						<p class="textItem " style="top:14.377407%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							contamos y que ya suman 40,223 cuartos en 1,399 establecimientos, con una
+						</p>
+						<p class="textItem " style="top:16.174583%;left:39.170507%;width:32.411674%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ocupaci&#243;n promedio de 61 por ciento en todo el a&#241;o.
+						</p>
+						<p class="textItem " style="top:19.768935%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La consolidaci&#243;n cultural de nuestro Estado se vive todos los d&#237;as en los distintos
+						</p>
+						<p class="textItem " style="top:21.566110%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							eventos a lo largo y ancho de esta gran tierra veracruzana que conjuga rituales,
+						</p>
+						<p class="textItem " style="top:23.363286%;left:39.170507%;width:32.565284%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							religi&#243;n, m&#250;sica, danza, fiesta, alegr&#237;a y calor humano.
+						</p>
+						<p class="textItem " style="top:26.957638%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Por mencionar algunos eventos podemos citar: Las Fiestas de La Candelaria en
+						</p>
+						<p class="textItem " style="top:28.754814%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tlacotalpan, el Carnaval de Veracruz en su 90 aniversario, la 15&#170; Edici&#243;n de la Cumbre
+						</p>
+						<p class="textItem " style="top:30.551990%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Taj&#237;n en Papantla, el Centenario de la Gesta Heroica de Veracruz, el Hay Festival en
+						</p>
+						<p class="textItem " style="top:32.349166%;left:39.170507%;width:42.089094%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Xalapa, as&#237; como el Festival Internacional de la Salsa en Coatzacoalcos.
+						</p>
+						<p class="textItem " style="top:35.943517%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El orden en nuestra Administraci&#243;n nos ha permitido realizar las obras que se
+						</p>
+						<p class="textItem " style="top:37.740693%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							requieren en el Estado, enfocados en la infraestructura necesaria para mejorar la
+						</p>
+						<p class="textItem " style="top:39.537869%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							productividad y elevar el nivel de vida de la gente. A lo largo y ancho del Estado
+						</p>
+						<p class="textItem " style="top:41.335045%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							modernizamos la infraestructura carretera, de telecomunicaciones y de nuestras
+						</p>
+						<p class="textItem " style="top:43.132221%;left:39.170507%;width:8.909370%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							zonas urbanas.
+						</p>
+						<p class="textItem " style="top:46.726573%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Prueba de ello es el inicio de la construcci&#243;n de la autopista de Los Tuxtlas, en una
+						</p>
+						<p class="textItem " style="top:48.523748%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							primera etapa de 20 km, as&#237; como el libramiento de Tlacotalpan que a la fecha lleva
+						</p>
+						<p class="textItem " style="top:50.320924%;left:39.170507%;width:16.897081%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							un avance de 55 por ciento.
+						</p>
+						<p class="textItem " style="top:53.915276%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Adem&#225;s, se realizan m&#250;ltiples obras de Infraestructura en Zonas Urbanas con una
+						</p>
+						<p class="textItem " style="top:55.712452%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							inversi&#243;n superior a 985 millones de pesos. Estas obras permiten integrar y consolidar
+						</p>
+						<p class="textItem " style="top:57.509628%;left:39.170507%;width:34.869432%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							al Estado en el contexto regional, nacional e internacional.
+						</p>
+						<p class="textItem " style="top:61.103979%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Como parte de la infraestructura desarrollada para los Juegos Centroamericanos y
+						</p>
+						<p class="textItem " style="top:62.901155%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Caribe 2014, en el municipio de Veracruz se remodelaron el Auditorio Benito
+						</p>
+						<p class="textItem " style="top:64.698331%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ju&#225;rez y el Parque Recreativo Reino M&#225;gico y se rehabilit&#243; el Estadio y el Gimnasio de
+						</p>
+						<p class="textItem " style="top:66.495507%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Unidad Deportiva Carlos Serd&#225;n; en Boca del R&#237;o se rehabilit&#243; el Estadio Luis Pirata
+						</p>
+						<p class="textItem " style="top:68.292683%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la Fuente, se adecu&#243; la cancha de entrenamiento y se construy&#243; el Centro de
+						</p>
+						<p class="textItem " style="top:70.089859%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Raqueta en la Unidad Deportiva Leyes de Reforma, y se rehabilit&#243; la Unidad Deportiva
+						</p>
+						<p class="textItem " style="top:71.887035%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Hugo S&#225;nchez M&#225;rquez; en Xalapa, se construyeron el Vel&#243;dromo y los Conjuntos
+						</p>
+						<p class="textItem " style="top:73.684211%;left:39.170507%;width:45.468510%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Deportivos, Instalaciones de Competencia e Instalaciones Complementarias.
+						</p>
+						<p class="textItem " style="top:77.278562%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tambi&#233;n, se concluyeron diversas obras como el Centro Acu&#225;tico Leyes de Reforma;
+						</p>
+						<p class="textItem " style="top:79.075738%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la remodelaci&#243;n del Estadio Beto &#193;vila, en el municipio de Boca del R&#237;o; rehabilitaci&#243;n
+						</p>
+						<p class="textItem " style="top:80.872914%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Centro de Exposiciones y Convenciones de Veracruz; la construcci&#243;n de la Arena
+						</p>
+						<p class="textItem " style="top:82.670090%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz, en el municipio de Veracruz; la construcci&#243;n de la Arena C&#243;rdoba; y en
+						</p>
+						<p class="textItem " style="top:84.467266%;left:39.170507%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el municipio de Xalapa, la rehabilitaci&#243;n del Estadio Heriberto Jara Corona y el
+						</p>
+						<p class="textItem " style="top:86.264442%;left:39.170507%;width:10.906298%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Gimnasio Omega.
+						</p>
+						<p class="textItem testString" style="top:41.335045%;left:8.602151%;width:9.984639%;height:5.263158%;font-size:1.800000em;color:#0C0609;font-family:Delima MTStd;">
+							<b>985</b>
+						</p>
+						<p class="textItem testString" style="top:46.598203%;left:8.602151%;width:23.348694%;height:2.567394%;font-size:0.900000em;color:#312025;font-family:Delima MTStd;">
+							millones de pesos
+						</p>
+						<p class="textItem " style="top:49.807445%;left:8.602151%;width:24.116743%;height:2.567394%;font-size:0.900000em;color:#312025;font-family:Delima MTStd;">
+							en m&#250;ltiples obras
+						</p>
+						<p class="textItem " style="top:52.888318%;left:8.602151%;width:23.348694%;height:2.567394%;font-size:0.900000em;color:#312025;font-family:Delima MTStd;">
+							de Infraestructura
+						</p>
+						<p class="textItem " style="top:56.097561%;left:8.602151%;width:23.502304%;height:2.567394%;font-size:0.900000em;color:#312025;font-family:Delima MTStd;">
+							en Zonas Urbanas
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-33.html">33</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-34.html">34</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-35.html">35</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-36.html">36</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-37.html">37</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-38.html">38</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-39.html">39</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-40.html">40</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-41.html">41</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-42.html">42</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-43.html">43</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-44.html">44</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

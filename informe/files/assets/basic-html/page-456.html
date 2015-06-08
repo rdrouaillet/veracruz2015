@@ -1,0 +1,473 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "456";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-455.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;456 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-457.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-455.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">456 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-457.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0456.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:18.356868%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							nominal. Este resultado se atribuye al declive de los Productos en
+						</p>
+						<p class="textItem " style="top:20.154044%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							rubros que tradicionalmente muestran una trayectoria inestable y
+						</p>
+						<p class="textItem " style="top:21.951220%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							poco recurrente. Mientras tanto, las Participaciones, Aportaciones
+						</p>
+						<p class="textItem " style="top:23.748395%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y Convenios Federales crecieron 16.9 por ciento, 5.6 por ciento y
+						</p>
+						<p class="textItem " style="top:25.545571%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							22.8 por ciento en t&#233;rminos nominales con respecto a lo recaudado
+						</p>
+						<p class="textItem " style="top:27.342747%;left:8.602151%;width:11.059908%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en la etapa previa.
+						</p>
+						<p class="textItem " style="top:30.808729%;left:8.602151%;width:23.502304%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.1.2.2. Ingresos Propios
+						</p>
+						<p class="textItem " style="top:35.044929%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							De diciembre de 2013 a noviembre de 2014, el esfuerzo
+						</p>
+						<p class="textItem " style="top:36.842105%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							recaudatorio de la Administraci&#243;n favoreci&#243; que los ingresos de
+						</p>
+						<p class="textItem " style="top:38.639281%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fuentes locales llegaran a 9,884.9 millones de pesos, cifra que
+						</p>
+						<p class="textItem " style="top:40.436457%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							decreci&#243; en 10.9 por ciento nominal frente al Informe anterior.
+						</p>
+						<p class="textItem " style="top:42.233633%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							De conformidad con el C&#243;digo Financiero del Estado, los recursos
+						</p>
+						<p class="textItem " style="top:44.030809%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fueron captados por la v&#237;a de Impuestos, 3,854.3millones de pesos;
+						</p>
+						<p class="textItem " style="top:45.827985%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Derechos, 3,876.9 millones de pesos; Productos, 50.9 millones de
+						</p>
+						<p class="textItem " style="top:47.625160%;left:8.602151%;width:33.179724%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pesos, y Aprovechamientos, 2,102.8 millones de pesos.
+						</p>
+						<p class="textItem " style="top:51.219512%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El desempe&#241;o de los ingresos propios recibi&#243; su mayor impulso
+						</p>
+						<p class="textItem " style="top:53.016688%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la recaudaci&#243;n de Impuestos, Derechos y Aprovechamientos.
+						</p>
+						<p class="textItem " style="top:54.813864%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Los Impuestos exhibieron una disminuci&#243;n de 29.4 por ciento
+						</p>
+						<p class="textItem " style="top:56.611040%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							anual en t&#233;rminos nominales, lo cual se explica, primero, porque
+						</p>
+						<p class="textItem " style="top:58.408216%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el registro de algunos de sus componentes, clasificados bajo el
+						</p>
+						<p class="textItem " style="top:60.205392%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							rubro agregado de Incentivos derivados de la Colaboraci&#243;n Fiscal,
+						</p>
+						<p class="textItem " style="top:62.002567%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a partir de 2014 pasaron a integrarse en la clasificaci&#243;n contable
+						</p>
+						<p class="textItem " style="top:63.799743%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de los Aprovechamientos; y segundo, al centralizar el Gobierno
+						</p>
+						<p class="textItem " style="top:65.596919%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Federal, a partir de 2014, el sistema de recaudaci&#243;n del IEPS a
+						</p>
+						<p class="textItem " style="top:67.394095%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							las gasolinas y diesel, el tributo pas&#243; a registrarse bajo el rubro
+						</p>
+						<p class="textItem " style="top:69.191271%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Participaciones en el IEPS a las gasolinas y diesel dentro de las
+						</p>
+						<p class="textItem " style="top:70.988447%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Participaciones Federales. Si se elimina el sesgo resultante de la
+						</p>
+						<p class="textItem " style="top:72.785623%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							reclasificaci&#243;n los Impuestos se incrementan en 2.8 por ciento
+						</p>
+						<p class="textItem " style="top:74.582798%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							anual nominal. En Derechos la ca&#237;da de 0.5 por ciento anual refleja
+						</p>
+						<p class="textItem " style="top:76.379974%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la disminuci&#243;n de los derechos de los OPD vinculados al descenso
+						</p>
+						<p class="textItem " style="top:78.177150%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en la demanda de servicios. En el tema de los Aprovechamientos
+						</p>
+						<p class="textItem " style="top:79.974326%;left:8.602151%;width:33.947773%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							resalta un incremento de 25.4 por ciento anual nominal.
+						</p>
+						<p class="textItem " style="top:83.568678%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En conclusi&#243;n, la disminuci&#243;n de ingresos tributarios, y por ende
+						</p>
+						<p class="textItem " style="top:85.365854%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							propios, se debe s&#243;lo a operaciones de reclasificaci&#243;n y registro,
+						</p>
+						<p class="textItem " style="top:87.163030%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							no a la recaudaci&#243;n efectiva. El fortalecimiento de la eficiencia
+						</p>
+						<p class="textItem " style="top:88.960205%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							recaudatoria se sustent&#243; en el impacto de los programas de
+						</p>
+						<p class="textItem " style="top:18.356868%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							reforma tributaria y de coordinaci&#243;n hacendaria; en las facilidades
+						</p>
+						<p class="textItem " style="top:20.154044%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							administrativas y est&#237;mulos fiscales otorgados a contribuyentes y
+						</p>
+						<p class="textItem " style="top:21.951220%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a los municipios para ponerse al corriente, y en las mejoras de la
+						</p>
+						<p class="textItem " style="top:23.748395%;left:49.769585%;width:27.496160%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							administraci&#243;n recaudatoria y de fiscalizaci&#243;n.
+						</p>
+						<p class="textItem " style="top:27.214377%;left:49.769585%;width:31.643625%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.1.2.3. Participaciones Federales
+						</p>
+						<p class="textItem " style="top:31.450578%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							De diciembre de 2013 a noviembre de 2014 el Estado percibi&#243;
+						</p>
+						<p class="textItem " style="top:33.247754%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							participaciones federales por 34,227.1 millones de pesos, cifra
+						</p>
+						<p class="textItem " style="top:35.044929%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que represent&#243; ingresos adicionales de 4,935.9 millones de pesos,
+						</p>
+						<p class="textItem " style="top:36.842105%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							superando en 16.9 por ciento nominal a la fase anterior. Si no se
+						</p>
+						<p class="textItem " style="top:38.639281%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							consideran las Participaciones en el IEPS a las Gasolinas y Diesel,
+						</p>
+						<p class="textItem " style="top:40.436457%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							este rubro asciende a 33,245.1 millones de pesos, lo que supera en
+						</p>
+						<p class="textItem " style="top:42.233633%;left:49.769585%;width:28.571429%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							13.5 por ciento nominal al Informe precedente.
+						</p>
+						<p class="textItem " style="top:45.827985%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La captaci&#243;n adicional se explica por el desempe&#241;o de los fondos
+						</p>
+						<p class="textItem " style="top:47.625160%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							General, de Fomento Municipal, de Compensaci&#243;n del ISAN,
+						</p>
+						<p class="textItem " style="top:49.422336%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Fiscalizaci&#243;n y Recaudaci&#243;n, que superaron la recaudaci&#243;n
+						</p>
+						<p class="textItem " style="top:51.219512%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							anterior en 14.6, 15.5, 4 y 15.6 por ciento, respectivamente.
+						</p>
+						<p class="textItem " style="top:53.016688%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Las Participaciones Espec&#237;ficas en el IEPS (de cerveza, bebidas
+						</p>
+						<p class="textItem " style="top:54.813864%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							alcoh&#243;licas y tabacos) mostraron un incremento de 14.7 por
+						</p>
+						<p class="textItem " style="top:56.611040%;left:49.769585%;width:9.370200%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ciento nominal.
+						</p>
+						<p class="textItem " style="top:60.205392%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se prev&#233; percibir participaciones en el IEPS a las Gasolinas y Diesel
+						</p>
+						<p class="textItem " style="top:62.002567%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por 982 millones de pesos. &#201;stas corresponden a las 9/11 partes
+						</p>
+						<p class="textItem " style="top:63.799743%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de las cuotas del IEPS que administraba directamente el Estado y
+						</p>
+						<p class="textItem " style="top:65.596919%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cuya recaudaci&#243;n a partir de 2014 fue centralizada por medio de
+						</p>
+						<p class="textItem " style="top:67.394095%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							PEMEX y la SHCP, &#233;sta &#250;ltima es quien transfiere la recaudaci&#243;n a
+						</p>
+						<p class="textItem " style="top:69.191271%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							las entidades federativas. En contraste, a partir de agosto de 2013
+						</p>
+						<p class="textItem " style="top:70.988447%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el Estado dej&#243; de percibir el Fondo de Compensaci&#243;n del IEPS a
+						</p>
+						<p class="textItem " style="top:72.785623%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							las Gasolinas y Diesel, por las 2/11 partes de las cuotas, al ya no
+						</p>
+						<p class="textItem " style="top:74.582798%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pertenecer a las 10 entidades con el menor producto interno bruto
+						</p>
+						<p class="textItem " style="top:76.379974%;left:49.769585%;width:19.969278%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							per c&#225;pita no minero o petrolero.
+						</p>
+						<p class="textItem " style="top:76.379974%;left:69.738863%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							22
+						</p>
+						<p class="textItem " style="top:79.974326%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz se ubic&#243; en la cuarta posici&#243;n nacional con el 6.1 por
+						</p>
+						<p class="textItem " style="top:81.771502%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ciento de las participaciones federales percibidas, superado por el
+						</p>
+						<p class="textItem " style="top:83.568678%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estado de M&#233;xico, que tiene un coeficiente efectivo de 13.3 por
+						</p>
+						<p class="textItem " style="top:89.216945%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							22. Ley de Coordinaci&#243;n Fiscal, art&#237;culo 4&#186;-A, publicada en el Diario Oficial de la Federaci&#243;n el 9
+						</p>
+						<p class="textItem " style="top:90.243902%;left:49.769585%;width:9.370200%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							de diciembre de 2013.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-451.html">451</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-452.html">452</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-453.html">453</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-454.html">454</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-455.html">455</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-456.html">456</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-457.html">457</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-458.html">458</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-459.html">459</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-460.html">460</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-461.html">461</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-462.html">462</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,479 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "194";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-193.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;194 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-195.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-193.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">194 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-195.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0194.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:17.458280%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							anual de rehabilitaci&#243;n simplificada, dirigido a la profesionalizaci&#243;n
+						</p>
+						<p class="textItem " style="top:19.255456%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y actualizaci&#243;n del personal de los sistemas DIF municipales que
+						</p>
+						<p class="textItem " style="top:21.052632%;left:8.602151%;width:31.643625%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cuentan con alguna Unidad B&#225;sica de Rehabilitaci&#243;n.
+						</p>
+						<p class="textItem " style="top:24.518614%;left:8.602151%;width:35.483871%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							6.1.2. Inclusi&#243;n social de las personas
+						</p>
+						<p class="textItem " style="top:26.700899%;left:8.602151%;width:16.436252%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							con discapacidad
+						</p>
+						<p class="textItem " style="top:30.937099%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En materia de inclusi&#243;n social se otorgaron 3,003 servicios de
+						</p>
+						<p class="textItem " style="top:32.734275%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							apoyo para la inclusi&#243;n social en beneficio de 2,284 personas
+						</p>
+						<p class="textItem " style="top:34.531451%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con discapacidad. Entre estas actividades destacan, el Programa
+						</p>
+						<p class="textItem " style="top:36.328626%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Inclusi&#243;n al Arte y la Cultura para personas con discapacidad,
+						</p>
+						<p class="textItem " style="top:38.125802%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en el que se realizaron eventos de car&#225;cter art&#237;stico-cultural,
+						</p>
+						<p class="textItem " style="top:39.922978%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en coordinaci&#243;n con la participaci&#243;n de diversos actores de la
+						</p>
+						<p class="textItem " style="top:41.720154%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cultura veracruzana, entre ellos, la Orquesta de M&#250;sica Popular
+						</p>
+						<p class="textItem " style="top:43.517330%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la Universidad Veracruzana y la Orquesta de Guitarras de la
+						</p>
+						<p class="textItem " style="top:45.314506%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							SEV. Se realizaron 212 talleres de arte y cultura dedicados a las
+						</p>
+						<p class="textItem " style="top:47.111682%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							artes pl&#225;sticas, la estimulaci&#243;n de los sentidos, la danza-teatro, la
+						</p>
+						<p class="textItem " style="top:48.908858%;left:8.602151%;width:24.270353%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estimulaci&#243;n musical y los ritmos latinos.
+						</p>
+						<p class="textItem " style="top:52.503209%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Como parte de la celebraci&#243;n del D&#237;a de la Discapacidad, el 6
+						</p>
+						<p class="textItem " style="top:54.300385%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de diciembre de 2013 se present&#243; el grupo de danza sobre sillas
+						</p>
+						<p class="textItem " style="top:56.097561%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de ruedas en la plaza de acceso al CREEVER, que cont&#243; con una
+						</p>
+						<p class="textItem " style="top:57.894737%;left:8.602151%;width:21.044547%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							audiencia de m&#225;s de 250 personas.
+						</p>
+						<p class="textItem " style="top:61.489089%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Dentro de las actividades del Programa de Cultura F&#237;sica y Deporte
+						</p>
+						<p class="textItem " style="top:63.286264%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Adaptado orientado a personas con discapacidad; se realizaron
+						</p>
+						<p class="textItem " style="top:65.083440%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cinco eventos masivos de activaci&#243;n f&#237;sica en la que se tuvo una
+						</p>
+						<p class="textItem " style="top:66.880616%;left:8.602151%;width:35.483871%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							participaci&#243;n de m&#225;s 200 personas en diferentes escenarios
+						</p>
+						<p class="textItem " style="top:67.008986%;left:43.932412%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							15
+						</p>
+						<p class="textItem " style="top:66.880616%;left:44.854071%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							.
+						</p>
+						<p class="textItem " style="top:70.474968%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Como parte de las actividades del Programa Escuela para Familias e
+						</p>
+						<p class="textItem " style="top:72.272144%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Hijos e Hijas y Familiares conDiscapacidad, se organizaron dos Foros
+						</p>
+						<p class="textItem " style="top:74.069320%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Familia, Discapacidad y Vida Independiente, a fin de involucrar
+						</p>
+						<p class="textItem " style="top:75.866496%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							activamente a las familias de las personas con discapacidad en el
+						</p>
+						<p class="textItem " style="top:77.663671%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							proceso de su rehabilitaci&#243;n, el primero el 10 de abril, y el segundo
+						</p>
+						<p class="textItem " style="top:79.460847%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el 24 de octubre. De igual forma, se impartieron 107 talleres de
+						</p>
+						<p class="textItem " style="top:81.258023%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							modificaci&#243;n de h&#225;bitos familiares y 27 pl&#225;ticas informativas sobre
+						</p>
+						<p class="textItem " style="top:83.055199%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Difusi&#243;n y Asesor&#237;a de los Derechos Humanos de las personas
+						</p>
+						<p class="textItem " style="top:84.852375%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con discapacidad, dirigido a instituciones educativas de diversos
+						</p>
+						<p class="textItem " style="top:86.649551%;left:8.602151%;width:6.912442%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipios.
+						</p>
+						<p class="textItem " style="top:89.216945%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							15. Entre los que destacan, el Paseo de Los Lagos, Cerro de Macuilt&#233;petl, la Benem&#233;rita Escuela
+						</p>
+						<p class="textItem " style="top:90.243902%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Normal Veracruzana, Parque de Los Tecajetes, en Xalapa y el balneario Agua Alegre en Coatepec.
+						</p>
+						<p class="textItem " style="top:17.458280%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En materia de inclusi&#243;n educativa de menores con discapacidad,
+						</p>
+						<p class="textItem " style="top:19.255456%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se realizaron 281 seguimientos ante diversas escuelas de educaci&#243;n
+						</p>
+						<p class="textItem " style="top:21.052632%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							regular y de educaci&#243;n especial, con el fin de favorecer el desarrollo
+						</p>
+						<p class="textItem " style="top:22.849807%;left:49.769585%;width:37.634409%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y adaptaci&#243;n del menor con discapacidad al &#225;mbito educativo.
+						</p>
+						<p class="textItem " style="top:26.444159%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Entre las acciones del Programa de Rehabilitaci&#243;n e Inclusi&#243;n
+						</p>
+						<p class="textItem " style="top:28.241335%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Laboral de las personas con discapacidad y en coordinaci&#243;n con el
+						</p>
+						<p class="textItem " style="top:30.038511%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Centro de Estrategias y Capacitaci&#243;n Empresarial, A.C. (CECADE),
+						</p>
+						<p class="textItem " style="top:31.835687%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se realiza la capacitaci&#243;n en favor de personas con discapacidad
+						</p>
+						<p class="textItem " style="top:33.632863%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							interesadas en la elaboraci&#243;n de planes de negocio que impulsen
+						</p>
+						<p class="textItem " style="top:35.430039%;left:49.769585%;width:28.417819%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el financiamiento de sus proyectos productivos.
+						</p>
+						<p class="textItem " style="top:39.024390%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Por medio del Programa de Credencializaci&#243;n a Personas con
+						</p>
+						<p class="textItem " style="top:40.821566%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Discapacidad, se otorgaron m&#225;s de 2,000 credenciales en los
+						</p>
+						<p class="textItem " style="top:42.618742%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipios de &#193;lamo Temapache, Atzalan, Banderilla, Cerro
+						</p>
+						<p class="textItem " style="top:44.415918%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Azul, Chalma, Chocam&#225;n, Coatepec, Coatzacoalcos, Coatzintla,
+						</p>
+						<p class="textItem " style="top:46.213094%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							C&#243;rdoba, Cuitl&#225;huac, Fort&#237;n, Huayacocotla, Ixhuatl&#225;n del Caf&#233;,
+						</p>
+						<p class="textItem " style="top:48.010270%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ixtaczoquitl&#225;n, Mart&#237;nez de la Torre, Minatitl&#225;n, Nautla, Orizaba,
+						</p>
+						<p class="textItem " style="top:49.807445%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Papantla, Plat&#243;n S&#225;nchez, San Rafael, Tecolutla, Tenochtitl&#225;n,
+						</p>
+						<p class="textItem " style="top:51.604621%;left:49.769585%;width:26.574501%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tuxpan, Vega de Alatorre, Xalapa y Yecuatla.
+						</p>
+						<p class="textItem " style="top:55.070603%;left:49.769585%;width:37.941628%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							6.1.3. Detecci&#243;n y atenci&#243;n del autismo
+						</p>
+						<p class="textItem " style="top:59.306804%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Centro Estatal para la Detecci&#243;n y Atenci&#243;n del Autismo (CEDAA)
+						</p>
+						<p class="textItem " style="top:61.103979%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							reconoce que la detecci&#243;n adecuada y oportuna forma parte de
+						</p>
+						<p class="textItem " style="top:62.901155%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los derechos que los ni&#241;os y ni&#241;as veracruzanos tienen a la salud y
+						</p>
+						<p class="textItem " style="top:64.698331%;left:49.769585%;width:20.430108%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a tener una mejor calidad de vida.
+						</p>
+						<p class="textItem " style="top:68.292683%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Dentro de sus actividades, se evalu&#243; y diagnostic&#243; a 54 pacientes
+						</p>
+						<p class="textItem " style="top:70.089859%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dentro de los trastornos del espectro autista: seis mujeres y 48
+						</p>
+						<p class="textItem " style="top:71.887035%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							hombres, en edades entre dos y 12 a&#241;os. De ellos, 35 se encuentran
+						</p>
+						<p class="textItem " style="top:73.684211%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							entre dos y cinco a&#241;os; son infantes que fueron detectados gracias
+						</p>
+						<p class="textItem " style="top:75.481386%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							al dise&#241;o de acciones oportunas de diagn&#243;stico temprano,
+						</p>
+						<p class="textItem " style="top:77.278562%;left:49.769585%;width:17.972350%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							instrumentadas por el Centro.
+						</p>
+						<p class="textItem " style="top:80.872914%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para las acciones de atenci&#243;n y rehabilitaci&#243;n, con el diagn&#243;stico
+						</p>
+						<p class="textItem " style="top:82.670090%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							temprano en los ni&#241;os con autismo, el Centro brinda a las familias
+						</p>
+						<p class="textItem " style="top:84.467266%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la posibilidad de atender oportunamente a sus hijos, por lo que
+						</p>
+						<p class="textItem " style="top:86.264442%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							aunque la atenci&#243;n estuvo vigente para todos los pacientes, se han
+						</p>
+						<p class="textItem " style="top:88.061617%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ofrecido mayores espacios de terapia a ni&#241;as y ni&#241;os de entre dos
+						</p>
+						<p class="textItem " style="top:89.858793%;left:49.769585%;width:6.298003%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y 12 a&#241;os.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-189.html">189</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-190.html">190</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-191.html">191</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-192.html">192</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-193.html">193</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-194.html">194</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-195.html">195</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-196.html">196</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-197.html">197</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-198.html">198</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-199.html">199</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-200.html">200</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

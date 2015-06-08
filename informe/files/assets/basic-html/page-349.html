@@ -1,0 +1,476 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "349";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-348.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;349 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-350.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-348.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">349 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-350.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0349.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:34.869432%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:41.321045%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:42.242704%;width:18.740399%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>P r o c u r a c i &#243; n d e J u s t i c i a</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:61.904762%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:62.826421%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>3 4 7</b>
+						</p>
+						<p class="textItem " style="top:18.356868%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							tecnolog&#237;as de la informaci&#243;n adquiridas, al igual que la
+						</p>
+						<p class="textItem " style="top:20.154044%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							capacitaci&#243;n en cita, con recursos provenientes del Subsidio SETEC
+						</p>
+						<p class="textItem " style="top:21.951220%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							2014, que se gestion&#243; a trav&#233;s de cinco proyectos presentados y
+						</p>
+						<p class="textItem " style="top:23.748395%;left:10.752688%;width:32.258065%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ejecutados en tiempo y forma, con recursos federales.
+						</p>
+						<p class="textItem " style="top:27.342747%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A la par, la Procuradur&#237;a inici&#243; el Programa de Abatimiento de
+						</p>
+						<p class="textItem " style="top:29.139923%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Rezago aplicado en la zona norte, que permite la migraci&#243;n del
+						</p>
+						<p class="textItem " style="top:30.937099%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							actual sistema al de corte acusatorio o adversarial y optimiza
+						</p>
+						<p class="textItem " style="top:32.734275%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los recursos humanos y materiales en beneficio de la sociedad
+						</p>
+						<p class="textItem " style="top:34.531451%;left:10.752688%;width:7.680492%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							veracruzana.
+						</p>
+						<p class="textItem " style="top:37.997433%;left:10.752688%;width:36.405530%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.2. Modernizaci&#243;n de la Procuradur&#237;a
+						</p>
+						<p class="textItem " style="top:42.233633%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Programa Veracruzano de Procuraci&#243;n de Justicia 2011-2016
+						</p>
+						<p class="textItem " style="top:44.030809%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							contempla optimizar las funciones operativas y administrativas,
+						</p>
+						<p class="textItem " style="top:45.827985%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y modernizar la estructura tecnol&#243;gica que actualmente tiene la
+						</p>
+						<p class="textItem " style="top:47.625160%;left:10.752688%;width:7.987711%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Procuradur&#237;a.
+						</p>
+						<p class="textItem " style="top:51.219512%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A fin de proyectar una nueva imagen de la Procuradur&#237;a, acorde
+						</p>
+						<p class="textItem " style="top:53.016688%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con los diversos programas de modernizaci&#243;n, se generaron las
+						</p>
+						<p class="textItem " style="top:54.813864%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pol&#237;ticas necesarias para la publicaci&#243;n en el portal de trasparencia
+						</p>
+						<p class="textItem " style="top:56.611040%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la Instituci&#243;n, de las cifras de los principales delitos cometidos
+						</p>
+						<p class="textItem " style="top:58.408216%;left:10.752688%;width:8.294931%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en la Entidad.
+						</p>
+						<p class="textItem " style="top:62.002567%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Acorde a la legislaci&#243;n Federal, en materia de derechos humanos y
+						</p>
+						<p class="textItem " style="top:63.799743%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							trata de personas, la Procuradur&#237;a oper&#243; los cambios estructurales
+						</p>
+						<p class="textItem " style="top:65.596919%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para la ampliaci&#243;n de las funciones de las Subprocuradur&#237;as
+						</p>
+						<p class="textItem " style="top:67.394095%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Especializadas en Atenci&#243;n de Asuntos Ind&#237;genas y de Investigaci&#243;n
+						</p>
+						<p class="textItem " style="top:69.191271%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Delitos de Violencia Contra las Mujeres, adicion&#225;ndose las
+						</p>
+						<p class="textItem " style="top:70.988447%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							funciones en materia de Derechos Humanos y de Trata de Personas,
+						</p>
+						<p class="textItem " style="top:72.785623%;left:10.752688%;width:10.291859%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							respectivamente.
+						</p>
+						<p class="textItem " style="top:76.379974%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							De igual forma, se ampli&#243; la cobertura de atenci&#243;n de la Unidad
+						</p>
+						<p class="textItem " style="top:78.177150%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Especializada en Combate al Secuestro, creando una subordinaci&#243;n
+						</p>
+						<p class="textItem " style="top:79.974326%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							especializada en la regi&#243;n de C&#243;rdoba, que sin duda permiti&#243; el
+						</p>
+						<p class="textItem " style="top:81.771502%;left:10.752688%;width:20.276498%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							avance frontal contra este flagelo.
+						</p>
+						<p class="textItem " style="top:85.365854%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Por &#250;ltimo se resalta la inversi&#243;n en tecnolog&#237;a de la informaci&#243;n
+						</p>
+						<p class="textItem " style="top:87.163030%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							adquirida con recurso Federal superior a los 6 millones de pesos
+						</p>
+						<p class="textItem " style="top:88.960205%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que permite el equipamiento de las nuevas Unidades integrales
+						</p>
+						<p class="textItem " style="top:18.356868%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de procuraci&#243;n de justicia localizados en los Distritos judiciales
+						</p>
+						<p class="textItem " style="top:20.154044%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Chicontepec, Huayacocotla, Ozuluama, P&#225;nuco, Tantoyuca
+						</p>
+						<p class="textItem " style="top:21.951220%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y Tuxpan que complementan a los cuatro distritos judiciales de
+						</p>
+						<p class="textItem " style="top:23.748395%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							C&#243;rdoba, Coatepec, Jalacingo y Xalapa, donde ya opera el sistema
+						</p>
+						<p class="textItem " style="top:25.545571%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de justicia penal, implement&#225;ndose el Sistema Adversarial en casi
+						</p>
+						<p class="textItem " style="top:27.342747%;left:51.920123%;width:11.827957%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la mitad del Estado.
+						</p>
+						<p class="textItem " style="top:30.808729%;left:51.920123%;width:29.032258%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.3. Direcci&#243;n General Jur&#237;dica
+						</p>
+						<p class="textItem " style="top:35.044929%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El PlanVeracruzanodeDesarrollo2011-2016enel puntoVI.3 Justicia
+						</p>
+						<p class="textItem " style="top:36.842105%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para todos, del Cap&#237;tulo VI Gobierno y Administraci&#243;n Eficientes y
+						</p>
+						<p class="textItem " style="top:38.639281%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Transparentes, contempla que la actuaci&#243;n del Ministerio P&#250;blico
+						</p>
+						<p class="textItem " style="top:40.436457%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y de la Procuradur&#237;a General de Justicia, es importante para abatir
+						</p>
+						<p class="textItem " style="top:42.233633%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los niveles de impunidad en la Entidad y con ello desalentar las
+						</p>
+						<p class="textItem " style="top:44.030809%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							conductas antisociales, promover la paz p&#250;blica y restablecer la
+						</p>
+						<p class="textItem " style="top:45.827985%;left:51.920123%;width:27.649770%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							confianza de la poblaci&#243;n en sus instituciones.
+						</p>
+						<p class="textItem " style="top:49.422336%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Por ello, la Direcci&#243;n General Jur&#237;dica fortaleci&#243; la eficacia y
+						</p>
+						<p class="textItem " style="top:51.219512%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							eficiencia de la normatividad y servicios de defensa de los intereses
+						</p>
+						<p class="textItem " style="top:53.016688%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que rigen a la Procuradur&#237;a, en cumplimiento de los puntos VI.3.3
+						</p>
+						<p class="textItem " style="top:54.813864%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estrategias para mejorar las funciones sustantivas de la Instituci&#243;n
+						</p>
+						<p class="textItem " style="top:56.611040%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y VI. 3.4 Acciones en materia legislativa, se actualiz&#243; su marco legal
+						</p>
+						<p class="textItem " style="top:58.408216%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y se difundi&#243; entre los servidores p&#250;blicos de la Instituci&#243;n, con las
+						</p>
+						<p class="textItem " style="top:60.205392%;left:51.920123%;width:18.586790%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acciones sustantivas siguientes:
+						</p>
+						<p class="textItem " style="top:63.799743%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se elaboraron 14 Acuerdos normativos, por los que se instruyeron
+						</p>
+						<p class="textItem " style="top:65.596919%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el establecimiento y funcionamiento de las Unidades Integrales de
+						</p>
+						<p class="textItem " style="top:67.394095%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Procuraci&#243;n de Justicia en los Distritos de Jalacingo y Coatepec,
+						</p>
+						<p class="textItem " style="top:69.191271%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para la aplicaci&#243;n del Sistema Procedimental Penal Acusatorio y
+						</p>
+						<p class="textItem " style="top:70.988447%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Oral; el domicilio de la Fiscal&#237;a Investigadora Especializada adscrita
+						</p>
+						<p class="textItem " style="top:72.785623%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a la Fuerza de Tarea Veracruz Seguro, la creaci&#243;n el 4 de marzo de
+						</p>
+						<p class="textItem " style="top:74.582798%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Fiscal&#237;a Especializada para la Atenci&#243;n de Denuncia por Personas
+						</p>
+						<p class="textItem " style="top:76.379974%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Desaparecidas y el nombramiento de Encargados Provisionales
+						</p>
+						<p class="textItem " style="top:78.177150%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de los principales mandos de lo que anteriormente era la Agencia
+						</p>
+						<p class="textItem " style="top:79.974326%;left:51.920123%;width:22.273425%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruzana de Investigaciones (AVI).
+						</p>
+						<p class="textItem " style="top:83.568678%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El cambio en la denominaci&#243;n y funciones de la Subprocuradur&#237;a
+						</p>
+						<p class="textItem " style="top:85.365854%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Asuntos Ind&#237;genas y de Derechos Humanos, reestructuraci&#243;n
+						</p>
+						<p class="textItem " style="top:87.163030%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la Unidad de Acceso a la Informaci&#243;n P&#250;blica de la Instituci&#243;n;
+						</p>
+						<p class="textItem " style="top:88.960205%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cambio de denominaci&#243;n e incorporaci&#243;n de nuevas funciones
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-344.html">344</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-345.html">345</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-346.html">346</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-347.html">347</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-348.html">348</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-349.html">349</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-350.html">350</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-351.html">351</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-352.html">352</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-353.html">353</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-354.html">354</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-355.html">355</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

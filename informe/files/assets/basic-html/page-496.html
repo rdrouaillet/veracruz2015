@@ -1,0 +1,467 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "496";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-495.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;496 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-497.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-495.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">496 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-497.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0496.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:17.971759%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							necesaria para favorecer la transparencia, eficiencia  y correcta
+						</p>
+						<p class="textItem " style="top:19.768935%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							aplicaci&#243;n de los recursos p&#250;blicos, se publicaron en la Gaceta
+						</p>
+						<p class="textItem " style="top:21.566110%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Oficial del Estado, en el N&#250;mero Extraordinario 244 publicado el
+						</p>
+						<p class="textItem " style="top:23.363286%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							19 de junio de 2014, los nuevos Lineamientos Generales para la
+						</p>
+						<p class="textItem " style="top:25.160462%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Constituci&#243;n y Operaci&#243;n de los Comit&#233;s de Contralor&#237;a Ciudadana
+						</p>
+						<p class="textItem " style="top:26.957638%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Adelante; asimismo, y en cumplimiento a lo que establece dicho
+						</p>
+						<p class="textItem " style="top:28.754814%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ordenamiento se actualiz&#243; y difundi&#243; el Manual de Contralor&#237;a
+						</p>
+						<p class="textItem " style="top:30.551990%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ciudadana Adelante, lo cual deja sin efecto lo anteriormente
+						</p>
+						<p class="textItem " style="top:32.349166%;left:8.602151%;width:6.451613%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							publicado.
+						</p>
+						<p class="textItem " style="top:35.943517%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Por otra parte y de conformidad con la estrategia de operaci&#243;n en
+						</p>
+						<p class="textItem " style="top:37.740693%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							materia de contralor&#237;a ciudadana se recibieron 25 designaciones de
+						</p>
+						<p class="textItem " style="top:39.537869%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							enlaces institucionales, 24 cartas compromisos, se suscribieron 18
+						</p>
+						<p class="textItem " style="top:41.335045%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							programas de trabajo con igual n&#250;mero de estrategias operativas
+						</p>
+						<p class="textItem " style="top:43.132221%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para la constituci&#243;n de estos organismos formales de participaci&#243;n
+						</p>
+						<p class="textItem " style="top:44.929397%;left:8.602151%;width:3.686636%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							social.
+						</p>
+						<p class="textItem " style="top:48.523748%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							De diciembre de 2013 a la fecha se registraron 1,611 comit&#233;s,
+						</p>
+						<p class="textItem " style="top:50.320924%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							conformados por 13,576 ciudadanos. Cabe destacar que durante
+						</p>
+						<p class="textItem " style="top:52.118100%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los cuatro a&#241;os de Gobierno se han registrado 3,131 comit&#233;s con
+						</p>
+						<p class="textItem " style="top:53.915276%;left:8.602151%;width:23.348694%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la participaci&#243;n de 19,468 ciudadanos.
+						</p>
+						<p class="textItem " style="top:57.509628%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Derivado de lo anterior, se cuenta con 837 Comit&#233;s de Contralor&#237;a
+						</p>
+						<p class="textItem " style="top:59.306804%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ciudadana Adelante vigentes, integrados por 7,821 ciudadanos
+						</p>
+						<p class="textItem " style="top:61.103979%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que realizan actividades de control, supervisi&#243;n, vigilancia y
+						</p>
+						<p class="textItem " style="top:62.901155%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							evaluaci&#243;n en los programas, acciones, tr&#225;mites y servicios a cargo
+						</p>
+						<p class="textItem " style="top:64.698331%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de las distintas dependencias y entidades, recepcionando a trav&#233;s
+						</p>
+						<p class="textItem " style="top:66.495507%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de estos medios 7,580 solicitudes, a las cuales se les da seguimiento
+						</p>
+						<p class="textItem " style="top:68.292683%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por parte de las &#225;reas responsables en cada dependencia o entidad.
+						</p>
+						<p class="textItem " style="top:71.630295%;left:8.602151%;width:21.044547%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							3.2. Contralor&#237;a Social
+						</p>
+						<p class="textItem " style="top:75.866496%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En cumplimiento al programa anual de trabajo suscrito con la
+						</p>
+						<p class="textItem " style="top:77.663671%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Secretar&#237;a de la Funci&#243;n P&#250;blica y la Contralor&#237;a General del Estado
+						</p>
+						<p class="textItem " style="top:79.460847%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Veracruz, para la promoci&#243;n y operaci&#243;n de la Contralor&#237;a
+						</p>
+						<p class="textItem " style="top:81.258023%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Social en los programas federales de desarrollo social, se coordin&#243;
+						</p>
+						<p class="textItem " style="top:83.055199%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la suscripci&#243;n del Programa Anual de Trabajo (PAT) 2014; para
+						</p>
+						<p class="textItem " style="top:84.852375%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							capacitar y dar seguimiento en 14 programas federales de
+						</p>
+						<p class="textItem " style="top:86.649551%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							desarrollo social, los cuales se encuentran en proceso de concertar
+						</p>
+						<p class="textItem " style="top:17.971759%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							junto con el Programa Estatal de Trabajo, en la instancia ejecutora
+						</p>
+						<p class="textItem " style="top:19.768935%;left:49.769585%;width:6.605223%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Estado.
+						</p>
+						<p class="textItem " style="top:23.363286%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En este sentido, durante el periodo de informe, se han constituido
+						</p>
+						<p class="textItem " style="top:25.160462%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							239 comit&#233;s integrados por 717 residentes en territorio veracruzano
+						</p>
+						<p class="textItem " style="top:26.957638%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cuya participaci&#243;n radica en la vigilancia en las obras, servicios y
+						</p>
+						<p class="textItem " style="top:28.754814%;left:49.769585%;width:36.712750%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acciones que son ejecutadas en el estado con recurso federal.
+						</p>
+						<p class="textItem " style="top:32.349166%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Asimismo, se realizaron 10 capacitaciones en el ejercicio 2014,
+						</p>
+						<p class="textItem " style="top:34.146341%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dirigidas a servidores p&#250;blicos de los &#243;rganos internos de control,
+						</p>
+						<p class="textItem " style="top:35.943517%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							promotores y ejecutores de los programas federales de desarrollo
+						</p>
+						<p class="textItem " style="top:37.740693%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							social y a los beneficiarios e integrantes de comit&#233;s de contralor&#237;a
+						</p>
+						<p class="textItem " style="top:39.537869%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							social. Cabe mencionar que referente a los programas restantes,
+						</p>
+						<p class="textItem " style="top:41.335045%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se encuentra en proceso la realizaci&#243;n de las capacitaciones a
+						</p>
+						<p class="textItem " style="top:43.132221%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							promotores y ejecutores de los programas federales que son
+						</p>
+						<p class="textItem " style="top:44.929397%;left:49.769585%;width:14.439324%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ejecutados en el Estado.
+						</p>
+						<p class="textItem " style="top:48.267009%;left:49.769585%;width:22.734255%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							3.3. Equidad de G&#233;nero
+						</p>
+						<p class="textItem " style="top:52.503209%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Plan Veracruzano de Desarrollo 2011-2016 establece como
+						</p>
+						<p class="textItem " style="top:54.300385%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							objetivo de la presente Administraci&#243;n, lograr la igualdad
+						</p>
+						<p class="textItem " style="top:56.097561%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sustantiva entre mujeres y hombres, a partir del reconocimiento
+						</p>
+						<p class="textItem " style="top:57.894737%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de las diferencias y la reafirmaci&#243;n de la igualdad intr&#237;nseca de las
+						</p>
+						<p class="textItem " style="top:59.691913%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							personas. Dentro de las estrategias para el logro de este objetivo, el
+						</p>
+						<p class="textItem " style="top:61.489089%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Plan se&#241;ala que las dependencias del Gobierno Estatal consideren
+						</p>
+						<p class="textItem " style="top:63.286264%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en sus pol&#237;ticas y programas espec&#237;ficos ejes transversales de acci&#243;n
+						</p>
+						<p class="textItem " style="top:65.083440%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en diversos aspectos estrat&#233;gicos, como formaci&#243;n y especializaci&#243;n
+						</p>
+						<p class="textItem " style="top:66.880616%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de servidoras o servidores p&#250;blicos con perspectivas de g&#233;nero
+						</p>
+						<p class="textItem " style="top:68.677792%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y derechos humanos en las pol&#237;ticas p&#250;blicas, incorporaci&#243;n de
+						</p>
+						<p class="textItem " style="top:70.474968%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la perspectiva de g&#233;nero en el marco normativo y armonizaci&#243;n
+						</p>
+						<p class="textItem " style="top:72.272144%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							legislativa, en los programas y presupuestos p&#250;blicos y el
+						</p>
+						<p class="textItem " style="top:74.069320%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							seguimiento y evaluaci&#243;n de las pol&#237;ticas para el adelanto de las
+						</p>
+						<p class="textItem " style="top:75.866496%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mujeres, as&#237; como auditor&#237;as de g&#233;nero institucionales, para lograr
+						</p>
+						<p class="textItem " style="top:77.663671%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la incorporaci&#243;n efectiva de las mujeres en todos los &#225;mbitos de la
+						</p>
+						<p class="textItem " style="top:79.460847%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							vida p&#250;blica y privada, permitir el acceso a condiciones de igualdad
+						</p>
+						<p class="textItem " style="top:81.258023%;left:49.769585%;width:17.050691%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y una vida libre de violencia.
+						</p>
+						<p class="textItem " style="top:84.852375%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En este sentido, con el prop&#243;sito de que se realicen acciones
+						</p>
+						<p class="textItem " style="top:86.649551%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							tendientes a promover y fortalecer la igualdad entre mujeres y
+						</p>
+						<p class="textItem " style="top:88.446727%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							hombres, a evitar cualquier forma de discriminaci&#243;n entre ellos, as&#237;
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-491.html">491</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-492.html">492</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-493.html">493</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-494.html">494</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-495.html">495</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-496.html">496</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-497.html">497</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-498.html">498</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-499.html">499</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-500.html">500</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-501.html">501</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-502.html">502</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

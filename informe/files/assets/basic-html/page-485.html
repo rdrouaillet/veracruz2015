@@ -1,0 +1,500 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "485";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-484.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;485 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-486.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-484.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">485 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-486.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0485.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:35.483871%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:41.935484%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:43.010753%;width:17.511521%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>F i n a n z a s y P l a n e a c i &#243; n</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:61.136713%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:62.211982%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>4 8 3</b>
+						</p>
+						<p class="textItem testString" style="top:7.060334%;left:10.752688%;width:35.023041%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							7. Fideicomiso P&#250;blico
+						</p>
+						<p class="textItem " style="top:9.756098%;left:10.752688%;width:28.264209%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							de Administraci&#243;n
+						</p>
+						<p class="textItem " style="top:12.451861%;left:10.752688%;width:29.646697%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							del Impuesto sobre
+						</p>
+						<p class="textItem " style="top:15.147625%;left:10.752688%;width:25.192012%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							Erogaciones por
+						</p>
+						<p class="textItem " style="top:17.843389%;left:10.752688%;width:29.800307%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							Remuneraciones al
+						</p>
+						<p class="textItem " style="top:20.539153%;left:10.752688%;width:26.267281%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							Trabajo Personal
+						</p>
+						<p class="textItem " style="top:26.444159%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Fideicomiso P&#250;blico de Administraci&#243;n del Impuesto sobre
+						</p>
+						<p class="textItem " style="top:28.241335%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Erogaciones por Remuneraciones al Trabajo Personal contribuye en
+						</p>
+						<p class="textItem " style="top:30.038511%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							gran medida al cumplimiento cabal de las estrategias planteadas
+						</p>
+						<p class="textItem " style="top:31.835687%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en el Plan Veracruzano de Desarrollo 2011-2016, pues permite,
+						</p>
+						<p class="textItem " style="top:33.632863%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a trav&#233;s de las decisiones tomadas en consenso de su Comit&#233;
+						</p>
+						<p class="textItem " style="top:35.430039%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							T&#233;cnico, integrar de forma adecuada la participaci&#243;n de las
+						</p>
+						<p class="textItem " style="top:37.227214%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							organizaciones privadas y p&#250;blicas traduciendo dichas decisiones
+						</p>
+						<p class="textItem " style="top:39.024390%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en obras y programas de apoyos que incluyen una diversidad de
+						</p>
+						<p class="textItem " style="top:40.821566%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sectores, tales como el de comunicaciones, desarrollo social, salud,
+						</p>
+						<p class="textItem " style="top:42.618742%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							educaci&#243;n, desarrollo econ&#243;mico y portuario, trabajo y previsi&#243;n
+						</p>
+						<p class="textItem " style="top:44.415918%;left:10.752688%;width:14.439324%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							social as&#237; como turismo.
+						</p>
+						<p class="textItem " style="top:48.010270%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Programa de Obras y Acciones del Fideicomiso incluye por
+						</p>
+						<p class="textItem " style="top:49.807445%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							una parte, tanto lo relativo al componente de infraestructura de
+						</p>
+						<p class="textItem " style="top:51.604621%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							comunicaciones, como la construcci&#243;n y ampliaci&#243;n de carreteras,
+						</p>
+						<p class="textItem " style="top:53.401797%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							puertos y aeropuertos; as&#237; como lo inherente al desarrollo de
+						</p>
+						<p class="textItem " style="top:55.198973%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							infraestructura social, comprendiendo el desarrollo urbano,
+						</p>
+						<p class="textItem " style="top:56.996149%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							vivienda, generaci&#243;n de riqueza y empleos, salud y servicios
+						</p>
+						<p class="textItem " style="top:58.793325%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							b&#225;sicos, dando como resultado un esquema integral que promueve
+						</p>
+						<p class="textItem " style="top:60.590501%;left:10.752688%;width:34.254992%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el desarrollo basado en la participaci&#243;n p&#250;blica y privada.
+						</p>
+						<p class="textItem " style="top:64.184852%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Fideicomiso P&#250;blico de Administraci&#243;n del Impuesto sobre
+						</p>
+						<p class="textItem " style="top:65.982028%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Erogaciones por Remuneraciones al Trabajo Personal con el monto
+						</p>
+						<p class="textItem " style="top:67.779204%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							recaudado durante ejercicio, prev&#233; ejecutar obras que ser&#225;n
+						</p>
+						<p class="textItem " style="top:69.576380%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							concluidas en el periodo 2014-2016. Mediante Gaceta Oficial
+						</p>
+						<p class="textItem " style="top:71.373556%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							N&#250;mero Extraordinario 492 publicada el 16 de diciembre de 2013
+						</p>
+						<p class="textItem " style="top:73.170732%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se reformaron, adicionaron y derogaron diversos art&#237;culos del
+						</p>
+						<p class="textItem " style="top:74.967908%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							C&#243;digo Financiero para el Estado de Veracruz, entre ellos, el Art&#237;culo
+						</p>
+						<p class="textItem " style="top:76.765083%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							101 que modifica la tasa del Impuesto sobre Erogaciones por
+						</p>
+						<p class="textItem " style="top:78.562259%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Remuneraciones al Trabajo Personal al 3 por ciento. Por lo anterior
+						</p>
+						<p class="textItem " style="top:80.359435%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se hizo un c&#225;lculo, en consenso con la Secretar&#237;a de Finanzas y
+						</p>
+						<p class="textItem " style="top:82.156611%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Planeaci&#243;n, se decidi&#243; que el monto a recibir por aportaciones
+						</p>
+						<p class="textItem " style="top:83.953787%;left:10.752688%;width:33.947773%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							durante el ejercicio 2014, es de 1,547 millones de pesos.
+						</p>
+						<p class="textItem " style="top:87.548139%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A la fecha el Fideicomiso tiene registradas m&#225;s de 100 obras y
+						</p>
+						<p class="textItem " style="top:89.345315%;left:10.752688%;width:35.330261%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acciones, en diversos sectores a lo largo de toda la entidad.
+						</p>
+						<p class="textItem " style="top:22.207959%;left:51.920123%;width:34.408602%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							7.1. Infraestructura y Obras P&#250;blicas
+						</p>
+						<p class="textItem " style="top:26.444159%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Secretar&#237;a de Infraestructura y Obras P&#250;blicas program&#243; ejercer
+						</p>
+						<p class="textItem " style="top:28.241335%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en el presente a&#241;o 1,145.3 millones de pesos en diversas obras,
+						</p>
+						<p class="textItem " style="top:30.038511%;left:51.920123%;width:13.824885%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							entre las que destacan:
+						</p>
+						<p class="textItem " style="top:33.632863%;left:54.685100%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem testString" style="top:33.632863%;left:54.070661%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:33.632863%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Construcci&#243;n de Distribuidor Vial La Boticaria, con una
+						</p>
+						<p class="textItem " style="top:35.430039%;left:55.606759%;width:21.351767%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							inversi&#243;n de 126 millones de pesos.
+						</p>
+						<p class="textItem " style="top:39.024390%;left:54.685100%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:39.024390%;left:54.070661%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:39.024390%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La autopista San Andr&#233;s Tuxtla-E.C. Autopista La Tinaja-
+						</p>
+						<p class="textItem " style="top:40.821566%;left:55.606759%;width:33.333333%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Cosoleacaque, por un total de 108.7 millones de pesos.
+						</p>
+						<p class="textItem " style="top:44.415918%;left:54.685100%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:44.415918%;left:54.070661%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:44.415918%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Programa de Pavimentaci&#243;n de Circuitos Tur&#237;sticos en
+						</p>
+						<p class="textItem " style="top:46.213094%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Concreto Hidr&#225;ulico, por un monto de 77.7 millones de
+						</p>
+						<p class="textItem " style="top:48.010270%;left:55.606759%;width:3.840246%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pesos.
+						</p>
+						<p class="textItem " style="top:51.604621%;left:54.685100%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:51.604621%;left:54.070661%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:51.604621%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Libramiento de Tlacotalpan, con una inversi&#243;n de 66.8
+						</p>
+						<p class="textItem " style="top:53.401797%;left:55.606759%;width:11.059908%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							millones de pesos.
+						</p>
+						<p class="textItem " style="top:56.996149%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estas obras tendr&#225;n complementos de inversi&#243;n en los a&#241;os
+						</p>
+						<p class="textItem " style="top:58.793325%;left:51.920123%;width:6.298003%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							siguientes.
+						</p>
+						<p class="textItem " style="top:62.387677%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Dentro de las obras urbanas orientadas a la celebraci&#243;n de los
+						</p>
+						<p class="textItem " style="top:64.184852%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							XXII Juegos Centroamericanos y del Caribe, destaca la elaboraci&#243;n
+						</p>
+						<p class="textItem " style="top:65.982028%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de proyectos ejecutivos para obras estrat&#233;gicas en zonas urbanas
+						</p>
+						<p class="textItem " style="top:67.779204%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que detonen el desarrollo regional y fomenten la integraci&#243;n de
+						</p>
+						<p class="textItem " style="top:69.576380%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							las zonas metropolitanas, por un monto programado de 14.3
+						</p>
+						<p class="textItem " style="top:71.373556%;left:51.920123%;width:11.059908%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							millones de pesos.
+						</p>
+						<p class="textItem " style="top:74.967908%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A la fecha se construye, con una inversi&#243;n programada de 5.9
+						</p>
+						<p class="textItem " style="top:76.765083%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							millones de pesos, el Boulevard Urbano 20 de Noviembre en el
+						</p>
+						<p class="textItem " style="top:78.562259%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ejido El &#205;dolo y la Antigua Carretera Nacional; y el Boulevard R&#237;o
+						</p>
+						<p class="textItem " style="top:80.359435%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Blanco-Ciudad Mendoza-Nogales con un monto previsto durante
+						</p>
+						<p class="textItem " style="top:82.156611%;left:51.920123%;width:23.963134%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							este ejercicio de 10.5 millones de pesos.
+						</p>
+						<p class="textItem " style="top:85.750963%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Respecto del Programa de Reencarpetamiento Carretero se
+						</p>
+						<p class="textItem " style="top:87.548139%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							continuar&#225; la ejecuci&#243;n de obras en la red carretera estatal por un
+						</p>
+						<p class="textItem " style="top:89.345315%;left:51.920123%;width:20.430108%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							monto de 29.8 millones de pesos.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-480.html">480</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-481.html">481</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-482.html">482</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-483.html">483</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-484.html">484</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-485.html">485</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-486.html">486</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-487.html">487</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-488.html">488</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-489.html">489</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-490.html">490</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-491.html">491</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

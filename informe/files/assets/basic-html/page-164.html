@@ -1,0 +1,488 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "164";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-163.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;164 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-165.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-163.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">164 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-165.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0164.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:18.356868%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Adicionalmente se recibieron y validaron 72 proyectos de
+						</p>
+						<p class="textItem " style="top:20.154044%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Infraestructura Hidr&#225;ulica de los municipios de Actopan, &#193;ngel R.
+						</p>
+						<p class="textItem " style="top:21.951220%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Cabada, Atzalan, Benito Ju&#225;rez, Camar&#243;n de Tejeda, Chinampa de
+						</p>
+						<p class="textItem " style="top:23.748395%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Gorostiza, Chontla, Coatzintla, Guti&#233;rrez Zamora, Hidalgotitl&#225;n,
+						</p>
+						<p class="textItem " style="top:25.545571%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ixhuatlancillo, Jalacingo, Lerdo de Tejada, Mart&#237;nez de la Torre,
+						</p>
+						<p class="textItem " style="top:27.342747%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Pajapan, Tampico Alto, Tantima, Tecolutla, Tihuatl&#225;n, Tlilapan,
+						</p>
+						<p class="textItem " style="top:29.139923%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Uxpanapa, Xalapa y Xico; de los cuales, 27 fueron aprobados
+						</p>
+						<p class="textItem " style="top:30.937099%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y validados de la siguiente manera: cuatro proyectos para la
+						</p>
+						<p class="textItem " style="top:32.734275%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							introducci&#243;n de agua potable; cuatro para plantas de tratamiento
+						</p>
+						<p class="textItem " style="top:34.531451%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de aguas residuales y 19 para alcantarillado sanitario. Quedaron 15
+						</p>
+						<p class="textItem " style="top:36.328626%;left:8.602151%;width:29.800307%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							proyectos en espera de cubrir pago de validaci&#243;n.
+						</p>
+						<p class="textItem " style="top:39.922978%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							De acuerdo con lo anterior, la obra ejercida por los municipios
+						</p>
+						<p class="textItem " style="top:41.720154%;left:8.602151%;width:32.718894%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							antes mencionados asciende a 83.8 millones de pesos.
+						</p>
+						<p class="textItem " style="top:45.186136%;left:8.602151%;width:37.173579%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							3.2.2. Organismos operadores de agua
+						</p>
+						<p class="textItem " style="top:49.422336%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Comisi&#243;n del Agua del Estado de Veracruz (CAEV), cuenta con
+						</p>
+						<p class="textItem " style="top:51.219512%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							70 oficinas operadoras, de las cuales cinco operan por gravedad
+						</p>
+						<p class="textItem " style="top:53.016688%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(Ixhuatl&#225;n del Caf&#233;, Juan D&#237;az Covarrubias, Hueyapan de Ocampo,
+						</p>
+						<p class="textItem " style="top:54.813864%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tlaltetela y Xico), las restantes cuentan con sistemas por bombeo
+						</p>
+						<p class="textItem " style="top:56.611040%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en las que se han aplicado acciones de mantenimiento preventivo
+						</p>
+						<p class="textItem " style="top:58.408216%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en equipos electromec&#225;nicos para agua potable, aguas residuales
+						</p>
+						<p class="textItem " style="top:60.205392%;left:8.602151%;width:10.445469%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y aguas pluviales.
+						</p>
+						<p class="textItem " style="top:63.799743%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Como parte del mantenimiento preventivo y correctivo en los
+						</p>
+						<p class="textItem " style="top:65.596919%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sistemas de bombeo de agua potable y saneamiento, se repararon
+						</p>
+						<p class="textItem " style="top:67.394095%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							212 bombas sumergibles de diferentes pozos profundos, galer&#237;as
+						</p>
+						<p class="textItem " style="top:69.191271%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							filtrantes, c&#225;rcamos de bombeo y plantas potabilizadoras; se
+						</p>
+						<p class="textItem " style="top:70.988447%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							repararon 30 cuerpos de tazones y 84 motores verticales; se dio
+						</p>
+						<p class="textItem " style="top:72.785623%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mantenimiento a 249 transformadores, arrancadores y otros
+						</p>
+						<p class="textItem " style="top:74.582798%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sistemas el&#233;ctricos; se repararon 308 fugas en acueductos y
+						</p>
+						<p class="textItem " style="top:76.379974%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							redes primarias; y siete rehabilitaciones en obras de captaci&#243;n de
+						</p>
+						<p class="textItem " style="top:78.177150%;left:8.602151%;width:22.273425%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							diferentes fuentes de abastecimiento.
+						</p>
+						<p class="textItem " style="top:81.771502%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tambi&#233;n, se realiz&#243; la limpieza y desazolve por medio de cuchareo,
+						</p>
+						<p class="textItem " style="top:83.568678%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							piston&#233;o y sifon&#233;o a 42 pozos profundos aplicando productos
+						</p>
+						<p class="textItem " style="top:85.365854%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							qu&#237;micos para la remoci&#243;n de arcilla y limpieza de material
+						</p>
+						<p class="textItem " style="top:18.356868%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							filtrante, as&#237; como para eliminar incrustaciones en los tubos de
+						</p>
+						<p class="textItem " style="top:20.154044%;left:49.769585%;width:31.029186%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acero ranurados, a ocho de estos se les realiz&#243; aforo
+						</p>
+						<p class="textItem " style="top:20.282413%;left:80.645161%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							14
+						</p>
+						<p class="textItem " style="top:20.154044%;left:81.566820%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							.
+						</p>
+						<p class="textItem " style="top:23.748395%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Es importante mencionar que para la atenci&#243;n de emergencias
+						</p>
+						<p class="textItem " style="top:25.545571%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							provocadas por los huracanes y lluvias at&#237;picas, se dio
+						</p>
+						<p class="textItem " style="top:27.342747%;left:49.769585%;width:35.944700%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mantenimiento a 40 bombas de achique de 6&#8221;, 4&#8221;, 3&#8221; y 2&#8221;.
+						</p>
+						<p class="textItem " style="top:30.937099%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se puso en marcha en las 70 oficinas operadoras el Programa de
+						</p>
+						<p class="textItem " style="top:32.734275%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Acciones Preventivas para realizar labores de limpieza y reparaci&#243;n
+						</p>
+						<p class="textItem " style="top:34.531451%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 122 sistemas de agua potable que resultaron da&#241;ados por
+						</p>
+						<p class="textItem " style="top:36.328626%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							las intensas lluvias, as&#237; como el Programa de apoyo para brindar
+						</p>
+						<p class="textItem " style="top:38.125802%;left:49.769585%;width:18.279570%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							atenci&#243;n a diversos municipios
+						</p>
+						<p class="textItem " style="top:38.254172%;left:68.049155%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							15
+						</p>
+						<p class="textItem " style="top:38.125802%;left:69.278034%;width:6.144393%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							afectados.
+						</p>
+						<p class="textItem " style="top:41.720154%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se dise&#241;&#243; un Programa Estrat&#233;gico de Acciones Preventivas para
+						</p>
+						<p class="textItem " style="top:43.517330%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							garantizar a la poblaci&#243;n el abastecimiento de agua durante
+						</p>
+						<p class="textItem " style="top:45.314506%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la temporada de estiaje, por lo que se realizaron dragados, se
+						</p>
+						<p class="textItem " style="top:47.111682%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							construyeron canales de llamada y muros falsos a base de costalillos
+						</p>
+						<p class="textItem " style="top:48.908858%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con arena apoy&#225;ndose con bombas de achique para bombear
+						</p>
+						<p class="textItem " style="top:50.706033%;left:49.769585%;width:16.282642%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							agua hacia las captaciones.
+						</p>
+						<p class="textItem " style="top:54.300385%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							De igual manera, se monitorearon los niveles din&#225;micos de pozos
+						</p>
+						<p class="textItem " style="top:56.097561%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							profundos y se mantuvieron brigadas realizando lecturas de voltaje
+						</p>
+						<p class="textItem " style="top:57.894737%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por las variaciones que se presentan por el alto consumo de la
+						</p>
+						<p class="textItem " style="top:59.691913%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							poblaci&#243;n. Con estas acciones se garantiz&#243; el suministro de agua
+						</p>
+						<p class="textItem " style="top:61.489089%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a los municipios de Agua Dulce, &#193;lamo Temapache, Alvarado,
+						</p>
+						<p class="textItem " style="top:63.286264%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Cazones, Chicontepec, Coatzintla, Cosoleacaque, El Higo, Jes&#250;s
+						</p>
+						<p class="textItem " style="top:65.083440%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Carranza, Las Choapas, Mart&#237;nez de la Torre, Nanchital, Naranjos,
+						</p>
+						<p class="textItem " style="top:66.880616%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							P&#225;nuco, Plat&#243;n S&#225;nchez, Playa Vicente, Poza Rica, Pueblo Viejo,
+						</p>
+						<p class="textItem " style="top:68.677792%;left:49.769585%;width:33.794163%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tantoyuca, Tempoal, Tepetzintla, Tihuatl&#225;n y Tlalixcoyan
+						</p>
+						<p class="textItem testString" style="top:68.677792%;left:83.410138%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>.</b>
+						</p>
+						<p class="textItem " style="top:72.272144%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con el programa permanente de recuperaci&#243;n de vol&#250;menes
+						</p>
+						<p class="textItem " style="top:74.069320%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de agua con equipos de tecnolog&#237;a (caudal&#237;metros ultras&#243;nicos
+						</p>
+						<p class="textItem " style="top:75.866496%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							port&#225;tiles), para la medici&#243;n de caudales aprovechados por los
+						</p>
+						<p class="textItem " style="top:77.663671%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sistemas de agua, equipos tricorreladores, correladores y ge&#243;fonos
+						</p>
+						<p class="textItem " style="top:79.460847%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para la localizaci&#243;n de fugas, se localizaron y repararon 242 fugas,
+						</p>
+						<p class="textItem " style="top:83.697047%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							14. Aforo: Medir en litros por segundo la producci&#243;n de agua de cada uno de los pozos durante
+						</p>
+						<p class="textItem " style="top:84.595635%;left:49.769585%;width:29.800307%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							72 horas continuas para dise&#241;ar la bomba adecuada que debe de usarse.
+						</p>
+						<p class="textItem " style="top:85.622593%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							15. Actopan, Agua Dulce, Alto Lucero, Alvarado, Banderilla, Cazones, Chiconquiaco, Camerino
+						</p>
+						<p class="textItem " style="top:86.521181%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Z. Mendoza, Coatzintla, Guti&#233;rrez Zamora, Huiloapan, Ixhuatl&#225;n del Caf&#233;, Juchique de Ferrer, La
+						</p>
+						<p class="textItem " style="top:87.419769%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Antigua, Las Choapas, Las Vigas, Mart&#237;nez de la Torre, Minatitl&#225;n, Misantla, Naranjos, Nogales,
+						</p>
+						<p class="textItem " style="top:88.318357%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Orizaba, P&#225;nuco, Paso del Macho, Plat&#243;n S&#225;nchez, Poza Rica, Puente Nacional, R&#237;o Blanco, San
+						</p>
+						<p class="textItem " style="top:89.216945%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Rafael, Tantoyuca, Tecolutla, Tempoal, Tlapacoyan, Tomatl&#225;n, Tuxpan, Vega de Alatorre, &#218;rsulo
+						</p>
+						<p class="textItem " style="top:90.243902%;left:49.769585%;width:37.019969%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Galv&#225;n, Xalapa, Zongolica, as&#237; como la zona conurbada de Veracruz-Boca del R&#237;o-Medell&#237;n.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-159.html">159</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-160.html">160</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-161.html">161</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-162.html">162</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-163.html">163</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-164.html">164</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-165.html">165</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-166.html">166</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-167.html">167</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-168.html">168</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-169.html">169</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-170.html">170</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,467 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "190";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-189.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;190 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-191.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-189.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">190 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-191.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0190.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:17.458280%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							jur&#237;dico familiar. En este rubro se realizaron 324 visitas domiciliarias
+						</p>
+						<p class="textItem " style="top:19.255456%;left:8.602151%;width:19.662058%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y 306 estudios socioecon&#243;micos.
+						</p>
+						<p class="textItem " style="top:22.849807%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se efectuaron 1,880 asesor&#237;as a responsables de procuradur&#237;as
+						</p>
+						<p class="textItem " style="top:24.646983%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipales auxiliares de distintos sistemas DIF municipales en la
+						</p>
+						<p class="textItem " style="top:26.444159%;left:8.602151%;width:5.069124%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Entidad.
+						</p>
+						<p class="textItem " style="top:29.910141%;left:8.602151%;width:17.357911%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							5.1.2. Adopciones
+						</p>
+						<p class="textItem " style="top:34.146341%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El DIF Estatal est&#225; a cargo de aspectos de gran sensibilidad para las
+						</p>
+						<p class="textItem " style="top:35.943517%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							familias veracruzanas, en ese sentido, privilegia el inter&#233;s superior de
+						</p>
+						<p class="textItem " style="top:37.740693%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							las ni&#241;as, ni&#241;os y adolescentes que tienen el derecho de contar con
+						</p>
+						<p class="textItem " style="top:39.537869%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							una familia, as&#237; como la importancia que guarda para las parejas,
+						</p>
+						<p class="textItem " style="top:41.335045%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la oportunidad de poder participar en los procesos de adopci&#243;n
+						</p>
+						<p class="textItem " style="top:43.132221%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que se realizan dentro del marco legal y la certidumbre moral que
+						</p>
+						<p class="textItem " style="top:44.929397%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							brinda este organismo. De esta manera se da cumplimiento a la
+						</p>
+						<p class="textItem " style="top:46.726573%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ley N&#250;mero 259 de Adopciones para el Estado de Veracruz de
+						</p>
+						<p class="textItem " style="top:48.523748%;left:8.602151%;width:21.812596%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ignacio de la Llave y su Reglamento.
+						</p>
+						<p class="textItem " style="top:52.118100%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para ejecutar estos procedimientos, el Consejo T&#233;cnico de
+						</p>
+						<p class="textItem " style="top:53.915276%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Adopciones act&#250;a con minuciosidad y ejerce los procesos
+						</p>
+						<p class="textItem " style="top:55.712452%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							administrativos y jur&#237;dicos necesarios para integrar de manera
+						</p>
+						<p class="textItem " style="top:57.509628%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#243;ptima, a un menor de edad a su nueva familia. Esto significa
+						</p>
+						<p class="textItem " style="top:59.306804%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							felicidad para la familia beneficiada y, sin duda alguna, una gran
+						</p>
+						<p class="textItem " style="top:61.103979%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							oportunidad de integraci&#243;n para el desarrollo del adoptado. Para
+						</p>
+						<p class="textItem " style="top:62.901155%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							tal efecto, el Consejo sesion&#243; en ocho ocasiones, cuatro de forma
+						</p>
+						<p class="textItem " style="top:64.698331%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ordinaria y cuatro m&#225;s de manera extraordinaria. Como resultado
+						</p>
+						<p class="textItem " style="top:66.495507%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de estas sesiones, se resolvi&#243; la asignaci&#243;n de 36 menores para
+						</p>
+						<p class="textItem " style="top:68.292683%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							adopci&#243;n, con la procuraci&#243;n plena del inter&#233;s superior de los
+						</p>
+						<p class="textItem " style="top:70.089859%;left:8.602151%;width:5.683564%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							menores.
+						</p>
+						<p class="textItem " style="top:73.684211%;left:8.602151%;width:26.728111%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En esta materia, a trav&#233;s del sitio en Internet
+						</p>
+						<a class="linkTextItem  " href="http://www.difver.gob.mx/adopcion/solicitudAdopcion.php" target="_blank"  style="top:73.684211%;left:35.330261%;width:12.749616%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;" title="">
+							 www.difver.gob.mx/
+						</a>
+						<a class="linkTextItem  " href="http://www.difver.gob.mx/adopcion/solicitudAdopcion.php" target="_blank"  style="top:75.481386%;left:8.602151%;width:19.815668%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;" title="">
+							adopcion/solicitudAdopcion.php
+						</a>
+						<p class="textItem " style="top:75.481386%;left:28.264209%;width:19.815668%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							, se contabilizaron 300 solicitudes
+						</p>
+						<p class="textItem " style="top:77.278562%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							virtuales, de las cuales 290 fueron de personas de nacionalidad
+						</p>
+						<p class="textItem " style="top:79.075738%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mexicana y 10 de nacionalidad extranjera. Cabe destacar que con
+						</p>
+						<p class="textItem " style="top:80.872914%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dicha solicitud se da inicio al tr&#225;mite de adopci&#243;n. Asimismo se
+						</p>
+						<p class="textItem " style="top:82.670090%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							impartieron cuatro Cursos-Taller para Padres por Adopci&#243;n, a los
+						</p>
+						<p class="textItem " style="top:84.467266%;left:8.602151%;width:17.050691%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que asistieron 200 personas.
+						</p>
+						<p class="textItem " style="top:88.061617%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Actualmente, dentro de la Ciudad Asistencial Conecalli, se tienen
+						</p>
+						<p class="textItem " style="top:89.858793%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							albergados a 35 menores con situaci&#243;n jur&#237;dica liberada, para ser
+						</p>
+						<p class="textItem " style="top:17.458280%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							propuestos y asignados por el Consejo T&#233;cnico para un nuevo
+						</p>
+						<p class="textItem " style="top:19.255456%;left:49.769585%;width:9.062980%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							n&#250;cleo familiar.
+						</p>
+						<p class="textItem " style="top:22.849807%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Cabe destacar que como resultado del expedito y transparente
+						</p>
+						<p class="textItem " style="top:24.646983%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							procedimiento establecido por la Ley de Adopciones, promulgada
+						</p>
+						<p class="textItem " style="top:26.444159%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en esta Administraci&#243;n, a la fecha han sido adoptados 140 menores
+						</p>
+						<p class="textItem " style="top:28.241335%;left:49.769585%;width:32.872504%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de edad que gozan de un ambiente familiar adecuado.
+						</p>
+						<p class="textItem " style="top:31.707317%;left:49.769585%;width:38.248848%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							5.1.3. Atenci&#243;n a poblaci&#243;n de menores
+						</p>
+						<p class="textItem " style="top:33.889602%;left:49.769585%;width:35.791091%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							y adolescentes en albergues y centros
+						</p>
+						<p class="textItem " style="top:36.200257%;left:49.769585%;width:30.261137%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							asistenciales p&#250;blicos y privados
+						</p>
+						<p class="textItem " style="top:40.436457%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En Veracruz existen 38 albergues p&#250;blicos y privados en donde se
+						</p>
+						<p class="textItem " style="top:42.233633%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							salvaguarda la integridad de los menores en situaci&#243;n de riesgo
+						</p>
+						<p class="textItem " style="top:44.030809%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							o abandono. Estos albergues son el aspecto visible del Programa
+						</p>
+						<p class="textItem " style="top:45.827985%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Sistema de Registro, Informaci&#243;n y Estad&#237;stica de Centros
+						</p>
+						<p class="textItem " style="top:47.625160%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Asistenciales en el Estado de Veracruz, por medio del cual se
+						</p>
+						<p class="textItem " style="top:49.422336%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							supervisa y da seguimiento a los pormenores jur&#237;dicos, m&#233;dicos y
+						</p>
+						<p class="textItem " style="top:51.219512%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							psicol&#243;gicos de los ni&#241;os, ni&#241;as y adolescentes que se encuentran
+						</p>
+						<p class="textItem " style="top:53.016688%;left:49.769585%;width:9.370200%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							bajo resguardo.
+						</p>
+						<p class="textItem " style="top:56.611040%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Este Programa act&#250;a bajo supervisi&#243;n del DIF Estatal y tiene
+						</p>
+						<p class="textItem " style="top:58.408216%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							como objetivo fundamental buscar la reintegraci&#243;n del infante en
+						</p>
+						<p class="textItem " style="top:60.205392%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							resguardo al seno familiar, o en su caso, la liberaci&#243;n de su situaci&#243;n
+						</p>
+						<p class="textItem " style="top:62.002567%;left:49.769585%;width:38.095238%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							jur&#237;dica para ser susceptibles de iniciar un proceso de adopci&#243;n.
+						</p>
+						<p class="textItem " style="top:65.596919%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							De los 38 albergues y centros asistenciales para menores de 18
+						</p>
+						<p class="textItem " style="top:67.394095%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a&#241;os, 25 son de car&#225;cter privado y 13 son de car&#225;cter p&#250;blico. En
+						</p>
+						<p class="textItem " style="top:69.191271%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							conjunto albergan una poblaci&#243;n de 613 menores (297 ni&#241;as y
+						</p>
+						<p class="textItem " style="top:70.988447%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							316 ni&#241;os). Asimismo, se reintegraron 120 menores y se realizaron
+						</p>
+						<p class="textItem " style="top:72.785623%;left:49.769585%;width:28.571429%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							75 visitas de supervisi&#243;n a Centros Asistenciales.
+						</p>
+						<p class="textItem " style="top:76.379974%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con el apoyo del Sistema DIF Nacional, el DlF Estatal se ha adherido
+						</p>
+						<p class="textItem " style="top:78.177150%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a la campa&#241;a nacional por una cultura de denuncia en favor de
+						</p>
+						<p class="textItem " style="top:79.974326%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la legalidad, con los lemas: &#161;Mu&#233;vete! y Denuncia el maltrato
+						</p>
+						<p class="textItem " style="top:81.771502%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							infantil. Esta campa&#241;a pretende garantizar el derecho de las ni&#241;as,
+						</p>
+						<p class="textItem " style="top:83.568678%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ni&#241;os y adolescentes a una vida libre de violencia, para favorecer
+						</p>
+						<p class="textItem " style="top:85.365854%;left:49.769585%;width:20.890937%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							favoreciendo su desarrollo integral.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-185.html">185</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-186.html">186</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-187.html">187</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-188.html">188</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-189.html">189</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-190.html">190</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-191.html">191</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-192.html">192</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-193.html">193</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-194.html">194</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-195.html">195</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-196.html">196</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

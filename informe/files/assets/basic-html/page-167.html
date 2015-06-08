@@ -1,0 +1,494 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "167";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-166.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;167 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-168.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-166.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">167 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-168.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0167.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:37.019969%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:43.471582%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:44.546851%;width:14.285714%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>D e s a r r o l l o S o c i a l</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:59.600614%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:60.675883%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>1 6 5</b>
+						</p>
+						<p class="textItem " style="top:18.356868%;left:10.752688%;width:8.448541%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							43 municipios
+						</p>
+						<p class="textItem " style="top:18.485237%;left:19.201229%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							18
+						</p>
+						<p class="textItem " style="top:18.356868%;left:20.583717%;width:29.800307%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con la finalidad de dar a conocer el cumplimiento
+						</p>
+						<p class="textItem " style="top:20.154044%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la normatividad en esta materia y la cual deber&#225;n aplicar en su
+						</p>
+						<p class="textItem " style="top:21.951220%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							territorio municipal, as&#237; como las implicaciones del mismo si se
+						</p>
+						<p class="textItem " style="top:23.748395%;left:10.752688%;width:36.405530%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							incumple con lo establecido en los instrumentos normativos.
+						</p>
+						<p class="textItem " style="top:27.342747%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Actualmente, el Estado se est&#225; integrando a las pol&#237;ticas p&#250;blicas
+						</p>
+						<p class="textItem " style="top:29.139923%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							federales en materia de desarrollo urbano, ordenamiento territorial
+						</p>
+						<p class="textItem " style="top:30.937099%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y vivienda, ya que con la publicaci&#243;n del Programa Sectorial de
+						</p>
+						<p class="textItem " style="top:32.734275%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Desarrollo Agrario, Territorial y Urbano 2013-2018 el Estado se
+						</p>
+						<p class="textItem " style="top:34.531451%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							integra a un proceso nacional de reforma en materia urbana,
+						</p>
+						<p class="textItem " style="top:36.328626%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							proceso necesario como estrategia de planeaci&#243;n, a trav&#233;s del cual
+						</p>
+						<p class="textItem " style="top:38.125802%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se pretende configurar a los centros de poblaci&#243;n, en el corto,
+						</p>
+						<p class="textItem " style="top:39.922978%;left:10.752688%;width:13.824885%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mediano y largo plazo.
+						</p>
+						<p class="textItem " style="top:43.517330%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En este mismo sentido y bajo acciones coordinadas en la
+						</p>
+						<p class="textItem " style="top:45.314506%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							elaboraci&#243;n, supervisi&#243;n y actualizaci&#243;n de los diferentes Programas
+						</p>
+						<p class="textItem " style="top:47.111682%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Desarrollo Urbano y Ordenamiento Territorial, se firmaron
+						</p>
+						<p class="textItem " style="top:48.908858%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							10 convenios de colaboraci&#243;n para elaborar los programas
+						</p>
+						<p class="textItem " style="top:50.706033%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							correspondientes a los municipios pertenecientes a las zonas
+						</p>
+						<p class="textItem " style="top:52.503209%;left:10.752688%;width:37.173579%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							conurbadas de Minatitl&#225;n-Cosoleacaque y Poza Rica-Papantla.
+						</p>
+						<p class="textItem " style="top:56.097561%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Actualmente, se encuentran en proceso de validaci&#243;n dos
+						</p>
+						<p class="textItem " style="top:57.894737%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							programas regionales municipales para su publicaci&#243;n en Gaceta
+						</p>
+						<p class="textItem " style="top:59.691913%;left:10.752688%;width:4.301075%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Oficial:
+						</p>
+						<p class="textItem " style="top:63.286264%;left:12.903226%;width:37.327189%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							1) El Programa Especial de Ordenamiento Territorial y
+						</p>
+						<p class="textItem " style="top:65.083440%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Desarrollo Regional de los municipios de Guti&#233;rrez Zamora,
+						</p>
+						<p class="textItem " style="top:66.880616%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Nautla, San Rafael y Tecolutla, en el cual se beneficiar&#225;n
+						</p>
+						<p class="textItem " style="top:68.677792%;left:14.439324%;width:11.367127%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							88,730 habitantes.
+						</p>
+						<p class="textItem " style="top:72.272144%;left:12.903226%;width:37.327189%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							2) El Programa de Ordenamiento para el Desarrollo Sustentable
+						</p>
+						<p class="textItem " style="top:74.069320%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Corredor Tur&#237;stico Actopan, La Antigua, Paso de Ovejas,
+						</p>
+						<p class="textItem " style="top:75.866496%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Puente Nacional y &#218;rsulo Galv&#225;n, el cual beneficiar&#225; a
+						</p>
+						<p class="textItem " style="top:77.663671%;left:14.439324%;width:12.135177%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							149,678 habitantes.
+						</p>
+						<p class="textItem " style="top:85.622593%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							18. Actopan, Acultinzo, Alto Lucero, Aquila, Atzacan, Calcahualco, Camerino Z. Mendoza,
+						</p>
+						<p class="textItem " style="top:86.521181%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Chocam&#225;n, Coatepec, Comapa, C&#243;rdoba, Emiliano Zapata, Fort&#237;n, Huiloapan, Ixhuatl&#225;n del
+						</p>
+						<p class="textItem " style="top:87.419769%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Caf&#233;, Ixhuatlancillo, Ixtaczoquitl&#225;n, La Perla, Lerdo de Tejada, Mariano Escobedo, Mart&#237;nez de la
+						</p>
+						<p class="textItem " style="top:88.318357%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Torre, Minatitl&#225;n, Naolinco, Nogales, Orizaba, Puente Nacional, Poza Rica, Rafael Delgado, Rafael
+						</p>
+						<p class="textItem " style="top:89.216945%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Lucio, R&#237;o Blanco, Tepatlaxco, Tepetl&#225;n, Tenochtitl&#225;n, Tlilapan, Tlacotepec, Tlaltetela, Tonay&#225;n,
+						</p>
+						<p class="textItem " style="top:90.243902%;left:10.752688%;width:24.116743%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Tomatl&#225;n, Totutla, &#218;rsulo Galv&#225;n, Xico, Zentla y Zongolica.
+						</p>
+						<p class="textItem " style="top:18.356868%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tambi&#233;n, se realiz&#243; la supervisi&#243;n, validaci&#243;n y publicaci&#243;n de dos
+						</p>
+						<p class="textItem " style="top:20.154044%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							programas de desarrollo urbano, uno a escala parcial y de centro
+						</p>
+						<p class="textItem " style="top:21.951220%;left:51.920123%;width:8.294931%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de poblaci&#243;n:
+						</p>
+						<p class="textItem " style="top:25.545571%;left:54.070661%;width:37.327189%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							1) Programa Parcial de Desarrollo Urbano del Sector Norte
+						</p>
+						<p class="textItem " style="top:27.342747%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Centro de Poblaci&#243;n de Ixtaczoquitl&#225;n, publicado
+						</p>
+						<p class="textItem " style="top:29.139923%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en la Gaceta Oficial N&#250;mero Extraordinario 348 el 5 de
+						</p>
+						<p class="textItem " style="top:30.937099%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							septiembre de 2013, el cual otorga la certeza necesaria en
+						</p>
+						<p class="textItem " style="top:32.734275%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							materia de usos de suelo, con este programa se beneficia a
+						</p>
+						<p class="textItem " style="top:34.531451%;left:55.606759%;width:11.367127%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							15,552 habitantes.
+						</p>
+						<p class="textItem " style="top:38.125802%;left:54.070661%;width:37.327189%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							2) Programa de Desarrollo Urbano de Centro de Poblaci&#243;n
+						</p>
+						<p class="textItem " style="top:39.922978%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del municipio de Coscomatepec, publicado en la Gaceta
+						</p>
+						<p class="textItem " style="top:41.720154%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Oficial N&#250;mero Extraordinario 32, el 22 de enero de 2014.
+						</p>
+						<p class="textItem " style="top:43.517330%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Este instrumento determina los usos compatibles y prev&#233; la
+						</p>
+						<p class="textItem " style="top:45.314506%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dotaci&#243;n de servicios b&#225;sicos, al garantizar jur&#237;dicamente el
+						</p>
+						<p class="textItem " style="top:47.111682%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							espacio destinado a absorber el crecimiento de la mancha
+						</p>
+						<p class="textItem " style="top:48.908858%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							urbana bajo un esquema de ordenamiento; con este
+						</p>
+						<p class="textItem " style="top:50.706033%;left:55.606759%;width:25.960061%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							programa se beneficia a 15,552 habitantes.
+						</p>
+						<p class="textItem " style="top:54.300385%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A trav&#233;s del Registro Estatal de Informaci&#243;n Urbana y Vivienda, se
+						</p>
+						<p class="textItem " style="top:56.097561%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							atendieron 72 solicitudes de Programas de Desarrollo Urbano y
+						</p>
+						<p class="textItem " style="top:57.894737%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ordenamiento Territorial, a los cuales se dio respuesta en formato
+						</p>
+						<p class="textItem " style="top:59.691913%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							digital y con opci&#243;n de consulta electr&#243;nica abierta al p&#250;blico,
+						</p>
+						<p class="textItem " style="top:61.489089%;left:51.920123%;width:24.577573%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mediante la consulta del sitio en Internet
+						</p>
+						<a class="linkTextItem  " href="http://www.dgduot.gob.mx/" target="_blank"  style="top:61.489089%;left:76.497696%;width:13.517665%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;" title="">
+							 www.dgduot.gob.mx
+						</a>
+						<p class="textItem " style="top:61.489089%;left:89.861751%;width:1.536098%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							. Y
+						</p>
+						<p class="textItem " style="top:63.286264%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se brind&#243; atenci&#243;n oportuna a las unidades de Catastro, Desarrollo
+						</p>
+						<p class="textItem " style="top:65.083440%;left:51.920123%;width:29.032258%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Urbano y Obras P&#250;blicas de diversos municipios.
+						</p>
+						<p class="textItem " style="top:68.677792%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se recibieron en ventanilla 215 solicitudes de tr&#225;mites en materia
+						</p>
+						<p class="textItem " style="top:70.474968%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							urbana, de las cuales se emitieron 30 constancias de zonificaci&#243;n,
+						</p>
+						<p class="textItem " style="top:72.272144%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							38 licencias de uso de suelo, ocho publicaciones, seis proyectos
+						</p>
+						<p class="textItem " style="top:74.069320%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de lotificaci&#243;n, seis relotificaciones de proyecto, 26 solicitudes
+						</p>
+						<p class="textItem " style="top:75.866496%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de r&#233;gimen de propiedad en condominio, dos solicitudes de
+						</p>
+						<p class="textItem " style="top:77.663671%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							subdivisiones de predios, cuatro dict&#225;menes t&#233;cnico legal, siete
+						</p>
+						<p class="textItem " style="top:79.460847%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							montos de fianza, cuatro de inicio de obra, seis solicitudes para
+						</p>
+						<p class="textItem " style="top:81.258023%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							certificaci&#243;n de documentos y planos y 36 oficios de requisitos de
+						</p>
+						<p class="textItem " style="top:83.055199%;left:51.920123%;width:19.969278%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							documentaci&#243;n complementaria.
+						</p>
+						<p class="textItem " style="top:86.649551%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tambi&#233;n se recibieron 42 solicitudes referentes a traslados de
+						</p>
+						<p class="textItem " style="top:88.446727%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dominio parcial o final, para autorizar 1,736 lotes en los que se
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-162.html">162</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-163.html">163</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-164.html">164</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-165.html">165</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-166.html">166</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-167.html">167</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-168.html">168</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-169.html">169</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-170.html">170</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-171.html">171</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-172.html">172</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-173.html">173</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

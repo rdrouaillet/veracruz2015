@@ -1,0 +1,470 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "307";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-306.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;307 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-308.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-306.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">307 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-308.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0307.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:38.248848%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:44.700461%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:45.775730%;width:11.827957%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>M e d i o A m b i e n t e</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:58.371736%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:59.447005%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>3 0 5</b>
+						</p>
+						<p class="textItem " style="top:17.458280%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la diversificaci&#243;n productiva y el desarrollo comunitario con una
+						</p>
+						<p class="textItem " style="top:19.255456%;left:10.752688%;width:23.348694%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							visi&#243;n de manejo integrado de cuenca.
+						</p>
+						<p class="textItem " style="top:22.849807%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La convocatoria FAV 2013 recibi&#243; 135 propuestas en materia de
+						</p>
+						<p class="textItem " style="top:24.646983%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							conservaci&#243;n, restauraci&#243;n, reconversi&#243;n productiva y desarrollo
+						</p>
+						<p class="textItem " style="top:26.444159%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							comunitario, con una demanda de recursos por m&#225;s de 60 millones
+						</p>
+						<p class="textItem " style="top:28.241335%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de pesos. Los proyectos fueron presentados por organizaciones de
+						</p>
+						<p class="textItem " style="top:30.038511%;left:10.752688%;width:31.950845%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la sociedad constituidas legalmente sin fines de lucro.
+						</p>
+						<p class="textItem " style="top:33.632863%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Dichos proyectos fueron evaluados por analistas expertos en la
+						</p>
+						<p class="textItem " style="top:35.430039%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							materia, mediante un proceso de selecci&#243;n confiable, transparente
+						</p>
+						<p class="textItem " style="top:37.227214%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y sistem&#225;tico, en el cual se revis&#243; el cumplimiento de los t&#233;rminos
+						</p>
+						<p class="textItem " style="top:39.024390%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							establecidos en la convocatoria y las Reglas de Operaci&#243;n del
+						</p>
+						<p class="textItem " style="top:40.821566%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Fideicomiso; la viabilidad t&#233;cnica y financiera, as&#237; como el impacto
+						</p>
+						<p class="textItem " style="top:42.618742%;left:10.752688%;width:21.812596%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ambiental y social de las propuestas.
+						</p>
+						<p class="textItem " style="top:46.213094%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En la primera sesi&#243;n ordinaria del Comit&#233; T&#233;cnico 2014, realizada
+						</p>
+						<p class="textItem " style="top:48.010270%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el 23 de mayo, se autoriz&#243; el financiamiento de los 30 proyectos
+						</p>
+						<p class="textItem " style="top:49.807445%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que obtuvieron las mayores calificaciones, por un monto de 10.8
+						</p>
+						<p class="textItem " style="top:51.604621%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							millones de pesos, en beneficio de ocho cuencas del Estado:
+						</p>
+						<p class="textItem " style="top:53.401797%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Cazones, Coatzacoalcos, Jamapa, Nautla, P&#225;nuco, Papaloapan,
+						</p>
+						<p class="textItem " style="top:55.198973%;left:10.752688%;width:11.674347%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tecolutla y Tuxpan.
+						</p>
+						<p class="textItem " style="top:58.793325%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El 5 de junio en el marco de la celebraci&#243;n del D&#237;a Mundial del
+						</p>
+						<p class="textItem " style="top:60.590501%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Medio Ambiente 2014, se entreg&#243; 40 por ciento del monto
+						</p>
+						<p class="textItem " style="top:62.387677%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							total solicitado para cada proyecto, de acuerdo al convenio de
+						</p>
+						<p class="textItem " style="top:64.184852%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							concertaci&#243;n correspondiente a cada organizaci&#243;n de la sociedad
+						</p>
+						<p class="textItem " style="top:65.982028%;left:10.752688%;width:2.764977%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							civil.
+						</p>
+						<p class="textItem " style="top:69.576380%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estos proyectos apoyan la generaci&#243;n de empleo a nivel local, al
+						</p>
+						<p class="textItem " style="top:71.373556%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							involucrar a los miembros de las comunidades en el desarrollo de
+						</p>
+						<p class="textItem " style="top:73.170732%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							las actividades de los mismos, y la recepci&#243;n de una remuneraci&#243;n
+						</p>
+						<p class="textItem " style="top:74.967908%;left:10.752688%;width:36.251920%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							econ&#243;mica mediante el pago de jornales y empleos directos.
+						</p>
+						<p class="textItem " style="top:78.562259%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El FAV imparti&#243; tres talleres de capacitaci&#243;n en los municipios
+						</p>
+						<p class="textItem " style="top:80.359435%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Catemaco y Xalapa, a los que asistieron 67 personas. Estos
+						</p>
+						<p class="textItem " style="top:82.156611%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							talleres est&#225;n enfocados a fortalecer las capacidades internas de
+						</p>
+						<p class="textItem " style="top:83.953787%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							las organizaciones financiadas, en aspectos que van desde la
+						</p>
+						<p class="textItem " style="top:85.750963%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							elaboraci&#243;n de reportes t&#233;cnicos y administrativos de avances de
+						</p>
+						<p class="textItem " style="top:87.548139%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los proyectos; as&#237; como a integrar los resultados generados por los
+						</p>
+						<p class="textItem " style="top:89.345315%;left:10.752688%;width:5.069124%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mismos.
+						</p>
+						<p class="textItem " style="top:17.458280%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A partir de la revisi&#243;n y seguimiento de los avances de los proyectos
+						</p>
+						<p class="textItem " style="top:19.255456%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en su primer periodo de actividades y con base en su desempe&#241;o,
+						</p>
+						<p class="textItem " style="top:21.052632%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en octubre y noviembre el FAV realiz&#243; la segunda ministraci&#243;n de
+						</p>
+						<p class="textItem " style="top:22.849807%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							recursos, que corresponde a 30 por ciento del monto total de cada
+						</p>
+						<p class="textItem " style="top:24.646983%;left:51.920123%;width:5.837174%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							proyecto.
+						</p>
+						<p class="textItem testString" style="top:27.727856%;left:51.920123%;width:34.408602%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							10. Otros programas y
+						</p>
+						<p class="textItem " style="top:30.423620%;left:51.920123%;width:30.107527%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							acciones relevantes
+						</p>
+						<p class="textItem " style="top:36.200257%;left:51.920123%;width:37.480799%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							10. 1. Medio ambiente con perspectiva
+						</p>
+						<p class="textItem " style="top:38.382542%;left:51.920123%;width:9.831029%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							de g&#233;nero
+						</p>
+						<p class="textItem " style="top:42.618742%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con relaci&#243;n a las pol&#237;ticas transversales y criterios del Plan
+						</p>
+						<p class="textItem " style="top:44.415918%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruzano de Desarrollo 2011-2016, se efectuaron actividades
+						</p>
+						<p class="textItem " style="top:46.213094%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en favor de la equidad de g&#233;nero, en coordinaci&#243;n con entidades
+						</p>
+						<p class="textItem " style="top:48.010270%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							gubernamentales y la sociedad. Asimismo se cre&#243; la Unidad de
+						</p>
+						<p class="textItem " style="top:49.807445%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							G&#233;nero, integrada por personal de la Secretar&#237;a, que tendr&#225; como
+						</p>
+						<p class="textItem " style="top:51.604621%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							objetivo primordial replicar la preparaci&#243;n adoptada y la inclusi&#243;n
+						</p>
+						<p class="textItem " style="top:53.401797%;left:51.920123%;width:31.950845%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							e impulso a las actividades fruct&#237;feras para este sector.
+						</p>
+						<p class="textItem " style="top:56.996149%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Este a&#241;o, enmateria de capacitaci&#243;n se atendieron, en coordinaci&#243;n
+						</p>
+						<p class="textItem " style="top:58.793325%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con el Instituto Veracruzano de las Mujeres (IVM) a 30 personas
+						</p>
+						<p class="textItem " style="top:60.590501%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la SEDEMA mediante el curso Equidad de G&#233;nero: Conceptos
+						</p>
+						<p class="textItem " style="top:62.387677%;left:51.920123%;width:12.596006%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							B&#225;sicos y Legislaci&#243;n.
+						</p>
+						<p class="textItem " style="top:65.982028%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En coordinaci&#243;n con la Oficina de Ciudadan&#237;a, Educaci&#243;n y
+						</p>
+						<p class="textItem " style="top:67.779204%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Pol&#237;ticas P&#250;blicas del Instituto Veracruzano de las Mujeres, se
+						</p>
+						<p class="textItem " style="top:69.576380%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estructur&#243; el Programa de Formaci&#243;n para Equipos Replicadores
+						</p>
+						<p class="textItem " style="top:71.373556%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y &#193;reas de Capacitaci&#243;n de la Administraci&#243;n P&#250;blica Estatal, el
+						</p>
+						<p class="textItem " style="top:73.170732%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cual fue dirigido a los enlaces de g&#233;nero de las dependencias y
+						</p>
+						<p class="textItem " style="top:74.967908%;left:51.920123%;width:28.571429%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							entidades. En este sentido, se realizaron talleres.
+						</p>
+						<p class="textItem " style="top:78.562259%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se realiz&#243; el taller Comunicaci&#243;n Incluyente para personal de la
+						</p>
+						<p class="textItem " style="top:80.359435%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							SEDEMA, con el objetivo de promover un lenguaje incluyente en la
+						</p>
+						<p class="textItem " style="top:82.156611%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Administraci&#243;n P&#250;blica Estatal, con una alternativa de uso correcto
+						</p>
+						<p class="textItem " style="top:83.953787%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del lenguaje en la redacci&#243;n de documentos, oficios, informes,
+						</p>
+						<p class="textItem " style="top:85.750963%;left:51.920123%;width:34.101382%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							circulares, convocatorias, carteles y materiales did&#225;cticos.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-302.html">302</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-303.html">303</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-304.html">304</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-305.html">305</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-306.html">306</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-307.html">307</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-308.html">308</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-309.html">309</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-310.html">310</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-311.html">311</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-312.html">312</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-313.html">313</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

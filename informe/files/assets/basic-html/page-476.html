@@ -1,0 +1,470 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "476";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-475.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;476 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-477.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-475.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">476 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-477.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0476.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:18.356868%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En este a&#241;o se adquirieron en favor del Gobierno del Estado cinco
+						</p>
+						<p class="textItem " style="top:20.154044%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							predios ubicados en los municipios de Veracruz, Ixtaczoquitl&#225;n,
+						</p>
+						<p class="textItem " style="top:21.951220%;left:8.602151%;width:8.602151%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Xalapa y Xico.
+						</p>
+						<p class="textItem " style="top:25.545571%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El inventario de bienes inmuebles de propiedad y en posesi&#243;n del
+						</p>
+						<p class="textItem " style="top:27.342747%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Gobierno del Estado asciende a 29,941, la mayor&#237;a de ellos con su
+						</p>
+						<p class="textItem " style="top:29.139923%;left:8.602151%;width:26.728111%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							expediente integrado en el sector educativo.
+						</p>
+						<p class="textItem testString" style="top:32.220796%;left:8.602151%;width:32.411674%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							4. Modernizaci&#243;n del
+						</p>
+						<p class="textItem " style="top:34.916560%;left:8.602151%;width:28.110599%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							Sistema Estatal de
+						</p>
+						<p class="textItem " style="top:37.612323%;left:8.602151%;width:17.204301%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							Planeaci&#243;n
+						</p>
+						<p class="textItem " style="top:43.388960%;left:8.602151%;width:36.866359%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							4.1. Mecanismos de financiamiento de
+						</p>
+						<p class="textItem " style="top:45.571245%;left:8.602151%;width:23.195084%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							programas de desarrollo
+						</p>
+						<p class="textItem " style="top:49.679076%;left:8.602151%;width:24.884793%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							4.1.1. FIDESUR y FONSUR
+						</p>
+						<p class="textItem " style="top:53.915276%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En representaci&#243;n del Gobierno de Veracruz ante el Comit&#233; T&#233;cnico
+						</p>
+						<p class="textItem " style="top:55.712452%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Fideicomiso 2050 para el Desarrollo Regional del Sur-Sureste
+						</p>
+						<p class="textItem " style="top:57.509628%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(FIDESUR), se particip&#243; en las cuatro sesiones ordinarias y las dos
+						</p>
+						<p class="textItem " style="top:59.306804%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							extraordinarias celebradas en el ejercicio 2014. En ellas se aprobaron
+						</p>
+						<p class="textItem " style="top:61.103979%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acuerdos y resultados, los cuales se destacan a continuaci&#243;n: 1)
+						</p>
+						<p class="textItem " style="top:62.901155%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La aprobaci&#243;n de la propuesta Estrategia de Desarrollo Regional
+						</p>
+						<p class="textItem " style="top:64.698331%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para el Sur Sureste, como base para el Programa Regional del Sur
+						</p>
+						<p class="textItem " style="top:66.495507%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Sureste 2014-2018; 2) La elaboraci&#243;n del documento de an&#225;lisis
+						</p>
+						<p class="textItem " style="top:68.292683%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en el que se determinan los efectos diferenciados de programas
+						</p>
+						<p class="textItem " style="top:70.089859%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							federales en la regi&#243;n, con el objeto de distinguir entre los que
+						</p>
+						<p class="textItem " style="top:71.887035%;left:8.602151%;width:19.969278%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							tienen efecto positivo o negativo.
+						</p>
+						<p class="textItem " style="top:71.887035%;left:28.571429%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							41
+						</p>
+						<p class="textItem " style="top:75.481386%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Como resultado de las gestiones ante el Congreso de la Uni&#243;n,
+						</p>
+						<p class="textItem " style="top:77.278562%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en el Presupuesto de Egresos de la Federaci&#243;n 2014 se formaliz&#243;
+						</p>
+						<p class="textItem " style="top:79.075738%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la creaci&#243;n del Fondo del Sur Sureste (FONSUR), al cual se le
+						</p>
+						<p class="textItem " style="top:80.872914%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							asignaron 500millones de pesos para sufragar, total o parcialmente,
+						</p>
+						<p class="textItem " style="top:82.670090%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la elaboraci&#243;n de estudios, programas y proyectos de inversi&#243;n
+						</p>
+						<p class="textItem " style="top:84.467266%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en infraestructura y equipamiento para dicha regi&#243;n. De esos
+						</p>
+						<p class="textItem " style="top:86.264442%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							recursos a Veracruz se le asignaron 55 millones de pesos para la
+						</p>
+						<p class="textItem " style="top:88.318357%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							41. El FIDESUR es un &#243;rgano consultivo y de decisi&#243;n en materia de desarrollo regional que agrupa
+						</p>
+						<p class="textItem " style="top:89.216945%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							a las siguientes entidades federativas: Campeche, Chiapas, Guerrero, Oaxaca, Puebla, Quintana
+						</p>
+						<p class="textItem " style="top:90.243902%;left:8.602151%;width:13.824885%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Roo, Tabasco, Yucat&#225;n y Veracruz.
+						</p>
+						<p class="textItem " style="top:18.356868%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							realizaci&#243;n de cuatro estudios de diagn&#243;stico y planteamiento de
+						</p>
+						<p class="textItem " style="top:20.154044%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estrategias de desarrollo de la industria de los servicios portuarios
+						</p>
+						<p class="textItem " style="top:21.951220%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y comerciales y para la gesti&#243;n de recursos hidr&#225;ulicos, un estudio
+						</p>
+						<p class="textItem " style="top:23.748395%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de an&#225;lisis costo-beneficio, dos estudios de pre-inversi&#243;n para la
+						</p>
+						<p class="textItem " style="top:25.545571%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							construcci&#243;n de libramientos y un estudio de pre-inversi&#243;n para
+						</p>
+						<p class="textItem " style="top:27.342747%;left:49.769585%;width:33.640553%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							desarrollar la industria energ&#233;tica de la regi&#243;n del Istmo.
+						</p>
+						<p class="textItem " style="top:30.808729%;left:49.769585%;width:26.574501%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							4.1.2. Fondo Metropolitano
+						</p>
+						<p class="textItem " style="top:35.044929%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La planeaci&#243;n del desarrollo es una acci&#243;n continua mediante
+						</p>
+						<p class="textItem " style="top:36.842105%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la cual los tres &#243;rdenes de Gobierno afrontan el reto de la
+						</p>
+						<p class="textItem " style="top:38.639281%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							metropolizaci&#243;n de los asentamientos y los desequilibrios
+						</p>
+						<p class="textItem " style="top:40.436457%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							interregionales que se generan. Para ello se instal&#243; el Consejo para
+						</p>
+						<p class="textItem " style="top:42.233633%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el Desarrollo Metropolitano del Estado de Veracruz presidido por
+						</p>
+						<p class="textItem " style="top:44.030809%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el Gobernador del Estado, cuyo vocal es el titular de SEFIPLAN. En
+						</p>
+						<p class="textItem " style="top:45.827985%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							este &#243;rgano regulador se definieron los criterios para la alineaci&#243;n
+						</p>
+						<p class="textItem " style="top:47.625160%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de los programas de desarrollo de las Zonas Metropolitanas del
+						</p>
+						<p class="textItem " style="top:49.422336%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estado, con el PVD y con el Plan Nacional de Desarrollo 2013-
+						</p>
+						<p class="textItem " style="top:51.219512%;left:49.769585%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							2018.
+						</p>
+						<p class="textItem " style="top:54.813864%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A efecto de cumplir con el ordenamiento de que los recursos
+						</p>
+						<p class="textItem " style="top:56.611040%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							federales aplicados para el desarrollo metropolitano se ejerzan
+						</p>
+						<p class="textItem " style="top:58.408216%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a trav&#233;s de fondos concursables, se mantuvieron en funciones
+						</p>
+						<p class="textItem " style="top:60.205392%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cuatro fideicomisos p&#250;blicos de administraci&#243;n e inversi&#243;n, cada
+						</p>
+						<p class="textItem " style="top:62.002567%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							uno con su correspondiente comit&#233; t&#233;cnico, los cuales autorizan el
+						</p>
+						<p class="textItem " style="top:63.799743%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ejercicio de los recursos y dan seguimiento f&#237;sico y financiero de los
+						</p>
+						<p class="textItem " style="top:65.596919%;left:49.769585%;width:13.056836%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							proyectos aprobados.
+						</p>
+						<p class="textItem " style="top:69.191271%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El primero de esos fideicomisos administra los recursos del Fondo
+						</p>
+						<p class="textItem " style="top:70.988447%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la Zona Metropolitana de Veracruz (FONMETROV) por 58.1
+						</p>
+						<p class="textItem " style="top:72.785623%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							millones de pesos, autorizados en 2014, con los cuales se ejecutar&#225;n
+						</p>
+						<p class="textItem " style="top:74.582798%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acciones en los municipios de Boca del R&#237;o y Veracruz. El segundo
+						</p>
+						<p class="textItem " style="top:76.379974%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							gestiona el Fondo Metropolitano de Xalapa (FONMETROX), con
+						</p>
+						<p class="textItem " style="top:78.177150%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							un monto autorizado en el a&#241;o 2014, de 23.1 millones de pesos
+						</p>
+						<p class="textItem " style="top:79.974326%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con los cuales se realizar&#225;n acciones en los municipios Banderilla,
+						</p>
+						<p class="textItem " style="top:81.771502%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Emiliano Zapata, Jilotepec, Rafael Lucio, Tlalnelhuayocan y Xalapa.
+						</p>
+						<p class="textItem " style="top:83.568678%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Fondo Metropolitano de Coatzacoalcos (FONMETROC), con
+						</p>
+						<p class="textItem " style="top:85.365854%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							46.3 millones de pesos autorizados en el ejercicio 2014, beneficia a
+						</p>
+						<p class="textItem " style="top:87.163030%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los municipios de Coatzacoalcos, Ixhuatl&#225;n del Sureste y Nanchital
+						</p>
+						<p class="textItem " style="top:88.960205%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con acciones metropolitanas. Al final, el Fondo Metropolitano de
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-471.html">471</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-472.html">472</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-473.html">473</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-474.html">474</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-475.html">475</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-476.html">476</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-477.html">477</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-478.html">478</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-479.html">479</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-480.html">480</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-481.html">481</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-482.html">482</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

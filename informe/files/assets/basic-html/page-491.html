@@ -1,0 +1,533 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "491";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-490.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;491 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-492.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-490.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">491 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-492.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0491.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:39.477727%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:45.775730%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:46.850998%;width:9.523810%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>C o n t r a l o r &#237; a</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:57.296467%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:58.371736%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>4 8 9</b>
+						</p>
+						<p class="textItem " style="top:11.938383%;left:10.752688%;width:27.188940%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.2. Consejo Veracruzano de
+						</p>
+						<p class="textItem " style="top:14.120668%;left:10.752688%;width:31.643625%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							Armonizaci&#243;n Contable (COVAC)
+						</p>
+						<p class="textItem " style="top:18.356868%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Consejo Veracruzano de Armonizaci&#243;n Contable es el
+						</p>
+						<p class="textItem " style="top:20.154044%;left:10.752688%;width:10.906298%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#243;rgano colegiado
+						</p>
+						<p class="textItem " style="top:20.282413%;left:21.658986%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							1
+						</p>
+						<p class="textItem " style="top:20.154044%;left:22.427035%;width:27.803379%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							responsable de poner en funcionamiento la
+						</p>
+						<p class="textItem " style="top:21.951220%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							normatividad y acuerdos que apruebe y emita el Consejo Nacional
+						</p>
+						<p class="textItem " style="top:23.748395%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Armonizaci&#243;n Contable (CONAC), en los entes p&#250;blicos del
+						</p>
+						<p class="textItem " style="top:25.545571%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estado de Veracruz, la Contralor&#237;a en el periodo de diciembre
+						</p>
+						<p class="textItem " style="top:27.342747%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							2013 a mayo 2014, funge como Secretar&#237;a Ejecutiva, a la fecha ha
+						</p>
+						<p class="textItem " style="top:29.139923%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							realizado dos sesiones ordinarias en las que destacan los siguientes
+						</p>
+						<p class="textItem " style="top:30.937099%;left:10.752688%;width:5.837174%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acuerdos:
+						</p>
+						<p class="textItem " style="top:34.531451%;left:13.517665%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem testString" style="top:34.531451%;left:12.903226%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:34.531451%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con el objeto de dar cumplimiento a los art&#237;culos 7 y 15
+						</p>
+						<p class="textItem " style="top:36.328626%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la Ley General de Contabilidad Gubernamental, se
+						</p>
+						<p class="textItem " style="top:38.125802%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							han publicado los acuerdos y las normas que ha emitido
+						</p>
+						<p class="textItem " style="top:39.922978%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el Consejo Nacional de Armonizaci&#243;n Contable, de igual
+						</p>
+						<p class="textItem " style="top:41.720154%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							manera se actualiz&#243; la p&#225;gina web del COVAC con una
+						</p>
+						<p class="textItem " style="top:43.517330%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cronolog&#237;a de todas las publicaciones, tanto del Diario Oficial
+						</p>
+						<p class="textItem " style="top:45.314506%;left:14.439324%;width:32.565284%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la Federaci&#243;n como de la Gaceta Oficial del Estado.
+						</p>
+						<p class="textItem " style="top:48.908858%;left:13.517665%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:48.908858%;left:12.903226%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:48.908858%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El ORFIS en coordinaci&#243;n con la Secretar&#237;a de Fiscalizaci&#243;n
+						</p>
+						<p class="textItem " style="top:50.706033%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y Secretar&#237;a de Finanzas y Planeaci&#243;n, se comprometieron a
+						</p>
+						<p class="textItem " style="top:52.503209%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							realizar un registro contable para los municipios del Estado,
+						</p>
+						<p class="textItem " style="top:54.300385%;left:14.439324%;width:33.486943%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para contribuir en el proceso de armonizaci&#243;n contable.
+						</p>
+						<p class="textItem " style="top:57.894737%;left:13.517665%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:57.894737%;left:12.903226%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:57.894737%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Dar cumplimiento a las disposiciones del T&#237;tulo V de la Ley
+						</p>
+						<p class="textItem " style="top:59.691913%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							General de Contabilidad Gubernamental, en el sentido
+						</p>
+						<p class="textItem " style="top:61.489089%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de generar y publicar la informaci&#243;n financiera que debe
+						</p>
+						<p class="textItem " style="top:63.286264%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							incluirse en Internet de manera trimestral, a excepci&#243;n de
+						</p>
+						<p class="textItem " style="top:65.083440%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los informes y documentos de naturaleza anual y otros que
+						</p>
+						<p class="textItem " style="top:66.880616%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por virtud de las disposiciones legales aplicables, tengan
+						</p>
+						<p class="textItem " style="top:68.677792%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							un plazo y periodicidad determinada con la finalidad de
+						</p>
+						<p class="textItem " style="top:70.474968%;left:14.439324%;width:30.107527%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							garantizar la transparencia y rendici&#243;n de cuentas.
+						</p>
+						<p class="textItem " style="top:74.069320%;left:13.517665%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:74.069320%;left:12.903226%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:74.069320%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Aprobar el Programa de Trabajo 2014, que proyecta la
+						</p>
+						<p class="textItem " style="top:75.866496%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							capacitaci&#243;n a los municipios en materia de armonizaci&#243;n
+						</p>
+						<p class="textItem " style="top:77.663671%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							contable, y que se integra al Programa General de
+						</p>
+						<p class="textItem " style="top:79.460847%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Capacitaci&#243;n que se desarrolla en coordinaci&#243;n con el
+						</p>
+						<p class="textItem " style="top:81.258023%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ORFIS, el Congreso del Estado, la Secretar&#237;a de Finanzas y
+						</p>
+						<p class="textItem " style="top:83.055199%;left:14.439324%;width:21.351767%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Planeaci&#243;n y la Contralor&#237;a General.
+						</p>
+						<p class="textItem " style="top:89.216945%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							1.  El 2 de febrero de 2011 se public&#243; en la Gaceta Oficial del Estado la Ley N&#250;mero 237 que crea
+						</p>
+						<p class="textItem " style="top:90.243902%;left:10.752688%;width:24.884793%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							el Consejo Veracruzano de Armonizaci&#243;n Contable (COVAC).
+						</p>
+						<p class="textItem " style="top:11.938383%;left:51.920123%;width:34.254992%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.3. Profesionalizaci&#243;n de servidores
+						</p>
+						<p class="textItem " style="top:14.120668%;left:51.920123%;width:7.987711%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							p&#250;blicos
+						</p>
+						<p class="textItem " style="top:18.356868%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En materia de profesionalizaci&#243;n, con la finalidad de orientar a los
+						</p>
+						<p class="textItem " style="top:20.154044%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							servidores p&#250;blicos en el marco normativo que rige su actuaci&#243;n,
+						</p>
+						<p class="textItem " style="top:21.951220%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en el periodo de diciembre 2013 a septiembre 2014, se realizaron
+						</p>
+						<p class="textItem " style="top:23.748395%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cursos de capacitaci&#243;n en temas como: Normas Generales de
+						</p>
+						<p class="textItem " style="top:25.545571%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Control Interno, Inducci&#243;n a la Administraci&#243;n P&#250;blica, Cultura
+						</p>
+						<p class="textItem " style="top:27.342747%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la Legalidad, Responsabilidades de los Servidores P&#250;blicos,
+						</p>
+						<p class="textItem " style="top:29.139923%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Elaboraci&#243;n y Actualizaci&#243;n de Manuales Administrativos,
+						</p>
+						<p class="textItem " style="top:30.937099%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Liderazgo, &#201;tica para los Servidores P&#250;blicos, Toma de Decisiones,
+						</p>
+						<p class="textItem " style="top:32.734275%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Calidad en el Servicio P&#250;blico, Trabajo en Equipo, Atenci&#243;n al
+						</p>
+						<p class="textItem " style="top:34.531451%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Usuario, Autoestima y Manejo de Estr&#233;s, Comunicaci&#243;n en las
+						</p>
+						<p class="textItem " style="top:36.328626%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Relaciones de Trabajo, Auditor&#237;a a la Obra P&#250;blica, Contralor&#237;a
+						</p>
+						<p class="textItem " style="top:38.125802%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Social, Bit&#225;cora Electr&#243;nica de Obra P&#250;blica; Construcci&#243;n de
+						</p>
+						<p class="textItem " style="top:39.922978%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							indicadores; asimismo, del 27 de enero al 7 de febrero, en el
+						</p>
+						<p class="textItem " style="top:41.720154%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Auditorio Arist&#243;teles del Colegio Veracruz,  se realiz&#243; la Jornada
+						</p>
+						<p class="textItem " style="top:43.517330%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Capacitaci&#243;n al Personal de los &#211;rganos Internos de Control y
+						</p>
+						<p class="textItem " style="top:45.314506%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Construcci&#243;n del C&#243;digo de Conducta, para beneficiar a 2,012
+						</p>
+						<p class="textItem " style="top:47.111682%;left:51.920123%;width:24.731183%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							servidores del Poder Ejecutivo del Estado.
+						</p>
+						<p class="textItem " style="top:50.706033%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Durante este mismo periodo, participaron en el Programa integral
+						</p>
+						<p class="textItem " style="top:52.503209%;left:51.920123%;width:35.176651%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de capacitaci&#243;n 154 servidores p&#250;blicos de tres municipios
+						</p>
+						<p class="textItem " style="top:52.503209%;left:86.943164%;width:0.614439%;height:0.898588%;font-size:0.291500em;color:#25171C;font-family:Stone Sans Std;">
+							2
+						</p>
+						<p class="textItem " style="top:52.503209%;left:87.864823%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en los
+						</p>
+						<p class="textItem " style="top:54.300385%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							temas: Toma de Decisiones, Responsabilidades de los Servidores
+						</p>
+						<p class="textItem " style="top:56.097561%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							P&#250;blicos, Calidad en el Servicio P&#250;blico, Autoestima y Manejo de
+						</p>
+						<p class="textItem " style="top:57.894737%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estr&#233;s, Elaboraci&#243;n y Actualizaci&#243;n de Manuales Administrativos y
+						</p>
+						<p class="textItem " style="top:59.691913%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Liderazgo,  Normas Generales de Control Interno y Cultura de la
+						</p>
+						<p class="textItem " style="top:61.489089%;left:51.920123%;width:6.144393%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Legalidad.
+						</p>
+						<p class="textItem " style="top:65.083440%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Por otra parte se favorecieron a 212 funcionarios con el
+						</p>
+						<p class="textItem " style="top:66.880616%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							otorgamiento de apoyos econ&#243;micos para realizar estudios de
+						</p>
+						<p class="textItem " style="top:68.677792%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							licenciatura, maestr&#237;a y curso de Reformas Fiscales 2014, Validaci&#243;n
+						</p>
+						<p class="textItem " style="top:70.474968%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Comprobantes Fiscales (CFDI) y curso taller Liderazgo Efectivo,
+						</p>
+						<p class="textItem " style="top:72.272144%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con la finalidad de mejorar la atenci&#243;n al p&#250;blico y la prestaci&#243;n
+						</p>
+						<p class="textItem " style="top:74.069320%;left:51.920123%;width:7.219662%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de servicios.
+						</p>
+						<p class="textItem " style="top:77.535302%;left:51.920123%;width:24.423963%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.4. Gobierno electr&#243;nico
+						</p>
+						<p class="textItem " style="top:81.771502%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Dentro del marco de la mejora de la gesti&#243;n p&#250;blica, la
+						</p>
+						<p class="textItem " style="top:83.568678%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							normatividad actualizada constituye una acci&#243;n continua de la
+						</p>
+						<p class="textItem " style="top:85.365854%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Contralor&#237;a General; y con el objeto de poner a disposici&#243;n de
+						</p>
+						<p class="textItem " style="top:87.163030%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los servidores p&#250;blicos de las dependencias y entidades estatales
+						</p>
+						<p class="textItem " style="top:90.243902%;left:51.920123%;width:12.903226%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							2.  Jilotepec, Tlaquilpa y Xalapa
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-486.html">486</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-487.html">487</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-488.html">488</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-489.html">489</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-490.html">490</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-491.html">491</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-492.html">492</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-493.html">493</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-494.html">494</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-495.html">495</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-496.html">496</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-497.html">497</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

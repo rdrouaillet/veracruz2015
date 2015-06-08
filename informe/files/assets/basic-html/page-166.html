@@ -1,0 +1,488 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "166";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-165.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;166 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-167.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-165.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">166 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-167.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0166.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:18.356868%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem testString" style="top:18.356868%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:18.356868%;left:12.749616%;width:35.330261%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Adquisici&#243;n de software de comercializaci&#243;n para los
+						</p>
+						<p class="textItem " style="top:20.154044%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipios de Amatl&#225;n de los Reyes, Mart&#237;nez de la Torre y
+						</p>
+						<p class="textItem " style="top:21.951220%;left:12.288786%;width:8.909370%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Pueblo Viejo, y
+						</p>
+						<p class="textItem " style="top:25.545571%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:25.545571%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:25.545571%;left:12.749616%;width:35.330261%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para las oficinas operadoras de los municipios de &#193;lamo
+						</p>
+						<p class="textItem " style="top:27.342747%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Temapache, Camerino Z. Mendoza, Catemaco, Las Choapas,
+						</p>
+						<p class="textItem " style="top:29.139923%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Minatitl&#225;n, Poza Rica y Tuxpan, se adquiri&#243; equipamiento
+						</p>
+						<p class="textItem " style="top:30.937099%;left:12.288786%;width:10.291859%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							electromec&#225;nico.
+						</p>
+						<p class="textItem " style="top:34.403081%;left:8.602151%;width:29.800307%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							3.2.3. Infraestructura hidr&#225;ulica
+						</p>
+						<p class="textItem " style="top:38.639281%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Le corresponde al Gobierno del Estado, a trav&#233;s de la CAEV, resarcir
+						</p>
+						<p class="textItem " style="top:40.436457%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los da&#241;os ocasionados por eventos naturales, as&#237; como concluir las
+						</p>
+						<p class="textItem " style="top:42.233633%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acciones programadas de las lluvias de Barry, Fernando e Ingrid
+						</p>
+						<p class="textItem " style="top:44.030809%;left:8.602151%;width:29.493088%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ocurridas en junio, agosto y septiembre de 2013.
+						</p>
+						<p class="textItem " style="top:47.625160%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							De acuerdo a lo establecido por el Fondo de Desastres Naturales
+						</p>
+						<p class="textItem " style="top:49.422336%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(FONDEN), se autorizaron recursos por 305.1 millones de pesos
+						</p>
+						<p class="textItem " style="top:51.219512%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para beneficiar a poco m&#225;s de 1,500,000 habitantes, al realizar las
+						</p>
+						<p class="textItem " style="top:53.016688%;left:8.602151%;width:20.276498%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							siguientes obras de rehabilitaci&#243;n:
+						</p>
+						<p class="textItem " style="top:56.611040%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:56.482670%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:56.611040%;left:12.749616%;width:35.330261%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el municipio de Actopan -en varias localidades- se
+						</p>
+						<p class="textItem " style="top:58.408216%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							rehabilitaron estructuras de captaci&#243;n y conducci&#243;n de los
+						</p>
+						<p class="textItem " style="top:60.205392%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sistemas de agua potable y se realiz&#243; la reposici&#243;n de l&#237;neas
+						</p>
+						<p class="textItem " style="top:62.002567%;left:12.288786%;width:29.185868%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de conducci&#243;n, trabajos de desazolve y limpieza.
+						</p>
+						<p class="textItem " style="top:65.596919%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:65.468549%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:65.596919%;left:12.749616%;width:35.330261%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En localidades de los municipios de Actopan, Alto Lucero,
+						</p>
+						<p class="textItem " style="top:67.394095%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Altotonga, Tepetl&#225;n, Paso de Ovejas y Puente Nacional,
+						</p>
+						<p class="textItem " style="top:69.191271%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se realiz&#243; la reposici&#243;n de l&#237;neas de conducci&#243;n, red de
+						</p>
+						<p class="textItem " style="top:70.988447%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							distribuci&#243;n, rehabilitaci&#243;n de planta de tratamiento de
+						</p>
+						<p class="textItem " style="top:72.785623%;left:12.288786%;width:27.035330%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							aguas residuales y equipos electromec&#225;nicos.
+						</p>
+						<p class="textItem " style="top:76.379974%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:76.251605%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:76.379974%;left:12.749616%;width:35.330261%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el municipio de Juchique de Ferrer, se rehabilitaron
+						</p>
+						<p class="textItem " style="top:78.177150%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estructuras de captaci&#243;n y conducci&#243;n del sistema de agua
+						</p>
+						<p class="textItem " style="top:79.974326%;left:12.288786%;width:5.069124%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							potable.
+						</p>
+						<p class="textItem " style="top:83.568678%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:83.440308%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:83.568678%;left:12.749616%;width:35.330261%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En localidades de los municipios de Misantla y Mart&#237;nez de
+						</p>
+						<p class="textItem " style="top:85.365854%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Torre, con una inversi&#243;n de un mill&#243;n de pesos, se realiz&#243;
+						</p>
+						<p class="textItem " style="top:87.163030%;left:12.288786%;width:35.176651%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la reposici&#243;n de l&#237;nea de conducci&#243;n y equipo de bombeo.
+						</p>
+						<p class="textItem " style="top:18.356868%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:18.356868%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:18.356868%;left:53.917051%;width:35.330261%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el municipio de Veracruz, se realiz&#243; la reposici&#243;n del
+						</p>
+						<p class="textItem " style="top:20.154044%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							equipo electromec&#225;nico en las plantas de tratamiento de
+						</p>
+						<p class="textItem " style="top:21.951220%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							aguas residuales, as&#237; como la reparaci&#243;n de hundimientos
+						</p>
+						<p class="textItem " style="top:23.748395%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de colectores de 457 mm de di&#225;metro con abatimiento
+						</p>
+						<p class="textItem " style="top:25.545571%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en la Av. 1&#186;. de Mayo y en la calle Juan Enr&#237;quez, con una
+						</p>
+						<p class="textItem " style="top:27.342747%;left:53.456221%;width:20.430108%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							inversi&#243;n de 5.9 millones de peso.
+						</p>
+						<p class="textItem " style="top:30.808729%;left:49.769585%;width:36.251920%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							3.2.4. Promover una eficaz cultura del
+						</p>
+						<p class="textItem " style="top:32.991014%;left:49.769585%;width:4.761905%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							agua
+						</p>
+						<p class="textItem " style="top:37.227214%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el marco del Programa de Cultura del Agua, se crearon cuatro
+						</p>
+						<p class="textItem " style="top:39.024390%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Espacios de Cultura del Agua en los municipios de Actopan,
+						</p>
+						<p class="textItem " style="top:40.821566%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Atzacan, J&#225;ltipan y Mariano Escobedo. A la fecha, en el Estado se
+						</p>
+						<p class="textItem " style="top:42.618742%;left:49.769585%;width:30.875576%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cuenta con 99 espacios ubicados en 95 municipios.
+						</p>
+						<p class="textItem " style="top:46.213094%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La CAEV en coordinaci&#243;n con otras instancias ha participado en
+						</p>
+						<p class="textItem " style="top:48.010270%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							eventos, tales como: Cumbre Taj&#237;n, D&#237;a Mundial del Agua, as&#237; como
+						</p>
+						<p class="textItem " style="top:49.807445%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en los distintos Consejos Regionales Forestales de la CONAFOR,
+						</p>
+						<p class="textItem " style="top:51.604621%;left:49.769585%;width:32.258065%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							algunos referentes al combate de incendios forestales.
+						</p>
+						<p class="textItem " style="top:55.198973%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el D&#237;a Mundial del Agua destaca la organizaci&#243;n de la 1a. Gran
+						</p>
+						<p class="textItem " style="top:56.996149%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Carrera Agua y Energ&#237;a en el Puerto de Veracruz, con la asistencia
+						</p>
+						<p class="textItem " style="top:58.793325%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 3,000 personas y nueve talleres con la participaci&#243;n de 1,500
+						</p>
+						<p class="textItem " style="top:60.590501%;left:49.769585%;width:3.686636%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ni&#241;os.
+						</p>
+						<p class="textItem testString" style="top:63.671374%;left:49.769585%;width:34.408602%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							4. Desarrollo urbano y
+						</p>
+						<p class="textItem " style="top:66.367137%;left:49.769585%;width:36.866359%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							ordenamiento territorial
+						</p>
+						<p class="textItem " style="top:72.272144%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el Programa Veracruzano de Desarrollo 2011-2016 se definieron
+						</p>
+						<p class="textItem " style="top:74.069320%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							como prioritarios los temas de Desarrollo Urbano y Ordenamiento
+						</p>
+						<p class="textItem " style="top:75.866496%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Territorial, por ello corresponde a las &#225;reas encargadas la
+						</p>
+						<p class="textItem " style="top:77.663671%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							planeaci&#243;n del crecimiento de sus centros de poblaci&#243;n, mediante
+						</p>
+						<p class="textItem " style="top:79.460847%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el estricto apego y cumplimiento de la Ley N&#250;mero 241 de
+						</p>
+						<p class="textItem " style="top:81.258023%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Desarrollo Urbano, Ordenamiento Territorial y Vivienda, as&#237; como
+						</p>
+						<p class="textItem " style="top:83.055199%;left:49.769585%;width:15.821813%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							su respectivo Reglamento.
+						</p>
+						<p class="textItem " style="top:86.649551%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con el objetivo de establecer una eficiente coordinaci&#243;n Estado-
+						</p>
+						<p class="textItem " style="top:88.446727%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Municipio, se realizaron cursos de capacitaci&#243;n para el personal de
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-161.html">161</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-162.html">162</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-163.html">163</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-164.html">164</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-165.html">165</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-166.html">166</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-167.html">167</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-168.html">168</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-169.html">169</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-170.html">170</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-171.html">171</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-172.html">172</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

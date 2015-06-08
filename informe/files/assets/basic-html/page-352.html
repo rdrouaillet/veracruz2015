@@ -1,0 +1,527 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "352";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-351.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;352 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-353.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-351.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">352 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-353.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0352.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:18.356868%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ejercit&#243; acci&#243;n penal en 20, dos por incompetencia y contin&#250;an su
+						</p>
+						<p class="textItem " style="top:20.154044%;left:8.602151%;width:16.436252%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							tr&#225;mite de integraci&#243;n 896.
+						</p>
+						<p class="textItem " style="top:23.748395%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el periodo de Informe, se dio inicio a 10 Comisiones
+						</p>
+						<p class="textItem " style="top:25.545571%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Investigadoras contra Notarios P&#250;blicos y se emitieron siete
+						</p>
+						<p class="textItem " style="top:27.342747%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Opiniones respecto de la posible responsabilidad de los mismos, las
+						</p>
+						<p class="textItem " style="top:29.139923%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cuales se encuentran en tr&#225;mite. Se recuperaron y entregaron 235
+						</p>
+						<p class="textItem " style="top:30.937099%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							veh&#237;culos automotores de los cuales 153 han sido a particulares y
+						</p>
+						<p class="textItem " style="top:32.734275%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							82 a personal de la Oficina Coordinadora de Riesgos Asegurados
+						</p>
+						<p class="textItem " style="top:34.531451%;left:8.602151%;width:7.834101%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							S.C. (OCRA).
+						</p>
+						<p class="textItem " style="top:37.997433%;left:8.602151%;width:18.125960%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.5. Infraestructura
+						</p>
+						<p class="textItem " style="top:42.233633%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En materia de mejoramiento en la infraestructura la Procuradur&#237;a
+						</p>
+						<p class="textItem " style="top:44.030809%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							General de Justicia se vio beneficiada con recursos federales para
+						</p>
+						<p class="textItem " style="top:45.827985%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el ejercicio 2014, con una inversi&#243;n de 134.5 millones de pesos,
+						</p>
+						<p class="textItem " style="top:47.625160%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							108.8 millones corresponden al Fondo de Aportaciones para la
+						</p>
+						<p class="textItem " style="top:49.422336%;left:8.602151%;width:29.185868%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Seguridad P&#250;blica (FASP); y 25.7 millones al SPA.
+						</p>
+						<p class="textItem testString" style="top:54.043646%;left:23.809524%;width:3.533026%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Rubro</b>
+						</p>
+						<p class="textItem " style="top:53.016688%;left:42.857143%;width:4.915515%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Millones</b>
+						</p>
+						<p class="textItem " style="top:54.043646%;left:44.546851%;width:1.536098%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>de</b>
+						</p>
+						<p class="textItem " style="top:55.070603%;left:43.625192%;width:3.225806%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>pesos</b>
+						</p>
+						<p class="textItem " style="top:56.611040%;left:9.062980%;width:24.884793%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							Adquisici&#243;n de bienes inform&#225;ticos y software
+						</p>
+						<p class="textItem " style="top:56.611040%;left:45.468510%;width:2.611367%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							25.6
+						</p>
+						<p class="textItem " style="top:58.151476%;left:9.062980%;width:27.342550%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							Construcci&#243;n del Centro de Evaluaci&#243;n de Control
+						</p>
+						<p class="textItem " style="top:59.306804%;left:9.062980%;width:28.725038%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							de Confianza de la Procuradur&#237;a General de Justicia y
+						</p>
+						<p class="textItem " style="top:60.462131%;left:9.062980%;width:30.568356%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							construcci&#243;n de los SEMEFO de Coatzacoalcos y P&#225;nuco
+						</p>
+						<p class="textItem " style="top:59.306804%;left:45.468510%;width:2.611367%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							21.0
+						</p>
+						<p class="textItem " style="top:61.874198%;left:9.062980%;width:27.342550%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							Adquisici&#243;n de equipo e instrumental m&#233;dico y de
+						</p>
+						<p class="textItem " style="top:63.029525%;left:9.062980%;width:5.990783%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							laboratorio
+						</p>
+						<p class="textItem " style="top:62.516046%;left:45.468510%;width:2.611367%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							15.1
+						</p>
+						<p class="textItem " style="top:64.569961%;left:9.062980%;width:29.185868%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							Cursos de capacitaci&#243;n para personal operativo de las
+						</p>
+						<p class="textItem " style="top:65.725289%;left:9.062980%;width:31.797235%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							diferentes &#225;reas tales como Agentes del Ministerio P&#250;blico,
+						</p>
+						<p class="textItem " style="top:66.880616%;left:9.062980%;width:27.649770%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							Peritos, Polic&#237;as Ministeriales y Polic&#237;as Ministeriales
+						</p>
+						<p class="textItem " style="top:68.035944%;left:9.062980%;width:6.605223%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							Acreditables
+						</p>
+						<p class="textItem " style="top:66.367137%;left:45.468510%;width:2.611367%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							15.0
+						</p>
+						<p class="textItem " style="top:69.576380%;left:9.062980%;width:26.267281%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							Adquisici&#243;n de mobiliario de oficina y equipo de
+						</p>
+						<p class="textItem " style="top:70.731707%;left:9.062980%;width:8.141321%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							administraci&#243;n
+						</p>
+						<p class="textItem " style="top:70.218228%;left:45.468510%;width:2.611367%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							12.0
+						</p>
+						<p class="textItem " style="top:72.272144%;left:9.062980%;width:32.565284%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							Adquisici&#243;n de productos qu&#237;micos, materiales, accesorios y
+						</p>
+						<p class="textItem " style="top:73.427471%;left:9.062980%;width:19.969278%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							suministros m&#233;dicos y de laboratorio
+						</p>
+						<p class="textItem " style="top:72.913992%;left:45.468510%;width:2.611367%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							11.4
+						</p>
+						<p class="textItem " style="top:74.967908%;left:9.062980%;width:28.878648%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							Adquisici&#243;n de uniformes para Polic&#237;as Ministeriales y
+						</p>
+						<p class="textItem " style="top:76.123235%;left:9.062980%;width:17.972350%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							Polic&#237;as Ministeriales Acreditables
+						</p>
+						<p class="textItem " style="top:75.481386%;left:46.236559%;width:1.843318%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							7.1
+						</p>
+						<p class="textItem " style="top:77.663671%;left:9.062980%;width:30.875576%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							Equipo de protecci&#243;n como chalecos bal&#237;sticos, cascos, y
+						</p>
+						<p class="textItem " style="top:78.818999%;left:9.062980%;width:6.298003%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							municiones
+						</p>
+						<p class="textItem " style="top:78.177150%;left:46.236559%;width:1.843318%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							7.0
+						</p>
+						<p class="textItem " style="top:80.359435%;left:9.062980%;width:32.258065%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							Adquisici&#243;n de equipo de telecomunicaciones y equipos de
+						</p>
+						<p class="textItem " style="top:81.514763%;left:9.062980%;width:10.906298%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							generaci&#243;n el&#233;ctrica
+						</p>
+						<p class="textItem " style="top:80.872914%;left:46.236559%;width:1.843318%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							6.2
+						</p>
+						<p class="textItem " style="top:83.055199%;left:9.062980%;width:25.499232%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							Adquisici&#243;n de c&#225;maras fotogr&#225;ficas y de video
+						</p>
+						<p class="textItem " style="top:83.055199%;left:46.236559%;width:1.843318%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							5.9
+						</p>
+						<p class="textItem " style="top:84.467266%;left:9.062980%;width:28.264209%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							Contrataci&#243;n de servicios integrales y otros servicios
+						</p>
+						<p class="textItem " style="top:84.467266%;left:46.236559%;width:1.843318%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							5.4
+						</p>
+						<p class="textItem " style="top:86.007702%;left:9.062980%;width:29.493088%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							Adquisici&#243;n de equipo de apoyo t&#225;ctico para la Polic&#237;a
+						</p>
+						<p class="textItem " style="top:87.163030%;left:9.062980%;width:12.135177%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							Ministerial Acreditable
+						</p>
+						<p class="textItem " style="top:86.649551%;left:46.236559%;width:1.843318%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							2.8
+						</p>
+						<p class="textItem " style="top:88.703466%;left:9.062980%;width:2.918587%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Total</b>
+						</p>
+						<p class="textItem " style="top:88.703466%;left:44.854071%;width:3.225806%;height:1.283697%;font-size:0.400000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>134.5</b>
+						</p>
+						<p class="textItem " style="top:14.120668%;left:49.769585%;width:15.821813%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.6. Presupuesto
+						</p>
+						<p class="textItem " style="top:18.356868%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Procuradur&#237;a cuenta con un presupuesto de 1,230 millones
+						</p>
+						<p class="textItem " style="top:20.154044%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de pesos, incluye el presupuesto autorizado para la Procuradur&#237;a
+						</p>
+						<p class="textItem " style="top:21.951220%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							General de Justicia con base en el Decreto n&#250;mero 7 de
+						</p>
+						<p class="textItem " style="top:23.748395%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Presupuesto de Egresos del Gobierno del Estado de Veracruz para
+						</p>
+						<p class="textItem " style="top:25.545571%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el ejercicio fiscal 2014 y los Subsidios en Infraestructura para el
+						</p>
+						<p class="textItem " style="top:27.342747%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Desarrollo. Dichos recursos son utilizados para cubrir los gastos
+						</p>
+						<p class="textItem " style="top:29.139923%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							correspondientes a servicios personales; materiales y suministros;
+						</p>
+						<p class="textItem " style="top:30.937099%;left:49.769585%;width:20.276498%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							servicios generales y obra p&#250;blica.
+						</p>
+						<p class="textItem testString" style="top:34.017972%;left:49.769585%;width:36.405530%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							2. Promover los valores
+						</p>
+						<p class="textItem " style="top:36.713736%;left:49.769585%;width:31.797235%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							de la procuraci&#243;n de
+						</p>
+						<p class="textItem " style="top:39.409499%;left:49.769585%;width:10.906298%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							justicia
+						</p>
+						<p class="textItem " style="top:45.314506%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Una procuradur&#237;a renovada, requiere una plantilla laboral
+						</p>
+						<p class="textItem " style="top:47.111682%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							comprometida, eficiente, pero sobre todo confiable. La promoci&#243;n
+						</p>
+						<p class="textItem " style="top:48.908858%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del servicio civil de carrera, la evaluaci&#243;n en control de confianza
+						</p>
+						<p class="textItem " style="top:50.706033%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de sus integrantes y en su caso, la recisi&#243;n de los contratos
+						</p>
+						<p class="textItem " style="top:52.503209%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							laborales de aquellos empleados que no satisfagan los requisitos
+						</p>
+						<p class="textItem " style="top:54.300385%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de permanencia en la Instituci&#243;n en t&#233;rminos de la ley Nacional
+						</p>
+						<p class="textItem " style="top:56.097561%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y Estatal de Seguridad P&#250;blica, son acciones que actualmente se
+						</p>
+						<p class="textItem " style="top:57.894737%;left:49.769585%;width:31.797235%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							desarrollan en beneficio de la poblaci&#243;n veracruzana.
+						</p>
+						<p class="textItem " style="top:61.489089%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Visitar las agencias del Ministerio P&#250;blico y las oficinas de sus
+						</p>
+						<p class="textItem " style="top:63.286264%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							auxiliares para constatar los m&#233;todos de trabajo, vigilar que
+						</p>
+						<p class="textItem " style="top:65.083440%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							no exista rezago en la integraci&#243;n de expedientes y la correcta
+						</p>
+						<p class="textItem " style="top:66.880616%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							determinaci&#243;n de los asuntos tramitados, son actividades que se
+						</p>
+						<p class="textItem " style="top:68.677792%;left:49.769585%;width:21.198157%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							realizan en todo el territorio Estatal.
+						</p>
+						<p class="textItem " style="top:72.272144%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La labor desarrollada por la Subprocuradur&#237;a de Supervisi&#243;n y
+						</p>
+						<p class="textItem " style="top:74.069320%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Control, con el apoyo de las subprocuradur&#237;as regionales, resulta
+						</p>
+						<p class="textItem " style="top:75.866496%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							indispensable para tener una labor continua y trasparente de las
+						</p>
+						<p class="textItem " style="top:77.663671%;left:49.769585%;width:20.122888%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#225;reas sustantivas de la Instituci&#243;n.
+						</p>
+						<p class="textItem " style="top:81.129653%;left:49.769585%;width:23.809524%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							2.1. Gesti&#243;n Institucional
+						</p>
+						<p class="textItem " style="top:85.365854%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Como resultado de los acuerdos suscritos en el marco del Sistema
+						</p>
+						<p class="textItem " style="top:87.163030%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Nacional de Seguridad P&#250;blica y la Conferencia Nacional de
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-347.html">347</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-348.html">348</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-349.html">349</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-350.html">350</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-351.html">351</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-352.html">352</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-353.html">353</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-354.html">354</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-355.html">355</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-356.html">356</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-357.html">357</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-358.html">358</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

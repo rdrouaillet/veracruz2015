@@ -1,0 +1,533 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "455";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-454.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;455 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-456.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-454.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">455 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-456.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0455.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:35.483871%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:41.935484%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:43.010753%;width:17.511521%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>F i n a n z a s y P l a n e a c i &#243; n</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:61.136713%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:62.211982%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>4 5 3</b>
+						</p>
+						<p class="textItem " style="top:15.661104%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							propio en 2015, obtendr&#225;n el perd&#243;n fiscal de 2011 a 2013. Con la
+						</p>
+						<p class="textItem " style="top:17.458280%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							promoci&#243;n y apoyo de las comisiones de Hacienda y de Hacienda
+						</p>
+						<p class="textItem " style="top:19.255456%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Municipal, el Congreso del Estado autoriz&#243; a los ayuntamientos
+						</p>
+						<p class="textItem " style="top:21.052632%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para adherirse a los beneficios del programa. Como fruto del
+						</p>
+						<p class="textItem " style="top:22.849807%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							esfuerzo, 86 municipios firmaron los convenios respectivos donde
+						</p>
+						<p class="textItem " style="top:24.646983%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							contraen el compromiso de garantizar el cumplimiento correcto
+						</p>
+						<p class="textItem " style="top:26.444159%;left:10.752688%;width:9.984639%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la obligaci&#243;n.
+						</p>
+						<p class="textItem " style="top:26.572529%;left:20.737327%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							18
+						</p>
+						<p class="textItem " style="top:30.038511%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Las y los contribuyentes del ISERTP se beneficiaron con la exenci&#243;n
+						</p>
+						<p class="textItem " style="top:31.835687%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de pago del impuesto, trat&#225;ndose de la n&#243;mina de trabajadores
+						</p>
+						<p class="textItem " style="top:33.632863%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							j&#243;venes, reci&#233;n egresados de instituciones educativas, adultas
+						</p>
+						<p class="textItem " style="top:35.430039%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y adultos mayores y con alguna discapacidad, que cubren los
+						</p>
+						<p class="textItem " style="top:37.227214%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							requisitos estipulados en el art&#237;culo 103, fracci&#243;n IV del C&#243;digo
+						</p>
+						<p class="textItem " style="top:39.024390%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Financiero del Estado, y en la Ley de Fomento al Empleo del
+						</p>
+						<p class="textItem " style="top:40.821566%;left:10.752688%;width:11.674347%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estado de Veracruz.
+						</p>
+						<p class="textItem " style="top:40.949936%;left:22.273425%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							19
+						</p>
+						<p class="textItem " style="top:40.821566%;left:23.655914%;width:26.574501%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Y obtuvieron la exenci&#243;n de presentaci&#243;n del
+						</p>
+						<p class="textItem " style="top:42.618742%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Dictamen emitido por contadora o contador p&#250;blico autorizado,
+						</p>
+						<p class="textItem " style="top:44.415918%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							siempre que tengan una plantilla de hasta 150 empleadas y
+						</p>
+						<p class="textItem " style="top:46.213094%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							empleados, o cuya n&#243;mina sea inferior a 4 millones de pesos,
+						</p>
+						<p class="textItem " style="top:48.010270%;left:10.752688%;width:36.712750%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para la determinaci&#243;n y pago del tributo del ejercicio 2013.
+						</p>
+						<p class="textItem " style="top:48.138639%;left:47.465438%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							20
+						</p>
+						<p class="textItem " style="top:48.010270%;left:48.694316%;width:1.536098%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se
+						</p>
+						<p class="textItem " style="top:49.807445%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							registraron 350 contadoras y contadores p&#250;blicos autorizados para
+						</p>
+						<p class="textItem " style="top:51.604621%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dictaminar el gravamen. La reducci&#243;n de carga fiscal y de tr&#225;mites
+						</p>
+						<p class="textItem " style="top:53.401797%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							incentiv&#243; el correcto cumplimiento, signific&#243; un menor costo y
+						</p>
+						<p class="textItem " style="top:55.198973%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							tiempo para las y los contribuyentes, y foment&#243; la generaci&#243;n de
+						</p>
+						<p class="textItem " style="top:56.996149%;left:10.752688%;width:5.529954%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							empleos.
+						</p>
+						<p class="textItem " style="top:60.590501%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Las personas f&#237;sicas propietarias de autom&#243;viles (por cuarto a&#241;o
+						</p>
+						<p class="textItem " style="top:62.387677%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							consecutivo) y de motocicletas (por segundo a&#241;o), se beneficiaron
+						</p>
+						<p class="textItem " style="top:64.184852%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con el subsidio fiscal de 100 por ciento del Impuesto Estatal sobre
+						</p>
+						<p class="textItem " style="top:65.982028%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tenencia o Uso de Veh&#237;culos (IESTUV) del ejercicio 2014, una vez
+						</p>
+						<p class="textItem " style="top:67.779204%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cubiertos los requisitos legales: Valor de factura del autom&#243;vil
+						</p>
+						<p class="textItem " style="top:69.576380%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							menor a 247.7 miles de pesos, y de la motocicleta, 107.6 miles
+						</p>
+						<p class="textItem " style="top:71.373556%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de pesos; estar inscritas las unidades en el Registro Estatal de
+						</p>
+						<p class="textItem " style="top:73.170732%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Contribuyentes (REC) y al corriente en el pago de los Derechos de
+						</p>
+						<p class="textItem " style="top:74.967908%;left:10.752688%;width:10.752688%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Control Vehicular.
+						</p>
+						<p class="textItem " style="top:75.096277%;left:21.351767%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							21
+						</p>
+						<p class="textItem " style="top:81.899872%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							18. El Congreso del Estado emiti&#243; la autorizaci&#243;n por medio del Decreto 277 publicado en la
+						</p>
+						<p class="textItem " style="top:82.798460%;left:10.752688%;width:31.182796%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Gaceta Oficial del Estado, N&#250;mero Extraordinario 268, el 7 de julio de 2014.
+						</p>
+						<p class="textItem " style="top:83.697047%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							19. Publicada en la Gaceta Oficial del Estado, N&#250;mero Extraordinario 153, el 9 de mayo de 2012.
+						</p>
+						<p class="textItem " style="top:84.595635%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							20. Reglas publicadas en la Gaceta Oficial del Estado, N&#250;mero Extraordinario 158, el 14 de mayo
+						</p>
+						<p class="textItem " style="top:85.622593%;left:10.752688%;width:38.709677%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							de 2012 y modificadas en la Gaceta Oficial, N&#250;mero Extraordinario 183, el 4 de junio de 2012.
+						</p>
+						<p class="textItem " style="top:86.521181%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							21. En el caso de autom&#243;viles, Decreto N&#250;mero 277 publicado en la Gaceta Oficial del Estado,
+						</p>
+						<p class="textItem " style="top:87.419769%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							N&#250;mero Extraordinario 226, el 25 de julio de 2011. En el caso de motocicletas, Decreto N&#250;mero
+						</p>
+						<p class="textItem " style="top:88.318357%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							562 publicado en la Gaceta Oficial, N&#250;mero Extraordinario 207, el 25 de junio de 2012. Para el
+						</p>
+						<p class="textItem " style="top:89.216945%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							ejercicio fiscal de 2014 el importe del veh&#237;culo se actualiz&#243; conforme al Acuerdo publicado en la
+						</p>
+						<p class="textItem " style="top:90.243902%;left:10.752688%;width:31.950845%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Gaceta Oficial del Estado, N&#250;mero Extraordinario 18 del 13 de enero de 2014.
+						</p>
+						<p class="textItem " style="top:11.424904%;left:51.920123%;width:24.423963%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.1.2. Ingresos del Estado
+						</p>
+						<p class="textItem " style="top:15.661104%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							De diciembre de 2013 a noviembre de 2014, los ingresos p&#250;blicos
+						</p>
+						<p class="textItem " style="top:17.458280%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estatales acumularon la cantidad de 103,847.1 millones de pesos,
+						</p>
+						<p class="textItem " style="top:19.255456%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							lo que represent&#243; un incremento de 5,681.4 millones de pesos
+						</p>
+						<p class="textItem " style="top:21.052632%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y de 5.8 por ciento en t&#233;rminos nominales con respecto a la
+						</p>
+						<p class="textItem " style="top:22.849807%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							recaudaci&#243;n del Tercer Informe. Los recursos se obtuvieron de las
+						</p>
+						<p class="textItem " style="top:24.646983%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							siguientes fuentes presupuestales: a) Los ingresos derivados del
+						</p>
+						<p class="textItem " style="top:26.444159%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							esfuerzo recaudatorio propio ascendieron a 9,884.9 millones de
+						</p>
+						<p class="textItem " style="top:28.241335%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pesos; b) participaciones federales, 34,227.1 millones de pesos;
+						</p>
+						<p class="textItem " style="top:30.038511%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							c) aportaciones federales, 47,585.9 millones de pesos (con las
+						</p>
+						<p class="textItem " style="top:31.835687%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							siguientes fuentes: Ramo 33, 40,484.1 millones de pesos y Otras
+						</p>
+						<p class="textItem " style="top:33.632863%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							aportaciones de la Federaci&#243;n, 7,101.8 millones de pesos); d)
+						</p>
+						<p class="textItem " style="top:35.430039%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Convenios federales, 10,658 millones de pesos; y e) Otros Ingresos,
+						</p>
+						<p class="textItem " style="top:37.227214%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							rubro antes denominado &#8220;uso de disponibilidades de ejercicios
+						</p>
+						<p class="textItem " style="top:39.024390%;left:51.920123%;width:25.960061%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							anteriores&#8221;, con 1,491.1 millones de pesos.
+						</p>
+						<p class="textItem " style="top:42.490372%;left:51.920123%;width:26.420891%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.1.2.1. Ingresos Ordinarios
+						</p>
+						<p class="textItem " style="top:46.726573%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							De diciembre de 2013 a noviembre de 2014 los Ingresos
+						</p>
+						<p class="textItem " style="top:48.523748%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ordinarios, categor&#237;a que se integra por los Ingresos Totales sin
+						</p>
+						<p class="textItem " style="top:50.320924%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							incluir el rengl&#243;n de Otros Ingresos, alcanzaron un monto de
+						</p>
+						<p class="textItem " style="top:52.118100%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							102,356 millones de pesos, superior en 8.7 por ciento nominal
+						</p>
+						<p class="textItem " style="top:53.915276%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							al periodo anterior. Los Ingresos ordinarios se constituyen por
+						</p>
+						<p class="textItem " style="top:55.712452%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los Ingresos Propios y la suma de participaciones, aportaciones y
+						</p>
+						<p class="textItem " style="top:57.509628%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							convenios federales. El primer concepto se refiere a la recaudaci&#243;n
+						</p>
+						<p class="textItem " style="top:59.306804%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							obtenida de las fuentes permanentes de largo plazo que administra
+						</p>
+						<p class="textItem " style="top:61.103979%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							directamente el Estado; el segundo, a los recursos provenientes de
+						</p>
+						<p class="textItem " style="top:62.901155%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Federaci&#243;n, seg&#250;n el arreglo institucional actual regulado en la
+						</p>
+						<p class="textItem " style="top:64.698331%;left:51.920123%;width:33.486943%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ley de Coordinaci&#243;n Fiscal, el CCAMFF y en sus anexos.
+						</p>
+						<p class="textItem " style="top:68.292683%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Los Ingresos Ordinarios constituyen los recursos que financian
+						</p>
+						<p class="textItem " style="top:70.089859%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de manera sana el presupuesto p&#250;blico estatal y su incremento
+						</p>
+						<p class="textItem " style="top:71.887035%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							reflej&#243; la evoluci&#243;n positiva de sus componentes. La eficiencia del
+						</p>
+						<p class="textItem " style="top:73.684211%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							aparato de recaudaci&#243;n y fiscalizaci&#243;n, as&#237; como de la coordinaci&#243;n
+						</p>
+						<p class="textItem " style="top:75.481386%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							hacendaria, impulsaron la captaci&#243;n de recursos adicionales
+						</p>
+						<p class="textItem " style="top:77.278562%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							incluyendo los que derivan de la gesti&#243;n directa. Los ingresos
+						</p>
+						<p class="textItem " style="top:79.075738%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							originados en el esfuerzo recaudatorio propio se vieron reducidos
+						</p>
+						<p class="textItem " style="top:80.872914%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en 10.9 por ciento nominal, pero al sumar las participaciones
+						</p>
+						<p class="textItem " style="top:82.670090%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en el Impuesto Especial sobre Producci&#243;n y Servicios (IEPS) a
+						</p>
+						<p class="textItem " style="top:84.467266%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							las gasolinas y el diesel -que a partir de 2014 cambiaron su
+						</p>
+						<p class="textItem " style="top:86.264442%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							clasificaci&#243;n contable de los Ingresos Propios a las Participaciones
+						</p>
+						<p class="textItem " style="top:88.061617%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Federales-, la contracci&#243;n se reduce a s&#243;lo 2 por ciento anual
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-450.html">450</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-451.html">451</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-452.html">452</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-453.html">453</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-454.html">454</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-455.html">455</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-456.html">456</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-457.html">457</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-458.html">458</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-459.html">459</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-460.html">460</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-461.html">461</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

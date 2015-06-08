@@ -1,0 +1,473 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "144";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-143.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;144 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-145.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-143.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">144 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-145.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0144.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:17.971759%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el periodo que se informa, se particip&#243; en 4,414 acciones
+						</p>
+						<p class="textItem " style="top:19.768935%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							conciliatorias para dar fin a los conflictos obrero-patronales,
+						</p>
+						<p class="textItem " style="top:21.566110%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mediante la firma de 2,737 convenios administrativos; tambi&#233;n se
+						</p>
+						<p class="textItem " style="top:23.363286%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							proporcionaron 8,254 asesor&#237;as con la finalidad de proteger los
+						</p>
+						<p class="textItem " style="top:25.160462%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							derechos laborales de los  trabajadores, trabajadoras, beneficiarios
+						</p>
+						<p class="textItem " style="top:26.957638%;left:8.602151%;width:12.288786%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y sindicatos obreros.
+						</p>
+						<p class="textItem " style="top:30.551990%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En lo que a representaci&#243;n jur&#237;dica se refiere, se interpusieron
+						</p>
+						<p class="textItem " style="top:32.349166%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							2,024 demandas individuales para evitar cualquier prescripci&#243;n
+						</p>
+						<p class="textItem " style="top:34.146341%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que pudiese afectar los derechos de la clase trabajadora; y se
+						</p>
+						<p class="textItem " style="top:35.943517%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							particip&#243; en 4,501 audiencias en las diversas fases procesales de
+						</p>
+						<p class="textItem " style="top:37.740693%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							juicios instaurados y de seguimiento ante las Juntas Locales de
+						</p>
+						<p class="textItem " style="top:39.537869%;left:8.602151%;width:14.285714%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Conciliaci&#243;n y Arbitraje.
+						</p>
+						<p class="textItem " style="top:43.132221%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con base en lo anterior, se logr&#243; beneficiar a 4,076 trabajadores
+						</p>
+						<p class="textItem " style="top:44.929397%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con el pago de 67.6 millones de pesos por despidos injustificados,
+						</p>
+						<p class="textItem " style="top:46.726573%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							falta de pago de salario, vacaciones y aguinaldos, entre otros, de
+						</p>
+						<p class="textItem " style="top:48.523748%;left:8.602151%;width:28.110599%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los cuales 2,366 son hombres y 1,710 mujeres.
+						</p>
+						<p class="textItem " style="top:51.861361%;left:8.602151%;width:11.367127%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.1. Trabajo
+						</p>
+						<p class="textItem " style="top:56.097561%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para garantizar el acceso a la justicia laboral en un marco de
+						</p>
+						<p class="textItem " style="top:57.894737%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							trato humano digno,  la Junta Local de Conciliaci&#243;n y Arbitraje
+						</p>
+						<p class="textItem " style="top:59.691913%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Estado a trav&#233;s de las 16 Juntas Especiales de Conciliaci&#243;n y
+						</p>
+						<p class="textItem " style="top:61.489089%;left:8.602151%;width:5.069124%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Arbitraje
+						</p>
+						<p class="textItem " style="top:61.617458%;left:13.671275%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							1
+						</p>
+						<p class="textItem " style="top:61.489089%;left:14.592934%;width:33.640553%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							realiza acciones en las que se promueve la paz social y
+						</p>
+						<p class="textItem " style="top:63.286264%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							armon&#237;a por medio de la conciliaci&#243;n y el di&#225;logo en las relaciones
+						</p>
+						<p class="textItem " style="top:65.083440%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							laborales, garantizando la resoluci&#243;n de conflictos laborales de
+						</p>
+						<p class="textItem " style="top:66.880616%;left:8.602151%;width:23.655914%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							conformidad con las partes interesadas.
+						</p>
+						<p class="textItem " style="top:70.474968%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Como resultado de estas acciones, se giraron 10,130 citas
+						</p>
+						<p class="textItem " style="top:72.272144%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							individuales de conciliaci&#243;n, de las cuales 9,855 fueron convenios
+						</p>
+						<p class="textItem " style="top:74.069320%;left:8.602151%;width:9.523810%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							administrativos.
+						</p>
+						<p class="textItem " style="top:77.663671%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se atendieron 10,620 demandas laborales de car&#225;cter individual,
+						</p>
+						<p class="textItem " style="top:79.460847%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de las cuales se desahogaron 15,123 audiencias, de &#233;stas se
+						</p>
+						<p class="textItem " style="top:81.258023%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							concluyeron 4,308 expedientes, de los que 1,360 son acuerdos por
+						</p>
+						<p class="textItem " style="top:83.055199%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							convenio para dar fin al juicio, 370 por desistimiento de las partes,
+						</p>
+						<p class="textItem " style="top:84.852375%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							1,914 por falta de promoci&#243;n, en la que se dict&#243; prescripci&#243;n
+						</p>
+						<p class="textItem " style="top:87.419769%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							1.  Juntas Especiales de Conciliaci&#243;n y Arbitraje:  P&#225;nuco (No. 1),  Tuxpan (No. 2), Poza Rica (No.
+						</p>
+						<p class="textItem " style="top:88.318357%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							3), Xalapa (No. 4; No. 5; No. 6 y No. 7), Veracruz (No. 8; y No. 9), Boca del R&#237;o (No. 10), C&#243;rdoba
+						</p>
+						<p class="textItem " style="top:89.216945%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							(No. 11), Ixtaczoquitl&#225;n (No. 12), San Andr&#233;s Tuxtla (No.13), Minatitl&#225;n (No.14) y Coatzacoalcos
+						</p>
+						<p class="textItem " style="top:90.243902%;left:8.602151%;width:7.680492%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							(No. 15 y No. 16).
+						</p>
+						<p class="textItem " style="top:17.971759%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y/o caducidad de la instancia y 664 por dict&#225;menes de autos de
+						</p>
+						<p class="textItem " style="top:19.768935%;left:49.769585%;width:6.144393%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ejecuci&#243;n.
+						</p>
+						<p class="textItem " style="top:23.363286%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con estas acciones, se logr&#243; beneficiar a 11,739 trabajadores
+						</p>
+						<p class="textItem " style="top:25.160462%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con un monto pagado de 455.5 millones de pesos, de los cuales
+						</p>
+						<p class="textItem " style="top:26.957638%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							188 son por concepto de convenio administrativo, 196.6 por
+						</p>
+						<p class="textItem " style="top:28.754814%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ratificaci&#243;n de renuncias y 70.9 por convenios celebrados dentro
+						</p>
+						<p class="textItem " style="top:30.551990%;left:49.769585%;width:5.529954%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de juicio.
+						</p>
+						<p class="textItem " style="top:34.146341%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Uno de los principales derechos de los trabajadores y patrones,
+						</p>
+						<p class="textItem " style="top:35.943517%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							es constituir sindicatos libremente, en este sentido se otorgaron
+						</p>
+						<p class="textItem " style="top:37.740693%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							16 nuevos registros sindicales y se expidieron 214 tomas de nota
+						</p>
+						<p class="textItem " style="top:39.537869%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por cambios de directiva sindical a aquellas organizaciones que
+						</p>
+						<p class="textItem " style="top:41.335045%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							efectuaron sus tr&#225;mites en tiempo, forma y estricto apego a la
+						</p>
+						<p class="textItem " style="top:43.132221%;left:49.769585%;width:35.330261%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							normatividad vigente que se&#241;ala la Ley Federal del Trabajo.
+						</p>
+						<p class="textItem " style="top:46.726573%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Secretar&#237;a Auxiliar de Conflictos Colectivos, a trav&#233;s de la Junta
+						</p>
+						<p class="textItem " style="top:48.523748%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Especial N&#250;mero Siete, recibi&#243; 280 demandas por emplazamiento a
+						</p>
+						<p class="textItem " style="top:50.320924%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							huelga, se&#241;alando 813 audiencias de avenimiento; se concluyeron
+						</p>
+						<p class="textItem " style="top:52.118100%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							369 expedientes de los que se ten&#237;an en tr&#225;mite; y se atendieron
+						</p>
+						<p class="textItem " style="top:53.915276%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							210 citas administrativas de car&#225;cter colectivo, con la finalidad
+						</p>
+						<p class="textItem " style="top:55.712452%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de priorizar la conciliaci&#243;n y como resultado del cuidado de la
+						</p>
+						<p class="textItem " style="top:57.509628%;left:49.769585%;width:20.583717%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							equidad de las partes en conflicto.
+						</p>
+						<p class="textItem " style="top:61.103979%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En la presente Administraci&#243;n no se cuenta con ninguna huelga
+						</p>
+						<p class="textItem " style="top:62.901155%;left:49.769585%;width:5.683564%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estallada.
+						</p>
+						<p class="textItem " style="top:66.495507%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el departamento de Contratos Colectivos, se depositaron
+						</p>
+						<p class="textItem " style="top:68.292683%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							legalmente 389 contratos colectivos de trabajo, 66 convenios y
+						</p>
+						<p class="textItem " style="top:70.089859%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							180 reglamentos interiores de trabajo en apoyo al gremio sindical.
+						</p>
+						<p class="textItem " style="top:73.684211%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con la finalidad de abatir en las Juntas de Conciliaci&#243;n y Arbitraje
+						</p>
+						<p class="textItem " style="top:75.481386%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Estado el rezago hist&#243;rico de conflictos sin resolver, se dio
+						</p>
+						<p class="textItem " style="top:77.278562%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							seguimiento a 6,497 expedientes, por medio de la conciliaci&#243;n y
+						</p>
+						<p class="textItem " style="top:79.075738%;left:49.769585%;width:23.348694%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el di&#225;logo como herramienta principal.
+						</p>
+						<p class="textItem " style="top:82.670090%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Durante el periodo que se informa, se concluyeron 6,260
+						</p>
+						<p class="textItem " style="top:84.467266%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							expedientes, lo que representa 96.4 por ciento de avance. Con las
+						</p>
+						<p class="textItem " style="top:86.264442%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acciones antes mencionadas, el Gobierno de Veracruz reafirma su
+						</p>
+						<p class="textItem " style="top:88.061617%;left:49.769585%;width:31.950845%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							compromiso de mantener la paz laboral en el Estado.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-139.html">139</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-140.html">140</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-141.html">141</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-142.html">142</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-143.html">143</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-144.html">144</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-145.html">145</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-146.html">146</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-147.html">147</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-148.html">148</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-149.html">149</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-150.html">150</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

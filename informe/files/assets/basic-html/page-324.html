@@ -1,0 +1,701 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "324";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-323.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;324 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-325.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-323.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">324 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-325.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0324.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem testString" style="top:18.356868%;left:19.969278%;width:4.915515%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							<b>Concepto</b>
+						</p>
+						<p class="textItem " style="top:18.356868%;left:36.712750%;width:10.752688%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							<b>Cursos Capacitados</b>
+						</p>
+						<p class="textItem " style="top:19.768935%;left:8.909370%;width:18.894009%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							<b>Formaci&#243;n del Nuevo Modelo Policial</b>
+						</p>
+						<p class="textItem " style="top:21.181001%;left:9.370200%;width:26.574501%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Formaci&#243;n Inicial, para Polic&#237;a Preventivo Estatal (Nuevo
+						</p>
+						<p class="textItem " style="top:22.207959%;left:9.370200%;width:3.993856%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Ingreso)
+						</p>
+						<p class="textItem " style="top:21.181001%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							5
+						</p>
+						<p class="textItem " style="top:21.181001%;left:43.317972%;width:2.918587%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							1,748
+						</p>
+						<p class="textItem " style="top:23.620026%;left:9.370200%;width:19.201229%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Formaci&#243;n Inicial, para Polic&#237;a Municipal
+						</p>
+						<p class="textItem " style="top:23.620026%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							4
+						</p>
+						<p class="textItem " style="top:23.620026%;left:43.317972%;width:2.918587%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							1,225
+						</p>
+						<p class="textItem " style="top:25.160462%;left:9.370200%;width:18.740399%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Formaci&#243;n Inicial, para Mandos Medios
+						</p>
+						<p class="textItem " style="top:25.160462%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							1
+						</p>
+						<p class="textItem " style="top:25.160462%;left:44.854071%;width:1.228879%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							16
+						</p>
+						<p class="textItem " style="top:26.572529%;left:9.370200%;width:20.583717%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Formaci&#243;n Inicial, para Personal de Tr&#225;nsito
+						</p>
+						<p class="textItem " style="top:26.572529%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							1
+						</p>
+						<p class="textItem " style="top:26.572529%;left:44.854071%;width:1.228879%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							43
+						</p>
+						<p class="textItem " style="top:27.984596%;left:8.909370%;width:6.758833%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							<b>Actualizaci&#243;n</b>
+						</p>
+						<p class="textItem " style="top:29.396662%;left:9.370200%;width:26.574501%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Actualizaci&#243;n de la Funci&#243;n Policial, para Personal de las
+						</p>
+						<p class="textItem " style="top:30.423620%;left:9.370200%;width:16.743472%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Delegaciones de Seguridad P&#250;blica
+						</p>
+						<p class="textItem " style="top:29.396662%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							4
+						</p>
+						<p class="textItem " style="top:29.396662%;left:44.239631%;width:1.996928%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							305
+						</p>
+						<p class="textItem " style="top:31.835687%;left:9.370200%;width:23.502304%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Actualizaci&#243;n en el Sistema de Justicia Penal, para
+						</p>
+						<p class="textItem " style="top:32.862644%;left:9.370200%;width:8.755760%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							personal de la PEA
+						</p>
+						<p class="textItem " style="top:31.835687%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							2
+						</p>
+						<p class="textItem " style="top:31.835687%;left:44.854071%;width:1.228879%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							50
+						</p>
+						<p class="textItem " style="top:34.274711%;left:9.370200%;width:21.044547%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Actualizaci&#243;n para Mandos Medios - SEMAR
+						</p>
+						<p class="textItem " style="top:34.274711%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							1
+						</p>
+						<p class="textItem " style="top:34.274711%;left:44.854071%;width:1.228879%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							30
+						</p>
+						<p class="textItem " style="top:35.815148%;left:9.370200%;width:25.652842%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Actualizaci&#243;n para Mandos Medios - Academia Estatal
+						</p>
+						<p class="textItem " style="top:36.842105%;left:9.370200%;width:4.608295%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							de Polic&#237;a
+						</p>
+						<p class="textItem " style="top:35.815148%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							1
+						</p>
+						<p class="textItem " style="top:35.815148%;left:44.854071%;width:1.228879%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							38
+						</p>
+						<p class="textItem " style="top:38.254172%;left:8.909370%;width:10.291859%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							<b>Formaci&#243;n Continua</b>
+						</p>
+						<p class="textItem " style="top:39.666239%;left:9.370200%;width:22.580645%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Formaci&#243;n para personal de Tr&#225;nsito del Estado
+						</p>
+						<p class="textItem " style="top:39.666239%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							2
+						</p>
+						<p class="textItem " style="top:39.666239%;left:44.854071%;width:1.228879%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							64
+						</p>
+						<p class="textItem " style="top:41.078306%;left:9.370200%;width:23.809524%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Formaci&#243;n para personal de Transporte del Estado
+						</p>
+						<p class="textItem " style="top:41.078306%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							2
+						</p>
+						<p class="textItem " style="top:41.078306%;left:44.854071%;width:1.228879%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							55
+						</p>
+						<p class="textItem " style="top:42.490372%;left:9.370200%;width:26.113671%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Primer M&#243;dulo de la Polic&#237;a Estatal Acreditable, Unidad
+						</p>
+						<p class="textItem " style="top:43.517330%;left:9.370200%;width:12.442396%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							I: Valores &#201;ticos y Jur&#237;dicos
+						</p>
+						<p class="textItem " style="top:42.490372%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							1
+						</p>
+						<p class="textItem " style="top:42.490372%;left:44.854071%;width:1.228879%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							84
+						</p>
+						<p class="textItem " style="top:44.929397%;left:9.370200%;width:23.502304%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Segundo M&#243;dulo de la Polic&#237;a Estatal Acreditable,
+						</p>
+						<p class="textItem " style="top:45.956354%;left:9.370200%;width:12.135177%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Unidad II: Tronco Com&#250;n
+						</p>
+						<p class="textItem " style="top:44.929397%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							1
+						</p>
+						<p class="textItem " style="top:44.929397%;left:44.239631%;width:1.996928%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							179
+						</p>
+						<p class="textItem " style="top:47.496791%;left:9.370200%;width:25.960061%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Tercer M&#243;dulo de la Polic&#237;a Estatal Acreditable, Unidad
+						</p>
+						<p class="textItem " style="top:48.523748%;left:9.370200%;width:8.602151%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							III: Especializaci&#243;n
+						</p>
+						<p class="textItem " style="top:47.496791%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							1
+						</p>
+						<p class="textItem " style="top:47.496791%;left:44.854071%;width:1.228879%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							79
+						</p>
+						<p class="textItem " style="top:49.935815%;left:9.370200%;width:12.749616%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Curso de Primeros Auxilios
+						</p>
+						<p class="textItem " style="top:49.935815%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							2
+						</p>
+						<p class="textItem " style="top:49.935815%;left:44.854071%;width:1.228879%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							68
+						</p>
+						<p class="textItem " style="top:51.347882%;left:8.909370%;width:12.288786%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							<b>Formaci&#243;n Especializada</b>
+						</p>
+						<p class="textItem " style="top:52.759949%;left:9.370200%;width:9.984639%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Prevenci&#243;n del delito
+						</p>
+						<p class="textItem " style="top:52.759949%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							2
+						</p>
+						<p class="textItem " style="top:52.759949%;left:44.854071%;width:1.228879%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							71
+						</p>
+						<p class="textItem " style="top:54.172015%;left:9.370200%;width:22.427035%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Conformaci&#243;n y An&#225;lisis de Estad&#237;stica Delictiva
+						</p>
+						<p class="textItem " style="top:54.172015%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							2
+						</p>
+						<p class="textItem " style="top:54.172015%;left:44.239631%;width:1.996928%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							127
+						</p>
+						<p class="textItem " style="top:55.584082%;left:9.370200%;width:16.743472%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Curso de Protecci&#243;n a Funcionarios
+						</p>
+						<p class="textItem " style="top:55.584082%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							2
+						</p>
+						<p class="textItem " style="top:55.584082%;left:44.854071%;width:1.228879%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							98
+						</p>
+						<p class="textItem " style="top:56.996149%;left:9.370200%;width:24.884793%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Curso de Formaci&#243;n Especializada para la Polic&#237;a Vial
+						</p>
+						<p class="textItem " style="top:56.996149%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							1
+						</p>
+						<p class="textItem " style="top:56.996149%;left:45.468510%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							8
+						</p>
+						<p class="textItem " style="top:58.536585%;left:9.370200%;width:23.655914%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Curso de Conducci&#243;n de Veh&#237;culos Patrullas, para
+						</p>
+						<p class="textItem " style="top:59.563543%;left:9.370200%;width:10.291859%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							personal de la SEMAR
+						</p>
+						<p class="textItem " style="top:58.536585%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							2
+						</p>
+						<p class="textItem " style="top:58.536585%;left:44.239631%;width:1.996928%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							114
+						</p>
+						<p class="textItem " style="top:60.975610%;left:9.370200%;width:20.890937%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Cursos de Conducci&#243;n de Veh&#237;culos Patrulla
+						</p>
+						<p class="textItem " style="top:60.975610%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							9
+						</p>
+						<p class="textItem " style="top:60.975610%;left:44.239631%;width:1.996928%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							329
+						</p>
+						<p class="textItem " style="top:62.387677%;left:9.370200%;width:25.806452%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							T&#233;cnicas de la Funci&#243;n Policial para personal operativo
+						</p>
+						<p class="textItem " style="top:62.387677%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							1
+						</p>
+						<p class="textItem " style="top:62.387677%;left:45.468510%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							1
+						</p>
+						<p class="textItem " style="top:63.799743%;left:8.909370%;width:13.056836%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							<b>Otros Cursos y Programas</b>
+						</p>
+						<p class="textItem " style="top:65.211810%;left:9.370200%;width:11.827957%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Sistema Penal Acusatorio
+						</p>
+						<p class="textItem " style="top:65.211810%;left:38.095238%;width:1.228879%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							35
+						</p>
+						<p class="textItem " style="top:65.211810%;left:43.317972%;width:2.918587%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							1,260
+						</p>
+						<p class="textItem " style="top:66.623877%;left:9.370200%;width:24.577573%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Seminario &#8220;Armas de Destrucci&#243;n en Masa y QBRE&#8221;
+						</p>
+						<p class="textItem " style="top:66.623877%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							1
+						</p>
+						<p class="textItem " style="top:66.623877%;left:44.854071%;width:1.228879%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							71
+						</p>
+						<p class="textItem " style="top:68.164313%;left:9.370200%;width:13.978495%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Taller de Incidentes Qu&#237;micos
+						</p>
+						<p class="textItem " style="top:68.164313%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							1
+						</p>
+						<p class="textItem " style="top:68.164313%;left:44.854071%;width:1.228879%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							60
+						</p>
+						<p class="textItem " style="top:69.576380%;left:9.370200%;width:15.514593%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Taller de Incidentes Radiol&#243;gicos
+						</p>
+						<p class="textItem " style="top:69.576380%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							1
+						</p>
+						<p class="textItem " style="top:69.576380%;left:44.854071%;width:1.228879%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							53
+						</p>
+						<p class="textItem " style="top:70.988447%;left:9.370200%;width:23.195084%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Curso de Motocicletas Policiales Harley Davidson
+						</p>
+						<p class="textItem " style="top:70.988447%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							2
+						</p>
+						<p class="textItem " style="top:70.988447%;left:44.854071%;width:1.228879%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							65
+						</p>
+						<p class="textItem " style="top:72.400513%;left:9.370200%;width:26.113671%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Gesti&#243;n de un desastre natural y establecimiento de un
+						</p>
+						<p class="textItem " style="top:73.427471%;left:9.370200%;width:7.526882%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							plan de socorro
+						</p>
+						<p class="textItem " style="top:72.400513%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							2
+						</p>
+						<p class="textItem " style="top:72.400513%;left:44.854071%;width:1.228879%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							80
+						</p>
+						<p class="textItem " style="top:74.839538%;left:9.370200%;width:23.809524%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Programa Nacional de Capacitaci&#243;n de la Funci&#243;n
+						</p>
+						<p class="textItem " style="top:75.866496%;left:9.370200%;width:26.113671%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							policial, dentro del Sistema de Justicia Penal Acusatorio
+						</p>
+						<p class="textItem " style="top:76.893453%;left:9.370200%;width:7.526882%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							(Polic&#237;a Federal)
+						</p>
+						<p class="textItem " style="top:74.839538%;left:38.709677%;width:0.614439%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							1
+						</p>
+						<p class="textItem " style="top:74.839538%;left:44.854071%;width:1.228879%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							53
+						</p>
+						<p class="textItem " style="top:78.305520%;left:8.909370%;width:13.824885%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							<b>Actividades extraordinarias</b>
+						</p>
+						<p class="textItem " style="top:79.845956%;left:9.370200%;width:24.731183%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							Actualizaci&#243;n en T&#233;cnicas de la Funci&#243;n Policial para
+						</p>
+						<p class="textItem " style="top:80.872914%;left:9.370200%;width:8.294931%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							personal del IPAX
+						</p>
+						<p class="textItem " style="top:79.845956%;left:38.095238%;width:1.228879%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							39
+						</p>
+						<p class="textItem " style="top:79.845956%;left:43.317972%;width:2.918587%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							2,007
+						</p>
+						<p class="textItem " style="top:82.284981%;left:8.909370%;width:3.686636%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							<b>Totales</b>
+						</p>
+						<p class="textItem " style="top:82.284981%;left:37.480799%;width:1.996928%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							<b>129</b>
+						</p>
+						<p class="textItem " style="top:82.284981%;left:43.317972%;width:2.918587%;height:1.155327%;font-size:0.350000em;color:#000000;font-family:Stone Sans Std;">
+							<b>8,381</b>
+						</p>
+						<p class="textItem " style="top:85.750963%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Como parte del Programa Iniciativa M&#233;rida, la Embajada de los
+						</p>
+						<p class="textItem " style="top:87.548139%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estados Unidos de Norteam&#233;rica, a trav&#233;s de la Secci&#243;n de Asuntos
+						</p>
+						<p class="textItem " style="top:89.345315%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Antinarc&#243;ticos, capacit&#243; a 32 elementos operativos e instructores
+						</p>
+						<p class="textItem " style="top:17.971759%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la Academia Estatal de Polic&#237;a en los cursos de Manejo de
+						</p>
+						<p class="textItem " style="top:19.768935%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Incidentes Cr&#237;ticos, Investigaciones Criminales, Supervivencia
+						</p>
+						<p class="textItem " style="top:21.566110%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Policial, Vigilancia Policial Orientada a la Comunidad, Supervisi&#243;n
+						</p>
+						<p class="textItem " style="top:23.363286%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Primera L&#237;nea, An&#225;lisis Criminal, Violencia de G&#233;nero y
+						</p>
+						<p class="textItem " style="top:25.160462%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Supervivencia y Seguridad T&#225;ctica, este &#250;ltimo se imparti&#243; en la
+						</p>
+						<p class="textItem " style="top:26.957638%;left:49.769585%;width:14.900154%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Rep&#250;blica de El Salvador.
+						</p>
+						<p class="textItem " style="top:30.551990%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Adem&#225;s, en el marco del Programa de Acreditaci&#243;n Policial
+						</p>
+						<p class="textItem " style="top:32.349166%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							impulsado en la Secretar&#237;a de Seguridad P&#250;blica, cuyo objetivo es la
+						</p>
+						<p class="textItem " style="top:34.146341%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							profesionalizaci&#243;n y la mejora de capacidades y conocimientos, en
+						</p>
+						<p class="textItem " style="top:35.943517%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el Tribunal Superior de Justicia del Estado de Veracruz se imparti&#243;
+						</p>
+						<p class="textItem " style="top:37.740693%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el Curso-Taller &#201;tica Policial a 1,215 elementos de los diferentes
+						</p>
+						<p class="textItem " style="top:39.537869%;left:49.769585%;width:15.975422%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							agrupamientos operativos.
+						</p>
+						<p class="textItem " style="top:43.132221%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A trav&#233;s del &#193;rea del Servicio M&#233;dico se dise&#241;&#243; un curso para
+						</p>
+						<p class="textItem " style="top:44.929397%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							elementos operativos sobre Atenci&#243;n M&#233;dica Pre Hospitalaria,
+						</p>
+						<p class="textItem " style="top:46.726573%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							impartido por param&#233;dicos de la Secretar&#237;a de Seguridad P&#250;blica,
+						</p>
+						<p class="textItem " style="top:48.523748%;left:49.769585%;width:29.185868%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							capacitando a 68 polic&#237;as, en una primera etapa.
+						</p>
+						<p class="textItem " style="top:52.118100%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El cuerpo acad&#233;mico de la Academia Estatal de Polic&#237;a est&#225; en
+						</p>
+						<p class="textItem " style="top:53.915276%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							constante actualizaci&#243;n, en el periodo de Informe participaron
+						</p>
+						<p class="textItem " style="top:55.712452%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en los cursos: Manejo de Incidentes Cr&#237;ticos, Investigaciones
+						</p>
+						<p class="textItem " style="top:57.509628%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Criminales Supervivencia Policial, Vigilancia Policiaca Orientada a
+						</p>
+						<p class="textItem " style="top:59.306804%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Comunidad y Supervisi&#243;n de Primera L&#237;nea, Violencia de G&#233;nero
+						</p>
+						<p class="textItem " style="top:61.103979%;left:49.769585%;width:11.213518%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y An&#225;lisis Criminal.
+						</p>
+						<p class="textItem " style="top:64.698331%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Adem&#225;s, 11 maestros de esta Instituci&#243;n, se titularon como
+						</p>
+						<p class="textItem " style="top:66.495507%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Docentes Certificados en temas de Investigaci&#243;n del Delito en el
+						</p>
+						<p class="textItem " style="top:68.292683%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Sistema de Justicia Penal, por la Secretar&#237;a T&#233;cnica del Consejo de
+						</p>
+						<p class="textItem " style="top:70.089859%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Coordinaci&#243;n para la implementaci&#243;n al Sistema de Justicia Penal
+						</p>
+						<p class="textItem " style="top:71.887035%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la Secretar&#237;a de Gobernaci&#243;n; y tres est&#225;n certificados como
+						</p>
+						<p class="textItem " style="top:73.684211%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Instructores Evaluadores ante el Sistema Nacional de Seguridad
+						</p>
+						<p class="textItem " style="top:75.481386%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							P&#250;blica en coordinaci&#243;n con el Consejo Nacional de Seguridad,
+						</p>
+						<p class="textItem " style="top:77.278562%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por medio de la Academia Regional de Seguridad P&#250;blica del
+						</p>
+						<p class="textItem " style="top:79.075738%;left:49.769585%;width:4.761905%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Sureste.
+						</p>
+						<p class="textItem " style="top:82.413350%;left:49.769585%;width:24.116743%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							4.2. Dignificaci&#243;n policial
+						</p>
+						<p class="textItem " style="top:86.649551%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En esta Administraci&#243;n, se realizaron las gestiones necesarias para
+						</p>
+						<p class="textItem " style="top:88.446727%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mejorar el salario de los elementos policiales en un 36.1 por ciento.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-319.html">319</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-320.html">320</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-321.html">321</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-322.html">322</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-323.html">323</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-324.html">324</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-325.html">325</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-326.html">326</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-327.html">327</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-328.html">328</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-329.html">329</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-330.html">330</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

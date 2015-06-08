@@ -1,0 +1,527 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "451";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-450.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;451 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-452.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-450.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">451 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-452.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0451.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:35.483871%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:41.935484%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:43.010753%;width:17.511521%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>F i n a n z a s y P l a n e a c i &#243; n</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:61.136713%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:62.211982%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>4 4 9</b>
+						</p>
+						<p class="textItem " style="top:15.661104%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							las y los inversionistas nacionales y extranjeros y para las y los
+						</p>
+						<p class="textItem " style="top:17.458280%;left:10.752688%;width:37.019969%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ciudadanos, altamente generador de credibilidad y confianza.
+						</p>
+						<p class="textItem " style="top:21.052632%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La pol&#237;tica de ingresos ejecutada en 2014, en aras de ese
+						</p>
+						<p class="textItem " style="top:22.849807%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							compromiso, persever&#243; en la aplicaci&#243;n de reformas para fortalecer
+						</p>
+						<p class="textItem " style="top:24.646983%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el financiamiento del desarrollo, cimentadas en estas vertientes: a)
+						</p>
+						<p class="textItem " style="top:26.444159%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Aumentar la eficiencia y equidad del sistema de recaudaci&#243;n; b)
+						</p>
+						<p class="textItem " style="top:28.241335%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Fortalecer la estructura tributaria y los beneficios fiscales; c) Ampliar
+						</p>
+						<p class="textItem " style="top:30.038511%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el universo de contribuyentes e incentivar la formalidad; d) Mejorar
+						</p>
+						<p class="textItem " style="top:31.835687%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los programas de fiscalizaci&#243;n para combatir la evasi&#243;n y elusi&#243;n
+						</p>
+						<p class="textItem " style="top:33.632863%;left:10.752688%;width:37.480799%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fiscal, y e) Impulsar la coordinaci&#243;n y colaboraci&#243;n hacendaria.
+						</p>
+						<p class="textItem " style="top:37.098845%;left:10.752688%;width:25.345622%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.1.1.1. Reforma tributaria
+						</p>
+						<p class="textItem " style="top:41.335045%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con la reforma al marco jur&#237;dico en materia de impuestos y
+						</p>
+						<p class="textItem " style="top:43.132221%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							derechos que entr&#243; en vigor en 2014 se fortalecieron las fuentes
+						</p>
+						<p class="textItem " style="top:44.929397%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							tributarias del Estado, a fin de incrementar los ingresos propios
+						</p>
+						<p class="textItem " style="top:46.726573%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para equilibrar la hacienda p&#250;blica y reducir la dependencia de los
+						</p>
+						<p class="textItem " style="top:48.523748%;left:10.752688%;width:15.514593%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							recursos de la Federaci&#243;n.
+						</p>
+						<p class="textItem " style="top:52.118100%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el caso de los impuestos sobre Loter&#237;as, Rifas, Sorteos y Concursos
+						</p>
+						<p class="textItem " style="top:53.915276%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(ISLO), sobre Erogaciones por Remuneraciones al Trabajo Personal
+						</p>
+						<p class="textItem " style="top:55.712452%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(ISERTP) y sobre Adquisici&#243;n de Veh&#237;culos Automotores Usados
+						</p>
+						<p class="textItem " style="top:57.509628%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(ISAVAU) la reforma simplific&#243; o ajust&#243; la base gravable de &#233;stos,
+						</p>
+						<p class="textItem " style="top:59.306804%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con el fin de promover su cumplimiento. El efecto final lo constituye
+						</p>
+						<p class="textItem " style="top:61.103979%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							una estructura tributaria conformada de pocos impuestos, con una
+						</p>
+						<p class="textItem " style="top:62.901155%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							base amplia. En el caso de los derechos se aplican tarifas justas,
+						</p>
+						<p class="textItem " style="top:64.698331%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que reflejan el costo de los servicios prestados y dan aliento a la
+						</p>
+						<p class="textItem " style="top:66.495507%;left:10.752688%;width:7.680492%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							recaudaci&#243;n.
+						</p>
+						<p class="textItem " style="top:66.495507%;left:18.433180%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							1
+						</p>
+						<p class="textItem " style="top:70.089859%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El ISLO se reform&#243; para incorporar como sujetos a las personas
+						</p>
+						<p class="textItem " style="top:71.887035%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							f&#237;sicas y morales, as&#237; como a las unidades econ&#243;micas, que perciben
+						</p>
+						<p class="textItem " style="top:73.684211%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ingresos o premios por la celebraci&#243;n de juegos, apuestas y
+						</p>
+						<p class="textItem " style="top:75.481386%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							concursos de cualquier clase, incluso con m&#225;quinas automatizadas.
+						</p>
+						<p class="textItem " style="top:77.278562%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se aplica una tasa de 3.5 por ciento sobre el importe de los boletos
+						</p>
+						<p class="textItem " style="top:79.075738%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							vendidos y de 5.2 por ciento sobre los premios obtenidos. Antes
+						</p>
+						<p class="textItem " style="top:80.872914%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el tributo s&#243;lo gravaba los premios de loter&#237;as y sorteos celebrados
+						</p>
+						<p class="textItem " style="top:87.419769%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							1. Decreto N&#250;mero 4 que reforma, adiciona y deroga diversos art&#237;culos del C&#243;digo Financiero
+						</p>
+						<p class="textItem " style="top:88.318357%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							y del C&#243;digo de Procedimientos Administrativos para el Estado de Veracruz, y de la Ley de
+						</p>
+						<p class="textItem " style="top:89.216945%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Coordinaci&#243;n Fiscal para el Estado y los Municipios de Veracruz, publicado en la Gaceta Oficial del
+						</p>
+						<p class="textItem " style="top:90.243902%;left:10.752688%;width:26.574501%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Estado, N&#250;mero Extraordinario 492, el 16 de diciembre de 2013.
+						</p>
+						<p class="textItem " style="top:15.661104%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por organismos p&#250;blicos descentralizados de la Administraci&#243;n
+						</p>
+						<p class="textItem " style="top:17.458280%;left:51.920123%;width:9.370200%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							P&#250;blica Federal.
+						</p>
+						<p class="textItem " style="top:17.586650%;left:61.290323%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							2
+						</p>
+						<p class="textItem " style="top:21.052632%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En materia del ISERTP la tasa impositiva se ajust&#243; de 2 a 3 por
+						</p>
+						<p class="textItem " style="top:22.849807%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ciento, pero s&#243;lo en el caso de los poderes del Gobierno Estatal,
+						</p>
+						<p class="textItem " style="top:24.646983%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							incluido el Poder Ejecutivo. Aunque a mayor carga tributaria,
+						</p>
+						<p class="textItem " style="top:26.444159%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mayor esfuerzo para las finanzas p&#250;blicas estatales, esta decisi&#243;n
+						</p>
+						<p class="textItem " style="top:28.241335%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se justifica por el impacto sobre la inversi&#243;n p&#250;blica, ya que hace
+						</p>
+						<p class="textItem " style="top:30.038511%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							posible reorientar recursos hacia el desarrollo social, la formaci&#243;n
+						</p>
+						<p class="textItem " style="top:31.835687%;left:51.920123%;width:36.251920%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de capital humano, la seguridad p&#250;blica y la protecci&#243;n civil.
+						</p>
+						<p class="textItem " style="top:31.964056%;left:88.172043%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							3
+						</p>
+						<p class="textItem " style="top:35.430039%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El c&#225;lculo del ISAVAU se hizo m&#225;s sencillo, atendiendo al principio
+						</p>
+						<p class="textItem " style="top:37.227214%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de simplicidad y menor costo administrativo. Para determinar
+						</p>
+						<p class="textItem " style="top:39.024390%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la contribuci&#243;n se estableci&#243; la tasa &#250;nica de 2 por ciento, con
+						</p>
+						<p class="textItem " style="top:40.821566%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cuota fija m&#237;nima de cuatro salarios m&#237;nimos diarios (SMD) para
+						</p>
+						<p class="textItem " style="top:42.618742%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							autom&#243;viles y de 2 SMD para motocicletas. Los veh&#237;culos con
+						</p>
+						<p class="textItem " style="top:44.415918%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							antig&#252;edad igual o mayor a 10 a&#241;os pagan la cuota fija m&#237;nima de
+						</p>
+						<p class="textItem " style="top:46.213094%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							2 y un SMD para autom&#243;viles y motocicletas, respectivamente. El
+						</p>
+						<p class="textItem " style="top:48.010270%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pago del impuesto se debe realizar dentro de los 5 d&#237;as siguientes
+						</p>
+						<p class="textItem " style="top:49.807445%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a la adquisici&#243;n del veh&#237;culo y la vendedora o el vendedor est&#225;n
+						</p>
+						<p class="textItem " style="top:51.604621%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							obligados a presentar oportunamente el aviso de enajenaci&#243;n de la
+						</p>
+						<p class="textItem " style="top:53.401797%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							unidad registrada en la Entidad a efecto de brindar certeza jur&#237;dica
+						</p>
+						<p class="textItem " style="top:55.198973%;left:51.920123%;width:22.887865%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a quienes participan en la transacci&#243;n.
+						</p>
+						<p class="textItem " style="top:55.327343%;left:74.807988%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							4
+						</p>
+						<p class="textItem " style="top:58.793325%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En congruencia con la reforma tributaria, en materia de
+						</p>
+						<p class="textItem " style="top:60.590501%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Derechos se redujo la brecha entre los ingresos percibidos como
+						</p>
+						<p class="textItem " style="top:62.387677%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							contraprestaci&#243;n y el costo de los servicios administrativos, as&#237;
+						</p>
+						<p class="textItem " style="top:64.184852%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							como del suministro de bienes de propiedad p&#250;blica, buscando
+						</p>
+						<p class="textItem " style="top:65.982028%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							hacerlos autofinanciables, pero sin afectar el ingreso de las familias
+						</p>
+						<p class="textItem " style="top:67.779204%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							o empresas ni distorsionar las actividades productivas. Con esta
+						</p>
+						<p class="textItem " style="top:69.576380%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							orientaci&#243;n continu&#243; lamodernizaci&#243;n de la estructura de Derechos
+						</p>
+						<p class="textItem " style="top:71.373556%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a partir del C&#243;digo expedido en julio de 2013, el cual concentra
+						</p>
+						<p class="textItem " style="top:73.170732%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los conceptos, tarifas y cuotas que aplican las dependencias y
+						</p>
+						<p class="textItem " style="top:74.967908%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							entidades estatales; as&#237; dicha reforma fortalece las facultades y la
+						</p>
+						<p class="textItem " style="top:76.765083%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							operaci&#243;n de los Organismos P&#250;blicos Descentralizados (OPD)
+						</p>
+						<p class="textItem " style="top:79.075738%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							2. Ib&#237;dem. Quedan exentas de pago las dependencias y organismos p&#250;blicos descentralizados de
+						</p>
+						<p class="textItem " style="top:79.974326%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							los tres &#243;rdenes de gobierno, cuyo objeto social sea la obtenci&#243;n de recursos para la asistencia
+						</p>
+						<p class="textItem " style="top:81.001284%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							p&#250;blica, y los donatarios autorizados para recibir donativos deducibles de conformidad con la Ley
+						</p>
+						<p class="textItem " style="top:81.899872%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							del Impuesto sobre la Renta. Para estos contribuyentes subsiste la obligaci&#243;n de retener y enterar
+						</p>
+						<p class="textItem " style="top:82.798460%;left:51.920123%;width:11.674347%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							el impuesto por los premios.
+						</p>
+						<p class="textItem " style="top:83.697047%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							3. Decreto N&#250;mero 4 publicado en la Gaceta Oficial del Estado, N&#250;mero Extraordinario 492, el
+						</p>
+						<p class="textItem " style="top:84.595635%;left:51.920123%;width:10.599078%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							16 de diciembre de 2013.
+						</p>
+						<p class="textItem " style="top:85.622593%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							4. Reglas de car&#225;cter general para la presentaci&#243;n del aviso de enajenaci&#243;n de veh&#237;culos registrados
+						</p>
+						<p class="textItem " style="top:86.521181%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							en el Estado de Veracruz, publicadas en la Gaceta Oficial del Estado N&#250;mero 273 el 16 de julio de
+						</p>
+						<p class="textItem " style="top:87.419769%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							2013. M&#225;s all&#225; de la enajenaci&#243;n, el vendedor debe presentar oportunamente el aviso de baja en
+						</p>
+						<p class="textItem " style="top:88.318357%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							el Registro Estatal de Contribuyentes, cuando efect&#250;e el cambio de propietario, en los casos de
+						</p>
+						<p class="textItem " style="top:89.216945%;left:51.920123%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							siniestro, robo, inutilidad, cambio de entidad federativa, y dem&#225;s causas legales que originen la
+						</p>
+						<p class="textItem " style="top:90.243902%;left:51.920123%;width:13.210445%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							transferencia o p&#233;rdida del bien.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-446.html">446</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-447.html">447</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-448.html">448</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-449.html">449</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-450.html">450</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-451.html">451</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-452.html">452</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-453.html">453</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-454.html">454</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-455.html">455</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-456.html">456</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-457.html">457</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

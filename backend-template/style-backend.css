@@ -1,0 +1,65 @@
+/* CSS Document */
+input[type="text"],  textarea{
+	width:100%;
+}
+.btn-style{
+	width:80%;
+	float:right;
+}
+.form-group{
+	margin-bottom: 10px;	
+}
+.control-label{
+	margin-top:5px;
+}
+.col-2{
+	width:20%;
+	float:left;
+	box-sizing: border-box;
+ 	padding: 0 7px;
+}
+.col-3{
+	width:30%;
+	float:left;
+	box-sizing: border-box;
+ 	padding: 0 7px;
+}
+.col-4{
+	width:40%;
+	float:left;
+	box-sizing: border-box;
+ 	padding: 0 7px;
+}
+.col-6{
+	width:60%;
+	float:left;
+	box-sizing: border-box;
+ 	padding: 0 7px;
+}
+.col-7{
+	width:70%;
+	float:left;
+	box-sizing: border-box;
+ 	padding: 0 7px;
+}
+.col-8{
+	width:80%;
+	float:left;
+	box-sizing: border-box;
+ 	padding: 0 7px;
+}
+.col-10{
+	width:100%;
+	padding: 0 7px;
+}
+.clearfix{
+	clear:both;
+}
+.sin-padding{
+	padding:0 !important;
+}
+.item-form-gobierno{
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+}

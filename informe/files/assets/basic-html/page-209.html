@@ -1,0 +1,461 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "209";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-208.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;209 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-210.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-208.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">209 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-210.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0209.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:42.089094%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:48.540707%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:49.615975%;width:4.301075%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>S a l u d</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:54.531490%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:55.606759%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>2 0 7</b>
+						</p>
+						<p class="textItem " style="top:27.342747%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el periodo de Informe, la raz&#243;n de mortalidad materna fue de
+						</p>
+						<p class="textItem " style="top:29.139923%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							50.9 por 100,000 nacidos vivos estimados, lo que significa un
+						</p>
+						<p class="textItem " style="top:30.937099%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							descenso de 3.8 con respecto al inicio de esta Administraci&#243;n, que
+						</p>
+						<p class="textItem " style="top:32.734275%;left:10.752688%;width:23.963134%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fue de 54.7 por 100,000 nacidos vivos
+						</p>
+						<p class="textItem " style="top:32.862644%;left:34.715822%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							2
+						</p>
+						<p class="textItem " style="top:32.734275%;left:35.176651%;width:15.207373%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							. El reto en los pr&#243;ximos
+						</p>
+						<p class="textItem " style="top:34.531451%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a&#241;os, es acelerar esta reducci&#243;n, lo que nos obliga a continuar en
+						</p>
+						<p class="textItem " style="top:36.328626%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la mejora del desempe&#241;o de nuestro sistema de salud con una
+						</p>
+						<p class="textItem " style="top:38.125802%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							atenci&#243;n oportuna con calidad humana y t&#233;cnica para todas las
+						</p>
+						<p class="textItem " style="top:39.922978%;left:10.752688%;width:5.069124%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mujeres.
+						</p>
+						<p class="textItem " style="top:43.388960%;left:10.752688%;width:25.652842%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.1.1. Planificaci&#243;n familiar
+						</p>
+						<p class="textItem " style="top:47.625160%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Derivado del eficiente abasto de insumos y para fortalecer la
+						</p>
+						<p class="textItem " style="top:49.422336%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cultura de prevenci&#243;n de embarazos no planificados y generar
+						</p>
+						<p class="textItem " style="top:51.219512%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							un crecimiento arm&#243;nico de la poblaci&#243;n, se proporcionaron
+						</p>
+						<p class="textItem " style="top:53.016688%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							459.1 miles de consultas de planificaci&#243;n familiar; 54,312 mujeres
+						</p>
+						<p class="textItem " style="top:54.813864%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							recibieron alg&#250;n m&#233;todo anticonceptivo posterior a un evento
+						</p>
+						<p class="textItem " style="top:56.611040%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							obst&#233;trico (parto, ces&#225;rea o aborto) o bien a su pareja se le realiz&#243;
+						</p>
+						<p class="textItem " style="top:58.408216%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							vasectom&#237;a sin bistur&#237;. Se incorporaron 61,320 usuarias nuevas
+						</p>
+						<p class="textItem " style="top:60.205392%;left:10.752688%;width:39.324117%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para sumar 267,300 usuarias activas de m&#233;todos anticonceptivos.
+						</p>
+						<p class="textItem " style="top:63.799743%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con la finalidad de brindarles un m&#233;todo anticonceptivo
+						</p>
+						<p class="textItem " style="top:65.596919%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							permanente a mujeres y hombres con maternidad y paternidad
+						</p>
+						<p class="textItem " style="top:67.394095%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							satisfecha, se realizaron 92 jornadas quir&#250;rgicas en donde se
+						</p>
+						<p class="textItem " style="top:69.191271%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							efectuaron 15,425 intervenciones, de las cuales 13,610 fueron
+						</p>
+						<p class="textItem " style="top:70.988447%;left:10.752688%;width:34.101382%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							salpingoclasias bilaterales y 1,815 vasectom&#237;as sin bistur&#237;.
+						</p>
+						<p class="textItem " style="top:74.582798%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para dotar de nuevos conocimientos y desarrollar habilidades en
+						</p>
+						<p class="textItem " style="top:76.379974%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los prestadores de servicios de salud en temas de planificaci&#243;n
+						</p>
+						<p class="textItem " style="top:78.177150%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							familiar, se impartieron 33 cursos de actualizaci&#243;n a personal de
+						</p>
+						<p class="textItem " style="top:79.974326%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							salud reproductiva, de las jurisdicciones sanitarias de SESVER; 17
+						</p>
+						<p class="textItem " style="top:81.771502%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cursos te&#243;rico-pr&#225;cticos de vasectom&#237;a sin bistur&#237; a cirujanos y
+						</p>
+						<p class="textItem " style="top:83.568678%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ginec&#243;logos; 29 talleres de anticoncepci&#243;n post-evento obst&#233;trico
+						</p>
+						<p class="textItem " style="top:85.365854%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a directores de hospitales, jefes de servicio de ginecolog&#237;a,
+						</p>
+						<p class="textItem " style="top:87.163030%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							jefaturas de enfermer&#237;a, personal de trabajo social y ense&#241;anza.
+						</p>
+						<p class="textItem " style="top:90.243902%;left:10.752688%;width:37.788018%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							2. Fuente: plataforma SINAVE m&#243;dulo de defunciones maternas, semana epidemiol&#243;gica 44.
+						</p>
+						<p class="textItem " style="top:27.342747%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En coordinaci&#243;n con el Instituto Veracruzano para la Formaci&#243;n
+						</p>
+						<p class="textItem " style="top:29.139923%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							e Investigaci&#243;n en Salud, se realizaron nueve cursos-taller sobre
+						</p>
+						<p class="textItem " style="top:30.937099%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							orientaci&#243;n y consejer&#237;a de m&#233;todos anticonceptivos dirigidos a
+						</p>
+						<p class="textItem " style="top:32.734275%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							personal m&#233;dico y de enfermer&#237;a de primer nivel de atenci&#243;n, con
+						</p>
+						<p class="textItem " style="top:34.531451%;left:51.920123%;width:23.963134%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							lo que se capacit&#243; a 1,080 trabajadores.
+						</p>
+						<p class="textItem " style="top:37.997433%;left:51.920123%;width:32.565284%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.1.2. Adelante en la prevenci&#243;n y
+						</p>
+						<p class="textItem " style="top:40.179718%;left:51.920123%;width:35.330261%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							control de c&#225;ncer de mama y c&#233;rvico
+						</p>
+						<p class="textItem " style="top:42.490372%;left:51.920123%;width:6.912442%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							uterino
+						</p>
+						<p class="textItem " style="top:46.726573%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el pa&#237;s, el c&#225;ncer mamario es la primera causa de muerte
+						</p>
+						<p class="textItem " style="top:48.523748%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en mujeres de 25 a&#241;os y m&#225;s. El estado de Veracruz registra el
+						</p>
+						<p class="textItem " style="top:50.320924%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							segundo lugar por esta causa en el contexto nacional, raz&#243;n por
+						</p>
+						<p class="textItem " style="top:52.118100%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la cual, se orientaron las estrategias para incrementar el tamizaje
+						</p>
+						<p class="textItem " style="top:53.915276%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por mastograf&#237;a con el prop&#243;sito de detectar nuevos casos en
+						</p>
+						<p class="textItem " style="top:55.712452%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							etapas tempranas y lograr mayor impacto en la disminuci&#243;n de la
+						</p>
+						<p class="textItem " style="top:57.509628%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mortalidad y en el aumento de la calidad de vida de las mujeres
+						</p>
+						<p class="textItem " style="top:59.306804%;left:51.920123%;width:9.677419%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que lo padecen.
+						</p>
+						<p class="textItem " style="top:62.901155%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En unidades de SESVER se realizaron 208.5 miles de exploraciones
+						</p>
+						<p class="textItem " style="top:64.698331%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cl&#237;nicas de mama en mujeres de 25 a 69 a&#241;os y se practicaron
+						</p>
+						<p class="textItem " style="top:66.495507%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							7,220 estudios de mastograf&#237;a a mujeres de 40 a 69 a&#241;os. Las
+						</p>
+						<p class="textItem " style="top:68.292683%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pacientes con resultado positivo, fueron ingresadas al Fondo de
+						</p>
+						<p class="textItem " style="top:70.089859%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Protecci&#243;n contra Gastos Catastr&#243;ficos (FPcGC), para recibir el
+						</p>
+						<p class="textItem " style="top:71.887035%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							tratamiento adecuado, sin costo alguno. Adem&#225;s, como parte del
+						</p>
+						<p class="textItem " style="top:73.684211%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Programa de Jornadas de Salud de Alta Especialidad, se realizaron
+						</p>
+						<p class="textItem " style="top:75.481386%;left:51.920123%;width:30.261137%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							1,266 exploraciones de mama y 836 mastograf&#237;as.
+						</p>
+						<p class="textItem " style="top:79.075738%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se imparti&#243; un curso de actualizaci&#243;n a personal m&#233;dico y
+						</p>
+						<p class="textItem " style="top:80.872914%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de enfermer&#237;a de las unidades de primer nivel de atenci&#243;n de
+						</p>
+						<p class="textItem " style="top:82.670090%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							las jurisdicciones sanitarias de SESVER, sobre la Norma Oficial
+						</p>
+						<p class="textItem " style="top:84.467266%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Mexicana NOM 041-SSA2-2011 para la prevenci&#243;n, diagn&#243;stico,
+						</p>
+						<p class="textItem " style="top:86.264442%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							tratamiento, control y vigilancia epidemiol&#243;gica de c&#225;ncer de
+						</p>
+						<p class="textItem " style="top:88.061617%;left:51.920123%;width:28.571429%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mama y conocimiento del modelo de atenci&#243;n.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-204.html">204</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-205.html">205</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-206.html">206</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-207.html">207</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-208.html">208</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-209.html">209</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-210.html">210</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-211.html">211</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-212.html">212</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-213.html">213</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-214.html">214</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-215.html">215</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

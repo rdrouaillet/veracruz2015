@@ -1,0 +1,494 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "490";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-489.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;490 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-491.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-489.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">490 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-491.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0490.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem testString" style="top:7.060334%;left:8.602151%;width:35.176651%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							1. Modernizaci&#243;n de la
+						</p>
+						<p class="textItem " style="top:9.756098%;left:8.602151%;width:35.176651%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							administraci&#243;n p&#250;blica
+						</p>
+						<p class="textItem " style="top:12.451861%;left:8.602151%;width:10.138249%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							estatal
+						</p>
+						<p class="textItem " style="top:18.356868%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Los objetivos y metas establecidos en el PVD, en su conjunto buscan
+						</p>
+						<p class="textItem " style="top:20.154044%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							atender las expectativas de la sociedad que demanda un Gobierno
+						</p>
+						<p class="textItem " style="top:21.951220%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ordenado, honesto y transparente, que pueda avanzar hacia un
+						</p>
+						<p class="textItem " style="top:23.748395%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sistema que genere confianza del ciudadano en las instituciones
+						</p>
+						<p class="textItem " style="top:25.545571%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y en la gesti&#243;n p&#250;blica y revertir su percepci&#243;n negativa respecto
+						</p>
+						<p class="textItem " style="top:27.342747%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a la calidad de los bienes y servicios que recibe del Gobierno. Es
+						</p>
+						<p class="textItem " style="top:29.139923%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por ello que se debe promover un gasto p&#250;blico cuantificable,
+						</p>
+						<p class="textItem " style="top:30.937099%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en consecuencia, evaluable; que permita calificar el actuar, tanto
+						</p>
+						<p class="textItem " style="top:32.734275%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de los funcionarios como de las instituciones, con la finalidad de
+						</p>
+						<p class="textItem " style="top:34.531451%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							construir una Administraci&#243;n P&#250;blica abierta al escrutinio, que
+						</p>
+						<p class="textItem " style="top:36.328626%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							act&#250;e con &#233;tica y responsabilidad social, como &#250;nico camino
+						</p>
+						<p class="textItem " style="top:38.125802%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para contribuir al desarrollo del Estado y el bienestar de todos los
+						</p>
+						<p class="textItem " style="top:39.922978%;left:8.602151%;width:8.294931%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							veracruzanos.
+						</p>
+						<p class="textItem " style="top:43.388960%;left:8.602151%;width:33.179724%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.1. Mejora de tr&#225;mites, servicios y
+						</p>
+						<p class="textItem " style="top:45.571245%;left:8.602151%;width:8.294931%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							procesos
+						</p>
+						<p class="textItem " style="top:49.807445%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La evaluaci&#243;n permanente del aparato gubernamental que
+						</p>
+						<p class="textItem " style="top:51.604621%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							establece el PVD, implica un diagn&#243;stico funcional y una
+						</p>
+						<p class="textItem " style="top:53.401797%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							modernizaci&#243;n que permita cumplir con el compromiso de
+						</p>
+						<p class="textItem " style="top:55.198973%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							eficientar la gesti&#243;n p&#250;blica, al aplicar los criterios de racionalidad
+						</p>
+						<p class="textItem " style="top:56.996149%;left:8.602151%;width:15.668203%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y austeridad presupuestal.
+						</p>
+						<p class="textItem " style="top:60.590501%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Es por ello, que en el ejercicio que se informa se realizaron 52
+						</p>
+						<p class="textItem " style="top:62.387677%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acciones para la adecuaci&#243;n de las estructuras org&#225;nicas de
+						</p>
+						<p class="textItem " style="top:64.184852%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							las dependencias y entidades estatales, comprendidas en 25
+						</p>
+						<p class="textItem " style="top:65.982028%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							emisiones de comentarios, seis asesor&#237;as y el registro de 21
+						</p>
+						<p class="textItem " style="top:67.779204%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estructuras en dependencias y entidades, que son: las Secretar&#237;as
+						</p>
+						<p class="textItem " style="top:69.576380%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Educaci&#243;n, Infraestructura y Obras P&#250;blicas, Desarrollo
+						</p>
+						<p class="textItem " style="top:71.373556%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Econ&#243;mico y Portuario, Salud, Desarrollo Social, Contralor&#237;a
+						</p>
+						<p class="textItem " style="top:73.170732%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							General y la Oficina de Programa de Gobierno; as&#237; como, al
+						</p>
+						<p class="textItem " style="top:74.967908%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Consejo Estatal de Seguridad P&#250;blica, Institutos Tecnol&#243;gicos
+						</p>
+						<p class="textItem " style="top:76.765083%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Superiores de Chicontepec, Perote, Mart&#237;nez de la Torre, San
+						</p>
+						<p class="textItem " style="top:78.562259%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Andr&#233;s Tuxtla, Xalapa y Tantoyuca; R&#233;gimen Estatal de Protecci&#243;n
+						</p>
+						<p class="textItem " style="top:80.359435%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Social en Salud, Comit&#233; Organizador de los Juegos Deportivos
+						</p>
+						<p class="textItem " style="top:82.156611%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Centroamericanos, Paracentroamericanos y del Caribe Veracruz
+						</p>
+						<p class="textItem " style="top:83.953787%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							2014, Colegio de Bachilleres del Estado de Veracruz, Instituto de
+						</p>
+						<p class="textItem " style="top:85.750963%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Pensiones del Estado y al Instituto Veracruzano de Educaci&#243;n para
+						</p>
+						<p class="textItem " style="top:87.548139%;left:8.602151%;width:6.912442%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los Adultos.
+						</p>
+						<p class="textItem " style="top:18.356868%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Aunado a lo anterior, y para contribuir a consolidar un Gobierno
+						</p>
+						<p class="textItem " style="top:20.154044%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							honesto, ordenado y transparente, se continu&#243; con la elaboraci&#243;n,
+						</p>
+						<p class="textItem " style="top:21.951220%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							validaci&#243;n y registro de los manuales administrativos, lo que
+						</p>
+						<p class="textItem " style="top:23.748395%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							comprendi&#243; para este ejercicio realizar 220 acciones integradas
+						</p>
+						<p class="textItem " style="top:25.545571%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por 70 validaciones, 94 emisiones de comentarios y seis asesor&#237;as;
+						</p>
+						<p class="textItem " style="top:27.342747%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							lo que permiti&#243; el registro de 30 manuales de organizaci&#243;n y
+						</p>
+						<p class="textItem " style="top:29.139923%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							procedimientos de: las Secretar&#237;as de Gobierno, Educaci&#243;n,
+						</p>
+						<p class="textItem " style="top:30.937099%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Protecci&#243;n Civil, del Trabajo, Previsi&#243;n Social y Productividad; as&#237;
+						</p>
+						<p class="textItem " style="top:32.734275%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							como, del Instituto de Espacios Educativos del Estado de Veracruz,
+						</p>
+						<p class="textItem " style="top:34.531451%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el Colegio de Bachilleres del Estado de Veracruz, el Instituto
+						</p>
+						<p class="textItem " style="top:36.328626%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruzano de la Vivienda, el Instituto Tecnol&#243;gico Superior
+						</p>
+						<p class="textItem " style="top:38.125802%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Huatusco, el Colegio de Estudios Cient&#237;ficos y Tecnol&#243;gicos
+						</p>
+						<p class="textItem " style="top:39.922978%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Estado de Veracruz, el Comit&#233; Organizador de los Juegos
+						</p>
+						<p class="textItem " style="top:41.720154%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Deportivos Centroamericanos, Paracentroamericanos y del Caribe
+						</p>
+						<p class="textItem " style="top:43.517330%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz 2014 y el Seguro Social de los Trabajadores del Estado de
+						</p>
+						<p class="textItem " style="top:45.314506%;left:49.769585%;width:5.529954%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz.
+						</p>
+						<p class="textItem " style="top:48.908858%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Por otra parte, con la finalidad de concretar la pol&#237;tica de
+						</p>
+						<p class="textItem " style="top:50.706033%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							simplificaci&#243;n y modernizaci&#243;n en materia de tr&#225;mites y servicios
+						</p>
+						<p class="textItem " style="top:52.503209%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ciudadanos, se dio seguimiento al Programa de Mejora de Tr&#225;mites
+						</p>
+						<p class="textItem " style="top:54.300385%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estatales, a trav&#233;s de la integraci&#243;n al Registro Estatal de Tr&#225;mites y
+						</p>
+						<p class="textItem " style="top:56.097561%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Servicios (RETS), publicado en la Gaceta Oficial del Estado N&#250;mero
+						</p>
+						<p class="textItem " style="top:57.894737%;left:49.769585%;width:27.649770%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Extraordinario 256 en fecha 27 de junio 2014.
+						</p>
+						<p class="textItem " style="top:61.489089%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En este contexto, es importante resaltar que la Secretar&#237;a de
+						</p>
+						<p class="textItem " style="top:63.286264%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Educaci&#243;n promovi&#243; la homologaci&#243;n de los servicios que ofrece
+						</p>
+						<p class="textItem " style="top:65.083440%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en los 21 Institutos Tecnol&#243;gicos Superiores del Estado, as&#237; como
+						</p>
+						<p class="textItem " style="top:66.880616%;left:49.769585%;width:38.709677%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en las tres Universidades Tecnol&#243;gicas y la Polit&#233;cnica del Estado.
+						</p>
+						<p class="textItem " style="top:70.474968%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							De igual manera, se realizaron acciones en coordinaci&#243;n con
+						</p>
+						<p class="textItem " style="top:72.272144%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Secretar&#237;a de Finanzas y Planeaci&#243;n, para el desarrollo y
+						</p>
+						<p class="textItem " style="top:74.069320%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							establecimiento del Sistema del Registro Estatal de Tr&#225;mites y
+						</p>
+						<p class="textItem " style="top:75.866496%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Servicios, base de datos que contiene la informaci&#243;n relativa
+						</p>
+						<p class="textItem " style="top:77.663671%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a las 467 gestiones ciudadanas que ofrecen las dependencias y
+						</p>
+						<p class="textItem " style="top:79.460847%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							entidades en las 1,580 &#225;reas de atenci&#243;n al p&#250;blico, y a trav&#233;s de
+						</p>
+						<p class="textItem " style="top:81.258023%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la cual se actualizan y validan los datos relativos a los tr&#225;mites y
+						</p>
+						<p class="textItem " style="top:83.055199%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							servicios, lo que permitir&#225; ofrecer informaci&#243;n veraz y oportuna a
+						</p>
+						<p class="textItem " style="top:84.852375%;left:49.769585%;width:22.119816%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la ciudadan&#237;a en su sitio en Internet
+						</p>
+						<a class="linkTextItem  " href="http://www.tramites.veracruz.gob.mx/" target="_blank"  style="top:84.852375%;left:71.889401%;width:17.357911%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;" title="">
+							 www.tramites.veracruz.gob.
+						</a>
+						<a class="linkTextItem  " href="http://www.tramites.veracruz.gob.mx/" target="_blank"  style="top:86.649551%;left:49.769585%;width:1.996928%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;" title="">
+							mx
+						</a>
+						<p class="textItem " style="top:86.649551%;left:51.766513%;width:37.480799%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							. En el periodo que se informa se autorizaron 372 c&#233;dulas de
+						</p>
+						<p class="textItem " style="top:88.446727%;left:49.769585%;width:21.198157%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							tr&#225;mites y servicios en dicho portal.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-485.html">485</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-486.html">486</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-487.html">487</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-488.html">488</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-489.html">489</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-490.html">490</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-491.html">491</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-492.html">492</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-493.html">493</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-494.html">494</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-495.html">495</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-496.html">496</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

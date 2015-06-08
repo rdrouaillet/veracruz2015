@@ -1,0 +1,464 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "276";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-275.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;276 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-277.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-275.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">276 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-277.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0276.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem testString" style="top:7.060334%;left:8.602151%;width:36.251920%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							8. Impulsar la actividad
+						</p>
+						<p class="textItem " style="top:9.756098%;left:8.602151%;width:37.327189%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							deportiva para todos los
+						</p>
+						<p class="textItem " style="top:12.451861%;left:8.602151%;width:20.583717%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							veracruzanos
+						</p>
+						<p class="textItem " style="top:18.356868%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Considerando lo establecido en el PVD 2011&#8211;2016, as&#237; como en
+						</p>
+						<p class="textItem " style="top:20.154044%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el Programa Veracruzano de Educaci&#243;n 2011-2016, referente a
+						</p>
+						<p class="textItem " style="top:21.951220%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fomentar el desarrollo humano para mejorar la calidad de vida
+						</p>
+						<p class="textItem " style="top:23.748395%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la poblaci&#243;n, el Instituto Veracruzano del Deporte sustent&#243; su
+						</p>
+						<p class="textItem " style="top:25.545571%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							funcionamientoenunprogramapresupuestal denominado Impulso
+						</p>
+						<p class="textItem " style="top:27.342747%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							al Deporte Competitivo, el cual brinda servicios que contribuyen
+						</p>
+						<p class="textItem " style="top:29.139923%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							al desarrollo del deporte, es decir servicios y apoyos integrales
+						</p>
+						<p class="textItem " style="top:30.937099%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para mejorar de manera continua el desempe&#241;o deportivo de los
+						</p>
+						<p class="textItem " style="top:32.734275%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							veracruzanos; adem&#225;s de tres actividades institucionales: Fomento
+						</p>
+						<p class="textItem " style="top:34.531451%;left:8.602151%;width:37.634409%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a la Cultura F&#237;sica, Equidad de G&#233;nero, y Equipos Profesionales.
+						</p>
+						<p class="textItem " style="top:38.125802%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para su funcionamiento, y en apego a lo establecido en el art&#237;culo
+						</p>
+						<p class="textItem " style="top:39.922978%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							52 de la Ley para el Sistema Estatal de Cultura F&#237;sica y Deporte, se
+						</p>
+						<p class="textItem " style="top:41.720154%;left:8.602151%;width:32.258065%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							consider&#243; la atenci&#243;n de los siguientes subprogramas:
+						</p>
+						<p class="textItem " style="top:45.186136%;left:8.602151%;width:21.044547%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							8.1. Deporte asociado
+						</p>
+						<p class="textItem " style="top:49.422336%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se hizo entrega de 110 apoyos a 36 asociaciones deportivas
+						</p>
+						<p class="textItem " style="top:51.219512%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							debidamente inscritas en el Sistema Estatal del Deporte, mediante
+						</p>
+						<p class="textItem " style="top:53.016688%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el Centro de Informaci&#243;n y Documentaci&#243;n de Cultura F&#237;sica y
+						</p>
+						<p class="textItem " style="top:54.813864%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Deporte (CEID), de esta manera, dichas asociaciones asistieron y
+						</p>
+						<p class="textItem " style="top:56.611040%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							participaron en 110 eventos nacionales, estatales y regionales, y un
+						</p>
+						<p class="textItem " style="top:58.408216%;left:8.602151%;width:33.026114%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							evento internacional en beneficio de 3,525 deportistas.
+						</p>
+						<p class="textItem " style="top:61.745828%;left:8.602151%;width:37.788018%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							8.2. Becas, est&#237;mulos y reconocimientos
+						</p>
+						<p class="textItem " style="top:65.982028%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Desarrollado en apego a los lineamientos del Instructivo para
+						</p>
+						<p class="textItem " style="top:67.779204%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Selecci&#243;n, Dictaminaci&#243;n, Mantenimiento de Becas, Est&#237;mulos,
+						</p>
+						<p class="textItem " style="top:69.576380%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Reconocimientos y Premios 2011-2016, mediante el cual se
+						</p>
+						<p class="textItem " style="top:71.373556%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							benefici&#243; a los m&#225;s destacados agentes del deporte, registrados
+						</p>
+						<p class="textItem " style="top:73.170732%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en los eventos de Olimpiada Nacional, Primera Fuerza, Master, del
+						</p>
+						<p class="textItem " style="top:74.967908%;left:8.602151%;width:26.881720%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Deporte Adaptado y de los Adultos Mayores.
+						</p>
+						<p class="textItem " style="top:78.562259%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Un total de 631 becas fueron distribuidas en el Programa de
+						</p>
+						<p class="textItem " style="top:80.359435%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Talentos: 391 de Primera Fuerza; Categor&#237;a Master; Deporte
+						</p>
+						<p class="textItem " style="top:82.156611%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Adaptado; Iniciaci&#243;n Deportiva; y Becas especiales. As&#237; como a 149
+						</p>
+						<p class="textItem " style="top:83.953787%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Entrenadores, siete metod&#243;logos y 84 de Apoyo al deporte lo que
+						</p>
+						<p class="textItem " style="top:85.750963%;left:8.602151%;width:16.589862%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sum&#243; 22 millones de pesos.
+						</p>
+						<p class="textItem " style="top:18.356868%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En este apartado se integra tambi&#233;n el Premio Estatal del Deporte, es
+						</p>
+						<p class="textItem " style="top:20.154044%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							un est&#237;mulo adicional a lo m&#225;s destacado del deporte veracruzano.
+						</p>
+						<p class="textItem " style="top:21.951220%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Este a&#241;o ascendi&#243; a un monto de 820 mil pesos integrado por
+						</p>
+						<p class="textItem " style="top:23.748395%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							100 mil pesos como aportaci&#243;n de la Comisi&#243;n de Cultura F&#237;sica y
+						</p>
+						<p class="textItem " style="top:25.545571%;left:49.769585%;width:34.715822%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Deporte (CONADE), y el resto por el Gobierno del Estado.
+						</p>
+						<p class="textItem " style="top:29.011553%;left:49.769585%;width:34.254992%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							8.3. Medicina y ciencias aplicadas al
+						</p>
+						<p class="textItem " style="top:31.193838%;left:49.769585%;width:7.526882%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							deporte
+						</p>
+						<p class="textItem " style="top:35.430039%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Por considerarla parte de los servicios integrales otorgados a
+						</p>
+						<p class="textItem " style="top:37.227214%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							deportistas y entrenadores, los especialistas en las &#225;reas de Fisiatr&#237;a,
+						</p>
+						<p class="textItem " style="top:39.024390%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Psicolog&#237;a, Nutrici&#243;n yMedicina Deportiva, atendieron en conjunto
+						</p>
+						<p class="textItem " style="top:40.821566%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a 3,421 personas, a trav&#233;s de consultas, tratamientos y visitas
+						</p>
+						<p class="textItem " style="top:42.618742%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de campos durante las etapas de preparaci&#243;n, entrenamiento
+						</p>
+						<p class="textItem " style="top:44.415918%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y competencia. Lo anterior contribuye no s&#243;lo a mejorar el
+						</p>
+						<p class="textItem " style="top:46.213094%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							desempe&#241;o competitivo de los deportistas, sino tambi&#233;n a
+						</p>
+						<p class="textItem " style="top:48.010270%;left:49.769585%;width:15.975422%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							preservar su salud integral.
+						</p>
+						<p class="textItem " style="top:51.476252%;left:49.769585%;width:38.248848%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							8.4. Atenci&#243;n a talentos y deportistas de
+						</p>
+						<p class="textItem " style="top:53.658537%;left:49.769585%;width:15.821813%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							alto rendimiento
+						</p>
+						<p class="textItem " style="top:57.894737%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para contribuir al &#243;ptimo desempe&#241;o del atleta considerado de
+						</p>
+						<p class="textItem " style="top:59.691913%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							alto rendimiento, result&#243; indispensable la revisi&#243;n, supervisi&#243;n y
+						</p>
+						<p class="textItem " style="top:61.489089%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							evaluaci&#243;n de los planes de entrenamiento, as&#237; como plazos de
+						</p>
+						<p class="textItem " style="top:63.286264%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							tiempo fijados por el entrenador para el desarrollo de las diferentes
+						</p>
+						<p class="textItem " style="top:65.083440%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cualidades o capacidades psicomotoras tales como h&#225;bitos y
+						</p>
+						<p class="textItem " style="top:66.880616%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							destrezas que contempla su preparaci&#243;n, con miras a la excelencia.
+						</p>
+						<p class="textItem " style="top:68.677792%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se realizaron visitas de campo a concentraciones, campamentos y
+						</p>
+						<p class="textItem " style="top:70.474968%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							competencias. Finalmente, se atendieron un promedio de 4,170
+						</p>
+						<p class="textItem " style="top:72.272144%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							deportistas. Con atenci&#243;n integral a 62 deportistas considerados
+						</p>
+						<p class="textItem " style="top:74.069320%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							como talentos deportivos, atletas de alto rendimiento e
+						</p>
+						<p class="textItem " style="top:75.866496%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							integrantes de los selectivos nacionales y, de ellos, 13 clasificados
+						</p>
+						<p class="textItem " style="top:77.663671%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en atletismo, triatl&#243;n, tenis y nataci&#243;n que participar&#225;n en los
+						</p>
+						<p class="textItem " style="top:79.460847%;left:49.769585%;width:32.104455%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Juegos Centroamericanos y del Caribe Veracruz 2014.
+						</p>
+						<p class="textItem " style="top:82.926829%;left:49.769585%;width:20.890937%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							8.5. Deporte selectivo
+						</p>
+						<p class="textItem " style="top:87.163030%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Las caracter&#237;sticas geogr&#225;ficas del Estado son un reto para la
+						</p>
+						<p class="textItem " style="top:88.960205%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							organizaci&#243;n del deporte, ya que para lograr conformar selectivos
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-271.html">271</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-272.html">272</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-273.html">273</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-274.html">274</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-275.html">275</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-276.html">276</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-277.html">277</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-278.html">278</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-279.html">279</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-280.html">280</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-281.html">281</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-282.html">282</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

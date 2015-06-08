@@ -1,0 +1,491 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "73";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-72.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;73 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-74.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-72.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">73 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-74.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0073.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:34.562212%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:41.013825%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:42.089094%;width:19.969278%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>D e s a r r o l l o A g r o p e c u a r i o</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:62.826421%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:63.901690%;width:1.536098%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>7 1</b>
+						</p>
+						<p class="textItem " style="top:10.526316%;left:10.752688%;width:30.568356%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.3.1. Fomento a las actividades
+						</p>
+						<p class="textItem " style="top:12.836970%;left:10.752688%;width:29.493088%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							productivas del sector primario
+						</p>
+						<p class="textItem " style="top:17.073171%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para impulsar la productividad y rentabilidad de cultivos como
+						</p>
+						<p class="textItem " style="top:18.870347%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ma&#237;z, pi&#241;a y sorgo; y fortalecer a las organizaciones de productores
+						</p>
+						<p class="textItem " style="top:20.667522%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dedicados a la producci&#243;n de estos cultivos, se apoy&#243; con 17.3
+						</p>
+						<p class="textItem " style="top:22.464698%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							millones de recursos estatales para el mantenimiento y adopci&#243;n
+						</p>
+						<p class="textItem " style="top:24.261874%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de tecnolog&#237;as de punta por microclima en 380 hect&#225;reas en
+						</p>
+						<p class="textItem " style="top:26.059050%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							zonas de alto potencial productivo de la Entidad, lo que benefici&#243;
+						</p>
+						<p class="textItem " style="top:27.856226%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a productores organizados con 2,015 apoyos y gener&#243; 11,400
+						</p>
+						<p class="textItem " style="top:29.653402%;left:10.752688%;width:9.370200%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							jornales locales.
+						</p>
+						<p class="textItem " style="top:32.991014%;left:10.752688%;width:32.565284%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.3.2. Apoyo al fortalecimiento de
+						</p>
+						<p class="textItem " style="top:35.301669%;left:10.752688%;width:35.330261%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							granos b&#225;sicos, frutales y oleaginosas
+						</p>
+						<p class="textItem " style="top:39.537869%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con un monto de inversi&#243;n estatal de 6 millones de pesos, se
+						</p>
+						<p class="textItem " style="top:41.335045%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							apoy&#243; la adquisici&#243;n de 8,500 paquetes de ma&#237;z h&#237;brido, frijol
+						</p>
+						<p class="textItem " style="top:43.132221%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							soya y plantas de frutales, en beneficio de igual n&#250;mero de
+						</p>
+						<p class="textItem " style="top:44.929397%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							productores de diferentes regiones del Estado con alto potencial
+						</p>
+						<p class="textItem " style="top:46.726573%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para el establecimiento de este tipo de cultivos; con estas acciones
+						</p>
+						<p class="textItem " style="top:48.523748%;left:10.752688%;width:24.731183%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se generaron un total de 85,000 jornales.
+						</p>
+						<p class="textItem " style="top:51.861361%;left:10.752688%;width:38.402458%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.3.3. Apoyo a la fertilizaci&#243;n de cultivos
+						</p>
+						<p class="textItem " style="top:54.172015%;left:10.752688%;width:6.912442%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							b&#225;sicos
+						</p>
+						<p class="textItem " style="top:58.408216%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con la finalidad de potencializar la producci&#243;n de granos b&#225;sicos
+						</p>
+						<p class="textItem " style="top:60.205392%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							como ma&#237;z y frijol, mediante la aplicaci&#243;n de fertilizantes para
+						</p>
+						<p class="textItem " style="top:62.002567%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							incrementar el rendimiento por unidad de superficie, se destin&#243;
+						</p>
+						<p class="textItem " style="top:63.799743%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							un monto de inversi&#243;n estatal de poco m&#225;s de 6.5 millones de
+						</p>
+						<p class="textItem " style="top:65.596919%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pesos para apoyar la adquisici&#243;n de 985 toneladas de fertilizantes,
+						</p>
+						<p class="textItem " style="top:67.394095%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en apoyo de 394 productores, lo que gener&#243; un total de 3,940
+						</p>
+						<p class="textItem " style="top:69.191271%;left:10.752688%;width:5.069124%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							jornales.
+						</p>
+						<p class="textItem " style="top:72.785623%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Por tercer a&#241;o consecutivo se ejecut&#243; el programa denominado:
+						</p>
+						<p class="textItem " style="top:74.582798%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Iniciativa Privada Apoya al Campo Veracruzano, mediante
+						</p>
+						<p class="textItem " style="top:76.379974%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							gestiones de la SEDARPA, en el cual compa&#241;&#237;as privadas apoyaron
+						</p>
+						<p class="textItem " style="top:78.177150%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a productores con semilla h&#237;brida de ma&#237;z, fertilizantes e insumos,
+						</p>
+						<p class="textItem " style="top:79.974326%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a trav&#233;s de la modalidad cr&#233;dito para pagar a la cosecha y sin
+						</p>
+						<p class="textItem " style="top:81.771502%;left:10.752688%;width:5.683564%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							intereses.
+						</p>
+						<p class="textItem " style="top:85.365854%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Programas de este tipo, adem&#225;s de fortalecer las actividades
+						</p>
+						<p class="textItem " style="top:87.163030%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de las dependencias, promueven la productividad del campo
+						</p>
+						<p class="textItem " style="top:88.960205%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							veracruzano contribuyendo a la autosuficiencia de la producci&#243;n
+						</p>
+						<p class="textItem " style="top:17.073171%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de granos b&#225;sicos. En este caso, la SEDARPA sirvi&#243; como enlace
+						</p>
+						<p class="textItem " style="top:18.870347%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							entre los productores a trav&#233;s de los municipios y las empresas
+						</p>
+						<p class="textItem " style="top:20.667522%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							privadas, con el fin de incentivar otras formas de colaboraci&#243;n entre
+						</p>
+						<p class="textItem " style="top:22.464698%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los diferentes actores de la cadena productiva. Dicho Programa
+						</p>
+						<p class="textItem " style="top:24.261874%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							atendi&#243; a un total de 246 productores de ma&#237;z en los municipios
+						</p>
+						<p class="textItem " style="top:26.059050%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Comapa, Cotaxtla, Manlio Fabio Altamirano, Paso de Ovejas
+						</p>
+						<p class="textItem " style="top:27.856226%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y Puente Nacional, en una superficie de 500 hect&#225;reas, con una
+						</p>
+						<p class="textItem " style="top:29.653402%;left:51.920123%;width:22.887865%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							inversi&#243;n total de 3 millones de pesos.
+						</p>
+						<p class="textItem " style="top:32.991014%;left:51.920123%;width:30.721966%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.3.4. Apoyo con equipo para el
+						</p>
+						<p class="textItem " style="top:35.301669%;left:51.920123%;width:22.427035%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							fortalecimiento agr&#237;cola
+						</p>
+						<p class="textItem " style="top:39.537869%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se ejecut&#243; el proyecto denominado Apoyo al Fortalecimiento del
+						</p>
+						<p class="textItem " style="top:41.335045%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Equipamiento Agr&#237;cola (Tianguis Agropecuarios), con el fin de
+						</p>
+						<p class="textItem " style="top:43.132221%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							apuntalar la tecnificaci&#243;n de las peque&#241;as y medianas unidades
+						</p>
+						<p class="textItem " style="top:44.929397%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de producci&#243;n, lo cual es una prioridad a fin de hacer m&#225;s
+						</p>
+						<p class="textItem " style="top:46.726573%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							competitivas las labores agropecuarias e incrementar la producci&#243;n
+						</p>
+						<p class="textItem " style="top:48.523748%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de alimentos; por ello, la presente Administraci&#243;n destin&#243; una
+						</p>
+						<p class="textItem " style="top:50.320924%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							inversi&#243;n estatal de 8 millones de pesos para la adquisici&#243;n 8,100
+						</p>
+						<p class="textItem " style="top:52.118100%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							equipos menores como son: bombas aspersoras manuales y
+						</p>
+						<p class="textItem " style="top:53.915276%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							motorizadas, desmalezadoras, picadoras de forraje, motosierras,
+						</p>
+						<p class="textItem " style="top:55.712452%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							bombas de agua, entre otros, lo que permiti&#243; beneficiar a un
+						</p>
+						<p class="textItem " style="top:57.509628%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							total de 810 productores de zonas de media, alta y muy alta
+						</p>
+						<p class="textItem " style="top:59.306804%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							marginaci&#243;n. Con estas acciones se generaron un total de 40,500
+						</p>
+						<p class="textItem " style="top:61.103979%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							jornales en apoyo a las familias que participaron en este programa.
+						</p>
+						<p class="textItem " style="top:64.698331%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En otro proyecto similar, para promover el uso de maquinaria y
+						</p>
+						<p class="textItem " style="top:66.495507%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							equipos con tecnolog&#237;a de punta adecuada para cada regi&#243;n,
+						</p>
+						<p class="textItem " style="top:68.292683%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se destin&#243; un monto estatal de 12 millones de pesos, dirigidos a
+						</p>
+						<p class="textItem " style="top:70.089859%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							productores dedicados a la producci&#243;n primaria en diversas ramas
+						</p>
+						<p class="textItem " style="top:71.887035%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							productivas en todo el Estado de Veracruz, con este recurso se
+						</p>
+						<p class="textItem " style="top:73.684211%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							apoy&#243; la adquisici&#243;n de 11,256 equipos agr&#237;colas en beneficio de
+						</p>
+						<p class="textItem " style="top:75.481386%;left:51.920123%;width:37.173579%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							1,126 productores y la generaci&#243;n de m&#225;s de 11,000 jornales.
+						</p>
+						<p class="textItem " style="top:79.075738%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En apoyo a los productores organizados de ma&#237;z, chile y papaya, se
+						</p>
+						<p class="textItem " style="top:80.872914%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							invirtieron recursos por un monto estatal de 11 millones de pesos
+						</p>
+						<p class="textItem " style="top:82.670090%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para 500 paquetes tecnol&#243;gicos, en beneficio de igual n&#250;mero de
+						</p>
+						<p class="textItem " style="top:84.467266%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							productores, los cuales consistieron en insumos y semilla mejorada
+						</p>
+						<p class="textItem " style="top:86.264442%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							recomendada por los institutos de investigaci&#243;n, para lograr la
+						</p>
+						<p class="textItem " style="top:88.061617%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							alta rentabilidad en dichos cultivos y aprovechar el alto potencial
+						</p>
+						<p class="textItem " style="top:89.858793%;left:51.920123%;width:34.101382%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							productivo y la generaci&#243;n de 4,855 jornales temporales.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-68.html">68</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-69.html">69</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-70.html">70</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-71.html">71</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-72.html">72</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-73.html">73</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-74.html">74</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-75.html">75</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-76.html">76</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-77.html">77</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-78.html">78</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-79.html">79</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

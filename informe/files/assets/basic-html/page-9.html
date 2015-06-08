@@ -1,0 +1,425 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "9";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-8.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;9 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-10.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-8.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">9 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-10.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0009.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:11.938383%;left:22.734255%;width:9.677419%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							&#205;ndice
+						</p>
+						<a class="linkTextItem testString internalLink" href="./page-35.html" target="_self"  style="top:18.356868%;left:22.734255%;width:10.445469%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>PRESENTACI&#211;N</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-35.html" target="_self"  style="top:18.356868%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>33</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-49.html" target="_self"  style="top:21.437741%;left:22.734255%;width:40.860215%;height:1.540436%;font-size:0.500000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>ECONOM&#205;A FUERTE PARA EL PROGRESO DE LA GENTE</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-49.html" target="_self"  style="top:21.566110%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>47</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-50.html" target="_self"  style="top:24.646983%;left:22.734255%;width:27.956989%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							<b>DESARROLLO ECON&#211;MICO Y PORTUARIO</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-50.html" target="_self"  style="top:24.646983%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>48</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-51.html" target="_self"  style="top:27.856226%;left:22.734255%;width:38.863287%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>SECRETAR&#205;A DE DESARROLLO ECON&#211;MICO Y PORTUARIO</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-51.html" target="_self"  style="top:27.856226%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>49</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-51.html" target="_self"  style="top:30.937099%;left:22.734255%;width:23.195084%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>1. MARCO LEGAL Y REGULATORIO</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-51.html" target="_self"  style="top:30.937099%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>49</b>
+						</a>
+						<a class="linkTextItem testString internalLink" href="./page-51.html" target="_self"  style="top:33.247754%;left:24.577573%;width:30.414747%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							1.1. CONSEJO ESTATAL DE MEJORA REGULATORIA
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-51.html" target="_self"  style="top:33.247754%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>49</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-52.html" target="_self"  style="top:35.430039%;left:24.577573%;width:46.236559%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							1.2. PROGRAMA DE DESREGULACI&#211;N DE TR&#193;MITES B&#193;SICOS MUNICIPALES
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-52.html" target="_self"  style="top:35.430039%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>50</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-52.html" target="_self"  style="top:37.740693%;left:24.577573%;width:32.718894%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							1.3. PROGRAMA DE MEJORA DE TR&#193;MITES ESTATALES
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-52.html" target="_self"  style="top:37.740693%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>50</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-52.html" target="_self"  style="top:39.922978%;left:24.577573%;width:25.652842%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							1.4. PREMIO VERACRUZANO DE CALIDAD
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-52.html" target="_self"  style="top:39.922978%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>50</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-52.html" target="_self"  style="top:43.132221%;left:22.734255%;width:49.769585%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>2. CRECIMIENTO DE EMPRESAS ANCLA Y FORTALECIMIENTO DE CADENAS</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-52.html" target="_self"  style="top:44.929397%;left:24.423963%;width:9.831029%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>PRODUCTIVAS</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-52.html" target="_self"  style="top:44.929397%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>50</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-53.html" target="_self"  style="top:47.111682%;left:24.577573%;width:40.552995%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							2.1. PROGRAMA PARQUES INDUSTRIALES VERACRUZANOS (PIVER)
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-53.html" target="_self"  style="top:47.111682%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>51</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-53.html" target="_self"  style="top:50.320924%;left:22.734255%;width:50.076805%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>3. PROYECTOS ESTRAT&#201;GICOS DETONADORES DE DESARROLLO REGIONAL</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-53.html" target="_self"  style="top:50.320924%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>51</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-53.html" target="_self"  style="top:52.503209%;left:24.577573%;width:8.141321%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							3.1. MINER&#205;A
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-53.html" target="_self"  style="top:52.503209%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>51</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-53.html" target="_self"  style="top:54.813864%;left:24.577573%;width:43.164363%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							3.2. GRUPO ECON&#211;MICO DE LA REGI&#211;N SUR-SURESTE (GERSSE) 2014
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-53.html" target="_self"  style="top:54.813864%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>51</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-54.html" target="_self"  style="top:57.894737%;left:22.734255%;width:23.348694%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>4. INFRAESTRUCTURA PORTUARIA</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-54.html" target="_self"  style="top:57.894737%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>52</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-54.html" target="_self"  style="top:60.205392%;left:24.577573%;width:34.715822%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							4.1. ADMINISTRACIONES PORTUARIAS INTEGRALES (API)
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-54.html" target="_self"  style="top:60.205392%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>52</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-55.html" target="_self"  style="top:62.387677%;left:24.577573%;width:16.897081%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							4.2. PUERTO DE ALVARADO
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-55.html" target="_self"  style="top:62.387677%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>53</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-55.html" target="_self"  style="top:65.596919%;left:22.734255%;width:23.809524%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>5. PRODUCTIVIDAD E INNOVACI&#211;N</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-55.html" target="_self"  style="top:65.596919%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>53</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-55.html" target="_self"  style="top:67.779204%;left:24.577573%;width:37.019969%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							5.1. PROGRAMA DE EST&#205;MULOS PARA LA INNOVACI&#211;N (PEI)
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-55.html" target="_self"  style="top:67.779204%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>53</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-56.html" target="_self"  style="top:70.988447%;left:22.734255%;width:27.188940%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>6. INVERSI&#211;N NACIONAL Y EXTRANJERA</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-56.html" target="_self"  style="top:70.988447%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>54</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-57.html" target="_self"  style="top:73.170732%;left:24.577573%;width:25.806452%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							6.1. PROGRAMA MIL GRANDES EMPRESAS
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-57.html" target="_self"  style="top:73.170732%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>55</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-57.html" target="_self"  style="top:76.379974%;left:22.734255%;width:23.809524%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>7. COMPETITIVIDAD EMPRESARIAL</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-57.html" target="_self"  style="top:76.379974%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>55</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-57.html" target="_self"  style="top:78.562259%;left:24.577573%;width:44.700461%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							7.1. CENTROS DE DESARROLLO EMPRESARIAL VERACRUZANO (CEDEVER)
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-57.html" target="_self"  style="top:78.562259%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>55</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-57.html" target="_self"  style="top:80.872914%;left:24.577573%;width:24.116743%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							7.2. RED DE APOYO AL EMPRENDEDOR
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-57.html" target="_self"  style="top:80.872914%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>55</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-58.html" target="_self"  style="top:83.055199%;left:24.577573%;width:37.788018%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							7.3. ACCIONES DE CAPACITACI&#211;N PARA LA COMPETITIVIDAD
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-58.html" target="_self"  style="top:83.055199%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>56</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-58.html" target="_self"  style="top:85.365854%;left:24.577573%;width:44.854071%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							7.4. PROGRAMA DE PROFESIONALIZACI&#211;N DE SECTORES PRODUCTIVOS
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-58.html" target="_self"  style="top:85.365854%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>56</b>
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-59.html" target="_self"  style="top:87.548139%;left:24.577573%;width:29.953917%;height:1.412067%;font-size:0.450000em;color:#190E13;font-family:Stone Sans Std;" title="">
+							7.5. RECONOCIMIENTOS A LA COMPETITIVIDAD
+						</a>
+						<a class="linkTextItem  internalLink" href="./page-59.html" target="_self"  style="top:87.548139%;left:80.952381%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#0C0609;font-family:Stone Sans Std;" title="">
+							<b>57</b>
+						</a>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-4.html">4</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-5.html">5</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-6.html">6</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-7.html">7</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-8.html">8</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-9.html">9</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-10.html">10</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-11.html">11</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-12.html">12</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-13.html">13</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-14.html">14</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-15.html">15</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

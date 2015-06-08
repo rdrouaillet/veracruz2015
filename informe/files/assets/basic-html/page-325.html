@@ -1,0 +1,482 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "325";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-324.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;325 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-326.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-324.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">325 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-326.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0325.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:37.173579%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:43.471582%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:44.546851%;width:14.132104%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>S e g u r i d a d P &#250; b l i c a</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:59.600614%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:60.522273%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>3 2 3</b>
+						</p>
+						<p class="textItem " style="top:17.971759%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con ello, se logr&#243; incrementar de 8,574.9 pesos a 11,677.18 pesos
+						</p>
+						<p class="textItem " style="top:19.768935%;left:10.752688%;width:16.436252%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para la categor&#237;a de polic&#237;a.
+						</p>
+						<p class="textItem " style="top:23.363286%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con la finalidad de reconocer la labor del polic&#237;a veracruzano, la
+						</p>
+						<p class="textItem " style="top:25.160462%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Secretar&#237;a de Seguridad P&#250;blica a trav&#233;s del programa Compromiso
+						</p>
+						<p class="textItem " style="top:26.957638%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Empresarial con Nuestra Polic&#237;a, ha celebrado convenios de
+						</p>
+						<p class="textItem " style="top:28.754814%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							colaboraci&#243;n con diversas empresas a lo largo y ancho del
+						</p>
+						<p class="textItem " style="top:30.551990%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estado, con el objeto de otorgar beneficios, promociones, becas
+						</p>
+						<p class="textItem " style="top:32.349166%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y/o descuentos para los elementos policiales adscritos a esta
+						</p>
+						<p class="textItem " style="top:34.146341%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dependencia y sus familias. Logrando a la fecha concretar estos
+						</p>
+						<p class="textItem " style="top:35.943517%;left:10.752688%;width:17.050691%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							beneficios en 423 empresas.
+						</p>
+						<p class="textItem " style="top:39.537869%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Durante la celebraci&#243;n del D&#237;a del Polic&#237;a Veracruzano realizado en
+						</p>
+						<p class="textItem " style="top:41.335045%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Boca del R&#237;o, el 24 de abril de 2014, se entregaron las distinciones
+						</p>
+						<p class="textItem " style="top:43.132221%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Polic&#237;a del A&#241;o, M&#233;rito Policial, Perseverancia y Valor Heroico
+						</p>
+						<p class="textItem " style="top:44.929397%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a 12 polic&#237;as y al Agrupamiento Taj&#237;n. Adem&#225;s, 132 elementos
+						</p>
+						<p class="textItem " style="top:46.726573%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de distintas delegaciones y agrupamientos operativos fueron
+						</p>
+						<p class="textItem " style="top:48.523748%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							distinguidos por su participaci&#243;n en acciones relevantes en contra
+						</p>
+						<p class="textItem " style="top:50.320924%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la delincuencia o en auxilio a la poblaci&#243;n en caso de siniestros.
+						</p>
+						<p class="textItem " style="top:53.915276%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Como parte del fortalecimiento de las Unidades de G&#233;nero, se
+						</p>
+						<p class="textItem " style="top:55.712452%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							apoya a las madres trabajadoras de la Secretar&#237;a, brind&#225;ndoles la
+						</p>
+						<p class="textItem " style="top:57.509628%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							prestaci&#243;n de los servicios educativos de un Centro de Desarrollo
+						</p>
+						<p class="textItem " style="top:59.306804%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Infantil (CENDI), para los niveles de lactantes a preescolar y un
+						</p>
+						<p class="textItem " style="top:61.103979%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Club de Tareas para ni&#241;os de nivel b&#225;sico. Estimulando con estas
+						</p>
+						<p class="textItem " style="top:62.901155%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acciones un mejor desempe&#241;o durante las jornadas laborales al
+						</p>
+						<p class="textItem " style="top:64.698331%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							tener la tranquilidad y confianza de la buena atenci&#243;n y calidad
+						</p>
+						<p class="textItem " style="top:66.495507%;left:10.752688%;width:15.207373%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acad&#233;mica para sus hijos.
+						</p>
+						<p class="textItem " style="top:70.089859%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Adem&#225;s, como lo establece el Sistema Integral de Desarrollo
+						</p>
+						<p class="textItem " style="top:71.887035%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Policial (SIDEPOL) del nuevo modelo policial, se promueve entre
+						</p>
+						<p class="textItem " style="top:73.684211%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los integrantes de la corporaci&#243;n la culminaci&#243;n de estudios de
+						</p>
+						<p class="textItem " style="top:75.481386%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							nivel medio, medio superior y superior, a trav&#233;s de los convenios
+						</p>
+						<p class="textItem " style="top:77.278562%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de colaboraci&#243;n con el Instituto Veracruzano de Educaci&#243;n para
+						</p>
+						<p class="textItem " style="top:79.075738%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los adultos (IVEA) y la Universidad Popular Aut&#243;noma de Veracruz
+						</p>
+						<p class="textItem " style="top:80.872914%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(UPAV). En el periodo de Informe 615 elementos han concluido su
+						</p>
+						<p class="textItem " style="top:82.670090%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							educaci&#243;n media superior, este avance les permite participar en las
+						</p>
+						<p class="textItem " style="top:84.467266%;left:10.752688%;width:22.580645%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							promociones y ascensos del SIDEPOL.
+						</p>
+						<p class="textItem " style="top:88.061617%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para favorecer la seguridad social, la Secretar&#237;a trabaj&#243; de manera
+						</p>
+						<p class="textItem " style="top:89.858793%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							permanente con cinco programas desarrollados a trav&#233;s del
+						</p>
+						<p class="textItem " style="top:17.971759%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Servicio M&#233;dico: Atenci&#243;n Prehospitalaria, Vigilancia M&#233;dica
+						</p>
+						<p class="textItem " style="top:19.768935%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Integral, Rehabilitaci&#243;n F&#237;sica, Programa de Atenci&#243;n Odontol&#243;gica
+						</p>
+						<p class="textItem " style="top:21.566110%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Integral, M&#233;xico Sano y Una Campa&#241;a de Vacunaci&#243;n Permanente,
+						</p>
+						<p class="textItem " style="top:23.363286%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en coordinaci&#243;n con el Instituto Mexicano del Seguro Social, en
+						</p>
+						<p class="textItem " style="top:25.160462%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							total se realizaron 223,923 acciones en beneficio de la salud de los
+						</p>
+						<p class="textItem " style="top:26.957638%;left:51.920123%;width:14.746544%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							elementos y sus familias.
+						</p>
+						<p class="textItem testString" style="top:29.910141%;left:51.920123%;width:21.658986%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							5. Combatir la
+						</p>
+						<p class="textItem " style="top:32.605905%;left:51.920123%;width:19.662058%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							delincuencia
+						</p>
+						<p class="textItem " style="top:38.639281%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En estricto cumplimiento a la pol&#237;tica que en materia de seguridad
+						</p>
+						<p class="textItem " style="top:40.436457%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							instaur&#243; el Ejecutivo Federal, el Gobierno de Veracruz, a trav&#233;s de
+						</p>
+						<p class="textItem " style="top:42.233633%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Secretar&#237;a de Seguridad P&#250;blica y en apego a lo establecido en
+						</p>
+						<p class="textItem " style="top:44.030809%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el Plan Veracruzano de Desarrollo 2011-2016 y al marco jur&#237;dico
+						</p>
+						<p class="textItem " style="top:45.827985%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que la rige, desarrolla estrategias de protecci&#243;n y contenci&#243;n de la
+						</p>
+						<p class="textItem " style="top:47.625160%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							delincuencia en las zonas lim&#237;trofes de la Entidad, con el objetivo
+						</p>
+						<p class="textItem " style="top:49.422336%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de preservar el estado de derecho, las libertades, la seguridad de
+						</p>
+						<p class="textItem " style="top:51.219512%;left:51.920123%;width:26.267281%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los veracruzanos, el orden y la paz p&#250;blicos.
+						</p>
+						<p class="textItem " style="top:54.813864%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Programa Blindaje, iniciado en el norte del Estado y extendido
+						</p>
+						<p class="textItem " style="top:56.611040%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en C&#243;rdoba, Coatzacoalcos y Minatitl&#225;n, es un esfuerzo conjunto
+						</p>
+						<p class="textItem " style="top:58.408216%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							entre los tres &#243;rdenes de gobierno, para preservar la seguridad
+						</p>
+						<p class="textItem " style="top:60.205392%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de los municipios a trav&#233;s del reforzamiento de sus capacidades;
+						</p>
+						<p class="textItem " style="top:62.002567%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							es as&#237; como se realizan acciones de video vigilancia, patrullaje
+						</p>
+						<p class="textItem " style="top:63.799743%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a&#233;reo, revisi&#243;n de documentaci&#243;n de veh&#237;culos, operativos de
+						</p>
+						<p class="textItem " style="top:65.596919%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							alcoholimetr&#237;a y el retiro de polarizados de veh&#237;culos, reforzadas
+						</p>
+						<p class="textItem " style="top:67.394095%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con actividades de prevenci&#243;n del delito, donde se fortalece la
+						</p>
+						<p class="textItem " style="top:69.191271%;left:51.920123%;width:28.725038%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							participaci&#243;n ciudadana y la corresponsabilidad.
+						</p>
+						<p class="textItem " style="top:72.785623%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Asimismo, la Secretar&#237;a inici&#243; Mesas de Coordinaci&#243;n de Seguridad
+						</p>
+						<p class="textItem " style="top:74.582798%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Regional, para vincular administrativa y operativamente a los
+						</p>
+						<p class="textItem " style="top:76.379974%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipios mediante la creaci&#243;n de Regiones Seguras, donde en
+						</p>
+						<p class="textItem " style="top:78.177150%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estrecha coordinaci&#243;n la Polic&#237;a Estatal y las Polic&#237;as Municipales
+						</p>
+						<p class="textItem " style="top:79.974326%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Acreditables, conjuntan esfuerzos para combatir el fen&#243;meno
+						</p>
+						<p class="textItem " style="top:81.771502%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							delictivo por zonas dentro de las acciones del Operativo Veracruz
+						</p>
+						<p class="textItem " style="top:83.568678%;left:51.920123%;width:4.761905%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Seguro.
+						</p>
+						<p class="textItem " style="top:87.163030%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A la fecha se han integrado siete regiones bajo este esquema de
+						</p>
+						<p class="textItem " style="top:88.960205%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							operaci&#243;n que permite alcanzar objetivos a corto plazo y fortalecer
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-320.html">320</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-321.html">321</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-322.html">322</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-323.html">323</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-324.html">324</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-325.html">325</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-326.html">326</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-327.html">327</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-328.html">328</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-329.html">329</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-330.html">330</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-331.html">331</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

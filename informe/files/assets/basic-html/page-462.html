@@ -1,0 +1,629 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "462";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-461.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;462 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-463.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-461.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">462 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-463.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0462.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:13.478819%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del programa se otorgaron servicios a las y los contribuyentes para
+						</p>
+						<p class="textItem " style="top:15.275995%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							facilitar su incorporaci&#243;n en el RIF, dotarles de la FIEL y auxiliarles en
+						</p>
+						<p class="textItem " style="top:17.073171%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el cumplimiento tributario. Se realizaron actividades de inscripci&#243;n
+						</p>
+						<p class="textItem " style="top:18.870347%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y actualizaci&#243;n del Registro Federal de Contribuyentes (RFC) y
+						</p>
+						<p class="textItem " style="top:20.667522%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							otorgamiento de contrase&#241;a; asesor&#237;a para la generaci&#243;n de Factura
+						</p>
+						<p class="textItem " style="top:22.464698%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							F&#225;cil y la aplicaci&#243;n Mis Cuentas; capacitaci&#243;n a las OHE sobre el
+						</p>
+						<p class="textItem " style="top:24.261874%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							padr&#243;n del RIF y sus beneficios. La gama de servicios completos
+						</p>
+						<p class="textItem " style="top:26.059050%;left:8.602151%;width:36.559140%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se otorga en 21 OHE y la orientaci&#243;n fiscal en 31 oficinas.
+						</p>
+						<p class="textItem " style="top:26.059050%;left:45.161290%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							32
+						</p>
+						<p class="textItem " style="top:26.059050%;left:46.390169%;width:1.689708%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se
+						</p>
+						<p class="textItem " style="top:27.856226%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							realizaron adem&#225;s reuniones con c&#225;maras empresariales, colegios
+						</p>
+						<p class="textItem " style="top:29.653402%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							e institutos profesionales para promover el cumplimiento de las y
+						</p>
+						<p class="textItem " style="top:31.450578%;left:8.602151%;width:11.367127%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los contribuyentes.
+						</p>
+						<p class="textItem " style="top:35.044929%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El padr&#243;n del Impuesto sobre la Renta (ISR) del r&#233;gimen intermedio
+						</p>
+						<p class="textItem " style="top:36.842105%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de actividades empresariales ascendi&#243; a 81,604 contribuyentes. A
+						</p>
+						<p class="textItem " style="top:38.639281%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							diciembre de 2013 se hab&#237;an integrado 4,439 personas f&#237;sicas al
+						</p>
+						<p class="textItem " style="top:40.436457%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sistema fiscal estatal, mismas que realizaron pagos por un importe
+						</p>
+						<p class="textItem " style="top:42.233633%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							total de 8.2 millones de pesos. Para 2014, con motivo de la reforma
+						</p>
+						<p class="textItem " style="top:44.030809%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							hacendaria federal, ese grupo pas&#243; al R&#233;gimen de Actividades
+						</p>
+						<p class="textItem " style="top:45.827985%;left:8.602151%;width:38.248848%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Empresariales y Profesionales, el cual es administrado por el SAT.
+						</p>
+						<p class="textItem " style="top:49.422336%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El padr&#243;n de contribuyentes obligados al IEPS a la venta final de
+						</p>
+						<p class="textItem " style="top:51.219512%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							gasolinas y diesel ascendi&#243; a 475 sujetos activos que pagaron
+						</p>
+						<p class="textItem " style="top:53.016688%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							impuestos por 205.8 millones de pesos. A partir de 2014 el
+						</p>
+						<p class="textItem " style="top:54.813864%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mecanismo de recaudaci&#243;n se transfiri&#243; del &#225;mbito estatal al federal,
+						</p>
+						<p class="textItem " style="top:56.611040%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por lo que PEMEX retiene y entera la recaudaci&#243;n del impuesto a
+						</p>
+						<p class="textItem " style="top:58.408216%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la SHCP, junto con la informaci&#243;n del volumen enajenado en cada
+						</p>
+						<p class="textItem " style="top:60.205392%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							entidad federativa. La dependencia distribuye los recursos, en su
+						</p>
+						<p class="textItem " style="top:62.002567%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							porcentaje correspondiente a 9/11 partes de las cuotas, a cada
+						</p>
+						<p class="textItem " style="top:63.799743%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							entidad federativa a trav&#233;s de las Participaciones en el IEPS a las
+						</p>
+						<p class="textItem " style="top:65.596919%;left:8.602151%;width:11.059908%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Gasolinas y Diesel.
+						</p>
+						<p class="textItem " style="top:69.191271%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con motivo de la reforma del ISLO, que deriv&#243; en el incremento
+						</p>
+						<p class="textItem " style="top:70.988447%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de sujetos activos y en la ampliaci&#243;n de la base gravable -premisas
+						</p>
+						<p class="textItem " style="top:72.785623%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							b&#225;sicas para fortalecer su potencial recaudatorio-, se desplegaron
+						</p>
+						<p class="textItem " style="top:74.582798%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acciones para conformar el REC, cuya actividad econ&#243;mica se
+						</p>
+						<p class="textItem " style="top:76.379974%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ubique en los supuestos de causaci&#243;n del impuesto, el cual gener&#243;
+						</p>
+						<p class="textItem " style="top:78.177150%;left:8.602151%;width:29.953917%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ingresos por un importe de 3.3 millones de pesos.
+						</p>
+						<p class="textItem " style="top:82.798460%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							32. Oficinas de Hacienda que prestan servicios completos: Boca del R&#237;o, Cardel, Coatzacoalcos,
+						</p>
+						<p class="textItem " style="top:83.697047%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C&#243;rdoba, Cosamaloapan, Huatusco, Huayacocotla, Mart&#237;nez de la Torre, Minatitl&#225;n, Naranjos-
+						</p>
+						<p class="textItem " style="top:84.595635%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Amatl&#225;n, Orizaba, P&#225;nuco, Perote, Poza Rica, San Andr&#233;s Tuxtla, Tantoyuca, Tuxpan, Veracruz,
+						</p>
+						<p class="textItem " style="top:85.622593%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Xalapa &#193;nimas, Xalapa Diamante y Zongolica. Oficinas de Hacienda que orientan a los
+						</p>
+						<p class="textItem " style="top:86.521181%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							contribuyentes: &#193;lamo-Temapache, Alto Lucero, Alvarado, Cerro Azul, Ciudad Cuauht&#233;moc del
+						</p>
+						<p class="textItem " style="top:87.419769%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							municipio de Pueblo Viejo, Coatepec, Cosautl&#225;n, Coscomatepec, Chicontepec, Chontla, Guti&#233;rrez
+						</p>
+						<p class="textItem " style="top:88.318357%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Zamora, Isla, J&#225;ltipan, Jes&#250;s Carranza, Juchique de Ferrer, Las Choapas, Misantla, Ozuluama,
+						</p>
+						<p class="textItem " style="top:89.216945%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Papantla, Paso del Macho, Playa Vicente, San Rafael, San Juan Evangelista, Soledad de Doblado,
+						</p>
+						<p class="textItem " style="top:90.243902%;left:8.602151%;width:31.490015%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Tempoal, Tezonapa, Tierra Blanca, Tlalixcoyan, Vega de Alatorre, Villa Azueta.
+						</p>
+						<p class="textItem testString" style="top:13.863928%;left:50.384025%;width:26.267281%;height:1.797176%;font-size:0.600000em;color:#25171C;font-family:Delima MTStd;">
+							Padr&#243;n de Impuestos Estatales
+						</p>
+						<p class="textItem " style="top:15.404365%;left:50.384025%;width:17.204301%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(N&#250;mero de contribuyentes)
+						</p>
+						<p class="textItem testString" style="top:19.512195%;left:54.531490%;width:4.915515%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Concepto</b>
+						</p>
+						<p class="textItem " style="top:17.971759%;left:64.823349%;width:5.222734%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Diciembre</b>
+						</p>
+						<p class="textItem " style="top:18.998716%;left:66.052227%;width:2.457757%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>2012</b>
+						</p>
+						<p class="textItem " style="top:19.897304%;left:64.516129%;width:5.529954%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Noviembre</b>
+						</p>
+						<p class="textItem " style="top:20.924262%;left:66.052227%;width:2.457757%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>2013</b>
+						</p>
+						<p class="textItem " style="top:17.971759%;left:71.582181%;width:5.222734%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Diciembre</b>
+						</p>
+						<p class="textItem " style="top:18.998716%;left:72.811060%;width:2.457757%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>2013</b>
+						</p>
+						<p class="textItem " style="top:19.897304%;left:71.274962%;width:5.529954%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Noviembre</b>
+						</p>
+						<p class="textItem " style="top:20.924262%;left:72.811060%;width:2.457757%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>2014</b>
+						</p>
+						<p class="textItem " style="top:18.356868%;left:80.952381%;width:4.608295%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Variaci&#243;n</b>
+						</p>
+						<p class="textItem " style="top:20.667522%;left:78.187404%;width:9.984639%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							Contribuyentes %
+						</p>
+						<p class="textItem " style="top:22.593068%;left:50.384025%;width:4.454685%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							Impuesto
+						</p>
+						<p class="textItem " style="top:23.620026%;left:50.384025%;width:8.448541%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							sobre Erogaciones
+						</p>
+						<p class="textItem " style="top:24.518614%;left:50.384025%;width:9.677419%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							por Remuneraciones
+						</p>
+						<p class="textItem " style="top:25.545571%;left:50.384025%;width:8.755760%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							al Trabajo Personal
+						</p>
+						<p class="textItem " style="top:22.593068%;left:66.052227%;width:3.379416%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							64,515
+						</p>
+						<p class="textItem " style="top:22.593068%;left:72.811060%;width:3.379416%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							66,847
+						</p>
+						<p class="textItem " style="top:22.593068%;left:81.413210%;width:7.066052%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							2,332 3.6
+						</p>
+						<p class="textItem " style="top:27.214377%;left:50.384025%;width:12.442396%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							Impuesto sobre Hospedaje
+						</p>
+						<p class="textItem " style="top:27.214377%;left:66.666667%;width:2.764977%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							2,060
+						</p>
+						<p class="textItem " style="top:27.214377%;left:73.425499%;width:2.764977%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							2,118
+						</p>
+						<p class="textItem " style="top:27.214377%;left:82.795699%;width:5.529954%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							58 2.8
+						</p>
+						<p class="textItem " style="top:28.883184%;left:50.384025%;width:8.294931%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							ISR, IETU e IVA de
+						</p>
+						<p class="textItem " style="top:29.910141%;left:50.384025%;width:11.981567%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							Peque&#241;os Contribuyentes
+						</p>
+						<p class="textItem " style="top:28.883184%;left:65.437788%;width:10.752688%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							331,639 333,715
+						</p>
+						<p class="textItem " style="top:28.883184%;left:81.413210%;width:7.066052%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							2,076 0.6
+						</p>
+						<p class="textItem " style="top:31.578947%;left:50.384025%;width:18.894009%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							ISR del R&#233;gimen Intermedio 77,165
+						</p>
+						<p class="textItem " style="top:31.578947%;left:72.811060%;width:3.379416%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							81,604
+						</p>
+						<p class="textItem " style="top:31.578947%;left:81.413210%;width:7.066052%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							4,439 5.8
+						</p>
+						<p class="textItem " style="top:33.247754%;left:50.384025%;width:12.749616%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							IEPS a las Gasolinas y Diesel
+						</p>
+						<p class="textItem " style="top:33.247754%;left:67.434716%;width:1.843318%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							475
+						</p>
+						<p class="textItem " style="top:33.247754%;left:74.193548%;width:1.843318%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							475
+						</p>
+						<p class="textItem " style="top:33.247754%;left:83.410138%;width:4.915515%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							0 0.0
+						</p>
+						<p class="textItem " style="top:35.430039%;left:50.384025%;width:28.110599%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Fuente: Secretar&#237;a de Finanzas y Planeaci&#243;n, Subsecretar&#237;a de Ingresos.
+						</p>
+						<p class="textItem " style="top:37.997433%;left:49.769585%;width:33.947773%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.1.4.5. Registro y Padr&#243;n Vehicular
+						</p>
+						<p class="textItem " style="top:42.233633%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El padr&#243;n vehicular del Estado contiene la base de datos de m&#225;s
+						</p>
+						<p class="textItem " style="top:44.030809%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 1.6 millones de veh&#237;culos, cifra que denota la inscripci&#243;n de
+						</p>
+						<p class="textItem " style="top:45.827985%;left:49.769585%;width:30.721966%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							51,357 adicionales con respecto al padr&#243;n anterior.
+						</p>
+						<p class="textItem " style="top:49.422336%;left:50.384025%;width:24.116743%;height:1.797176%;font-size:0.600000em;color:#25171C;font-family:Delima MTStd;">
+							Padr&#243;n Vehicular del Estado
+						</p>
+						<p class="textItem " style="top:50.962773%;left:50.384025%;width:13.671275%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(N&#250;mero de unidades)
+						</p>
+						<p class="textItem " style="top:55.070603%;left:53.763441%;width:4.915515%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Concepto</b>
+						</p>
+						<p class="textItem " style="top:54.428755%;left:63.133641%;width:7.834101%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Diciembre 2012</b>
+						</p>
+						<p class="textItem " style="top:55.712452%;left:62.980031%;width:8.294931%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Noviembre 2013</b>
+						</p>
+						<p class="textItem " style="top:54.428755%;left:72.043011%;width:7.834101%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Diciembre 2013</b>
+						</p>
+						<p class="textItem " style="top:55.712452%;left:71.889401%;width:8.294931%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Noviembre 2014</b>
+						</p>
+						<p class="textItem " style="top:53.915276%;left:82.488479%;width:4.608295%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Variaci&#243;n</b>
+						</p>
+						<p class="textItem " style="top:56.225931%;left:81.105991%;width:7.066052%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							Unidades %
+						</p>
+						<p class="textItem " style="top:58.279846%;left:50.384025%;width:7.680492%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							Total del Parque
+						</p>
+						<p class="textItem " style="top:59.306804%;left:50.384025%;width:4.301075%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							Vehicular
+						</p>
+						<p class="textItem " style="top:58.279846%;left:64.669739%;width:5.069124%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							1,560,261
+						</p>
+						<p class="textItem " style="top:58.279846%;left:73.579109%;width:14.900154%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							1,611,618 51,357 3.3
+						</p>
+						<p class="textItem " style="top:60.975610%;left:50.384025%;width:10.906298%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							Veh&#237;culos Automotores
+						</p>
+						<p class="textItem " style="top:60.975610%;left:64.669739%;width:5.069124%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							1,466,077
+						</p>
+						<p class="textItem " style="top:60.975610%;left:73.579109%;width:14.900154%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							1,512,918 46,841 3.2
+						</p>
+						<p class="textItem " style="top:62.644416%;left:50.384025%;width:6.144393%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							Motocicletas
+						</p>
+						<p class="textItem " style="top:62.644416%;left:66.205837%;width:3.533026%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							82,461
+						</p>
+						<p class="textItem " style="top:62.644416%;left:75.115207%;width:3.533026%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							86,652
+						</p>
+						<p class="textItem " style="top:62.644416%;left:82.181260%;width:6.298003%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							4,191 5.1
+						</p>
+						<p class="textItem " style="top:64.441592%;left:50.384025%;width:5.222734%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							Remolques
+						</p>
+						<p class="textItem " style="top:64.441592%;left:66.205837%;width:3.533026%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							11,723
+						</p>
+						<p class="textItem " style="top:64.441592%;left:75.115207%;width:3.533026%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							12,048
+						</p>
+						<p class="textItem " style="top:64.441592%;left:83.102919%;width:5.376344%;height:1.155327%;font-size:0.350000em;color:#25171C;font-family:Stone Sans Std;">
+							325 2.8
+						</p>
+						<p class="textItem " style="top:66.495507%;left:50.384025%;width:28.110599%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Fuente: Secretar&#237;a de Finanzas y Planeaci&#243;n, Subsecretar&#237;a de Ingresos.
+						</p>
+						<p class="textItem " style="top:69.576380%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se instrument&#243; el sistema de registro y control de placas
+						</p>
+						<p class="textItem " style="top:71.373556%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de demostraci&#243;n para apoyar la operaci&#243;n de las empresas
+						</p>
+						<p class="textItem " style="top:73.170732%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							distribuidoras o comercializadoras de veh&#237;culos nuevos. El
+						</p>
+						<p class="textItem " style="top:74.967908%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							n&#250;cleo del sistema son las reglas administrativas expedidas para
+						</p>
+						<p class="textItem " style="top:76.765083%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							simplificar el procedimiento de dotaci&#243;n, canje, refrendo y baja de
+						</p>
+						<p class="textItem " style="top:78.562259%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							las placas de demostraci&#243;n, para as&#237; resolver las inconsistencias e
+						</p>
+						<p class="textItem " style="top:80.359435%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							irregularidades que presenten impacto recaudatorio. Los principios
+						</p>
+						<p class="textItem " style="top:82.156611%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de legalidad y transparencia inherentes a las nuevas disposiciones
+						</p>
+						<p class="textItem " style="top:83.953787%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dan certeza jur&#237;dica a las empresas y mejoran la eficiencia del
+						</p>
+						<p class="textItem " style="top:85.750963%;left:49.769585%;width:10.599078%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							registro vehicular.
+						</p>
+						<p class="textItem " style="top:85.879332%;left:60.368664%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							33
+						</p>
+						<p class="textItem " style="top:89.216945%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							33. Reglas publicadas en la Gaceta Oficial del Estado, N&#250;mero Extraordinario 060, el 11 de febrero
+						</p>
+						<p class="textItem " style="top:90.243902%;left:49.769585%;width:3.686636%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							de 2014.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-457.html">457</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-458.html">458</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-459.html">459</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-460.html">460</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-461.html">461</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-462.html">462</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-463.html">463</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-464.html">464</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-465.html">465</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-466.html">466</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-467.html">467</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-468.html">468</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

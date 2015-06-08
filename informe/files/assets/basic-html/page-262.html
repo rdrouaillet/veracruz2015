@@ -1,0 +1,656 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "262";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-261.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;262 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-263.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-261.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">262 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-263.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0262.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:17.073171%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se atendieron a 375 agremiados de la Liga de Comunidades
+						</p>
+						<p class="textItem " style="top:18.870347%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Agrarias, Sindicatos y Organizaciones Campesinas del Estado de
+						</p>
+						<p class="textItem " style="top:20.667522%;left:8.602151%;width:9.831029%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz (CNC).
+						</p>
+						<p class="textItem " style="top:24.261874%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El proyecto de Jornaleros Agr&#237;colas Migrantes, apoya a los jornaleros
+						</p>
+						<p class="textItem " style="top:26.059050%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							agr&#237;colas y sus familias, mediante acciones orientadas a generar
+						</p>
+						<p class="textItem " style="top:27.856226%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							igualdad de oportunidades y ampliaciones de sus capacidades,
+						</p>
+						<p class="textItem " style="top:29.653402%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							atendi&#243; a 80 educandos registrados en diferentes ingenios y
+						</p>
+						<p class="textItem " style="top:31.450578%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							campos agr&#237;colas en las coordinaciones de zona de Boca del R&#237;o,
+						</p>
+						<p class="textItem " style="top:33.247754%;left:8.602151%;width:30.875576%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Huatusco, Mart&#237;nez de la Torre y San Andr&#233;s Tuxtla.
+						</p>
+						<p class="textItem " style="top:36.842105%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Dentro del Proyecto Oportunidades, se registr&#243; un total de 18,766
+						</p>
+						<p class="textItem " style="top:38.639281%;left:8.602151%;width:6.912442%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							educandos.
+						</p>
+						<p class="textItem " style="top:42.233633%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se han firmado en el ProyectoCONEVyT convenios deColaboraci&#243;n
+						</p>
+						<p class="textItem " style="top:44.030809%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Educativa con tres empresas privadas: Compa&#241;&#237;a Mexicana de
+						</p>
+						<p class="textItem " style="top:45.827985%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Exploraciones S, A. de C. V. (COMESA), la C&#225;mara Mexicana de
+						</p>
+						<p class="textItem " style="top:47.625160%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Industria de la Construcci&#243;n (CMIC), Delegaci&#243;n Xalapa; y la
+						</p>
+						<p class="textItem " style="top:49.422336%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Empresa RIOXAL, adem&#225;s la vinculaci&#243;n del sector cafetalero con
+						</p>
+						<p class="textItem " style="top:51.219512%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Asociaci&#243;n Mexicana del Caf&#233; (AMECAFE), y el sector ca&#241;ero con
+						</p>
+						<p class="textItem " style="top:53.016688%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cinco Ingenios del Grupo FEESA, que han dado como resultado
+						</p>
+						<p class="textItem " style="top:54.813864%;left:8.602151%;width:15.668203%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							1,391 adultos registrados.
+						</p>
+						<p class="textItem " style="top:58.408216%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con el Proyecto El Buen Juez por su Casa Empieza, en el sector
+						</p>
+						<p class="textItem " style="top:60.205392%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							p&#250;blico municipal se trabaja con 74 ayuntamientos, lo que da
+						</p>
+						<p class="textItem " style="top:62.002567%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							como resultado el registro de 1,026 j&#243;venes y adultos en rezago
+						</p>
+						<p class="textItem " style="top:63.799743%;left:8.602151%;width:6.298003%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							educativo.
+						</p>
+						<p class="textItem " style="top:67.394095%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Las acciones de lasOrganizaciones yAsociaciones Civiles que operan
+						</p>
+						<p class="textItem " style="top:69.191271%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en el Estado, para contribuir al abatimiento del rezago educativo
+						</p>
+						<p class="textItem " style="top:70.988447%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en la sociedad civil para que sus colaboradores, beneficiarios y los
+						</p>
+						<p class="textItem " style="top:72.785623%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							familiares de &#233;stos, concluyan su educaci&#243;n b&#225;sica a trav&#233;s de los
+						</p>
+						<p class="textItem " style="top:74.582798%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							servicios educativos que brinda el IVEA, a la fecha se tienen 207
+						</p>
+						<p class="textItem " style="top:76.379974%;left:8.602151%;width:13.824885%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							educandos registrados.
+						</p>
+						<p class="textItem " style="top:79.974326%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Concerniente a los Centros de Reinserci&#243;n Social (CERESO)
+						</p>
+						<p class="textItem " style="top:81.771502%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							donde se brinda el servicio a poblaci&#243;n que no tiene concluida la
+						</p>
+						<p class="textItem " style="top:83.568678%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							educaci&#243;n b&#225;sica a trav&#233;s del Modelo de Educaci&#243;n para la vida y el
+						</p>
+						<p class="textItem " style="top:17.073171%;left:49.769585%;width:28.725038%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							trabajo (MEVyT), en los 17 CERESO en el Estado
+						</p>
+						<p class="textItem " style="top:17.073171%;left:78.494624%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							9
+						</p>
+						<p class="textItem " style="top:17.073171%;left:78.955453%;width:10.291859%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se han registrado
+						</p>
+						<p class="textItem " style="top:18.870347%;left:49.769585%;width:10.906298%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							1,875 educandos.
+						</p>
+						<p class="textItem " style="top:22.464698%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El siguiente cuadro detalla el n&#250;mero de alumnos que concluyeron
+						</p>
+						<p class="textItem " style="top:24.261874%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sus estudios de acuerdo con el nivel, as&#237; como el programa en el
+						</p>
+						<p class="textItem " style="top:26.059050%;left:49.769585%;width:11.827957%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cual se inscribieron:
+						</p>
+						<p class="textItem testString" style="top:30.038511%;left:52.073733%;width:7.987711%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							<b>Programa y/o</b>
+						</p>
+						<p class="textItem " style="top:31.193838%;left:53.456221%;width:5.222734%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							<b>Proyecto</b>
+						</p>
+						<p class="textItem " style="top:29.781772%;left:65.898618%;width:19.662058%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							<b>Educandos que Concluyeron Nivel</b>
+						</p>
+						<p class="textItem " style="top:31.578947%;left:62.672811%;width:25.345622%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							<b>Alfabetizaci&#243;n Primaria Secundaria Total</b>
+						</p>
+						<p class="textItem " style="top:33.376123%;left:50.076805%;width:9.831029%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							Programa Regular
+						</p>
+						<p class="textItem " style="top:33.376123%;left:65.130568%;width:3.993856%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							14,151
+						</p>
+						<p class="textItem " style="top:33.376123%;left:72.811060%;width:15.975422%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							7,027 11,309 32,487
+						</p>
+						<p class="textItem " style="top:35.044929%;left:50.076805%;width:10.906298%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							Plazas Comunitarias
+						</p>
+						<p class="textItem " style="top:35.044929%;left:65.898618%;width:3.225806%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							2,869
+						</p>
+						<p class="textItem " style="top:35.044929%;left:72.811060%;width:3.225806%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							1,942
+						</p>
+						<p class="textItem " style="top:35.044929%;left:79.569892%;width:9.216590%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							3,555 8,366
+						</p>
+						<p class="textItem " style="top:36.842105%;left:50.076805%;width:8.294931%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							Oportunidades
+						</p>
+						<p class="textItem " style="top:36.842105%;left:65.898618%;width:3.225806%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							6,815
+						</p>
+						<p class="textItem " style="top:36.842105%;left:72.811060%;width:3.225806%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							2,404
+						</p>
+						<p class="textItem " style="top:36.842105%;left:79.569892%;width:9.216590%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							1,441 10,660
+						</p>
+						<p class="textItem " style="top:38.639281%;left:50.076805%;width:9.216590%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							J&#243;venes Adelante
+						</p>
+						<p class="textItem " style="top:38.639281%;left:65.898618%;width:3.225806%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							2,313
+						</p>
+						<p class="textItem " style="top:38.639281%;left:73.886329%;width:2.150538%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							103
+						</p>
+						<p class="textItem " style="top:38.639281%;left:81.259601%;width:7.526882%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							36 2,452
+						</p>
+						<p class="textItem " style="top:40.436457%;left:50.076805%;width:5.376344%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							Ind&#237;genas
+						</p>
+						<p class="textItem " style="top:40.436457%;left:65.898618%;width:3.225806%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							1,315
+						</p>
+						<p class="textItem " style="top:40.436457%;left:74.500768%;width:1.536098%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							29
+						</p>
+						<p class="textItem " style="top:40.436457%;left:82.027650%;width:6.758833%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							6 1,350
+						</p>
+						<p class="textItem " style="top:42.233633%;left:50.076805%;width:7.680492%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							J&#243;venes 10-14
+						</p>
+						<p class="textItem " style="top:42.233633%;left:68.356375%;width:0.768049%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							0
+						</p>
+						<p class="textItem " style="top:42.233633%;left:73.886329%;width:2.150538%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							901
+						</p>
+						<p class="textItem " style="top:42.233633%;left:82.027650%;width:0.768049%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							0
+						</p>
+						<p class="textItem " style="top:42.233633%;left:86.635945%;width:2.150538%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							901
+						</p>
+						<p class="textItem " style="top:44.030809%;left:50.076805%;width:5.529954%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							CONEVyT
+						</p>
+						<p class="textItem " style="top:44.030809%;left:66.973886%;width:2.150538%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							318
+						</p>
+						<p class="textItem " style="top:44.030809%;left:73.886329%;width:2.150538%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							404
+						</p>
+						<p class="textItem " style="top:44.030809%;left:80.645161%;width:8.141321%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							567 1,289
+						</p>
+						<p class="textItem " style="top:45.827985%;left:50.076805%;width:5.069124%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							CERESOS
+						</p>
+						<p class="textItem " style="top:45.827985%;left:66.973886%;width:2.150538%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							847
+						</p>
+						<p class="textItem " style="top:45.827985%;left:73.886329%;width:2.150538%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							472
+						</p>
+						<p class="textItem " style="top:45.827985%;left:80.645161%;width:8.141321%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							213 1,532
+						</p>
+						<p class="textItem " style="top:47.625160%;left:50.076805%;width:10.445469%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							El Buen Juez por su
+						</p>
+						<p class="textItem " style="top:48.780488%;left:50.076805%;width:7.526882%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							Casa Empieza
+						</p>
+						<p class="textItem " style="top:48.138639%;left:66.973886%;width:2.150538%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							512
+						</p>
+						<p class="textItem " style="top:48.138639%;left:73.886329%;width:2.150538%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							181
+						</p>
+						<p class="textItem " style="top:48.138639%;left:80.645161%;width:8.141321%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							307 1,000
+						</p>
+						<p class="textItem " style="top:50.577664%;left:50.076805%;width:7.834101%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							PROMAJOVEN
+						</p>
+						<p class="textItem " style="top:50.577664%;left:67.588326%;width:1.536098%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							97
+						</p>
+						<p class="textItem " style="top:50.577664%;left:74.500768%;width:1.536098%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							58
+						</p>
+						<p class="textItem " style="top:50.577664%;left:81.259601%;width:1.536098%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							62
+						</p>
+						<p class="textItem " style="top:50.577664%;left:86.635945%;width:2.150538%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							217
+						</p>
+						<p class="textItem " style="top:52.374840%;left:50.076805%;width:2.764977%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							CNC
+						</p>
+						<p class="textItem " style="top:52.374840%;left:66.973886%;width:2.150538%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							203
+						</p>
+						<p class="textItem " style="top:52.374840%;left:74.500768%;width:1.536098%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							55
+						</p>
+						<p class="textItem " style="top:52.374840%;left:81.259601%;width:1.536098%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							87
+						</p>
+						<p class="textItem " style="top:52.374840%;left:86.635945%;width:2.150538%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							345
+						</p>
+						<p class="textItem " style="top:54.172015%;left:50.076805%;width:5.529954%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							FIFONAFE
+						</p>
+						<p class="textItem " style="top:54.172015%;left:67.588326%;width:1.536098%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							71
+						</p>
+						<p class="textItem " style="top:54.172015%;left:74.500768%;width:1.536098%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							45
+						</p>
+						<p class="textItem " style="top:54.172015%;left:81.259601%;width:1.536098%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							53
+						</p>
+						<p class="textItem " style="top:54.172015%;left:86.635945%;width:2.150538%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							169
+						</p>
+						<p class="textItem " style="top:55.969191%;left:50.076805%;width:11.367127%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							Organizaciones de la
+						</p>
+						<p class="textItem " style="top:57.124519%;left:50.076805%;width:7.680492%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							Sociedad Civil
+						</p>
+						<p class="textItem " style="top:56.482670%;left:67.588326%;width:1.536098%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							62
+						</p>
+						<p class="textItem " style="top:56.482670%;left:74.500768%;width:1.536098%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							29
+						</p>
+						<p class="textItem " style="top:56.482670%;left:81.259601%;width:1.536098%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							81
+						</p>
+						<p class="textItem " style="top:56.482670%;left:86.635945%;width:2.150538%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							172
+						</p>
+						<p class="textItem " style="top:58.921694%;left:50.076805%;width:11.213518%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							Jornaleros Migrantes
+						</p>
+						<p class="textItem " style="top:58.921694%;left:68.356375%;width:0.768049%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							9
+						</p>
+						<p class="textItem " style="top:58.921694%;left:74.500768%;width:1.536098%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							10
+						</p>
+						<p class="textItem " style="top:58.921694%;left:81.259601%;width:1.536098%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							28
+						</p>
+						<p class="textItem " style="top:58.921694%;left:87.250384%;width:1.536098%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							47
+						</p>
+						<p class="textItem " style="top:60.718870%;left:50.076805%;width:11.674347%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							Inclusi&#243;n de Personas
+						</p>
+						<p class="textItem " style="top:62.002567%;left:50.076805%;width:9.677419%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							con Discapacidad
+						</p>
+						<p class="textItem " style="top:61.360719%;left:67.588326%;width:1.536098%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							18
+						</p>
+						<p class="textItem " style="top:61.360719%;left:75.268817%;width:0.768049%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							8
+						</p>
+						<p class="textItem " style="top:61.360719%;left:81.259601%;width:1.536098%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							14
+						</p>
+						<p class="textItem " style="top:61.360719%;left:87.250384%;width:1.536098%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							40
+						</p>
+						<p class="textItem " style="top:63.799743%;left:50.076805%;width:4.608295%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							Sigamos
+						</p>
+						<p class="textItem " style="top:64.955071%;left:50.076805%;width:10.138249%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							Aprendiendo en el
+						</p>
+						<p class="textItem " style="top:66.238768%;left:50.076805%;width:4.454685%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							Hospital
+						</p>
+						<p class="textItem " style="top:64.955071%;left:68.356375%;width:0.768049%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							0
+						</p>
+						<p class="textItem " style="top:64.955071%;left:75.268817%;width:0.768049%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							2
+						</p>
+						<p class="textItem " style="top:64.955071%;left:82.027650%;width:0.768049%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							1
+						</p>
+						<p class="textItem " style="top:64.955071%;left:88.018433%;width:0.768049%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							3
+						</p>
+						<p class="textItem " style="top:68.035944%;left:50.076805%;width:2.918587%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							<b>Total</b>
+						</p>
+						<p class="textItem " style="top:68.035944%;left:65.130568%;width:23.655914%;height:1.283697%;font-size:0.400000em;color:#000000;font-family:Stone Sans Std;">
+							<b>29,600 13,670 17,760 61,030</b>
+						</p>
+						<p class="textItem " style="top:71.887035%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En cuanto al cumplimiento de las Normas y Procedimientos de la
+						</p>
+						<p class="textItem " style="top:73.684211%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Educaci&#243;n B&#225;sica para Adultos, en lo que se refiere a la acreditaci&#243;n,
+						</p>
+						<p class="textItem " style="top:75.481386%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se presentaron 287,519 ex&#225;menes, 229,469 impresos, 55,612 en
+						</p>
+						<p class="textItem " style="top:77.278562%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							l&#237;nea y 2,438 de MEVyT Ind&#237;gena, acredit&#225;ndose 204,024 en 1,425
+						</p>
+						<p class="textItem " style="top:79.075738%;left:49.769585%;width:32.565284%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sedes de aplicaci&#243;n con 760 aplicadores de ex&#225;menes.
+						</p>
+						<p class="textItem " style="top:82.670090%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En lo correspondiente al otorgamiento de reconocimiento de
+						</p>
+						<p class="textItem " style="top:84.467266%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							validez oficial de los estudios realizados por los educandos en el
+						</p>
+						<p class="textItem " style="top:86.264442%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Instituto, se elaboraron 20,800 documentos de educandos que
+						</p>
+						<p class="textItem " style="top:88.318357%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							9. Acayucan, Amatl&#225;n, Coatzacoalcos, Cosamaloapan, Chicontepec, Huayacocotla, Jalacingo,
+						</p>
+						<p class="textItem " style="top:89.216945%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Misantla, Ozuluama, Pacho Viejo, P&#225;nuco, Papantla, Poza Rica, Tantoyuca, Tuxpan, San Andr&#233;s
+						</p>
+						<p class="textItem " style="top:90.243902%;left:49.769585%;width:7.834101%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Tuxtla y Zongolica.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-257.html">257</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-258.html">258</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-259.html">259</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-260.html">260</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-261.html">261</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-262.html">262</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-263.html">263</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-264.html">264</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-265.html">265</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-266.html">266</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-267.html">267</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-268.html">268</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

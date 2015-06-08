@@ -1,0 +1,452 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "62";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-61.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;62 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-63.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-61.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">62 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-63.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0062.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:19.768935%;left:8.602151%;width:23.348694%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							millones de pesos, en 22 municipios
+						</p>
+						<p class="textItem " style="top:19.768935%;left:31.950845%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							9
+						</p>
+						<p class="textItem " style="top:19.768935%;left:32.411674%;width:15.668203%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							, lo que ha permitido la
+						</p>
+						<p class="textItem " style="top:21.566110%;left:8.602151%;width:29.185868%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							generaci&#243;n y/o consolidaci&#243;n de 1,120 empleos.
+						</p>
+						<p class="textItem " style="top:25.160462%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Del financiamiento autorizado, al sector servicios le corresponden
+						</p>
+						<p class="textItem " style="top:26.957638%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							11 apoyos por 3.6 millones de pesos, al sector industrial se
+						</p>
+						<p class="textItem " style="top:28.754814%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							asignaron cuatro apoyos por 720 mil pesos y al sector comercio
+						</p>
+						<p class="textItem " style="top:30.551990%;left:8.602151%;width:33.333333%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							1,038 apoyos por un monto de 16.8 millones de pesos.
+						</p>
+						<p class="textItem " style="top:33.889602%;left:8.602151%;width:30.721966%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							9.1.1. Programa Mujer Adelante
+						</p>
+						<p class="textItem " style="top:38.125802%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Programa est&#225; dirigido a mujeres microempresarias con
+						</p>
+						<p class="textItem " style="top:39.922978%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							proyectos productivos individuales, a quienes se otorgan cr&#233;ditos
+						</p>
+						<p class="textItem " style="top:41.720154%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que van desde los 10,000 hasta los 120 mil pesos, con una tasa de
+						</p>
+						<p class="textItem " style="top:43.517330%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							inter&#233;s del ocho por ciento anual y plazos hasta 36 meses. Se han
+						</p>
+						<p class="textItem " style="top:45.314506%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							autorizado 10 cr&#233;ditos por un monto de 1 mill&#243;n de pesos que han
+						</p>
+						<p class="textItem " style="top:47.111682%;left:8.602151%;width:15.053763%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							consolidado 10 empleos.
+						</p>
+						<p class="textItem " style="top:50.577664%;left:8.602151%;width:39.477727%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							9.1.2. Programa Microempresas Adelante
+						</p>
+						<p class="textItem " style="top:54.813864%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con este Programa se apoya a empresas con antig&#252;edad fiscal
+						</p>
+						<p class="textItem " style="top:56.611040%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							m&#237;nima de un a&#241;o, con montos desde 30,000 hasta 120 mil
+						</p>
+						<p class="textItem " style="top:58.408216%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pesos. Se han autorizado cinco apoyos por 460 mil pesos que han
+						</p>
+						<p class="textItem " style="top:60.205392%;left:8.602151%;width:16.743472%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							consolidado cinco empleos.
+						</p>
+						<p class="textItem " style="top:63.543004%;left:8.602151%;width:31.182796%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							9.1.3. Programa PyMEs Adelante
+						</p>
+						<p class="textItem " style="top:67.779204%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Este Programa destina financiamiento tanto a las empresas en
+						</p>
+						<p class="textItem " style="top:69.576380%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							operaci&#243;n como a aquellas que apoyen la creaci&#243;n y consolidaci&#243;n
+						</p>
+						<p class="textItem " style="top:71.373556%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de empleos formales, generando derrama econ&#243;mica en el Estado
+						</p>
+						<p class="textItem " style="top:73.170732%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							e impacto en cadenas productivas. Los cr&#233;ditos que se otorgan
+						</p>
+						<p class="textItem " style="top:74.967908%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							van de los 120 mil hasta los 500 mil pesos. En este periodo se han
+						</p>
+						<p class="textItem " style="top:76.765083%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							autorizado 25 cr&#233;ditos equivalentes a 9.5 millones de pesos, en 16
+						</p>
+						<p class="textItem " style="top:78.562259%;left:8.602151%;width:6.912442%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipios.
+						</p>
+						<p class="textItem " style="top:88.318357%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							9. Agua Dulce, Banderilla, Boca del R&#237;o, Isla, Chinampa de Gorostiza, Coatzacoalcos, C&#243;rdoba,
+						</p>
+						<p class="textItem " style="top:89.216945%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Cosoleacaque, Fort&#237;n, La Antigua, Las Choapas, Minatitl&#225;n, Misantla, Papantla, San Rafael,
+						</p>
+						<p class="textItem " style="top:90.243902%;left:8.602151%;width:27.188940%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Tamiahua, Tecolutla, Tlacotalpan, Tuxpan, Veracruz, Xalapa y Xico.
+						</p>
+						<p class="textItem " style="top:15.532734%;left:49.769585%;width:35.483871%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							9.1.4. Ciudad Industrial Bruno Pagliai
+						</p>
+						<p class="textItem " style="top:19.768935%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Como responsable de la administraci&#243;n de la Ciudad Industrial
+						</p>
+						<p class="textItem " style="top:21.566110%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Bruno Pagliai, el Fondo del Futuro ha destinado 13.2 millones
+						</p>
+						<p class="textItem " style="top:23.363286%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de pesos para la contrataci&#243;n de servicios como la recolecci&#243;n
+						</p>
+						<p class="textItem " style="top:25.160462%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de basura, chapeo y limpieza de &#225;reas comunes, desazolve de la
+						</p>
+						<p class="textItem " style="top:26.957638%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							red general de drenaje, mantenimiento a los pozos profundos de
+						</p>
+						<p class="textItem " style="top:28.754814%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							agua, pintura de calles y avenidas, as&#237; como para la adquisici&#243;n de
+						</p>
+						<p class="textItem " style="top:30.551990%;left:49.769585%;width:23.963134%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							material de bacheo de calles y avenidas.
+						</p>
+						<p class="textItem " style="top:33.889602%;left:49.769585%;width:16.589862%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							9.1.5. Patrimonio
+						</p>
+						<p class="textItem " style="top:38.125802%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Al 31 de julio de 2014, el patrimonio del Fondo del Futuro asciende
+						</p>
+						<p class="textItem " style="top:39.922978%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a 467.8 millones de pesos, integrado como sigue: 4.9 por ciento
+						</p>
+						<p class="textItem " style="top:41.720154%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de recursos l&#237;quidos en bancos comprometidos para cr&#233;ditos y
+						</p>
+						<p class="textItem " style="top:43.517330%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							gasto de operaci&#243;n; 74.8 por ciento en cuentas por cobrar y 20.3
+						</p>
+						<p class="textItem " style="top:45.314506%;left:49.769585%;width:36.098310%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por ciento compuesto por activos fijos y bienes adjudicados.
+						</p>
+						<p class="textItem " style="top:48.780488%;left:49.769585%;width:36.559140%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							9.2. Fondo Nacional del Emprendedor
+						</p>
+						<p class="textItem " style="top:50.962773%;left:49.769585%;width:5.069124%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							2014
+						</p>
+						<p class="textItem " style="top:55.198973%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con fecha 28 de diciembre de 2013, la Secretar&#237;a de Econom&#237;a
+						</p>
+						<p class="textItem " style="top:56.996149%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(SE) a trav&#233;s del Instituto Nacional del Emprendedor (INADEM),
+						</p>
+						<p class="textItem " style="top:58.793325%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							public&#243; en el Diario Oficial de la Federaci&#243;n las Reglas de Operaci&#243;n
+						</p>
+						<p class="textItem " style="top:60.590501%;left:49.769585%;width:18.586790%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Fondo Emprendedor 2014.
+						</p>
+						<p class="textItem " style="top:64.184852%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El 14 de abril de 2014, se suscribi&#243; con la SE el Convenio de
+						</p>
+						<p class="textItem " style="top:65.982028%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Colaboraci&#243;n para el Desarrollo de la Competitividad de la Micro,
+						</p>
+						<p class="textItem " style="top:67.779204%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Peque&#241;a y Mediana Empresa, por un importe de 90 millones de
+						</p>
+						<p class="textItem " style="top:69.576380%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pesos. Con una aportaci&#243;n estatal de 50 millones de pesos y por
+						</p>
+						<p class="textItem " style="top:71.373556%;left:49.769585%;width:35.483871%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							parte del INADEM una aportaci&#243;n de 40 millones de pesos.
+						</p>
+						<p class="textItem " style="top:74.967908%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En coordinaci&#243;n con el INADEM, se invirtieron 42.1 millones de
+						</p>
+						<p class="textItem " style="top:76.765083%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pesos en la modalidad peso a peso, que en conjunto con una
+						</p>
+						<p class="textItem " style="top:78.562259%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							aportaci&#243;n privada representan un total de 51.6 millones de pesos
+						</p>
+						<p class="textItem " style="top:80.359435%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para apoyar 14 proyectos presentados al Fondo Nacional del
+						</p>
+						<p class="textItem " style="top:82.156611%;left:49.769585%;width:8.602151%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Emprendedor.
+						</p>
+						<p class="textItem " style="top:85.750963%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El impacto econ&#243;mico de dichos recursos ser&#225; para la atenci&#243;n de
+						</p>
+						<p class="textItem " style="top:87.548139%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							511 empresas; la creaci&#243;n de 16 nuevos empleos, la conservaci&#243;n
+						</p>
+						<p class="textItem " style="top:89.345315%;left:49.769585%;width:28.571429%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 305 y se atender&#225;n a 1,660 emprendedores.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-57.html">57</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-58.html">58</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-59.html">59</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-60.html">60</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-61.html">61</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-62.html">62</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-63.html">63</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-64.html">64</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-65.html">65</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-66.html">66</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-67.html">67</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-68.html">68</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

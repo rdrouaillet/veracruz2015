@@ -1,0 +1,533 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "158";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-157.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;158 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-159.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-157.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">158 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-159.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0158.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:13.735558%;left:8.602151%;width:37.941628%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							2.1. Consejo Estatal de Desarrollo Social
+						</p>
+						<p class="textItem " style="top:17.971759%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Consejo Estatal de Desarrollo Social, es la instancia de enlace,
+						</p>
+						<p class="textItem " style="top:19.768935%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							coordinaci&#243;n y concertaci&#243;n ante las dependencias del Estado y de
+						</p>
+						<p class="textItem " style="top:21.566110%;left:8.602151%;width:33.026114%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Federaci&#243;n, as&#237; como de los sectores social y privado.
+						</p>
+						<p class="textItem " style="top:25.160462%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En virtud de lo antes mencionado, se realiz&#243; la sesi&#243;n extraordinaria
+						</p>
+						<p class="textItem " style="top:26.957638%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Consejo el 10 de junio 2014, en donde se instruy&#243; la
+						</p>
+						<p class="textItem " style="top:28.754814%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							consolidaci&#243;n de este nuevo frente de trabajo, para programar
+						</p>
+						<p class="textItem " style="top:30.551990%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de manera coordinada, obras y acciones que reduzcan los niveles
+						</p>
+						<p class="textItem " style="top:32.349166%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de exclusi&#243;n y desigualdad en las diferentes regiones del Estado.
+						</p>
+						<p class="textItem " style="top:34.146341%;left:8.602151%;width:39.324117%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Dando como resultado la aprobaci&#243;n de los siguientes convenios:
+						</p>
+						<p class="textItem " style="top:37.740693%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem testString" style="top:37.612323%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:37.740693%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El convenio con la Comisi&#243;n Federal de Electricidad (CFE) a
+						</p>
+						<p class="textItem " style="top:39.537869%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							efecto de cumplir con la Cruzada Nacional contra el Hambre,
+						</p>
+						<p class="textItem " style="top:41.335045%;left:12.288786%;width:26.728111%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cuyo objetivo son los municipios prioritarios.
+						</p>
+						<p class="textItem " style="top:44.929397%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:44.801027%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:44.929397%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Convenio con el Instituto Veracruzano de Educaci&#243;n para
+						</p>
+						<p class="textItem " style="top:46.726573%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los Adultos (IVEA) en materia educativa, capacitaci&#243;n para
+						</p>
+						<p class="textItem " style="top:48.523748%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el trabajo y abatimiento del rezago educativo, el cual es de
+						</p>
+						<p class="textItem " style="top:50.320924%;left:12.288786%;width:30.721966%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							255,513 veracruzanos que no saben leer ni escribir.
+						</p>
+						<p class="textItem " style="top:53.915276%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:53.786906%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:53.915276%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Convenio de autorizaci&#243;n para conjuntar recursos financieros
+						</p>
+						<p class="textItem " style="top:55.712452%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del FAIS y del FISM-DF con las administraciones municipales
+						</p>
+						<p class="textItem " style="top:57.509628%;left:12.288786%;width:32.872504%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para atender la demanda de piso firme y techo seguro.
+						</p>
+						<p class="textItem " style="top:61.103979%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:60.975610%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:61.103979%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Convenio de coordinaci&#243;n de acciones en materia de
+						</p>
+						<p class="textItem " style="top:62.901155%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Desarrollo Urbano y Vivienda con la SEDATU y el Gobierno
+						</p>
+						<p class="textItem " style="top:64.698331%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Estado para la operaci&#243;n y Desarrollo de Programas
+						</p>
+						<p class="textItem " style="top:66.495507%;left:12.288786%;width:13.364055%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Nacionales y Estatales.
+						</p>
+						<p class="textItem " style="top:70.089859%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:69.961489%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:70.089859%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Convenio de coordinaci&#243;n en la SEDESOL Federal a trav&#233;s
+						</p>
+						<p class="textItem " style="top:71.887035%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la ex Coordinaci&#243;n Nacional del Programa de Desarrollo
+						</p>
+						<p class="textItem " style="top:73.684211%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Humano Oportunidades (hoy Prospera) y el Gobierno
+						</p>
+						<p class="textItem " style="top:75.481386%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Estado para la articulaci&#243;n de programas productivos
+						</p>
+						<p class="textItem " style="top:77.278562%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y cumplir los objetivos de la Cruzada Nacional contra
+						</p>
+						<p class="textItem " style="top:79.075738%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el Hambre, instrumentando acciones transversales en la
+						</p>
+						<p class="textItem " style="top:80.872914%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estrategia Adelante. Con estas acciones, se incrementa 110
+						</p>
+						<p class="textItem " style="top:82.670090%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por ciento el Padr&#243;n en el Estado del Programa de 65 y M&#225;s,
+						</p>
+						<p class="textItem " style="top:84.467266%;left:12.288786%;width:22.273425%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							al registrar 464,000 adultos mayores.
+						</p>
+						<p class="textItem " style="top:88.061617%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:87.933248%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:88.061617%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Convenio de coordinaci&#243;n Interinstitucional con INVIVIENDA
+						</p>
+						<p class="textItem " style="top:89.858793%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y la CORETT para regularizar y garantizar el patrimonio
+						</p>
+						<p class="textItem " style="top:17.971759%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							familiar de 30,000 familias mediante la escrituraci&#243;n
+						</p>
+						<p class="textItem " style="top:19.768935%;left:53.456221%;width:25.960061%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							respectiva con el 90 por ciento de subsidio.
+						</p>
+						<p class="textItem " style="top:23.106547%;left:49.769585%;width:30.107527%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							2.2. Mejoramiento a la vivienda
+						</p>
+						<p class="textItem " style="top:27.214377%;left:49.769585%;width:31.643625%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							2.2.1. Adelante con tu Piso Firme
+						</p>
+						<p class="textItem " style="top:31.450578%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con el objetivodemejorar el desarrollohumano y las condiciones de
+						</p>
+						<p class="textItem " style="top:33.247754%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							vida de la poblaci&#243;n en localidades de alta y muy alta marginaci&#243;n,
+						</p>
+						<p class="textItem " style="top:35.044929%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							as&#237; como en poligonales de pobreza en zonas urbanas, en este
+						</p>
+						<p class="textItem " style="top:36.842105%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cuarto a&#241;o de Gobierno, se continu&#243; con la construcci&#243;n de pisos
+						</p>
+						<p class="textItem " style="top:38.639281%;left:49.769585%;width:4.147465%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							firmes.
+						</p>
+						<p class="textItem " style="top:42.233633%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se firm&#243; un convenio con municipios para conjuntar recursos
+						</p>
+						<p class="textItem " style="top:44.030809%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							financieros y contribuir en la disminuci&#243;n de la carencia de calidad
+						</p>
+						<p class="textItem " style="top:45.827985%;left:49.769585%;width:29.953917%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y espacios de la vivienda en el Estado de Veracruz.
+						</p>
+						<p class="textItem " style="top:49.422336%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se construyen 37,108 pisos firmes, de los cuales 19,262
+						</p>
+						<p class="textItem " style="top:51.219512%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							corresponden a municipios y 17,846 a la Secretar&#237;a. Estas acciones
+						</p>
+						<p class="textItem " style="top:53.016688%;left:49.769585%;width:36.712750%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							son en beneficio de 148,432 habitantes de 147 municipios
+						</p>
+						<p class="textItem " style="top:53.016688%;left:86.482335%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							6
+						</p>
+						<p class="textItem " style="top:53.016688%;left:86.943164%;width:2.304147%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							. La
+						</p>
+						<p class="textItem " style="top:54.813864%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							inversi&#243;n que se ejerce por parte del Gobierno del Estado es de
+						</p>
+						<p class="textItem " style="top:56.611040%;left:49.769585%;width:14.132104%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							65.9 millones de pesos.
+						</p>
+						<p class="textItem " style="top:59.948652%;left:49.769585%;width:37.634409%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							2.2.2. Construcci&#243;n de techos en zonas
+						</p>
+						<p class="textItem " style="top:62.259307%;left:49.769585%;width:11.059908%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							marginadas
+						</p>
+						<p class="textItem " style="top:66.495507%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Los techos firmes, se otorgan a familias que viven en casas
+						</p>
+						<p class="textItem " style="top:68.292683%;left:49.769585%;width:32.718894%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							construidas con cubiertas de materiales en mal estado.
+						</p>
+						<p class="textItem " style="top:71.758665%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							6. Acayucan, Actopan, Acula, &#193;lamo Temapache, Alpatl&#225;huac, Altotonga, Alto Lucero, Alvarado,
+						</p>
+						<p class="textItem " style="top:72.657253%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Amatitl&#225;n, Atlahuilco, Atzacan, &#193;ngel R. Cabada, Aquila, Astacinga, Atzalan, Ayahualulco, Benito
+						</p>
+						<p class="textItem " style="top:73.555841%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Ju&#225;rez, Boca del R&#237;o, Calcahualco, Camar&#243;n de Tejada, Carrillo Puerto, Catemaco, Cazones de
+						</p>
+						<p class="textItem " style="top:74.454429%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Herrera, Chiconamel, Chiconquiaco, Chicontepec, Chumatl&#225;n, Coacoatzintla, Coahuitl&#225;n,
+						</p>
+						<p class="textItem " style="top:75.353017%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Coatepec, Coatzacoalcos, Coetzala, Colipa, Comapa, C&#243;rdoba, Cosamaloapan, Cosautl&#225;n de
+						</p>
+						<p class="textItem " style="top:76.379974%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Carvajal, Coscomatepec, Cosoleacaque, Coxquihui, Coyutla, El Higo, Emiliano Zapata, Espinal,
+						</p>
+						<p class="textItem " style="top:77.278562%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Filomeno Mata, Hidalgotitl&#225;n, Huatusco, Hueyapan de Ocampo, Huiloapan, Ignacio de la Llave,
+						</p>
+						<p class="textItem " style="top:78.177150%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Ilamatl&#225;n, Isla, Ixcatepec, Ixhuac&#225;n de los Reyes, Ixhuatl&#225;n del Sureste, Ixhuatl&#225;n de Madero,
+						</p>
+						<p class="textItem " style="top:79.075738%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Ixhuatl&#225;n del Caf&#233;, Ixhuatlancillo, Ixtaczoquitl&#225;n, Ixmatlahuacan, Jalacingo, Jalcomulco, Jamapa,
+						</p>
+						<p class="textItem " style="top:79.974326%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Juan Rodr&#237;guez Clara, Jes&#250;s Carranza, Jilotepec, Jos&#233; Azueta, Juchique de Ferrer, La Perla, Las
+						</p>
+						<p class="textItem " style="top:81.001284%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Vigas, Landero y Coss, Las Choapas, Las Minas, Lerdo de Tejada, Los Reyes, Magdalena, Mariano
+						</p>
+						<p class="textItem " style="top:81.899872%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Escobedo, Mart&#237;nez de la Torre, Medell&#237;n, Mecatl&#225;n, Mecayapan, Miahuatl&#225;n, Minatitl&#225;n,
+						</p>
+						<p class="textItem " style="top:82.798460%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Misantla, Mixtla de Altamirano, Moloac&#225;n, Nanchital, Naranjos-Amatl&#225;n, Nautla, Nogales, Olutla,
+						</p>
+						<p class="textItem " style="top:83.697047%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Otatitl&#225;n, Ozuluama, Pajapan, P&#225;nuco, Papantla, Perote, Plat&#243;n S&#225;nchez, Playa Vicente, Poza
+						</p>
+						<p class="textItem " style="top:84.595635%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Rica, Pueblo Viejo, Puente Nacional, Rafael Lucio, Rafael Delgado, R&#237;o Blanco, Saltabarranca, San
+						</p>
+						<p class="textItem " style="top:85.622593%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Andr&#233;s Tenejapan, San Andr&#233;s Tuxtla, San Juan Evangelista, Santiago Sochiapan, Santiago Tuxtla,
+						</p>
+						<p class="textItem " style="top:86.521181%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Sayula de Alem&#225;n, Soconusco, Soledad Atzompa, Soteapan, Tamiahua, Tampico Alto, Tantoyuca,
+						</p>
+						<p class="textItem " style="top:87.419769%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Tatahuicapan, Tlacolulan, Tehuipango, Tempoal, Tepatlaxco, Tequila, Texcatepec, Texhuac&#225;n,
+						</p>
+						<p class="textItem " style="top:88.318357%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Texistepec, Tezonapa, Tres Valles, Tierra Blanca, Tihuatl&#225;n, Totutla, Tlachichilco, Tlacotalpan,
+						</p>
+						<p class="textItem " style="top:89.216945%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Tlapacoyan, Tlaquilpa, Tuxpan, Uxpanapa, Veracruz, Villa Aldama, Xalapa, Xoxocotla, Zacualpan,
+						</p>
+						<p class="textItem " style="top:90.243902%;left:49.769585%;width:18.894009%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Zentla, Zongolica, Zontecomatl&#225;n, Zozocolco.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-153.html">153</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-154.html">154</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-155.html">155</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-156.html">156</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-157.html">157</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-158.html">158</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-159.html">159</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-160.html">160</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-161.html">161</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-162.html">162</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-163.html">163</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-164.html">164</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

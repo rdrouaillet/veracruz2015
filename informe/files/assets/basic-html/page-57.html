@@ -1,0 +1,500 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "57";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-56.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;57 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-58.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-56.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">57 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-58.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0057.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:30.875576%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:37.327189%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:38.402458%;width:27.496160%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>D e s a r r o l l o E c o n &#243; m i c o y P o r t u a r i o</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:66.666667%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:67.741935%;width:1.536098%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>5 5</b>
+						</p>
+						<p class="textItem " style="top:11.938383%;left:10.752688%;width:35.176651%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							6.1. Programa Mil Grandes Empresas
+						</p>
+						<p class="textItem " style="top:16.174583%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Este Programa es una estrategia integral para la promoci&#243;n,
+						</p>
+						<p class="textItem " style="top:17.971759%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							materializaci&#243;n y seguimiento de nuevos proyectos de inversi&#243;n
+						</p>
+						<p class="textItem " style="top:19.768935%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en la Entidad. Por medio de este Programa, se brindan facilidades
+						</p>
+						<p class="textItem " style="top:21.566110%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a los inversionistas, atenci&#243;n personalizada y apoyo en gestiones
+						</p>
+						<p class="textItem " style="top:23.363286%;left:10.752688%;width:27.803379%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para la puesta en marcha de nuevas empresas.
+						</p>
+						<p class="textItem " style="top:26.957638%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En este periodo de Informe, las grandes inversiones privadas tienen
+						</p>
+						<p class="textItem " style="top:28.754814%;left:10.752688%;width:17.050691%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							presencia en 85 municipios
+						</p>
+						<p class="textItem " style="top:28.754814%;left:27.803379%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							8
+						</p>
+						<p class="textItem " style="top:28.754814%;left:28.725038%;width:21.658986%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Estado y se reporta un avance
+						</p>
+						<p class="textItem " style="top:30.551990%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del 73.2 por ciento respecto a la meta sexenal, al registrar 732
+						</p>
+						<p class="textItem " style="top:32.349166%;left:10.752688%;width:16.436252%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							empresas al cierre de 2014.
+						</p>
+						<p class="textItem " style="top:35.943517%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							De acuerdo a lo registrado en este Programa, las principales
+						</p>
+						<p class="textItem " style="top:37.740693%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							inversiones se distribuyen en los sectores industrial con el 63.5 por
+						</p>
+						<p class="textItem " style="top:39.537869%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ciento; comercial con 6.1 por ciento; inmobiliario con 24.5 por
+						</p>
+						<p class="textItem " style="top:41.335045%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ciento, el 3.1 por ciento en servicios, 0.6 por ciento en turismo y
+						</p>
+						<p class="textItem " style="top:43.132221%;left:10.752688%;width:21.812596%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en la agroindustria el 2.2 por ciento.
+						</p>
+						<p class="textItem " style="top:46.726573%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La generaci&#243;n de empleos acumulada durante los cuatro a&#241;os
+						</p>
+						<p class="textItem " style="top:48.523748%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la presente Administraci&#243;n, vinculados a este Programa,
+						</p>
+						<p class="textItem " style="top:50.320924%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							asciende a 61,517 empleos directos y 99,452 empleos indirectos.
+						</p>
+						<p class="textItem " style="top:52.118100%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tiene presencia en los municipios de: Alvarado, Boca del R&#237;o,
+						</p>
+						<p class="textItem " style="top:53.915276%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Coatzacoalcos, C&#243;rdoba, Nanchital, Orizaba, Tuxpan, Veracruz y
+						</p>
+						<p class="textItem " style="top:55.712452%;left:10.752688%;width:4.454685%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Xalapa.
+						</p>
+						<p class="textItem testString" style="top:59.178434%;left:10.752688%;width:27.188940%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							7. Competitividad
+						</p>
+						<p class="textItem " style="top:61.874198%;left:10.752688%;width:18.279570%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							empresarial
+						</p>
+						<p class="textItem " style="top:67.650834%;left:10.752688%;width:36.405530%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							7.1. Centros de Desarrollo Empresarial
+						</p>
+						<p class="textItem " style="top:69.833119%;left:10.752688%;width:22.580645%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruzano (CEDEVER)
+						</p>
+						<p class="textItem " style="top:74.069320%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La SEDECOP, a trav&#233;s de los CEDEVER, fomenta la creaci&#243;n
+						</p>
+						<p class="textItem " style="top:75.866496%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							e impulsa la productividad y competitividad de las MiPyMEs
+						</p>
+						<p class="textItem " style="top:79.075738%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							8. Acajete, Acayucan, Agua Dulce, &#193;lamo Temapache, Alto Lucero, Alvarado, Amatl&#225;n de los
+						</p>
+						<p class="textItem " style="top:79.974326%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Reyes, &#193;ngel R. Cabada, Apazapan, Atoyac, Banderilla, Boca del R&#237;o, Camerino Z. Mendoza,
+						</p>
+						<p class="textItem " style="top:81.001284%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Catemaco, Cazones de Herrera, Cerro Azul, Chinameca, Chontla, Coatepec, Coatzacoalcos,
+						</p>
+						<p class="textItem " style="top:81.899872%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Coatzintla, C&#243;rdoba, Cosamaloapan, Coscomatepec, Cosoleacaque, Cotaxtla, Cuitl&#225;huac,
+						</p>
+						<p class="textItem " style="top:82.798460%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							El Higo, Emiliano Zapata, Fort&#237;n, Guti&#233;rrez Zamora, Huatusco, Isla, Ixhuatl&#225;n del Sureste,
+						</p>
+						<p class="textItem " style="top:83.697047%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Ixmatlahuacan, Ixtaczoquitl&#225;n, J&#225;ltipan, Jes&#250;s Carranza, Jos&#233; Azueta, Juan Rodr&#237;guez Clara, La
+						</p>
+						<p class="textItem " style="top:84.595635%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Antigua, Las Choapas, Lerdo de Tejada, Manlio Fabio Altamirano, Mart&#237;nez de la Torre, Medell&#237;n,
+						</p>
+						<p class="textItem " style="top:85.622593%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Minatitl&#225;n, Misantla, Nanchital, Naranjos, Oluta, Orizaba, Pajapan, P&#225;nuco, Papantla, Paso del
+						</p>
+						<p class="textItem " style="top:86.521181%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Macho, Perote, Plat&#243;n S&#225;nchez, Playa Vicente, Poza Rica, Pueblo Viejo, Puente Nacional, Rafael
+						</p>
+						<p class="textItem " style="top:87.419769%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Delgado, Rafael Lucio, R&#237;o Blanco, San Andr&#233;s Tuxtla, San Juan Evangelista, Santiago Tuxtla,
+						</p>
+						<p class="textItem " style="top:88.318357%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Sayula de Alem&#225;n, Soledad de Doblado, Tantoyuca, Tempoal, Texistepec, Tezonapa, Tierra Blanca,
+						</p>
+						<p class="textItem " style="top:89.216945%;left:10.752688%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Tihuatl&#225;n, Tlalixcoyan, Tlapacoyan, Tres Valles, Tuxpan, Vega de Alatorre, Veracruz, Xalapa, Xico
+						</p>
+						<p class="textItem " style="top:90.243902%;left:10.752688%;width:5.069124%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							y Zongolica.
+						</p>
+						<p class="textItem " style="top:16.174583%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							veracruzanas, para lo cual brindan servicios de asesor&#237;a e
+						</p>
+						<p class="textItem " style="top:17.971759%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							informaci&#243;n sobre apertura de negocios, comercializaci&#243;n de
+						</p>
+						<p class="textItem " style="top:19.768935%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							productos, financiamiento y esquemas de capacitaci&#243;n. A la fecha,
+						</p>
+						<p class="textItem " style="top:21.566110%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se han atendido a 10,861 personas emprendedoras y empresarias.
+						</p>
+						<p class="textItem " style="top:25.160462%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A petici&#243;n de la Comisi&#243;n de Desarrollo Econ&#243;mico del H.
+						</p>
+						<p class="textItem " style="top:26.957638%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Congreso del Estado y en coordinaci&#243;n con autoridades del
+						</p>
+						<p class="textItem " style="top:28.754814%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Servicio de Administraci&#243;n Tributaria (SAT), se imparti&#243; una
+						</p>
+						<p class="textItem " style="top:30.551990%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Jornada Informativa de las nuevas disposiciones hacendarias en
+						</p>
+						<p class="textItem " style="top:32.349166%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la ciudad de Xalapa, en particular de la creaci&#243;n del R&#233;gimen de
+						</p>
+						<p class="textItem " style="top:34.146341%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Incorporaci&#243;n Fiscal. En seguimiento a esta acci&#243;n, en las oficinas
+						</p>
+						<p class="textItem " style="top:35.943517%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de CEDEVER se atendieron a 48 ciudadanos referidos por dicha
+						</p>
+						<p class="textItem " style="top:37.740693%;left:51.920123%;width:6.144393%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Comisi&#243;n.
+						</p>
+						<p class="textItem " style="top:41.335045%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Asimismo, se establecieron acuerdos de colaboraci&#243;n con los
+						</p>
+						<p class="textItem " style="top:43.132221%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ayuntamientos de San Andr&#233;s Tuxtla, Tierra Blanca y Tantoyuca,
+						</p>
+						<p class="textItem " style="top:44.929397%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con la finalidad de acercar a m&#225;s personas los servicios que ofrece.
+						</p>
+						<p class="textItem " style="top:48.267009%;left:51.920123%;width:33.486943%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							7.2. Red de Apoyo al Emprendedor
+						</p>
+						<p class="textItem " style="top:52.503209%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En coordinaci&#243;n con el Instituto Nacional del Emprendedor por
+						</p>
+						<p class="textItem " style="top:54.300385%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							medio del Fondo Nacional del Emprendedor, el Gobierno del
+						</p>
+						<p class="textItem " style="top:56.097561%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estado, a trav&#233;s de la SEDECOP, articul&#243; en la Entidad la Red de
+						</p>
+						<p class="textItem " style="top:57.894737%;left:51.920123%;width:14.132104%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Apoyo al Emprendedor.
+						</p>
+						<p class="textItem " style="top:61.489089%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con la puesta en marcha de los 12 puntos, ubicados en los
+						</p>
+						<p class="textItem " style="top:63.286264%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipios de Boca del R&#237;o, Coatzacoalcos, C&#243;rdoba, Orizaba,
+						</p>
+						<p class="textItem " style="top:65.083440%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Poza Rica, Tuxpan, Veracruz y Xalapa, se facilit&#243; el acceso a los
+						</p>
+						<p class="textItem " style="top:66.880616%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							programas relacionados con emprendedores, micro, peque&#241;as
+						</p>
+						<p class="textItem " style="top:68.677792%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y medianas empresas que ofrece la SEDECOP, as&#237; como de 26
+						</p>
+						<p class="textItem " style="top:70.474968%;left:51.920123%;width:27.649770%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							entidades p&#250;blicas y 26 instituciones privadas.
+						</p>
+						<p class="textItem " style="top:74.069320%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A trav&#233;s de la Red se brind&#243; atenci&#243;n a m&#225;s de 1,000 empresas,
+						</p>
+						<p class="textItem " style="top:75.866496%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se beneficiaron a m&#225;s de 2,500 emprendedores y se foment&#243; la
+						</p>
+						<p class="textItem " style="top:77.663671%;left:51.920123%;width:18.279570%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							conservaci&#243;n de 600 empleos.
+						</p>
+						<p class="textItem " style="top:81.258023%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Red se enfoca principalmente en brindar atenci&#243;n a las
+						</p>
+						<p class="textItem " style="top:83.055199%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							MiPyMEs y a emprendedores de los sectores estrat&#233;gicos,
+						</p>
+						<p class="textItem " style="top:84.852375%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							definidos por el INADEM para el Estado: agroindustria, energ&#237;a
+						</p>
+						<p class="textItem " style="top:86.649551%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							renovable, metalmec&#225;nica, productos qu&#237;micos, productos para la
+						</p>
+						<p class="textItem " style="top:88.446727%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							construcci&#243;n, puertos, servicios m&#233;dicos y sectores transversales
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-52.html">52</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-53.html">53</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-54.html">54</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-55.html">55</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-56.html">56</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-57.html">57</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-58.html">58</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-59.html">59</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-60.html">60</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-61.html">61</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-62.html">62</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-63.html">63</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

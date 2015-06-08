@@ -1,0 +1,34 @@
+#gallery-images img     { max-width: 100%; }
+#gallery-images         { width: 40px; height: 40px; background-color: #fff; border: solid 3px #000; position: relative;
+                        -webkit-border-radius: 8px; -moz-border-radius: 8px; -o-border-radius: 8px; border-radius: 8px; }
+#gallery-image-loader   { display: block; width: 20px; height: 20px; margin: 5px auto;
+                        background: url(../images/gallery/loader.gif) center center no-repeat; }
+.gallery-info           { width: 20%; color: #999; font-family: Georgia; font-size: 0.8em; margin-top: 5px; font-style: italic; float: left; }
+.gallery-controls       { width: 98%; height: 32px; overflow: hidden; position: absolute; left: 10px; bottom: 30px; }
+.gallery-btn            { display: block; width: 38px; height: 32px; position: absolute; top: 0; }
+.btn-close              { background: url("../images/gallery/btn_close.png") no-repeat; right: 10px; }
+.btn-close:hover        { background-image: url("../images/gallery/btn_close_over.png"); }
+.btn-prev               { background: url("../images/gallery/btn_prev.png") no-repeat; left: 10px; }
+.btn-prev:hover         { background-image: url("../images/gallery/btn_prev_over.png"); }
+.btn-next               { background: url("../images/gallery/btn_next.png") no-repeat; right: 53px; }
+.btn-next:hover         { background-image: url("../images/gallery/btn_next_over.png"); }
+#gallery-thumbnails     { position: absolute; bottom: 90px; overflow: hidden; }
+.thumbnails-list        { padding: 0; overflow: hidden; list-style: none; }
+.thumbnail-item         { display: block; height: 35px; padding: 3px; background-color: rgba(255,255,255,0.6); float: left; margin-right: 4px;
+                        cursor: pointer; }
+.thumbnail-item:hover   { background-color: #fff; }
+.thumbnails-prev        { width: 20px; height: 20px; position: absolute; left: 30px; bottom: 108px; background-position: -31px -3px; }
+.thumbnails-next        { width: 20px; height: 20px; position: absolute; right: 40px; bottom: 108px; background-position: -82px -3px; }
+#gallery-social         { width: 50%; position: absolute; left: 25%; bottom: 30px; text-align: center; z-index: 1100; }
+#gallery-social a.fb    { background: url("../images/sprite-facebook-blog.png") no-repeat; height: 26px; margin-right: 20px; width: 34px; }
+#gallery-social a.tw    { background: url("../images/sprite-twitter-blog.png") no-repeat; height: 22px; margin-right: 20px; width: 34px;
+                        position: relative; top: -3px; }
+#gallery-social a.lkin  { background: url("../images/sprite-linkedin-blog.png") no-repeat; height: 23px; margin-right: 20px; width: 34px;
+                        position: relative; top: -3px; }
+#gallery-social a.pint  { background: url("../images/sprite-pinterest-blog.png") no-repeat; height: 28px; margin-right: 20px; width: 34px; }
+#gallery-social a.plus  { background: url("../images/sprite-plus-blog.png") no-repeat; height: 27px; margin-right: 0; width: 34px; }
+#gallery-social a.fb:hover      { background-position: 0 -27px; }
+#gallery-social a.tw:hover      { background-position: 0 -22px; }
+#gallery-social a.lkin:hover    { background-position: 0 -24px; }
+#gallery-social a.pint:hover    { background-position: 0 -29px; }
+#gallery-social a.plus:hover    { background-position: 0 -28px; }

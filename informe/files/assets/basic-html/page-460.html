@@ -1,0 +1,497 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "460";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-459.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;460 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-461.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-459.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">460 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-461.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0460.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:15.661104%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Por medio de la OVH se efectuaron m&#225;s de 1.9 millones de
+						</p>
+						<p class="textItem " style="top:17.458280%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							operaciones, con las cuales se obtuvieron 3,880.7 millones
+						</p>
+						<p class="textItem " style="top:19.255456%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de pesos. Esas operaciones consistieron en la presentaci&#243;n de
+						</p>
+						<p class="textItem " style="top:21.052632%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							declaraciones de pago automatizadas, v&#237;a Internet y de recibos
+						</p>
+						<p class="textItem " style="top:22.849807%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							referenciados de entero de contribuciones en el sistema bancario y
+						</p>
+						<p class="textItem " style="top:24.646983%;left:8.602151%;width:17.204301%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dem&#225;s sitios de recaudaci&#243;n.
+						</p>
+						<p class="textItem " style="top:28.112965%;left:8.602151%;width:25.652842%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.1.4.2. Programas Fiscales
+						</p>
+						<p class="textItem " style="top:32.349166%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Programa de Convenios de Pago en Parcialidades ayuda a
+						</p>
+						<p class="textItem " style="top:34.146341%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							contribuyentes que atraviesan por dificultades financieras que
+						</p>
+						<p class="textItem " style="top:35.943517%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							impiden que paguen oportunamente sus contribuciones. Este
+						</p>
+						<p class="textItem " style="top:37.740693%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							programa se extendi&#243; para quienes enajenan y adquieren veh&#237;culos
+						</p>
+						<p class="textItem " style="top:39.537869%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							automotores usados, autoriz&#225;ndoles, mediante convenio, el pago
+						</p>
+						<p class="textItem " style="top:41.335045%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en parcialidades de las contribuciones a cargo de quien adquiere la
+						</p>
+						<p class="textItem " style="top:43.132221%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							unidad junto con la actualizaci&#243;n de datos en el padr&#243;n vehicular.
+						</p>
+						<p class="textItem " style="top:44.929397%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el periodo de Informe, se autoriz&#243; la suscripci&#243;n de 299
+						</p>
+						<p class="textItem " style="top:46.726573%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							convenios que facilitaron el pago de adeudos fiscales, en forma
+						</p>
+						<p class="textItem " style="top:48.523748%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							diferida o en parcialidades, por un importe total de 7.6 millones
+						</p>
+						<p class="textItem " style="top:50.320924%;left:8.602151%;width:5.683564%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de pesos.
+						</p>
+						<p class="textItem " style="top:53.915276%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se fortaleci&#243; la estrategia de recuperaci&#243;n de cr&#233;ditos fiscales con
+						</p>
+						<p class="textItem " style="top:55.712452%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la instrumentaci&#243;n del Plan Integral de Ejecuci&#243;n Fiscal (PIEF). La
+						</p>
+						<p class="textItem " style="top:57.509628%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cartera se compone de 5,580 adeudos de contribuyentes que
+						</p>
+						<p class="textItem " style="top:59.306804%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							totalizan 4,200 millones de pesos. En el Plan se incorporaron las
+						</p>
+						<p class="textItem " style="top:61.103979%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							metas de recuperaci&#243;n de cr&#233;ditos fiscales; los lineamientos para
+						</p>
+						<p class="textItem " style="top:62.901155%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la administraci&#243;n, cobro, depuraci&#243;n y rendici&#243;n de informes; y
+						</p>
+						<p class="textItem " style="top:64.698331%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los mecanismos de evaluaci&#243;n de las secciones de Ejecuci&#243;n Fiscal
+						</p>
+						<p class="textItem " style="top:66.495507%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y de Notificadores-Ejecutores de las OHE. Bajo sus directrices se
+						</p>
+						<p class="textItem " style="top:68.292683%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							desarrollaron acciones coordinadas con las recaudadoras, las
+						</p>
+						<p class="textItem " style="top:70.089859%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cuales recibieron la cartera de cr&#233;ditos fiscales, las instrucciones
+						</p>
+						<p class="textItem " style="top:71.887035%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de cobranza y los formatos actualizados del Procedimiento
+						</p>
+						<p class="textItem " style="top:73.684211%;left:8.602151%;width:28.571429%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Administrativo de Ejecuci&#243;n aplicables en 2014.
+						</p>
+						<p class="textItem " style="top:77.278562%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Las acciones del PIEF permitieron recaudar m&#225;s de 80 millones
+						</p>
+						<p class="textItem " style="top:79.075738%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de pesos. La recuperaci&#243;n de adeudos por medios coactivos
+						</p>
+						<p class="textItem " style="top:80.872914%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							requiere la ejecuci&#243;n sistem&#225;tica de los mecanismos de apoyo que
+						</p>
+						<p class="textItem " style="top:82.670090%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							brindan la Comisi&#243;n Nacional Bancaria y de Valores y las SIC. Se ha
+						</p>
+						<p class="textItem " style="top:84.467266%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							conservado la coordinaci&#243;n con esas instituciones para aprovechar
+						</p>
+						<p class="textItem " style="top:86.264442%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los recursos legales y administrativos que faciliten la gesti&#243;n de
+						</p>
+						<p class="textItem " style="top:88.061617%;left:8.602151%;width:20.276498%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cr&#233;ditos fiscales firmes y exigibles.
+						</p>
+						<p class="textItem " style="top:15.661104%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Aunado a lo anterior, se firm&#243; el Convenio de Colaboraci&#243;n y
+						</p>
+						<p class="textItem " style="top:17.458280%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Coordinaci&#243;n con el &#211;rgano de Fiscalizaci&#243;n Superior (ORFIS),
+						</p>
+						<p class="textItem " style="top:19.255456%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que concede atribuciones a la SEFIPLAN para activar la gesti&#243;n
+						</p>
+						<p class="textItem " style="top:21.052632%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							coactiva de los adeudos fiscales derivados de las resoluciones
+						</p>
+						<p class="textItem " style="top:22.849807%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que &#233;l emite. Con este respaldo, en coordinaci&#243;n con las OHE,
+						</p>
+						<p class="textItem " style="top:24.646983%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							se instauraron 122 acciones de cobro coactivo y est&#225;n en proceso
+						</p>
+						<p class="textItem " style="top:26.444159%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							29 investigaciones propias del Procedimiento Administrativo de
+						</p>
+						<p class="textItem " style="top:28.241335%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ejecuci&#243;n para la recuperaci&#243;n de los cr&#233;ditos fiscales resultantes
+						</p>
+						<p class="textItem " style="top:30.038511%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de indemnizaciones y sanciones determinadas por el ORFIS a las
+						</p>
+						<p class="textItem " style="top:31.835687%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y los servidores, as&#237; como a las y los ex colaboradores estatales y
+						</p>
+						<p class="textItem " style="top:33.632863%;left:49.769585%;width:7.526882%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipales.
+						</p>
+						<p class="textItem " style="top:33.761232%;left:57.296467%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							29
+						</p>
+						<p class="textItem " style="top:37.227214%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se cumpli&#243; con la cobranza de la cartera de cr&#233;ditos fiscales
+						</p>
+						<p class="textItem " style="top:39.024390%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							recibidos del SAT, al amparo de las atribuciones que confiere al
+						</p>
+						<p class="textItem " style="top:40.821566%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estado el Anexo 18 al CCAMFF, en cuyo ejercicio se realizaron 352
+						</p>
+						<p class="textItem " style="top:42.618742%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acciones que derivaron en la recuperaci&#243;n de m&#225;s de un mill&#243;n
+						</p>
+						<p class="textItem " style="top:44.415918%;left:49.769585%;width:5.683564%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de pesos.
+						</p>
+						<p class="textItem " style="top:48.010270%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el &#225;mbito fiscal federal y estatal, se otorg&#243; servicio expedito a
+						</p>
+						<p class="textItem " style="top:49.807445%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							contribuyentes en la resoluci&#243;n de 184 consultas sobre situaciones
+						</p>
+						<p class="textItem " style="top:51.604621%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							reales y concretas. Se atendieron 36 solicitudes de suspensi&#243;n
+						</p>
+						<p class="textItem " style="top:53.401797%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Procedimiento Administrativo de Ejecuci&#243;n y ofrecimiento de
+						</p>
+						<p class="textItem " style="top:55.198973%;left:49.769585%;width:31.029186%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							garant&#237;a del inter&#233;s fiscal, o sustituci&#243;n de la misma.
+						</p>
+						<p class="textItem " style="top:58.793325%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se fortaleci&#243; la relaci&#243;n fiscal con las SIC para el intercambio de
+						</p>
+						<p class="textItem " style="top:60.590501%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							informaci&#243;n, como estrategia eficaz de fomento a la recaudaci&#243;n.
+						</p>
+						<p class="textItem " style="top:62.387677%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A &#233;stas se les entreg&#243; la base de datos de deudoras y deudores
+						</p>
+						<p class="textItem " style="top:64.184852%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del ISTUV de ejercicios fiscales anteriores, o que tienen cr&#233;ditos
+						</p>
+						<p class="textItem " style="top:65.982028%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fiscales firmes y exigibles, a efecto de que conste en el historial
+						</p>
+						<p class="textItem " style="top:67.779204%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							crediticio de las personas f&#237;sicas y morales. En este procedimiento
+						</p>
+						<p class="textItem " style="top:69.576380%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Administraci&#243;n Estatal protege al contribuyente empleando un
+						</p>
+						<p class="textItem " style="top:71.373556%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							recurso eficaz de aclaraci&#243;n, de conformidad con las pr&#225;cticas y
+						</p>
+						<p class="textItem " style="top:73.170732%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							tr&#225;mites estipulados en las pol&#237;ticas para proporcionar informaci&#243;n
+						</p>
+						<p class="textItem " style="top:74.967908%;left:49.769585%;width:5.376344%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a las SIC.
+						</p>
+						<p class="textItem " style="top:75.096277%;left:55.145929%;width:0.921659%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							30
+						</p>
+						<p class="textItem " style="top:78.562259%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se valid&#243; que los Poderes del Estado, las dependencias, entidades y
+						</p>
+						<p class="textItem " style="top:80.359435%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							organismos aut&#243;nomos acataran la responsabilidad vigente a partir
+						</p>
+						<p class="textItem " style="top:82.156611%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 2014 de a&#241;adir en los contratos y convenios que firmen con
+						</p>
+						<p class="textItem " style="top:83.953787%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							contratistas, proveedoras y proveedores registrados en el padr&#243;n,
+						</p>
+						<p class="textItem " style="top:86.521181%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							29. Convenio de Colaboraci&#243;n y Coordinaci&#243;n en materia de cobro de cr&#233;ditos fiscales derivados
+						</p>
+						<p class="textItem " style="top:87.419769%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							de la determinaci&#243;n de indemnizaciones y sanciones en el proceso de fiscalizaci&#243;n superior,
+						</p>
+						<p class="textItem " style="top:88.318357%;left:49.769585%;width:38.863287%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							publicado en la Gaceta Oficial del Estado, N&#250;mero Extraordinario 77, el 24 de febrero de 2014.
+						</p>
+						<p class="textItem " style="top:89.216945%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							30. Decreto publicado en la Gaceta Oficial del Estado, N&#250;mero Extraordinario 333, el 27 de
+						</p>
+						<p class="textItem " style="top:90.243902%;left:49.769585%;width:6.758833%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							agosto de 2013.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-455.html">455</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-456.html">456</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-457.html">457</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-458.html">458</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-459.html">459</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-460.html">460</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-461.html">461</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-462.html">462</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-463.html">463</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-464.html">464</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-465.html">465</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-466.html">466</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

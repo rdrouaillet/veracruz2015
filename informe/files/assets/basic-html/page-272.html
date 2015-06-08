@@ -1,0 +1,503 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "272";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-271.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;272 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-273.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-271.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">272 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-273.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0272.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem testString" style="top:7.060334%;left:8.602151%;width:31.490015%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							6. Modernizaci&#243;n de
+						</p>
+						<p class="textItem " style="top:9.756098%;left:8.602151%;width:31.950845%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							la infraestructura del
+						</p>
+						<p class="textItem " style="top:12.451861%;left:8.602151%;width:28.264209%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							Sistema Educativo
+						</p>
+						<p class="textItem " style="top:15.147625%;left:8.602151%;width:19.354839%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							Veracruzano
+						</p>
+						<p class="textItem " style="top:20.924262%;left:8.602151%;width:27.803379%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							6.1. Infraestructura educativa
+						</p>
+						<p class="textItem " style="top:25.160462%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Como parte del compromiso establecido en el PVD 2011-2016
+						</p>
+						<p class="textItem " style="top:26.957638%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de dotar de espacios dignos a todos los ni&#241;os y j&#243;venes en donde
+						</p>
+						<p class="textItem " style="top:28.754814%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							puedan recibir una educaci&#243;n de calidad, se brind&#243; atenci&#243;n a
+						</p>
+						<p class="textItem " style="top:30.551990%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							658 planteles educativos con obras y acciones de construcci&#243;n,
+						</p>
+						<p class="textItem " style="top:32.349166%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							rehabilitaci&#243;n y mantenimiento, en beneficio de m&#225;s de 64,100
+						</p>
+						<p class="textItem " style="top:34.146341%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							alumnos de 107 municipios, con una inversi&#243;n de m&#225;s de 449
+						</p>
+						<p class="textItem " style="top:35.943517%;left:8.602151%;width:11.059908%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							millones de pesos.
+						</p>
+						<p class="textItem " style="top:39.537869%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Una de las estrategias fundamentales de esta Administraci&#243;n
+						</p>
+						<p class="textItem " style="top:41.335045%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							es apoyar a la poblaci&#243;n que menos tiene y m&#225;s necesita, por
+						</p>
+						<p class="textItem " style="top:43.132221%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ello se privilegi&#243; la atenci&#243;n de las regiones con muy alta y alta
+						</p>
+						<p class="textItem " style="top:44.929397%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							marginaci&#243;n de Veracruz con obras y acciones en 397 centros
+						</p>
+						<p class="textItem " style="top:46.726573%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							escolares de 32 municipios que se encuentran en condiciones de
+						</p>
+						<p class="textItem " style="top:48.523748%;left:8.602151%;width:5.376344%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pobreza.
+						</p>
+						<p class="textItem " style="top:52.118100%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Las obras de infraestructura educativa favorecieron la participaci&#243;n
+						</p>
+						<p class="textItem " style="top:53.915276%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 176 empresas veracruzanas, lo que contribuy&#243; a la generaci&#243;n
+						</p>
+						<p class="textItem " style="top:55.712452%;left:8.602151%;width:27.956989%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de aproximadamente 23 mil empleos directos.
+						</p>
+						<p class="textItem " style="top:59.306804%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A trav&#233;s de los fondos destinados para la infraestructura f&#237;sica
+						</p>
+						<p class="textItem " style="top:61.103979%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							educativa del nivel b&#225;sico, se brind&#243; atenci&#243;n a 630 espacios
+						</p>
+						<p class="textItem " style="top:62.901155%;left:8.602151%;width:33.333333%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							educativos con una inversi&#243;n de 404 millones de pesos.
+						</p>
+						<p class="textItem " style="top:66.495507%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En estos cuatro a&#241;os de Gobierno, la inversi&#243;n para la
+						</p>
+						<p class="textItem " style="top:68.292683%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							infraestructura educativa en el Estado de Veracruz ha alcanzado un
+						</p>
+						<p class="textItem " style="top:70.089859%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							monto acumulado de 2,577 millones de pesos, con lo que se han
+						</p>
+						<p class="textItem " style="top:71.887035%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							realizado 8,245 obras y acciones distribuidas en todos los niveles
+						</p>
+						<p class="textItem " style="top:73.684211%;left:8.602151%;width:31.643625%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							educativos en beneficio de la poblaci&#243;n veracruzana.
+						</p>
+						<p class="textItem " style="top:77.278562%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En lo que va de la Administraci&#243;n, se han realizado importantes
+						</p>
+						<p class="textItem " style="top:79.075738%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							inversiones, destacan por su impacto social y beneficio a la
+						</p>
+						<p class="textItem " style="top:80.872914%;left:8.602151%;width:15.514593%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							comunidad las siguientes:
+						</p>
+						<p class="textItem " style="top:84.082157%;left:8.602151%;width:9.677419%;height:1.925546%;font-size:0.600000em;color:#25171C;font-family:Stone Sans Std;">
+							Nivel b&#225;sico
+						</p>
+						<p class="textItem " style="top:87.163030%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem testString" style="top:87.034660%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:87.163030%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Construcci&#243;n de nuevos edificios en la telesecundaria Adolfo
+						</p>
+						<p class="textItem " style="top:88.960205%;left:12.288786%;width:14.285714%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							L&#243;pez Mateos de Acula.
+						</p>
+						<p class="textItem " style="top:25.160462%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:25.032092%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:25.160462%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Construcci&#243;n de un Gimnasio Deportivo en la Secundaria
+						</p>
+						<p class="textItem " style="top:26.957638%;left:53.456221%;width:30.261137%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Federal N&#176; 1 Enrique Herrera Moreno de C&#243;rdoba.
+						</p>
+						<p class="textItem " style="top:30.551990%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:30.423620%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:30.551990%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Construcci&#243;n de la primera etapa del albergue Manuel
+						</p>
+						<p class="textItem " style="top:32.349166%;left:53.456221%;width:30.107527%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Guti&#233;rrez Zamora en el municipio de Boca del R&#237;o.
+						</p>
+						<p class="textItem " style="top:35.943517%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:35.815148%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:35.943517%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Construcci&#243;n de edificio escolar para el jard&#237;n de ni&#241;os
+						</p>
+						<p class="textItem " style="top:37.740693%;left:53.456221%;width:15.514593%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Gabriela Mistral de Fort&#237;n.
+						</p>
+						<p class="textItem " style="top:41.335045%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:41.206675%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:41.335045%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Rehabilitaci&#243;n de las instalaciones la secundaria y bachillerato
+						</p>
+						<p class="textItem " style="top:43.132221%;left:53.456221%;width:26.113671%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Miguel Alem&#225;n Gonz&#225;lez de Coatzacoalcos.
+						</p>
+						<p class="textItem " style="top:46.726573%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:46.598203%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:46.726573%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Rehabilitaci&#243;n de la Escuela Secundaria General de Artes y
+						</p>
+						<p class="textItem " style="top:48.523748%;left:53.456221%;width:17.511521%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Oficios (ESBAO) de C&#243;rdoba.
+						</p>
+						<p class="textItem " style="top:51.732991%;left:49.769585%;width:20.583717%;height:1.925546%;font-size:0.600000em;color:#25171C;font-family:Stone Sans Std;">
+							Medio superior y superior
+						</p>
+						<p class="textItem " style="top:54.813864%;left:49.769585%;width:15.053763%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Actualmente se ejecutan:
+						</p>
+						<p class="textItem " style="top:58.408216%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:58.279846%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:58.408216%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Obrasdeconstrucci&#243;nde launidadacad&#233;micadepartamental
+						</p>
+						<p class="textItem " style="top:60.205392%;left:53.456221%;width:32.411674%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en el Instituto Tecnol&#243;gico Superior de Coatzacoalcos.
+						</p>
+						<p class="textItem " style="top:63.799743%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:63.671374%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:63.799743%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Construcci&#243;n de la unidad de docencia de la Universidad
+						</p>
+						<p class="textItem " style="top:65.596919%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Polit&#233;cnica y construcci&#243;n del Colegio de Estudios Cient&#237;ficos
+						</p>
+						<p class="textItem " style="top:67.394095%;left:53.456221%;width:17.511521%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y Tecnol&#243;gicos, en Huatusco.
+						</p>
+						<p class="textItem " style="top:70.988447%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:70.860077%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:70.988447%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Construcci&#243;n de la unidad acad&#233;mica departamental para el
+						</p>
+						<p class="textItem " style="top:72.785623%;left:53.456221%;width:28.264209%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Instituto Tecnol&#243;gico Superior de Chicontepec.
+						</p>
+						<p class="textItem " style="top:76.379974%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:76.251605%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:76.379974%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Construcci&#243;n de la unidad acad&#233;mica departamental tipo
+						</p>
+						<p class="textItem " style="top:78.177150%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							III para el Instituto Tecnol&#243;gico Superior de Juan Rodr&#237;guez
+						</p>
+						<p class="textItem " style="top:79.974326%;left:53.456221%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Clara.
+						</p>
+						<p class="textItem " style="top:83.568678%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:83.440308%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:83.568678%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Construcci&#243;n de la unidad acad&#233;mica departamental tipo
+						</p>
+						<p class="textItem " style="top:85.365854%;left:53.456221%;width:35.023041%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							III para el Instituto Tecnol&#243;gico Superior de Jes&#250;s Carranza.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-267.html">267</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-268.html">268</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-269.html">269</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-270.html">270</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-271.html">271</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-272.html">272</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-273.html">273</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-274.html">274</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-275.html">275</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-276.html">276</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-277.html">277</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-278.html">278</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

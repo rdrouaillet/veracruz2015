@@ -1,0 +1,521 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "432";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-431.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;432 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-433.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-431.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">432 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-433.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0432.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:17.458280%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem testString" style="top:17.458280%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:17.458280%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Durante febrero, marzo y abril, se otorgaron cursos en
+						</p>
+						<p class="textItem " style="top:19.255456%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							distintas tem&#225;ticas: Gesti&#243;n integral de riesgos; Unidad
+						</p>
+						<p class="textItem " style="top:21.052632%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							interna de protecci&#243;n civil; Programa interno; Refugios
+						</p>
+						<p class="textItem " style="top:22.849807%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							temporales; Evacuaci&#243;n de inmuebles; Simulacros y
+						</p>
+						<p class="textItem " style="top:24.646983%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Plan Familiar; dirigido a 943 integrantes de las unidades
+						</p>
+						<p class="textItem " style="top:26.444159%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipales de protecci&#243;n civil de las zonas de Catemaco,
+						</p>
+						<p class="textItem " style="top:28.241335%;left:12.288786%;width:29.185868%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Coatepec, San Andr&#233;s Tuxtla, Tuxpan y Veracruz.
+						</p>
+						<p class="textItem " style="top:31.835687%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:31.835687%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:31.835687%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En junio, se imparti&#243; el curso integral de protecci&#243;n civil a
+						</p>
+						<p class="textItem " style="top:33.632863%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							194 integrantes de unidades internas de protecci&#243;n civil de
+						</p>
+						<p class="textItem " style="top:35.430039%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Secretar&#237;a de Salud, Supervisi&#243;n Escolar Zona Xalapa de
+						</p>
+						<p class="textItem " style="top:37.227214%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Secretar&#237;a de Educaci&#243;n, LIII Legislatura del Estado y del
+						</p>
+						<p class="textItem " style="top:39.024390%;left:12.288786%;width:14.592934%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipio de Banderilla.
+						</p>
+						<p class="textItem " style="top:42.618742%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:42.618742%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:42.618742%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se realizaron dos Jornadas de Capacitaci&#243;n en la Secretar&#237;a
+						</p>
+						<p class="textItem " style="top:44.415918%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Trabajo, Previsi&#243;n Social y Productividad en junio y julio
+						</p>
+						<p class="textItem " style="top:46.213094%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en las que participaron 257 miembros de unidades internas
+						</p>
+						<p class="textItem " style="top:48.010270%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de protecci&#243;n civil de diversas dependencias y entidades de
+						</p>
+						<p class="textItem " style="top:49.807445%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Administraci&#243;n Estatal, en temas de Prevenci&#243;n y combate
+						</p>
+						<p class="textItem " style="top:51.604621%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de incendios; Primeros auxilios; Evacuaci&#243;n de inmuebles y
+						</p>
+						<p class="textItem " style="top:53.401797%;left:12.288786%;width:19.508449%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							B&#250;squeda, rescate y salvamento.
+						</p>
+						<p class="textItem " style="top:56.996149%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:56.996149%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:56.996149%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Del 7 al 10 de julio se impartieron los cursos Refugios
+						</p>
+						<p class="textItem " style="top:58.793325%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Temporales y Sistema de Comando, en instalaciones de la
+						</p>
+						<p class="textItem " style="top:60.590501%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Universidad del Golfo de M&#233;xico de la ciudad de Tuxpan,
+						</p>
+						<p class="textItem " style="top:62.387677%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dirigido a 151 elementos de la Secretar&#237;a de la Defensa
+						</p>
+						<p class="textItem " style="top:64.184852%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Nacional, Polic&#237;a Federal, Estatal y Municipal, as&#237; como
+						</p>
+						<p class="textItem " style="top:65.982028%;left:12.288786%;width:32.258065%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							personal de los ayuntamientos de Poza Rica y Tuxpan.
+						</p>
+						<p class="textItem " style="top:69.576380%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Promoci&#243;n de la cultura de protecci&#243;n civil y la prevenci&#243;n del
+						</p>
+						<p class="textItem " style="top:71.373556%;left:8.602151%;width:11.674347%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							riesgo de desastres:
+						</p>
+						<p class="textItem " style="top:74.967908%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:74.967908%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:74.967908%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se realizaron talleres en la tem&#225;tica Dise&#241;o de escenarios y
+						</p>
+						<p class="textItem " style="top:76.765083%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							evacuaci&#243;n de inmuebles, Primer respondiente en primeros
+						</p>
+						<p class="textItem " style="top:78.562259%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							auxilios; y Prevenci&#243;n de incendios y manejo de extintores,
+						</p>
+						<p class="textItem " style="top:80.359435%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							impartidos en Tlacotalpan del 21 al 23 de enero, previo a
+						</p>
+						<p class="textItem " style="top:82.156611%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							las Fiestas de La Candelaria 2014, en el que participaron
+						</p>
+						<p class="textItem " style="top:83.953787%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							158 prestadores de servicios tur&#237;sticos; y el 19 de marzo, en
+						</p>
+						<p class="textItem " style="top:85.750963%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el parque tem&#225;tico Takilhsukut de Papantla, dirigido a 399
+						</p>
+						<p class="textItem " style="top:87.548139%;left:12.288786%;width:18.740399%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							voluntarios de la Cumbre Taj&#237;n.
+						</p>
+						<p class="textItem " style="top:17.458280%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:17.458280%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:17.458280%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Previo al periodo vacacional de Semana Santa, se impartieron
+						</p>
+						<p class="textItem " style="top:19.255456%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cursos para la formaci&#243;n de 40 Guardavidas, impartidos por
+						</p>
+						<p class="textItem " style="top:21.052632%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Secretar&#237;a de Protecci&#243;n Civil y la Unidad de Protecci&#243;n
+						</p>
+						<p class="textItem " style="top:22.849807%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Civil del municipio de Tecolutla, del 31 de marzo al 4 de
+						</p>
+						<p class="textItem " style="top:24.646983%;left:53.456221%;width:20.583717%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							abril, en playas de esa jurisdicci&#243;n.
+						</p>
+						<p class="textItem " style="top:28.241335%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:28.241335%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:28.241335%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Durante este ejercicio, se impartieron 90 pl&#225;ticas para
+						</p>
+						<p class="textItem " style="top:30.038511%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							elaborar el Plan Familiar de Protecci&#243;n Civil en las cabeceras
+						</p>
+						<p class="textItem " style="top:31.835687%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipales de Banderilla, Carlos A. Carrillo, Citlalt&#233;petl,
+						</p>
+						<p class="textItem " style="top:33.632863%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Coatepec, Coatzacoalcos, C&#243;rdoba, Cosamaloapan,
+						</p>
+						<p class="textItem " style="top:35.430039%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Cuitl&#225;huac, Chontla, Emiliano Zapata, Huayacocotla,
+						</p>
+						<p class="textItem " style="top:37.227214%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ixcatepec, Juchique de Ferrer, Mart&#237;nez de la Torre, Orizaba,
+						</p>
+						<p class="textItem " style="top:39.024390%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							P&#225;nuco, Papantla, Perote, Poza Rica, Playa Vicente, San
+						</p>
+						<p class="textItem " style="top:40.821566%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Andr&#233;s Tuxtla, Tamal&#237;n, Tatahuicapan, Tres Valles, Tuxpan y
+						</p>
+						<p class="textItem " style="top:42.618742%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Yanga, en la comunidad El Aguacate, municipio de Jilotepec,
+						</p>
+						<p class="textItem " style="top:44.415918%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y en coordinaci&#243;n con el Centro de Salud Gast&#243;n Melo de
+						</p>
+						<p class="textItem " style="top:46.213094%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Xalapa, el taller se dirigi&#243; a personas de la tercera edad y
+						</p>
+						<p class="textItem " style="top:48.010270%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							beneficiarios del programa Prospera en la Reserva Territorial
+						</p>
+						<p class="textItem " style="top:49.807445%;left:53.456221%;width:35.176651%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Xalapa. En estas reuniones participaron 40,285 familias.
+						</p>
+						<p class="textItem " style="top:53.401797%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:53.401797%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:53.401797%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En coordinaci&#243;n con el CLAM Coatzacoalcos, el Comit&#233;
+						</p>
+						<p class="textItem " style="top:55.198973%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Regional Integral de Seguridad (CRIS) Minatitl&#225;n y diversas
+						</p>
+						<p class="textItem " style="top:56.996149%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							empresas de esta regi&#243;n industrial se particip&#243; en la jornadas
+						</p>
+						<p class="textItem " style="top:58.793325%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de trabajo del Segundo Foro Internacional de Seguridad,
+						</p>
+						<p class="textItem " style="top:60.590501%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Salud en el Trabajo, Gesti&#243;n Integral de Riesgos y Grupos
+						</p>
+						<p class="textItem " style="top:62.387677%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Ayuda Mutua celebrado en el Centro de Convenciones
+						</p>
+						<p class="textItem " style="top:64.184852%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Coatzacoalcos, entre el 17 y 19 de septiembre, en el
+						</p>
+						<p class="textItem " style="top:65.982028%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que se impartieron 18 conferencias, entre &#233;stas la Estrategia
+						</p>
+						<p class="textItem " style="top:67.779204%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruzana para la Reducci&#243;n del Riesgo de Desastres,
+						</p>
+						<p class="textItem " style="top:69.576380%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cuatro talleres en materia de seguridad ante materiales
+						</p>
+						<p class="textItem " style="top:71.373556%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							peligrosos y administraci&#243;n exitosa de empresas, adem&#225;s de
+						</p>
+						<p class="textItem " style="top:73.170732%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							instalarse la Feria Infantil de Protecci&#243;n Civil. El evento tuvo
+						</p>
+						<p class="textItem " style="top:74.967908%;left:53.456221%;width:19.354839%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							un aforo de 1,920 participantes.
+						</p>
+						<p class="textItem " style="top:78.562259%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En cumplimiento a lo que establece la Ley de Protecci&#243;n Civil y
+						</p>
+						<p class="textItem " style="top:80.359435%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la Reducci&#243;n del Riesgo de Desastres, respecto a que los centros
+						</p>
+						<p class="textItem " style="top:82.156611%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							educativos adopten e integren en sus planes de estudio la gesti&#243;n
+						</p>
+						<p class="textItem " style="top:83.953787%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							integral del riesgo se dictaron conferencias y se realizaron acciones
+						</p>
+						<p class="textItem " style="top:85.750963%;left:49.769585%;width:15.975422%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de capacitaci&#243;n y difusi&#243;n:
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-427.html">427</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-428.html">428</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-429.html">429</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-430.html">430</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-431.html">431</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-432.html">432</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-433.html">433</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-434.html">434</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-435.html">435</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-436.html">436</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-437.html">437</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-438.html">438</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

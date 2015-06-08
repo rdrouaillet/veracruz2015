@@ -1,0 +1,449 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "302";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-301.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;302 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-303.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-301.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">302 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-303.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0302.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:17.073171%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Esta estrategia de capacitaci&#243;n reforz&#243; los proyectosmunicipales del
+						</p>
+						<p class="textItem " style="top:18.870347%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							cami&#243;n ecol&#243;gico; la entrada en vigor de su reglamento municipal
+						</p>
+						<p class="textItem " style="top:20.667522%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de residuos s&#243;lidos y ecolog&#237;a y la estrategia de la SEDEMA para la
+						</p>
+						<p class="textItem " style="top:22.464698%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							elaboraci&#243;n de un Programa Municipal de Educaci&#243;n Ambiental.
+						</p>
+						<p class="textItem " style="top:24.261874%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Adem&#225;s, los promotores y replicadores ambientales imparten, en
+						</p>
+						<p class="textItem " style="top:26.059050%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el municipio de Acayucan talleres y pl&#225;ticas en colonias, localidades
+						</p>
+						<p class="textItem " style="top:27.856226%;left:8.602151%;width:6.298003%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y escuelas.
+						</p>
+						<p class="textItem testString" style="top:30.808729%;left:8.602151%;width:24.270353%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							7. Coordinaci&#243;n
+						</p>
+						<p class="textItem " style="top:33.504493%;left:8.602151%;width:27.035330%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							entre los diversos
+						</p>
+						<p class="textItem " style="top:36.200257%;left:8.602151%;width:28.417819%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							sectores y &#243;rdenes
+						</p>
+						<p class="textItem " style="top:38.896021%;left:8.602151%;width:26.881720%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							gubernamentales
+						</p>
+						<p class="textItem " style="top:44.672657%;left:8.602151%;width:34.101382%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							7.1. Consejos Consultivos de Medio
+						</p>
+						<p class="textItem " style="top:46.983312%;left:8.602151%;width:32.718894%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							Ambiente y Desarrollo Sustentable
+						</p>
+						<p class="textItem " style="top:51.219512%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El principal objetivo de los Consejos Consultivos y Municipales
+						</p>
+						<p class="textItem " style="top:53.016688%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Medio Ambiente es impulsar y organizar foros de consulta
+						</p>
+						<p class="textItem " style="top:54.813864%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ciudadana para el an&#225;lisis de la situaci&#243;n ambiental en los
+						</p>
+						<p class="textItem " style="top:56.611040%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipios, fomentar la cultura de la protecci&#243;n al ambiente, as&#237;
+						</p>
+						<p class="textItem " style="top:58.408216%;left:8.602151%;width:38.095238%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							como elaborar y aplicar los programas de educaci&#243;n ambiental.
+						</p>
+						<p class="textItem " style="top:62.002567%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Este a&#241;o, a trav&#233;s de la Subsecretar&#237;a de Fomento y Gesti&#243;n
+						</p>
+						<p class="textItem " style="top:63.799743%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ambiental de la SEDEMA, se enviaron 212 exhortos a las
+						</p>
+						<p class="textItem " style="top:65.596919%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							nuevas administraciones de los ayuntamientos del Estado, para
+						</p>
+						<p class="textItem " style="top:67.394095%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							conformar los consejos consultivos, en los cuales la sociedad y las
+						</p>
+						<p class="textItem " style="top:69.191271%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							organizaciones civiles participen y formen parte del desarrollo de
+						</p>
+						<p class="textItem " style="top:70.988447%;left:8.602151%;width:33.486943%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acciones en beneficio del medio ambiente en su regi&#243;n.
+						</p>
+						<p class="textItem " style="top:74.582798%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La Secretar&#237;a de Medio Ambiente apoy&#243;, asesor&#243; y coordin&#243; los
+						</p>
+						<p class="textItem " style="top:76.379974%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							trabajos para la integraci&#243;n de 54 Consejos ConsultivosMunicipales
+						</p>
+						<p class="textItem " style="top:78.177150%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Medio Ambiente y Desarrollo Sustentable, en los municipios de:
+						</p>
+						<p class="textItem " style="top:79.974326%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Acajete, &#193;lamo Temapache, Alvarado, &#193;ngel R. Cabada, Banderilla,
+						</p>
+						<p class="textItem " style="top:81.771502%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Camar&#243;n de Tejeda, Carrillo Puerto, Castillo de Teayo, Cerro Azul,
+						</p>
+						<p class="textItem " style="top:83.568678%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Coatepec, C&#243;rdoba, Cotaxtla, Chicontepec, El Higo, Guti&#233;rrez
+						</p>
+						<p class="textItem " style="top:85.365854%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Zamora, Huatusco, Huayacocotla, Ignacio de la Llave, Jalacingo,
+						</p>
+						<p class="textItem " style="top:87.163030%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Jamapa, Jes&#250;s Carranza, Las Vigas, La Antigua, Lerdo de Tejada,
+						</p>
+						<p class="textItem " style="top:88.960205%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Manlio F. Altamirano, Medell&#237;n, Minatitl&#225;n, Nanchital, Nogales,
+						</p>
+						<p class="textItem " style="top:17.073171%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Orizaba, Papantla, Paso de Ovejas, Paso del Macho, Perote, Poza
+						</p>
+						<p class="textItem " style="top:18.870347%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Rica, Puente Nacional, R&#237;o Blanco, San Andr&#233;s Tuxtla, Santiago
+						</p>
+						<p class="textItem " style="top:20.667522%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tuxtla, Soledad de Doblado, Sochiapa, Tantoyuca, Tecolutla,
+						</p>
+						<p class="textItem " style="top:22.464698%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Teocelo, Tenampa, Tempoal, Tlacotalpan, Tlacotepec de Mej&#237;a,
+						</p>
+						<p class="textItem " style="top:24.261874%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tlaltetela, Tlalixcoyan, Totutla, Tuxpan, &#218;rsulo Galv&#225;n, y Zentla.
+						</p>
+						<p class="textItem " style="top:26.059050%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Para la instalaci&#243;n de estos consejos, se organizaron 10 reuniones
+						</p>
+						<p class="textItem " style="top:27.856226%;left:49.769585%;width:26.267281%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de trabajo con 50 funcionarios municipales.
+						</p>
+						<p class="textItem " style="top:31.193838%;left:49.769585%;width:22.427035%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							7.2. Participaci&#243;n social
+						</p>
+						<p class="textItem " style="top:35.430039%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el marco del D&#237;a Mundial del Medio Ambiente 2014, se
+						</p>
+						<p class="textItem " style="top:37.227214%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							efectuaron actividades did&#225;cticas de sensibilizaci&#243;n ambiental, en
+						</p>
+						<p class="textItem " style="top:39.024390%;left:49.769585%;width:17.665131%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							beneficio de 1,000 asistentes.
+						</p>
+						<p class="textItem " style="top:42.618742%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se celebraron 43 reuniones de atenci&#243;n y gesti&#243;n, con el objetivo
+						</p>
+						<p class="textItem " style="top:44.415918%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de atender alguna situaci&#243;n espec&#237;fica en materia ambiental en
+						</p>
+						<p class="textItem " style="top:46.213094%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los municipios de Acajete, Acayucan, Actopan, Agua Dulce, Alto
+						</p>
+						<p class="textItem " style="top:48.010270%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Lucero, Ayahualulco, Camerino Z. Mendoza, Carlos A. Carrillo,
+						</p>
+						<p class="textItem " style="top:49.807445%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Catemaco, Chacaltianguis, Chocam&#225;n, Coatzacoalcos, Colipa,
+						</p>
+						<p class="textItem " style="top:51.604621%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Comapa, Cosamaloapan, Coscomatepec, Fort&#237;n, Huatusco,
+						</p>
+						<p class="textItem " style="top:53.401797%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Hueyapan de Ocampo, Huiloapan, Isla, Ixhuatl&#225;n del Caf&#233;,
+						</p>
+						<p class="textItem " style="top:55.198973%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ixtaczoquitl&#225;n, Jes&#250;s Carranza, Juan Rodr&#237;guez Clara, Juchique de
+						</p>
+						<p class="textItem " style="top:56.996149%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ferrer, Magdalena, Misantla, Papantla, Poza Rica, Rafael Delgado,
+						</p>
+						<p class="textItem " style="top:58.793325%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							San Andr&#233;s Tenejapan, Tierra Blanca, Tlacojalpan, Tlaltetela,
+						</p>
+						<p class="textItem " style="top:60.590501%;left:49.769585%;width:21.658986%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tlilapan, Tres Valles, Xico y Yecuatla.
+						</p>
+						<p class="textItem " style="top:63.671374%;left:49.769585%;width:38.863287%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							8. Fomentar el desarrollo
+						</p>
+						<p class="textItem " style="top:66.367137%;left:49.769585%;width:29.800307%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							forestal sustentable
+						</p>
+						<p class="textItem " style="top:72.272144%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La convivencia del ser humano y de los ecosistemas debe generarse
+						</p>
+						<p class="textItem " style="top:74.069320%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de manera sustentable, premisa fundamental de las acciones en
+						</p>
+						<p class="textItem " style="top:75.866496%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							materia ambiental desde el inicio de la actual Administraci&#243;n; cuyo
+						</p>
+						<p class="textItem " style="top:77.663671%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							objetivo es contribuir al desarrollo social, econ&#243;mico y ambiental
+						</p>
+						<p class="textItem " style="top:79.460847%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Estado, mediante el manejo sustentable de los recursos
+						</p>
+						<p class="textItem " style="top:81.258023%;left:49.769585%;width:14.132104%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							forestales y las cuencas.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-297.html">297</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-298.html">298</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-299.html">299</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-300.html">300</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-301.html">301</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-302.html">302</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-303.html">303</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-304.html">304</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-305.html">305</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-306.html">306</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-307.html">307</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-308.html">308</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

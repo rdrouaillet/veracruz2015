@@ -1,0 +1,530 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "425";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-424.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;425 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-426.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-424.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">425 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-426.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0425.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:37.788018%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:44.239631%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:45.314900%;width:12.903226%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>P r o t e c c i &#243; n C i v i l</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:58.832565%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:59.907834%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>4 2 3</b>
+						</p>
+						<p class="textItem " style="top:17.458280%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Educaci&#243;n Profesional T&#233;cnica del Estado de Veracruz, el 21
+						</p>
+						<p class="textItem " style="top:19.255456%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de agosto y 8 de septiembre, respectivamente, para realizar
+						</p>
+						<p class="textItem " style="top:21.052632%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acciones conjuntas de capacitaci&#243;n, difusi&#243;n y promoci&#243;n
+						</p>
+						<p class="textItem " style="top:22.849807%;left:14.439324%;width:25.806452%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en la comunidad educativa de los colegios.
+						</p>
+						<p class="textItem " style="top:26.444159%;left:13.517665%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem testString" style="top:26.444159%;left:12.903226%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:26.444159%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Convenio de Colaboraci&#243;n con la Comisi&#243;n Nacional para
+						</p>
+						<p class="textItem " style="top:28.241335%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el Desarrollo de los Pueblos Ind&#237;genas signado el 23 de
+						</p>
+						<p class="textItem " style="top:30.038511%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							septiembre, mediante el cual se suscribe el compromiso
+						</p>
+						<p class="textItem " style="top:31.835687%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de dotar a los pueblos ind&#237;genas de las herramientas y las
+						</p>
+						<p class="textItem " style="top:33.632863%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pol&#237;ticas de protecci&#243;n civil y la reducci&#243;n del riesgo de
+						</p>
+						<p class="textItem " style="top:35.430039%;left:14.439324%;width:5.837174%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							desastres.
+						</p>
+						<p class="textItem " style="top:39.024390%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Entre otras acciones es de se&#241;alar el compromiso de la
+						</p>
+						<p class="textItem " style="top:40.821566%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Secretar&#237;a de Protecci&#243;n Civil para realizar la verificaci&#243;n y
+						</p>
+						<p class="textItem " style="top:42.618742%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							dictaminaci&#243;n t&#233;cnica de sus 78 albergues escolares y cuatro
+						</p>
+						<p class="textItem " style="top:44.415918%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							comedores comunitarios; capacitar a las comunidades
+						</p>
+						<p class="textItem " style="top:46.213094%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ind&#237;genas en el conocimiento de los riesgos en su localidad;
+						</p>
+						<p class="textItem " style="top:48.010270%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							identificar la naturaleza y el grado de exposici&#243;n a los
+						</p>
+						<p class="textItem " style="top:49.807445%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							peligros y, tambi&#233;n, a que reconozcan los recursos con los
+						</p>
+						<p class="textItem " style="top:51.604621%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que cuentan para hacerles frente; a activar mecanismos de
+						</p>
+						<p class="textItem " style="top:53.401797%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							alerta temprana, accesibles y f&#225;cilmente reconocibles por las
+						</p>
+						<p class="textItem " style="top:55.198973%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							personas y las familias; a fomentar la formaci&#243;n de brigadas
+						</p>
+						<p class="textItem " style="top:56.996149%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							comunitarias, y a entrenarlas a elaborar mapas comunitarios
+						</p>
+						<p class="textItem " style="top:58.793325%;left:14.439324%;width:12.749616%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de riesgos y recursos.
+						</p>
+						<p class="textItem " style="top:62.387677%;left:13.517665%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:62.387677%;left:12.903226%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:62.387677%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Adem&#225;s, para apoyar el fomento de las acciones de
+						</p>
+						<p class="textItem " style="top:64.184852%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							corresponsabilidad en el sector productivo de la econom&#237;a
+						</p>
+						<p class="textItem " style="top:65.982028%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							estatal, la Secretar&#237;a promovi&#243; la constituci&#243;n del Comit&#233;
+						</p>
+						<p class="textItem " style="top:67.779204%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Local de Ayuda Mutua (CLAM) de la Ciudad Industrial Bruno
+						</p>
+						<p class="textItem " style="top:69.576380%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Pagliai, en el que participan el Centro Industrial Tenaris
+						</p>
+						<p class="textItem " style="top:71.373556%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tamsa, Administraci&#243;n Portuaria Integral de Veracruz (API
+						</p>
+						<p class="textItem " style="top:73.170732%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz), Asociaci&#243;n de Industriales del Estado de Veracruz,
+						</p>
+						<p class="textItem " style="top:74.967908%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Cameron de M&#233;xico, Transportes Especializados Jeomara,
+						</p>
+						<p class="textItem " style="top:76.765083%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Grant Prideco y Van M&#233;xico, suscrito el 3 de septiembre.
+						</p>
+						<p class="textItem " style="top:78.562259%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En el marco del CLAM, la Secretar&#237;a de Protecci&#243;n Civil se
+						</p>
+						<p class="textItem " style="top:80.359435%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							compromete a proveer acciones de capacitaci&#243;n en materia
+						</p>
+						<p class="textItem " style="top:82.156611%;left:14.439324%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de gesti&#243;n integral de riesgos y en el asesoramiento para
+						</p>
+						<p class="textItem " style="top:83.953787%;left:14.439324%;width:29.339478%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							elaborar su programa interno de protecci&#243;n civil.
+						</p>
+						<p class="textItem " style="top:11.039795%;left:51.920123%;width:37.327189%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.4. Actuaci&#243;n de Veracruz en el marco
+						</p>
+						<p class="textItem " style="top:13.222080%;left:51.920123%;width:29.185868%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							del Sistema de Protecci&#243;n Civil
+						</p>
+						<p class="textItem " style="top:17.458280%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Como responsable de la organizaci&#243;n y operaci&#243;n del Sistema
+						</p>
+						<p class="textItem " style="top:19.255456%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estatal, la Secretar&#237;a particip&#243; en diversos foros a nivel nacional e
+						</p>
+						<p class="textItem " style="top:21.052632%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							internacional, derivado de la experiencia y los avances normativos
+						</p>
+						<p class="textItem " style="top:22.849807%;left:51.920123%;width:37.019969%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la Entidad en la gesti&#243;n del riesgo y los desastres naturales.
+						</p>
+						<p class="textItem " style="top:26.444159%;left:54.685100%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:26.444159%;left:54.070661%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:26.444159%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Asistencia al VII Congreso Cubano de Meteorolog&#237;a,
+						</p>
+						<p class="textItem " style="top:28.241335%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							celebrado en la ciudad de La Habana, Cuba, del 3 al 6
+						</p>
+						<p class="textItem " style="top:30.038511%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de diciembre de 2013, foro auspiciado por la Sociedad
+						</p>
+						<p class="textItem " style="top:31.835687%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Meteorol&#243;gica de Cuba en el que expertos de Argentina,
+						</p>
+						<p class="textItem " style="top:33.632863%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Brasil, Colombia Espa&#241;a, Estados Unidos, Holanda, M&#233;xico
+						</p>
+						<p class="textItem " style="top:35.430039%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y el pa&#237;s anfitri&#243;n debatieron sobre diversos temas en la
+						</p>
+						<p class="textItem " style="top:37.227214%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							materia, tales como: Cambio Clim&#225;tico, Meteorolog&#237;a
+						</p>
+						<p class="textItem " style="top:39.024390%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Agr&#237;cola y Mar&#237;tima, Contaminaci&#243;n y F&#237;sica de la Atm&#243;sfera.
+						</p>
+						<p class="textItem " style="top:42.618742%;left:54.685100%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:42.618742%;left:54.070661%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:42.618742%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Como parte de este encuentro se imparti&#243; la Primera
+						</p>
+						<p class="textItem " style="top:44.415918%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Conferencia Latinoamericana y Caribe&#241;a sobre la
+						</p>
+						<p class="textItem " style="top:46.213094%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							participaci&#243;n de las mujeres en Meteorolog&#237;a, Hidrolog&#237;a
+						</p>
+						<p class="textItem " style="top:48.010270%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y Medio Ambiente; el Primer Encuentro de Historia de la
+						</p>
+						<p class="textItem " style="top:49.807445%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Meteorolog&#237;a; y el Tercer Seminario Internacional sobre
+						</p>
+						<p class="textItem " style="top:51.604621%;left:55.606759%;width:27.956989%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ciclones Tropicales Benito Vi&#241;es in Memoriam.
+						</p>
+						<p class="textItem " style="top:55.198973%;left:54.685100%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:55.198973%;left:54.070661%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:55.198973%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se tuvo presencia en la ceremonia de entrega del Premio
+						</p>
+						<p class="textItem " style="top:56.996149%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Nacional de Protecci&#243;n Civil 2013 en el Distrito Federal,
+						</p>
+						<p class="textItem " style="top:58.793325%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							celebrada el 14 de enero en Palacio Nacional, el cual
+						</p>
+						<p class="textItem " style="top:60.590501%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fue adjudicado en el campo de la prevenci&#243;n al Ing. Luis
+						</p>
+						<p class="textItem " style="top:62.387677%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Wintergerst Toledo y, en el campo de la ayuda al Dr. QFB.
+						</p>
+						<p class="textItem " style="top:64.184852%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Roberto Dom&#237;nguez Herrera, residentes de la Ciudad
+						</p>
+						<p class="textItem " style="top:65.982028%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de M&#233;xico y el municipio de Irapuato, Guanajuato,
+						</p>
+						<p class="textItem " style="top:67.779204%;left:55.606759%;width:10.291859%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							respectivamente.
+						</p>
+						<p class="textItem " style="top:71.373556%;left:54.685100%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:71.373556%;left:54.070661%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:71.373556%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Participaci&#243;n en la presentaci&#243;n, el 27 de febrero del Plan
+						</p>
+						<p class="textItem " style="top:73.170732%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Piloto de Emergencia Externa del Complejo Petroqu&#237;mico
+						</p>
+						<p class="textItem " style="top:74.967908%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Cosoleacaque, cuyo objetivo es establecer las acciones de
+						</p>
+						<p class="textItem " style="top:76.765083%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							respuesta ante una emergencia originada por un accidente
+						</p>
+						<p class="textItem " style="top:78.562259%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que ponga en riesgo a la poblaci&#243;n ubicada en el exterior
+						</p>
+						<p class="textItem " style="top:80.359435%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la instalaci&#243;n industrial, el cual fue elaborado por la
+						</p>
+						<p class="textItem " style="top:82.156611%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Secretar&#237;a de Protecci&#243;n Civil en coordinaci&#243;n con Petr&#243;leos
+						</p>
+						<p class="textItem " style="top:83.953787%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Mexicanos, la Coordinaci&#243;n Nacional de Protecci&#243;n Civil y
+						</p>
+						<p class="textItem " style="top:85.750963%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los municipios de Cosoleacaque y Minatitl&#225;n. El plan ser&#225;
+						</p>
+						<p class="textItem " style="top:87.548139%;left:55.606759%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							replicado como modelo tipo para las empresas que la
+						</p>
+						<p class="textItem " style="top:89.345315%;left:55.606759%;width:24.423963%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							paraestatal tiene en el territorio nacional.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-420.html">420</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-421.html">421</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-422.html">422</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-423.html">423</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-424.html">424</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-425.html">425</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-426.html">426</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-427.html">427</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-428.html">428</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-429.html">429</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-430.html">430</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-431.html">431</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

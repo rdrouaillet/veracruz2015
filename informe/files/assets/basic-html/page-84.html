@@ -1,0 +1,539 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "84";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-83.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;84 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-85.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-83.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">84 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-85.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0084.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem " style="top:17.971759%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem testString" style="top:17.843389%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:17.971759%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La adquisici&#243;n de dos retroexcavadoras, la rehabilitaci&#243;n de
+						</p>
+						<p class="textItem " style="top:19.768935%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							una m&#225;s y de un cami&#243;n de volteo, con una inversi&#243;n de 6.9
+						</p>
+						<p class="textItem " style="top:21.566110%;left:12.288786%;width:11.059908%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							millones de pesos.
+						</p>
+						<p class="textItem " style="top:24.261874%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:24.133504%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:24.261874%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Rehabilitaci&#243;n y modernizaci&#243;n de la infraestructura
+						</p>
+						<p class="textItem " style="top:26.059050%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							hidroagr&#237;cola y el riego por gravedad tecnificado con
+						</p>
+						<p class="textItem " style="top:27.856226%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							aprovechamiento de aguas superficiales y la rehabilitaci&#243;n
+						</p>
+						<p class="textItem " style="top:29.653402%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de pozos agr&#237;colas para beneficiar una superficie de 5,555
+						</p>
+						<p class="textItem " style="top:31.450578%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							hect&#225;reas con una inversi&#243;n de 75 millones de pesos en 20
+						</p>
+						<p class="textItem " style="top:33.247754%;left:12.288786%;width:6.605223%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipios
+						</p>
+						<p class="textItem " style="top:33.247754%;left:18.894009%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							3
+						</p>
+						<p class="textItem " style="top:33.247754%;left:19.662058%;width:8.294931%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de la Entidad.
+						</p>
+						<p class="textItem " style="top:36.842105%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Dentro del programa normal, la CONAGUA informa una inversi&#243;n
+						</p>
+						<p class="textItem " style="top:38.639281%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 281 millones de pesos m&#225;s en acciones de Infraestructura
+						</p>
+						<p class="textItem " style="top:40.436457%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Hidroagr&#237;cola mediante los Programas de Rehabilitaci&#243;n y
+						</p>
+						<p class="textItem " style="top:42.233633%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Modernizaci&#243;n de Presas y Estructuras de Cabeza; Infraestructura
+						</p>
+						<p class="textItem " style="top:44.030809%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Protecci&#243;n de Centros de Protecci&#243;n y &#193;reas Productivas,
+						</p>
+						<p class="textItem " style="top:45.827985%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Infraestructura de Riego y Temporal Tecnificado, Rehabilitaci&#243;n y
+						</p>
+						<p class="textItem " style="top:47.625160%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Modernizaci&#243;n de Infraestructura de Riego y Temporal Tecnificado,
+						</p>
+						<p class="textItem " style="top:49.422336%;left:8.602151%;width:9.984639%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							donde destacan:
+						</p>
+						<p class="textItem " style="top:53.016688%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:52.888318%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:53.016688%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Las obras de protecci&#243;n para la cuenca del R&#237;o Cazones y
+						</p>
+						<p class="textItem " style="top:54.813864%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Papaloapan, con un beneficio de 22,050 hect&#225;reas, as&#237;
+						</p>
+						<p class="textItem " style="top:56.611040%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							como Estudios y Proyectos para las Cuencas de Tuxpan y
+						</p>
+						<p class="textItem " style="top:58.408216%;left:12.288786%;width:35.483871%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Papaloapan, con una inversi&#243;n de 201.1 millones de pesos.
+						</p>
+						<p class="textItem " style="top:61.103979%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:60.975610%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:61.103979%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Las obras y proyectos para la ampliaci&#243;n del Distrito de
+						</p>
+						<p class="textItem " style="top:62.901155%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Temporal Tecnificado 003 Tesechoac&#225;n, en la cuenca Baja
+						</p>
+						<p class="textItem " style="top:64.698331%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del R&#237;o Papaloapan, con una inversi&#243;n de 48 millones de
+						</p>
+						<p class="textItem " style="top:66.495507%;left:12.288786%;width:3.840246%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							pesos.
+						</p>
+						<p class="textItem " style="top:69.191271%;left:11.367127%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:69.062901%;left:10.752688%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:69.191271%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Se benefician 3,680 hect&#225;reas con una inversi&#243;n de 19.7
+						</p>
+						<p class="textItem " style="top:70.988447%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							millones de pesos para la rehabilitaci&#243;n y asesor&#237;a t&#233;cnica
+						</p>
+						<p class="textItem " style="top:72.785623%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							especializada a las Asociaciones Civiles de los Distritos de
+						</p>
+						<p class="textItem " style="top:74.582798%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Temporal Tecnificado 003 Tesechoac&#225;n, 007 Centro de
+						</p>
+						<p class="textItem " style="top:76.379974%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz, 023 Isla Rodr&#237;guez Clara y 035 Los Naranjos, en
+						</p>
+						<p class="textItem " style="top:78.177150%;left:12.288786%;width:8.602151%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							11 municipios
+						</p>
+						<p class="textItem " style="top:78.177150%;left:20.737327%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							4
+						</p>
+						<p class="textItem " style="top:78.177150%;left:21.198157%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							.
+						</p>
+						<p class="textItem " style="top:86.521181%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							3. Actopan, &#193;ngel R. Cabada, Camar&#243;n de Tejeda, Carrillo Puerto, Cosamaloapan, Cotaxtla,
+						</p>
+						<p class="textItem " style="top:87.419769%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Cuitl&#225;huac, Jamapa, Juan Rodr&#237;guez Clara, Manlio Fabio Altamirano, Medell&#237;n, Omealca, P&#225;nuco,
+						</p>
+						<p class="textItem " style="top:88.318357%;left:8.602151%;width:35.330261%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Paso del Macho, Tierra Blanca, Tlalixcoyan, Tres Valles, El Higo, &#218;rsulo Galv&#225;n y Zentla.
+						</p>
+						<p class="textItem " style="top:89.216945%;left:8.602151%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							4. Carlos A. Carrillo, Cosamaloapan, Chacaltianguis, Jamapa, Jos&#233; Azueta, Juan Rodr&#237;guez Clara,
+						</p>
+						<p class="textItem " style="top:90.243902%;left:8.602151%;width:33.794163%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Manlio Fabio Altamirano, Medell&#237;n, Soledad de Doblado, Tierra Blanca y Tres Valles
+						</p>
+						<p class="textItem testString" style="top:11.938383%;left:49.769585%;width:20.737327%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							7. Bioenerg&#237;a
+						</p>
+						<p class="textItem " style="top:17.971759%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							La reforma energ&#233;tica constituye uno de los logros m&#225;s
+						</p>
+						<p class="textItem " style="top:19.768935%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							significativos del pa&#237;s y los potenciales efectos positivos de las leyes
+						</p>
+						<p class="textItem " style="top:21.566110%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							secundarias, ser&#225;n muy importantes para M&#233;xico en el mediano y
+						</p>
+						<p class="textItem " style="top:23.363286%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							largo plazo ya que permitir&#225;n explotar nuevas oportunidades del
+						</p>
+						<p class="textItem " style="top:25.160462%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sector energ&#233;tico, principalmente en el impulso y promoci&#243;n a
+						</p>
+						<p class="textItem " style="top:26.957638%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							las energ&#237;as renovables. En este sentido, la Secretar&#237;a de Energ&#237;a
+						</p>
+						<p class="textItem " style="top:28.754814%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(SENER) present&#243; el Programa Especial para el Aprovechamiento
+						</p>
+						<p class="textItem " style="top:30.551990%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Energ&#237;as Renovables, en la que sobresalen estrategias y objetivos
+						</p>
+						<p class="textItem " style="top:32.349166%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							como la de incrementar la participaci&#243;n de biocombustibles
+						</p>
+						<p class="textItem " style="top:34.146341%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en la matriz energ&#233;tica nacional, lo que permitir&#225; que Veracruz
+						</p>
+						<p class="textItem " style="top:35.943517%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							destaque en la producci&#243;n de biocombustibles como el bioetanol y
+						</p>
+						<p class="textItem " style="top:37.740693%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							biodiesel producido en las principales plantas etanoleras e ingenios
+						</p>
+						<p class="textItem " style="top:39.537869%;left:49.769585%;width:19.508449%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							azucareros que hay en el Estado.
+						</p>
+						<p class="textItem " style="top:43.132221%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							El Instituto Veracruzano de Bioenerg&#233;ticos (INVERBIO), impulsa
+						</p>
+						<p class="textItem " style="top:44.929397%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							acciones de eficiencia y ahorro energ&#233;tico, vinculando apoyos a
+						</p>
+						<p class="textItem " style="top:46.726573%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							23 municipios del Estado, para que participen de los beneficios
+						</p>
+						<p class="textItem " style="top:48.523748%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del Fondo para la Transici&#243;n Energ&#233;tica que se aportan al
+						</p>
+						<p class="textItem " style="top:50.320924%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Proyecto Nacional de Eficiencia Energ&#233;tica en el Alumbrado
+						</p>
+						<p class="textItem " style="top:52.118100%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							P&#250;blico Municipal. Este proyecto lo ejecuta la SENER a trav&#233;s de la
+						</p>
+						<p class="textItem " style="top:53.915276%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Comisi&#243;n Nacional para el Uso Eficiente de la Energ&#237;a (CONUEE),
+						</p>
+						<p class="textItem " style="top:55.712452%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y permite incrementar el equilibrio de energ&#237;a &#250;til en relaci&#243;n a la
+						</p>
+						<p class="textItem " style="top:57.509628%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							energ&#237;a requerida para los Sistemas de Alumbrado P&#250;blico en las
+						</p>
+						<p class="textItem " style="top:59.306804%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							zonas urbanas de congregaciones y municipios del Estado, con
+						</p>
+						<p class="textItem " style="top:61.103979%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							la finalidad de instrumentar la sustituci&#243;n y cambio de luminarias
+						</p>
+						<p class="textItem " style="top:62.901155%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con tecnolog&#237;as m&#225;s eficientes y poder reducir el consumo de
+						</p>
+						<p class="textItem " style="top:64.698331%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							energ&#237;a el&#233;ctrica para tener mayores ahorros econ&#243;micos y
+						</p>
+						<p class="textItem " style="top:66.495507%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							fortalecer las finanzas municipales, mejorar la imagen urbana,
+						</p>
+						<p class="textItem " style="top:68.292683%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							tener m&#225;s seguridad de las ciudades y pueblos veracruzanos, as&#237;
+						</p>
+						<p class="textItem " style="top:70.089859%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							como contribuir a la disminuci&#243;n de emisiones de gases efecto
+						</p>
+						<p class="textItem " style="top:71.887035%;left:49.769585%;width:7.680492%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							invernadero.
+						</p>
+						<p class="textItem " style="top:75.096277%;left:49.769585%;width:29.185868%;height:1.925546%;font-size:0.600000em;color:#25171C;font-family:Stone Sans Std;">
+							Fondo de Sustentabilidad Energ&#233;tica
+						</p>
+						<p class="textItem " style="top:78.177150%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:78.048780%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:78.177150%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Uso eficiente de energ&#237;a y aprovechamiento de fuentes
+						</p>
+						<p class="textItem " style="top:79.974326%;left:53.456221%;width:32.411674%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							renovables en las PyMEs del sector turismo (en curso).
+						</p>
+						<p class="textItem " style="top:82.670090%;left:52.534562%;width:0.460829%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:82.541720%;left:51.920123%;width:0.768049%;height:1.540436%;font-size:0.450000em;color:#25171C;font-family:Symbol MT;">
+							&#8226;
+						</p>
+						<p class="textItem " style="top:82.670090%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tecnolog&#237;a temprana para la producci&#243;n de etanol
+						</p>
+						<p class="textItem " style="top:84.467266%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							(biocombustible) a partir de residuos agroindustriales
+						</p>
+						<p class="textItem " style="top:86.264442%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en sistemas en cultivo secuencial de levaduras nativas
+						</p>
+						<p class="textItem " style="top:88.061617%;left:53.456221%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y modificadas inmovilizadas empleando soportes no
+						</p>
+						<p class="textItem " style="top:89.858793%;left:53.456221%;width:15.975422%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							convencionales (en curso).
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-79.html">79</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-80.html">80</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-81.html">81</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-82.html">82</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-83.html">83</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-84.html">84</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-85.html">85</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-86.html">86</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-87.html">87</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-88.html">88</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-89.html">89</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-90.html">90</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

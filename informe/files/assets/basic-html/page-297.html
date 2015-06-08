@@ -1,0 +1,602 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "297";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-296.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;297 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-298.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-296.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">297 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-298.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0297.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:38.248848%;width:5.683564%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							I N F O R M E
+						</p>
+						<p class="textItem testString" style="top:94.480103%;left:44.700461%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:45.775730%;width:11.827957%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>M e d i o A m b i e n t e</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:58.371736%;width:0.307220%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>|</b>
+						</p>
+						<p class="textItem " style="top:94.480103%;left:59.447005%;width:2.304147%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>2 9 5</b>
+						</p>
+						<p class="textItem " style="top:18.356868%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Esta Ley establece como principio fundamental que quien afecte al
+						</p>
+						<p class="textItem " style="top:20.154044%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ambiente est&#225; obligado a prevenir, minimizar o reparar los da&#241;os
+						</p>
+						<p class="textItem " style="top:21.951220%;left:10.752688%;width:36.712750%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que cause, y asumir los costos que dicha afectaci&#243;n implique.
+						</p>
+						<p class="textItem " style="top:25.545571%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Durante este periodo, se recibieron172manifestaciones de impacto
+						</p>
+						<p class="textItem " style="top:27.342747%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							ambiental, de las cuales 90 se resolvieron favorablemente, 12 se
+						</p>
+						<p class="textItem " style="top:29.139923%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							negaron y el resto est&#225; en espera de informaci&#243;n complementaria
+						</p>
+						<p class="textItem " style="top:30.937099%;left:10.752688%;width:9.831029%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							o en evaluaci&#243;n.
+						</p>
+						<p class="textItem " style="top:34.531451%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En materia de obra p&#250;blica estatal y municipal, se evaluaron
+						</p>
+						<p class="textItem " style="top:36.328626%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y dictaminaron 226 memorias t&#233;cnicas descriptivas de 150
+						</p>
+						<p class="textItem " style="top:38.125802%;left:10.752688%;width:6.912442%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							municipios.
+						</p>
+						<p class="textItem " style="top:41.720154%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							En concordancia con la nueva pol&#237;tica ambiental del Ejecutivo del
+						</p>
+						<p class="textItem " style="top:43.517330%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estado, para asegurar el cumplimiento de los requisitos establecidos
+						</p>
+						<p class="textItem " style="top:45.314506%;left:10.752688%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							en los resolutivos, se han solicitado m&#225;s de nueve fianzas de
+						</p>
+						<p class="textItem " style="top:18.356868%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							proyectos para garantizar el cumplimiento de las medidas de
+						</p>
+						<p class="textItem " style="top:20.154044%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mitigaci&#243;n y compensaciones ambientales establecidas en el
+						</p>
+						<p class="textItem " style="top:21.951220%;left:51.920123%;width:6.298003%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							resolutivo.
+						</p>
+						<p class="textItem " style="top:26.315789%;left:51.920123%;width:24.270353%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							4.3. Verificaci&#243;n vehicular
+						</p>
+						<p class="textItem " style="top:30.937099%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con base en los resultados publicados en el Inventario de Emisiones
+						</p>
+						<p class="textItem " style="top:32.734275%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Contaminantes Criterio 2010 de la SEDEMA, los veh&#237;culos
+						</p>
+						<p class="textItem " style="top:34.531451%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							automotores particulares son responsables de la emisi&#243;n de m&#225;s
+						</p>
+						<p class="textItem " style="top:36.328626%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de 95 por ciento del mon&#243;xido de carbono, y entre el 50 y el 80
+						</p>
+						<p class="textItem " style="top:38.125802%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							por ciento de las emisiones de &#243;xidos de nitr&#243;geno e hidrocarburos
+						</p>
+						<p class="textItem " style="top:39.922978%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							que se consideran gases precursores del ozono, tipificados como
+						</p>
+						<p class="textItem " style="top:41.720154%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							los principales causantes del calentamiento global y por lo tanto
+						</p>
+						<p class="textItem " style="top:43.517330%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							del cambio clim&#225;tico; as&#237; como de da&#241;os a la salud como son las
+						</p>
+						<p class="textItem " style="top:45.314506%;left:51.920123%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							enfermedades bronco respiratorias, c&#225;ncer y afecciones de la piel,
+						</p>
+						<p class="textItem " style="top:47.111682%;left:51.920123%;width:6.912442%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							entre otras.
+						</p>
+						<p class="textItem testString" style="top:54.172015%;left:10.906298%;width:44.086022%;height:1.797176%;font-size:0.600000em;color:#25171C;font-family:Delima MTStd;">
+							Emisiones generadas por los veh&#237;culos automotores
+						</p>
+						<p class="textItem " style="top:55.969191%;left:10.906298%;width:43.317972%;height:1.797176%;font-size:0.600000em;color:#25171C;font-family:Delima MTStd;">
+							en los diez municipios con mayor parque vehicular
+						</p>
+						<p class="textItem " style="top:57.894737%;left:10.906298%;width:11.981567%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Emisiones (ton/a&#241;o)
+						</p>
+						<p class="textItem " style="top:61.745828%;left:14.285714%;width:6.451613%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Municipio</b>
+						</p>
+						<p class="textItem " style="top:61.745828%;left:25.345622%;width:5.990783%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Veh&#237;culos</b>
+						</p>
+						<p class="textItem " style="top:61.745828%;left:35.023041%;width:2.150538%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>PM</b>
+						</p>
+						<p class="textItem " style="top:62.259307%;left:37.173579%;width:1.075269%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>10</b>
+						</p>
+						<p class="textItem " style="top:61.745828%;left:43.317972%;width:2.150538%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>PM</b>
+						</p>
+						<p class="textItem " style="top:62.259307%;left:45.468510%;width:1.382488%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>2.5</b>
+						</p>
+						<p class="textItem " style="top:61.745828%;left:52.380952%;width:1.843318%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>SO</b>
+						</p>
+						<p class="textItem " style="top:62.259307%;left:54.070661%;width:0.614439%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>2</b>
+						</p>
+						<p class="textItem " style="top:61.745828%;left:60.829493%;width:1.996928%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>CO</b>
+						</p>
+						<p class="textItem " style="top:61.745828%;left:68.970814%;width:2.150538%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>NO</b>
+						</p>
+						<p class="textItem " style="top:62.259307%;left:71.121352%;width:0.614439%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>x</b>
+						</p>
+						<p class="textItem " style="top:61.745828%;left:76.651306%;width:4.147465%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>COV&#8217;S</b>
+						</p>
+						<p class="textItem " style="top:61.745828%;left:85.867896%;width:2.150538%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>NH</b>
+						</p>
+						<p class="textItem " style="top:62.259307%;left:87.864823%;width:0.614439%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>3</b>
+						</p>
+						<p class="textItem " style="top:63.928113%;left:11.520737%;width:5.222734%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Veracruz
+						</p>
+						<p class="textItem " style="top:63.928113%;left:26.267281%;width:12.903226%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							137,650 107.20
+						</p>
+						<p class="textItem " style="top:63.928113%;left:43.625192%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							82.10
+						</p>
+						<p class="textItem " style="top:63.928113%;left:51.766513%;width:37.941628%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							174.20 38,975.20 5,615.30 3,734.50 123.90
+						</p>
+						<p class="textItem " style="top:66.110398%;left:11.520737%;width:4.147465%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Xalapa
+						</p>
+						<p class="textItem " style="top:66.110398%;left:26.267281%;width:5.069124%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							120,261
+						</p>
+						<p class="textItem " style="top:66.110398%;left:35.637481%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							91.60
+						</p>
+						<p class="textItem " style="top:66.110398%;left:43.625192%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							69.90
+						</p>
+						<p class="textItem " style="top:66.110398%;left:51.766513%;width:37.941628%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							153.30 44,637.80 4,964.50 3,743.90 115.00
+						</p>
+						<p class="textItem " style="top:68.164313%;left:11.520737%;width:8.602151%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Coatzacoalcos
+						</p>
+						<p class="textItem " style="top:68.164313%;left:27.035330%;width:4.301075%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							68,698
+						</p>
+						<p class="textItem " style="top:68.164313%;left:35.637481%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							48.30
+						</p>
+						<p class="textItem " style="top:68.164313%;left:43.625192%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							36.10
+						</p>
+						<p class="textItem " style="top:68.164313%;left:52.534562%;width:29.339478%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							82.30 19,893.50 2,665.20 1,823.80
+						</p>
+						<p class="textItem " style="top:68.164313%;left:86.175115%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							69.70
+						</p>
+						<p class="textItem " style="top:70.346598%;left:11.520737%;width:5.683564%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Poza Rica
+						</p>
+						<p class="textItem " style="top:70.346598%;left:27.035330%;width:4.301075%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							56,521
+						</p>
+						<p class="textItem " style="top:70.346598%;left:35.637481%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							37.80
+						</p>
+						<p class="textItem " style="top:70.346598%;left:43.625192%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							28.20
+						</p>
+						<p class="textItem " style="top:70.346598%;left:52.534562%;width:29.339478%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							64.40 20,055.90 2,183.10 1,857.60
+						</p>
+						<p class="textItem " style="top:70.346598%;left:86.175115%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							51.50
+						</p>
+						<p class="textItem " style="top:72.528883%;left:11.520737%;width:7.373272%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Boca del R&#237;o
+						</p>
+						<p class="textItem " style="top:72.528883%;left:27.035330%;width:4.301075%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							43,242
+						</p>
+						<p class="textItem " style="top:72.528883%;left:35.637481%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							30.40
+						</p>
+						<p class="textItem " style="top:72.528883%;left:43.625192%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							23.10
+						</p>
+						<p class="textItem " style="top:72.528883%;left:52.534562%;width:29.339478%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							51.00 11,657.40 1,657.30 1,083.20
+						</p>
+						<p class="textItem " style="top:72.528883%;left:86.175115%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							38.40
+						</p>
+						<p class="textItem " style="top:74.582798%;left:11.520737%;width:5.376344%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							C&#243;rdoba
+						</p>
+						<p class="textItem " style="top:74.582798%;left:27.035330%;width:4.301075%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							40,030
+						</p>
+						<p class="textItem " style="top:74.582798%;left:35.637481%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							43.10
+						</p>
+						<p class="textItem " style="top:74.582798%;left:43.625192%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							34.20
+						</p>
+						<p class="textItem " style="top:74.582798%;left:52.534562%;width:29.339478%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							67.30 15,424.80 2,172.10 1,439.30
+						</p>
+						<p class="textItem " style="top:74.582798%;left:86.175115%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							37.10
+						</p>
+						<p class="textItem " style="top:76.765083%;left:11.520737%;width:6.144393%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Minatitl&#225;n
+						</p>
+						<p class="textItem " style="top:76.765083%;left:27.035330%;width:4.301075%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							35,458
+						</p>
+						<p class="textItem " style="top:76.765083%;left:35.637481%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							25.80
+						</p>
+						<p class="textItem " style="top:76.765083%;left:43.625192%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							19.30
+						</p>
+						<p class="textItem " style="top:76.765083%;left:52.534562%;width:29.339478%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							44.80 12,026.20 1,489.30 1,135.70
+						</p>
+						<p class="textItem " style="top:76.765083%;left:86.175115%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							35.20
+						</p>
+						<p class="textItem " style="top:78.818999%;left:11.520737%;width:4.761905%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Orizaba
+						</p>
+						<p class="textItem " style="top:78.818999%;left:27.035330%;width:4.301075%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							28,916
+						</p>
+						<p class="textItem " style="top:78.818999%;left:35.637481%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							20.40
+						</p>
+						<p class="textItem " style="top:78.818999%;left:43.625192%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							15.40
+						</p>
+						<p class="textItem " style="top:78.818999%;left:52.534562%;width:20.890937%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							33.90 9,703.60 1,160.90
+						</p>
+						<p class="textItem " style="top:78.818999%;left:77.419355%;width:4.301075%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							894.10
+						</p>
+						<p class="textItem " style="top:78.818999%;left:86.175115%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							26.20
+						</p>
+						<p class="textItem " style="top:81.001284%;left:11.520737%;width:4.454685%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Tuxpan
+						</p>
+						<p class="textItem " style="top:81.001284%;left:27.035330%;width:4.301075%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							20,362
+						</p>
+						<p class="textItem " style="top:81.001284%;left:35.637481%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							16.60
+						</p>
+						<p class="textItem " style="top:81.001284%;left:43.625192%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							12.80
+						</p>
+						<p class="textItem " style="top:81.001284%;left:52.534562%;width:20.890937%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							26.10 6,574.80 863.00
+						</p>
+						<p class="textItem " style="top:81.001284%;left:77.419355%;width:4.301075%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							625.10
+						</p>
+						<p class="textItem " style="top:81.001284%;left:86.175115%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							19.00
+						</p>
+						<p class="textItem " style="top:83.183569%;left:11.520737%;width:11.981567%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Mart&#237;nez de la Torre
+						</p>
+						<p class="textItem " style="top:83.183569%;left:27.035330%;width:4.301075%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							17,139
+						</p>
+						<p class="textItem " style="top:83.183569%;left:35.637481%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							18.90
+						</p>
+						<p class="textItem " style="top:83.183569%;left:43.625192%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							15.00
+						</p>
+						<p class="textItem " style="top:83.183569%;left:52.534562%;width:20.890937%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							26.20 6,422.10 846.90
+						</p>
+						<p class="textItem " style="top:83.183569%;left:77.419355%;width:4.301075%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							616.40
+						</p>
+						<p class="textItem " style="top:83.183569%;left:86.175115%;width:3.533026%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							17.70
+						</p>
+						<p class="textItem " style="top:85.237484%;left:11.520737%;width:5.376344%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Subtotal</b>
+						</p>
+						<p class="textItem " style="top:85.237484%;left:26.267281%;width:20.890937%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>568,277 440.10 336.10</b>
+						</p>
+						<p class="textItem " style="top:85.237484%;left:51.766513%;width:37.941628%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>723.50 185,371.30 23,617.60 16,953.60 533.70</b>
+						</p>
+						<p class="textItem " style="top:87.419769%;left:11.520737%;width:7.834101%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>Total Estatal</b>
+						</p>
+						<p class="textItem " style="top:87.419769%;left:24.731183%;width:64.976959%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							<b>1, 057,607 1,021.40 799.70 1,508.90 394,349.20 49,207.00 36,804.80 1,014.80</b>
+						</p>
+						<p class="textItem " style="top:90.243902%;left:10.906298%;width:69.124424%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							Fuente: Direcci&#243;n General de Control de la Contaminaci&#243;n y Evaluaci&#243;n Ambiental. Elaborada con base en el Inventario de Emisiones Contaminantes Criterio 2010, SEDEMA.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-292.html">292</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-293.html">293</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-294.html">294</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-295.html">295</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-296.html">296</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-297.html">297</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-298.html">298</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-299.html">299</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-300.html">300</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-301.html">301</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-302.html">302</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-303.html">303</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+

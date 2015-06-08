@@ -1,0 +1,473 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>IV Informe</title>
+
+        <link href="http://common:80/publication-icon.ico?377a706a" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+        CURRENT_PAGE = "208";
+        MAIN_PAGE     = "index.html";
+        FILES_FOLDER  = "files";
+
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+	    STATIC_FOLDER = ".";
+	    DYNAMIC_FOLDER = "./..";
+
+	    PUBLICATION_NAME = "IV Informe";
+
+	    CURRENT_VERSION = "2.6.18";
+
+	    LANGS = ['en','de','es','fi','fr','it','ja','nl','no','pl','pt','ru','sv','zh'];
+	    PUBLICATION_TYPE = "catalog";
+
+
+	var main = function () {
+
+		loadScript('./javascript/localizator.js',function(){});
+
+	    if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+			var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname)
+			var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+			loadScript(url,function(){});
+		}
+
+	}
+
+	if (!!window.addEventListener) {
+		window.addEventListener('load', main);
+	} else {
+		window.attachEvent('onload', main);
+	}
+
+	function loadScript(url, callback){
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = url;
+		head.appendChild(script);
+		if (script.readyState){
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+	}
+</script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+    </style>
+</head>
+<body style="font-size: 20px">
+	    <img id="bodyBg" class="bodyBg" src="./../flash/image/inner_bg.jpg" alt="Background Image" />
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.jpg" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+				<a class="tocButton toolbarLink internalLink" href="./toc.html" id="tocLink">
+					<img class="iconToolbar" src="styles/toc.png" alt="Table of Contents" />
+					<img class="iconToolbar mobile" src="styles/toc-mobile.png" alt="Table of Contents" />
+					<span id="tocLabel" class="titleTOCMenu"></span>
+				</a>
+
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-207.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;208 / 548</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-209.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<!--<a class="versions toolbarLink" href="#" id="flash">Flash version</a>-->
+			<!--<a class="versions toolbarLink" href="#" id="mobile">Mobile version</a>-->
+			<span class="basicInfoTitle">Basic version</span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+		<a class="mobileMenuButton" id="mobileMenuButton">
+			<img src="styles/mobile-menu.png" alt="Show Menu" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-207.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">208 / 548</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-209.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 651px; height: 779px; margin: 40px 0 0 -325px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0208.png" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:94.480103%;left:31.029186%;width:37.941628%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							C U A R T O I N F O R M E D E G O B I E R N O | V E R A C R U Z 2 0 1 3 - 2 0 1 4
+						</p>
+						<p class="textItem testString" style="top:7.060334%;left:8.602151%;width:25.960061%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							1. Adelante en la
+						</p>
+						<p class="textItem " style="top:9.756098%;left:8.602151%;width:25.192012%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							promoci&#243;n de la
+						</p>
+						<p class="textItem " style="top:12.451861%;left:8.602151%;width:33.947773%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							salud y prevenci&#243;n de
+						</p>
+						<p class="textItem " style="top:15.147625%;left:8.602151%;width:21.966206%;height:3.209243%;font-size:1.100000em;color:#190E13;font-family:Delima MTStd;">
+							enfermedades
+						</p>
+						<p class="textItem " style="top:20.924262%;left:8.602151%;width:32.411674%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							1.1. Atenci&#243;n a la salud materna y
+						</p>
+						<p class="textItem " style="top:23.106547%;left:8.602151%;width:8.294931%;height:2.182285%;font-size:0.700000em;color:#25171C;font-family:Stone Sans Std;">
+							perinatal
+						</p>
+						<p class="textItem " style="top:27.342747%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Con la finalidad de garantizar la atenci&#243;n a mujeres durante el
+						</p>
+						<p class="textItem " style="top:29.139923%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							embarazo, parto y puerperio, en la red de atenci&#243;n de Servicios
+						</p>
+						<p class="textItem " style="top:30.937099%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Salud de Veracruz (SESVER) se realizaron acciones encaminadas
+						</p>
+						<p class="textItem " style="top:32.734275%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a mejorar la dotaci&#243;n de insumos para la atenci&#243;n, acciones
+						</p>
+						<p class="textItem " style="top:34.531451%;left:8.602151%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							preventivas, acciones asistenciales y atenci&#243;n integral de las
+						</p>
+						<p class="textItem " style="top:36.328626%;left:8.602151%;width:24.270353%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							urgencias, a trav&#233;s de cuatro estrategias:
+						</p>
+						<p class="textItem " style="top:39.922978%;left:10.752688%;width:37.327189%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							1) Otorgar control prenatal de calidad con personal de
+						</p>
+						<p class="textItem " style="top:41.720154%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							salud capacitado, abasto de medicamentos y servicios
+						</p>
+						<p class="textItem " style="top:43.517330%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de laboratorio y gabinete que favorezcan la vigilancia,
+						</p>
+						<p class="textItem " style="top:45.314506%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							detecci&#243;n y referencia oportuna de mujeres identificadas
+						</p>
+						<p class="textItem " style="top:47.111682%;left:12.288786%;width:12.903226%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							con riesgo obst&#233;trico.
+						</p>
+						<p class="textItem " style="top:50.706033%;left:10.752688%;width:37.327189%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							2) Proveer de m&#233;todos anticonceptivos a la poblaci&#243;n, con
+						</p>
+						<p class="textItem " style="top:52.503209%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							&#233;nfasis en los adolescentes y cobertura de anticoncepci&#243;n
+						</p>
+						<p class="textItem " style="top:54.300385%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							post-evento obst&#233;trico, para evitar embarazos no planeados
+						</p>
+						<p class="textItem " style="top:56.097561%;left:12.288786%;width:9.523810%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							y de alto riesgo.
+						</p>
+						<p class="textItem " style="top:59.691913%;left:10.752688%;width:37.327189%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							3) Brindar asistencia profesional y calificada durante el parto,
+						</p>
+						<p class="textItem " style="top:61.489089%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							para contribuir a una atenci&#243;n humana y t&#233;cnica sin
+						</p>
+						<p class="textItem " style="top:63.286264%;left:12.288786%;width:9.677419%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							complicaciones.
+						</p>
+						<p class="textItem " style="top:66.880616%;left:10.752688%;width:37.327189%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							4) Dar atenci&#243;n inmediata y universal de las urgencias
+						</p>
+						<p class="textItem " style="top:68.677792%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							obst&#233;tricas con el incremento de las competencias del
+						</p>
+						<p class="textItem " style="top:70.474968%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							personal, la evaluaci&#243;n del desempe&#241;o de las unidades
+						</p>
+						<p class="textItem " style="top:72.272144%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							hospitalarias, la colaboraci&#243;n interinstitucional entre el
+						</p>
+						<p class="textItem " style="top:74.069320%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Instituto Mexicano del Seguro Social (IMSS), el Instituto
+						</p>
+						<p class="textItem " style="top:75.866496%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							de Seguridad y Servicios Sociales de los Trabajadores del
+						</p>
+						<p class="textItem " style="top:77.663671%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estado (ISSSTE) y la Secretar&#237;a de Salud (SS), entre otros; y
+						</p>
+						<p class="textItem " style="top:79.460847%;left:12.288786%;width:35.791091%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el servicio de la l&#237;nea telef&#243;nica 01800 202 6262 de apoyo e
+						</p>
+						<p class="textItem " style="top:81.258023%;left:12.288786%;width:21.966206%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							informaci&#243;n a mujeres embarazadas.
+						</p>
+						<p class="textItem " style="top:27.342747%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Estas cuatro estrategias sustentan dos redes de participaci&#243;n: las
+						</p>
+						<p class="textItem " style="top:29.139923%;left:49.769585%;width:23.041475%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							redes de servicios y las redes sociales
+						</p>
+						<p class="textItem " style="top:29.268293%;left:72.811060%;width:0.460829%;height:0.898588%;font-size:0.262350em;color:#25171C;font-family:Stone Sans Std;">
+							1
+						</p>
+						<p class="textItem " style="top:29.139923%;left:73.271889%;width:15.975422%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							. A trav&#233;s de las redes de
+						</p>
+						<p class="textItem " style="top:30.937099%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							servicios, se proporcionaron 467.9 miles de consultas de control
+						</p>
+						<p class="textItem " style="top:32.734275%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							prenatal, 93,590 consultas a mujeres con embarazos de alto
+						</p>
+						<p class="textItem " style="top:34.531451%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							riesgo y fueron atendidos 65,808 nacimientos. Mediante las redes
+						</p>
+						<p class="textItem " style="top:36.328626%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							sociales, se capacitaron 28,077 nuevas madrinas obst&#233;tricas para
+						</p>
+						<p class="textItem " style="top:38.125802%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							el acompa&#241;amiento efectivo de sus ahijadas, se trasladaron 1,295
+						</p>
+						<p class="textItem " style="top:39.922978%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							embarazadas en riesgo; en las Posadas de Atenci&#243;n a la Mujer
+						</p>
+						<p class="textItem " style="top:41.720154%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Embarazada (Posadas AME) se albergaron para su atenci&#243;n a
+						</p>
+						<p class="textItem " style="top:43.517330%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							1,336 embarazadas y pu&#233;rperas, a quienes por sus condiciones
+						</p>
+						<p class="textItem " style="top:45.314506%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							socio econ&#243;micas y geogr&#225;ficas les resulta complicado el
+						</p>
+						<p class="textItem " style="top:47.111682%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							desplazamiento desde sus lugares de origen y se certificaron
+						</p>
+						<p class="textItem " style="top:48.908858%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							850 parteras, de acuerdo con la norma t&#233;cnica de competencia
+						</p>
+						<p class="textItem " style="top:50.706033%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							laboral; cifra que ubica a Veracruz como entidad l&#237;der en parteras
+						</p>
+						<p class="textItem " style="top:52.503209%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							certificadas. Asimismo, se instruy&#243; a 105 m&#233;dicos y enfermeras
+						</p>
+						<p class="textItem " style="top:54.300385%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							como capacitadores locales en reanimaci&#243;n neonatal, quienes
+						</p>
+						<p class="textItem " style="top:56.097561%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							a su vez instruyeron a 300 parteras con el taller denominado:
+						</p>
+						<p class="textItem " style="top:57.894737%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Ense&#241;ando a los Beb&#233;s a Respirar. Para la prevenci&#243;n de defectos al
+						</p>
+						<p class="textItem " style="top:59.691913%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							nacimiento, se otorgaron 239.6 miles de frascos de &#225;cido f&#243;lico a
+						</p>
+						<p class="textItem " style="top:61.489089%;left:49.769585%;width:22.734255%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							mujeres embarazadas y en edad f&#233;rtil.
+						</p>
+						<p class="textItem " style="top:65.083440%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							A trav&#233;s del Programa de Jornadas de Salud de Alta Especialidad, se
+						</p>
+						<p class="textItem " style="top:66.880616%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							realizaron 13,832 ultrasonidos ginecol&#243;gicos, 3,812 ultrasonidos
+						</p>
+						<p class="textItem " style="top:68.677792%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							obst&#233;tricos y 24,500 ultrasonidos especiales. Adem&#225;s, se
+						</p>
+						<p class="textItem " style="top:70.474968%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							realizaron 15,700 asesor&#237;as nutricionales, 42,150 consultas
+						</p>
+						<p class="textItem " style="top:72.272144%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							generales, 32,652 an&#225;lisis cl&#237;nicos, 4,504 estudios radiogr&#225;ficos,
+						</p>
+						<p class="textItem " style="top:74.069320%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							4,846 electrocardiogramas, 230 servicios de optometr&#237;a, 18,500
+						</p>
+						<p class="textItem " style="top:75.866496%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							densitometr&#237;as y 674 consultas dentales. Del total de estas acciones
+						</p>
+						<p class="textItem " style="top:77.663671%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							31 por ciento se realizaron en las regiones m&#225;s vulnerables como:
+						</p>
+						<p class="textItem " style="top:79.460847%;left:49.769585%;width:39.477727%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							Huasteca Alta, Huasteca Baja, Totonaca, Monta&#241;as y Olmeca,
+						</p>
+						<p class="textItem " style="top:81.258023%;left:49.769585%;width:36.098310%;height:1.412067%;font-size:0.450000em;color:#25171C;font-family:Stone Sans Std;">
+							donde se enfoc&#243; la atenci&#243;n integral de la mujer y la familia.
+						</p>
+						<p class="textItem " style="top:85.622593%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							1. Las redes sociales son grupos constituidos a partir de lazos que se establecen entre parientes,
+						</p>
+						<p class="textItem " style="top:86.521181%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							vecinos(as), amigos (as), pareja de la embarazada, comit&#233;s de salud, autoridades municipales y
+						</p>
+						<p class="textItem " style="top:87.419769%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							asociaciones que existen en cada regi&#243;n. Brindan apoyo a las mujeres, durante el embarazo, parto
+						</p>
+						<p class="textItem " style="top:88.318357%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							y puerperio; funcionan como cadenas en donde cada personaje es un eslab&#243;n. Fuente: Gobierno
+						</p>
+						<p class="textItem " style="top:89.216945%;left:49.769585%;width:39.477727%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							del Estado. Manual para la Implementaci&#243;n y Operaci&#243;n de Redes Sociales en Salud Materna en
+						</p>
+						<p class="textItem " style="top:90.243902%;left:49.769585%;width:18.894009%;height:1.026958%;font-size:0.300000em;color:#25171C;font-family:Stone Sans Std;">
+							el Estado de Veracruz.1&#170;. edici&#243;n: 2011; p. 17.
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-203.html">203</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-204.html">204</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-205.html">205</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-206.html">206</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-207.html">207</a>
+					<a style="color:#000000;" class="footerNavLink internalLink currPage" href="./page-208.html">208</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-209.html">209</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-210.html">210</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-211.html">211</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-212.html">212</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-213.html">213</a>
+					<a style="color:#000000;" class="footerNavLink internalLink " href="./page-214.html">214</a>
+						<span style="color:#000000;" class="footerNavLink">&#8230;</span>
+					<a style="color:#000000;" class="footerNavLink internalLink" href="./page-548.html">548</a>
+
+				<a style="color:#000000;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+			BASIC_PAGE = new BasicPage();
+		}
+    </script>
+</body>
+</html>
+
+
+
